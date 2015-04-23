@@ -1,0 +1,358 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: facebook\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-30 18:05+0300\n"
+"PO-Revision-Date: 2015-03-30 18:05+0300\n"
+"Last-Translator: \n"
+"Language-Team: Can Atasever <webmaster@canatasever.com>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-button-plugin.php:31
+#: facebook-button-plugin.php:233
+#: facebook-button-plugin.php:235
+#: facebook-button-plugin.php:574
+#: facebook-button-plugin.php:588
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: facebook-button-plugin.php:169
+msgid "Settings saved"
+msgstr "Ayarlar kaydedildi"
+
+#: facebook-button-plugin.php:197
+msgid "Error: File size > 32K"
+msgstr "HATA: Dosya boyutu > 32K"
+
+#: facebook-button-plugin.php:200
+msgid "Error: Invalid file type"
+msgstr "HATA: Geçersiz dosya türü"
+
+#: facebook-button-plugin.php:206
+msgid "Upload successful."
+msgstr "Yükleme başarılı"
+
+#: facebook-button-plugin.php:209
+msgid "Error: moving file failed"
+msgstr "HATA: dosya taşıma başarısız."
+
+#: facebook-button-plugin.php:212
+msgid "Error: check image width or height"
+msgstr "HATA: görselin genişliğini ya da yüksekliğini kontrol edin."
+
+#: facebook-button-plugin.php:216
+msgid "Uploading Error: check image properties"
+msgstr "Yükleme Hatası: görselin özelliklerini kontrol edin."
+
+#: facebook-button-plugin.php:236
+msgid "Extra settings"
+msgstr "Ekstra Ayarlar"
+
+#: facebook-button-plugin.php:237
+#: facebook-button-plugin.php:590
+msgid "FAQ"
+msgstr "SSS"
+
+#: facebook-button-plugin.php:238
+msgid "Go PRO"
+msgstr "PRO&#39;ya geçin"
+
+#: facebook-button-plugin.php:241
+msgid "Notice:"
+msgstr "Uyarı:"
+
+#: facebook-button-plugin.php:241
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "eklentinin ayarları değiştirildi. Değişiklikleri kaydetmek için &#39;Değişiklikleri Kaydet&#39; butonuna basmayı unutmayın."
+
+#: facebook-button-plugin.php:247
+#, fuzzy
+msgid "Your Facebook ID or username:"
+msgstr "Facebook ID&#39;niz:"
+
+#: facebook-button-plugin.php:253
+msgid "Display button:"
+msgstr "Butonu Göster:"
+
+#: facebook-button-plugin.php:255
+msgid "My Page"
+msgstr "Benim Sayfam"
+
+#: facebook-button-plugin.php:256
+msgid "Like"
+msgstr "Beğen"
+
+#: facebook-button-plugin.php:257
+msgid "Share"
+msgstr "Paylaş"
+
+#: facebook-button-plugin.php:262
+msgid "Choose display settings:"
+msgstr "Gösterim ayarlarını seçin:"
+
+#: facebook-button-plugin.php:267
+msgid "Standard Facebook image"
+msgstr "Standart Facebook görseli"
+
+#: facebook-button-plugin.php:268
+msgid "Custom Facebook image"
+msgstr "Özel Facebook görseli"
+
+#: facebook-button-plugin.php:271
+msgid "To use custom image you need to setup permissions to upload directory of your site"
+msgstr "Özel görsel kullanmak için sitenizin dizinine yükleme yapılmasına izin vermelisiniz."
+
+#: facebook-button-plugin.php:277
+msgid "Current image:"
+msgstr "Şu anki görsel:"
+
+#: facebook-button-plugin.php:285
+msgid "Facebook image:"
+msgstr "Facebook görseli:"
+
+#: facebook-button-plugin.php:289
+msgid "Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+msgstr "Görsel özellikleri: maksimum görsel genişliği: 100px; maksimum görsel yüksekliği: 40px; maksimum görsel boyutu: 32 KB; uzantılar: \"jpg\", \"jpeg\", \"png\"."
+
+#: facebook-button-plugin.php:294
+msgid "Facebook Button Position:"
+msgstr "Facebook Butonu pozisyonu"
+
+#: facebook-button-plugin.php:298
+msgid "Before"
+msgstr "Önce"
+
+#: facebook-button-plugin.php:299
+msgid "After"
+msgstr "Sonra"
+
+#: facebook-button-plugin.php:300
+msgid "Before and After"
+msgstr "Önce ve Sonra"
+
+#: facebook-button-plugin.php:301
+msgid "Shortcode"
+msgstr "Kısa kod"
+
+#: facebook-button-plugin.php:303
+msgid "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:"
+msgstr "eğer web sitenize Facebook butonu eklemek isterseniz, verilen kısa kodu sayfanıza ya da yazınıza eklemeniz yeterlidir."
+
+#: facebook-button-plugin.php:308
+msgid "Facebook Button language:"
+msgstr "Facebook Butonu dili"
+
+#: facebook-button-plugin.php:319
+msgid "Change the language of Facebook Like Button"
+msgstr "Facebook Beğen butonunun dilini değiştirin"
+
+#: facebook-button-plugin.php:323
+msgid "Html tag for Like Button:"
+msgstr "Beğen butonu için HTML etiketi:"
+
+#: facebook-button-plugin.php:327
+msgid "Use this tag to improve validation of your site"
+msgstr "Sitenizin doğrulamasını geliştirmek için bu etiketi kullanın"
+
+#: facebook-button-plugin.php:336
+msgid "\"Like\" for an entire site on every page:"
+msgstr ""
+
+#: facebook-button-plugin.php:338
+msgid "Notice: \"Like for the entire site\" option does not create an extra button. This option merely allows your users to like the entire website when this option is enabled, or a single post when this option is disabled, when clicking the regular \"Like\" button."
+msgstr ""
+
+#: facebook-button-plugin.php:345
+#: facebook-button-plugin.php:398
+msgid "Unlock premium options by upgrading to a PRO version."
+msgstr "PRO versiyonuna geçerek premium özellikleri aktifleştirin."
+
+#: facebook-button-plugin.php:346
+#: facebook-button-plugin.php:399
+msgid "Learn More"
+msgstr "Detaylı Bilgi"
+
+#: facebook-button-plugin.php:349
+#: facebook-button-plugin.php:402
+msgid "Go"
+msgstr "Git"
+
+#: facebook-button-plugin.php:356
+#: facebook-button-plugin.php:386
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: facebook-button-plugin.php:368
+msgid "Please choose the necessary post types (or single pages) where Facebook button will be displayed:"
+msgstr "Lütfen Facebook butonunun gösterileceği yazı türlerini (ya da tek sayfaları) seçin."
+
+#: facebook-button-plugin.php:375
+msgid "Show URL for pages"
+msgstr "Sayfalar için URL göster"
+
+#: facebook-button-plugin.php:381
+msgid "Example of the site's pages tree"
+msgstr "Sitenin sayfalar izi için örnek"
+
+#: facebook-button-plugin.php:381
+msgid "Example of site pages' tree"
+msgstr "Site sayfaları izi için örnek"
+
+#: facebook-button-plugin.php:391
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Aboneliğinizi PRO versiyonuna yükseltirseniz tüm değişiklikleriniz kaydedilecek."
+
+#: facebook-button-plugin.php:591
+msgid "Support"
+msgstr "Destek"
+
+#~ msgid "Facebook Button Settings"
+#~ msgstr "Facebook Buton Ayarları"
+
+#~ msgid "Facebook Button"
+#~ msgstr "Facebook Butonu"
+
+#~ msgid "requires"
+#~ msgstr "eklentisi"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "ya da daha üst versiyon gerektirir, eklenti bu yüzden etkisizleştirildi! "
+#~ "Lütfen Wordpress&#39;i güncelleyin ve tekrar deneyin."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Wordpress&#39;e geri dön"
+
+#~ msgid "Plugins page"
+#~ msgstr "Eklentiler sayfası"
+
+#~ msgid "Wrong license key"
+#~ msgstr "Hatalı lisans anahtarı"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later. If the error will appear again, "
+#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
+#~ "a>. We are sorry for inconvenience."
+#~ msgstr ""
+#~ "Bir şeyler ters gitti, lütfen daha sonra tekrar deneyin. Eğer hata tekrar "
+#~ "görünürse, lütfen <a href=http://support.bestwebsoft.com>BestWebSoft</a> "
+#~ "üzerinden bizimle iletişime geçin. Yaşadığınız rahatsızlık için üzgünüz."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Lisans anahtarı başka bir siteyle eşleştirilmiş."
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries. Please, "
+#~ "upload the plugin manually."
+#~ msgstr ""
+#~ "Üzgünüz, günlük deneme limitini aştınız. Lütfen eklentiyi manuel olarak "
+#~ "yükleyin."
+
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "ZIP arşivi açılamadı. Lütfen eklentiyi manuel olarak yükleyin."
+
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr ""
+#~ "Sunucunuz ZipArchive ya da Phar desteklemiyor. Lütfen eklentiyi manuel "
+#~ "olarak yükleyin."
+
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr "ZIParşivi indirilemedi. Lütfen eklentiyi manuel olarak yükleyin."
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvienience."
+#~ msgstr ""
+#~ "Bir şeyler ters gitti. Lütfen daha sonra tekrar deneyin ya da eklentiyi "
+#~ "manuel olarak yükleyin. Yaşadığınız rahatsızlık için üzgünüz."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Lütfen Lisans Anahtarı&#39;nızı girin"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Eklentiyi beğendiyseniz, Wordpress&#39;te 5 yıldız verin"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Eklentiyi değerlendir"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Eğer bir hata görürseniz lütfen bizimle iletişime geçin."
+
+#~ msgid ""
+#~ "Congratulations! The PRO version of the plugin is successfully download "
+#~ "and activated."
+#~ msgstr ""
+#~ "Tebrikler! Eklentinin PRO versiyonu başarıyla indirildi ve "
+#~ "aktifleştirildi."
+
+#~ msgid "Please, go to"
+#~ msgstr "Lütfen şuraya gidin:"
+
+#~ msgid "the setting page"
+#~ msgstr "ayarlar sayfası"
+
+#~ msgid "You will be redirected automatically in 5 seconds."
+#~ msgstr "5 saniye içinde otomatik olarak yönlendirileceksiniz."
+
+#~ msgid "You can download and activate"
+#~ msgstr "Eklentinin"
+
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr ""
+#~ "versiyonunu lisans anahtarınızı girerek yükleyebilir ve "
+#~ "aktifleştirebilirsiniz."
+
+#~ msgid ""
+#~ "You can find your license key on your personal page Client area, by "
+#~ "clicking on the link"
+#~ msgstr ""
+#~ "Lisans anahtarınızı kişisel müşteri sayfanızda bulabilirsiniz, tıklayın"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(kullanıcı adınız, ürün için ödeme yaparken belirttiğiniz e-posta "
+#~ "adresinizdir)"
+
+#~ msgid "Go!"
+#~ msgstr "Git!"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "Üzgünüz, günlük deneme limitini aştınız. Lütfen eklentiyi manuel olarak "
+#~ "yükleyin."
+
+#~ msgid ""
+#~ "It's time to upgrade your <strong>Facebook Like Button</strong> to "
+#~ "<strong>PRO</strong> version"
+#~ msgstr ""
+#~ "<strong>Captcha eklentisini</strong> <strong>PRO</strong> versiyonuna "
+#~ "yükseltmenizin zamanı geldi!"
+
+#~ msgid "Extend standard plugin functionality with new great options"
+#~ msgstr ""
+#~ "Eklentinin standart özelliklerini yeni ve harika özelliklerle "
+#~ "zenginleştirin."
+
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
+#~ "информации смотрите"

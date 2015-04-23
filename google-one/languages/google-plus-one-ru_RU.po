@@ -1,0 +1,327 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google +1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-20 19:41+0300\n"
+"PO-Revision-Date: 2015-04-20 19:41+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: google-plus-one.php:32
+#: google-plus-one.php:134
+msgid "Google +1 Settings"
+msgstr "Google +1 Настройки"
+
+#: google-plus-one.php:118
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: google-plus-one.php:136
+#: google-plus-one.php:390
+#: google-plus-one.php:403
+msgid "Settings"
+msgstr "Настройки"
+
+#: google-plus-one.php:137
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+#: google-plus-one.php:138
+#: google-plus-one.php:404
+msgid "FAQ"
+msgstr "FAQ"
+
+#: google-plus-one.php:139
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: google-plus-one.php:143
+msgid "Notice:"
+msgstr "Внимание:"
+
+#: google-plus-one.php:143
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Настройки плагина были изменены. Для того, чтобы сохранить их, пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+
+#: google-plus-one.php:146
+msgid "For the correct work of the button do not use it locally or on a free hosting"
+msgstr "Для правильной работы кнопки не используйте её на локальном сервере или бесплатных хостингах"
+
+#: google-plus-one.php:147
+msgid "If you want to insert the button in any place on the site, please use the following code:"
+msgstr "Для установки кнопки в любом месте на сайте, пожалуйста, вставьте следующий код:"
+
+#: google-plus-one.php:152
+msgid "Enable Google +1 Button"
+msgstr "Включить кнопку Google +1"
+
+#: google-plus-one.php:156
+msgid "Enable or Disable Google+1 JavaScript"
+msgstr "Включить либо Выключить Google+1 JavaScript"
+
+#: google-plus-one.php:161
+msgid "Show +1 count in the button"
+msgstr "Показывать счетчик +1 в кнопке"
+
+#: google-plus-one.php:165
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Показывать счетчик количества нажатий +1"
+
+#: google-plus-one.php:170
+msgid "Button Size"
+msgstr "Размер кнопки"
+
+#: google-plus-one.php:173
+msgid "Standart"
+msgstr "Стандартная"
+
+#: google-plus-one.php:174
+msgid "Small"
+msgstr "Маленькая"
+
+#: google-plus-one.php:175
+msgid "Medium"
+msgstr "Средняя"
+
+#: google-plus-one.php:176
+msgid "Tall"
+msgstr "Высокая"
+
+#: google-plus-one.php:178
+msgid "Please choose one of four different sizes of buttons"
+msgstr "Пожалуйста, выберите один из четырех вариантов размера кнопки"
+
+#: google-plus-one.php:182
+msgid "Button Position"
+msgstr "Положение кнопки"
+
+#: google-plus-one.php:185
+msgid "Before"
+msgstr "Перед"
+
+#: google-plus-one.php:186
+msgid "After"
+msgstr "После"
+
+#: google-plus-one.php:187
+msgid "Before And After"
+msgstr "Перед и После"
+
+#: google-plus-one.php:189
+msgid "Please select location for the button on the page"
+msgstr "Пожалуйста выберите расположение кнопки на странице"
+
+#: google-plus-one.php:193
+msgid "Language"
+msgstr "Язык"
+
+#: google-plus-one.php:203
+msgid "Select the language to display information on the button"
+msgstr "Выберите язык отображения информации на кнопке"
+
+#: google-plus-one.php:207
+msgid "Show button"
+msgstr "Показывать кнопку"
+
+#: google-plus-one.php:212
+msgid "Show in posts"
+msgstr "В постах"
+
+#: google-plus-one.php:218
+msgid "Show in pages"
+msgstr "На страницах"
+
+#: google-plus-one.php:224
+msgid "Show on the homepage"
+msgstr "На домашней странице"
+
+#: google-plus-one.php:228
+msgid "Please select the page on which you want to see the button"
+msgstr "Пожалуйста выберите страницу, на который Вы хотите показать кнопку"
+
+#: google-plus-one.php:236
+#: google-plus-one.php:267
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: google-plus-one.php:249
+msgid "Please choose the necessary post types (or single pages) where Google +1 button will be displayed:"
+msgstr "Пожалуйста, выберите те типы постов (или отдельные страницы), где будет отображатся кнопка Google +1:"
+
+#: google-plus-one.php:256
+msgid "Show URL for pages"
+msgstr "Отображать URL для страниц"
+
+#: google-plus-one.php:262
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: google-plus-one.php:272
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#: google-plus-one.php:279
+msgid "Unlock premium options by upgrading to a PRO version."
+msgstr "Активируйте премиум опции обновившись до PRO версии."
+
+#: google-plus-one.php:280
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: google-plus-one.php:283
+msgid "Go"
+msgstr "Перейти на"
+
+#: google-plus-one.php:405
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "Google +1"
+#~ msgstr "Google +1"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому он был деактивирован! Пожалуйста обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Вернуться к WordPress на"
+
+#~ msgid "Plugins page"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "Wrong license key"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later. If the error will appear again, "
+#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
+#~ "a>. We are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, "
+#~ "пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries. Please, "
+#~ "upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Не удалось загрузить архив плагина. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "Не удалось открыть архив ZIP. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr ""
+#~ "Ваш сервер не поддерживает ни библиотеку ZipArchive, ни библиотеку Phar. "
+#~ "Пожалуйста, загрузите плагин вручную"
+
+#~ msgid "UploadDir is not writable. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Папка загрузки не доступна для записи. Пожалуйста, загрузите плагин "
+#~ "вручную"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvienience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже или загрузите плагин "
+#~ "вручную. Приносим извинения за неудобства."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Если вам понравился плагин, то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#~ msgid ""
+#~ "Congratulations! The PRO version of the plugin is successfully download "
+#~ "and activated."
+#~ msgstr ""
+#~ "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+
+#~ msgid "Please, go to"
+#~ msgstr "Пожалуйста, перейдите на"
+
+#~ msgid "the setting page"
+#~ msgstr "страницу настроек"
+
+#~ msgid "You will be redirected automatically in 5 seconds."
+#~ msgstr "Вы будете перенаправлены автоматически через 5 секунд."
+
+#~ msgid "You can download and activate"
+#~ msgstr "Вы можете скачать и активировать"
+
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "версию этого плагина, введя ваш лицензионный ключ."
+
+#~ msgid ""
+#~ "You can find your license key on your personal page Client area, by "
+#~ "clicking on the link"
+#~ msgstr ""
+#~ "Вы можете найти ваш лицензионный ключ на вашей личной странице Client "
+#~ "area, нажав на ссылку"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
+#~ "продукта)."
+
+#~ msgid "Go!"
+#~ msgstr "Перейти!"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid ""
+#~ "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</"
+#~ "strong> version"
+#~ msgstr ""
+#~ "Пора обновить ваш <strong>плагин Google +1</strong> до <strong>PRO</"
+#~ "strong> версии"
+
+#~ msgid "Extend standard plugin functionality with new great options"
+#~ msgstr "Расширение стандартного функционала плагина новыми опциями"
+
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
+#~ "информации смотрите"

@@ -1,0 +1,23 @@
+/*
+* Plugin css
+*/
+.gglplsn_info {
+	clear: both;
+	color: #888888;
+	font-size: 10px;
+}
+.gglplsn_form-table th {
+	padding-left: 0;
+}
+.gglplsn_form-table td.gglplsn_no_padding {
+	padding: 5px 10px;
+}
+.gglplsn_no_padding select {
+	min-width: 200px;
+}
+.gglplsn_form-table td p {
+    margin: 0;
+}
+.gglplsn_share {
+	clear: both;
+}

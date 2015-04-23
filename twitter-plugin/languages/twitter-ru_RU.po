@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: twitter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-20 19:37+0300\n"
+"PO-Revision-Date: 2015-04-20 19:38+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: twitter.php:33
+msgid "Twitter Settings"
+msgstr "Настройки Twitter"
+
+#: twitter.php:136
+msgid "Settings saved"
+msgstr "Опции сохранены"
+
+#: twitter.php:164
+msgid "Error: File size > 32K"
+msgstr "Ошибка: Размер файла больше 32К"
+
+#: twitter.php:166
+msgid "Error: Invalid file type"
+msgstr "Ошибка: Некорректный тип файла"
+
+#: twitter.php:179
+msgid "Upload successful."
+msgstr "Загрузка прошла удачно."
+
+#: twitter.php:181
+msgid "Error: moving file failed"
+msgstr "Ошибка: при перемещении файла произошла ошибка"
+
+#: twitter.php:184
+msgid "Error: check image width or height"
+msgstr "Ошибка: Проверьте ширину и высоту изображения"
+
+#: twitter.php:188
+msgid "Uploading Error: check image properties"
+msgstr "Ошибка загрузки: Проверьте опции изображения"
+
+#: twitter.php:204
+#: twitter.php:408
+#: twitter.php:421
+msgid "Settings"
+msgstr "Настройки"
+
+#: twitter.php:205
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+#: twitter.php:206
+#: twitter.php:422
+msgid "FAQ"
+msgstr "FAQ"
+
+#: twitter.php:207
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: twitter.php:211
+msgid "Notice:"
+msgstr "Внимание:"
+
+#: twitter.php:211
+msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
+msgstr "Настройки плагина были изменены. Для того, чтобы сохранить их, пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+
+#: twitter.php:217
+msgid "Settings for the button \"Follow Me\""
+msgstr "Настройки для кнопки \"Follow Me\""
+
+#: twitter.php:221
+msgid "Enter your username"
+msgstr "Введите ваш логин"
+
+#: twitter.php:225
+msgid "If you do not have Twitter account yet, you should create it using this link"
+msgstr "Если у вас еще нет аккаунта на Twitter, вам надо создать его, перейдя по этой ссылке"
+
+#: twitter.php:226
+msgid "Paste the shortcode &lsqb;follow_me&rsqb; into the necessary page or post to use the \"Follow Me\" button."
+msgstr "Добавьте шорткод &lsqb;follow_me&rsqb; в контент страницы или поста, где вы хотите вывести кнопку \"Follow Me\"."
+
+#: twitter.php:227
+msgid "If you would like to use this button in some other place, please paste this line into the template source code"
+msgstr "Если вы хотите использовать данную кнопку в другом месте, пожалуйста, добавьте данную строку в код нужного темплейта"
+
+#: twitter.php:232
+msgid "Choose display settings"
+msgstr "Выбор опций отображения"
+
+#: twitter.php:237
+msgid "Standard button"
+msgstr "Стандартная кнопка"
+
+#: twitter.php:238
+msgid "Custom button"
+msgstr "Пользовательская кнопка"
+
+#: twitter.php:241
+msgid "To use custom image You need to setup permissions to upload directory of your site"
+msgstr "Для того, чтобы использовать кастомное изображение, Вам необходимо выставить необходимые права для папки загрузок Вашего сайта"
+
+#: twitter.php:250
+msgid "Current image"
+msgstr "Текущее изображение"
+
+#: twitter.php:258
+msgid "\"Follow Me\" image"
+msgstr "\"Follow Me\" изображение"
+
+#: twitter.php:262
+msgid "Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:\"jpg\", \"jpeg\"."
+msgstr "Опции изображения для загрузки: максимальная ширина:100px; максимальная высота:100px; максимальный размер:32Kb; тип файла:\"jpg\", \"jpeg\"."
+
+#: twitter.php:269
+msgid "Settings for the \"Twitter\" button"
+msgstr "Настройки для кнопки \"Twitter\""
+
+#: twitter.php:272
+msgid "Disable the \"Twitter\" button"
+msgstr "Отключить кнопку \"Twitter\""
+
+#: twitter.php:275
+msgid "The button \"T\" will not be displayed. Just the shortcode &lsqb;follow_me&rsqb; will work."
+msgstr "Кнопка \"T\" не будет отображаться. Будет работать только шорткод &lsqb;follow_me&rsqb;."
+
+#: twitter.php:280
+msgid "The \"Twitter\" icon position"
+msgstr "Выбор позиции для иконки \"Twitter\""
+
+#: twitter.php:284
+msgid "Before"
+msgstr "Перед"
+
+#: twitter.php:285
+msgid "After"
+msgstr "После"
+
+#: twitter.php:286
+msgid "Before And After"
+msgstr "Перед и после"
+
+#: twitter.php:288
+msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
+msgstr "При нажатии этой иконки пользователь добавляет на свою  twitter страницу статью, которая им нравится, а также ссылку на него."
+
+#: twitter.php:294
+#: twitter.php:327
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: twitter.php:309
+msgid "Please choose the necessary post types (or single pages) where Twitter button will be displayed:"
+msgstr "Пожалуйста, выберите те типы постов (или отдельные страницы), где будут отображатся кнопки Twitter:"
+
+#: twitter.php:316
+msgid "Show URL for pages"
+msgstr "Отображать URL для страниц"
+
+#: twitter.php:322
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: twitter.php:332
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#: twitter.php:339
+msgid "Unlock premium options by upgrading to a PRO version."
+msgstr "Активируйте премиум опции обновившись до PRO версии."
+
+#: twitter.php:340
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: twitter.php:343
+msgid "Go"
+msgstr "Перейти на"
+
+#: twitter.php:383
+msgid "Click here if you like this article."
+msgstr "Кликай, если понравилась данная статья."
+
+#: twitter.php:423
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "Top position"
+#~ msgstr "Позиция вверху"
+
+#~ msgid "Bottom position"
+#~ msgstr "Позиция внизу"
+
+#~ msgid "Twitter"
+#~ msgstr "Twitter"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому он был деактивирован! Пожалуйста обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Вернуться к WordPress на"
+
+#~ msgid "Plugins page"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "Wrong license key"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later. If the error will appear again, "
+#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
+#~ "a>. We are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, "
+#~ "пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries. Please, "
+#~ "upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "Не удалось открыть архив ZIP. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr ""
+#~ "Ваш сервер не поддерживает ни библиотеку ZipArchive, ни библиотеку Phar. "
+#~ "Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Не удалось загрузить архив плагина. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvienience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже или загрузите плагин "
+#~ "вручную. Приносим извинения за неудобства."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr " Если вам понравился плагин то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#~ msgid ""
+#~ "Congratulations! The PRO version of the plugin is successfully download "
+#~ "and activated."
+#~ msgstr ""
+#~ "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+
+#~ msgid "Please, go to"
+#~ msgstr "Пожалуйста, перейдите на"
+
+#~ msgid "the setting page"
+#~ msgstr "страницу настроек"
+
+#~ msgid "You will be redirected automatically in 5 seconds."
+#~ msgstr "Вы будете перенаправлены автоматически через 5 секунд."
+
+#~ msgid "You can download and activate"
+#~ msgstr "Вы можете скачать и активировать"
+
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "версию этого плагина, введя ваш лицензионный ключ."
+
+#~ msgid ""
+#~ "You can find your license key on your personal page Client area, by "
+#~ "clicking on the link"
+#~ msgstr ""
+#~ "Вы можете найти ваш лицензионный ключ на вашей личной странице Client "
+#~ "area, нажав на ссылку"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
+#~ "продукта)"
+
+#~ msgid "Go!"
+#~ msgstr "Перейти!"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid ""
+#~ "It's time to upgrade your <strong>Twitter</strong> to <strong>PRO</"
+#~ "strong> version"
+#~ msgstr ""
+#~ "Пора обновить ваш <strong>плагин Twitter</strong> до <strong>PRO</strong> "
+#~ "версии"
+
+#~ msgid "Extend standard plugin functionality with new great options"
+#~ msgstr "Расширение стандартного функционала плагина новыми опциями"
+
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
+#~ "информации смотрите"

@@ -1,0 +1,24 @@
+/*
+* Plugin css
+*/
+.gglplsn_share,
+.twttr_button,
+.fcbk_share {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	line-height: inherit;
+	height: auto;
+}
+.gglplsn_share {
+	position: relative;
+	max-width: 65px;
+}
+.gglplsn_share div,
+.twttr_button img,
+.fcbk_share img,
+.fcbk_like .fb_iframe_widget span {
+	vertical-align: top !important;
+}
+.fcbk_button a {
+	height: auto;
+}
