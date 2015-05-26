@@ -37,3 +37,7 @@
 .fcbk_button a img {
 	display: inline-block !important;
 }
+.fcbk_share img,
+.fcbk_like .fb_iframe_widget span {
+    vertical-align: top !important;
+}

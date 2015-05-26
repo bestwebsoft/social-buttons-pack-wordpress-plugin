@@ -1,10 +1,10 @@
 ﻿=== Social Buttons Pack by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=94
+Donate link: http://bestwebsoft.com/donate/
 Tags: button, buton, batton, button like, follow, follow button, like, like button, my page button, share, share button, social, social button, social account, facebook, facebook account button, facebook button, facebook button language, facebook button icon, facebook button like, facebook button share, facebook ID, facebook page, facebook like, facebook like button, facebook share, facebook share button, add twitter button, connect, tvet, tvett, tvit, tviter, tvitt, tweet, tweeter, tweetter, twet, tweter, twett, twit, twiter, twiter conect, twitt, twitter button display, twitter connect, twitter follow, twitter follow button, twitter like, twitter like button, twitter plugin, twitter share, twitter share button,add google +1 button, google +1, goggle +1, gogole +1, googgle +1, google +1 button, google +1 button in posts, google +1 button in pages, google +1 button like, google +1 button share, google +1 like, google +1 like button, google +1 like count, google search engine, google +1 plugin, google +1 share, google +1 share button, recommend post on google+
 Requires at least: 3.1
-Tested up to: 4.1.2
-Stable tag: 1.0.0
+Tested up to: 4.2.2
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,9 @@ Add Social buttons to your WordPress website.
 
 == Description ==
 
-If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1 ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons. 
+If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1 ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
+
+http://www.youtube.com/watch?v=3FxIReS0hP4 
 
 <a href="http://wordpress.org/plugins/social-buttons-pack/faq/" target="_blank">FAQ</a>
 
@@ -72,6 +74,7 @@ For correct work of the Google +1 buttons do not use it locally and on a free ho
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
@@ -84,13 +87,18 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 3. Plugin settings page: Google+1
 4. Displaying Social Buttons in your post.
 
-
 == Changelog ==
+
+= V1.0.1 - 26.05.2015 =
+* Update : We updated all functionality for wordpress 4.2.2.
 
 = V1.0.0 - 23.04.2015 =
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.1 =
+We updated all functionality for wordpress 4.2.2.
 
 = V1.0.0 =
 We updated all functionality for wordpress 4.1.2.

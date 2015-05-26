@@ -5,99 +5,99 @@ msgstr ""
 "POT-Creation-Date: 2015-05-18 12:22+0300\n"
 "PO-Revision-Date: 2015-05-18 12:22+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
-"Language-Team: nasrulhaq <nasrulhaq81@gmail.com>\n"
-"Language: es_ES\n"
+"Language-Team: Juhani Honkanen <juhani.honkanen@dnainternet.net>\n"
+"Language: fi_FI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: facebook-button-plugin.php:32
 #: facebook-button-plugin.php:234
 msgid "Facebook Button Settings"
-msgstr "Pengaturan Facebook Button"
+msgstr "Facebook Napin asetukset"
 
 #: facebook-button-plugin.php:162
 msgid "Settings saved"
-msgstr "Simpan Pengaturan"
+msgstr "Asetukset tallennettu"
 
 #: facebook-button-plugin.php:189
 msgid "Error: File size > 32K"
-msgstr "SALAH: Ukuran file lebih besar dari 32KB"
+msgstr "Virhe: Tiedoston koko > 32K"
 
 #: facebook-button-plugin.php:192
 msgid "Error: Invalid file type"
-msgstr "SALAH: Tipe data tidak benar"
+msgstr "Virhe: Väärä tiedostotyyppi"
 
 #: facebook-button-plugin.php:198
 msgid "Upload successful."
-msgstr ""
+msgstr "Lataaminen onnistui"
 
 #: facebook-button-plugin.php:208
 msgid "Error: moving file failed"
-msgstr "Salah: gagal memindahkan data"
+msgstr "Virhe: tiedoston siirto epäonnistui"
 
 #: facebook-button-plugin.php:211
 msgid "Error: check image width or height"
-msgstr "Salah: periksa lebar atau panjang gambar"
+msgstr "Virhe: tarkista kuvan leveys tai korkeus"
 
 #: facebook-button-plugin.php:215
 msgid "Uploading Error: check image properties"
-msgstr "Gagal Mengunggah: periksa properti gambar"
+msgstr "Virhe latauksessa: tarkista kuvan ominaisuudet"
 
 #: facebook-button-plugin.php:236
 #: facebook-button-plugin.php:581
 #: facebook-button-plugin.php:595
 msgid "Settings"
-msgstr "Pengaturan"
+msgstr "Asetukset"
 
 #: facebook-button-plugin.php:237
-#, fuzzy
 msgid "Extra settings"
-msgstr "Pengaturan"
+msgstr "Lisää asetuksia"
 
 #: facebook-button-plugin.php:238
 #: facebook-button-plugin.php:596
 msgid "FAQ"
-msgstr "SSS (SÄ±k Sorulan Sorular)"
+msgstr "FAQ"
 
 #: facebook-button-plugin.php:239
 msgid "Go PRO"
-msgstr ""
+msgstr "Hanki PRO versio"
 
 #: facebook-button-plugin.php:243
 msgid "Notice:"
-msgstr ""
+msgstr "Huomautus:"
 
 #: facebook-button-plugin.php:243
 msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
-msgstr ""
+msgstr "Lisäosan asetukset ovat muuttuneet: Mikäli haluat säilyttää uudet asetukset muista klikata Tallenna Asetukset nappia."
 
 #: facebook-button-plugin.php:249
 #, fuzzy
 msgid "Your Facebook ID or username"
-msgstr " ID Facebook:"
+msgstr "Sinun Facebook ID:si tai käyttäjänimesi:"
 
 #: facebook-button-plugin.php:255
 #, fuzzy
 msgid "Display button"
-msgstr "Tampilan tombol:"
+msgstr "Näytä nappi:"
 
 #: facebook-button-plugin.php:257
 msgid "My Page"
-msgstr "Halamanku"
+msgstr "Minun sivuni"
 
 #: facebook-button-plugin.php:258
 msgid "Like"
-msgstr "Suka"
+msgstr "Tykkää"
 
 #: facebook-button-plugin.php:259
 msgid "Share"
-msgstr ""
+msgstr "Jaa"
 
 #: facebook-button-plugin.php:264
 msgid "\"My page\" button image"
@@ -105,197 +105,145 @@ msgstr ""
 
 #: facebook-button-plugin.php:269
 msgid "Standard Facebook image"
-msgstr "Standar gambar Facebook "
+msgstr "Standardi Facebook kuva"
 
 #: facebook-button-plugin.php:270
 msgid "Custom Facebook image"
-msgstr "Kustom Gambar Facebook "
+msgstr "Mukautettu Fecabook kuva"
 
 #: facebook-button-plugin.php:273
 msgid "To use custom image you need to setup permissions to upload directory of your site"
-msgstr ""
+msgstr "Käyttääksesi mukautettua, kuva pitää voida ladata hakemistoosi"
 
 #: facebook-button-plugin.php:280
 #, fuzzy
 msgid "Current image"
-msgstr "Gambar tertentu:"
+msgstr "Nykyinen kuva:"
 
 #: facebook-button-plugin.php:288
 msgid "Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
-msgstr "properti gambar: lebar gambar maks:100px; panjang gambar maks:40px; ukuran gambar maks:32Kb; tipe gambar:\"jpg\",\"jpeg\", \"png\"."
+msgstr "Kuvan ominaisuudet: max leveys 100px; max korkeus 40px; max koko 32Kb; kuvan tyypit:\"jpg\", \"jpeg\", \"png\"."
 
 #: facebook-button-plugin.php:293
 #, fuzzy
 msgid "Facebook buttons position"
-msgstr "Posisi Tombol Facebook"
+msgstr "Facebook napin paikka:"
 
 #: facebook-button-plugin.php:297
 msgid "Before"
-msgstr "Sebelum"
+msgstr "Ennen"
 
 #: facebook-button-plugin.php:298
 msgid "After"
-msgstr "Setelah"
+msgstr "Jälkeen"
 
 #: facebook-button-plugin.php:299
 msgid "Before and After"
-msgstr "Sebelum dan Setelah"
+msgstr "Ennen ja Jälkeen"
 
 #: facebook-button-plugin.php:300
 msgid "Shortcode"
-msgstr "Kode Pendek"
+msgstr "Lyhytkoodi"
 
 #: facebook-button-plugin.php:302
 msgid "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:"
-msgstr "Jika anda ingin menambahkan tombol Facebook di website anda, cukup salin kode singkat kedalam posting atau page anda:"
+msgstr "Mikäli haluat lisätä Facebook napin sivullesi, kopioi ja liitä tämä lyhytkoodi artikkeliisi tai sivullesi:"
 
 #: facebook-button-plugin.php:307
 #, fuzzy
 msgid "Facebook buttons language"
-msgstr "Bahasa Facebook Button:"
+msgstr "Facebook Napin kieli:"
 
 #: facebook-button-plugin.php:318
 msgid "Change the language of Facebook Like Button"
-msgstr "Ubah bahasa Facebook Like Button"
+msgstr "Vaihda Facebook napin kieli"
 
 #: facebook-button-plugin.php:322
+#, fuzzy
 msgid "Html tag for \"Like\" button"
-msgstr ""
+msgstr "HTML tagi Tykkää Napille:"
 
 #: facebook-button-plugin.php:326
 msgid "Use this tag to improve validation of your site"
-msgstr ""
+msgstr "Käytä tätä tagia parantamaan sivusi näkyvyyttä"
 
 #: facebook-button-plugin.php:336
 msgid "\"Like\" for an entire site on every page:"
-msgstr ""
+msgstr "\"Like\" koko sivustolle ja kaikille sivuille:"
 
 #: facebook-button-plugin.php:338
 msgid "Notice: \"Like for the entire site\" option does not create an extra button. This option merely allows your users to like the entire website when this option is enabled, or a single post when this option is disabled, when clicking the regular \"Like\" button."
-msgstr ""
+msgstr "Huomautus: \"Tykkää koko sivustosta\" tämä valinta ei tee ylimääräistä nappia. Tämä valinnan avulla käyttäjät tykkäävät koko sivustosta. Mikäli ei ole valittu, niin käyttäjä tykkää vain yhdestä sivusta klikatessaan \"Tykkää\" nappia."
 
 #: facebook-button-plugin.php:343
 #: facebook-button-plugin.php:398
 msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr ""
+msgstr "Mikäli päivität Pro versioon, kaikki asetuksesi tallennetaan."
 
 #: facebook-button-plugin.php:350
 #: facebook-button-plugin.php:405
 msgid "Unlock premium options by upgrading to a PRO version."
-msgstr ""
+msgstr "Ota käyttöön premium valinnat päivittämällä PRO versioon."
 
 #: facebook-button-plugin.php:351
 #: facebook-button-plugin.php:406
 msgid "Learn More"
-msgstr ""
+msgstr "Lue Lisää"
 
 #: facebook-button-plugin.php:354
 #: facebook-button-plugin.php:409
 msgid "Go"
-msgstr ""
+msgstr "Mene"
 
 #: facebook-button-plugin.php:362
 #: facebook-button-plugin.php:393
 msgid "Save Changes"
-msgstr "Simpan Perubahan"
+msgstr "Tallenna muutokset"
 
 #: facebook-button-plugin.php:375
 msgid "Please choose the necessary post types (or single pages) where Facebook button will be displayed:"
-msgstr ""
+msgstr "Valitse haluamasi viestin tyyppi (tai yksittäiset sivut) joissa Facebook nappi näytetään:"
 
 #: facebook-button-plugin.php:382
 msgid "Show URL for pages"
-msgstr ""
+msgstr "Näytä URL sivuilla"
 
 #: facebook-button-plugin.php:388
 msgid "Example of the site's pages tree"
-msgstr ""
+msgstr "Esimerkki sivuston sivuhakemistosta"
 
 #: facebook-button-plugin.php:388
 msgid "Example of site pages' tree"
-msgstr ""
+msgstr "Esimerkki sivun sivuhakemistosta"
 
 #: facebook-button-plugin.php:597
 msgid "Support"
-msgstr "Dukungan"
+msgstr "Tuki"
 
 #~ msgid "Choose display settings:"
-#~ msgstr "Ubah pengaturan tampilan"
+#~ msgstr "Valitse näyttö asetukset:"
 
 #~ msgid "Facebook image:"
-#~ msgstr "Gambar Facebook:"
+#~ msgstr "Facebook kuva:"
 
 #~ msgid "Facebook Button"
-#~ msgstr "Tombol Facebook"
+#~ msgstr "Facebook Nappi"
 
 #~ msgid "requires"
-#~ msgstr "membutuhkan"
+#~ msgstr "vaadittu"
 
 #~ msgid ""
 #~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
 #~ "and try again."
 #~ msgstr ""
-#~ "atau lebih tinggi, itulah mengapa di nonaktifkan! Harap tingkatkan versi "
-#~ "Wordpress dan coba lagi"
+#~ "tai suurempi, siksi sen aktivointi on poistettu! Ole hyvä ja päivitä "
+#~ "WordPress ja yritä uudelleen."
 
 #~ msgid "Back to the WordPress"
-#~ msgstr "Kembali ke Wordpress"
+#~ msgstr "Takaisin Wordpressiin"
 
 #~ msgid "Plugins page"
-#~ msgstr "Halaman Plugin"
+#~ msgstr "Lisäosat sivu"
 
-#, fuzzy
-#~ msgid "Rate the plugin"
-#~ msgstr "Eklenti Ã–nerileri"
-
-#, fuzzy
 #~ msgid "the setting page"
-#~ msgstr "Simpan Pengaturan"
-
-#~ msgid "Activated plugins"
-#~ msgstr "Aktif Eklentiler"
-
-#~ msgid "Read more"
-#~ msgstr "DevamÄ±nÄ± Oku"
-
-#~ msgid "Installed plugins"
-#~ msgstr "YÃ¼klÃ¼ eklentiler"
-
-#~ msgid "Recommended plugins"
-#~ msgstr "Eklenti Ã–nerileri"
-
-#~ msgid "Download"
-#~ msgstr "Ä°ndir"
-
-#~ msgid "Install %s"
-#~ msgstr "%s 'i yÃ¼kle"
-
-#~ msgid "Install now from wordpress.org"
-#~ msgstr "wordpress.org'dan yÃ¼kle"
-
-#, fuzzy
-#~ msgid "Active Plugins"
-#~ msgstr "Aktif Eklentiler"
-
-#, fuzzy
-#~ msgid "Inactive Plugins"
-#~ msgstr "Aktif Eklentiler"
-
-#, fuzzy
-#~ msgid "Send to support"
-#~ msgstr "Destek"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
-#~ "or fill out the contact form on our website"
-#~ msgstr ""
-#~ "Sormak istediÄŸiniz herhangi bir sorunuz varsa bize plugin@bestwebsoft."
-#~ "com adresine e-posta atarak ya da sitemizdeki iletiÅŸim formunu "
-#~ "kullanarak ulaÅŸabilirsiniz."
-
-#~ msgid "Options saved."
-#~ msgstr "DeÄŸiÅŸiklikler Kaydedildi."
-
-#~ msgid "Install Now"
-#~ msgstr "Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ ÑÐµÐ¹Ñ‡Ð°Ñ"
+#~ msgstr "asetukset sivu"

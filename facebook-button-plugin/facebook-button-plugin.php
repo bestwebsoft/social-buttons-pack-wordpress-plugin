@@ -177,68 +177,65 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 				<form method="post" action="" enctype="multipart/form-data" id="fcbkbttn_settings_form" class="bws_settings_form">
 					<table class="form-table">
 						<tr valign="top">
-							<th scope="row"><?php _e( "Your Facebook ID or username:", 'facebook' ); ?></th>
+							<th scope="row"><?php _e( 'Your Facebook ID or username', 'facebook' ); ?></th>
 							<td>
 								<input name='fcbkbttn_link' type='text' value='<?php echo $fcbkbttn_options['link']; ?>' />
 							</td>
 						</tr>
 						<tr valign="top">
-							<th scope="row"><?php _e( "Display button:", 'facebook' ); ?></th>
+							<th scope="row"><?php _e( 'Display button', 'facebook' ); ?></th>
 							<td>
 								<label><input name='fcbkbttn_my_page' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['my_page'] ) echo 'checked="checked "'; ?>/> <?php _e( "My Page", 'facebook' ); ?></label><br />
 								<label><input name='fcbkbttn_like' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['like'] ) echo 'checked="checked "'; ?>/> <?php _e( "Like", 'facebook' ); ?></label><br />
 								<label><input name='fcbkbttn_share' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['share'] ) echo 'checked="checked "'; ?>/> <?php _e( "Share", 'facebook' ); ?></label>
 							</td>
 						</tr>
-						<tr>
+						<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
 							<th>
-								<?php _e( "Choose display settings:", 'facebook' ); ?>
+								<?php _e( '"My page" button image', 'facebook' ); ?>
 							</th>
 							<td>
 								<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
-									<select name="fcbkbttn_display_option" onchange="if ( this . value == 'custom' ) { getElementById ( 'fcbkbttn_display_option_custom' ) . style.display = 'table-row'; } else { getElementById ( 'fcbkbttn_display_option_custom' ) . style.display = 'none'; }">
-										<option <?php if ( 'standard' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="standard"><?php _e( "Standard Facebook image", 'facebook' ); ?></option>
-										<option <?php if ( 'custom' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( "Custom Facebook image", 'facebook' ); ?></option>
+									<select name="fcbkbttn_display_option">
+										<option <?php if ( 'standard' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="standard"><?php _e( 'Standard Facebook image', 'facebook' ); ?></option>
+										<option <?php if ( 'custom' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( 'Custom Facebook image', 'facebook' ); ?></option>
 									</select>
 								<?php } else {
-									echo __( "To use custom image you need to setup permissions to upload directory of your site", 'facebook' ) . " - " .$upload_dir['basedir'];
+									echo __( 'To use custom image you need to setup permissions to upload directory of your site', 'facebook' ) . " - " . $upload_dir['basedir'];
 								} ?>
 							</td>
 						</tr>
-						<tr>
-							<th>
-								<?php _e( "Current image:", 'facebook' ); ?>
-							</th>
+						<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
+							<th></th>
 							<td>
-								<img src="<?php echo $fcbkbttn_options['fb_img_link']; ?>" style="margin-left:2px;" />
+								<?php _e( 'Current image', 'facebook' ); ?>: 
+								<img src="<?php echo $fcbkbttn_options['fb_img_link']; ?>" style="vertical-align: middle;" />
 							</td>
-						</tr>
-						<tr id="fcbkbttn_display_option_custom" <?php if ( 'custom' == $fcbkbttn_options['display_option'] ) { echo ( 'style="display:table-row"' ); } else { echo ( 'style="display:none"' ); } ?>>
-							<th scope="row">
-								<?php _e( "Facebook image:", 'facebook' ); ?>
-							</th>
+						</tr>	
+						<tr class="fcbkbttn_my_page" id="fcbkbttn_display_option_custom" <?php if ( ! ( 1 == $fcbkbttn_options['my_page'] && 'custom' == $fcbkbttn_options['display_option'] ) ) echo 'style="display:none"'; ?>>
+							<th></th>
 							<td>
 								<input name="uploadfile" type="file" /><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:"jpg", "jpeg", "png".', 'facebook' ); ?></span>
+								<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:"jpg", "jpeg", "png".', 'facebook' ); ?></span>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<?php _e( "Facebook Button Position:", 'facebook' ); ?>
+								<?php _e( 'Facebook buttons position', 'facebook' ); ?>
 							</th>
 							<td>
-								<select name="fcbkbttn_where" onchange="if ( this . value == 'shortcode' ) { getElementById ( 'shortcode' ) . style.display = 'inline'; } else { getElementById ( 'shortcode' ) . style.display = 'none'; }">
+								<select name="fcbkbttn_where">
 									<option <?php if ( 'before' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="before"><?php _e( "Before", 'facebook' ); ?></option>
 									<option <?php if ( 'after' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="after"><?php _e( "After", 'facebook' ); ?></option>
 									<option <?php if ( 'beforeandafter' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="beforeandafter"><?php _e( "Before and After", 'facebook' ); ?></option>
 									<option <?php if ( 'shortcode' == $fcbkbttn_options['where'] ) echo 'selected="selected"'; ?> value="shortcode"><?php _e( "Shortcode", 'facebook' ); ?></option>
 								</select>
-								<span id="shortcode" style="color: rgb(136, 136, 136); font-size: 10px; <?php if ( $fcbkbttn_options['where'] == 'shortcode' ) { echo ( 'display:inline' ); } else { echo ( 'display:none' ); }?>"><?php _e( "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:", 'facebook' ); ?> [fb_button].</span>
+								<span id="fcbkbttn_shortcode" class="bws_info" <?php if ( $fcbkbttn_options['where'] != 'shortcode' ) echo 'style="display:none"'; ?> ><?php _e( "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:", 'facebook' ); ?> [fb_button].</span>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<?php _e( "Facebook Button language:", 'facebook' ); ?>
+								<?php _e( "Facebook buttons language", 'facebook' ); ?>
 							</th>
 							<td>
 								<select name="fcbkbttn_locale">
@@ -249,15 +246,15 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 									echo '>' . esc_html ( $val ) . '</option>';
 								} ?>
 								</select>
-								<span id="shortcode" style="color: rgb(136, 136, 136); font-size: 10px; display:inline"><?php _e( "Change the language of Facebook Like Button", 'facebook' ); ?></span>
+								<span class="bws_info"><?php _e( 'Change the language of Facebook Like Button', 'facebook' ); ?></span>
 							</td>
 						</tr>
 						<tr valign="top">
-							<th scope="row"><?php _e( "Html tag for Like Button:", 'facebook' ); ?></th>
+							<th scope="row"><?php _e( 'Html tag for "Like" button', 'facebook' ); ?></th>
 							<td>
 								<label><input name='fcbkbttn_html5' type='radio' value='0' <?php if ( 0 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;fb:like&gt;</code>"; ?></label><br />
 								<label><input name='fcbkbttn_html5' type='radio' value='1' <?php if ( 1 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;div&gt;</code>"; ?></label>
-								<span style="color: rgb(136, 136, 136); font-size: 10px; display:inline">(<?php _e( "Use this tag to improve validation of your site", 'facebook' ); ?>)</span>
+								<span class="bws_info">(<?php _e( "Use this tag to improve validation of your site", 'facebook' ); ?>)</span>
 							</td>
 						</tr>
 					</table>

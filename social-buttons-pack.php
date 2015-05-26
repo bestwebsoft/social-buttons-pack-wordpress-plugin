@@ -4,7 +4,7 @@ Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Social Buttons in to your site.
 Author: BestWebSoft
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
