@@ -23,7 +23,7 @@ if ( ! function_exists( 'fcbkbttn_init' ) ) {
 
 if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 	function fcbkbttn_settings() {
-		global $fcbkbttn_options, $fcbkbttn_plugin_info;
+		global $fcbkbttn_options, $fcbkbttn_plugin_info, $fcbkbttn_options_default;
 
 		$fcbkbttn_options_default = array(
 			'plugin_option_version' => $fcbkbttn_plugin_info["Version"],
@@ -75,7 +75,7 @@ if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 /* Function formed content of the plugin's admin page. */
 if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 	function fcbkbttn_settings_page() {
-		global $fcbkbttn_options, $wp_version, $fcbkbttn_plugin_info;
+		global $fcbkbttn_options, $wp_version, $fcbkbttn_plugin_info, $fcbkbttn_options_default;
 		$message = $error = "";
 		$upload_dir = wp_upload_dir();
 		$plugin_basename = plugin_basename( __FILE__ );
@@ -168,103 +168,102 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 		$lang_codes = array(
 			"af_ZA" => 'Afrikaans', "ar_AR" => 'العربية', "ay_BO" => 'Aymar aru', "az_AZ" => 'Azərbaycan dili', "be_BY" => 'Беларуская', "bg_BG" => 'Български', "bn_IN" => 'বাংলা', "bs_BA" => 'Bosanski', "ca_ES" => 'Català', "ck_US" => 'Cherokee', "cs_CZ" => 'Čeština', "cy_GB" => 'Cymraeg', "da_DK" => 'Dansk', "de_DE" => 'Deutsch', "el_GR" => 'Ελληνικά', "en_US" => 'English', "en_PI" => 'English (Pirate)', "eo_EO" => 'Esperanto', "es_CL" => 'Español (Chile)', "es_CO" => 'Español (Colombia)', "es_ES" => 'Español (España)', "es_LA" => 'Español', "es_MX" => 'Español (México)', "es_VE" => 'Español (Venezuela)', "et_EE" => 'Eesti', "eu_ES" => 'Euskara', "fa_IR" => 'فارسی', "fb_LT" => 'Leet Speak', "fi_FI" => 'Suomi', "fo_FO" => 'Føroyskt', "fr_CA" => 'Français (Canada)', "fr_FR" => 'Français (France)', "fy_NL" => 'Frysk', "ga_IE" => 'Gaeilge', "gl_ES" => 'Galego', "gn_PY" => "Avañe'ẽ", "gu_IN" => 'ગુજરાતી', "gx_GR" => 'Ἑλληνική ἀρχαία', "he_IL" => 'עברית', "hi_IN" => 'हिन्दी', "hr_HR" => 'Hrvatski', "hu_HU" => 'Magyar', "hy_AM" => 'Հայերեն', "id_ID" => 'Bahasa Indonesia', "is_IS" => 'Íslenska', "it_IT" => 'Italiano', "ja_JP" => '日本語', "jv_ID" => 'Basa Jawa', "ka_GE" => 'ქართული', "kk_KZ" => 'Қазақша', "km_KH" => 'ភាសាខ្មែរ', "kn_IN" => 'ಕನ್ನಡ', "ko_KR" => '한국어', "ku_TR" => 'Kurdî', "la_VA" => 'lingua latina', "li_NL" => 'Limburgs', "lt_LT" => 'Lietuvių', "lv_LV" => 'Latviešu', "mg_MG" => 'Malagasy', "mk_MK" => 'Македонски', "ml_IN" => 'മലയാളം', "mn_MN" => 'Монгол', "mr_IN" => 'मराठी', "ms_MY" => 'Bahasa Melayu', "mt_MT" => 'Malti', "nb_NO" => 'Norsk (bokmål)', "ne_NP" => 'नेपाली', "nl_BE" => 'Nederlands (België)', "nl_NL" => 'Nederlands', "nn_NO" => 'Norsk (nynorsk)', "pa_IN" => 'ਪੰਜਾਬੀ', "pl_PL" => 'Polski', "ps_AF" => 'پښتو', "pt_BR" => 'Português (Brasil)', "pt_PT" => 'Português (Portugal)', "qu_PE" => 'Qhichwa', "rm_CH" => 'Rumantsch', "ro_RO" => 'Română', "ru_RU" => 'Русский', "sa_IN" => 'संस्कृतम्', "se_NO" => 'Davvisámegiella', "sk_SK" => 'Slovenčina', "sl_SI" => 'Slovenščina', "so_SO" => 'Soomaaliga', "sq_AL" => 'Shqip', "sr_RS" => 'Српски', "sv_SE" => 'Svenska', "sw_KE" => 'Kiswahili', "sy_SY" => 'ܐܪܡܝܐ', "ta_IN" => 'தமிழ்', "te_IN" => 'తెలుగు', "tg_TJ" => 'тоҷикӣ', "th_TH" => 'ภาษาไทย', "tl_PH" => 'Filipino', "tl_ST" => 'tlhIngan-Hol', "tr_TR" => 'Türkçe', "tt_RU" => 'Татарча', "uk_UA" => 'Українська', "ur_PK" => 'اردو', "uz_UZ" => "O'zbek", "vi_VN" => 'Tiếng Việt', "yi_DE" => 'ייִדיש', "zh_CN" => '中文(简体)', "zh_HK" => '中文(香港)', "zh_TW" => '中文(台灣)', "zu_ZA" => 'isiZulu' 											
 		);
-
-		?>
+				?>
 					<div class="updated fade" <?php if ( empty( $message ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
 			<div id="fcbkbttn_settings_notice" class="updated fade bws_settings_form_notice" style="display:none"><p><strong><?php _e( "Notice:", 'facebook' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'facebook' ); ?></p></div>
 			<div class="error" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php ?>
-				<form method="post" action="" enctype="multipart/form-data" id="fcbkbttn_settings_form" class="bws_settings_form">
-					<table class="form-table">
-						<tr valign="top">
-							<th scope="row"><?php _e( 'Your Facebook ID or username', 'facebook' ); ?></th>
-							<td>
-								<input name='fcbkbttn_link' type='text' value='<?php echo $fcbkbttn_options['link']; ?>' />
-							</td>
-						</tr>
-						<tr valign="top">
-							<th scope="row"><?php _e( 'Display button', 'facebook' ); ?></th>
-							<td>
-								<label><input name='fcbkbttn_my_page' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['my_page'] ) echo 'checked="checked "'; ?>/> <?php _e( "My Page", 'facebook' ); ?></label><br />
-								<label><input name='fcbkbttn_like' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['like'] ) echo 'checked="checked "'; ?>/> <?php _e( "Like", 'facebook' ); ?></label><br />
-								<label><input name='fcbkbttn_share' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['share'] ) echo 'checked="checked "'; ?>/> <?php _e( "Share", 'facebook' ); ?></label>
-							</td>
-						</tr>
-						<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
-							<th>
-								<?php _e( '"My page" button image', 'facebook' ); ?>
-							</th>
-							<td>
-								<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
-									<select name="fcbkbttn_display_option">
-										<option <?php if ( 'standard' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="standard"><?php _e( 'Standard Facebook image', 'facebook' ); ?></option>
-										<option <?php if ( 'custom' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( 'Custom Facebook image', 'facebook' ); ?></option>
+					<form method="post" action="" enctype="multipart/form-data" id="fcbkbttn_settings_form" class="bws_settings_form">
+						<table class="form-table">
+							<tr valign="top">
+								<th scope="row"><?php _e( 'Your Facebook ID or username', 'facebook' ); ?></th>
+								<td>
+									<input name='fcbkbttn_link' type='text' maxlength='250' value='<?php echo $fcbkbttn_options['link']; ?>' />
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row"><?php _e( 'Display button', 'facebook' ); ?></th>
+								<td>
+									<label><input name='fcbkbttn_my_page' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['my_page'] ) echo 'checked="checked "'; ?>/> <?php _e( "My Page", 'facebook' ); ?></label><br />
+									<label><input name='fcbkbttn_like' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['like'] ) echo 'checked="checked "'; ?>/> <?php _e( "Like", 'facebook' ); ?></label><br />
+									<label><input name='fcbkbttn_share' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['share'] ) echo 'checked="checked "'; ?>/> <?php _e( "Share", 'facebook' ); ?></label>
+								</td>
+							</tr>
+							<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
+								<th>
+									<?php _e( '"My page" button image', 'facebook' ); ?>
+								</th>
+								<td>
+									<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
+										<select name="fcbkbttn_display_option">
+											<option <?php if ( 'standard' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="standard"><?php _e( 'Standard Facebook image', 'facebook' ); ?></option>
+											<option <?php if ( 'custom' == $fcbkbttn_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( 'Custom Facebook image', 'facebook' ); ?></option>
+										</select>
+									<?php } else {
+										echo __( 'To use custom image you need to setup permissions to upload directory of your site', 'facebook' ) . " - " . $upload_dir['basedir'];
+									} ?>
+								</td>
+							</tr>
+							<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
+								<th></th>
+								<td>
+									<?php _e( 'Current image', 'facebook' ); ?>: 
+									<img src="<?php echo $fcbkbttn_options['fb_img_link']; ?>" style="vertical-align: middle;" />
+								</td>
+							</tr>	
+							<tr class="fcbkbttn_my_page" id="fcbkbttn_display_option_custom" <?php if ( ! ( 1 == $fcbkbttn_options['my_page'] && 'custom' == $fcbkbttn_options['display_option'] ) ) echo 'style="display:none"'; ?>>
+								<th></th>
+								<td>
+									<input name="uploadfile" type="file" /><br />
+									<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:"jpg", "jpeg", "png".', 'facebook' ); ?></span>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<?php _e( 'Facebook buttons position', 'facebook' ); ?>
+								</th>
+								<td>
+									<select name="fcbkbttn_where">
+										<option <?php if ( 'before' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="before"><?php _e( "Before", 'facebook' ); ?></option>
+										<option <?php if ( 'after' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="after"><?php _e( "After", 'facebook' ); ?></option>
+										<option <?php if ( 'beforeandafter' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="beforeandafter"><?php _e( "Before and After", 'facebook' ); ?></option>
+										<option <?php if ( 'shortcode' == $fcbkbttn_options['where'] ) echo 'selected="selected"'; ?> value="shortcode"><?php _e( "Shortcode", 'facebook' ); ?></option>
 									</select>
-								<?php } else {
-									echo __( 'To use custom image you need to setup permissions to upload directory of your site', 'facebook' ) . " - " . $upload_dir['basedir'];
-								} ?>
-							</td>
-						</tr>
-						<tr class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
-							<th></th>
-							<td>
-								<?php _e( 'Current image', 'facebook' ); ?>: 
-								<img src="<?php echo $fcbkbttn_options['fb_img_link']; ?>" style="vertical-align: middle;" />
-							</td>
-						</tr>	
-						<tr class="fcbkbttn_my_page" id="fcbkbttn_display_option_custom" <?php if ( ! ( 1 == $fcbkbttn_options['my_page'] && 'custom' == $fcbkbttn_options['display_option'] ) ) echo 'style="display:none"'; ?>>
-							<th></th>
-							<td>
-								<input name="uploadfile" type="file" /><br />
-								<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:"jpg", "jpeg", "png".', 'facebook' ); ?></span>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<?php _e( 'Facebook buttons position', 'facebook' ); ?>
-							</th>
-							<td>
-								<select name="fcbkbttn_where">
-									<option <?php if ( 'before' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="before"><?php _e( "Before", 'facebook' ); ?></option>
-									<option <?php if ( 'after' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="after"><?php _e( "After", 'facebook' ); ?></option>
-									<option <?php if ( 'beforeandafter' == $fcbkbttn_options['where']  ) echo 'selected="selected"'; ?> value="beforeandafter"><?php _e( "Before and After", 'facebook' ); ?></option>
-									<option <?php if ( 'shortcode' == $fcbkbttn_options['where'] ) echo 'selected="selected"'; ?> value="shortcode"><?php _e( "Shortcode", 'facebook' ); ?></option>
-								</select>
-								<span id="fcbkbttn_shortcode" class="bws_info" <?php if ( $fcbkbttn_options['where'] != 'shortcode' ) echo 'style="display:none"'; ?> ><?php _e( "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:", 'facebook' ); ?> [fb_button].</span>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<?php _e( "Facebook buttons language", 'facebook' ); ?>
-							</th>
-							<td>
-								<select name="fcbkbttn_locale">
-								<?php foreach ( $lang_codes as $key => $val ) {
-									echo '<option value="' . $key . '"';
-									if ( $key == $fcbkbttn_options['locale'] )
-										echo ' selected="selected"';
-									echo '>' . esc_html ( $val ) . '</option>';
-								} ?>
-								</select>
-								<span class="bws_info"><?php _e( 'Change the language of Facebook Like Button', 'facebook' ); ?></span>
-							</td>
-						</tr>
-						<tr valign="top">
-							<th scope="row"><?php _e( 'Html tag for "Like" button', 'facebook' ); ?></th>
-							<td>
-								<label><input name='fcbkbttn_html5' type='radio' value='0' <?php if ( 0 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;fb:like&gt;</code>"; ?></label><br />
-								<label><input name='fcbkbttn_html5' type='radio' value='1' <?php if ( 1 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;div&gt;</code>"; ?></label>
-								<span class="bws_info">(<?php _e( "Use this tag to improve validation of your site", 'facebook' ); ?>)</span>
-							</td>
-						</tr>
-					</table>
-										<input type="hidden" name="fcbkbttn_form_submit" value="submit" />
-					<p class="submit">
-						<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'facebook' ); ?>" />
-					</p>
-					<?php wp_nonce_field( $plugin_basename, 'fcbkbttn_nonce_name' ); ?>
-				</form>
-					<?php }
+									<span id="fcbkbttn_shortcode" class="bws_info" <?php if ( $fcbkbttn_options['where'] != 'shortcode' ) echo 'style="display:none"'; ?> ><?php _e( "If you would like to add a Facebook button to your website, just copy and paste this shortcode into your post or page:", 'facebook' ); ?> [fb_button].</span>
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<?php _e( "Facebook buttons language", 'facebook' ); ?>
+								</th>
+								<td>
+									<select name="fcbkbttn_locale">
+									<?php foreach ( $lang_codes as $key => $val ) {
+										echo '<option value="' . $key . '"';
+										if ( $key == $fcbkbttn_options['locale'] )
+											echo ' selected="selected"';
+										echo '>' . esc_html ( $val ) . '</option>';
+									} ?>
+									</select>
+									<span class="bws_info"><?php _e( 'Change the language of Facebook Like Button', 'facebook' ); ?></span>
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row"><?php _e( 'Html tag for "Like" button', 'facebook' ); ?></th>
+								<td>
+									<label><input name='fcbkbttn_html5' type='radio' value='0' <?php if ( 0 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;fb:like&gt;</code>"; ?></label><br />
+									<label><input name='fcbkbttn_html5' type='radio' value='1' <?php if ( 1 == $fcbkbttn_options['html5'] ) echo 'checked="checked "'; ?> /><?php echo "<code>&lt;div&gt;</code>"; ?></label>
+									<span class="bws_info">(<?php _e( "Use this tag to improve validation of your site", 'facebook' ); ?>)</span>
+								</td>
+							</tr>
+						</table>
+												<input type="hidden" name="fcbkbttn_form_submit" value="submit" />
+						<p class="submit">
+							<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'facebook' ); ?>" />
+						</p>
+						<?php wp_nonce_field( $plugin_basename, 'fcbkbttn_nonce_name' ); ?>
+					</form>				
+						<?php }
 }
 
 /* Function taking from array 'fcbk_bttn_plgn_options' necessary information to create Facebook Button and reacting to your choise in plugin menu - points where it appears. */

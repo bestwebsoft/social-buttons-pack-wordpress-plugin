@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: button, buton, batton, button like, follow, follow button, like, like button, my page button, share, share button, social, social button, social account, facebook, facebook account button, facebook button, facebook button language, facebook button icon, facebook button like, facebook button share, facebook ID, facebook page, facebook like, facebook like button, facebook share, facebook share button, add twitter button, connect, tvet, tvett, tvit, tviter, tvitt, tweet, tweeter, tweetter, twet, tweter, twett, twit, twiter, twiter conect, twitt, twitter button display, twitter connect, twitter follow, twitter follow button, twitter like, twitter like button, twitter plugin, twitter share, twitter share button,add google +1 button, google +1, goggle +1, gogole +1, googgle +1, google +1 button, google +1 button in posts, google +1 button in pages, google +1 button like, google +1 button share, google +1 like, google +1 like button, google +1 like count, google search engine, google +1 plugin, google +1 share, google +1 share button, recommend post on google+
 Requires at least: 3.1
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,6 +15,8 @@ Add Social buttons to your WordPress website.
 If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1 ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
 
 http://www.youtube.com/watch?v=3FxIReS0hP4 
+
+<a href="http://www.youtube.com/watch?v=1PZPCL76aBk" target="_blank">Video instruction on Installation</a>
 
 <a href="http://wordpress.org/plugins/social-buttons-pack/faq/" target="_blank">FAQ</a>
 
@@ -50,6 +52,10 @@ We can fix some things for free for the users who provide translation of our plu
 1. Upload the folder `social-buttons-pack` to the directory `/wp-content/plugins/`.
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust the necessary settings in your WordPress admin panel - "BWS Plugins" > "Social Buttons".
+
+<a href="https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/edit" target="_blank">View a Step-by-step Instruction on Social Buttons Pack Installation</a>.
+
+http://www.youtube.com/watch?v=1PZPCL76aBk
 
 == Frequently Asked Questions ==
 
@@ -89,6 +95,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.0.2 - 07.07.2015 =
+* Update : The language files are updated in the plugin.
+* Update : BWS plugins section is updated.
+
 = V1.0.1 - 26.05.2015 =
 * Update : We updated all functionality for wordpress 4.2.2.
 
@@ -96,6 +106,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.2 =
+The language files are updated in the plugin. BWS plugins section is updated.
 
 = V1.0.1 =
 We updated all functionality for wordpress 4.2.2.

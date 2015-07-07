@@ -21,7 +21,7 @@ if ( ! function_exists( 'twttr_init' ) ) {
 /* Register settings for plugin */
 if ( ! function_exists( 'twttr_settings' ) ) {
 	function twttr_settings() {
-		global $twttr_options, $twttr_plugin_info;
+		global $twttr_options, $twttr_plugin_info, $twttr_options_default;
 
 		$twttr_options_default = array(
 			'plugin_option_version' => $twttr_plugin_info["Version"],
@@ -64,7 +64,7 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 /* Add Setting page */
 if ( ! function_exists( 'twttr_settings_page' ) ) {
 	function twttr_settings_page() {
-		global $twttr_options, $wp_version, $twttr_plugin_info, $title;
+		global $twttr_options, $wp_version, $twttr_plugin_info, $title, $twttr_options_default;
 		$message = $error = "";
 		$upload_dir = wp_upload_dir();
 		$plugin_basename = plugin_basename( __FILE__ );
@@ -137,99 +137,100 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 				}
 			}
 		}
-		?>
+
+				?>
 					
 			<div class="updated fade" <?php if ( empty( $message ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
 			<div id="twttr_settings_notice" class="updated fade bws_settings_form_notice" style="display:none"><p><strong><?php _e( "Notice:", 'twitter' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'twitter' ); ?></p></div>
 			<div class="error" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php ?>
-				<form method='post' action="" enctype="multipart/form-data" id="twttr_settings_form" class="bws_settings_form">
-					<table class="form-table">
-						<tr valign="top">
-							<th scope="row" colspan="2"><?php _e( 'Settings for the button "Follow Me"', 'twitter' ); ?>:</th>
-						</tr>
-						<tr valign="top">
-							<th scope="row">
-								<?php _e( "Enter your username", 'twitter' ); ?>
-							</th>
-							<td>
-								<input name='twttr_url_twitter' type='text' value='<?php echo $twttr_options['url_twitter'] ?>'/><br />
-								<span class="bws_info"><?php _e( 'If you do not have Twitter account yet, you should create it using this link', 'twitter' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
-								<span class="bws_info"><?php _e( 'Paste the shortcode &lsqb;follow_me&rsqb; into the necessary page or post to use the "Follow Me" button.', 'twitter' ); ?></span><br />
-								<span class="bws_info"><?php _e( 'If you would like to use this button in some other place, please paste this line into the template source code', 'twitter' ); ?>	&#60;?php if ( function_exists( 'twttr_follow_me' ) ) echo twttr_follow_me(); ?&#62;</span>
-							</td>
-						</tr>
-						<tr valign="top">
-							<th scope="row">
-								<?php _e( "Choose display settings", 'twitter' ); ?>
-							</th>
-							<td>
-								<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
-									<select name="twttr_display_option" onchange="if ( this . value == 'custom' ) { getElementById ( 'twttr_display_option_custom' ) . style.display = 'block'; } else { getElementById ( 'twttr_display_option_custom' ) . style.display = 'none'; }">
-										<option <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="standart"><?php _e( "Standard button", 'twitter' ); ?></option>
-										<option <?php if ( 'custom' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( "Custom button", 'twitter' ); ?></option>
+					<form method='post' action="" enctype="multipart/form-data" id="twttr_settings_form" class="bws_settings_form">
+						<table class="form-table">
+							<tr valign="top">
+								<th scope="row" colspan="2"><?php _e( 'Settings for the button "Follow Me"', 'twitter' ); ?>:</th>
+							</tr>
+							<tr valign="top">
+								<th scope="row">
+									<?php _e( "Enter your username", 'twitter' ); ?>
+								</th>
+								<td>
+									<input name='twttr_url_twitter' type='text' value='<?php echo $twttr_options['url_twitter'] ?>' maxlength='250' /><br />
+									<span class="bws_info"><?php _e( 'If you do not have Twitter account yet, you should create it using this link', 'twitter' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
+									<span class="bws_info"><?php _e( 'Paste the shortcode &lsqb;follow_me&rsqb; into the necessary page or post to use the "Follow Me" button.', 'twitter' ); ?></span><br />
+									<span class="bws_info"><?php _e( 'If you would like to use this button in some other place, please paste this line into the template source code', 'twitter' ); ?>	&#60;?php if ( function_exists( 'twttr_follow_me' ) ) echo twttr_follow_me(); ?&#62;</span>
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row">
+									<?php _e( "Choose display settings", 'twitter' ); ?>
+								</th>
+								<td>
+									<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
+										<select name="twttr_display_option" onchange="if ( this . value == 'custom' ) { getElementById ( 'twttr_display_option_custom' ) . style.display = 'block'; } else { getElementById ( 'twttr_display_option_custom' ) . style.display = 'none'; }">
+											<option <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="standart"><?php _e( "Standard button", 'twitter' ); ?></option>
+											<option <?php if ( 'custom' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( "Custom button", 'twitter' ); ?></option>
+										</select>
+									<?php } else {
+										echo __( "To use custom image You need to setup permissions to upload directory of your site", 'twitter' ) . " - " . $upload_dir['basedir'];
+									} ?>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div id="twttr_display_option_custom" <?php if ( 'custom' == $twttr_options['display_option'] ) { echo ( 'style="display:block"' ); } else { echo ( 'style="display:none"' ); } ?>>
+										<table>
+											<th style="padding-left:0px;font-size:13px;">
+												<?php _e( "Current image", 'twitter' ); ?>
+											</th>
+											<td>
+												<img src="<?php echo $twttr_options['img_link']; ?>" />
+											</td>
+										</table>
+										<table>
+											<th style="padding-left:0px;font-size:13px;">
+												<?php _e( '"Follow Me" image', 'twitter' ); ?>
+											</th>
+											<td>
+												<input type="file" name="upload_file" style="width:196px;" /><br />
+												<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:"jpg", "jpeg".', 'twitter' ); ?></span>
+											</td>
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row" colspan="2"><?php _e( 'Settings for the "Twitter" button', 'twitter' ); ?>:</th>
+							</tr>
+							<tr>
+								<th><?php _e( 'Disable the "Twitter" button', 'twitter' ); ?></th>
+								<td>
+									<input type="checkbox" name="twttr_disable" value="1" <?php if ( 1 == $twttr_options["disable"] ) echo "checked=\"checked\""; ?> />
+									<span class="bws_info"> <?php _e( 'The button "T" will not be displayed. Just the shortcode &lsqb;follow_me&rsqb; will work.', 'twitter' ); ?></span><br />
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<?php _e( 'The "Twitter" icon position', 'twitter' ); ?>
+								</th>
+								<td>
+									<select name="twttr_position">
+										<option value="before" <?php if ( 'before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'twitter' ); ?></option>
+										<option value="after" <?php if ( 'after' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'twitter' ); ?></option>
+										<option value="after_and_before" <?php if ( 'after_and_before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'twitter' ); ?></option>
 									</select>
-								<?php } else {
-									echo __( "To use custom image You need to setup permissions to upload directory of your site", 'twitter' ) . " - " . $upload_dir['basedir'];
-								} ?>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<div id="twttr_display_option_custom" <?php if ( 'custom' == $twttr_options['display_option'] ) { echo ( 'style="display:block"' ); } else { echo ( 'style="display:none"' ); } ?>>
-									<table>
-										<th style="padding-left:0px;font-size:13px;">
-											<?php _e( "Current image", 'twitter' ); ?>
-										</th>
-										<td>
-											<img src="<?php echo $twttr_options['img_link']; ?>" />
-										</td>
-									</table>
-									<table>
-										<th style="padding-left:0px;font-size:13px;">
-											<?php _e( '"Follow Me" image', 'twitter' ); ?>
-										</th>
-										<td>
-											<input type="file" name="upload_file" style="width:196px;" /><br />
-											<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:"jpg", "jpeg".', 'twitter' ); ?></span>
-										</td>
-									</table>
-								</div>
-							</td>
-						</tr>
-						<tr valign="top">
-							<th scope="row" colspan="2"><?php _e( 'Settings for the "Twitter" button', 'twitter' ); ?>:</th>
-						</tr>
-						<tr>
-							<th><?php _e( 'Disable the "Twitter" button', 'twitter' ); ?></th>
-							<td>
-								<input type="checkbox" name="twttr_disable" value="1" <?php if ( 1 == $twttr_options["disable"] ) echo "checked=\"checked\""; ?> />
-								<span class="bws_info"> <?php _e( 'The button "T" will not be displayed. Just the shortcode &lsqb;follow_me&rsqb; will work.', 'twitter' ); ?></span><br />
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<?php _e( 'The "Twitter" icon position', 'twitter' ); ?>
-							</th>
-							<td>
-								<select name="twttr_position">
-									<option value="before" <?php if ( 'before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'twitter' ); ?></option>
-									<option value="after" <?php if ( 'after' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'twitter' ); ?></option>
-									<option value="after_and_before" <?php if ( 'after_and_before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'twitter' ); ?></option>
-								</select>
-								<span class="bws_info"><?php _e( 'By clicking this icon a user can add the article he/she likes to his/her Twitter page.', 'twitter' ); ?></span><br />
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<input type="hidden" name="twttr_form_submit" value="submit" />
-								<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'twitter' ) ?>" />
-							</td>
-						</tr>
-					</table>
-					<?php wp_nonce_field( plugin_basename( __FILE__ ), 'twttr_nonce_name' ); ?>
-				</form>
-					<?php }
+									<span class="bws_info"><?php _e( 'By clicking this icon a user can add the article he/she likes to his/her Twitter page.', 'twitter' ); ?></span><br />
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="hidden" name="twttr_form_submit" value="submit" />
+									<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'twitter' ) ?>" />
+								</td>
+							</tr>
+						</table>
+						<?php wp_nonce_field( plugin_basename( __FILE__ ), 'twttr_nonce_name' ); ?>
+					</form>
+						<?php }
 }
 
 /* Function to creates shortcode [follow_me] */

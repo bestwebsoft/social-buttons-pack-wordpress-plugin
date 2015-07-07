@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-20 19:38+0300\n"
-"PO-Revision-Date: 2015-04-20 19:40+0300\n"
+"POT-Creation-Date: 2015-06-23 11:19+0300\n"
+"PO-Revision-Date: 2015-06-23 11:19+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -48,151 +48,155 @@ msgstr "Помилка: перевірте ширину або висоту зо
 msgid "Uploading Error: check image properties"
 msgstr "Помилка завантаження: перевірте властивості зображення"
 
-#: twitter.php:204
-#: twitter.php:408
-#: twitter.php:421
+#: twitter.php:198
+msgid "All plugin settings were restored."
+msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#: twitter.php:213
+#: twitter.php:422
+#: twitter.php:435
 msgid "Settings"
 msgstr "Установки"
 
-#: twitter.php:205
+#: twitter.php:214
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: twitter.php:206
-#: twitter.php:422
+#: twitter.php:215
+#: twitter.php:436
 msgid "FAQ"
 msgstr "Часті питання"
 
-#: twitter.php:207
+#: twitter.php:216
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: twitter.php:211
+#: twitter.php:220
 msgid "Notice:"
 msgstr "Нагадування:"
 
-#: twitter.php:211
+#: twitter.php:220
 msgid "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button."
 msgstr "Налаштування плагіну було змінено. Для того, щоб зберегти ці зміни, не забудьте нажати кнопку \"Зберегти зміни\"."
 
-#: twitter.php:217
+#: twitter.php:229
 msgid "Settings for the button \"Follow Me\""
 msgstr "Установки для кнопки \"Follow Me\""
 
-#: twitter.php:221
+#: twitter.php:233
 msgid "Enter your username"
 msgstr "Введіть ім'я користувача"
 
-#: twitter.php:225
+#: twitter.php:237
 msgid "If you do not have Twitter account yet, you should create it using this link"
 msgstr "Якщо ви ще не маєте акаунту Twitter, вам слід створити його, використовуючи це посилання"
 
-#: twitter.php:226
+#: twitter.php:238
 msgid "Paste the shortcode &lsqb;follow_me&rsqb; into the necessary page or post to use the \"Follow Me\" button."
 msgstr "Додайте шорткод &lsqb;follow_me&rsqb; в контент сторінки або поста, де ви хочете вивести кнопку \"Follow Me\"."
 
-#: twitter.php:227
+#: twitter.php:239
 msgid "If you would like to use this button in some other place, please paste this line into the template source code"
 msgstr "Якщо ви хочете використовувати цю кнопку в іншому місці, будь ласка, додайте цей рядок у вихідний код шаблону"
 
-#: twitter.php:232
+#: twitter.php:244
 msgid "Choose display settings"
 msgstr "Виберіть установки відображення"
 
-#: twitter.php:237
+#: twitter.php:249
 msgid "Standard button"
 msgstr "Стандартна кнопка"
 
-#: twitter.php:238
+#: twitter.php:250
 msgid "Custom button"
 msgstr "Кастомна кнопка"
 
-#: twitter.php:241
+#: twitter.php:253
 msgid "To use custom image You need to setup permissions to upload directory of your site"
 msgstr "Для того, щоб використовувати кастомне зображення, Вам потрібно встановити необхідні права для папки завантажень Вашого сайту"
 
-#: twitter.php:250
+#: twitter.php:262
 msgid "Current image"
 msgstr "Поточне зображення"
 
-#: twitter.php:258
+#: twitter.php:270
 msgid "\"Follow Me\" image"
 msgstr "Зображення \"Follow Me\""
 
-#: twitter.php:262
+#: twitter.php:274
 msgid "Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:\"jpg\", \"jpeg\"."
 msgstr "Властивості зображення: макс. ширина зображення: 100px; макс. висота зображення: 100px; макс. розмір зображення: 32Kb; типи зображень: \"jpg\", \"jpeg\"."
 
-#: twitter.php:269
+#: twitter.php:281
 msgid "Settings for the \"Twitter\" button"
 msgstr "Налаштування для кнопки \"Twitter\""
 
-#: twitter.php:272
+#: twitter.php:284
 msgid "Disable the \"Twitter\" button"
 msgstr "Вимкнути кнопку \"Twitter\""
 
-#: twitter.php:275
+#: twitter.php:287
 msgid "The button \"T\" will not be displayed. Just the shortcode &lsqb;follow_me&rsqb; will work."
 msgstr "Кнопка \"T\" не буде відображатися. Буде працювати тільки шорткод &lsqb;follow_me&rsqb;."
 
-#: twitter.php:280
+#: twitter.php:292
 msgid "The \"Twitter\" icon position"
 msgstr "Виберіть розташування піктограми \"Twitter\""
 
-#: twitter.php:284
+#: twitter.php:296
 msgid "Before"
 msgstr "До"
 
-#: twitter.php:285
+#: twitter.php:297
 msgid "After"
 msgstr "Після"
 
-#: twitter.php:286
+#: twitter.php:298
 msgid "Before And After"
 msgstr "До і після"
 
-#: twitter.php:288
+#: twitter.php:300
 msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
 msgstr "При натисканні на цю піктограму користувач може додати статтю, яка йому сподобалась, до своєї сторінки Twitter."
 
-#: twitter.php:294
-#: twitter.php:327
+#: twitter.php:306
+#: twitter.php:341
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: twitter.php:309
+#: twitter.php:323
 msgid "Please choose the necessary post types (or single pages) where Twitter button will be displayed:"
 msgstr "Будь ласка, оберіть необхідні типи постів (чи сторінок), де буде відображатися кнопка Twitter"
 
-#: twitter.php:316
+#: twitter.php:330
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: twitter.php:322
+#: twitter.php:336
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: twitter.php:332
+#: twitter.php:346
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
 
-#: twitter.php:339
+#: twitter.php:353
 msgid "Unlock premium options by upgrading to a PRO version."
 msgstr "Зробити доступними преміум-опції, перейшовши на PRO версію."
 
-#: twitter.php:340
+#: twitter.php:354
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: twitter.php:343
+#: twitter.php:357
 msgid "Go"
 msgstr "Перейти"
 
-#: twitter.php:383
+#: twitter.php:397
 msgid "Click here if you like this article."
 msgstr "Натисніть тут, якщо Вам сподобалася ця стаття."
 
-#: twitter.php:423
+#: twitter.php:437
 msgid "Support"
 msgstr "Підтримка"
 

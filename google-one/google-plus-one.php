@@ -25,7 +25,7 @@ if ( ! function_exists ( 'gglplsn_init' ) ) {
 
 if ( ! function_exists ( 'gglplsn_settings' ) ) {
 	function gglplsn_settings() {
-		global $gglplsn_options, $gglplsn_plugin_info;
+		global $gglplsn_options, $gglplsn_plugin_info, $gglplsn_option_defaults;
 
 		/* Default options */
 		$gglplsn_option_defaults	=	array(
@@ -56,7 +56,7 @@ if ( ! function_exists ( 'gglplsn_settings' ) ) {
 /* Add settings page in admin area */
 if ( ! function_exists( 'gglplsn_options' ) ) {
 	function gglplsn_options() {
-		global $gglplsn_options, $wp_version, $gglplsn_plugin_info;
+		global $gglplsn_options, $wp_version, $gglplsn_plugin_info, $gglplsn_option_defaults;
 		$message = $error = "";
 		$plugin_basename = plugin_basename( __FILE__ );
 
@@ -77,107 +77,109 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 			'af' => "Afrikaans", 'am' => "Amharic", 'ar' => "Arabic", 'eu' => "Basque", 'bn' => "Bengali", 'bg' => "Bulgarian", 'ca' => "Catalan", 'zh-HK' => "Chinese (Hong Kong)", 'zn-CH' => "Chinese (Simplified)", 'zh-TW' => "Chinese (Traditional)", 'hr' => "Croatian", 'cs' => "Czech", 'da' => "Danish", 'nl' => "Dutch", 'en-GB' => "English (UK)", 'en-US' => "English (US)", 'et' => "Estonian", 'fil' => "Filipino", 'fi' => "Finnish", 'fr' => "French", 'fr-CA' => "French (Canadian)", 'gl' => "Galician", 'de' => "German", 'el' => "Greek", 'gu' => "Gujarati", 'iw' => "Hebrew", 'hi' => "Hindi", 'hu' => "Hungarian", 'is' => "Icelandic", 'id' => "Indonesian", 'it' => "Italian", 'ja' => "Japanese", 'kn' => "Kannada", 'ko' => "Korean", 'lv' => "Latvian", 'lt' => "Lithuanian", 'ms' => "Malay", 'ml' => "Malayalam", 'mr' => "Marathi", 'no' => "Norwegian", 'fa' => "Persian", 'pl' => "Polish", 'pt-BR' => "Portuguese (Brazil)", 'pt-PT' => "Portuguese (Portugal)", 'ro' => "Romanian", 'ru' => "Russian", 'sr' => "Serbian", 'sk' => "Slovak", 'sl' => "Slovenian", 'es' => "Spanish", 'es-419' => "Spanish (Latin America)", 'sw' => "Swahili", 'sv' => "Swedish", 'ta' => "Tamil", 'te' => "Telugu", 'th' => "Thai", 'tr' => "Turkish", 'uk' => "Ukrainian", 'ur' => "Urdu", 'vi' => "Vietnamese", 'zu' => "Zulu"
 		);
 
+		
+
 		?>
 		
-			<div class="updated fade" <?php if ( ! ( isset( $_REQUEST['gglplsn_form_submit'] ) || isset( $_REQUEST['bws_license_submit'] ) ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+			<div class="updated fade" <?php if ( '' == $message || "" != $error ) echo 'style="display:none"'; ?>><p><strong><?php echo $message; ?></strong></p></div>
 			<div id="gglplsn_settings_notice" class="updated fade bws_settings_form_notice" style="display:none"><p><strong><?php _e( "Notice:", 'google_plus_one' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'google_plus_one' ); ?></p></div>
 			<div class="error" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php ?>
-				<p><?php _e( 'For the correct work of the button do not use it locally or on a free hosting', 'google_plus_one' ); ?><br /></p>
-				<p><?php _e( 'If you want to insert the button in any place on the site, please use the following code:', 'google_plus_one' ); ?> [bws_googleplusone]</p>
-				<form method="post" action="" id="gglplsn_settings_form" class="bws_settings_form">
-					<table class="form-table gglplsn_form-table">
-						<tbody>
-							<tr valign="top">
-								<th><?php _e( 'Enable Google +1 Button', 'google_plus_one' ); ?></th>
-								<td>
-									<label>
-										<input type="checkbox" name="gglplsn_js"<?php if ( '1' == $gglplsn_options['js'] ) echo 'checked="checked"'; ?> value="1" />
-										<span class="gglplsn_info">(<?php _e( 'Enable or Disable Google+1 JavaScript', 'google_plus_one' ); ?>)</span>
-									</label>
-								</td>
-							</tr>
-							<tr valign="top">
-								<th><?php _e( 'Show +1 count in the button', 'google_plus_one' ); ?></th>
-								<td>
-									<label>
-										<input type="checkbox" name="gglplsn_annotation" <?php if ( '1' == $gglplsn_options['annotation'] ) echo 'checked="checked"'; ?> value="1" />
-										<span class="gglplsn_info">(<?php _e( 'Display counters showing how many times your article has been liked', 'google_plus_one' ); ?>)</span>
-									</label>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><?php _e( 'Button Size', 'google_plus_one' ); ?></th>
-								<td class="gglplsn_no_padding">
-									<select name="gglplsn_size">
-										<option value="standart" <?php if ( 'standart' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Standart', 'google_plus_one' ); ?></option>
-										<option value="small" <?php if ( 'small' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Small', 'google_plus_one' ); ?></option>
-										<option value="medium" <?php if ( 'medium' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Medium', 'google_plus_one' ); ?></option>
-										<option value="tall" <?php if ( 'tall' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Tall', 'google_plus_one' ); ?></option>
-									</select>
-									<span class="gglplsn_info">(<?php _e( 'Please choose one of four different sizes of buttons', 'google_plus_one' ); ?>)</span>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><?php _e( 'Button Position', 'google_plus_one' ); ?></th>
-								<td class="gglplsn_no_padding">
-									<select name="gglplsn_position">
-										<option value="before_post" <?php if ( 'before_post' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'google_plus_one' ); ?></option>
-										<option value="after_post" <?php if ( 'after_post' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'google_plus_one' ); ?></option>
-										<option value="afterandbefore" <?php if ( 'afterandbefore' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'google_plus_one' ); ?></option>
-									</select>
-									<span class="gglplsn_info">(<?php _e( 'Please select location for the button on the page', 'google_plus_one' ); ?>)</span>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><?php _e( 'Language', 'google_plus_one' ); ?></th>
-								<td class="gglplsn_no_padding">
-									<select name="gglplsn_lang">
-										<?php foreach ( $lang_codes as $key => $val ) {
-											echo '<option value="' . $key . '"';
-											if ( $key == $gglplsn_options['lang'] )
-												echo ' selected="selected"';
-											echo '>' . esc_html ( $val ) . '</option>';
-										} ?>
-									</select>
-									<span class="gglplsn_info">(<?php _e( 'Select the language to display information on the button', 'google_plus_one' ); ?>)</span>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row"><?php _e( 'Show button', 'google_plus_one' ); ?></th>
-								<td>
-									<p>
+					<p><?php _e( 'For the correct work of the button do not use it locally or on a free hosting', 'google_plus_one' ); ?><br /></p>
+					<p><?php _e( 'If you want to insert the button in any place on the site, please use the following code:', 'google_plus_one' ); ?> [bws_googleplusone]</p>
+					<form method="post" action="" id="gglplsn_settings_form" class="bws_settings_form">
+						<table class="form-table gglplsn_form-table">
+							<tbody>
+								<tr valign="top">
+									<th><?php _e( 'Enable Google +1 Button', 'google_plus_one' ); ?></th>
+									<td>
 										<label>
-											<input type="checkbox" name="gglplsn_posts" <?php if ( '1' == $gglplsn_options['posts'] ) echo 'checked="checked"'; ?> value="1" />
-											<?php _e( 'Show in posts', 'google_plus_one' ); ?>
+											<input type="checkbox" name="gglplsn_js"<?php if ( '1' == $gglplsn_options['js'] ) echo 'checked="checked"'; ?> value="1" />
+											<span class="gglplsn_info">(<?php _e( 'Enable or Disable Google+1 JavaScript', 'google_plus_one' ); ?>)</span>
 										</label>
-									</p>
-									<p>
+									</td>
+								</tr>
+								<tr valign="top">
+									<th><?php _e( 'Show +1 count in the button', 'google_plus_one' ); ?></th>
+									<td>
 										<label>
-											<input type="checkbox" name="gglplsn_pages" <?php if ( '1' == $gglplsn_options['pages'] ) echo 'checked="checked"'; ?>  value="1" />
-											<?php _e( 'Show in pages', 'google_plus_one' ); ?>
+											<input type="checkbox" name="gglplsn_annotation" <?php if ( '1' == $gglplsn_options['annotation'] ) echo 'checked="checked"'; ?> value="1" />
+											<span class="gglplsn_info">(<?php _e( 'Display counters showing how many times your article has been liked', 'google_plus_one' ); ?>)</span>
 										</label>
-									</p>
-									<p>
-										<label>
-											<input type="checkbox" name="gglplsn_homepage" <?php if ( '1' == $gglplsn_options['homepage'] ) echo 'checked="checked"'; ?>  value="1" />
-											<?php _e( 'Show on the homepage', 'google_plus_one' ); ?>
-										</label>
-									</p>
-									<p>
-										<span class="gglplsn_info">(<?php _e( 'Please select the page on which you want to see the button', 'google_plus_one' ); ?>)</span>
-									</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<input type="hidden" name="gglplsn_form_submit" value="1" />
-					<p class="submit">
-						<input type="submit" value="<?php _e( 'Save Changes', 'google_plus_one' ); ?>" class="button-primary" />
-					</p>
-					<?php wp_nonce_field( $plugin_basename, 'gglplsn_nonce_name' ); ?>
-				</form>
-							
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><?php _e( 'Button Size', 'google_plus_one' ); ?></th>
+									<td class="gglplsn_no_padding">
+										<select name="gglplsn_size">
+											<option value="standart" <?php if ( 'standart' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Standart', 'google_plus_one' ); ?></option>
+											<option value="small" <?php if ( 'small' == $gglplsn_options['size'] ) echo 'selected="selected"';?>> <?php _e( 'Small', 'google_plus_one' ); ?></option>
+											<option value="medium" <?php if ( 'medium' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Medium', 'google_plus_one' ); ?></option>
+											<option value="tall" <?php if ( 'tall' == $gglplsn_options['size'] ) echo 'selected="selected"';?>><?php _e( 'Tall', 'google_plus_one' ); ?></option>
+										</select>
+										<span class="gglplsn_info">(<?php _e( 'Please choose one of four different sizes of buttons', 'google_plus_one' ); ?>)</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><?php _e( 'Button Position', 'google_plus_one' ); ?></th>
+									<td class="gglplsn_no_padding">
+										<select name="gglplsn_position">
+											<option value="before_post" <?php if ( 'before_post' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'google_plus_one' ); ?></option>
+											<option value="after_post" <?php if ( 'after_post' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'google_plus_one' ); ?></option>
+											<option value="afterandbefore" <?php if ( 'afterandbefore' == $gglplsn_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'google_plus_one' ); ?></option>
+										</select>
+										<span class="gglplsn_info">(<?php _e( 'Please select location for the button on the page', 'google_plus_one' ); ?>)</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><?php _e( 'Language', 'google_plus_one' ); ?></th>
+									<td class="gglplsn_no_padding">
+										<select name="gglplsn_lang">
+											<?php foreach ( $lang_codes as $key => $val ) {
+												echo '<option value="' . $key . '"';
+												if ( $key == $gglplsn_options['lang'] )
+													echo ' selected="selected"';
+												echo '>' . esc_html ( $val ) . '</option>';
+											} ?>
+										</select>
+										<span class="gglplsn_info">(<?php _e( 'Select the language to display information on the button', 'google_plus_one' ); ?>)</span>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><?php _e( 'Show button', 'google_plus_one' ); ?></th>
+									<td>
+										<p>
+											<label>
+												<input type="checkbox" name="gglplsn_posts" <?php if ( '1' == $gglplsn_options['posts'] ) echo 'checked="checked"'; ?> value="1" />
+												<?php _e( 'Show in posts', 'google_plus_one' ); ?>
+											</label>
+										</p>
+										<p>
+											<label>
+												<input type="checkbox" name="gglplsn_pages" <?php if ( '1' == $gglplsn_options['pages'] ) echo 'checked="checked"'; ?>  value="1" />
+												<?php _e( 'Show in pages', 'google_plus_one' ); ?>
+											</label>
+										</p>
+										<p>
+											<label>
+												<input type="checkbox" name="gglplsn_homepage" <?php if ( '1' == $gglplsn_options['homepage'] ) echo 'checked="checked"'; ?>  value="1" />
+												<?php _e( 'Show on the homepage', 'google_plus_one' ); ?>
+											</label>
+										</p>
+										<p>
+											<span class="gglplsn_info">(<?php _e( 'Please select the page on which you want to see the button', 'google_plus_one' ); ?>)</span>
+										</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<input type="hidden" name="gglplsn_form_submit" value="1" />
+						<p class="submit">
+							<input type="submit" value="<?php _e( 'Save Changes', 'google_plus_one' ); ?>" class="button-primary" />
+						</p>
+						<?php wp_nonce_field( $plugin_basename, 'gglplsn_nonce_name' ); ?>
+					</form>
+								
 	<?php }
 }
 
