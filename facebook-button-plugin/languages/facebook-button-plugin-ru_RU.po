@@ -1,0 +1,475 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: facebook-button-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-10-13 14:09+0300\n"
+"PO-Revision-Date: 2015-10-21 13:29+0300\n"
+"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-button-plugin.php:34 facebook-button-plugin.php:290
+msgid "Facebook Button Settings"
+msgstr "Настройки Facebook Button"
+
+#: facebook-button-plugin.php:212
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: facebook-button-plugin.php:238
+msgid "Error: File size > 32K"
+msgstr "Ошибка: Размер файла > 32К"
+
+#: facebook-button-plugin.php:241
+msgid "Error: Invalid file type"
+msgstr "Ошибка: Некорректный тип файла"
+
+#: facebook-button-plugin.php:247
+msgid "Upload successful."
+msgstr "Загрузка прошла удачно."
+
+#: facebook-button-plugin.php:257
+msgid "Error: moving file failed"
+msgstr "Ошибка: При перемещении произошла ошибка"
+
+#: facebook-button-plugin.php:260
+msgid "Error: check image width or height"
+msgstr "Ошибка: Проверьте ширину и высоту изображения"
+
+#: facebook-button-plugin.php:264
+msgid "Uploading Error: check image properties"
+msgstr "Ошибка загрузки: Проверьте опции изображения"
+
+#: facebook-button-plugin.php:277
+msgid "All plugin settings were restored."
+msgstr "Все настройки плагина восстановлены."
+
+#: facebook-button-plugin.php:292 facebook-button-plugin.php:783
+#: facebook-button-plugin.php:797
+msgid "Settings"
+msgstr "Настройки"
+
+#: facebook-button-plugin.php:293
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+#: facebook-button-plugin.php:294
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: facebook-button-plugin.php:297
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#: facebook-button-plugin.php:311
+#, php-format
+msgid ""
+"If you would like to add Facebook buttons to your page or post, please use "
+"%s button"
+msgstr ""
+"Если вы хотите добавить Facebook кнопки на вашу страницу или пост, то "
+"используйте кнопку %s"
+
+#: facebook-button-plugin.php:316
+#, php-format
+msgid ""
+"You can add Facebook buttons to your page or post by clicking on %s button "
+"in the content edit block using the Visual mode. If the button isn't "
+"displayed, please use the shortcode %s"
+msgstr ""
+"Вы можете добавить Facebook кнопки на вашу страницу или пост, нажав на "
+"кнопку %s в блоке редактирования контента в режиме Visual. Если кнопка не "
+"отображается, пожалуйста, используйте шорткод %s"
+
+#: facebook-button-plugin.php:327
+msgid "Display button"
+msgstr "Отображение кнопок"
+
+#: facebook-button-plugin.php:330
+msgid "My Page"
+msgstr "Моя страница"
+
+#: facebook-button-plugin.php:331 facebook-button-plugin.php:438
+msgid "Like"
+msgstr "Нравиться"
+
+#: facebook-button-plugin.php:332
+msgid "Share"
+msgstr "Поделиться"
+
+#: facebook-button-plugin.php:337
+msgid "Facebook buttons position"
+msgstr "Позиции Facebook кнопки"
+
+#: facebook-button-plugin.php:340
+msgid "Before"
+msgstr "Перед"
+
+#: facebook-button-plugin.php:341
+msgid "After"
+msgstr "После"
+
+#: facebook-button-plugin.php:342
+msgid "Before and After"
+msgstr "Перед и после"
+
+#: facebook-button-plugin.php:343
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: facebook-button-plugin.php:348
+msgid "Facebook buttons language"
+msgstr "Язык для Facebook кнопки"
+
+#: facebook-button-plugin.php:359
+msgid "Change the language of Facebook Button"
+msgstr "Выберите язык для Facebook кнопок"
+
+#: facebook-button-plugin.php:364 facebook-button-plugin.php:367
+#: facebook-button-plugin.php:372
+msgid "Use the current site language"
+msgstr "Использовать текущий язык сайта"
+
+#: facebook-button-plugin.php:364 facebook-button-plugin.php:368
+#: facebook-button-plugin.php:373
+msgid "Using"
+msgstr "Используя"
+
+#: facebook-button-plugin.php:368
+msgid "Activate"
+msgstr "Активировать"
+
+#: facebook-button-plugin.php:373
+msgid "Download"
+msgstr "Загрузить"
+
+#: facebook-button-plugin.php:380
+msgid "Display buttons in excerpt"
+msgstr "Отображать кнопки для цитаты"
+
+#: facebook-button-plugin.php:386
+msgid "Your Facebook ID or username"
+msgstr "Ваш Facebook ID или имя пользователя"
+
+#: facebook-button-plugin.php:393
+msgid "\"My page\" button image"
+msgstr "Изображение кнопки \"Моя страница\""
+
+#: facebook-button-plugin.php:398
+msgid "Standard Facebook image"
+msgstr "Стандартная картинка Facebook"
+
+#: facebook-button-plugin.php:399
+msgid "Custom Facebook image"
+msgstr "Пользовательская картинка Facebook"
+
+#: facebook-button-plugin.php:402
+msgid ""
+"To use custom image you need to setup permissions to upload directory of "
+"your site"
+msgstr ""
+"Для использования кастомного изображения Вам нужно выдать права доступа на "
+"папку загрузок на вашем сайте"
+
+#: facebook-button-plugin.php:409
+msgid "Current image"
+msgstr "Текущее изображение"
+
+#: facebook-button-plugin.php:417
+msgid ""
+"Image properties: max image width:100px; max image height:40px; max image "
+"size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+msgstr ""
+"Опции изображения для загрузки: максимальная ширина:100px; максимальная "
+"высота:40px; максимальный размер:32Kb; тип файла:\"jpg\", \"jpeg\", \"png\"."
+
+#: facebook-button-plugin.php:421
+msgid "Button layout"
+msgstr "Вид кнопок"
+
+#: facebook-button-plugin.php:435
+msgid "Like button action"
+msgstr "Действие кнопки \"Like\""
+
+#: facebook-button-plugin.php:439
+msgid "Recommend"
+msgstr "Рекомендую"
+
+#: facebook-button-plugin.php:444
+msgid "Show faces"
+msgstr "Показать лица"
+
+#: facebook-button-plugin.php:450
+msgid "Layout width"
+msgstr "Ширина блока"
+
+#: facebook-button-plugin.php:456
+msgid "Color scheme"
+msgstr "Цветовая схема"
+
+#: facebook-button-plugin.php:459
+msgid "Light"
+msgstr "Светлая"
+
+#: facebook-button-plugin.php:460
+msgid "Dark"
+msgstr "Тёмная"
+
+#: facebook-button-plugin.php:465
+msgid "Html tag for \"Like\" button"
+msgstr "Html тэг для кнопки \"Нравиться\""
+
+#: facebook-button-plugin.php:470
+msgid "Use this tag to improve validation of your site"
+msgstr "Используйте этот тэг для лучшей валидации вашего сайта"
+
+#: facebook-button-plugin.php:479 facebook-button-plugin.php:516
+msgid "Close"
+msgstr "Закрыть"
+
+#: facebook-button-plugin.php:483
+msgid "\"Like\" for an entire site on every page:"
+msgstr "Ставить \"Нравиться\"  всему сайту на каждой странице:"
+
+#: facebook-button-plugin.php:485
+msgid ""
+"Notice: \"Like for the entire site\" option does not create an extra button. "
+"This option merely allows your users to like the entire website when this "
+"option is enabled, or a single post when this option is disabled, when "
+"clicking the regular \"Like\" button."
+msgstr ""
+"Внимание: опция \"Нравиться для всего сайта\" - не создает  дополнительную "
+"кнопку. Эта опция позволяет при клике пользователями на стандартную кнопку "
+"ставить \"Нравиться\" для всего сайта, если эта опция включена, или "
+"\"Нравиться\" для отдельной записи, когда эта опция выключена."
+
+#: facebook-button-plugin.php:490 facebook-button-plugin.php:567
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#: facebook-button-plugin.php:497 facebook-button-plugin.php:525
+#: facebook-button-plugin.php:574
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#: facebook-button-plugin.php:499 facebook-button-plugin.php:527
+#: facebook-button-plugin.php:576
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: facebook-button-plugin.php:507 facebook-button-plugin.php:562
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: facebook-button-plugin.php:519
+msgid "Facebook Button preview:"
+msgstr "Предварительный просмотр Facebook кнопок"
+
+#: facebook-button-plugin.php:544
+msgid ""
+"Please choose the necessary post types (or single pages) where Facebook "
+"button will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
+"отображаться кнопки Facebook:"
+
+#: facebook-button-plugin.php:551
+msgid "Show URL for pages"
+msgstr "Отображать URL для страниц"
+
+#: facebook-button-plugin.php:557
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: facebook-button-plugin.php:557
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#: facebook-button-plugin.php:689
+msgid "Add Facebook buttons to your page or post"
+msgstr "Добавить Facebook кнопки на вашу страницу или пост"
+
+#: facebook-button-plugin.php:798
+msgid "FAQ"
+msgstr "FAQ"
+
+#: facebook-button-plugin.php:799
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "Notice:"
+#~ msgstr "Внимание:"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Настройки плагина были изменены. Для того, чтобы сохранить их, "
+#~ "пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+
+#~ msgid "pixels"
+#~ msgstr "px"
+
+#~ msgid "Go"
+#~ msgstr "Перейти на"
+
+#~ msgid "Are you sure you want to restore all settings by default?"
+#~ msgstr ""
+#~ "Вы уверены что хотите восстановить все настройки плагина к настройкам по-"
+#~ "умолчанию?"
+
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Да, восстановить все настройки"
+
+#~ msgid "No, go back to the settings page"
+#~ msgstr "Нет, вернутся на страницу настроек"
+
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Восстановить все настройки плагина к настройкам по-умолчанию"
+
+#~ msgid "Restore settings"
+#~ msgstr "Восстановить настройки"
+
+#~ msgid "Choose display settings:"
+#~ msgstr "Выбор опций отображения:"
+
+#~ msgid "Facebook image:"
+#~ msgstr "Facebook изображение:"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому он был деактивирован! Пожалуйста, обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Вернуться к WordPress на"
+
+#~ msgid "Plugins page"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "Wrong license key"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later. If the error will appear again, "
+#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
+#~ "a>. We are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, "
+#~ "пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries. Please, "
+#~ "upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "Не удалось открыть архив ZIP. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr ""
+#~ "Ваш сервер не поддерживает ни библиотеку ZipArchive, ни библиотеку Phar. "
+#~ "Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr ""
+#~ "Не удалось загрузить архив плагина. Пожалуйста, загрузите плагин вручную"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvienience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Повторите попытку позже или загрузите плагин "
+#~ "вручную. Приносим извинения за неудобства."
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr " Если вам понравился плагин то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#~ msgid ""
+#~ "Congratulations! The PRO version of the plugin is successfully download "
+#~ "and activated."
+#~ msgstr ""
+#~ "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+
+#~ msgid "Please, go to"
+#~ msgstr "Пожалуйста, перейдите на"
+
+#~ msgid "You will be redirected automatically in 5 seconds."
+#~ msgstr "Вы будете перенаправлены автоматически через 5 секунд."
+
+#~ msgid "You can download and activate"
+#~ msgstr "Вы можете скачать и активировать"
+
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "версию этого плагина, введя ваш лицензионный ключ."
+
+#~ msgid ""
+#~ "You can find your license key on your personal page Client area, by "
+#~ "clicking on the link"
+#~ msgstr ""
+#~ "Вы можете найти ваш лицензионный ключ на вашей личной странице Client "
+#~ "area, нажав на ссылку"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
+#~ "продукта)."
+
+#~ msgid "Go!"
+#~ msgstr "Перейти!"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#~ msgid ""
+#~ "It's time to upgrade your <strong>Facebook Like Button</strong> to "
+#~ "<strong>PRO</strong> version"
+#~ msgstr ""
+#~ "Пора обновить ваш <strong>плагин Facebook Like Button</strong> до "
+#~ "<strong>PRO</strong> версии"
+
+#~ msgid "Extend standard plugin functionality with new great options"
+#~ msgstr "Расширение стандартного функционала плагина новыми опциями"
+
+#~ msgid ""
+#~ "This functionality is available in the Pro version of the plugin. For "
+#~ "more details, please follow the link"
+#~ msgstr ""
+#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
+#~ "информации смотрите"

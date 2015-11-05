@@ -1,13 +1,11 @@
 /*
 * Plugin styles
 */
-#fcbk_settings_form select,
-#fcbk_settings_form input[type="text"],
-#fcbk_settings_form input[type="file"] {
+#fcbkbttn_settings_form select,
+#fcbkbttn_settings_form input[type="text"],
+#fcbkbttn_settings_form input[type="file"],
+#fcbkbttn_settings_form input[type="number"] {
     min-width: 200px;
-}
-#fcbk_settings_form label code {
-	background: none;
 }
 .fcbk_share {
 	clear: both;
@@ -40,4 +38,24 @@
 .fcbk_share img,
 .fcbk_like .fb_iframe_widget span {
     vertical-align: top !important;
+}
+#fcbkbttn_id_option,
+#fcbkbttn_layout_option {
+	border-top: 1px solid #ccc;
+}
+#fcbkbttn_preview_content {
+	margin-left: 10px;
+}
+#fcbkbttn_preview_content h3 {
+    margin-top: 0;
+    padding-top: 1em;
+}
+#fcbkbttn_preview {
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+}
+#fcbkbttn_settings_form {
+    display: inline-block;
+    margin-right: 20px;
 }

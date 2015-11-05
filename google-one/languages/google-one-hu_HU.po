@@ -1,0 +1,268 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: google-one\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-05 11:50+0300\n"
+"PO-Revision-Date: 2015-11-05 11:50+0300\n"
+"Last-Translator: Áprily Péter <info@aprily.com>\n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: google-plus-one.php:34 google-plus-one.php:180
+msgid "Google +1 Settings"
+msgstr "Google +1 Beállítások"
+
+#: google-plus-one.php:156
+msgid "Settings saved"
+msgstr "Beállítások mentve"
+
+#: google-plus-one.php:167
+msgid "All plugin settings were restored."
+msgstr "Minden plugin beállítás visszaállítva."
+
+#: google-plus-one.php:182 google-plus-one.php:512 google-plus-one.php:525
+msgid "Settings"
+msgstr "Beállítások"
+
+#: google-plus-one.php:183
+msgid "Extra settings"
+msgstr "Extra beállítások"
+
+#: google-plus-one.php:184
+msgid "Go PRO"
+msgstr "Mehet a PRO"
+
+#: google-plus-one.php:197
+msgid ""
+"For the correct work of the button do not use it locally or on a free hosting"
+msgstr ""
+"A gomb megfelelő működéséhez ne használja helyileg vagy egy ingyenes "
+"tárhelyen"
+
+#: google-plus-one.php:200
+#, php-format
+msgid ""
+"If you would like to add Google +1 button to your page or post, please use "
+"%s button"
+msgstr ""
+
+#: google-plus-one.php:205
+#, php-format
+msgid ""
+"You can add Google +1 button to your page or post by clicking on %s button "
+"in the content edit block using the Visual mode. If the button isn't "
+"displayed, please use the shortcode %s"
+msgstr ""
+
+#: google-plus-one.php:216
+msgid "Enable Google +1 Button"
+msgstr "Google +1 gomb engedélyezése"
+
+#: google-plus-one.php:220
+msgid "Enable or Disable Google+1 JavaScript"
+msgstr "A Google +1 Javascript engedélyezése"
+
+#: google-plus-one.php:225
+msgid "Size"
+msgstr ""
+
+#: google-plus-one.php:228
+#, fuzzy
+msgid "Standard"
+msgstr "Standard"
+
+#: google-plus-one.php:229
+msgid "Small"
+msgstr "Kicsi"
+
+#: google-plus-one.php:230
+msgid "Medium"
+msgstr "Közepes"
+
+#: google-plus-one.php:231
+msgid "Tall"
+msgstr "Magas"
+
+#: google-plus-one.php:233
+msgid "Please choose one of four different sizes of buttons"
+msgstr "Kérjük válasszon egyet a gomb négy különböző méretéből"
+
+#: google-plus-one.php:237
+msgid "Annotation"
+msgstr ""
+
+#: google-plus-one.php:240
+msgid "Inline"
+msgstr ""
+
+#: google-plus-one.php:241
+msgid "Bubble"
+msgstr ""
+
+#: google-plus-one.php:242
+msgid "None"
+msgstr ""
+
+#: google-plus-one.php:244
+msgid "Display counters showing how many times your article has been liked"
+msgstr ""
+"Megjeleníti a számlálót, ami megmutatja, hogy a cikkét hányan kedvelték"
+
+#: google-plus-one.php:248
+msgid "Language"
+msgstr "Nyelv"
+
+#: google-plus-one.php:259
+msgid "Select the language to display information on the button"
+msgstr "Válassza ki a gombon megjelenő információ nyelvét"
+
+#: google-plus-one.php:264 google-plus-one.php:267 google-plus-one.php:272
+msgid "Use the current site language"
+msgstr ""
+
+#: google-plus-one.php:264 google-plus-one.php:268 google-plus-one.php:273
+msgid "Using"
+msgstr ""
+
+#: google-plus-one.php:268
+msgid "Activate"
+msgstr ""
+
+#: google-plus-one.php:273
+msgid "Download"
+msgstr ""
+
+#: google-plus-one.php:280
+msgid "Button Position"
+msgstr "Gomb pozíció"
+
+#: google-plus-one.php:283
+msgid "Before"
+msgstr "Előtte"
+
+#: google-plus-one.php:284
+msgid "After"
+msgstr "Utána"
+
+#: google-plus-one.php:285
+msgid "Before And After"
+msgstr "Előtte és utána"
+
+#: google-plus-one.php:287
+msgid "Please select location for the button on the page"
+msgstr "Kérjük válassza ki, hogy az oldalon hol jelenjen meg a gomb"
+
+#: google-plus-one.php:291
+msgid "Show button"
+msgstr "Gomb mutatása"
+
+#: google-plus-one.php:296
+msgid "Show in posts"
+msgstr "Mutassa a bejegyzésekben"
+
+#: google-plus-one.php:302
+msgid "Show in pages"
+msgstr "Mutassa az oldalakon"
+
+#: google-plus-one.php:308
+msgid "Show on the homepage"
+msgstr "Mutassa a főoldalon"
+
+#: google-plus-one.php:312
+msgid "Please select the page on which you want to see the button"
+msgstr "Kérjük válassza ki az oldalt, amelyiken látni szeretné a gombot"
+
+#: google-plus-one.php:322
+msgid "Close"
+msgstr ""
+
+#: google-plus-one.php:326
+msgid "\"+1\" for an entire site on every page"
+msgstr ""
+
+#: google-plus-one.php:329
+msgid ""
+"Notice: This option does not create an extra button. This option merely "
+"allows your users to +1 the entire website when this option is enabled, or a "
+"single post when this option is disabled, when clicking the regular \"+1\" "
+"button."
+msgstr ""
+
+#: google-plus-one.php:334 google-plus-one.php:370
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
+
+#: google-plus-one.php:341 google-plus-one.php:375
+#, fuzzy
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
+
+#: google-plus-one.php:343 google-plus-one.php:377
+msgid "Learn More"
+msgstr "Olvasson tovább"
+
+#: google-plus-one.php:350 google-plus-one.php:369
+msgid "Save Changes"
+msgstr "Változások mentése"
+
+#: google-plus-one.php:363
+msgid ""
+"Please choose the necessary post types (or single pages) where Google +1 "
+"button will be displayed:"
+msgstr ""
+"Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
+"ahol a Google +1 gomb megjelenjen:"
+
+#: google-plus-one.php:366
+msgid "Show URL for pages"
+msgstr "URL megjelenítése oldalakon"
+
+#: google-plus-one.php:368
+msgid "Example of the site's pages tree"
+msgstr "Példa az oldal lap struktúrájának fájára"
+
+#: google-plus-one.php:496
+msgid "Add Google +1 button to your page or post"
+msgstr ""
+
+#: google-plus-one.php:526
+msgid "FAQ"
+msgstr "Gy.I.K."
+
+#: google-plus-one.php:527
+msgid "Support"
+msgstr "Támogatás"
+
+#~ msgid "Notice:"
+#~ msgstr "Megjegyzés:"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "A plugin beállításai megváltoztak. A mentésükhöz ne felejtsen a "
+#~ "'Változások mentése' gombra kattintani."
+
+#~ msgid ""
+#~ "If you want to insert the button in any place on the site, please use the "
+#~ "following code:"
+#~ msgstr ""
+#~ "Ha be akarja illeszteni a gombot bárhova az oldalán, kérjük használja a "
+#~ "következő kódot:"
+
+#~ msgid "Show +1 count in the button"
+#~ msgstr "Mutassa a +1 számlálót a gombon"
+
+#~ msgid "Button Size"
+#~ msgstr "Gomb méret"
+
+#~ msgid "Go"
+#~ msgstr "Mehet"
