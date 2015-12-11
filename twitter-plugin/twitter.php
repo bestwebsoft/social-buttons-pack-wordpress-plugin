@@ -338,3 +338,5 @@ add_action( 'wp_enqueue_scripts', 'twttr_wp_head' );
 add_shortcode( 'follow_me', 'twttr_follow_me' );
 add_filter( 'widget_text', 'do_shortcode' );
 add_filter( 'the_content', "twttr_twit" );
+/* custom filter for bws button in tinyMCE */
+add_filter( 'bws_shortcode_button_content', 'twttr_shortcode_button_content' );

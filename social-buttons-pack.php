@@ -4,7 +4,7 @@ Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Social Buttons in to your site.
 Author: BestWebSoft
-Version: 1.0.3
+Version: 1.0.4
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -32,7 +32,7 @@ require_once( dirname( __FILE__ ) . '/google-one/google-plus-one.php' );
 
 if ( ! function_exists( 'sclbttns_add_pages' ) ) {
 	function sclbttns_add_pages() {
-		bws_add_general_menu( plugin_basename( __FILE__ ) );
+		bws_general_menu();
 		$settings = add_submenu_page( 'bws_plugins', __( 'Social Buttons Settings' ), 'Social Buttons', 'manage_options', "social-buttons.php", 'sclbttns_settings_page' );
 		add_action( 'load-' . $settings, 'sclbttns_add_tabs' );
 	}
@@ -106,7 +106,7 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
             $message = __( 'All plugin settings were restored.' );
         } ?>
         <div class="wrap">
-            <h2><?php _e( "Social Buttons Settings", 'facebook' ); ?></h2>
+            <h1><?php _e( "Social Buttons Settings" ); ?></h1>
             <h2 class="nav-tab-wrapper">
                 <a class="nav-tab<?php if ( ! isset( $_GET['action'] ) || ( isset( $_GET['action'] ) && 'facebook' == $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=facebook"><?php _e( 'Facebook' ); ?></a>
                 <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'twitter' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=twitter"><?php _e( 'Twitter' ); ?></a>

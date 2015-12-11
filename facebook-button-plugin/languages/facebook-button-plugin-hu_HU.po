@@ -1,71 +1,71 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: facebook\n"
+"Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 14:12+0300\n"
-"PO-Revision-Date: 2015-11-04 14:12+0300\n"
+"POT-Creation-Date: 2015-11-30 11:23+0300\n"
+"PO-Revision-Date: 2015-11-30 11:23+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
-"Language: ru_RU\n"
+"Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:34 facebook-button-plugin.php:293
+#: facebook-button-plugin.php:34 facebook-button-plugin.php:292
 msgid "Facebook Button Settings"
 msgstr "Facebook Gomb Beállítások"
 
-#: facebook-button-plugin.php:215
+#: facebook-button-plugin.php:214
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: facebook-button-plugin.php:241
+#: facebook-button-plugin.php:240
 msgid "Error: File size > 32K"
 msgstr "Hiba: File méret > 32k"
 
-#: facebook-button-plugin.php:244
+#: facebook-button-plugin.php:243
 msgid "Error: Invalid file type"
 msgstr "Hiba: Érvénytelen file típus"
 
-#: facebook-button-plugin.php:250
+#: facebook-button-plugin.php:249
 msgid "Upload successful."
 msgstr "A feltöltés sikeres."
 
-#: facebook-button-plugin.php:260
+#: facebook-button-plugin.php:259
 msgid "Error: moving file failed"
 msgstr "Hiba: file mozgatás sikertelen"
 
-#: facebook-button-plugin.php:263
+#: facebook-button-plugin.php:262
 msgid "Error: check image width or height"
 msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
 
-#: facebook-button-plugin.php:267
+#: facebook-button-plugin.php:266
 msgid "Uploading Error: check image properties"
 msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
 
-#: facebook-button-plugin.php:280
+#: facebook-button-plugin.php:279
 msgid "All plugin settings were restored."
 msgstr "Minden plugin paraméter visszaállítva."
 
-#: facebook-button-plugin.php:295 facebook-button-plugin.php:786
-#: facebook-button-plugin.php:800
+#: facebook-button-plugin.php:294 facebook-button-plugin.php:787
+#: facebook-button-plugin.php:801
 msgid "Settings"
 msgstr "Beállítások"
 
-#: facebook-button-plugin.php:296
+#: facebook-button-plugin.php:295
 msgid "Extra settings"
 msgstr "Extra beállítások"
 
-#: facebook-button-plugin.php:297
+#: facebook-button-plugin.php:296
 msgid "Go PRO"
 msgstr "PRO-ra váltás"
 
-#: facebook-button-plugin.php:300
+#: facebook-button-plugin.php:299
 msgid "Please, enable JavaScript in Your browser."
 msgstr ""
 
@@ -252,22 +252,22 @@ msgstr ""
 "kedveljék, ha ez a beállítás engedélyezett vagy egy egyedi bejegyzést, ha ez "
 "a beállítás kikapcsolt, ha a normál \"Like\" gombra kattintanak."
 
-#: facebook-button-plugin.php:493 facebook-button-plugin.php:570
+#: facebook-button-plugin.php:493 facebook-button-plugin.php:571
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
 
 #: facebook-button-plugin.php:500 facebook-button-plugin.php:528
-#: facebook-button-plugin.php:577
+#: facebook-button-plugin.php:578
 #, fuzzy
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
 
 #: facebook-button-plugin.php:502 facebook-button-plugin.php:530
-#: facebook-button-plugin.php:579
+#: facebook-button-plugin.php:580
 msgid "Learn More"
 msgstr "Olvasson tovább"
 
-#: facebook-button-plugin.php:510 facebook-button-plugin.php:565
+#: facebook-button-plugin.php:510 facebook-button-plugin.php:566
 msgid "Save Changes"
 msgstr "Változások mentése"
 
@@ -276,7 +276,7 @@ msgstr "Változások mentése"
 msgid "Facebook Button preview:"
 msgstr "Facebook Gomb Beállítások"
 
-#: facebook-button-plugin.php:547
+#: facebook-button-plugin.php:548
 msgid ""
 "Please choose the necessary post types (or single pages) where Facebook "
 "button will be displayed:"
@@ -284,28 +284,28 @@ msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Facebook gomb megjelenjen:"
 
-#: facebook-button-plugin.php:554
+#: facebook-button-plugin.php:555
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: facebook-button-plugin.php:560
+#: facebook-button-plugin.php:561
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: facebook-button-plugin.php:560
+#: facebook-button-plugin.php:561
 msgid "Example of site pages' tree"
 msgstr "Példa oldal lapjainak fa struktúrájára"
 
-#: facebook-button-plugin.php:692
+#: facebook-button-plugin.php:693
 #, fuzzy
 msgid "Add Facebook buttons to your page or post"
 msgstr "Facebook gombok helye"
 
-#: facebook-button-plugin.php:801
+#: facebook-button-plugin.php:802
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: facebook-button-plugin.php:802
+#: facebook-button-plugin.php:803
 msgid "Support"
 msgstr "Támogatás"
 
