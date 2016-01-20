@@ -4,12 +4,12 @@ Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Social Buttons in to your site.
 Author: BestWebSoft
-Version: 1.0.4
+Version: 1.0.5
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  Copyright 2015  BestWebSoft  ( http://support.bestwebsoft.com )
+/*  Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -113,7 +113,7 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
                 <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'google-one' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=google-one"><?php _e( 'Google+1' ); ?></a>
             </h2>
             <?php if ( ! empty( $message ) ) { ?>
-                <div class="updated fade"><p><strong><?php echo $message; ?></strong></p></div>
+                <div class="updated fade below-h2"><p><strong><?php echo $message; ?></strong></p></div>
             <?php }
             if ( isset( $_REQUEST['bws_restore_default'] ) && check_admin_referer( $plugin_basename, 'bws_settings_nonce_name' ) ) {
                 bws_form_restore_default_confirm( $plugin_basename );

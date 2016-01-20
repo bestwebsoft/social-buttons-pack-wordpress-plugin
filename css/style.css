@@ -2,7 +2,6 @@
 * Plugin css
 */
 .gglplsn_share,
-.twttr_button,
 .fcbk_share {
 	display: inline-block;
 	margin: 0 10px 0 0;
@@ -14,11 +13,22 @@
 	max-width: 65px;
 }
 .gglplsn_share div,
-.twttr_button img,
 .fcbk_share img,
 .fcbk_like .fb_iframe_widget span {
 	vertical-align: top !important;
 }
 .fcbk_button a {
 	height: auto;
+}
+.twttr_buttons {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	line-height: inherit;
+	height: auto;
+}
+.twttr_twitter,
+.twttr_followme,
+.twttr_hashtag,
+.twttr_mention {
+	vertical-align: text-bottom;
 }

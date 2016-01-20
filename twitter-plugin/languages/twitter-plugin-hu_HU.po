@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-04 17:03+0300\n"
-"PO-Revision-Date: 2015-11-04 17:03+0300\n"
+"POT-Creation-Date: 2016-01-04 12:55+0300\n"
+"PO-Revision-Date: 2016-01-04 12:55+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -21,100 +21,215 @@ msgstr ""
 msgid "Twitter Button Settings"
 msgstr "Twitter beállítások"
 
-#: twitter.php:152
+#: twitter.php:206
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: twitter.php:174
+#: twitter.php:228
 msgid "Error: File size > 32K"
 msgstr "Hiba: File méret > 32k"
 
-#: twitter.php:176
+#: twitter.php:230
 msgid "Error: Invalid file type"
 msgstr "Hiba: Érvénytelen file típus"
 
-#: twitter.php:193
-msgid "Upload successful."
+#: twitter.php:247
+#, fuzzy
+msgid "The upload was successful"
 msgstr "A feltöltés sikeres."
 
-#: twitter.php:195
-msgid "Error: moving file failed"
+#: twitter.php:249
+#, fuzzy
+msgid "Error: Failed to move file"
 msgstr "Hiba: file mozgatás sikertelen"
 
-#: twitter.php:198
+#: twitter.php:252
 msgid "Error: check image width or height"
 msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
 
-#: twitter.php:202
+#: twitter.php:256
 msgid "Uploading Error: check image properties"
 msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
 
-#: twitter.php:212
+#: twitter.php:266
 msgid "All plugin settings were restored."
 msgstr "Minden plugin paraméter visszaállítva."
 
-#: twitter.php:226 twitter.php:466 twitter.php:479
+#: twitter.php:280 twitter.php:846 twitter.php:859
 msgid "Settings"
 msgstr "Beállítások"
 
-#: twitter.php:227
+#: twitter.php:281
 msgid "Extra settings"
 msgstr "Extra beállítások"
 
-#: twitter.php:228
+#: twitter.php:282
 msgid "Go PRO"
 msgstr "PRO-ra váltás"
 
-#: twitter.php:241
+#: twitter.php:295
 #, php-format
 msgid ""
-"If you would like to add 'Follow Me' button to your page or post, please use "
-"%s button"
+"If you want to add twitter buttons to your page or post, please use %s button"
 msgstr ""
 
-#: twitter.php:246
+#: twitter.php:300
 #, php-format
 msgid ""
-"You can add 'Follow Me' button to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s"
+"You can add Twitter buttons to your page or post by clicking on %s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %s. Instead of asterisk, please add the necessary "
+"buttons separated by commas (Ex:"
 msgstr ""
 
-#: twitter.php:253
-msgid ""
-"If you would like to use this button in some other place, please paste this "
-"line into the template source code"
+#: twitter.php:313
+#, fuzzy
+msgid "Twitter buttons position"
+msgstr "A \"Twitter\" ikon helye"
+
+#: twitter.php:317
+msgid "Before"
+msgstr "Előtte"
+
+#: twitter.php:318
+msgid "After"
+msgstr "Utána"
+
+#: twitter.php:319
+msgid "Before And After"
+msgstr "Előtte és Utána"
+
+#: twitter.php:320
+msgid "Only shortcode"
 msgstr ""
-"Ha máshol szeretné használni ezt a gombot, másolja be ezt a sort a sablon "
-"forráskódjába"
 
-#: twitter.php:257
-msgid "Settings for the button \"Follow Me\""
-msgstr "A \"Follow Me\" gomb beállításai"
+#: twitter.php:325
+#, fuzzy
+msgid "Show button"
+msgstr "Egyéni gomb"
 
-#: twitter.php:261
-msgid "Enter your username"
+#: twitter.php:328
+msgid "Tweet (Share a link)"
+msgstr ""
+
+#: twitter.php:330 twitter.php:805
+#, fuzzy
+msgid "Follow me"
+msgstr "\"Follow Me\" kép"
+
+#: twitter.php:332 twitter.php:439 twitter.php:511 twitter.php:806
+msgid "Hashtag"
+msgstr ""
+
+#: twitter.php:334 twitter.php:807
+msgid "Mention"
+msgstr ""
+
+#: twitter.php:339
+msgid "Language"
+msgstr ""
+
+#: twitter.php:343
+msgid "Automatic"
+msgstr ""
+
+#: twitter.php:378
+msgid "Size"
+msgstr ""
+
+#: twitter.php:382
+msgid "Small"
+msgstr ""
+
+#: twitter.php:383
+msgid "Large"
+msgstr ""
+
+#: twitter.php:389
+msgid "Opt-out of tailoring Twitter"
+msgstr ""
+
+#: twitter.php:393
+msgid "For getting more information about this option, please,"
+msgstr ""
+
+#: twitter.php:393
+msgid "click here"
+msgstr ""
+
+#: twitter.php:398
+#, fuzzy
+msgid "Settings for the \"Tweet\" button"
+msgstr "A \"Twitter\" gomb beállításai"
+
+#: twitter.php:403 twitter.php:529
+msgid "Share URL"
+msgstr ""
+
+#: twitter.php:406 twitter.php:534
+msgid "the page URL"
+msgstr ""
+
+#: twitter.php:407 twitter.php:533
+msgid "home URL"
+msgstr ""
+
+#: twitter.php:412 twitter.php:519 twitter.php:560
+msgid "Tweet text"
+msgstr ""
+
+#: twitter.php:415 twitter.php:522 twitter.php:563
+msgid "the title of the page"
+msgstr ""
+
+#: twitter.php:422
+msgid "Via"
+msgstr ""
+
+#: twitter.php:426
+msgid "Tweet been received from the Twitter username"
+msgstr ""
+
+#: twitter.php:431 twitter.php:539 twitter.php:570
+msgid "Recommend"
+msgstr ""
+
+#: twitter.php:434 twitter.php:542 twitter.php:573
+msgid "Enter username of someone you recomend"
+msgstr ""
+
+#: twitter.php:447
+#, fuzzy
+msgid "Settings for the \"Follow me\" button"
+msgstr "A \"Twitter\" gomb beállításai"
+
+#: twitter.php:452
+#, fuzzy
+msgid "Your username"
 msgstr "Adja meg felhasználónevét"
 
-#: twitter.php:265
+#: twitter.php:456
 msgid ""
 "If you do not have Twitter account yet, you should create it using this link"
 msgstr ""
 "Ha még nincs Twitter fiókja, ezt a linket használva létre kell hoznia egyet"
 
-#: twitter.php:270
-msgid "Choose display settings"
-msgstr "A megjelenítás beállításainak kiválasztása"
+#: twitter.php:461
+#, fuzzy
+msgid "\"Follow me\" button image"
+msgstr "\"Follow Me\" kép"
 
-#: twitter.php:275
-msgid "Standard button"
+#: twitter.php:466
+#, fuzzy
+msgid "Standard image"
 msgstr "Normál gomb"
 
-#: twitter.php:276
-msgid "Custom button"
-msgstr "Egyéni gomb"
+#: twitter.php:467
+#, fuzzy
+msgid "Custom image"
+msgstr "Aktuális kép"
 
-#: twitter.php:279
+#: twitter.php:470
 msgid ""
 "To use custom image You need to setup permissions to upload directory of "
 "your site"
@@ -122,15 +237,11 @@ msgstr ""
 "Egyedi kép használatához az oldala feltöltési könyvtárához jogosultságot "
 "kell beállítania"
 
-#: twitter.php:288
+#: twitter.php:477
 msgid "Current image"
 msgstr "Aktuális kép"
 
-#: twitter.php:296
-msgid "\"Follow Me\" image"
-msgstr "\"Follow Me\" kép"
-
-#: twitter.php:300
+#: twitter.php:484
 msgid ""
 "Image properties: max image width:100px; max image height:100px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\"."
@@ -138,51 +249,60 @@ msgstr ""
 "Kép paraméterek: max kép szélesség: 100px; max kép magasság: 100px; max kép "
 "méret: 32Kb; kép típusok:\"jpg\", \"jpeg\"."
 
-#: twitter.php:307
-msgid "Settings for the \"Twitter\" button"
+#: twitter.php:489
+#, fuzzy
+msgid "Show username"
+msgstr "Adja meg felhasználónevét"
+
+#: twitter.php:497
+msgid "Show count"
+msgstr ""
+
+#: twitter.php:501
+msgid "Show the number of Twitter accounts following the specified account"
+msgstr ""
+
+#: twitter.php:506
+#, fuzzy
+msgid "Settings for the \"Hashtag\" button"
 msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:310
-msgid "Disable the \"Twitter\" button"
-msgstr "A \"Twitter\" gomb kikapcsolása"
-
-#: twitter.php:313
-msgid ""
-"The button \"T\" will not be displayed. Just the shortcode &lsqb;"
-"follow_me&rsqb; will work."
+#: twitter.php:532
+msgid "no URL"
 msgstr ""
-"A \"T\" gomb nem jelenik meg. Csak a &lsqb;follow_me&rsqb; shortkód fog "
-"működni."
 
-#: twitter.php:318
-msgid "The \"Twitter\" icon position"
-msgstr "A \"Twitter\" ikon helye"
+#: twitter.php:547
+#, fuzzy
+msgid "Settings for the \"Mention\" button"
+msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:322
-msgid "Before"
-msgstr "Előtte"
-
-#: twitter.php:323
-msgid "After"
-msgstr "Utána"
-
-#: twitter.php:324
-msgid "Before And After"
-msgstr "Előtte és Utána"
-
-#: twitter.php:326
-msgid ""
-"By clicking this icon a user can add the article he/she likes to his/her "
-"Twitter page."
+#: twitter.php:552
+msgid "Tweet to"
 msgstr ""
-"Az ikonra kattintva a felhasználó az általa kedvelt cikket hozzáadhatja a "
-"Twitter oldalához."
 
-#: twitter.php:332 twitter.php:366
+#: twitter.php:555
+#, fuzzy
+msgid "support"
+msgstr "Támogatás"
+
+#: twitter.php:579 twitter.php:632
 msgid "Save Changes"
 msgstr "Változások mentése"
 
-#: twitter.php:348
+#: twitter.php:589
+msgid "Preview"
+msgstr ""
+
+#: twitter.php:595 twitter.php:644
+#, fuzzy
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
+
+#: twitter.php:597 twitter.php:646
+msgid "Learn More"
+msgstr "Olvasson tovább"
+
+#: twitter.php:614
 #, fuzzy
 msgid ""
 "Please choose the necessary post types (or single pages) where Twitter "
@@ -191,45 +311,80 @@ msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Twitter gomb megjelenjen:"
 
-#: twitter.php:355
+#: twitter.php:621
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: twitter.php:361
+#: twitter.php:627
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: twitter.php:371
+#: twitter.php:637
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
 
-#: twitter.php:378
-#, fuzzy
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
-
-#: twitter.php:380
-msgid "Learn More"
-msgstr "Olvasson tovább"
-
-#: twitter.php:420
-msgid "Click here if you like this article."
-msgstr "Kattintson ide, ha tetszik a cikk."
-
-#: twitter.php:450
-#, fuzzy
-msgid "Insert the shortcode to use the \"Follow Me\" button."
+#: twitter.php:735
+msgid "TwitterStories"
 msgstr ""
-"Másolja be a &lsqb;follow_me&rsqb; shortkódot a megfelelő oldalra vagy "
-"bejegyzésbe a \"Follow Me\" gomb használatához."
 
-#: twitter.php:480
+#: twitter.php:803
+msgid "Please select twitter buttons which will be displayed"
+msgstr ""
+
+#: twitter.php:804
+msgid "Tweet"
+msgstr ""
+
+#: twitter.php:860
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: twitter.php:481
+#: twitter.php:861
 msgid "Support"
 msgstr "Támogatás"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you want to use this button in another place, please add this line to "
+#~ "the template source code"
+#~ msgstr ""
+#~ "Ha máshol szeretné használni ezt a gombot, másolja be ezt a sort a sablon "
+#~ "forráskódjába"
+
+#~ msgid "Enter your username"
+#~ msgstr "Adja meg felhasználónevét"
+
+#~ msgid "Settings for the button \"Follow Me\""
+#~ msgstr "A \"Follow Me\" gomb beállításai"
+
+#~ msgid "Choose display settings"
+#~ msgstr "A megjelenítás beállításainak kiválasztása"
+
+#~ msgid "Disable the \"Twitter\" button"
+#~ msgstr "A \"Twitter\" gomb kikapcsolása"
+
+#~ msgid ""
+#~ "The button \"T\" will not be displayed. Just the shortcode &lsqb;"
+#~ "follow_me&rsqb; will work."
+#~ msgstr ""
+#~ "A \"T\" gomb nem jelenik meg. Csak a &lsqb;follow_me&rsqb; shortkód fog "
+#~ "működni."
+
+#~ msgid ""
+#~ "By clicking this icon a user can add the article he/she likes to his/her "
+#~ "Twitter page."
+#~ msgstr ""
+#~ "Az ikonra kattintva a felhasználó az általa kedvelt cikket hozzáadhatja a "
+#~ "Twitter oldalához."
+
+#~ msgid "Click here if you like this article."
+#~ msgstr "Kattintson ide, ha tetszik a cikk."
+
+#, fuzzy
+#~ msgid "Insert the shortcode to use the \"Follow Me\" button."
+#~ msgstr ""
+#~ "Másolja be a &lsqb;follow_me&rsqb; shortkódot a megfelelő oldalra vagy "
+#~ "bejegyzésbe a \"Follow Me\" gomb használatához."
 
 #, fuzzy
 #~ msgid ""
