@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: add button, add social button, add social buttons, add fb button, add facebook social button, add facebook button, add fb share button, add facebook share button, add google share button, add google like button, add Google +1 button, add Twitter Button, advanced twitter, auto tweet, add social buttons,  add share button, batton, best facebook plugin, best fb like button, best facebook like button,  best google like button, best google +1 button, best google +1 share button, best google share button, best twitter, best twitter plugin, buton, button, button image, Button like, button position,  comments, connect, custom twitter, custom twitter feeds, easy twitter,  FB, fb button, fb like, fb like button, fb share, Facebook, Facebook account button, facebook button, facebook button icon, facebook button language, Facebook button like, Facebook button share, Facebook ID, facebook like, facebook like button, Facebook Page, facebook share, facebook share button, folow, follow button, free,  free google +1 button, free google like button, free google share button, free twitter plugin, free twitter buttons,  follow, follow button, follow me, follow us,  goggle +1, gogole +1, googgle +1, google +1, google +1 button, Google +1 button in pages, Google +1 button in posts, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google +1 plugin, google +1 share, Google +1 share button, Google search engine, google share button, google like button, google profile, icon, Like, like, likes, like button, live tweets,  live twitter feeds,  My Page button,  nice fb like button, nice facebook button, nice fb button, plugin, post, posts, recommend post, recommend post on Google+, simple fb plugin, simple facebook plugin, simple google +1 button, simple google +1 plugin, share, share button, share twitter, share buttons,  social plugin, social plugins, social account, social button, social bookmark, social bookmarking, social media publishing, social network, social network auto publish, Social Plugins, social profiles, social share,  tvet, tvett, tvit, tviter, tvitt, tweet, tweeter, tweetter, twet, tweter, twett, twit, twiter, twiter conect, twitt, twitter button display, twitter connect, twitter follow, twitter follow button, twitter fans, twitter favorites, twitter like button, twitter plugin, twitter share, twitter tool, twitter tools, Twitter Tweet, Twitter Tweet Button, twitter styling, twitter updates, twitter user tweets, twitter share button, twitter-like, twitter feed for wordpress, twitter feeds, twitter post, twitter posts, twitter profile, twitter social network, twitter super responsive,  wp plugin, wp social plugin, wordpress social plugin,  wp plugins, wp google +1 plugin, wordpress google +1 plugin,  wp twitter feeds, wp twitter feeds plugin, twitter-followers, WordPress Twitter, WordPress Twitter Plugin
 Requires at least: 3.8
-Tested up to: 4.4.1
-Stable tag: 1.0.5
+Tested up to: 4.4.2
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,6 +21,16 @@ http://www.youtube.com/watch?v=3FxIReS0hP4
 <a href="http://wordpress.org/plugins/social-buttons-pack/faq/" target="_blank">Social Buttons Pack by BestWebSoft FAQ</a>
 
 <a href="http://support.bestwebsoft.com" target="_blank">Social Buttons Pack by BestWebSoft Support</a>
+
+= Features =
+
+* Add Twitter, Facebook, Google+1 buttons in the easiest way.
+* Show Google Badge+1 on your site.
+* Select the button position: before the content, after the content or before and after.
+* Display buttons using a shortcode.
+* Configure the buttons according to your needs.
+
+If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">Suggest a Feature</a>
 
 = Recommended Plugins =
 
@@ -64,7 +74,7 @@ http://www.youtube.com/watch?v=1PZPCL76aBk
 
 In WordPress admin panel go to "Settings", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
 
-=  After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
+= After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
 
 1. In WordPress admin panel, please go to "BWS Plugins", find "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
 2. If you do not have Facebook account yet, you should create it using this link: http://www.facebook.com. After the account is created please follow the instructions above.
@@ -101,6 +111,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.0.6 - 23.03.2016 = 
+* NEW : Ability to add custom styles.
+* NEW : The Google+1 Share, Google+1 Follow, Google+1 Hangout Buttons were added. 
+* NEW : The Google+1 Badge was added. 
+* Update : Google+1 Button options ware changed. 
+* Bugfix : The conflict in the RSS feed was fixed.
+
 = V1.0.5 - 20.01.2016 =
 * NEW: "Hashtag", "Mention" Twitter buttons were added.
 * NEW: Options for twitter buttons were added: language, size, choosen URL, tweet text, via, tailoring, count.
@@ -129,6 +146,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.6 = 
+The Google+1 Share, Google+1 Follow, Google+1 Hangout Buttons were added. The Google+1 Badge was added. Google+1 Button options ware changed. Ability to add custom styles. The conflict in the RSS feed was fixed.
 
 = V1.0.5 =
 "Hashtag", "Mention" Twitter buttons were added. Options for twitter buttons were added: language, size, choosen URL, tweet text, via, tailoring, count. Shortcode [follow_me] was replaced by shortcode [twitter_buttons].

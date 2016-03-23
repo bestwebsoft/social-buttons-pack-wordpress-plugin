@@ -148,9 +148,9 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 			$fcbkbttn_options['width']           =   intval( $_REQUEST['fcbkbttn_width'] );
 			$fcbkbttn_options['locale']			 =	$_REQUEST['fcbkbttn_locale'];
 			$fcbkbttn_options['html5']			 = 	$_REQUEST['fcbkbttn_html5'];
-			if ( isset( $_FILES['uploadfile']['tmp_name'] ) &&  $_FILES['uploadfile']['tmp_name'] != "" ) {
+			if ( isset( $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) &&  $_FILES['fcbkbttn_uploadfile']['tmp_name'] != "" ) {
 				$fcbkbttn_options['count_icon']	 =	$fcbkbttn_options['count_icon'] + 1;
-				$file_ext = wp_check_filetype( $_FILES['uploadfile']['name'] );
+				$file_ext = wp_check_filetype( $_FILES['fcbkbttn_uploadfile']['name'] );
 				$fcbkbttn_options['extention']   = $file_ext['ext'];
 			}
 
@@ -163,7 +163,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 			update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
 			$message = __( "Settings saved", 'facebook-button-plugin' );
 			
-			if ( isset( $_FILES['uploadfile']['tmp_name'] ) &&  "" != $_FILES['uploadfile']['tmp_name'] ) {
+			if ( isset( $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) &&  "" != $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) {
 				if ( ! $upload_dir["error"] ) {
 					$fcbkbttn_cstm_mg_folder = $upload_dir['basedir'] . '/facebook-image';
 					if ( ! is_dir( $fcbkbttn_cstm_mg_folder ) ) {
@@ -176,16 +176,16 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 				$valid_types 		=	array( 'jpg', 'jpeg', 'png' );
 				/* Construction to rename downloading file */
 				$new_name			=	'facebook-ico' . $fcbkbttn_options['count_icon'];
-				$new_ext			=	wp_check_filetype( $_FILES['uploadfile']['name'] );
+				$new_ext			=	wp_check_filetype( $_FILES['fcbkbttn_uploadfile']['name'] );
 				$namefile			=	$new_name . '.' . $new_ext['ext'];
 				$uploadfile			=	$fcbkbttn_cstm_mg_folder . '/' . $namefile;
 
 				/* Checks is file download initiated by user */
-				if ( isset( $_FILES['uploadfile'] ) && 'custom' == $_REQUEST['fcbkbttn_display_option'] ) {
+				if ( isset( $_FILES['fcbkbttn_uploadfile'] ) && 'custom' == $_REQUEST['fcbkbttn_display_option'] ) {
 					/* Checking is allowed download file given parameters */
-					if ( is_uploaded_file( $_FILES['uploadfile']['tmp_name'] ) ) {
-						$filename	=	$_FILES['uploadfile']['tmp_name'];
-						$ext		=	substr( $_FILES['uploadfile']['name'], 1 + strrpos( $_FILES['uploadfile']['name'], '.' ) );
+					if ( is_uploaded_file( $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) ) {
+						$filename	=	$_FILES['fcbkbttn_uploadfile']['tmp_name'];
+						$ext		=	substr( $_FILES['fcbkbttn_uploadfile']['name'], 1 + strrpos( $_FILES['fcbkbttn_uploadfile']['name'], '.' ) );
 						if ( filesize( $filename ) > $max_image_size ) {
 							$error	=	__( "Error: File size > 32K", 'facebook-button-plugin' );
 						}
@@ -195,7 +195,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 							$size	=	GetImageSize( $filename );
 							if ( $size && $size[0] <= $max_image_width && $size[1] <= $max_image_height ) {
 								/* If file satisfies requirements, we will move them from temp to your plugin folder and rename to 'facebook_ico.jpg' */
-								if ( move_uploaded_file( $_FILES['uploadfile']['tmp_name'], $uploadfile ) ) {
+								if ( move_uploaded_file( $_FILES['fcbkbttn_uploadfile']['tmp_name'], $uploadfile ) ) {
 									$message .= '. ' . __( "Upload successful.", 'facebook-button-plugin' );
 									
 									if ( 'standard' == $fcbkbttn_options['display_option'] ) {
@@ -220,11 +220,11 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 		}
 
 		?>
-					<noscript><div class="error"><p><strong><?php _e( "Please, enable JavaScript in Your browser.", 'facebook-button-plugin' ); ?></strong></p></div></noscript>
-			<div class="updated fade" <?php if ( empty( $message ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
-			<div class="error" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
+					<noscript><div class="error below-h2"><p><strong><?php _e( "Please, enable JavaScript in Your browser.", 'facebook-button-plugin' ); ?></strong></p></div></noscript>
+			<div class="updated fade below-h2" <?php if ( empty( $message ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+			<div class="error below-h2" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php if ( ! empty( $hide_result['message'] ) ) { ?>
-				<div class="updated fade"><p><strong><?php echo $hide_result['message']; ?></strong></p></div>
+				<div class="updated fade below-h2"><p><strong><?php echo $hide_result['message']; ?></strong></p></div>
 			<?php }
 			bws_show_settings_notice();
 			?>
@@ -305,6 +305,9 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 										<input name='fcbkbttn_display_for_excerpt' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['display_for_excerpt'] ) echo 'checked="checked "'; ?>/>
 									</td>
 								</tr>
+							</table>
+								
+							<table class="form-table">
 								<tr id="fcbkbttn_id_option" class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
 									<th scope="row"><?php _e( 'Your Facebook ID or username', 'facebook-button-plugin' ); ?></th>
 									<td>
@@ -336,7 +339,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 								<tr class="fcbkbttn_my_page" id="fcbkbttn_display_option_custom" <?php if ( ! ( 1 == $fcbkbttn_options['my_page'] && 'custom' == $fcbkbttn_options['display_option'] ) ) echo 'style="display:none"'; ?>>
 									<th></th>
 									<td>
-										<input name="uploadfile" type="file" /><br />
+										<input name="fcbkbttn_uploadfile" type="file" /><br />
 										<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:"jpg", "jpeg", "png".', 'facebook-button-plugin' ); ?></span>
 									</td>
 								</tr>
@@ -457,6 +460,10 @@ if ( ! function_exists( 'fcbkbttn_button' ) ) {
 /* Function taking from array 'fcbk_bttn_plgn_options' necessary information to create Facebook Button and reacting to your choise in plugin menu - points where it appears. */
 if ( ! function_exists( 'fcbkbttn_display_button' ) ) {
 	function fcbkbttn_display_button( $content ) {
+
+		if ( is_feed() )
+            return $content;
+
 		global $fcbkbttn_options;
 		/* Query the database to receive array 'fcbk_bttn_plgn_options' and receiving necessary information to create button */
 		$fcbkbttn_where	= $fcbkbttn_options['where'];
@@ -518,7 +525,7 @@ if ( ! function_exists( 'fcbkbttn_shortcode_button_content' ) ) {
 if ( ! function_exists( 'fcbkbttn_meta' ) ) {
 	function fcbkbttn_meta() {
 		global $fcbkbttn_options;
-		if ( 1 == $fcbkbttn_options['like'] ) {
+		if ( 1 == $fcbkbttn_options['like'] || 1 == $fcbkbttn_options['share'] ) {
 			if ( is_singular() ) {
 				$image = '';
 				if ( has_post_thumbnail( get_the_ID() ) ) {

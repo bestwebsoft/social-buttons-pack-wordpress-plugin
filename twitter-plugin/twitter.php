@@ -526,6 +526,9 @@ if ( ! function_exists( 'twttr_twitter_buttons' ) ) {
 /* Positioning in the page */
 if ( ! function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
+		if ( is_feed() )
+            return $content;
+        
 		global $post, $twttr_options;
 		if ( $twttr_options['position'] == 'shortcode' ) {
 			return $content;

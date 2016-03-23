@@ -1,197 +1,230 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Google +1 plugin\n"
+"Project-Id-Version: google-one\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-05 09:59+0300\n"
-"PO-Revision-Date: 2015-11-05 10:01+0300\n"
+"POT-Creation-Date: 2016-02-19 11:01+0300\n"
+"PO-Revision-Date: 2016-03-14 17:26+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:34 google-plus-one.php:177
+#: google-plus-one.php:34 google-plus-one.php:342
 msgid "Google +1 Settings"
 msgstr "Установки Google +1"
 
-#: google-plus-one.php:153
+#: google-plus-one.php:284
+msgid "Email is incorrect"
+msgstr "Невірний Email"
+
+#: google-plus-one.php:286
+msgid "Please, select the invite type"
+msgstr "Будь ласка, оберіть тип запрошення"
+
+#: google-plus-one.php:288
+msgid "Field for invite can't be empty"
+msgstr "Поле для запрошення не може бути порожнім"
+
+#: google-plus-one.php:294 google-plus-one.php:971
+msgid "Only one phone number can be added"
+msgstr "Тільки один номер телефону може бути доданий"
+
+#: google-plus-one.php:296 google-plus-one.php:972
+msgid "You can't add invite because the phone number is already added"
+msgstr ""
+"Неможливо додати запрошення, тому що запрошення за номером телефону вже "
+"додано"
+
+#: google-plus-one.php:298 google-plus-one.php:973
+msgid "You can't add the phone number because another type is already added"
+msgstr ""
+"Неможливо додати запрошення за номером телефону, тому що запрошення іншого "
+"типу вже додано"
+
+#: google-plus-one.php:303 google-plus-one.php:970
+msgid "Is already added"
+msgstr "Вже додано"
+
+#: google-plus-one.php:316
 msgid "Settings saved"
 msgstr "Установки збережено"
 
-#: google-plus-one.php:164
+#: google-plus-one.php:327
 msgid "All plugin settings were restored."
 msgstr "Всі налаштування плагіну було скинуто до стандартних."
 
-#: google-plus-one.php:179 google-plus-one.php:496 google-plus-one.php:509
+#: google-plus-one.php:344 google-plus-one.php:1368 google-plus-one.php:1381
 msgid "Settings"
 msgstr "Установки"
 
-#: google-plus-one.php:180
+#: google-plus-one.php:345
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: google-plus-one.php:181
+#: google-plus-one.php:346
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: google-plus-one.php:194
+#: google-plus-one.php:348
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
+
+#: google-plus-one.php:362
 msgid ""
 "For the correct work of the button do not use it locally or on a free hosting"
 msgstr ""
 "Для коректної роботи кнопки не використовуйте її на локальному сервері або "
 "безкоштовних хостингах."
 
-#: google-plus-one.php:197
+#: google-plus-one.php:365
 #, php-format
 msgid ""
-"If you would like to add Google +1 button to your page or post, please use "
-"%s button"
+"If you would like to add Google Buttons to your page or post, please use %s "
+"button"
 msgstr ""
-"Якщо ви хочете додати кнопку Google +1 на вашу сторінку або пост, будь "
-"ласка, використовуйте кнопку %s"
+"Якщо ви хочете додати кнопки Google на вашу сторінку або пост, будь ласка, "
+"використовуйте кнопку %s"
 
-#: google-plus-one.php:202
+#: google-plus-one.php:370
 #, php-format
 msgid ""
-"You can add Google +1 button to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s"
+"You can add Google Buttons to your page or post by clicking on %s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %s to show the Google +1 Button, or use parameter "
+"'display', e.g. %s to display these buttons"
 msgstr ""
-"Ви можете додати Google +1 кнопку на вашу сторінку або пост, натиснувши на "
-"кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
-"відображається, будь ласка, використовуйте шорткод %s"
+"Ви можете додати кнопки Google на вашу сторінку або пост, натиснувши на "
+"кнопку %s в блоці редагування контенту в режимі \"Візуально\". Якщо кнопка "
+"не відображається, будь ласка, використовуйте шорткод %s для кнопки \"Плюс "
+"Один\", або використайте параметр \"display\", напр. %s,<br /> де<br /"
+"><code>plusone</code> - \"Плюс Один\",<br /> <code>share</code> - "
+"\"Поділитись\",<br /> <code>follow</code> - \"Підписатися\",<br /> "
+"<code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\""
 
-#: google-plus-one.php:213
-msgid "Enable Google +1 Button"
-msgstr "Увімкнути кнопку Google +1"
+#: google-plus-one.php:383
+msgid "Display Google Buttons"
+msgstr "Відображати кнопки Google"
 
-#: google-plus-one.php:217
-msgid "Enable or Disable Google+1 JavaScript"
-msgstr "Увімкнути або вимкнути Google+1 JavaScript"
+#: google-plus-one.php:388 google-plus-one.php:1308
+msgid "Google +1"
+msgstr "\"Плюс один\""
 
-#: google-plus-one.php:222
-msgid "Size"
-msgstr "Розмір"
+#: google-plus-one.php:393 google-plus-one.php:1313
+msgid "Share"
+msgstr "\"Поділитись\""
 
-#: google-plus-one.php:225
-msgid "Standard"
-msgstr "Стандартна"
+#: google-plus-one.php:398 google-plus-one.php:1318
+msgid "Follow"
+msgstr "\"Підписатися\""
 
-#: google-plus-one.php:226
-msgid "Small"
-msgstr "Маленька"
+#: google-plus-one.php:402 google-plus-one.php:419
+msgid "To see this button, please"
+msgstr "Щоб побачити кнопку, будь ласка"
 
-#: google-plus-one.php:227
-msgid "Medium"
-msgstr "Середня"
+#: google-plus-one.php:403 google-plus-one.php:420
+msgid "enter"
+msgstr "вкажіть"
 
-#: google-plus-one.php:228
-msgid "Tall"
-msgstr "Висока"
+#: google-plus-one.php:404 google-plus-one.php:421
+msgid "the Google+ ID"
+msgstr "Google+ ID"
 
-#: google-plus-one.php:230
-msgid "Please choose one of four different sizes of buttons"
-msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
+#: google-plus-one.php:410 google-plus-one.php:1323
+msgid "Hangout"
+msgstr "\"Чат\""
 
-#: google-plus-one.php:234
-msgid "Annotation"
-msgstr "Примітка"
+#: google-plus-one.php:415 google-plus-one.php:1328
+msgid "Badge"
+msgstr "\"Значок\""
 
-#: google-plus-one.php:237
-msgid "Inline"
-msgstr "вбудована"
-
-#: google-plus-one.php:238
-msgid "Bubble"
-msgstr "спливаюча підказка"
-
-#: google-plus-one.php:239
-msgid "None"
-msgstr "немає"
-
-#: google-plus-one.php:241
-msgid "Display counters showing how many times your article has been liked"
-msgstr "Відображати лічильник кількості натиснень +1"
-
-#: google-plus-one.php:245
+#: google-plus-one.php:428
 msgid "Language"
 msgstr "Мова"
 
-#: google-plus-one.php:256
+#: google-plus-one.php:440
 msgid "Select the language to display information on the button"
 msgstr "Оберіть мову відображення інформації на кнопці"
 
-#: google-plus-one.php:261 google-plus-one.php:264 google-plus-one.php:269
+#: google-plus-one.php:446 google-plus-one.php:449 google-plus-one.php:456
 msgid "Use the current site language"
 msgstr "Використовувати поточну мову сайту"
 
-#: google-plus-one.php:261 google-plus-one.php:265 google-plus-one.php:270
+#: google-plus-one.php:446 google-plus-one.php:450 google-plus-one.php:457
 msgid "Using"
 msgstr "Використовуючи"
 
-#: google-plus-one.php:265
+#: google-plus-one.php:451
 msgid "Activate"
 msgstr "Активувати"
 
-#: google-plus-one.php:270
+#: google-plus-one.php:458
 msgid "Download"
 msgstr "Завантажити"
 
-#: google-plus-one.php:277
-msgid "Button Position"
-msgstr "Розташування кнопки"
+#: google-plus-one.php:466
+msgid "Buttons Position"
+msgstr "Розташування кнопок"
 
-#: google-plus-one.php:280
+#: google-plus-one.php:469
 msgid "Before"
-msgstr "Перед"
+msgstr "Перед постом"
 
-#: google-plus-one.php:281
+#: google-plus-one.php:470
 msgid "After"
-msgstr "Після"
+msgstr "Після посту"
 
-#: google-plus-one.php:282
+#: google-plus-one.php:471
 msgid "Before And After"
-msgstr "Перед та після"
+msgstr "Перед та після посту"
 
-#: google-plus-one.php:284
-msgid "Please select location for the button on the page"
-msgstr "Будь ласка, оберіть розташування кнопки на сторінці"
+#: google-plus-one.php:472
+msgid "Only Shortcode"
+msgstr "Тільки Шорткод"
 
-#: google-plus-one.php:288
-msgid "Show button"
-msgstr "Відображати кнопку"
+#: google-plus-one.php:474
+msgid "Please select location for the buttons on the page"
+msgstr "Будь ласка, оберіть розташування кнопок на сторінці"
 
-#: google-plus-one.php:293
+#: google-plus-one.php:478
+msgid "Show buttons"
+msgstr "Відображати кнопки"
+
+#: google-plus-one.php:483
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:299
+#: google-plus-one.php:489
 msgid "Show in pages"
 msgstr "На сторінках"
 
-#: google-plus-one.php:305
+#: google-plus-one.php:495
 msgid "Show on the homepage"
-msgstr "На домашній сторінці"
+msgstr "Відображати на домашній сторінці"
 
-#: google-plus-one.php:309
-msgid "Please select the page on which you want to see the button"
-msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопку"
+#: google-plus-one.php:499
+msgid "Please select the page on which you want to see the buttons"
+msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопки"
 
-#: google-plus-one.php:319
+#: google-plus-one.php:504
+msgid "Settings for Google +1 Button"
+msgstr "Налаштування для кнопки Google +1"
+
+#: google-plus-one.php:512 google-plus-one.php:880 google-plus-one.php:902
 msgid "Close"
 msgstr "Закрити"
 
-#: google-plus-one.php:323
+#: google-plus-one.php:516
 msgid "\"+1\" for an entire site on every page"
 msgstr "\"+1\" для всього сайту на кожній сторінці"
 
-#: google-plus-one.php:326
+#: google-plus-one.php:519
 msgid ""
 "Notice: This option does not create an extra button. This option merely "
 "allows your users to +1 the entire website when this option is enabled, or a "
@@ -203,23 +236,333 @@ msgstr ""
 "якщо ця опція увімкнена, або ставити \"+1\" окремим постам, якщо опція "
 "вимкнена."
 
-#: google-plus-one.php:331 google-plus-one.php:367
+#: google-plus-one.php:524 google-plus-one.php:942
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
 
-#: google-plus-one.php:338 google-plus-one.php:372
+#: google-plus-one.php:531 google-plus-one.php:895 google-plus-one.php:908
+#: google-plus-one.php:948
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
 
-#: google-plus-one.php:340 google-plus-one.php:374
+#: google-plus-one.php:533 google-plus-one.php:897 google-plus-one.php:910
+#: google-plus-one.php:950
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: google-plus-one.php:347 google-plus-one.php:366
+#: google-plus-one.php:542 google-plus-one.php:591 google-plus-one.php:634
+#: google-plus-one.php:674
+msgid "Size"
+msgstr "Розмір"
+
+#: google-plus-one.php:545 google-plus-one.php:677
+msgctxt "for:size"
+msgid "Standard"
+msgstr "Стандартна"
+
+#: google-plus-one.php:546 google-plus-one.php:594 google-plus-one.php:637
+msgid "Small"
+msgstr "Маленька"
+
+#: google-plus-one.php:547 google-plus-one.php:595 google-plus-one.php:638
+msgid "Medium"
+msgstr "Середня"
+
+#: google-plus-one.php:548
+msgid "Tall"
+msgstr "Висока"
+
+#: google-plus-one.php:553 google-plus-one.php:577 google-plus-one.php:644
+msgid "Annotation"
+msgstr "Примітка"
+
+#: google-plus-one.php:556 google-plus-one.php:580
+msgid "Inline"
+msgstr "Вбудована"
+
+#: google-plus-one.php:557 google-plus-one.php:581 google-plus-one.php:647
+msgid "Bubble"
+msgstr "Спливаюча"
+
+#: google-plus-one.php:558 google-plus-one.php:583 google-plus-one.php:649
+msgid "None"
+msgstr "Немає"
+
+#: google-plus-one.php:561
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Відображати лічильник кількості натиснень +1"
+
+#: google-plus-one.php:565 google-plus-one.php:601
+msgid "Annotation Type"
+msgstr "Варіант примітки"
+
+#: google-plus-one.php:568 google-plus-one.php:604
+msgctxt "for:annotation type"
+msgid "Standard"
+msgstr "Стандартна"
+
+#: google-plus-one.php:569 google-plus-one.php:605
+msgid "Short"
+msgstr "Коротка"
+
+#: google-plus-one.php:574
+msgid "Settings for Share Button"
+msgstr "Налаштування для кнопки \"Поділитись\""
+
+#: google-plus-one.php:582 google-plus-one.php:648
+msgid "Vertical-bubble"
+msgstr "Вертикальна спливаюча"
+
+#: google-plus-one.php:586
+msgid "Display the number of users who have shared the page"
+msgstr "Відображати кількість людей, що поділилися сторінкою"
+
+#: google-plus-one.php:596 google-plus-one.php:639
+msgid "Large"
+msgstr "Велика"
+
+#: google-plus-one.php:610
+msgid "Settings for Follow Button"
+msgstr "Налаштування для кнопки \"Підписатися\""
+
+#: google-plus-one.php:613 google-plus-one.php:795 google-plus-one.php:984
+msgid "Google+ ID"
+msgstr "Google+ ID"
+
+#: google-plus-one.php:617 google-plus-one.php:796 google-plus-one.php:985
+msgid "Enter the Google+ ID, e.g."
+msgstr "Вкажіть Google+ ID, напр."
+
+#: google-plus-one.php:617 google-plus-one.php:750 google-plus-one.php:796
+#: google-plus-one.php:801 google-plus-one.php:806 google-plus-one.php:981
+#: google-plus-one.php:985 google-plus-one.php:987 google-plus-one.php:989
+msgid "or"
+msgstr "або"
+
+#: google-plus-one.php:622
+msgid "Relationship"
+msgstr "Відношення"
+
+#: google-plus-one.php:625
+msgid "Author"
+msgstr "Автор"
+
+#: google-plus-one.php:626
+msgid "Publisher"
+msgstr "Видавець"
+
+#: google-plus-one.php:629
+msgid ""
+"Describes your relationship to content of the page, where the button is "
+"embedded"
+msgstr "Вказує на ваше відношення до змісту сторінки, на якій розміщено кнопку"
+
+#: google-plus-one.php:652
+msgid "Display the number of users who are following this page or person"
+msgstr "Відображати кількість людей, що підписалися  на сторінку або профіль"
+
+#: google-plus-one.php:657
+msgid "Settings for Hangout Button"
+msgstr "Налаштування для кнопки \"Чат\""
+
+#: google-plus-one.php:660
+msgid "Topic"
+msgstr "Тема Чату"
+
+#: google-plus-one.php:664
+msgid "Use the title of the page"
+msgstr "Використовувати заголовок сторінки "
+
+#: google-plus-one.php:678
+msgid "Narrow"
+msgstr "Вузька"
+
+#: google-plus-one.php:679
+msgid "Wide"
+msgstr "Широка"
+
+#: google-plus-one.php:684 google-plus-one.php:782
+msgid "Type"
+msgstr "Тип"
+
+#: google-plus-one.php:687
+msgid "Normal"
+msgstr "Звичайний"
+
+#: google-plus-one.php:688
+msgid "Onair"
+msgstr "В ефірі"
+
+#: google-plus-one.php:689
+msgid "Party"
+msgstr "Груповий"
+
+#: google-plus-one.php:690
+msgid "Moderated"
+msgstr "З налаштуваннями"
+
+#: google-plus-one.php:695
+msgid "Invite Type"
+msgstr "Тип запрошення"
+
+#: google-plus-one.php:698
+msgid "Select The Type"
+msgstr "Вкажіть тип"
+
+#: google-plus-one.php:699
+msgid "Google+ Profile ID"
+msgstr "Google+ ID Профілю"
+
+#: google-plus-one.php:700
+msgid "Google+ Circle ID"
+msgstr "Google+ ID Кола"
+
+#: google-plus-one.php:701
+msgid "Email"
+msgstr "Email"
+
+#: google-plus-one.php:702
+msgid "Phone Number"
+msgstr "Номер Телефону"
+
+#: google-plus-one.php:739
+msgid "Google+ ID, Phone Number or Email"
+msgstr "Google+ ID, Номер Телефону або Email"
+
+#: google-plus-one.php:745 google-plus-one.php:771
+msgid "Add"
+msgstr "Додати"
+
+#: google-plus-one.php:747
+msgid "Delete Selected"
+msgstr "Видалити позначене"
+
+#: google-plus-one.php:750
+msgid "If Invite Type is 'Google+ Profile ID' it should be the form like"
+msgstr ""
+"Якщо обрано тип запрошення 'Google+  ID Профілю', то вказанний ID має мати "
+"вигляд"
+
+#: google-plus-one.php:754
+msgid "If Invite Type is 'Google+ Circle ID' it should be the form like"
+msgstr ""
+"Якщо обрано тип запрошення 'Google+ ID Кола', то вказана адреса має мати "
+"вигляд"
+
+#: google-plus-one.php:758
+msgid "If Invite Type is 'Email' it should be the form like"
+msgstr "Якщо обрано тип запрошення 'Email', то вказана адреса має мати вигляд"
+
+#: google-plus-one.php:762
+msgid "If Invite Type is 'Phone Number' it should be the form like"
+msgstr ""
+"Якщо обрано тип запрошення 'Номер Телефону', то вказана номер має мати вигляд"
+
+#: google-plus-one.php:779
+msgid "Settings for Badge"
+msgstr "Налаштування для Значка"
+
+#: google-plus-one.php:785
+msgid "Person"
+msgstr "Профіль"
+
+#: google-plus-one.php:786
+msgid "Page"
+msgstr "Сторінка"
+
+#: google-plus-one.php:787
+msgid "Community"
+msgstr "Спільнота"
+
+#: google-plus-one.php:797 google-plus-one.php:990
+msgid "Display the user's tag line"
+msgstr "Відображати слоган користувача"
+
+#: google-plus-one.php:800 google-plus-one.php:986
+msgid "Google+ Page ID"
+msgstr "Google+ ID Сторінки"
+
+#: google-plus-one.php:801 google-plus-one.php:987
+msgid "Enter the Google+ Page ID, e.g."
+msgstr "Вкажіть Google+ ID Сторінки, напр."
+
+#: google-plus-one.php:802 google-plus-one.php:991
+msgid "Display the company tag line"
+msgstr "Відображати слоган компанії"
+
+#: google-plus-one.php:805 google-plus-one.php:988
+msgid "Google+ Community ID"
+msgstr "Google+ ID Спільноти"
+
+#: google-plus-one.php:806 google-plus-one.php:989
+msgid "Enter the Google+ Community ID, e.g."
+msgstr "Вкажіть Google+ ID Спільноти, напр."
+
+#: google-plus-one.php:807 google-plus-one.php:992
+msgid "Display the community tag line"
+msgstr "Відображати слоган спільноти"
+
+#: google-plus-one.php:820 google-plus-one.php:1136
+msgid "Layout"
+msgstr "Орієнтація"
+
+#: google-plus-one.php:823 google-plus-one.php:1138
+msgid "Portrait"
+msgstr "Вертикальна"
+
+#: google-plus-one.php:824 google-plus-one.php:1139
+msgid "Landscape"
+msgstr "Горизонтальна"
+
+#: google-plus-one.php:827
+msgid "Sets the orientation of the badge"
+msgstr "Оберіть орєнтацію Значка"
+
+#: google-plus-one.php:832 google-plus-one.php:1144
+msgid "Show Cover Photo"
+msgstr "Відображати Фото Обкладинки"
+
+#: google-plus-one.php:840
+msgid "Show Tag Line"
+msgstr "Відображати слоган"
+
+#: google-plus-one.php:849
+msgid "Show Owners"
+msgstr "Відображати засновників"
+
+#: google-plus-one.php:853
+msgid "Display a list of community owners"
+msgstr "Показувати список засновників спільноти"
+
+#: google-plus-one.php:858
+msgid "Theme"
+msgstr "Тема"
+
+#: google-plus-one.php:861
+msgid "Light"
+msgstr "Світла"
+
+#: google-plus-one.php:862
+msgid "Dark"
+msgstr "Темна"
+
+#: google-plus-one.php:867
+msgid "Width"
+msgstr "Ширина"
+
+#: google-plus-one.php:871
+msgid "px"
+msgstr "px"
+
+#: google-plus-one.php:885 google-plus-one.php:904
+msgid "Preview"
+msgstr "Прев’ю"
+
+#: google-plus-one.php:917 google-plus-one.php:939
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: google-plus-one.php:360
+#: google-plus-one.php:932
 msgid ""
 "Please choose the necessary post types (or single pages) where Google +1 "
 "button will be displayed:"
@@ -227,24 +570,170 @@ msgstr ""
 "Будь ласка, оберіть потрібний тип посту (чи сторінки), де буде відображатись "
 "кнопка Google+1:"
 
-#: google-plus-one.php:363
+#: google-plus-one.php:935
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: google-plus-one.php:365
+#: google-plus-one.php:937
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: google-plus-one.php:510
+#: google-plus-one.php:974
+msgid "This field can't be empty"
+msgstr "Це поле не може бути порожнім"
+
+#: google-plus-one.php:975
+msgid "Please, enter the valid Email"
+msgstr "Будь ласка введіть коректний Email"
+
+#: google-plus-one.php:976
+msgid "Email of Invited"
+msgstr "Email для запрошення"
+
+#: google-plus-one.php:977
+msgid "Please, enter the Email of ivited, e.g."
+msgstr "Будь ласка, вкажіть Email для запрошення, напр."
+
+#: google-plus-one.php:978
+msgid "Phone Number of Invited"
+msgstr "Номер Телефону для запрошення"
+
+#: google-plus-one.php:979
+msgid "Please, enter the phone number of ivited, e.g."
+msgstr "Будь ласка, вкажіть номер телефону для запрошення, напр."
+
+#: google-plus-one.php:980
+msgid "Google+ Profile ID of Invited"
+msgstr "Google+ ID Профілю для запрошення"
+
+#: google-plus-one.php:981
+msgid "Please, enter ivited Google+ Profile ID, e.g."
+msgstr "Будь ласка, вкажіть Google+ ID Профілю для запрошення, напр"
+
+#: google-plus-one.php:982
+msgid "Google+ Circle ID for Invite"
+msgstr "Google+ ID Кола для запрошення"
+
+#: google-plus-one.php:983
+msgid "Please, enter ivited Google+ Circle ID, e.g."
+msgstr "Будь ласка, вкажіть Google+ ID Кола, напр."
+
+#: google-plus-one.php:1090
+msgid "Google+ Badge Widget"
+msgstr "Віджет Значка Google+"
+
+#: google-plus-one.php:1090
+msgid "Show the Google Badge on your site"
+msgstr "Показувати Google Значок на вашому сайті"
+
+#: google-plus-one.php:1132
+msgid "Title"
+msgstr "Назва"
+
+#: google-plus-one.php:1304
+msgid "Add Google Buttons to your page or post"
+msgstr "Додати кнопки Google на вашу сторінку або пост"
+
+#: google-plus-one.php:1382
 msgid "FAQ"
 msgstr "FAQ"
 
-#: google-plus-one.php:511
+#: google-plus-one.php:1383
 msgid "Support"
 msgstr "Підтримка"
 
-#~ msgid "Notice:"
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "немає"
+
+#, fuzzy
+#~ msgid "Active Theme"
+#~ msgstr "Активувати"
+
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "Themes"
+#~ msgstr "Тема"
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "Докладніше"
+
+#~ msgid "Go"
+#~ msgstr "Перейти"
+
+#, fuzzy
+#~ msgid "Preview %s"
+#~ msgstr "Прев’ю"
+
+#, fuzzy
+#~ msgid "Already Installed"
+#~ msgstr "Вже додано"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Підтримка"
+
+#, fuzzy
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "the setting page"
+#~ msgstr "На сторінках"
+
+#, fuzzy
+#~ msgid "Show Pro features"
+#~ msgstr "На сторінках"
+
+#, fuzzy
+#~ msgid "Please, enter your license key"
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "Configure Settings"
+#~ msgstr "Установки Google +1"
+
+#, fuzzy
+#~ msgid "Notice"
 #~ msgstr "Нагадування:"
+
+#, fuzzy
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#, fuzzy
+#~ msgid "Add shortcode"
+#~ msgstr "Тільки Шорткод"
+
+#, fuzzy
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#, fuzzy
+#~ msgid "Restore settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Shortcode settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Documentation"
+#~ msgstr "Примітка"
+
+#~ msgid "Enable or Disable Google+1 JavaScript"
+#~ msgstr "Увімкнути або вимкнути Google+1 JavaScript"
+
+#~ msgid "Please choose one of four different sizes of buttons"
+#~ msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
 
 #~ msgid ""
 #~ "The plugin's settings have been changed. In order to save them please "
@@ -265,6 +754,3 @@ msgstr "Підтримка"
 
 #~ msgid "Button Size"
 #~ msgstr "Розмір кнопки"
-
-#~ msgid "Go"
-#~ msgstr "Перейти"

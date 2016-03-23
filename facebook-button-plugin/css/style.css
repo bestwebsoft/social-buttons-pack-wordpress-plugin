@@ -18,6 +18,7 @@
 .fcbk_button a {
 	display: block;
 	border-bottom: 0px !important;
+	box-shadow: none !important;
 }
 .fcbk_button a:hover {
 	opacity: 0.9;

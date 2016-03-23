@@ -1,21 +1,17 @@
 /*
 * Plugin css
 */
-.gglplsn_share,
+.gglplsn_buttons,
 .fcbk_share {
 	display: inline-block;
 	margin: 0 10px 0 0;
 	line-height: inherit;
 	height: auto;
 }
-.gglplsn_share {
-	position: relative;
-	max-width: 65px;
-}
-.gglplsn_share div,
+.gglplsn_hangout, .gglplsn_follow, .gglplsn_plus_one, .gglplsn_share,
 .fcbk_share img,
 .fcbk_like .fb_iframe_widget span {
-	vertical-align: top !important;
+	vertical-align: middle !important;
 }
 .fcbk_button a {
 	height: auto;
@@ -30,5 +26,5 @@
 .twttr_followme,
 .twttr_hashtag,
 .twttr_mention {
-	vertical-align: text-bottom;
+	vertical-align: middle;
 }

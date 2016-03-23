@@ -4,7 +4,7 @@ Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
 Description: Add Social Buttons in to your site.
 Author: BestWebSoft
-Version: 1.0.5
+Version: 1.0.6
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -111,6 +111,7 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
                 <a class="nav-tab<?php if ( ! isset( $_GET['action'] ) || ( isset( $_GET['action'] ) && 'facebook' == $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=facebook"><?php _e( 'Facebook' ); ?></a>
                 <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'twitter' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=twitter"><?php _e( 'Twitter' ); ?></a>
                 <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'google-one' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=google-one"><?php _e( 'Google+1' ); ?></a>
+                <a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=custom_code"><?php _e( 'Custom code' ); ?></a> 
             </h2>
             <?php if ( ! empty( $message ) ) { ?>
                 <div class="updated fade below-h2"><p><strong><?php echo $message; ?></strong></p></div>
@@ -124,12 +125,25 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
                     twttr_settings_page();
                 } elseif ( 'google-one' == $_GET['action'] ) {
                     gglplsn_options();
-                }            
-                bws_form_restore_default_settings( $plugin_basename );
+                } elseif ( 'custom_code' == $_GET['action'] ) {
+                   bws_custom_code_tab();
+                }     
+
+                if ( ! isset( $_GET['action'] ) || ( isset( $_GET['action'] ) && 'custom_code' != $_GET['action'] ) )    
+                    bws_form_restore_default_settings( $plugin_basename );
             }
             bws_plugin_reviews_block( $sclbttns_plugin_info['Name'], 'social-buttons-pack' ); ?>
         </div>
     <?php }
+}
+
+if ( ! function_exists ( 'sclbttns_admin_enqueue_scripts' ) ) {
+    function sclbttns_admin_enqueue_scripts() {
+        if ( isset( $_REQUEST['page'] ) && 'social-buttons.php' == $_REQUEST['page'] ) {
+            if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
+                bws_plugins_include_codemirror();
+        }
+    }
 }
 
 /* Registering and apllying styles and scripts */
@@ -263,6 +277,10 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                     delete_option( 'fcbk_bttn_plgn_options' );
             }
         } 
+
+        require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
+        bws_include_init( plugin_basename( __FILE__ ) );
+        bws_delete_plugin( plugin_basename( __FILE__ ) );
     }
 }
 
@@ -272,6 +290,7 @@ add_action( 'admin_menu', 'sclbttns_add_pages' );
 add_action( 'init', 'sclbttns_init' );
 add_action( 'admin_init', 'sclbttns_admin_init' );
 
+add_action( 'admin_enqueue_scripts', 'sclbttns_admin_enqueue_scripts' );
 add_action( 'wp_enqueue_scripts', 'sclbttns_wp_enqueue_scripts' );
 
 add_filter( 'plugin_action_links', 'sclbttns_action_links', 10, 2 );

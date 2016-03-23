@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-12 16:58+0300\n"
-"PO-Revision-Date: 2015-10-12 16:58+0300\n"
-"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"POT-Creation-Date: 2016-02-04 12:31+0300\n"
+"PO-Revision-Date: 2016-02-04 12:32+0300\n"
+"Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Can Atasever <webmaster@canatasever.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -13,286 +13,338 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 1.5.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:34
-#: facebook-button-plugin.php:290
+#: facebook-button-plugin.php:34 facebook-button-plugin.php:292
 msgid "Facebook Button Settings"
 msgstr "Facebook Buton Ayarları"
 
-#: facebook-button-plugin.php:212
+#: facebook-button-plugin.php:214
 msgid "Settings saved"
 msgstr "Ayarlar kaydedildi"
 
-#: facebook-button-plugin.php:238
+#: facebook-button-plugin.php:240
 msgid "Error: File size > 32K"
 msgstr "HATA: Dosya boyutu > 32K"
 
-#: facebook-button-plugin.php:241
+#: facebook-button-plugin.php:243
 msgid "Error: Invalid file type"
 msgstr "HATA: Geçersiz dosya türü"
 
-#: facebook-button-plugin.php:247
+#: facebook-button-plugin.php:249
 msgid "Upload successful."
 msgstr "Yükleme başarılı"
 
-#: facebook-button-plugin.php:257
+#: facebook-button-plugin.php:259
 msgid "Error: moving file failed"
 msgstr "HATA: dosya taşıma başarısız."
 
-#: facebook-button-plugin.php:260
+#: facebook-button-plugin.php:262
 msgid "Error: check image width or height"
 msgstr "HATA: görselin genişliğini ya da yüksekliğini kontrol edin."
 
-#: facebook-button-plugin.php:264
+#: facebook-button-plugin.php:266
 msgid "Uploading Error: check image properties"
 msgstr "Yükleme Hatası: görselin özelliklerini kontrol edin."
 
-#: facebook-button-plugin.php:277
+#: facebook-button-plugin.php:279
 msgid "All plugin settings were restored."
 msgstr ""
 
-#: facebook-button-plugin.php:292
-#: facebook-button-plugin.php:783
-#: facebook-button-plugin.php:797
+#: facebook-button-plugin.php:294 facebook-button-plugin.php:851
+#: facebook-button-plugin.php:865
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: facebook-button-plugin.php:293
+#: facebook-button-plugin.php:295
 msgid "Extra settings"
 msgstr "Ekstra Ayarlar"
 
-#: facebook-button-plugin.php:294
+#: facebook-button-plugin.php:296
 msgid "Go PRO"
 msgstr "PRO&#39;ya geçin"
 
-#: facebook-button-plugin.php:297
+#: facebook-button-plugin.php:299
 msgid "Please, enable JavaScript in Your browser."
 msgstr ""
 
-#: facebook-button-plugin.php:311
+#: facebook-button-plugin.php:314
 #, fuzzy, php-format
-msgid "If you would like to add Facebook buttons to your page or post, please use %s button"
-msgstr "eğer web sitenize Facebook butonu eklemek isterseniz, verilen kısa kodu sayfanıza ya da yazınıza eklemeniz yeterlidir."
+msgid ""
+"If you would like to add Facebook buttons to your page or post, please use "
+"%s button"
+msgstr ""
+"eğer web sitenize Facebook butonu eklemek isterseniz, verilen kısa kodu "
+"sayfanıza ya da yazınıza eklemeniz yeterlidir."
 
-#: facebook-button-plugin.php:316
+#: facebook-button-plugin.php:319
 #, php-format
-msgid "You can add Facebook buttons to your page or post by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s"
+msgid ""
+"You can add Facebook buttons to your page or post by clicking on %s button "
+"in the content edit block using the Visual mode. If the button isn't "
+"displayed, please use the shortcode %s"
 msgstr ""
 
-#: facebook-button-plugin.php:327
+#: facebook-button-plugin.php:330
 #, fuzzy
 msgid "Display button"
 msgstr "Butonu Göster:"
 
-#: facebook-button-plugin.php:330
+#: facebook-button-plugin.php:333
 msgid "My Page"
 msgstr "Benim Sayfam"
 
-#: facebook-button-plugin.php:331
-#: facebook-button-plugin.php:438
+#: facebook-button-plugin.php:334 facebook-button-plugin.php:501
 msgid "Like"
 msgstr "Beğen"
 
-#: facebook-button-plugin.php:332
+#: facebook-button-plugin.php:335
 msgid "Share"
 msgstr "Paylaş"
 
-#: facebook-button-plugin.php:337
+#: facebook-button-plugin.php:340
 #, fuzzy
 msgid "Facebook buttons position"
 msgstr "Facebook Butonu pozisyonu"
 
-#: facebook-button-plugin.php:340
+#: facebook-button-plugin.php:343
 msgid "Before"
 msgstr "Önce"
 
-#: facebook-button-plugin.php:341
+#: facebook-button-plugin.php:344
 msgid "After"
 msgstr "Sonra"
 
-#: facebook-button-plugin.php:342
+#: facebook-button-plugin.php:345
 msgid "Before and After"
 msgstr "Önce ve Sonra"
 
-#: facebook-button-plugin.php:343
+#: facebook-button-plugin.php:346
 msgid "Shortcode"
 msgstr "Kısa kod"
 
-#: facebook-button-plugin.php:348
+#: facebook-button-plugin.php:351
 #, fuzzy
 msgid "Facebook buttons language"
 msgstr "Facebook Butonu dili"
 
-#: facebook-button-plugin.php:359
-msgid "Change the language of Facebook Like Button"
+#: facebook-button-plugin.php:362
+#, fuzzy
+msgid "Change the language of Facebook Button"
 msgstr "Facebook Beğen butonunun dilini değiştirin"
 
-#: facebook-button-plugin.php:364
-#: facebook-button-plugin.php:367
-#: facebook-button-plugin.php:372
+#: facebook-button-plugin.php:367 facebook-button-plugin.php:370
+#: facebook-button-plugin.php:375
 msgid "Use the current site language"
 msgstr ""
 
-#: facebook-button-plugin.php:364
-#: facebook-button-plugin.php:368
-#: facebook-button-plugin.php:373
+#: facebook-button-plugin.php:367 facebook-button-plugin.php:371
+#: facebook-button-plugin.php:376
 msgid "Using"
 msgstr ""
 
-#: facebook-button-plugin.php:368
+#: facebook-button-plugin.php:371
 msgid "Activate"
 msgstr ""
 
-#: facebook-button-plugin.php:373
+#: facebook-button-plugin.php:376
 msgid "Download"
 msgstr ""
 
-#: facebook-button-plugin.php:380
+#: facebook-button-plugin.php:383
 #, fuzzy
 msgid "Display buttons in excerpt"
 msgstr "Butonu Göster:"
 
-#: facebook-button-plugin.php:386
-#, fuzzy
-msgid "Your Facebook ID or username"
-msgstr "Facebook ID&#39;niz:"
-
-#: facebook-button-plugin.php:393
-msgid "\"My page\" button image"
-msgstr ""
-
-#: facebook-button-plugin.php:398
-msgid "Standard Facebook image"
-msgstr "Standart Facebook görseli"
-
-#: facebook-button-plugin.php:399
-msgid "Custom Facebook image"
-msgstr "Özel Facebook görseli"
-
-#: facebook-button-plugin.php:402
-msgid "To use custom image you need to setup permissions to upload directory of your site"
-msgstr "Özel görsel kullanmak için sitenizin dizinine yükleme yapılmasına izin vermelisiniz."
-
-#: facebook-button-plugin.php:409
-#, fuzzy
-msgid "Current image"
-msgstr "Şu anki görsel:"
-
-#: facebook-button-plugin.php:417
-msgid "Image properties: max image width:100px; max image height:40px; max image size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
-msgstr "Görsel özellikleri: maksimum görsel genişliği: 100px; maksimum görsel yüksekliği: 40px; maksimum görsel boyutu: 32 KB; uzantılar: \"jpg\", \"jpeg\", \"png\"."
-
-#: facebook-button-plugin.php:421
-msgid "Button layout"
-msgstr ""
-
-#: facebook-button-plugin.php:435
-msgid "Like button action"
-msgstr ""
-
-#: facebook-button-plugin.php:439
-msgid "Recommend"
-msgstr ""
-
-#: facebook-button-plugin.php:444
-msgid "Show faces"
-msgstr ""
-
-#: facebook-button-plugin.php:450
-msgid "Layout width"
-msgstr ""
-
-#: facebook-button-plugin.php:456
-msgid "Color scheme"
-msgstr ""
-
-#: facebook-button-plugin.php:459
-msgid "Light"
-msgstr ""
-
-#: facebook-button-plugin.php:460
-msgid "Dark"
-msgstr ""
-
-#: facebook-button-plugin.php:465
-#, fuzzy
-msgid "Html tag for \"Like\" button"
-msgstr "Beğen butonu için HTML etiketi:"
-
-#: facebook-button-plugin.php:470
-msgid "Use this tag to improve validation of your site"
-msgstr "Sitenizin doğrulamasını geliştirmek için bu etiketi kullanın"
-
-#: facebook-button-plugin.php:479
-#: facebook-button-plugin.php:516
+#: facebook-button-plugin.php:393 facebook-button-plugin.php:542
+#: facebook-button-plugin.php:579
 msgid "Close"
 msgstr ""
 
-#: facebook-button-plugin.php:483
-msgid "\"Like\" for an entire site on every page:"
+#: facebook-button-plugin.php:397
+msgid "Meta tags"
 msgstr ""
 
-#: facebook-button-plugin.php:485
-msgid "Notice: \"Like for the entire site\" option does not create an extra button. This option merely allows your users to like the entire website when this option is enabled, or a single post when this option is disabled, when clicking the regular \"Like\" button."
+#: facebook-button-plugin.php:400
+msgid "Image"
 msgstr ""
 
-#: facebook-button-plugin.php:490
-#: facebook-button-plugin.php:567
+#: facebook-button-plugin.php:403
+msgid "Featured Image"
+msgstr ""
+
+#: facebook-button-plugin.php:407
+#, fuzzy
+msgid "Custom Image"
+msgstr "Özel Facebook görseli"
+
+#: facebook-button-plugin.php:407
+msgid "This image will be used for all of the posts"
+msgstr ""
+
+#: facebook-button-plugin.php:417
+msgid "Description"
+msgstr ""
+
+#: facebook-button-plugin.php:420
+msgid "Post excerpt"
+msgstr ""
+
+#: facebook-button-plugin.php:425
+msgid "This description will be used for all of the posts"
+msgstr ""
+
+#: facebook-button-plugin.php:432 facebook-button-plugin.php:553
+#: facebook-button-plugin.php:631
 msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Aboneliğinizi PRO versiyonuna yükseltirseniz tüm değişiklikleriniz kaydedilecek."
+msgstr ""
+"Aboneliğinizi PRO versiyonuna yükseltirseniz tüm değişiklikleriniz "
+"kaydedilecek."
 
-#: facebook-button-plugin.php:497
-#: facebook-button-plugin.php:525
-#: facebook-button-plugin.php:574
+#: facebook-button-plugin.php:439 facebook-button-plugin.php:560
+#: facebook-button-plugin.php:588 facebook-button-plugin.php:638
 #, fuzzy
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "PRO versiyonuna geçerek premium özellikleri aktifleştirin."
 
-#: facebook-button-plugin.php:499
-#: facebook-button-plugin.php:527
-#: facebook-button-plugin.php:576
+#: facebook-button-plugin.php:441 facebook-button-plugin.php:562
+#: facebook-button-plugin.php:590 facebook-button-plugin.php:640
 msgid "Learn More"
 msgstr "Detaylı Bilgi"
 
+#: facebook-button-plugin.php:449
+#, fuzzy
+msgid "Your Facebook ID or username"
+msgstr "Facebook ID&#39;niz:"
+
+#: facebook-button-plugin.php:456
+msgid "\"My page\" button image"
+msgstr ""
+
+#: facebook-button-plugin.php:461
+msgid "Standard Facebook image"
+msgstr "Standart Facebook görseli"
+
+#: facebook-button-plugin.php:462
+msgid "Custom Facebook image"
+msgstr "Özel Facebook görseli"
+
+#: facebook-button-plugin.php:465
+msgid ""
+"To use custom image you need to setup permissions to upload directory of "
+"your site"
+msgstr ""
+"Özel görsel kullanmak için sitenizin dizinine yükleme yapılmasına izin "
+"vermelisiniz."
+
+#: facebook-button-plugin.php:472
+#, fuzzy
+msgid "Current image"
+msgstr "Şu anki görsel:"
+
+#: facebook-button-plugin.php:480
+msgid ""
+"Image properties: max image width:100px; max image height:40px; max image "
+"size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+msgstr ""
+"Görsel özellikleri: maksimum görsel genişliği: 100px; maksimum görsel "
+"yüksekliği: 40px; maksimum görsel boyutu: 32 KB; uzantılar: \"jpg\", \"jpeg"
+"\", \"png\"."
+
+#: facebook-button-plugin.php:484
+msgid "Button layout"
+msgstr ""
+
+#: facebook-button-plugin.php:498
+msgid "Like button action"
+msgstr ""
+
+#: facebook-button-plugin.php:502
+msgid "Recommend"
+msgstr ""
+
 #: facebook-button-plugin.php:507
-#: facebook-button-plugin.php:562
+msgid "Show faces"
+msgstr ""
+
+#: facebook-button-plugin.php:513
+msgid "Layout width"
+msgstr ""
+
+#: facebook-button-plugin.php:519
+msgid "Color scheme"
+msgstr ""
+
+#: facebook-button-plugin.php:522
+msgid "Light"
+msgstr ""
+
+#: facebook-button-plugin.php:523
+msgid "Dark"
+msgstr ""
+
+#: facebook-button-plugin.php:528
+#, fuzzy
+msgid "Html tag for \"Like\" button"
+msgstr "Beğen butonu için HTML etiketi:"
+
+#: facebook-button-plugin.php:533
+msgid "Use this tag to improve validation of your site"
+msgstr "Sitenizin doğrulamasını geliştirmek için bu etiketi kullanın"
+
+#: facebook-button-plugin.php:546
+msgid "\"Like\" for an entire site on every page:"
+msgstr ""
+
+#: facebook-button-plugin.php:548
+msgid ""
+"Notice: \"Like for the entire site\" option does not create an extra button. "
+"This option merely allows your users to like the entire website when this "
+"option is enabled, or a single post when this option is disabled, when "
+"clicking the regular \"Like\" button."
+msgstr ""
+
+#: facebook-button-plugin.php:570 facebook-button-plugin.php:626
 msgid "Save Changes"
 msgstr "Değişiklikleri Kaydet"
 
-#: facebook-button-plugin.php:519
+#: facebook-button-plugin.php:582
 #, fuzzy
 msgid "Facebook Button preview:"
 msgstr "Facebook Butonu"
 
-#: facebook-button-plugin.php:544
-msgid "Please choose the necessary post types (or single pages) where Facebook button will be displayed:"
-msgstr "Lütfen Facebook butonunun gösterileceği yazı türlerini (ya da tek sayfaları) seçin."
+#: facebook-button-plugin.php:608
+msgid ""
+"Please choose the necessary post types (or single pages) where Facebook "
+"button will be displayed:"
+msgstr ""
+"Lütfen Facebook butonunun gösterileceği yazı türlerini (ya da tek sayfaları) "
+"seçin."
 
-#: facebook-button-plugin.php:551
+#: facebook-button-plugin.php:615
 msgid "Show URL for pages"
 msgstr "Sayfalar için URL göster"
 
-#: facebook-button-plugin.php:557
+#: facebook-button-plugin.php:621
 msgid "Example of the site's pages tree"
 msgstr "Sitenin sayfalar izi için örnek"
 
-#: facebook-button-plugin.php:557
+#: facebook-button-plugin.php:621
 msgid "Example of site pages' tree"
 msgstr "Site sayfaları izi için örnek"
 
-#: facebook-button-plugin.php:689
+#: facebook-button-plugin.php:757
 #, fuzzy
 msgid "Add Facebook buttons to your page or post"
 msgstr "Facebook Butonu pozisyonu"
 
-#: facebook-button-plugin.php:798
+#: facebook-button-plugin.php:866
 msgid "FAQ"
 msgstr "SSS"
 
-#: facebook-button-plugin.php:799
+#: facebook-button-plugin.php:867
 msgid "Support"
 msgstr "Destek"
 

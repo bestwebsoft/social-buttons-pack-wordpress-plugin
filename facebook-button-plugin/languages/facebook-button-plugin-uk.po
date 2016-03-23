@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-13 14:09+0300\n"
-"PO-Revision-Date: 2015-10-21 13:32+0300\n"
+"POT-Creation-Date: 2016-02-04 12:32+0300\n"
+"PO-Revision-Date: 2016-02-04 12:32+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ua_UA\n"
@@ -16,60 +16,60 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:34 facebook-button-plugin.php:290
+#: facebook-button-plugin.php:34 facebook-button-plugin.php:292
 msgid "Facebook Button Settings"
 msgstr "Установки кнопки Facebook"
 
-#: facebook-button-plugin.php:212
+#: facebook-button-plugin.php:214
 msgid "Settings saved"
 msgstr "Установки збережені"
 
-#: facebook-button-plugin.php:238
+#: facebook-button-plugin.php:240
 msgid "Error: File size > 32K"
 msgstr "Помилка: Розмір файлу > 32K"
 
-#: facebook-button-plugin.php:241
+#: facebook-button-plugin.php:243
 msgid "Error: Invalid file type"
 msgstr "Помилка: Невірний тип файлу"
 
-#: facebook-button-plugin.php:247
+#: facebook-button-plugin.php:249
 msgid "Upload successful."
 msgstr "Файл був завантажений успішно"
 
-#: facebook-button-plugin.php:257
+#: facebook-button-plugin.php:259
 msgid "Error: moving file failed"
 msgstr "Помилка: не вдалося переміщення файлів"
 
-#: facebook-button-plugin.php:260
+#: facebook-button-plugin.php:262
 msgid "Error: check image width or height"
 msgstr "Помилка: Перевірте ширину або висоту зображення"
 
-#: facebook-button-plugin.php:264
+#: facebook-button-plugin.php:266
 msgid "Uploading Error: check image properties"
 msgstr "Помилка Завантаження: Перевірте властивості зображення"
 
-#: facebook-button-plugin.php:277
+#: facebook-button-plugin.php:279
 msgid "All plugin settings were restored."
 msgstr "Всі налаштування плагіну було скинуто до стандартних."
 
-#: facebook-button-plugin.php:292 facebook-button-plugin.php:783
-#: facebook-button-plugin.php:797
+#: facebook-button-plugin.php:294 facebook-button-plugin.php:851
+#: facebook-button-plugin.php:865
 msgid "Settings"
 msgstr "Установки"
 
-#: facebook-button-plugin.php:293
+#: facebook-button-plugin.php:295
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: facebook-button-plugin.php:294
+#: facebook-button-plugin.php:296
 msgid "Go PRO"
 msgstr "Перейти на PRO версію"
 
-#: facebook-button-plugin.php:297
+#: facebook-button-plugin.php:299
 msgid "Please, enable JavaScript in Your browser."
 msgstr "Будь ласка, активуйте JavaScript у Вашому браузері."
 
-#: facebook-button-plugin.php:311
+#: facebook-button-plugin.php:314
 #, php-format
 msgid ""
 "If you would like to add Facebook buttons to your page or post, please use "
@@ -78,7 +78,7 @@ msgstr ""
 "Якщо ви хочете додати кнопки Facebook на вашу сторінку або пост, будь ласка, "
 "використовуйте кнопку %s"
 
-#: facebook-button-plugin.php:316
+#: facebook-button-plugin.php:319
 #, php-format
 msgid ""
 "You can add Facebook buttons to your page or post by clicking on %s button "
@@ -89,89 +89,141 @@ msgstr ""
 "кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
 "відображається, будь ласка, використовуйте шорткод %s"
 
-#: facebook-button-plugin.php:327
+#: facebook-button-plugin.php:330
 msgid "Display button"
 msgstr "Відображати кнопку"
 
-#: facebook-button-plugin.php:330
+#: facebook-button-plugin.php:333
 msgid "My Page"
 msgstr "Моя сторінка"
 
-#: facebook-button-plugin.php:331 facebook-button-plugin.php:438
+#: facebook-button-plugin.php:334 facebook-button-plugin.php:501
 msgid "Like"
 msgstr "Подобається"
 
-#: facebook-button-plugin.php:332
+#: facebook-button-plugin.php:335
 msgid "Share"
 msgstr "Поширити"
 
-#: facebook-button-plugin.php:337
+#: facebook-button-plugin.php:340
 msgid "Facebook buttons position"
 msgstr "Розташування кнопок Facebook"
 
-#: facebook-button-plugin.php:340
+#: facebook-button-plugin.php:343
 msgid "Before"
 msgstr "До"
 
-#: facebook-button-plugin.php:341
+#: facebook-button-plugin.php:344
 msgid "After"
 msgstr "Після"
 
-#: facebook-button-plugin.php:342
+#: facebook-button-plugin.php:345
 msgid "Before and After"
 msgstr "До та після"
 
-#: facebook-button-plugin.php:343
+#: facebook-button-plugin.php:346
 msgid "Shortcode"
 msgstr "Шорткод"
 
-#: facebook-button-plugin.php:348
+#: facebook-button-plugin.php:351
 msgid "Facebook buttons language"
 msgstr "Мова кнопок Facebook"
 
-#: facebook-button-plugin.php:359
+#: facebook-button-plugin.php:362
 msgid "Change the language of Facebook Button"
 msgstr "Змінити мову для кнопок Facebook"
 
-#: facebook-button-plugin.php:364 facebook-button-plugin.php:367
-#: facebook-button-plugin.php:372
+#: facebook-button-plugin.php:367 facebook-button-plugin.php:370
+#: facebook-button-plugin.php:375
 msgid "Use the current site language"
 msgstr "Використовувати поточну мову сайту"
 
-#: facebook-button-plugin.php:364 facebook-button-plugin.php:368
-#: facebook-button-plugin.php:373
+#: facebook-button-plugin.php:367 facebook-button-plugin.php:371
+#: facebook-button-plugin.php:376
 msgid "Using"
 msgstr "Використовуючи"
 
-#: facebook-button-plugin.php:368
+#: facebook-button-plugin.php:371
 msgid "Activate"
 msgstr "Активувати"
 
-#: facebook-button-plugin.php:373
+#: facebook-button-plugin.php:376
 msgid "Download"
 msgstr "Завантажити"
 
-#: facebook-button-plugin.php:380
+#: facebook-button-plugin.php:383
 msgid "Display buttons in excerpt"
 msgstr "Відображати кнопки в уривку"
 
-#: facebook-button-plugin.php:386
+#: facebook-button-plugin.php:393 facebook-button-plugin.php:542
+#: facebook-button-plugin.php:579
+msgid "Close"
+msgstr "Закрити"
+
+#: facebook-button-plugin.php:397
+msgid "Meta tags"
+msgstr "Мета теги"
+
+#: facebook-button-plugin.php:400
+msgid "Image"
+msgstr "Зображення"
+
+#: facebook-button-plugin.php:403
+msgid "Featured Image"
+msgstr "Головне зображення"
+
+#: facebook-button-plugin.php:407
+msgid "Custom Image"
+msgstr "Користувацьке зображення"
+
+#: facebook-button-plugin.php:407
+msgid "This image will be used for all of the posts"
+msgstr "Це зображення буде використовуватися для всiх записiв"
+
+#: facebook-button-plugin.php:417
+msgid "Description"
+msgstr "Короткий опис"
+
+#: facebook-button-plugin.php:420
+msgid "Post excerpt"
+msgstr "Уривок"
+
+#: facebook-button-plugin.php:425
+msgid "This description will be used for all of the posts"
+msgstr "Цей короткий опис буде використовуватися у всiх постах"
+
+#: facebook-button-plugin.php:432 facebook-button-plugin.php:553
+#: facebook-button-plugin.php:631
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
+
+#: facebook-button-plugin.php:439 facebook-button-plugin.php:560
+#: facebook-button-plugin.php:588 facebook-button-plugin.php:638
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
+
+#: facebook-button-plugin.php:441 facebook-button-plugin.php:562
+#: facebook-button-plugin.php:590 facebook-button-plugin.php:640
+msgid "Learn More"
+msgstr "Докладніше"
+
+#: facebook-button-plugin.php:449
 msgid "Your Facebook ID or username"
 msgstr "ID вашого Facebook акаунту"
 
-#: facebook-button-plugin.php:393
+#: facebook-button-plugin.php:456
 msgid "\"My page\" button image"
 msgstr "Зображення кнопки \"Моя сторінка\""
 
-#: facebook-button-plugin.php:398
+#: facebook-button-plugin.php:461
 msgid "Standard Facebook image"
 msgstr "Стандартне зображення Facebook "
 
-#: facebook-button-plugin.php:399
+#: facebook-button-plugin.php:462
 msgid "Custom Facebook image"
 msgstr "Кастомне зображення Facebook"
 
-#: facebook-button-plugin.php:402
+#: facebook-button-plugin.php:465
 msgid ""
 "To use custom image you need to setup permissions to upload directory of "
 "your site"
@@ -179,11 +231,11 @@ msgstr ""
 "Для використання кастомного зображення Вам необхідно видати права доступу на "
 "папку завантажень на вашому сайті"
 
-#: facebook-button-plugin.php:409
+#: facebook-button-plugin.php:472
 msgid "Current image"
 msgstr "Поточне зображення"
 
-#: facebook-button-plugin.php:417
+#: facebook-button-plugin.php:480
 msgid ""
 "Image properties: max image width:100px; max image height:40px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
@@ -192,55 +244,51 @@ msgstr ""
 "висота зображення: 40px; максимальний розмір зображення: 32Kb; типи "
 "зображеннь :\"jpg\", \"jpeg\", \"png\"."
 
-#: facebook-button-plugin.php:421
+#: facebook-button-plugin.php:484
 msgid "Button layout"
 msgstr "Тип кнопок"
 
-#: facebook-button-plugin.php:435
+#: facebook-button-plugin.php:498
 msgid "Like button action"
 msgstr "Дія кнопки \"Like\""
 
-#: facebook-button-plugin.php:439
+#: facebook-button-plugin.php:502
 msgid "Recommend"
 msgstr "Рекомендую"
 
-#: facebook-button-plugin.php:444
+#: facebook-button-plugin.php:507
 msgid "Show faces"
 msgstr "Показувати обличчя"
 
-#: facebook-button-plugin.php:450
+#: facebook-button-plugin.php:513
 msgid "Layout width"
 msgstr "Ширина блоку"
 
-#: facebook-button-plugin.php:456
+#: facebook-button-plugin.php:519
 msgid "Color scheme"
 msgstr "Кольорова схема"
 
-#: facebook-button-plugin.php:459
+#: facebook-button-plugin.php:522
 msgid "Light"
 msgstr "Світла"
 
-#: facebook-button-plugin.php:460
+#: facebook-button-plugin.php:523
 msgid "Dark"
 msgstr "Темна"
 
-#: facebook-button-plugin.php:465
+#: facebook-button-plugin.php:528
 msgid "Html tag for \"Like\" button"
 msgstr "Html тег для кнопки \"Подобається\""
 
-#: facebook-button-plugin.php:470
+#: facebook-button-plugin.php:533
 msgid "Use this tag to improve validation of your site"
 msgstr "Використовуйте цей тег для поліпшення валідації вашого сайту"
 
-#: facebook-button-plugin.php:479 facebook-button-plugin.php:516
-msgid "Close"
-msgstr "Закрити"
-
-#: facebook-button-plugin.php:483
+#: facebook-button-plugin.php:546
 msgid "\"Like\" for an entire site on every page:"
 msgstr "\"Подобається\" для всього сайту на кожній сторінці"
 
-#: facebook-button-plugin.php:485
+#: facebook-button-plugin.php:548
 msgid ""
 "Notice: \"Like for the entire site\" option does not create an extra button. "
 "This option merely allows your users to like the entire website when this "
@@ -252,29 +300,15 @@ msgstr ""
 "плагіна ставити \"Подобається\" усьому сайту , якщо ця опція увімкнена, або "
 "ставити \"Подобається\" окремим постам, якщо опція вимкнена."
 
-#: facebook-button-plugin.php:490 facebook-button-plugin.php:567
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
-
-#: facebook-button-plugin.php:497 facebook-button-plugin.php:525
-#: facebook-button-plugin.php:574
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
-
-#: facebook-button-plugin.php:499 facebook-button-plugin.php:527
-#: facebook-button-plugin.php:576
-msgid "Learn More"
-msgstr "Докладніше"
-
-#: facebook-button-plugin.php:507 facebook-button-plugin.php:562
+#: facebook-button-plugin.php:570 facebook-button-plugin.php:626
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: facebook-button-plugin.php:519
+#: facebook-button-plugin.php:582
 msgid "Facebook Button preview:"
 msgstr "Попередній перегляд Facebook кнопок:"
 
-#: facebook-button-plugin.php:544
+#: facebook-button-plugin.php:608
 msgid ""
 "Please choose the necessary post types (or single pages) where Facebook "
 "button will be displayed:"
@@ -282,29 +316,35 @@ msgstr ""
 "Будь ласка, оберіть необхідні типи постів (чи сторінок), де буде "
 "відображатися кнопка Facebook"
 
-#: facebook-button-plugin.php:551
+#: facebook-button-plugin.php:615
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: facebook-button-plugin.php:557
+#: facebook-button-plugin.php:621
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: facebook-button-plugin.php:557
+#: facebook-button-plugin.php:621
 msgid "Example of site pages' tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: facebook-button-plugin.php:689
+#: facebook-button-plugin.php:757
 msgid "Add Facebook buttons to your page or post"
 msgstr "Додати кнопки Facebook на вашу сторінку або пост"
 
-#: facebook-button-plugin.php:798
+#: facebook-button-plugin.php:866
 msgid "FAQ"
 msgstr "FAQ"
 
-#: facebook-button-plugin.php:799
+#: facebook-button-plugin.php:867
 msgid "Support"
 msgstr "Підтримка"
+
+#~ msgid "None"
+#~ msgstr "Не використовувати"
+
+#~ msgid "Custom description"
+#~ msgstr "Користувацький короткий опис"
 
 #~ msgid "Notice:"
 #~ msgstr "Нагадування:"

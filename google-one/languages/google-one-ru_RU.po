@@ -1,197 +1,236 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Google +1\n"
+"Project-Id-Version: google-one\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-05 09:59+0300\n"
-"PO-Revision-Date: 2015-11-05 10:00+0300\n"
+"POT-Creation-Date: 2016-03-16 11:13+0300\n"
+"PO-Revision-Date: 2016-03-16 11:14+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-0: ..\n"
 
-#: google-plus-one.php:34 google-plus-one.php:177
+#: ../google-plus-one.php:34 ../google-plus-one.php:338
 msgid "Google +1 Settings"
-msgstr "Google +1 Настройки"
+msgstr "Настройки Google +1"
 
-#: google-plus-one.php:153
+#: ../google-plus-one.php:282
+msgid "Email is invalid"
+msgstr "Неверный Email"
+
+#: ../google-plus-one.php:284
+msgid "Please, select the invitation type"
+msgstr "Пожалуйста, укажите вариант приглашения"
+
+#: ../google-plus-one.php:286
+msgid "Invitation field can't be empty"
+msgstr "Поле для приглашения не может быть пустым"
+
+#: ../google-plus-one.php:292 ../google-plus-one.php:967
+msgid "Only one phone number can be added"
+msgstr "Только один номер телефона может быть добавлен"
+
+#: ../google-plus-one.php:294 ../google-plus-one.php:968
+msgid "You can't add the invitation because the phone number is already added"
+msgstr ""
+"Невозможно добавить приглашение, потому что приглашение по номеру телефона "
+"уже добавлено"
+
+#: ../google-plus-one.php:296 ../google-plus-one.php:969
+msgid ""
+"You can't add the phone number because another invitation type is already "
+"added"
+msgstr ""
+"Невозможно добавить приглашение по номеру телефона, потому что приглашение "
+"другого типа уже добавлено"
+
+#: ../google-plus-one.php:301 ../google-plus-one.php:966
+msgid "Is already added"
+msgstr "Уже добавлен"
+
+#: ../google-plus-one.php:314
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: google-plus-one.php:164
+#: ../google-plus-one.php:325
 msgid "All plugin settings were restored."
 msgstr "Все настройки плагина восстановлены."
 
-#: google-plus-one.php:179 google-plus-one.php:496 google-plus-one.php:509
+#: ../google-plus-one.php:340 ../google-plus-one.php:1354
+#: ../google-plus-one.php:1367
 msgid "Settings"
 msgstr "Настройки"
 
-#: google-plus-one.php:180
+#: ../google-plus-one.php:341
 msgid "Extra settings"
 msgstr "Дополнительные настройки"
 
-#: google-plus-one.php:181
+#: ../google-plus-one.php:342
 msgid "Go PRO"
 msgstr "Перейти на PRO версию"
 
-#: google-plus-one.php:194
+#: ../google-plus-one.php:344
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#: ../google-plus-one.php:357
 msgid ""
 "For the correct work of the button do not use it locally or on a free hosting"
 msgstr ""
 "Для корректной работы кнопки не используйте её на локальном сервере или "
 "бесплатных хостингах"
 
-#: google-plus-one.php:197
+#: ../google-plus-one.php:360
 #, php-format
 msgid ""
-"If you would like to add Google +1 button to your page or post, please use "
-"%s button"
+"If you'd like to add Google Buttons to your page or post, please use %s "
+"button"
 msgstr ""
 "Если вы хотите добавить Google +1 кнопку на вашу страницу или пост, то "
 "используйте кнопку %s"
 
-#: google-plus-one.php:202
+#: ../google-plus-one.php:365
 #, php-format
 msgid ""
-"You can add Google +1 button to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s"
+"You can add Google Buttons to your page or post by clicking on %s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %s to show the Google +1 Button, or use parameter "
+"'display', e.g. %s to display these buttons"
 msgstr ""
-"Вы можете добавить Google +1 кнопку на вашу страницу или пост, нажав на "
-"кнопку %s в блоке редактирования контента в режиме Visual. Если кнопка не "
-"отображается, пожалуйста, используйте шорткод %s"
+"Вы можете добавить кнопки Google на вашу страницу или пост, нажав на кнопку "
+"%s в блоке редактирования контента в режиме \"Визуально\". Если кнопка не "
+"отображается, пожалуйста, используйте шорткод  %s для кнопки \"Плюс Один\" "
+"или используйте параметр \"display\", напр. %s,<br /> где<br /"
+"><code>plusone</code> - \"Плюс Один\",<br /> <code>share</code> - "
+"\"Поделиться\",<br /> <code>follow</code> - \"Подписаться\",<br /> "
+"<code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\" "
 
-#: google-plus-one.php:213
-msgid "Enable Google +1 Button"
-msgstr "Включить кнопку Google +1"
+#: ../google-plus-one.php:378
+msgid "Display Google Buttons"
+msgstr "Показывать кнопки Google"
 
-#: google-plus-one.php:217
-msgid "Enable or Disable Google+1 JavaScript"
-msgstr "Включить либо Выключить Google+1 JavaScript"
+#: ../google-plus-one.php:383 ../google-plus-one.php:1296
+msgid "Google +1"
+msgstr "\"Плюс один\""
 
-#: google-plus-one.php:222
-msgid "Size"
-msgstr "Размер"
+#: ../google-plus-one.php:388 ../google-plus-one.php:1301
+msgid "Share"
+msgstr "\"Поделиться\""
 
-#: google-plus-one.php:225
-msgid "Standard"
-msgstr "Стандартная"
+#: ../google-plus-one.php:393 ../google-plus-one.php:1306
+msgid "Follow"
+msgstr "\"Подписаться\""
 
-#: google-plus-one.php:226
-msgid "Small"
-msgstr "Маленькая"
+#: ../google-plus-one.php:397 ../google-plus-one.php:414
+msgid "To see this button, please"
+msgstr "Чтобы увидеть кнопку, пожалуйста"
 
-#: google-plus-one.php:227
-msgid "Medium"
-msgstr "Средняя"
+#: ../google-plus-one.php:398 ../google-plus-one.php:415
+msgid "enter"
+msgstr "укажите"
 
-#: google-plus-one.php:228
-msgid "Tall"
-msgstr "Высокая"
+#: ../google-plus-one.php:399 ../google-plus-one.php:416
+msgid "the Google+ ID"
+msgstr "Google+ ID"
 
-#: google-plus-one.php:230
-msgid "Please choose one of four different sizes of buttons"
-msgstr "Пожалуйста, выберите один из четырех вариантов размера кнопки"
+#: ../google-plus-one.php:405 ../google-plus-one.php:1311
+msgid "Hangout"
+msgstr "\"Чат\""
 
-#: google-plus-one.php:234
-msgid "Annotation"
-msgstr "Примечание"
+#: ../google-plus-one.php:410 ../google-plus-one.php:1316
+msgid "Badge"
+msgstr "\"Значок\""
 
-#: google-plus-one.php:237
-msgid "Inline"
-msgstr "Встроенное"
-
-#: google-plus-one.php:238
-msgid "Bubble"
-msgstr "Всплывающее"
-
-#: google-plus-one.php:239
-msgid "None"
-msgstr "Нет"
-
-#: google-plus-one.php:241
-msgid "Display counters showing how many times your article has been liked"
-msgstr "Показывать счетчик количества нажатий +1"
-
-#: google-plus-one.php:245
+#: ../google-plus-one.php:423
 msgid "Language"
 msgstr "Язык"
 
-#: google-plus-one.php:256
+#: ../google-plus-one.php:435
 msgid "Select the language to display information on the button"
 msgstr "Выберите язык отображения информации на кнопке"
 
-#: google-plus-one.php:261 google-plus-one.php:264 google-plus-one.php:269
+#: ../google-plus-one.php:441 ../google-plus-one.php:444
+#: ../google-plus-one.php:451
 msgid "Use the current site language"
 msgstr "Использовать текущий язык сайта"
 
-#: google-plus-one.php:261 google-plus-one.php:265 google-plus-one.php:270
+#: ../google-plus-one.php:441 ../google-plus-one.php:445
+#: ../google-plus-one.php:452
 msgid "Using"
 msgstr "Используя"
 
-#: google-plus-one.php:265
+#: ../google-plus-one.php:446
 msgid "Activate"
 msgstr "Активировать"
 
-#: google-plus-one.php:270
+#: ../google-plus-one.php:453
 msgid "Download"
 msgstr "Загрузить"
 
-#: google-plus-one.php:277
-msgid "Button Position"
-msgstr "Положение кнопки"
+#: ../google-plus-one.php:461
+msgid "Buttons Position"
+msgstr "Положение кнопок"
 
-#: google-plus-one.php:280
+#: ../google-plus-one.php:464
 msgid "Before"
 msgstr "Перед"
 
-#: google-plus-one.php:281
+#: ../google-plus-one.php:465
 msgid "After"
 msgstr "После"
 
-#: google-plus-one.php:282
+#: ../google-plus-one.php:466
 msgid "Before And After"
 msgstr "Перед и После"
 
-#: google-plus-one.php:284
-msgid "Please select location for the button on the page"
-msgstr "Пожалуйста выберите расположение кнопки на странице"
+#: ../google-plus-one.php:467
+msgid "Only Shortcode"
+msgstr "Только Шорткод"
 
-#: google-plus-one.php:288
-msgid "Show button"
-msgstr "Показывать кнопку"
+#: ../google-plus-one.php:469
+msgid "Please select location for the buttons on the page"
+msgstr "Пожалуйста выберите расположение кнопок на странице"
 
-#: google-plus-one.php:293
+#: ../google-plus-one.php:473
+msgid "Show buttons"
+msgstr "Показывать кнопки"
+
+#: ../google-plus-one.php:478
 msgid "Show in posts"
 msgstr "В постах"
 
-#: google-plus-one.php:299
+#: ../google-plus-one.php:484
 msgid "Show in pages"
 msgstr "На страницах"
 
-#: google-plus-one.php:305
+#: ../google-plus-one.php:490
 msgid "Show on the homepage"
 msgstr "На домашней странице"
 
-#: google-plus-one.php:309
-msgid "Please select the page on which you want to see the button"
-msgstr "Пожалуйста выберите страницу, на которой Вы хотите показать кнопку"
+#: ../google-plus-one.php:494
+msgid "Please select the page on which you want to see the buttons"
+msgstr "Пожалуйста, выберите страницу, на который Вы хотите показывать кнопки"
 
-#: google-plus-one.php:319
+#: ../google-plus-one.php:499
+msgid "Settings for Google +1 Button"
+msgstr "Настройки кнопки Google +1"
+
+#: ../google-plus-one.php:508 ../google-plus-one.php:876
+#: ../google-plus-one.php:898
 msgid "Close"
 msgstr "Закрыть"
 
-#: google-plus-one.php:323
+#: ../google-plus-one.php:512
 msgid "\"+1\" for an entire site on every page"
 msgstr "Ставить \"+1\"  всему сайту на каждой странице"
 
-#: google-plus-one.php:326
+#: ../google-plus-one.php:515
 msgid ""
 "Notice: This option does not create an extra button. This option merely "
 "allows your users to +1 the entire website when this option is enabled, or a "
@@ -203,23 +242,345 @@ msgstr ""
 "сайта, если эта опция включена, или \"+1\" для отдельной записи, когда эта "
 "опция выключена."
 
-#: google-plus-one.php:331 google-plus-one.php:367
+#: ../google-plus-one.php:520 ../google-plus-one.php:938
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
 
-#: google-plus-one.php:338 google-plus-one.php:372
+#: ../google-plus-one.php:527 ../google-plus-one.php:891
+#: ../google-plus-one.php:904 ../google-plus-one.php:944
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "Активируйте премиум опции обновившись до Pro версии"
 
-#: google-plus-one.php:340 google-plus-one.php:374
+#: ../google-plus-one.php:529 ../google-plus-one.php:893
+#: ../google-plus-one.php:906 ../google-plus-one.php:946
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: google-plus-one.php:347 google-plus-one.php:366
+#: ../google-plus-one.php:539 ../google-plus-one.php:588
+#: ../google-plus-one.php:631 ../google-plus-one.php:671
+msgid "Size"
+msgstr "Размер"
+
+#: ../google-plus-one.php:542 ../google-plus-one.php:674
+msgctxt "for:size"
+msgid "Standard"
+msgstr "Стандартная"
+
+#: ../google-plus-one.php:543 ../google-plus-one.php:591
+#: ../google-plus-one.php:634
+msgid "Small"
+msgstr "Маленькая"
+
+#: ../google-plus-one.php:544 ../google-plus-one.php:592
+#: ../google-plus-one.php:635
+msgid "Medium"
+msgstr "Средняя"
+
+#: ../google-plus-one.php:545
+msgid "Tall"
+msgstr "Высокая"
+
+#: ../google-plus-one.php:550 ../google-plus-one.php:574
+#: ../google-plus-one.php:641
+msgid "Annotation"
+msgstr "Примечание"
+
+#: ../google-plus-one.php:553 ../google-plus-one.php:577
+msgid "Inline"
+msgstr "Встроенное"
+
+#: ../google-plus-one.php:554 ../google-plus-one.php:578
+#: ../google-plus-one.php:644
+msgid "Bubble"
+msgstr "Всплывающее"
+
+#: ../google-plus-one.php:555 ../google-plus-one.php:580
+#: ../google-plus-one.php:646
+msgid "None"
+msgstr "Нет"
+
+#: ../google-plus-one.php:558
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Показывать счетчик количества нажатий +1"
+
+#: ../google-plus-one.php:562 ../google-plus-one.php:598
+msgid "Annotation Type"
+msgstr "Вариант Примечания"
+
+#: ../google-plus-one.php:565 ../google-plus-one.php:601
+msgctxt "for:annotation type"
+msgid "Standard"
+msgstr "Стандартное"
+
+#: ../google-plus-one.php:566 ../google-plus-one.php:602
+msgid "Short"
+msgstr "Короткое"
+
+#: ../google-plus-one.php:571
+msgid "Settings for Share Button"
+msgstr "Настройки для кнопки \"Поделиться\""
+
+#: ../google-plus-one.php:579 ../google-plus-one.php:645
+msgid "Vertical-bubble"
+msgstr "Вертикальное всплывающее"
+
+#: ../google-plus-one.php:583
+msgid "Display the number of users who have shared the page"
+msgstr "Показывать количество человек поделившихся страницей"
+
+#: ../google-plus-one.php:593 ../google-plus-one.php:636
+msgid "Large"
+msgstr "Большая"
+
+#: ../google-plus-one.php:607
+msgid "Settings for Follow Button"
+msgstr "Настройки для кнопки \"Подписаться\""
+
+#: ../google-plus-one.php:610 ../google-plus-one.php:792
+#: ../google-plus-one.php:980
+msgid "Google+ ID"
+msgstr "Google+ ID"
+
+#: ../google-plus-one.php:614 ../google-plus-one.php:793
+#: ../google-plus-one.php:981
+msgid "Enter the Google+ ID, e.g."
+msgstr "Укажите Google+ ID, напр."
+
+#: ../google-plus-one.php:614 ../google-plus-one.php:747
+#: ../google-plus-one.php:793 ../google-plus-one.php:798
+#: ../google-plus-one.php:803 ../google-plus-one.php:977
+#: ../google-plus-one.php:981 ../google-plus-one.php:983
+#: ../google-plus-one.php:985
+msgid "or"
+msgstr "или"
+
+#: ../google-plus-one.php:619
+msgid "Relationship"
+msgstr "Отношение"
+
+#: ../google-plus-one.php:622
+msgid "Author"
+msgstr "Автор"
+
+#: ../google-plus-one.php:623
+msgid "Publisher"
+msgstr "Издатель"
+
+#: ../google-plus-one.php:626
+msgid ""
+"Describes your relationship to content of the page, where the button is "
+"embedded"
+msgstr ""
+"Указывает ваше отношение к содержанию страницы, на которой встроена кнопка"
+
+#: ../google-plus-one.php:649
+msgid "Display the number of users who are following this page or person"
+msgstr "Показывать количество человек, подписавшихся на страницу или профиль"
+
+#: ../google-plus-one.php:654
+msgid "Settings for Hangout Button"
+msgstr "Настройки для кнопки \"Чат\""
+
+#: ../google-plus-one.php:657
+msgid "Topic"
+msgstr "Тема Чата"
+
+#: ../google-plus-one.php:661
+msgid "Use the title of the page"
+msgstr "Использовать заголовок страницы"
+
+#: ../google-plus-one.php:675
+msgid "Narrow"
+msgstr "Узкая"
+
+#: ../google-plus-one.php:676
+msgid "Wide"
+msgstr "Широкая"
+
+#: ../google-plus-one.php:681 ../google-plus-one.php:779
+msgid "Type"
+msgstr "Вариант"
+
+#: ../google-plus-one.php:684
+msgid "Normal"
+msgstr "Обычный"
+
+#: ../google-plus-one.php:685
+msgid "Onair"
+msgstr "В эфире"
+
+#: ../google-plus-one.php:686
+msgid "Party"
+msgstr "Групповой"
+
+#: ../google-plus-one.php:687
+msgid "Moderated"
+msgstr "Настраиваемый"
+
+#: ../google-plus-one.php:692
+msgid "Invitation Type"
+msgstr "Вариант Приглашения"
+
+#: ../google-plus-one.php:695
+msgid "Select The Type"
+msgstr "Выберите Вариант"
+
+#: ../google-plus-one.php:696
+msgid "Google+ Profile ID"
+msgstr "Google+ ID Профиля"
+
+#: ../google-plus-one.php:697
+msgid "Google+ Circle ID"
+msgstr "Google+ ID Круга"
+
+#: ../google-plus-one.php:698
+msgid "Email"
+msgstr "Email"
+
+#: ../google-plus-one.php:699
+msgid "Phone Number"
+msgstr "Номер Телефона"
+
+#: ../google-plus-one.php:736
+msgid "Google+ ID, Phone Number or Email"
+msgstr "Google+ ID, Номер Телефона или Email"
+
+#: ../google-plus-one.php:742 ../google-plus-one.php:768
+msgid "Add"
+msgstr "Добавить"
+
+#: ../google-plus-one.php:744
+msgid "Delete Selected"
+msgstr "Удалить Выбранные"
+
+#: ../google-plus-one.php:747
+msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
+msgstr ""
+"Если выбран тип приглашения 'Google+  ID Профиля', то введённый ID  должен "
+"иметь вид"
+
+#: ../google-plus-one.php:751
+msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
+msgstr ""
+"Если выбран тип приглашения 'Google+  ID Круга', то введённый ID  должен "
+"иметь вид"
+
+#: ../google-plus-one.php:755
+msgid "If Invitation Type is 'Email', it should look like"
+msgstr ""
+"Если выбран тип приглашения 'Email', то введённый адрес должен иметь вид"
+
+#: ../google-plus-one.php:759
+msgid "If Invitation Type is 'Phone Number', it should look like"
+msgstr ""
+"Если выбран тип приглашения 'Номер Телефона', то введённый номер должен "
+"иметь вид"
+
+#: ../google-plus-one.php:776
+msgid "Settings for Badge"
+msgstr "Настройки для \"Значка\""
+
+#: ../google-plus-one.php:782
+msgid "Person"
+msgstr "Профиль"
+
+#: ../google-plus-one.php:783
+msgid "Page"
+msgstr "Страница"
+
+#: ../google-plus-one.php:784
+msgid "Community"
+msgstr "Сообщество"
+
+#: ../google-plus-one.php:794 ../google-plus-one.php:986
+msgid "Display the user's tag line"
+msgstr "Показывать слоган пользователя"
+
+#: ../google-plus-one.php:797 ../google-plus-one.php:982
+msgid "Google+ Page ID"
+msgstr "Google+ ID Страницы"
+
+#: ../google-plus-one.php:798 ../google-plus-one.php:983
+msgid "Enter the Google+ Page ID, e.g."
+msgstr "Укажите Google+ ID Страницы, напр."
+
+#: ../google-plus-one.php:799 ../google-plus-one.php:987
+msgid "Display the company tag line"
+msgstr "Показывать слоган компании"
+
+#: ../google-plus-one.php:802 ../google-plus-one.php:984
+msgid "Google+ Community ID"
+msgstr "Google+ ID Сообщества"
+
+#: ../google-plus-one.php:803 ../google-plus-one.php:985
+msgid "Enter the Google+ Community ID, e.g."
+msgstr "Укажите Google+ ID  Сообщества, напр."
+
+#: ../google-plus-one.php:804 ../google-plus-one.php:988
+msgid "Display the community tag line"
+msgstr "Показывать слоган сообщества"
+
+#: ../google-plus-one.php:817 ../google-plus-one.php:1124
+msgid "Layout"
+msgstr "Ориентация"
+
+#: ../google-plus-one.php:820 ../google-plus-one.php:1126
+msgid "Portrait"
+msgstr "Вертикальная"
+
+#: ../google-plus-one.php:821 ../google-plus-one.php:1127
+msgid "Landscape"
+msgstr "Горизонтальная"
+
+#: ../google-plus-one.php:824
+msgid "Sets the orientation of the badge"
+msgstr "Выберите ориентацию Значка"
+
+#: ../google-plus-one.php:829 ../google-plus-one.php:1132
+msgid "Show Cover Photo"
+msgstr "Показывать Фото Обложки"
+
+#: ../google-plus-one.php:837
+msgid "Show Tag Line"
+msgstr "Показывать Слоган"
+
+#: ../google-plus-one.php:846
+msgid "Show Owners"
+msgstr "Показывать Основателей"
+
+#: ../google-plus-one.php:850
+msgid "Display a list of community owners"
+msgstr "Показывать список основателей сообщества"
+
+#: ../google-plus-one.php:855
+msgid "Theme"
+msgstr "Тема"
+
+#: ../google-plus-one.php:858
+msgid "Light"
+msgstr "Светлая"
+
+#: ../google-plus-one.php:859
+msgid "Dark"
+msgstr "Тёмная"
+
+#: ../google-plus-one.php:864
+msgid "Width"
+msgstr "Ширина"
+
+#: ../google-plus-one.php:867
+msgid "px"
+msgstr "px"
+
+#: ../google-plus-one.php:881 ../google-plus-one.php:900
+msgid "Preview"
+msgstr "Превью"
+
+#: ../google-plus-one.php:913 ../google-plus-one.php:935
 msgid "Save Changes"
 msgstr "Сохранить изменения"
 
-#: google-plus-one.php:360
+#: ../google-plus-one.php:928
 msgid ""
 "Please choose the necessary post types (or single pages) where Google +1 "
 "button will be displayed:"
@@ -227,50 +588,130 @@ msgstr ""
 "Пожалуйста, выберите те типы постов (или отдельные страницы), где будет "
 "отображатся кнопка Google +1:"
 
-#: google-plus-one.php:363
+#: ../google-plus-one.php:931
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: google-plus-one.php:365
+#: ../google-plus-one.php:933
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
 
-#: google-plus-one.php:510
+#: ../google-plus-one.php:970
+msgid "This field can't be empty"
+msgstr "Поле не может быть пустым"
+
+#: ../google-plus-one.php:971
+msgid "Please, enter the valid Email"
+msgstr "Пожалуйста, укажите корректный Email"
+
+#: ../google-plus-one.php:972
+msgid "Email of Invited Person"
+msgstr "Email приглашаемого"
+
+#: ../google-plus-one.php:973
+msgid "Please, enter the Email of invited person, e.g."
+msgstr "Пожалуйста, укажите Email приглашаемого, напр."
+
+#: ../google-plus-one.php:974
+msgid "Phone Number of Invited Person"
+msgstr "Номер Телефона Приглашаемого"
+
+#: ../google-plus-one.php:975
+msgid "Please, enter the phone number of invited person, e.g."
+msgstr "Пожалуйста, введите номер телефона приглашаемого, напр."
+
+#: ../google-plus-one.php:976
+msgid "Google+ Profile ID of Invited Person"
+msgstr "Google+ ID Профиля Приглашаемого"
+
+#: ../google-plus-one.php:977
+msgid "Please, enter the Google+ Profile ID of invited person, e.g."
+msgstr "Пожалуйста, укажите Google + ID Профиля приглашаемого, напр."
+
+#: ../google-plus-one.php:978
+msgid "Google+ Circle ID for Invitation"
+msgstr "Google+ ID Круга для приглашения"
+
+#: ../google-plus-one.php:979
+msgid "Please, enter the Google+ Circle ID for invitation, e.g."
+msgstr "Пожалуйста, укажите Google+ ID Круга для приглашения, напр."
+
+#: ../google-plus-one.php:1078
+msgid "Google+ Badge Widget"
+msgstr "Виджет Значка Google+"
+
+#: ../google-plus-one.php:1078
+msgid "Show Google Badge on your site"
+msgstr "Отображать Google Значок на вашем сайте"
+
+#: ../google-plus-one.php:1120
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../google-plus-one.php:1292
+msgid "Add Google Buttons to your page or post"
+msgstr "Добавить Google  Кнопки на вашу страницу или пост"
+
+#: ../google-plus-one.php:1368
 msgid "FAQ"
 msgstr "FAQ"
 
-#: google-plus-one.php:511
+#: ../google-plus-one.php:1369
 msgid "Support"
 msgstr "Поддержка"
 
-#~ msgid "Notice:"
-#~ msgstr "Внимание:"
+#~ msgid "No"
+#~ msgstr "Нет"
 
-#~ msgid ""
-#~ "The plugin's settings have been changed. In order to save them please "
-#~ "don't forget to click the 'Save Changes' button."
-#~ msgstr ""
-#~ "Настройки плагина были изменены. Для того, чтобы сохранить их, "
-#~ "пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+#, fuzzy
+#~ msgid "PHP XML support"
+#~ msgstr "Поддержка"
 
-#~ msgid ""
-#~ "If you want to insert the button in any place on the site, please use the "
-#~ "following code:"
-#~ msgstr ""
-#~ "Для установки кнопки в любом месте на сайте, пожалуйста, вставьте "
-#~ "следующий код:"
+#, fuzzy
+#~ msgid "Active Theme"
+#~ msgstr "Активировать"
 
-#~ msgid "Show +1 count in the button"
-#~ msgstr "Показывать счетчик +1 в кнопке"
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Пожалуйста, введите корректный email"
 
-#~ msgid "Button Size"
-#~ msgstr "Размер кнопки"
+#, fuzzy
+#~ msgid "Plugins"
+#~ msgstr "Страницу плагинов"
+
+#, fuzzy
+#~ msgid "Themes"
+#~ msgstr "Тема"
+
+#, fuzzy
+#~ msgid "Learn more"
+#~ msgstr "Подробнее"
+
+#, fuzzy
+#~ msgid "Activate this plugin"
+#~ msgstr "Оценить плагин"
 
 #~ msgid "Go"
 #~ msgstr "Перейти на"
 
-#~ msgid "Google +1"
-#~ msgstr "Google +1"
+#, fuzzy
+#~ msgid "Preview %s"
+#~ msgstr "Превью"
+
+#, fuzzy
+#~ msgid "Already Installed"
+#~ msgstr "Уже добавлен"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Поддержка"
 
 #~ msgid "requires"
 #~ msgstr "требует"
@@ -288,13 +729,26 @@ msgstr "Поддержка"
 #~ msgid "Plugins page"
 #~ msgstr "Страницу плагинов"
 
+#, fuzzy
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr "Расширение стандартного функционала плагина новыми опциями"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Если вам понравился плагин, то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
 #~ msgid "Wrong license key"
 #~ msgstr "Неправильный лицензионный ключ"
 
+#, fuzzy
 #~ msgid ""
-#~ "Something went wrong. Try again later. If the error will appear again, "
-#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
-#~ "a>. We are sorry for inconvenience."
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
 #~ msgstr ""
 #~ "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, "
 #~ "пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
@@ -304,8 +758,8 @@ msgstr "Поддержка"
 #~ msgstr "Этот лицензионный ключ привязан к другому сайту"
 
 #~ msgid ""
-#~ "Unfortunately, you have exceeded the number of available tries. Please, "
-#~ "upload the plugin manually."
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
 #~ msgstr ""
 #~ "К сожалению, вы превысили количество доступных попыток в день. "
 #~ "Пожалуйста, загрузите плагин вручную."
@@ -330,9 +784,10 @@ msgstr "Поддержка"
 #~ "Папка загрузки не доступна для записи. Пожалуйста, загрузите плагин "
 #~ "вручную"
 
+#, fuzzy
 #~ msgid ""
 #~ "Something went wrong. Try again later or upload the plugin manually. We "
-#~ "are sorry for inconvienience."
+#~ "are sorry for inconvenience."
 #~ msgstr ""
 #~ "Что-то пошло не так. Повторите попытку позже или загрузите плагин "
 #~ "вручную. Приносим извинения за неудобства."
@@ -340,17 +795,9 @@ msgstr "Поддержка"
 #~ msgid "Please, enter Your license key"
 #~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
 
-#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
-#~ msgstr "Если вам понравился плагин, то поставте нам 5 звезд на WordPress"
-
-#~ msgid "Rate the plugin"
-#~ msgstr "Оценить плагин"
-
-#~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
-
+#, fuzzy
 #~ msgid ""
-#~ "Congratulations! The PRO version of the plugin is successfully download "
+#~ "Congratulations! The Pro version of the plugin is successfully download "
 #~ "and activated."
 #~ msgstr ""
 #~ "Поздравляем! PRO версия плагина была успешно загружена и активирована."
@@ -363,6 +810,10 @@ msgstr "Поддержка"
 
 #~ msgid "You will be redirected automatically in 5 seconds."
 #~ msgstr "Вы будете перенаправлены автоматически через 5 секунд."
+
+#, fuzzy
+#~ msgid "Show Pro features"
+#~ msgstr "На страницах"
 
 #~ msgid "You can download and activate"
 #~ msgstr "Вы можете скачать и активировать"
@@ -383,15 +834,262 @@ msgstr "Поддержка"
 #~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
 #~ "продукта)."
 
-#~ msgid "Go!"
-#~ msgstr "Перейти!"
+#, fuzzy
+#~ msgid "After that you can activate it by entering your license key."
+#~ msgstr "версию этого плагина, введя ваш лицензионный ключ."
 
+#, fuzzy
 #~ msgid ""
-#~ "Unfortunately, you have exceeded the number of available tries per day. "
-#~ "Please, upload the plugin manually."
+#~ "Unfortunately, you have exceeded the number of available tries per day."
 #~ msgstr ""
 #~ "К сожалению, вы превысили количество доступных попыток в день. "
 #~ "Пожалуйста, загрузите плагин вручную."
+
+#, fuzzy
+#~ msgid ""
+#~ "Congratulations! The Pro license of the plugin is successfully activated."
+#~ msgstr ""
+#~ "Поздравляем! PRO версия плагина была успешно загружена и активирована."
+
+#, fuzzy
+#~ msgid "Wrong license key."
+#~ msgstr "Неправильный лицензионный ключ"
+
+#, fuzzy
+#~ msgid "This license key is bind to another site."
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#, fuzzy
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr ""
+#~ "К сожалению, вы превысили количество доступных попыток в день. "
+#~ "Пожалуйста, загрузите плагин вручную."
+
+#, fuzzy
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#, fuzzy
+#~ msgid "The license key is valid."
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#, fuzzy
+#~ msgid "Your license will expire on"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#, fuzzy
+#~ msgid "Please, enter your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
+#~ "продукта)."
+
+#, fuzzy
+#~ msgid "Check license key"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#, fuzzy
+#~ msgid "You license for"
+#~ msgstr "Неправильный лицензионный ключ"
+
+#, fuzzy
+#~ msgid "Configure Settings"
+#~ msgstr "Google +1 Настройки"
+
+#, fuzzy
+#~ msgid "Notice"
+#~ msgstr "Внимание:"
+
+#, fuzzy
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#, fuzzy
+#~ msgid "Add BWS Plugins Shortcode"
+#~ msgstr "Добавить шорткод"
+
+#~ msgid "Add shortcode"
+#~ msgstr "Добавить шорткод"
+
+#, fuzzy
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Все настройки плагина восстановлены."
+
+#, fuzzy
+#~ msgid "Restore settings"
+#~ msgstr "Дополнительные настройки"
+
+#, fuzzy
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Дополнительные настройки"
+
+#, fuzzy
+#~ msgid "No, go back to the settings page"
+#~ msgstr "страницу настроек"
+
+#, fuzzy
+#~ msgid "Plugin"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "Shortcode settings"
+#~ msgstr "Настройки шорткода"
+
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "Шорткод будет добавлен"
+
+#, fuzzy
+#~ msgid "Documentation"
+#~ msgstr "Примечание"
+
+#~ msgid "Invite Type"
+#~ msgstr "Вариант приглашения"
+
+#~ msgid "Field for invite can't be empty"
+#~ msgstr "Поле для приглашения не может быть пустым"
+
+#~ msgid "Email is incorrect"
+#~ msgstr "Неверный Email"
+
+#, fuzzy
+#~ msgid "if you upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#~ msgid "%s to display these buttons"
+#~ msgstr ""
+#~ " %s<br /> для отображения указанных кнопок, где<br />\"plusone\" - \"Плюс "
+#~ "Один\",<br />\"share\" - \"Поделиться\",<br />\"follow\" - \"Подписаться"
+#~ "\",<br />\"hangout\" - \"Чат\",<br />\"badge\" - \"Значок\"."
+
+#~ msgid "Enter the Google+ ID, e.g. \"12345678912345678912\" or \"+YouName\""
+#~ msgstr ""
+#~ "Укажите Google+ ID, напр. \"12345678912345678912\" или  \"+YouName\""
+
+#~ msgid ""
+#~ "Enter the Google+ Page ID, e.g. \"12345678912345678912\" or \"+CompanyName"
+#~ "\""
+#~ msgstr ""
+#~ "Укажите Google + ID Страницы, напр.  \"12345678912345678912\" или "
+#~ "\"+CompanyName\""
+
+#~ msgid ""
+#~ "Enter the Google+ Community ID, e.g. \"12345678912345678912\" or "
+#~ "\"+CommunityName\""
+#~ msgstr ""
+#~ "Укажите Google+ ID Сообщества, напр. \"12345678912345678912\" или  "
+#~ "\"+CommunityName\""
+
+#~ msgid "Google Badge"
+#~ msgstr "Google  \"Значок\""
+
+#~ msgid "Plusone"
+#~ msgstr "\"Плюс один\""
+
+#~ msgid "Display the cover photo in the badge"
+#~ msgstr "Показывает фото обложки страницы на значке"
+
+#, fuzzy
+#~ msgid "ifyou upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#~ msgid "Get topic from page title"
+#~ msgstr "Сделать темой заголовок страницы"
+
+#~ msgid "Phone number is already added. Remove it before add another type"
+#~ msgstr ""
+#~ "Уже добавлено приглашение по номеру телефона. Удалите его, прежде чем "
+#~ "добавлять приглашение по другому типу"
+
+#~ msgid "dark"
+#~ msgstr "Тёмная"
+
+#~ msgid "Google Buttons"
+#~ msgstr "Кнопки Google"
+
+#~ msgid "Google+1 Button"
+#~ msgstr "Кнопка Google +1"
+
+#~ msgid "Enable or Disable Google+1 Button"
+#~ msgstr "Включить либо Выключить кнопку Google+1"
+
+#~ msgid "Share Button"
+#~ msgstr "Кнопка \"Поделиться\""
+
+#~ msgid "Enable or Disable Google Share Button"
+#~ msgstr "Включить либо выключить кнопку  \"Поделиться\""
+
+#~ msgid "Enable or Disable Google Follow Button"
+#~ msgstr "Включить либо выключить нопку \"Подписаться\""
+
+#~ msgid "Enable or Disable Hangout Button"
+#~ msgstr "Включить кнопку кнопка \"Чат\""
+
+#~ msgid "Enable or Disable Google Badge "
+#~ msgstr "Включить либо выключить Google  \"Значок\""
+
+#~ msgid "Please choose one of four different sizes of buttons"
+#~ msgstr "Пожалуйста, выберите один из четырех вариантов размера кнопки"
+
+#~ msgid ""
+#~ "Please choose the width for annotation \"inline\". Value should be in the "
+#~ "range of 120px to 450px"
+#~ msgstr ""
+#~ "Пожалуйста, выберите ширину кнопки( только для встроенного примечания ). "
+#~ "Значение может быть в пределах от 120 до 450 пикселов"
+
+#~ msgid ""
+#~ "Please choose the width for annotation \"inline\". Value should be more "
+#~ "then 100px"
+#~ msgstr ""
+#~ "Пожалуйста, выберите ширину ( только для встроенного примечания ). "
+#~ "Значение может бытьне меньше 100  пикселов"
+
+#~ msgid "Choose the type of hangout"
+#~ msgstr "Выберите вариант приглашения к чату"
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Show Community Photo"
+#~ msgstr "Показать Фото Сообщества"
+
+#~ msgid ""
+#~ "Displays the community photo in the badge if set to true and the photo "
+#~ "exists."
+#~ msgstr "Показывает фото сообщества, если оно установлено"
+
+#~ msgid "Sets width of the badge"
+#~ msgstr "Выберите ширину значка"
+
+#~ msgid "For show this button, input the Google+ ID"
+#~ msgstr "Чтобы увидеть эту кнопку укажите ваш Google+ ID"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Настройки плагина были изменены. Для того, чтобы сохранить их, "
+#~ "пожалуйста, не забудьте нажать кнопку \"Сохранить\"."
+
+#~ msgid ""
+#~ "If you want to insert the button in any place on the site, please use the "
+#~ "following code:"
+#~ msgstr ""
+#~ "Для установки кнопки в любом месте на сайте, пожалуйста, вставьте "
+#~ "следующий код:"
+
+#~ msgid "Show +1 count in the button"
+#~ msgstr "Показывать счетчик +1 в кнопке"
+
+#~ msgid "Button Size"
+#~ msgstr "Размер кнопки"
+
+#~ msgid "Go!"
+#~ msgstr "Перейти!"
 
 #~ msgid ""
 #~ "It's time to upgrade your <strong>Google +1</strong> to <strong>PRO</"
@@ -399,9 +1097,6 @@ msgstr "Поддержка"
 #~ msgstr ""
 #~ "Пора обновить ваш <strong>плагин Google +1</strong> до <strong>PRO</"
 #~ "strong> версии"
-
-#~ msgid "Extend standard plugin functionality with new great options"
-#~ msgstr "Расширение стандартного функционала плагина новыми опциями"
 
 #~ msgid ""
 #~ "This functionality is available in the Pro version of the plugin. For "
