@@ -1,0 +1,31 @@
+/*
+ * Plugin admin css
+ */
+.pntrst-widget-admin {
+	margin: 10px 0;
+}
+.pntrst-widget-admin input {
+	margin: 5px 0;
+}
+
+/*
+ * Plugin frontend css
+ */
+.pntrst-custom-pin {
+	cursor: pointer;
+	vertical-align: bottom;
+}
+.pntrst-widget span {
+    min-width: 0 !important;
+}
+.pntrst-button-wrap {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+}
+.rtl .pntrst-button-wrap {
+	display: inline-block;
+	margin: 0 0 5px 5px;
+}
+.pntrst-button-wrap span {
+	vertical-align: bottom;
+}

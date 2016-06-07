@@ -1,0 +1,425 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinterest\n"
+"POT-Creation-Date: 2016-05-26 10:50+0300\n"
+"PO-Revision-Date: 2016-05-26 10:52+0300\n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <plugins@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bws-pinterest.php:131
+msgid "Follow me"
+msgstr "Подписаться"
+
+#: bws-pinterest.php:182
+msgid ""
+"Please, enter \"Pinterest user URL\" to add Follow Button. Settings are not "
+"saved."
+msgstr ""
+"Пожалуйста, введите \"Профиль Pinterest\", чтобы добавить кнопку Follow. "
+"Настройки не сохранены."
+
+#: bws-pinterest.php:204
+#, php-format
+msgid "Error: File size %1s"
+msgstr "Ошибка: Размер файла %1s"
+
+#: bws-pinterest.php:207
+msgid "Error: Invalid file type"
+msgstr "Ошибка: Некорректный тип файла"
+
+#: bws-pinterest.php:219
+msgid "Error: moving file failed"
+msgstr "Ошибка: При загрузке произошла ошибка"
+
+#: bws-pinterest.php:225
+msgid "Error: select the upload file"
+msgstr "Ошибка:  Выберите файл для загрузки"
+
+#: bws-pinterest.php:229
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: bws-pinterest.php:237
+msgid "All plugin settings were restored."
+msgstr "Все настройки плагина восстановлены."
+
+#: bws-pinterest.php:250
+msgid "Pinterest Settings"
+msgstr "Настройки Pinterest"
+
+#: bws-pinterest.php:252 bws-pinterest.php:996 bws-pinterest.php:1013
+msgid "Settings"
+msgstr "Настройки"
+
+#: bws-pinterest.php:253
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+#: bws-pinterest.php:254
+msgid "Custom code"
+msgstr "Пользовательский код"
+
+#: bws-pinterest.php:255
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: bws-pinterest.php:274
+#, php-format
+msgid ""
+"If you would like to add Pinterest buttons or widgets to your page or post, "
+"please use %s button"
+msgstr ""
+"Если вы хотите добавить кнопки и виджеты Pinterest   на вашу страницу или "
+"пост, то используйте кнопку %s"
+
+#: bws-pinterest.php:279
+#, php-format
+msgid ""
+"You can add buttons or widgets to your content by clicking on %1s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %2s for Pin It button, %3s for Follow button or %4s "
+"for Pinteresr widget"
+msgstr ""
+"Вы можете добавить кнопки или виджеты на вашу страницу или пост, нажав на "
+"кнопку %1s в блоке редактирования контента в режиме Visual. Если кнопка не "
+"отображается, пожалуйста, используйте шорткод %2s для кнопки Pin It, %3s для "
+"кнопки Follow или %4s для виджета Pinterest"
+
+#: bws-pinterest.php:291
+msgid "Pinterest user URL"
+msgstr "Профиль Pinterest"
+
+#: bws-pinterest.php:296
+msgid "Example"
+msgstr "Пример"
+
+#: bws-pinterest.php:303
+msgid "Settings for Pin It Button"
+msgstr "Настройки кнопки Pin It"
+
+#: bws-pinterest.php:308
+msgid "Pin It Button place"
+msgstr "Отображение кнопки"
+
+#: bws-pinterest.php:311 bws-pinterest.php:396
+msgid "Before the content"
+msgstr "Перед контентом"
+
+#: bws-pinterest.php:312 bws-pinterest.php:397
+msgid "After the content"
+msgstr "После контента"
+
+#: bws-pinterest.php:313
+msgid "On image hover"
+msgstr "При наведении на изображение"
+
+#: bws-pinterest.php:319
+msgid "Button image type"
+msgstr "Тип изображения кнопки"
+
+#: bws-pinterest.php:322
+msgid "Default"
+msgstr "Стандартное"
+
+#: bws-pinterest.php:323
+msgid "Custom"
+msgstr "Пользовательское"
+
+#: bws-pinterest.php:329
+#, php-format
+msgid "Max image size: %1s. Allowed file extensions: %2s"
+msgstr "Макс. размер изображения: %1s. Разрешенные типы: %2s"
+
+#: bws-pinterest.php:336
+msgid "Current custom image"
+msgstr "Текущее пользовательское изображение"
+
+#: bws-pinterest.php:344
+msgid "Button Shape"
+msgstr "Форма кнопки"
+
+#: bws-pinterest.php:347
+msgid "Square"
+msgstr "Квадратная"
+
+#: bws-pinterest.php:348
+msgid "Round"
+msgstr "Круглая"
+
+#: bws-pinterest.php:354
+msgid "Button Size"
+msgstr "Размер кнопки"
+
+#: bws-pinterest.php:357 bws-pinterest.php:707 bws-pinterest.php:863
+msgid "Small"
+msgstr "Маленький"
+
+#: bws-pinterest.php:358 bws-pinterest.php:709 bws-pinterest.php:865
+msgid "Large"
+msgstr "Большой"
+
+#: bws-pinterest.php:364
+msgid "Button Color"
+msgstr "Цвет кнопки"
+
+#: bws-pinterest.php:367
+msgid "Red"
+msgstr "Красный"
+
+#: bws-pinterest.php:368
+msgid "Gray"
+msgstr "Серый"
+
+#: bws-pinterest.php:369
+msgid "White"
+msgstr "Белый"
+
+#: bws-pinterest.php:371 bws-pinterest.php:383
+msgid "Works only if the square image is chosen"
+msgstr "Работает только для квадратной формы"
+
+#: bws-pinterest.php:376
+msgid "Pin Counts"
+msgstr "Количество сохранений"
+
+#: bws-pinterest.php:379
+msgid "None"
+msgstr "Не показывать"
+
+#: bws-pinterest.php:380
+msgid "Above the button"
+msgstr "Над кнопкой"
+
+#: bws-pinterest.php:381
+msgid "Beside the button"
+msgstr "Справа"
+
+#: bws-pinterest.php:389
+msgid "Settings for Follow Button"
+msgstr "Настройки для кнопки Follow"
+
+#: bws-pinterest.php:393
+msgid "Follow Button place"
+msgstr "Отображение кнопки"
+
+#: bws-pinterest.php:403
+msgid "Follow Button label"
+msgstr "Текст кнопки"
+
+#: bws-pinterest.php:411 bws-pinterest.php:443
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: bws-pinterest.php:425
+msgid ""
+"Please choose the necessary post types (or single pages) where Pinterest "
+"buttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
+"отображаться Pinterest кнопки:"
+
+#: bws-pinterest.php:432
+msgid "Show URL for pages"
+msgstr "Отображать URL для страниц"
+
+#: bws-pinterest.php:438
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: bws-pinterest.php:438
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#: bws-pinterest.php:448
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#: bws-pinterest.php:455
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#: bws-pinterest.php:457
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: bws-pinterest.php:614
+msgid "Pinterest Widget"
+msgstr "Виджет Pinterest"
+
+#: bws-pinterest.php:617
+msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
+msgstr "Отображение виджетов Pinterest"
+
+#: bws-pinterest.php:681
+msgid "Title"
+msgstr "Название"
+
+#: bws-pinterest.php:686
+msgid "Type"
+msgstr "Тип"
+
+#: bws-pinterest.php:688 bws-pinterest.php:698 bws-pinterest.php:838
+msgid "Pin Widget"
+msgstr "Pin виджет"
+
+#: bws-pinterest.php:689 bws-pinterest.php:699 bws-pinterest.php:839
+msgid "Board Widget"
+msgstr "Board виджет"
+
+#: bws-pinterest.php:690 bws-pinterest.php:840
+msgid "Profile Widget"
+msgstr "Profile виджет"
+
+#: bws-pinterest.php:694 bws-pinterest.php:856
+msgid "URL"
+msgstr "URL"
+
+#: bws-pinterest.php:697
+msgid "Examples"
+msgstr "Примеры"
+
+#: bws-pinterest.php:705 bws-pinterest.php:861
+msgid "Size"
+msgstr "Размер"
+
+#: bws-pinterest.php:708 bws-pinterest.php:864
+msgid "Medium"
+msgstr "Средний"
+
+#: bws-pinterest.php:713 bws-pinterest.php:870
+msgid "Width"
+msgstr "Ширина"
+
+#: bws-pinterest.php:716 bws-pinterest.php:721
+#, php-format
+msgid "Min width%1s. If emtpy width: auto"
+msgstr "Мин. ширина%1s.. Если пусто - ширина: авто"
+
+#: bws-pinterest.php:723 bws-pinterest.php:871
+msgid "Height"
+msgstr "Высота"
+
+#: bws-pinterest.php:726 bws-pinterest.php:730
+msgid "Min height"
+msgstr "Мин. высота"
+
+#: bws-pinterest.php:731 bws-pinterest.php:872
+msgid "Thumbnails width"
+msgstr "Ширина миниатюр"
+
+#: bws-pinterest.php:735 bws-pinterest.php:743
+#, php-format
+msgid ""
+"Min width%1s. If the widget width field is empty, the thumbnail width will "
+"be auto."
+msgstr ""
+"Мин. ширина%1s. Если ширина виджета не задана, то ширина миниатюр будет "
+"задана автоматически."
+
+#: bws-pinterest.php:834
+msgid "Shortcode Type"
+msgstr "Тип шорткода"
+
+#: bws-pinterest.php:836
+msgid "Follow Button"
+msgstr "Кнопка Follow"
+
+#: bws-pinterest.php:837
+msgid "Pin It button"
+msgstr "Кнопка Pin It"
+
+#: bws-pinterest.php:844
+msgid "Button label"
+msgstr "Текст кнопки"
+
+#: bws-pinterest.php:848
+msgid "Save any image"
+msgstr "Сохранять любое изображение"
+
+#: bws-pinterest.php:849
+msgid "Save defined image"
+msgstr "Сохранять заданное изображение"
+
+#: bws-pinterest.php:850
+msgid "Pin image URL"
+msgstr "URL заданого изображения"
+
+#: bws-pinterest.php:851
+msgid "Custom button image"
+msgstr "Пользовательское изображение кнопки"
+
+#: bws-pinterest.php:852
+msgid "Custom image URL"
+msgstr "URL кастомного изображения кнопки"
+
+#: bws-pinterest.php:997
+msgid "FAQ"
+msgstr "FAQ"
+
+#: bws-pinterest.php:998
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "Pinterest"
+#~ msgstr "Pinterest"
+
+#~ msgid "Min width"
+#~ msgstr "Мин. ширина"
+
+#~ msgid "Before content"
+#~ msgstr "Перед контентом"
+
+#~ msgid "After content"
+#~ msgstr "После контента"
+
+#~ msgid "Default button image settings"
+#~ msgstr "Настройки стандартной кнопки"
+
+#~ msgid "Widget"
+#~ msgstr "Виджет"
+
+#~ msgid "This option is used for Follow button and Pimterest Profile widget"
+#~ msgstr ""
+#~ "Эта настройка будет использоваться для кнопки Follow и Profile  виджета"
+
+#~ msgid "Profile URL"
+#~ msgstr "URL профиля"
+
+#~ msgid "Error: File size > 512K"
+#~ msgstr "Ошибка: Размер файла > 512К"
+
+#~ msgid "Min width: 130px. If emtpy width: auto"
+#~ msgstr "Мин. ширина 130рх. Если пусто - ширина: авто"
+
+#~ msgid "Max image size: %1s. Allowed file extensions: jpg, jpeg, png"
+#~ msgstr "Макс. размер изображения: %1s. Разрешенные типы: jpg, jpeg, png"
+
+#~ msgid "Min height: 60px. If emtpy height: 175px"
+#~ msgstr "Мин. высота: 60рх. Если пусто - высота: 175рх"
+
+#~ msgid "Min: 60px. If emtpy width: 92px"
+#~ msgstr "Мин. ширина: 60рх. Если пусто - 92рх"
+
+#~ msgid "URL of pin image"
+#~ msgstr "URL заданного изображения"
+
+#~ msgid "URL of custom button image"
+#~ msgstr "URL пользовательского изображения"
+
+#~ msgid "Max image size: 512kb. Allowed file extensions: jpg, jpeg, png"
+#~ msgstr ""
+#~ "Макс. размер изображения: 512кб. Разрешенные расширения : jpg, jpeg, png"
+
+#~ msgid "Dont show"
+#~ msgstr "Не показывать"
