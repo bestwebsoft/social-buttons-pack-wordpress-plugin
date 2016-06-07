@@ -2,7 +2,6 @@
 * Plugin css
 */
 .twttr_buttons {
-	display: inline-block;
 	margin-top: 3px;
 }
 .twttr_twitter,
@@ -22,7 +21,7 @@
 	margin-bottom: 3px;
 }
 .twttr_buttons iframe {
-	margin-bottom: 0;
+	margin-bottom: 0 !important;
 }
 #twttr_followme_option td table th {
 	padding-left: 0px;

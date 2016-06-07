@@ -2,9 +2,9 @@
 /*
 Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/
-Description: Add Social Buttons in to your site.
+Description: Add social buttons and widgets in to your site.
 Author: BestWebSoft
-Version: 1.0.6
+Version: 1.0.7
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -29,6 +29,9 @@ License: GPLv3 or later
 require_once( dirname( __FILE__ ) . '/facebook-button-plugin/facebook-button-plugin.php' );
 require_once( dirname( __FILE__ ) . '/twitter-plugin/twitter.php' );
 require_once( dirname( __FILE__ ) . '/google-one/google-plus-one.php' );
+require_once( dirname( __FILE__ ) . '/bws-linkedin/bws-linkedin.php' );
+require_once( dirname( __FILE__ ) . '/bws-pinterest/bws-pinterest.php' );
+
 
 if ( ! function_exists( 'sclbttns_add_pages' ) ) {
 	function sclbttns_add_pages() {
@@ -51,7 +54,7 @@ if ( ! function_exists( 'sclbttns_init' ) ) {
         require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
         bws_include_init( plugin_basename( __FILE__ ) );
 
-        bws_wp_min_version_check( plugin_basename( __FILE__ ), $sclbttns_plugin_info, '3.8', '3.1' );
+        bws_wp_min_version_check( plugin_basename( __FILE__ ), $sclbttns_plugin_info, '3.8' );
     }
 }
 
@@ -59,7 +62,13 @@ if ( ! function_exists( 'sclbttns_admin_init' ) ) {
     function sclbttns_admin_init() {
         global $bws_plugin_info, $sclbttns_plugin_info;
 
-        $deactivate_plugins = array( 'google-one/google-plus-one.php', 'twitter-plugin/twitter.php', 'facebook-button-plugin/facebook-button-plugin.php' );
+        $deactivate_plugins = array( 
+            'google-one/google-plus-one.php', 
+            'twitter-plugin/twitter.php', 
+            'facebook-button-plugin/facebook-button-plugin.php',
+            'bws-pinterest/bws-pinterest.php',
+            'bws-linkedin/bws-linkedin.php'
+        );
 
         if ( function_exists( 'is_multisite' ) && is_multisite() ) {
             if ( ! is_plugin_active_for_network( plugin_basename( __FILE__ ) ) )
@@ -78,10 +87,11 @@ if ( ! function_exists( 'sclbttns_admin_init' ) ) {
                 activate_plugin( $free );
             }
             switch_to_blog( $old_blog );
-        } else
+        } else {
             deactivate_plugins( $deactivate_plugins );
+        }
 
-        if ( ! isset( $bws_plugin_info ) || empty( $bws_plugin_info ) )
+        if ( empty( $bws_plugin_info ) )
             $bws_plugin_info = array( 'id' => '209', 'version' => $sclbttns_plugin_info["Version"] );
     }
 }
@@ -93,8 +103,8 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
 
         /* Add restore function */
         if ( isset( $_REQUEST['bws_restore_confirm'] ) && check_admin_referer( $plugin_basename, 'bws_settings_nonce_name' ) ) {
-            global $gglplsn_option_defaults, $fcbkbttn_options_default, $twttr_options_default,
-                $gglplsn_options, $fcbkbttn_options, $twttr_options;
+            global $gglplsn_option_defaults, $fcbkbttn_options_default, $twttr_options_default, $lnkdn_options_defaults, $pntrst_options_defaults,
+                $gglplsn_options, $fcbkbttn_options, $twttr_options, $pntrst_options, $lnkdn_options;
             
             $gglplsn_options = $gglplsn_option_defaults;
             update_option( 'gglplsn_options', $gglplsn_options );
@@ -102,15 +112,21 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
             update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
             $twttr_options = $twttr_options_default;
             update_option( 'twttr_options', $twttr_options );
+            $pntrst_options = $pntrst_options_defaults;
+            update_option( 'pntrst_options', $pntrst_options );
+            $lnkdn_options = $lnkdn_options_defaults;
+            update_option( 'lnkdn_options', $lnkdn_options );
 
             $message = __( 'All plugin settings were restored.' );
         } ?>
         <div class="wrap">
             <h1><?php _e( "Social Buttons Settings" ); ?></h1>
             <h2 class="nav-tab-wrapper">
-                <a class="nav-tab<?php if ( ! isset( $_GET['action'] ) || ( isset( $_GET['action'] ) && 'facebook' == $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=facebook"><?php _e( 'Facebook' ); ?></a>
-                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'twitter' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=twitter"><?php _e( 'Twitter' ); ?></a>
-                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'google-one' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=google-one"><?php _e( 'Google+1' ); ?></a>
+                <a class="nav-tab<?php if ( ! isset( $_GET['action'] ) || ( isset( $_GET['action'] ) && 'facebook' == $_GET['action'] ) ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=facebook">Facebook</a>
+                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'twitter' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=twitter">Twitter</a>
+                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'google-one' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=google-one">Google+1</a>
+                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'pinterest' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=pinterest">Pinterest</a>
+                <a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'linkedin' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=linkedin">LinkedIn</a>
                 <a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=social-buttons.php&amp;action=custom_code"><?php _e( 'Custom code' ); ?></a> 
             </h2>
             <?php if ( ! empty( $message ) ) { ?>
@@ -125,6 +141,10 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
                     twttr_settings_page();
                 } elseif ( 'google-one' == $_GET['action'] ) {
                     gglplsn_options();
+                } elseif ( 'pinterest' == $_GET['action'] ) {
+                    pntrst_settings_page();
+                } elseif ( 'linkedin' == $_GET['action'] ) {
+                    lnkdn_settings_page();
                 } elseif ( 'custom_code' == $_GET['action'] ) {
                    bws_custom_code_tab();
                 }     
@@ -253,7 +273,28 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
             $delete_facebook = true;
         }
 
-        if ( isset( $delete_twitter ) || isset( $delete_google_one ) || isset( $delete_facebook ) ) {
+        /* pinterest */
+        if ( ! array_key_exists( 'bws-pinterest-plugin/bws-pinterest-plugin.php', $all_plugins ) ) {
+            if ( ! array_key_exists( 'bws-pinterest-pro/bws-pinterest-pro.php', $all_plugins ) ) {
+                /* delete custom images if no PRO version */
+                $upload_dir = wp_upload_dir();
+                $custom_img_folder = $upload_dir['basedir'] . '/pinterest-image/';
+                if ( is_dir( $custom_img_folder ) ) {
+                    $pntrstpr_custom_img_files = scandir( $custom_img_folder );
+                    foreach ( $pntrstpr_custom_img_files as $value ) {
+                        @unlink( $custom_img_folder . $value );
+                    }
+                    @rmdir( $custom_img_folder );
+                }
+            }
+            $delete_pinterest = true;
+        }
+
+        /* linkedin */
+        if ( ! array_key_exists( 'bws-linkedin/bws-linkedin.php', $all_plugins ) )
+            $delete_linkedin = true;
+
+        if ( isset( $delete_twitter ) || isset( $delete_google_one ) || isset( $delete_facebook ) || isset( $delete_linkedin ) || isset( $delete_pinterest ) ) {
             if ( function_exists( 'is_multisite' ) && is_multisite() ) {               
                 $old_blog = $wpdb->blogid;
                 /* Get all blog ids */
@@ -261,11 +302,15 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                 foreach ( $blogids as $blog_id ) {
                     switch_to_blog( $blog_id );
                     if ( isset( $delete_twitter ) )
-                    delete_option( 'twttr_options' );
+                        delete_option( 'twttr_options' );
                     if ( isset( $delete_google_one ) )
                         delete_option( 'gglplsn_options' );
                     if ( isset( $delete_facebook ) )
                         delete_option( 'fcbk_bttn_plgn_options' );
+                    if ( isset( $delete_linkedin ) )
+                        delete_option( 'lnkdn_options' );
+                    if ( isset( $delete_pinterest ) )
+                        delete_option( 'pntrst_options' );
                 }
                 switch_to_blog( $old_blog );
             } else {
@@ -275,6 +320,10 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                     delete_option( 'gglplsn_options' );
                 if ( isset( $delete_facebook ) )
                     delete_option( 'fcbk_bttn_plgn_options' );
+                if ( isset( $delete_linkedin ) )
+                    delete_option( 'lnkdn_options' );
+                if ( isset( $delete_pinterest ) )
+                    delete_option( 'pntrst_options' );
             }
         } 
 

@@ -1,18 +1,19 @@
 ﻿=== Social Buttons Pack by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
-Tags: add button, add social button, add social buttons, add fb button, add facebook social button, add facebook button, add fb share button, add facebook share button, add google share button, add google like button, add Google +1 button, add Twitter Button, advanced twitter, auto tweet, add social buttons,  add share button, batton, best facebook plugin, best fb like button, best facebook like button,  best google like button, best google +1 button, best google +1 share button, best google share button, best twitter, best twitter plugin, buton, button, button image, Button like, button position,  comments, connect, custom twitter, custom twitter feeds, easy twitter,  FB, fb button, fb like, fb like button, fb share, Facebook, Facebook account button, facebook button, facebook button icon, facebook button language, Facebook button like, Facebook button share, Facebook ID, facebook like, facebook like button, Facebook Page, facebook share, facebook share button, folow, follow button, free,  free google +1 button, free google like button, free google share button, free twitter plugin, free twitter buttons,  follow, follow button, follow me, follow us,  goggle +1, gogole +1, googgle +1, google +1, google +1 button, Google +1 button in pages, Google +1 button in posts, Google +1 button like, Google +1 button share, Google +1 like, Google +1 like button, Google +1 like count, Google +1 plugin, google +1 share, Google +1 share button, Google search engine, google share button, google like button, google profile, icon, Like, like, likes, like button, live tweets,  live twitter feeds,  My Page button,  nice fb like button, nice facebook button, nice fb button, plugin, post, posts, recommend post, recommend post on Google+, simple fb plugin, simple facebook plugin, simple google +1 button, simple google +1 plugin, share, share button, share twitter, share buttons,  social plugin, social plugins, social account, social button, social bookmark, social bookmarking, social media publishing, social network, social network auto publish, Social Plugins, social profiles, social share,  tvet, tvett, tvit, tviter, tvitt, tweet, tweeter, tweetter, twet, tweter, twett, twit, twiter, twiter conect, twitt, twitter button display, twitter connect, twitter follow, twitter follow button, twitter fans, twitter favorites, twitter like button, twitter plugin, twitter share, twitter tool, twitter tools, Twitter Tweet, Twitter Tweet Button, twitter styling, twitter updates, twitter user tweets, twitter share button, twitter-like, twitter feed for wordpress, twitter feeds, twitter post, twitter posts, twitter profile, twitter social network, twitter super responsive,  wp plugin, wp social plugin, wordpress social plugin,  wp plugins, wp google +1 plugin, wordpress google +1 plugin,  wp twitter feeds, wp twitter feeds plugin, twitter-followers, WordPress Twitter, WordPress Twitter Plugin
+Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
+google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.8
-Tested up to: 4.5
-Stable tag: 1.0.6
+Tested up to: 4.5.2
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add Social buttons to your WordPress website.
+Add Social buttons and widgets to your WordPress website.
 
 == Description ==
 
-If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1 ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
+If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1, Pinterest, LinkedIn ) and widgets ( Google Badge+1, Pinterest, LinkedIn ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
 
 http://www.youtube.com/watch?v=3FxIReS0hP4 
 
@@ -24,8 +25,10 @@ http://www.youtube.com/watch?v=3FxIReS0hP4
 
 = Features =
 
-* Add Twitter, Facebook, Google+1 buttons in the easiest way.
+* Add Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons in the easiest way.
 * Show Google Badge+1 on your site.
+* Add Pinterest widgets (Pin, Board, Profile) on your site.
+* Add LinkedIn widgets (Member Profile, Company Profile, Company Insider, Jobs You Might Be Interested In, Alumni Tool) on your site.
 * Select the button position: before the content, after the content or before and after.
 * Display buttons using a shortcode.
 * Configure the buttons according to your needs.
@@ -72,7 +75,7 @@ http://www.youtube.com/watch?v=1PZPCL76aBk
 
 = How to adjust Social Buttons position on the page ? =
 
-In WordPress admin panel go to "Settings", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
+In WordPress admin panel go to "BWS Plugins", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
 
 = After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
 
@@ -86,12 +89,36 @@ In WordPress admin panel go to "Settings", find the Social Buttons Plugin settin
 
 = After clicking the Twitter icon I see the Twitter Home page instead of the necessary account page =
 
-1. In the WordPress admin panel go to "Settings", find the "Social Buttons" > "Twitter" settings page and enter your Twitter login. Then click "Save Changes".
+1. In the WordPress admin panel go to "BWS Plugins", find the "Social Buttons" > "Twitter" settings page and enter your Twitter login. Then click "Save Changes".
 2. If you do not have Twitter account yet you should create it using this link: https://twitter.com/signup. After account is created please follow the instructions above.
 
 = Why does the Google +1 button become red after clicking? =
 
 For correct work of the Google +1 buttons do not use it locally and on a free hosting.
+
+= Pinterest Follow button is not displaying properly =
+
+In WordPress admin panel, please go to "BWS Plugins", find find the "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
+
+= Pinterest widget is not displaying =
+
+Check if widget URL is correct or pin/board/profile exists.
+
+= Why isn't the counter of LinkedIn Share button displaуed in horizontal display mode? =
+
+It happens when your page or post isn't shared.
+
+= I've added LinkedIn widgets to my sidebar. Why are they cropped? =
+
+Beсause the "Company Insider" widget has 633px width and other LinkedIn widgets have 300px width.
+
+= Why don't LinkedIn widgets display on my site? =
+
+To display widgets, you must fill fields, such as 'Public Profile URL', 'Company ID' or 'School ID'.
+
+= Why doesn't widget 'Member Profile' display? =
+
+URL, which you add, should be public. It can be configured via "public profile settings" in your Linkedin account.
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
@@ -104,12 +131,26 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Screenshots ==
 
-1. Plugin settings page: Facebook
-2. Plugin settings page: Twitter
-3. Plugin settings page: Google+1
-4. Displaying Social Buttons in your post.
+1. Displaying Social Buttons in your post.
+2. Displaying Google+ Badge Widget.
+3. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
+4. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
+5. Displaying Pinterest Pin widget.
+6. Displaying Pinterest Board widget.
+7. Displaying Pinterest Profile widget.
+8. Plugin settings page: Facebook.
+9. Plugin settings page: Twitter.
+10. Plugin settings page: Google+1.
+11. Plugin settings page: Pinterest.
+12. Plugin settings page: LinkedIn.
+13. Adding widgets to the sidebar.
+14. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.0.7 - 07.06.2016 =
+* NEW : Pinterest buttons and widgets were added.
+* NEW : LinkedIn Widgets, 'Share' and 'Follow' Buttons were added.
 
 = V1.0.6 - 23.03.2016 = 
 * NEW : Ability to add custom styles.
@@ -146,6 +187,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.7 =
+Pinterest buttons and widgets were added. LinkedIn Widgets, 'Share' and 'Follow' Buttons were added.
 
 = V1.0.6 = 
 The Google+1 Share, Google+1 Follow, Google+1 Hangout Buttons were added. The Google+1 Badge was added. Google+1 Button options ware changed. Ability to add custom styles. The conflict in the RSS feed was fixed.

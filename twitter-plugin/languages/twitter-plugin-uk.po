@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-04 12:56+0300\n"
-"PO-Revision-Date: 2016-01-04 12:56+0300\n"
+"POT-Creation-Date: 2016-05-27 15:36+0300\n"
+"PO-Revision-Date: 2016-05-27 15:59+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -20,51 +20,55 @@ msgstr ""
 msgid "Twitter Button Settings"
 msgstr "Налаштування Twitter Button"
 
-#: twitter.php:206
+#: twitter.php:209
 msgid "Settings saved"
 msgstr "Налаштування збережено"
 
-#: twitter.php:228
+#: twitter.php:231
 msgid "Error: File size > 32K"
 msgstr "Помилка: Розмір файлу > 32K"
 
-#: twitter.php:230
+#: twitter.php:233
 msgid "Error: Invalid file type"
 msgstr "Помилка: Невірний тип файлу"
 
-#: twitter.php:247
+#: twitter.php:250
 msgid "The upload was successful"
 msgstr "Завантаження пройшло вдало"
 
-#: twitter.php:249
+#: twitter.php:252
 msgid "Error: Failed to move file"
 msgstr "Помилка: не вдалося перемістити файл"
 
-#: twitter.php:252
+#: twitter.php:255
 msgid "Error: check image width or height"
 msgstr "Помилка: перевірте ширину або висоту зображення"
 
-#: twitter.php:256
+#: twitter.php:259
 msgid "Uploading Error: check image properties"
 msgstr "Помилка завантаження: перевірте властивості зображення"
 
-#: twitter.php:266
+#: twitter.php:269
 msgid "All plugin settings were restored."
 msgstr "Всі налаштування плагіну було скинуто до стандартних."
 
-#: twitter.php:280 twitter.php:846 twitter.php:859
+#: twitter.php:283 twitter.php:882 twitter.php:895
 msgid "Settings"
-msgstr "Установки"
+msgstr "Налаштування"
 
-#: twitter.php:281
+#: twitter.php:284
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: twitter.php:282
+#: twitter.php:285
+msgid "Custom Code"
+msgstr "Код користувача"
+
+#: twitter.php:286
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: twitter.php:295
+#: twitter.php:299
 #, php-format
 msgid ""
 "If you want to add twitter buttons to your page or post, please use %s button"
@@ -72,7 +76,7 @@ msgstr ""
 "Якщо ви хочете додати кнопки твіттера на вашу сторінку або пост, будь ласка, "
 "використовуйте кнопку %s "
 
-#: twitter.php:300
+#: twitter.php:304
 #, php-format
 msgid ""
 "You can add Twitter buttons to your page or post by clicking on %s button in "
@@ -84,146 +88,146 @@ msgstr ""
 "кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
 "відображається, будь ласка, використовуйте шорткод %s "
 
-#: twitter.php:313
-msgid "Twitter buttons position"
-msgstr "Виберіть розташування піктограми \"Twitter\" "
-
 #: twitter.php:317
+msgid "Twitter buttons position"
+msgstr "Розташування кнопок"
+
+#: twitter.php:321
 msgid "Before"
 msgstr "До"
 
-#: twitter.php:318
+#: twitter.php:322
 msgid "After"
 msgstr "Після"
 
-#: twitter.php:319
+#: twitter.php:323
 msgid "Before And After"
 msgstr "До і після"
 
-#: twitter.php:320
+#: twitter.php:324
 msgid "Only shortcode"
 msgstr "Тільки шорткод"
 
-#: twitter.php:325
+#: twitter.php:329
 msgid "Show button"
 msgstr "Відобразити кнопки"
 
-#: twitter.php:328
+#: twitter.php:332
 msgid "Tweet (Share a link)"
 msgstr "Твіттнути (дати посилання)"
 
-#: twitter.php:330 twitter.php:805
+#: twitter.php:334 twitter.php:741 twitter.php:745 twitter.php:841
 msgid "Follow me"
 msgstr "Читати"
 
-#: twitter.php:332 twitter.php:439 twitter.php:511 twitter.php:806
+#: twitter.php:336 twitter.php:443 twitter.php:515 twitter.php:842
 msgid "Hashtag"
 msgstr "Мітка"
 
-#: twitter.php:334 twitter.php:807
+#: twitter.php:338 twitter.php:843
 msgid "Mention"
 msgstr "Згадати"
 
-#: twitter.php:339
+#: twitter.php:343
 msgid "Language"
 msgstr "Мова"
 
-#: twitter.php:343
+#: twitter.php:347
 msgid "Automatic"
 msgstr "Автоматично"
 
-#: twitter.php:378
+#: twitter.php:382
 msgid "Size"
 msgstr "Розмір"
 
-#: twitter.php:382
+#: twitter.php:386
 msgid "Small"
 msgstr "Маленька"
 
-#: twitter.php:383
+#: twitter.php:387
 msgid "Large"
 msgstr "Велика"
 
-#: twitter.php:389
+#: twitter.php:393
 msgid "Opt-out of tailoring Twitter"
 msgstr "Відмовитися від адаптації Твіттера"
 
-#: twitter.php:393
-msgid "For getting more information about this option, please,"
-msgstr "Для отримання додаткової інформації про цю опції , будь ласка"
+#: twitter.php:397
+msgid "For getting more information about this option, please"
+msgstr "Для отримання додаткової інформації про цю опції, будь ласка"
 
-#: twitter.php:393
+#: twitter.php:397
 msgid "click here"
 msgstr "натисніть тут"
 
-#: twitter.php:398
+#: twitter.php:402
 msgid "Settings for the \"Tweet\" button"
 msgstr "Налаштування для кнопки \"Твіттнути\""
 
-#: twitter.php:403 twitter.php:529
+#: twitter.php:407 twitter.php:533
 msgid "Share URL"
 msgstr "Відправити URL-адресу"
 
-#: twitter.php:406 twitter.php:534
+#: twitter.php:410 twitter.php:538
 msgid "the page URL"
 msgstr "поточної сторінки"
 
-#: twitter.php:407 twitter.php:533
+#: twitter.php:411 twitter.php:537
 msgid "home URL"
 msgstr "головної сторінки"
 
-#: twitter.php:412 twitter.php:519 twitter.php:560
+#: twitter.php:416 twitter.php:523 twitter.php:564
 msgid "Tweet text"
 msgstr "Текст твітту"
 
-#: twitter.php:415 twitter.php:522 twitter.php:563
+#: twitter.php:419 twitter.php:526 twitter.php:567
 msgid "the title of the page"
 msgstr "заголовок поточної сторінки"
 
-#: twitter.php:422
+#: twitter.php:426
 msgid "Via"
 msgstr "За допомогою"
 
-#: twitter.php:426
+#: twitter.php:430
 msgid "Tweet been received from the Twitter username"
 msgstr "Твітт було отримано від твітт-користувача"
 
-#: twitter.php:431 twitter.php:539 twitter.php:570
+#: twitter.php:435 twitter.php:543 twitter.php:574
 msgid "Recommend"
 msgstr "Рекомендувати"
 
-#: twitter.php:434 twitter.php:542 twitter.php:573
+#: twitter.php:438 twitter.php:546 twitter.php:577
 msgid "Enter username of someone you recomend"
-msgstr "Ввести твітт-користувача, якому рекомендається"
+msgstr "Ввести твітт-користувача, якому рекомендується"
 
-#: twitter.php:447
+#: twitter.php:451
 msgid "Settings for the \"Follow me\" button"
 msgstr "Налаштування для кнопки \"Читати\""
 
-#: twitter.php:452
+#: twitter.php:456
 msgid "Your username"
 msgstr "Ваше ім'я користувача"
 
-#: twitter.php:456
+#: twitter.php:460
 msgid ""
 "If you do not have Twitter account yet, you should create it using this link"
 msgstr ""
 "Якщо ви ще не маєте акаунту Twitter, вам слід створити його, використовуючи "
 "це посилання"
 
-#: twitter.php:461
+#: twitter.php:465
 msgid "\"Follow me\" button image"
 msgstr "Зображення кнопки \"Читати\""
 
-#: twitter.php:466
+#: twitter.php:470
 msgid "Standard image"
 msgstr "Стандартне зображення"
 
-#: twitter.php:467
+#: twitter.php:471
 msgid "Custom image"
 msgstr "Кастомне зображення"
 
-#: twitter.php:470
+#: twitter.php:474
 msgid ""
 "To use custom image You need to setup permissions to upload directory of "
 "your site"
@@ -231,11 +235,11 @@ msgstr ""
 "Для того, щоб використовувати кастомне зображення, Вам потрібно встановити "
 "необхідні права для папки завантажень Вашого сайту"
 
-#: twitter.php:477
+#: twitter.php:481
 msgid "Current image"
 msgstr "Поточне зображення"
 
-#: twitter.php:484
+#: twitter.php:488
 msgid ""
 "Image properties: max image width:100px; max image height:100px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\"."
@@ -244,55 +248,51 @@ msgstr ""
 "зображення: 100px; макс. розмір зображення: 32Kb; типи зображень: \"jpg\", "
 "\"jpeg\"."
 
-#: twitter.php:489
+#: twitter.php:493
 msgid "Show username"
 msgstr "Показувати ім'я користувача"
 
-#: twitter.php:497
+#: twitter.php:501
 msgid "Show count"
 msgstr "Показувати кількість твіттов"
 
-#: twitter.php:501
+#: twitter.php:505
 msgid "Show the number of Twitter accounts following the specified account"
 msgstr "Показувати кількість акаунтів твіттера , які твіттнулі цей твітт"
 
-#: twitter.php:506
+#: twitter.php:510
 msgid "Settings for the \"Hashtag\" button"
 msgstr "Налаштування для кнопки \"Мітка\""
 
-#: twitter.php:532
+#: twitter.php:536
 msgid "no URL"
 msgstr "URL-адреси немає"
 
-#: twitter.php:547
+#: twitter.php:551
 msgid "Settings for the \"Mention\" button"
 msgstr "Налаштування для кнопки \"Згадати\""
 
-#: twitter.php:552
+#: twitter.php:556 twitter.php:790
 msgid "Tweet to"
 msgstr "Твіттнути для"
 
-#: twitter.php:555
-msgid "support"
-msgstr "Підтримка "
-
-#: twitter.php:579 twitter.php:632
+#: twitter.php:583 twitter.php:636
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: twitter.php:589
+#: twitter.php:593
 msgid "Preview"
 msgstr "Перегляд"
 
-#: twitter.php:595 twitter.php:644
+#: twitter.php:599 twitter.php:648
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
 
-#: twitter.php:597 twitter.php:646
+#: twitter.php:601 twitter.php:650
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: twitter.php:614
+#: twitter.php:618
 msgid ""
 "Please choose the necessary post types (or single pages) where Twitter "
 "Button will be displayed:"
@@ -300,37 +300,40 @@ msgstr ""
 "Будь ласка, оберіть необхідні типи постів (чи сторінок), де буде "
 "відображатися Twitter Button:"
 
-#: twitter.php:621
+#: twitter.php:625
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: twitter.php:627
+#: twitter.php:631
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: twitter.php:637
+#: twitter.php:641
 msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
+msgstr "Якщо ви перейдете на Pro версію, усі налаштування будуть збережені."
 
-#: twitter.php:735
-msgid "TwitterStories"
-msgstr "Твітт історія"
-
-#: twitter.php:803
-msgid "Please select twitter buttons which will be displayed"
-msgstr "Будь-ласка, оберіть твітт кнопки, що будуть відображені "
-
-#: twitter.php:804
+#: twitter.php:725 twitter.php:769 twitter.php:773 twitter.php:840
 msgid "Tweet"
 msgstr "Твіттнути"
 
-#: twitter.php:860
+#: twitter.php:753 twitter.php:755
+msgid "TwitterStories"
+msgstr "Твітт історія"
+
+#: twitter.php:839
+msgid "Please select twitter buttons which will be displayed"
+msgstr "Будь-ласка, оберіть твітт кнопки, що будуть відображені "
+
+#: twitter.php:896
 msgid "FAQ"
 msgstr "FAQ"
 
-#: twitter.php:861
+#: twitter.php:897
 msgid "Support"
 msgstr "Підтримка"
+
+#~ msgid "support"
+#~ msgstr "Підтримка "
 
 #~ msgid ""
 #~ "If you want to use this button in another place, please add this line to "

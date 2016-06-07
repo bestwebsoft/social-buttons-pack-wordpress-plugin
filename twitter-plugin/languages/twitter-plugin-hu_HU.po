@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-04 12:55+0300\n"
-"PO-Revision-Date: 2016-01-04 12:55+0300\n"
+"POT-Creation-Date: 2016-05-27 15:36+0300\n"
+"PO-Revision-Date: 2016-05-27 15:36+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -21,59 +21,64 @@ msgstr ""
 msgid "Twitter Button Settings"
 msgstr "Twitter beállítások"
 
-#: twitter.php:206
+#: twitter.php:209
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: twitter.php:228
+#: twitter.php:231
 msgid "Error: File size > 32K"
 msgstr "Hiba: File méret > 32k"
 
-#: twitter.php:230
+#: twitter.php:233
 msgid "Error: Invalid file type"
 msgstr "Hiba: Érvénytelen file típus"
 
-#: twitter.php:247
+#: twitter.php:250
 #, fuzzy
 msgid "The upload was successful"
 msgstr "A feltöltés sikeres."
 
-#: twitter.php:249
+#: twitter.php:252
 #, fuzzy
 msgid "Error: Failed to move file"
 msgstr "Hiba: file mozgatás sikertelen"
 
-#: twitter.php:252
+#: twitter.php:255
 msgid "Error: check image width or height"
 msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
 
-#: twitter.php:256
+#: twitter.php:259
 msgid "Uploading Error: check image properties"
 msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
 
-#: twitter.php:266
+#: twitter.php:269
 msgid "All plugin settings were restored."
 msgstr "Minden plugin paraméter visszaállítva."
 
-#: twitter.php:280 twitter.php:846 twitter.php:859
+#: twitter.php:283 twitter.php:882 twitter.php:895
 msgid "Settings"
 msgstr "Beállítások"
 
-#: twitter.php:281
+#: twitter.php:284
 msgid "Extra settings"
 msgstr "Extra beállítások"
 
-#: twitter.php:282
+#: twitter.php:285
+#, fuzzy
+msgid "Custom Code"
+msgstr "Aktuális kép"
+
+#: twitter.php:286
 msgid "Go PRO"
 msgstr "PRO-ra váltás"
 
-#: twitter.php:295
+#: twitter.php:299
 #, php-format
 msgid ""
 "If you want to add twitter buttons to your page or post, please use %s button"
 msgstr ""
 
-#: twitter.php:300
+#: twitter.php:304
 #, php-format
 msgid ""
 "You can add Twitter buttons to your page or post by clicking on %s button in "
@@ -82,154 +87,154 @@ msgid ""
 "buttons separated by commas (Ex:"
 msgstr ""
 
-#: twitter.php:313
+#: twitter.php:317
 #, fuzzy
 msgid "Twitter buttons position"
 msgstr "A \"Twitter\" ikon helye"
 
-#: twitter.php:317
+#: twitter.php:321
 msgid "Before"
 msgstr "Előtte"
 
-#: twitter.php:318
+#: twitter.php:322
 msgid "After"
 msgstr "Utána"
 
-#: twitter.php:319
+#: twitter.php:323
 msgid "Before And After"
 msgstr "Előtte és Utána"
 
-#: twitter.php:320
+#: twitter.php:324
 msgid "Only shortcode"
 msgstr ""
 
-#: twitter.php:325
+#: twitter.php:329
 #, fuzzy
 msgid "Show button"
 msgstr "Egyéni gomb"
 
-#: twitter.php:328
+#: twitter.php:332
 msgid "Tweet (Share a link)"
 msgstr ""
 
-#: twitter.php:330 twitter.php:805
+#: twitter.php:334 twitter.php:741 twitter.php:745 twitter.php:841
 #, fuzzy
 msgid "Follow me"
 msgstr "\"Follow Me\" kép"
 
-#: twitter.php:332 twitter.php:439 twitter.php:511 twitter.php:806
+#: twitter.php:336 twitter.php:443 twitter.php:515 twitter.php:842
 msgid "Hashtag"
 msgstr ""
 
-#: twitter.php:334 twitter.php:807
+#: twitter.php:338 twitter.php:843
 msgid "Mention"
 msgstr ""
 
-#: twitter.php:339
+#: twitter.php:343
 msgid "Language"
 msgstr ""
 
-#: twitter.php:343
+#: twitter.php:347
 msgid "Automatic"
 msgstr ""
 
-#: twitter.php:378
+#: twitter.php:382
 msgid "Size"
 msgstr ""
 
-#: twitter.php:382
+#: twitter.php:386
 msgid "Small"
 msgstr ""
 
-#: twitter.php:383
+#: twitter.php:387
 msgid "Large"
 msgstr ""
 
-#: twitter.php:389
+#: twitter.php:393
 msgid "Opt-out of tailoring Twitter"
 msgstr ""
 
-#: twitter.php:393
-msgid "For getting more information about this option, please,"
+#: twitter.php:397
+msgid "For getting more information about this option, please"
 msgstr ""
 
-#: twitter.php:393
+#: twitter.php:397
 msgid "click here"
 msgstr ""
 
-#: twitter.php:398
+#: twitter.php:402
 #, fuzzy
 msgid "Settings for the \"Tweet\" button"
 msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:403 twitter.php:529
+#: twitter.php:407 twitter.php:533
 msgid "Share URL"
 msgstr ""
 
-#: twitter.php:406 twitter.php:534
+#: twitter.php:410 twitter.php:538
 msgid "the page URL"
 msgstr ""
 
-#: twitter.php:407 twitter.php:533
+#: twitter.php:411 twitter.php:537
 msgid "home URL"
 msgstr ""
 
-#: twitter.php:412 twitter.php:519 twitter.php:560
+#: twitter.php:416 twitter.php:523 twitter.php:564
 msgid "Tweet text"
 msgstr ""
 
-#: twitter.php:415 twitter.php:522 twitter.php:563
+#: twitter.php:419 twitter.php:526 twitter.php:567
 msgid "the title of the page"
 msgstr ""
 
-#: twitter.php:422
+#: twitter.php:426
 msgid "Via"
 msgstr ""
 
-#: twitter.php:426
+#: twitter.php:430
 msgid "Tweet been received from the Twitter username"
 msgstr ""
 
-#: twitter.php:431 twitter.php:539 twitter.php:570
+#: twitter.php:435 twitter.php:543 twitter.php:574
 msgid "Recommend"
 msgstr ""
 
-#: twitter.php:434 twitter.php:542 twitter.php:573
+#: twitter.php:438 twitter.php:546 twitter.php:577
 msgid "Enter username of someone you recomend"
 msgstr ""
 
-#: twitter.php:447
+#: twitter.php:451
 #, fuzzy
 msgid "Settings for the \"Follow me\" button"
 msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:452
+#: twitter.php:456
 #, fuzzy
 msgid "Your username"
 msgstr "Adja meg felhasználónevét"
 
-#: twitter.php:456
+#: twitter.php:460
 msgid ""
 "If you do not have Twitter account yet, you should create it using this link"
 msgstr ""
 "Ha még nincs Twitter fiókja, ezt a linket használva létre kell hoznia egyet"
 
-#: twitter.php:461
+#: twitter.php:465
 #, fuzzy
 msgid "\"Follow me\" button image"
 msgstr "\"Follow Me\" kép"
 
-#: twitter.php:466
+#: twitter.php:470
 #, fuzzy
 msgid "Standard image"
 msgstr "Normál gomb"
 
-#: twitter.php:467
+#: twitter.php:471
 #, fuzzy
 msgid "Custom image"
 msgstr "Aktuális kép"
 
-#: twitter.php:470
+#: twitter.php:474
 msgid ""
 "To use custom image You need to setup permissions to upload directory of "
 "your site"
@@ -237,11 +242,11 @@ msgstr ""
 "Egyedi kép használatához az oldala feltöltési könyvtárához jogosultságot "
 "kell beállítania"
 
-#: twitter.php:477
+#: twitter.php:481
 msgid "Current image"
 msgstr "Aktuális kép"
 
-#: twitter.php:484
+#: twitter.php:488
 msgid ""
 "Image properties: max image width:100px; max image height:100px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\"."
@@ -249,60 +254,55 @@ msgstr ""
 "Kép paraméterek: max kép szélesség: 100px; max kép magasság: 100px; max kép "
 "méret: 32Kb; kép típusok:\"jpg\", \"jpeg\"."
 
-#: twitter.php:489
+#: twitter.php:493
 #, fuzzy
 msgid "Show username"
 msgstr "Adja meg felhasználónevét"
 
-#: twitter.php:497
+#: twitter.php:501
 msgid "Show count"
 msgstr ""
 
-#: twitter.php:501
+#: twitter.php:505
 msgid "Show the number of Twitter accounts following the specified account"
 msgstr ""
 
-#: twitter.php:506
+#: twitter.php:510
 #, fuzzy
 msgid "Settings for the \"Hashtag\" button"
 msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:532
+#: twitter.php:536
 msgid "no URL"
 msgstr ""
 
-#: twitter.php:547
+#: twitter.php:551
 #, fuzzy
 msgid "Settings for the \"Mention\" button"
 msgstr "A \"Twitter\" gomb beállításai"
 
-#: twitter.php:552
+#: twitter.php:556 twitter.php:790
 msgid "Tweet to"
 msgstr ""
 
-#: twitter.php:555
-#, fuzzy
-msgid "support"
-msgstr "Támogatás"
-
-#: twitter.php:579 twitter.php:632
+#: twitter.php:583 twitter.php:636
 msgid "Save Changes"
 msgstr "Változások mentése"
 
-#: twitter.php:589
+#: twitter.php:593
 msgid "Preview"
 msgstr ""
 
-#: twitter.php:595 twitter.php:644
+#: twitter.php:599 twitter.php:648
 #, fuzzy
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
 
-#: twitter.php:597 twitter.php:646
+#: twitter.php:601 twitter.php:650
 msgid "Learn More"
 msgstr "Olvasson tovább"
 
-#: twitter.php:614
+#: twitter.php:618
 #, fuzzy
 msgid ""
 "Please choose the necessary post types (or single pages) where Twitter "
@@ -311,37 +311,41 @@ msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Twitter gomb megjelenjen:"
 
-#: twitter.php:621
+#: twitter.php:625
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: twitter.php:627
+#: twitter.php:631
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: twitter.php:637
+#: twitter.php:641
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
 
-#: twitter.php:735
-msgid "TwitterStories"
-msgstr ""
-
-#: twitter.php:803
-msgid "Please select twitter buttons which will be displayed"
-msgstr ""
-
-#: twitter.php:804
+#: twitter.php:725 twitter.php:769 twitter.php:773 twitter.php:840
 msgid "Tweet"
 msgstr ""
 
-#: twitter.php:860
+#: twitter.php:753 twitter.php:755
+msgid "TwitterStories"
+msgstr ""
+
+#: twitter.php:839
+msgid "Please select twitter buttons which will be displayed"
+msgstr ""
+
+#: twitter.php:896
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: twitter.php:861
+#: twitter.php:897
 msgid "Support"
 msgstr "Támogatás"
+
+#, fuzzy
+#~ msgid "support"
+#~ msgstr "Támogatás"
 
 #, fuzzy
 #~ msgid ""

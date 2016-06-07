@@ -1,7 +1,7 @@
 <a href="http://bestwebsoft.com/products/social-buttons-pack/" target=_blank>Social Buttons Pack WordPress Plugin</a>
 ========================
 
-If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1 ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
+If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1, Pinterest, LinkedIn ) and widgets ( Google Badge+1, Pinterest, LinkedIn ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2015/04/social-buttons-pack-banner-website.jpg" />
 
@@ -15,8 +15,10 @@ If you are looking for a powerful and easy-to-use WordPress social media plugin,
 
 Features
 -----------------------------
-* Add Twitter, Facebook, Google+1 buttons in the easiest way.
+* Add Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons in the easiest way.
 * Show Google Badge+1 on your site.
+* Add Pinterest widgets (Pin, Board, Profile) on your site.
+* Add LinkedIn widgets (Member Profile, Company Profile, Company Insider, Jobs You Might Be Interested In, Alumni Tool) on your site.
 * Select the button position: before the content, after the content or before and after.
 * Display buttons using a shortcode.
 * Configure the buttons according to your needs.

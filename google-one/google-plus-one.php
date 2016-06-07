@@ -1039,9 +1039,9 @@ if ( ! function_exists( 'gglplsn_return_button' ) ) {
 			$href = 'https://plus.google.com/' . ( 'community' == $badge_type ? 'communities/': '' ) . $badge_id;
 			$photo = ( ( 'community' != $badge_type ) ? 'showcoverphoto="' : 'showphoto="' ) . $badge_show_cover . '"';
 			$badge_width = intval( $badge_width );
-			if ( $badge_width < 180 && 'portrait' == $badge_layout ) {
+			if ( $badge_width < 180 && 'portrait' == $_REQUEST['gglplsn_badge_layout'] ) {
 				$badge_width = 180;
-			} elseif ( $badge_width < 273 && 'landscape' == $badge_layout ) {
+			} elseif ( $badge_width < 273 && 'landscape' == $_REQUEST['gglplsn_badge_layout'] ) {
 				$badge_width = 273;
 			} elseif ( $badge_width > 450 ) {
 				$badge_width = 450;
@@ -1152,17 +1152,6 @@ if ( ! function_exists( 'gglplsn_shortcode_button_content' ) ) {
 			}
 		</script>
 	<?php }
-}
-
-/* Validate email for Hangout invites */
-if ( ! function_exists( 'gglplsn_validate_email' ) ) {
-	function gglplsn_validate_email() {
-		check_ajax_referer( 'gglplsn_ajax_nonce', 'gglplsn_nonce' );
-		if ( isset( $_POST['gglplsn_email_for_validate'] ) ) {
-			echo json_encode( array( 'gglplsn_email_validate' => is_email( $_POST['gglplsn_email_for_validate'] ) ) );
-		}
-		wp_die();
-	}
 }
 
 add_action( 'init', 'gglplsn_init' );

@@ -60,3 +60,18 @@
     display: inline-block;
     margin-right: 20px;
 }
+.fcbkbttn_how_to_use {
+	float: right !important;
+}
+.rtl .fcbkbttn_how_to_use {
+	float: left !important;
+}
+@media only screen and ( max-width: 782px ) {
+	.fcbkbttn_how_to_use {
+		float: none !important;
+		text-align: left;
+	}
+	.rtl .fcbkbttn_how_to_use {
+		text-align: right;
+	}
+}
