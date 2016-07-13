@@ -34,33 +34,6 @@ if ( ! function_exists( 'twttr_admin_init' ) ) {
 }
 /* end twttr_admin_init */
 
-if( ! function_exists( 'twttr_plugin_activation' ) ) {
-	function twttr_plugin_activation( $networkwide ) {
-		global $wpdb;
-		/* Activation function for network */
-
-		if ( is_multisite() ) {
-			/* Check if it is a network activation - if so, run the activation function for each blog id */
-			if ( $networkwide ) {
-				$old_blog = $wpdb->blogid;
-
-				/* Get all blog ids */
-				$blogids = $wpdb->get_col( "SELECT `blog_id` FROM $wpdb->blogs" );
-				foreach ( $blogids as $blog_id ) {
-					switch_to_blog( $blog_id );
-					twttr_settings();
-				}
-				switch_to_blog( $old_blog );
-				return;
-			} else {
-				twttr_settings();
-			}
-		} else {
-			twttr_settings();
-		}
-	}
-}
-
 /* Register settings for plugin */
 if ( ! function_exists( 'twttr_settings' ) ) {
 	function twttr_settings() {
@@ -68,13 +41,14 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 
 		$twttr_options_default = array(
 			'plugin_option_version'		=> $twttr_plugin_info["Version"],
+			'display_settings_notice'	=> 1,
+			'suggest_feature_banner'	=> 1,
+			'first_install'				=> strtotime( "now" ),
 			'url_twitter' 				=> 'admin',
 			'display_option'			=> 'standart',
 			'count_icon' 				=> 1,
 			'img_link' 					=> plugins_url( "images/twitter-follow.jpg", __FILE__ ),
-			'position' 					=> 'before',
-			'first_install'				=> strtotime( "now" ),
-			'display_settings_notice'	=> 1,
+			'position' 					=> 'before',						
 			'tweet_display'				=> 1,
 			'size'						=> 'default',
 			'lang_default'				=> 1,
@@ -100,38 +74,30 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 			'tweet_to_mention'			=> '',
 			'text_option_mention'		=> 'page_title',
 			'text_mention'				=> '',
-			'related_mention'			=> '',
-			'suggest_feature_banner'	=> 1
+			'related_mention'			=> ''			
 		);
 		/* Install the option defaults */
 		/* Get options from the database */
-		if ( ! get_option( 'twttr_options' ) ) {
-			if ( false !== get_option( 'twttr_options_array' ) ) {
-				$old_options = get_option( 'twttr_options_array' );
-				foreach ( $twttr_options_default as $key => $value ) {
-					if ( isset( $old_options['twttr_' . $key] ) )
-						$twttr_options_default[$key] = $old_options['twttr_' . $key];
-				}
-				delete_option( 'twttr_options_array' );
-			}
+		if ( ! get_option( 'twttr_options' ) )
 			add_option( 'twttr_options', $twttr_options_default );
-		}
+
 		$twttr_options = get_option( 'twttr_options' );
 
 		if ( ! isset( $twttr_options['plugin_option_version'] ) || $twttr_options['plugin_option_version'] != $twttr_plugin_info["Version"] ) {
-			if ( '0' == $twttr_options['position'] )
-				$twttr_options['position'] = 'after';
-			elseif ( '1' == $twttr_options['position'] )
-				$twttr_options['position'] = 'before';
-
+			/*pls
+			* @since 2.48
+			* @todo remove after 05.07.2016
+			*/
 			if ( isset( $twttr_options['disable'] ) ) {
-				if( 0 == $twttr_options['disable'] )
+				if ( 0 == $twttr_options['disable'] )
 					$twttr_options['tweet_display'] = 1;
 				elseif ( 1 == $twttr_options['disable'] )
 					$twttr_options['tweet_display'] = 0;
+				unset( $twttr_options['disable'] );
 			}
-
 			$twttr_options_default['display_settings_notice'] = 0;
+			/* end @todo pls*/
+		
 			$twttr_options = array_merge( $twttr_options_default, $twttr_options );
 			$twttr_options['plugin_option_version'] = $twttr_plugin_info["Version"];
 			update_option( 'twttr_options', $twttr_options );
@@ -181,6 +147,8 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 			$twttr_options['text_option_mention']		= $_REQUEST['twttr_text_option_mention'];
 			$twttr_options['text_mention']				= esc_html( $_REQUEST['twttr_text_mention'] );
 			$twttr_options['related_mention']			= esc_html( $_REQUEST['twttr_related_mention'] );
+
+			$twttr_options = apply_filters( 'twttr_before_save_options', $twttr_options );
 
 			update_option( 'twttr_options', $twttr_options );
 			$message = __( "Settings saved", 'twitter-plugin' );
@@ -245,7 +213,7 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 			<div class="error below-h2" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php ?>
 					<br>
-					<div><?php $icon_shortcode = ( "twitter.php" == $_GET['page'] ) ? plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) : plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' );
+					<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
 					printf( 
 						__( "If you want to add twitter buttons to your page or post, please use %s button", 'twitter-plugin' ),
 						'<span class="bws_code"><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt=""/></span>' ); ?>
@@ -262,280 +230,282 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 					</div>
 					<form method="post" action="" enctype="multipart/form-data" class="bws_form" id="twttr_settings_form">
 						<div id="twttr_form_table">
-						<table class="form-table">
-							<tr valign="top" id="twttr_position">
-								<th scope="row">
-									<?php _e( 'Twitter buttons position', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<select name="twttr_position">
-										<option value="before" <?php if ( 'before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'twitter-plugin' ); ?></option>
-										<option value="after" <?php if ( 'after' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'twitter-plugin' ); ?></option>
-										<option value="after_and_before" <?php if ( 'after_and_before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'twitter-plugin' ); ?></option>
-										<option value="shortcode" <?php if ( 'shortcode' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Only shortcode', 'twitter-plugin' ); ?></option>
-									</select>
-								</td>
-							</tr>
-							<tr valign="top">
-								<th scope="row"><?php _e( 'Show button', 'twitter-plugin' ); ?></th>
-								<td><fieldset>
-									<label><input id="twttr_twitter_display" name="twttr_twitter_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['tweet_display'] ) echo 'checked="checked"'; ?> />
-									<?php _e( 'Tweet (Share a link)', 'twitter-plugin' ); ?></label><br />
-									<label><input id="twttr_followme_display" name="twttr_followme_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['followme_display'] ) echo 'checked="checked"'; ?> />
-									<?php _e( 'Follow me', 'twitter-plugin' ); ?></label><br />
-									<label><input id="twttr_hashtag_display" name="twttr_hashtag_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['hashtag_display'] ) echo 'checked="checked"'; ?> />
-									<?php _e( 'Hashtag', 'twitter-plugin' ); ?></label><br />
-									<label><input id="twttr_mention_display" name="twttr_mention_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['mention_display'] ) echo 'checked="checked"'; ?> />
-									<?php _e( 'Mention', 'twitter-plugin' ); ?></label>
-								</fieldset></td>
-							</tr>
-							<tr valign="top">
-								<th scope="row">
-									<?php _e( 'Language', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<label><input id="twttr_lang_default" name="twttr_lang_default" type="checkbox" value="1" <?php if ( 1 == $twttr_options['lang_default'] ) echo 'checked="checked"'; ?> />
-									<?php _e( 'Automatic', 'twitter-plugin' ); ?></label><br /><br />
-									<select name="twttr_lang" id="twttr_lang_choose" <?php if ( 1 == $twttr_options['lang_default'] ) echo 'style="display:none"'; ?> >
-										<option <?php if ( 'en' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="en">English</option>
-										<option <?php if ( 'fr' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fr">French - français</option>
-										<option <?php if ( 'es' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="es">Spanish - Español</option>
-										<option <?php if ( 'de' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="de">German - Deutsch</option>
-										<option <?php if ( 'it' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="it">Italian - Italiano</option>
-										<option <?php if ( 'ru' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ru">Russian - Русский</option>
-										<option <?php if ( 'ar' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ar">Arabic - العربية</option>
-										<option <?php if ( 'ja' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ja">Japanese - 日本語</option>
-										<option <?php if ( 'id' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="id">Indonesian - Bahasa Indonesia</option>
-										<option <?php if ( 'pt' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="pt">Portuguese - Português</option>
-										<option <?php if ( 'ko' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ko">Korean - 한국어</option>
-										<option <?php if ( 'tr' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="tr">Turkish - Türkçe</option>
-										<option <?php if ( 'nl' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="nl">Dutch - Nederlands</option>
-										<option <?php if ( 'fil' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fil">Filipino - Filipino</option>
-										<option <?php if ( 'msa' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="msa">Malay - Bahasa Melayu</option>
-										<option <?php if ( 'zh-tw' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="zh-tw">Traditional Chinese - 繁體中文</option>
-										<option <?php if ( 'zh-cn' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="zh-cn">"Simplified Chinese - 简体中文</option>
-										<option <?php if ( 'hi' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="hi">Hindi - हिन्दी</option>
-										<option <?php if ( 'no' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="no">Norwegian - Norsk</option>
-										<option <?php if ( 'sv' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="sv">Swedish - Svenska</option>
-										<option <?php if ( 'fi' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fi">Finnish - Suomi</option>
-										<option <?php if ( 'da' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="da">Danish - Dansk</option>
-										<option <?php if ( 'pl' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="pl">Polish - Polski</option>
-										<option <?php if ( 'hu' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="hu">Hungarian - Magyar</option>
-										<option <?php if ( 'fa' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fa">Farsi - فارسی</option>
-										<option <?php if ( 'he' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="he">Hebrew - עִבְרִית</option>
-										<option <?php if ( 'ur' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ur">Urdu - اردو</option>
-										<option <?php if ( 'th' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="th">Thai - ภาษาไทย</option>
-									</select>
-								</td>
-							</tr>
-							<tr valign="top">
-								<th scope="row">
-									<?php _e( 'Size', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<select name="twttr_size">
-										<option <?php if ( 'default' == $twttr_options['size'] ) echo 'selected="selected"'; ?> value="default"><?php _e( 'Small', 'twitter-plugin' ); ?></option>
-										<option <?php if ( 'large' == $twttr_options['size'] ) echo 'selected="selected"'; ?> value="large"><?php _e( 'Large' , 'twitter-plugin' ); ?></option>
-									</select>
-								</td>
-							</tr>
-							<tr valign="top">
-								<th scope="row">
-									<?php _e( 'Opt-out of tailoring Twitter', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_tailoring" type="checkbox" value="1" <?php if ( true == $twttr_options['tailoring'] ) echo 'checked="checked"'; ?> />
-									<span class="bws_info"><?php echo __( 'For getting more information about this option, please', 'twitter-plugin' ) . '&#032'; ?><a href="https://support.twitter.com/articles/20169421#" target="_blank"><?php _e( 'click here', 'twitter-plugin' ); ?></a></span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row" colspan="2" class="twttr-table">
-									<?php _e( 'Settings for the "Tweet" button', 'twitter-plugin' ); ?>:
-								</th>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Share URL', 'twitter-plugin' ); ?>
-								</th>
-								<td><fieldset>
-									<label><input name="twttr_url_of_twitter" type="radio" value="page_url" <?php if ( 'page_url' == $twttr_options['url_of_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'the page URL', 'twitter-plugin' ); ?></label><br />
-									<label><input name="twttr_url_of_twitter" type="radio" value="home_url" <?php if ( 'home_url' == $twttr_options['url_of_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'home URL', 'twitter-plugin' ); ?></label>
-								</fieldset></td>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
-								</th>
-								<td><fieldset>
-									<label><input name="twttr_text_option_twitter" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
-									<input id="twttr_text_option_twitter" name="twttr_text_option_twitter" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_twitter'] ) echo 'checked="checked"'; ?> />
-									<input name="twttr_text_twitter" id="twttr_text_twitter" type="text" value="<?php echo $twttr_options['text_twitter']; ?>" maxlength="250" />
-								</fieldset></td>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Via', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_via_twitter" type="text" value="<?php echo $twttr_options['via_twitter']; ?>" maxlength="250" /><br />
-									<span class="bws_info"><?php _e( 'Tweet been received from the Twitter username', 'twitter-plugin' ); ?></span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Recommend', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_related_twitter" type="text" value="<?php echo $twttr_options['related_twitter']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Hashtag', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_hashtag_twitter" type="text" value="<?php echo $twttr_options['hashtag_twitter']; ?>" maxlength="250" />
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row" colspan="2" class="twttr-table">
-									<?php _e( 'Settings for the "Follow me" button', 'twitter-plugin' ); ?>:
-								</th>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Your username', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_user" type="text" value="<?php echo $twttr_options['url_twitter']; ?>" maxlength="19" /><br />
-									<span class="bws_info"><?php _e( 'If you do not have Twitter account yet, you should create it using this link', 'twitter-plugin' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( '"Follow me" button image', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
-										<select name="twttr_display_option" id="twttr_display_option">
-											<option <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="standart"><?php _e( "Standard image", 'twitter-plugin' ); ?></option>
-											<option <?php if ( 'custom' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( "Custom image", 'twitter-plugin' ); ?></option>
+							<table class="form-table">
+								<tr valign="top" id="twttr_position">
+									<th scope="row">
+										<?php _e( 'Twitter buttons position', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<select name="twttr_position">
+											<option value="before" <?php if ( 'before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before', 'twitter-plugin' ); ?></option>
+											<option value="after" <?php if ( 'after' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'After', 'twitter-plugin' ); ?></option>
+											<option value="after_and_before" <?php if ( 'after_and_before' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Before And After', 'twitter-plugin' ); ?></option>
+											<option value="shortcode" <?php if ( 'shortcode' == $twttr_options['position'] ) echo 'selected="selected"';?>><?php _e( 'Only shortcode', 'twitter-plugin' ); ?></option>
 										</select>
-									<?php } else {
-										echo __( 'To use custom image You need to setup permissions to upload directory of your site', 'twitter-plugin' ) . " - " . $upload_dir['basedir'];
-									} ?>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>></th>
-								<td class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<?php _e( 'Current image', 'twitter-plugin' ); ?>: <img src="<?php echo $twttr_options['img_link']; ?>" />
-								</td>
-							</tr>
-							<tr class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>></th>
-								<td class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<input type="file" name="upload_file" /><br />
-									<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:"jpg", "jpeg".', 'twitter-plugin' ); ?></span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<?php _e( 'Show username', 'twitter-plugin' ); ?>
-								</th>
-								<td class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<input name="twttr_username_display" type="checkbox" value="true" <?php if ( true == $twttr_options['username_display'] ) echo 'checked="checked"'; ?> />
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
-								<th class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<?php _e( 'Show count', 'twitter-plugin' ); ?>
-								</th>
-								<td class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
-									<label><input name="twttr_followers_count_followme" type="checkbox" value="true" <?php if ( true == $twttr_options['followers_count_followme'] ) echo 'checked="checked"'; ?> />
-									<span class="bws_info"> <?php _e( 'Show the number of Twitter accounts following the specified account', 'twitter-plugin' ); ?></span></label>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row" colspan="2" class="twttr-table">
-									<?php _e( 'Settings for the "Hashtag" button', 'twitter-plugin' ); ?>:
-								</th>
-							</tr>
-							<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Hashtag', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_hashtag" type="text" value="<?php echo $twttr_options['hashtag']; ?>" maxlength="250" />
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
-								</th>
-								<td><fieldset>
-									<label><input name="twttr_text_option_hashtag" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
-									<input id="twttr_text_option_hashtag" name="twttr_text_option_hashtag" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_hashtag'] ) echo 'checked="checked"'; ?> />
-									<input name="twttr_text_hashtag" id="twttr_text_hashtag" type="text" value="<?php echo $twttr_options['text_hashtag']; ?>" maxlength="250" />
-								</fieldset></td>
-							</tr>
-							<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Share URL', 'twitter-plugin' ); ?>
-								</th>
-								<td><fieldset>
-									<label><input name="twttr_url_option_hashtag" type="radio" value="no_url" <?php if ( 'no_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'no URL', 'twitter-plugin' ); ?></label><br />
-									<label><input name="twttr_url_option_hashtag" type="radio" value="home_url" <?php if ( 'home_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'home URL', 'twitter-plugin' ); ?></label><br />
-									<label><input name="twttr_url_option_hashtag" type="radio" value="page_url" <?php if ( 'page_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'the page URL', 'twitter-plugin' ); ?></label>
-								</fieldset></td>
-							</tr>
-							<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Recommend', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_related_hashtag" type="text" value="<?php echo $twttr_options['related_hashtag']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row" colspan="2" class="twttr-table">
-									<?php _e( 'Settings for the "Mention" button', 'twitter-plugin' ); ?>:
-								</th>
-							</tr>
-							<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Tweet to', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_tweet_to_mention" type="text" value="<?php echo $twttr_options['tweet_to_mention']; ?>" maxlength="250" placeholder="support" />
-								</td>
-							</tr>
-							<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
-								</th>
-								<td><fieldset>
-									<label><input name="twttr_text_option_mention" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_mention'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
-									<input id="twttr_text_option_mention" name="twttr_text_option_mention" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_mention'] ) echo 'checked="checked"'; ?> />
-									<input name="twttr_text_mention" id="twttr_text_mention" type="text" value="<?php echo $twttr_options['text_mention']; ?>" maxlength="250" />
-								</fieldset></td>
-							</tr>
-							<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
-								<th scope="row">
-									<?php _e( 'Recommend', 'twitter-plugin' ); ?>
-								</th>
-								<td>
-									<input name="twttr_related_mention" type="text" value="<?php echo $twttr_options['related_mention']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
-								</td>
-							</tr>
-						</table>
-						<p class="submit">
-							<input type="hidden" name="twttr_form_submit" value="submit" />
-							<input id="bws-submit-button" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'twitter-plugin' ) ?>" />
-							<?php wp_nonce_field( $plugin_basename, 'twttr_nonce_name' ); ?>
-						</p>
+									</td>
+								</tr>
+								<tr valign="top">
+									<th scope="row"><?php _e( 'Show button', 'twitter-plugin' ); ?></th>
+									<td><fieldset>
+										<label><input id="twttr_twitter_display" name="twttr_twitter_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['tweet_display'] ) echo 'checked="checked"'; ?> />
+										<?php _e( 'Tweet (Share a link)', 'twitter-plugin' ); ?></label><br />
+										<label><input id="twttr_followme_display" name="twttr_followme_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['followme_display'] ) echo 'checked="checked"'; ?> />
+										<?php _e( 'Follow me', 'twitter-plugin' ); ?></label><br />
+										<label><input id="twttr_hashtag_display" name="twttr_hashtag_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['hashtag_display'] ) echo 'checked="checked"'; ?> />
+										<?php _e( 'Hashtag', 'twitter-plugin' ); ?></label><br />
+										<label><input id="twttr_mention_display" name="twttr_mention_display" type="checkbox" value="1" <?php if ( 1 == $twttr_options['mention_display'] ) echo 'checked="checked"'; ?> />
+										<?php _e( 'Mention', 'twitter-plugin' ); ?></label>
+									</fieldset></td>
+								</tr>
+								<tr valign="top">
+									<th scope="row">
+										<?php _e( 'Language', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<label><input id="twttr_lang_default" name="twttr_lang_default" type="checkbox" value="1" <?php if ( 1 == $twttr_options['lang_default'] ) echo 'checked="checked"'; ?> />
+										<?php _e( 'Automatic', 'twitter-plugin' ); ?></label><br /><br />
+										<select name="twttr_lang" id="twttr_lang_choose" <?php if ( 1 == $twttr_options['lang_default'] ) echo 'style="display:none"'; ?> >
+											<option <?php if ( 'en' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="en">English</option>
+											<option <?php if ( 'fr' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fr">French - français</option>
+											<option <?php if ( 'es' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="es">Spanish - Español</option>
+											<option <?php if ( 'de' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="de">German - Deutsch</option>
+											<option <?php if ( 'it' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="it">Italian - Italiano</option>
+											<option <?php if ( 'ru' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ru">Russian - Русский</option>
+											<option <?php if ( 'ar' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ar">Arabic - العربية</option>
+											<option <?php if ( 'ja' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ja">Japanese - 日本語</option>
+											<option <?php if ( 'id' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="id">Indonesian - Bahasa Indonesia</option>
+											<option <?php if ( 'pt' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="pt">Portuguese - Português</option>
+											<option <?php if ( 'ko' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ko">Korean - 한국어</option>
+											<option <?php if ( 'tr' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="tr">Turkish - Türkçe</option>
+											<option <?php if ( 'nl' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="nl">Dutch - Nederlands</option>
+											<option <?php if ( 'fil' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fil">Filipino - Filipino</option>
+											<option <?php if ( 'msa' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="msa">Malay - Bahasa Melayu</option>
+											<option <?php if ( 'zh-tw' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="zh-tw">Traditional Chinese - 繁體中文</option>
+											<option <?php if ( 'zh-cn' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="zh-cn">"Simplified Chinese - 简体中文</option>
+											<option <?php if ( 'hi' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="hi">Hindi - हिन्दी</option>
+											<option <?php if ( 'no' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="no">Norwegian - Norsk</option>
+											<option <?php if ( 'sv' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="sv">Swedish - Svenska</option>
+											<option <?php if ( 'fi' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fi">Finnish - Suomi</option>
+											<option <?php if ( 'da' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="da">Danish - Dansk</option>
+											<option <?php if ( 'pl' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="pl">Polish - Polski</option>
+											<option <?php if ( 'hu' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="hu">Hungarian - Magyar</option>
+											<option <?php if ( 'fa' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="fa">Farsi - فارسی</option>
+											<option <?php if ( 'he' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="he">Hebrew - עִבְרִית</option>
+											<option <?php if ( 'ur' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="ur">Urdu - اردو</option>
+											<option <?php if ( 'th' == $twttr_options['lang'] ) echo 'selected="selected"'; ?> value="th">Thai - ภาษาไทย</option>
+										</select>
+									</td>
+								</tr>
+								<tr valign="top">
+									<th scope="row">
+										<?php _e( 'Size', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<select name="twttr_size">
+											<option <?php if ( 'default' == $twttr_options['size'] ) echo 'selected="selected"'; ?> value="default"><?php _e( 'Small', 'twitter-plugin' ); ?></option>
+											<option <?php if ( 'large' == $twttr_options['size'] ) echo 'selected="selected"'; ?> value="large"><?php _e( 'Large' , 'twitter-plugin' ); ?></option>
+										</select>
+									</td>
+								</tr>
+								<tr valign="top">
+									<th scope="row">
+										<?php _e( 'Opt-out of tailoring Twitter', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_tailoring" type="checkbox" value="1" <?php if ( true == $twttr_options['tailoring'] ) echo 'checked="checked"'; ?> />
+										<span class="bws_info"><?php echo __( 'For getting more information about this option, please', 'twitter-plugin' ) . '&#032'; ?><a href="https://support.twitter.com/articles/20169421#" target="_blank"><?php _e( 'click here', 'twitter-plugin' ); ?></a></span>
+									</td>
+								</tr>
+								<?php do_action( 'twttr_settings_page_action', $twttr_options ); ?>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row" colspan="2" class="twttr-table">
+										<?php _e( 'Settings for the "Tweet" button', 'twitter-plugin' ); ?>:
+									</th>
+								</tr>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Share URL', 'twitter-plugin' ); ?>
+									</th>
+									<td><fieldset>
+										<label><input name="twttr_url_of_twitter" type="radio" value="page_url" <?php if ( 'page_url' == $twttr_options['url_of_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'the page URL', 'twitter-plugin' ); ?></label><br />
+										<label><input name="twttr_url_of_twitter" type="radio" value="home_url" <?php if ( 'home_url' == $twttr_options['url_of_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'home URL', 'twitter-plugin' ); ?></label>
+									</fieldset></td>
+								</tr>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
+									</th>
+									<td><fieldset>
+										<label><input name="twttr_text_option_twitter" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_twitter'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
+										<input id="twttr_text_option_twitter" name="twttr_text_option_twitter" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_twitter'] ) echo 'checked="checked"'; ?> />
+										<input name="twttr_text_twitter" id="twttr_text_twitter" type="text" value="<?php echo $twttr_options['text_twitter']; ?>" maxlength="250" />
+									</fieldset></td>
+								</tr>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Via', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_via_twitter" type="text" value="<?php echo $twttr_options['via_twitter']; ?>" maxlength="250" /><br />
+										<span class="bws_info"><?php _e( 'Tweet been received from the Twitter username', 'twitter-plugin' ); ?></span>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Recommend', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_related_twitter" type="text" value="<?php echo $twttr_options['related_twitter']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_twitter_option" <?php if ( 0 == $twttr_options['tweet_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Hashtag', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_hashtag_twitter" type="text" value="<?php echo $twttr_options['hashtag_twitter']; ?>" maxlength="250" />
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row" colspan="2" class="twttr-table">
+										<?php _e( 'Settings for the "Follow me" button', 'twitter-plugin' ); ?>:
+									</th>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Your username', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_user" type="text" value="<?php echo $twttr_options['url_twitter']; ?>" maxlength="19" /><br />
+										<span class="bws_info"><?php _e( 'If you do not have Twitter account yet, you should create it using this link', 'twitter-plugin' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( '"Follow me" button image', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<?php if ( scandir( $upload_dir['basedir'] ) && is_writable( $upload_dir['basedir'] ) ) { ?>
+											<select name="twttr_display_option" id="twttr_display_option">
+												<option <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="standart"><?php _e( "Standard image", 'twitter-plugin' ); ?></option>
+												<option <?php if ( 'custom' == $twttr_options['display_option'] ) echo 'selected="selected"'; ?> value="custom"><?php _e( "Custom image", 'twitter-plugin' ); ?></option>
+											</select>
+										<?php } else {
+											echo __( 'To use custom image You need to setup permissions to upload directory of your site', 'twitter-plugin' ) . " - " . $upload_dir['basedir'];
+										} ?>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>></th>
+									<td class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<?php _e( 'Current image', 'twitter-plugin' ); ?>: <img src="<?php echo $twttr_options['img_link']; ?>" />
+									</td>
+								</tr>
+								<tr class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>></th>
+									<td class="twttr_display_option_custom" <?php if ( 'standart' == $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<input type="file" name="upload_file" /><br />
+										<span class="bws_info"><?php _e( 'Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:"jpg", "jpeg".', 'twitter-plugin' ); ?></span>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<?php _e( 'Show username', 'twitter-plugin' ); ?>
+									</th>
+									<td class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<input name="twttr_username_display" type="checkbox" value="true" <?php if ( true == $twttr_options['username_display'] ) echo 'checked="checked"'; ?> />
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_followme_option" <?php if ( 0 == $twttr_options['followme_display'] ) echo 'style="display:none"'; ?>>
+									<th class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<?php _e( 'Show count', 'twitter-plugin' ); ?>
+									</th>
+									<td class="twttr_display_option_standart" <?php if ( 'standart' != $twttr_options['display_option'] ) echo 'style="display:none"'; ?>>
+										<label><input name="twttr_followers_count_followme" type="checkbox" value="true" <?php if ( true == $twttr_options['followers_count_followme'] ) echo 'checked="checked"'; ?> />
+										<span class="bws_info"> <?php _e( 'Show the number of Twitter accounts following the specified account', 'twitter-plugin' ); ?></span></label>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row" colspan="2" class="twttr-table">
+										<?php _e( 'Settings for the "Hashtag" button', 'twitter-plugin' ); ?>:
+									</th>
+								</tr>
+								<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Hashtag', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_hashtag" type="text" value="<?php echo $twttr_options['hashtag']; ?>" maxlength="250" />
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
+									</th>
+									<td><fieldset>
+										<label><input name="twttr_text_option_hashtag" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
+										<input id="twttr_text_option_hashtag" name="twttr_text_option_hashtag" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_hashtag'] ) echo 'checked="checked"'; ?> />
+										<input name="twttr_text_hashtag" id="twttr_text_hashtag" type="text" value="<?php echo $twttr_options['text_hashtag']; ?>" maxlength="250" />
+									</fieldset></td>
+								</tr>
+								<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Share URL', 'twitter-plugin' ); ?>
+									</th>
+									<td><fieldset>
+										<label><input name="twttr_url_option_hashtag" type="radio" value="no_url" <?php if ( 'no_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'no URL', 'twitter-plugin' ); ?></label><br />
+										<label><input name="twttr_url_option_hashtag" type="radio" value="home_url" <?php if ( 'home_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'home URL', 'twitter-plugin' ); ?></label><br />
+										<label><input name="twttr_url_option_hashtag" type="radio" value="page_url" <?php if ( 'page_url' == $twttr_options['url_option_hashtag'] ) echo 'checked="checked"'; ?> /><?php _e( 'the page URL', 'twitter-plugin' ); ?></label>
+									</fieldset></td>
+								</tr>
+								<tr valign="top" class="twttr_hashtag_option" <?php if ( 0 == $twttr_options['hashtag_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Recommend', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_related_hashtag" type="text" value="<?php echo $twttr_options['related_hashtag']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row" colspan="2" class="twttr-table">
+										<?php _e( 'Settings for the "Mention" button', 'twitter-plugin' ); ?>:
+									</th>
+								</tr>
+								<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Tweet to', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_tweet_to_mention" type="text" value="<?php echo $twttr_options['tweet_to_mention']; ?>" maxlength="250" placeholder="support" />
+									</td>
+								</tr>
+								<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Tweet text', 'twitter-plugin' ); ?>
+									</th>
+									<td><fieldset>
+										<label><input name="twttr_text_option_mention" type="radio" value="page_title" <?php if ( 'page_title' == $twttr_options['text_option_mention'] ) echo 'checked="checked"'; ?> /><?php _e( 'the title of the page', 'twitter-plugin' ); ?></label><br />
+										<input id="twttr_text_option_mention" name="twttr_text_option_mention" type="radio" value="custom" <?php if ( 'custom' == $twttr_options['text_option_mention'] ) echo 'checked="checked"'; ?> />
+										<input name="twttr_text_mention" id="twttr_text_mention" type="text" value="<?php echo $twttr_options['text_mention']; ?>" maxlength="250" />
+									</fieldset></td>
+								</tr>
+								<tr valign="top" class="twttr_mention_option" <?php if ( 0 == $twttr_options['mention_display'] ) echo 'style="display:none"'; ?>>
+									<th scope="row">
+										<?php _e( 'Recommend', 'twitter-plugin' ); ?>
+									</th>
+									<td>
+										<input name="twttr_related_mention" type="text" value="<?php echo $twttr_options['related_mention']; ?>" maxlength="250" /><br /><span class="bws_info"> <?php _e( 'Enter username of someone you recomend', 'twitter-plugin' ); ?></span>
+									</td>
+								</tr>
+							</table>
+							<p class="submit">
+								<input type="hidden" name="twttr_form_submit" value="submit" />
+								<input id="bws-submit-button" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'twitter-plugin' ) ?>" />
+								<?php wp_nonce_field( $plugin_basename, 'twttr_nonce_name' ); ?>
+							</p>
 						</div>
-											</form>
+						<!-- end pls -->
+					</form>
 						<?php }
 }
 
@@ -561,10 +531,9 @@ if ( ! function_exists( 'twttr_twit' ) ) {
 		if ( ! empty( $wp_current_filter ) && in_array( 'get_the_excerpt', $wp_current_filter ) )
 			return $content;
 
-		if ( $twttr_options['position'] == 'shortcode' ) {
-			return $content;
-		} elseif ( 1 == $twttr_options['tweet_display'] || 1 == $twttr_options['followme_display'] || 1 == $twttr_options['hashtag_display'] || 1 == $twttr_options['mention_display'] ) {
+		if ( ( $twttr_options['position'] != 'shortcode' ) && ( 1 == $twttr_options['tweet_display'] || 1 == $twttr_options['followme_display'] || 1 == $twttr_options['hashtag_display'] || 1 == $twttr_options['mention_display'] ) ) {
 			$buttons = twttr_show_button( $twttr_options['tweet_display'], $twttr_options['followme_display'], $twttr_options['hashtag_display'], $twttr_options['mention_display'] );
+			$buttons = apply_filters( 'twttr_button_in_the_content', $buttons );
 			if ( 'before' == $twttr_options['position'] ) {
 				return $buttons . $content;
 			} elseif ( 'after' == $twttr_options['position'] ) {
@@ -572,25 +541,24 @@ if ( ! function_exists( 'twttr_twit' ) ) {
 			} else {
 				return $buttons . $content . $buttons;
 			}
-		} else {
-			return $content;
 		}
+
+		return $content;
 	}
 }
 
 /* Function for showing buttons */
 if ( ! function_exists( 'twttr_show_button' ) ) {
 	function twttr_show_button( $tweet, $follow, $hashtag, $mention ) {
-		if( is_feed() ) {
-			return;
-		}
-
 		global $post, $twttr_options, $twttr_add_api_script;
 
-		$upload_dir = wp_upload_dir();
-		$twttr_add_api_script = true;
+		if ( is_feed() )
+			return;		
 
 		if ( 1 == $tweet || 1 == $follow || 1 == $hashtag || 1 == $mention ) {
+
+			$twttr_add_api_script = true;
+
 			$lang = ( 1 == $twttr_options['lang_default'] ) ? '' : 'data-lang="'. $twttr_options['lang'] . '"';
 			$tailoring = ! empty( $twttr_options['tailoring'] ) ? 'data-dnt="true"' : '';
 
@@ -611,6 +579,7 @@ if ( ! function_exists( 'twttr_show_button' ) ) {
 					$twttr_options['url_twitter'] = "twitter";				
 
 				/*show follow me button*/
+				$upload_dir = wp_upload_dir();
 				if ( 'standart' == $twttr_options[ 'display_option' ] || ! is_writable( $upload_dir['basedir'] ) ) {
 					$show_count = ( $twttr_options['followers_count_followme'] ) ? 'data-show-count="true"' : 'data-show-count="false"';
 					$show_name = ( $twttr_options['username_display'] ) ? 'data-show-screen-name="true"' : 'data-show-screen-name="false"';
@@ -689,21 +658,20 @@ if ( ! function_exists( 'twttr_admin_enqueue_scripts' ) ) {
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_script( 'twttr_script', plugins_url( 'js/script.js' , __FILE__ ), array( 'jquery' ) );
 
-			if( "twitter.php" == $_GET['page'] && isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) {
+			if ( "twitter.php" == $_GET['page'] && isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
 				bws_plugins_include_codemirror();
-			}
 		}
 	}
 }
 
-if( ! function_exists( 'twttr_api_scripts' ) ) {
+if ( ! function_exists( 'twttr_api_scripts' ) ) {
 	function twttr_api_scripts() {
 		global $twttr_add_api_script;
-		if( true == $twttr_add_api_script ) { ?>
+		if ( true == $twttr_add_api_script ) { ?>
 			<script>
 				!function(d,s,id) {var js,fjs=d.getElementsByTagName(s)[0];if (!d.getElementById(id)) {js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			</script> 
-		<?php $twttr_add_api_script = false;
+			<?php $twttr_add_api_script = false;
 		}
 	}
 }

@@ -4,12 +4,12 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
 google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.8
-Tested up to: 4.5.2
-Stable tag: 1.0.7
+Tested up to: 4.5.3
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add Social buttons and widgets to your WordPress website.
+Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
 
 == Description ==
 
@@ -51,7 +51,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Turkish (tr_TR) (thanks to <a href="mailto:webmaster@canatasever.com">Can Atasever</a>)
 * Ukrainian (uk)
 
-If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Technical support =
 
@@ -65,7 +65,7 @@ We can fix some things for free for the users who provide translation of our plu
 
 1. Upload the folder `social-buttons-pack` to the directory `/wp-content/plugins/`.
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings in your WordPress admin panel - "BWS Plugins" > "Social Buttons".
+3. You can adjust the necessary settings in your WordPress admin panel - "BWS Panel" > "Social Buttons".
 
 <a href="https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/edit" target="_blank">View a Step-by-step Instruction on Social Buttons Pack Installation</a>.
 
@@ -75,21 +75,21 @@ http://www.youtube.com/watch?v=1PZPCL76aBk
 
 = How to adjust Social Buttons position on the page ? =
 
-In WordPress admin panel go to "BWS Plugins", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
+In WordPress admin panel go to "BWS Panel", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
 
 = After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
 
-1. In WordPress admin panel, please go to "BWS Plugins", find "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
+1. In WordPress admin panel, please go to "BWS Panel", find "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
 2. If you do not have Facebook account yet, you should create it using this link: http://www.facebook.com. After the account is created please follow the instructions above.
 
 = How to change Facebook Button icon ("My page") =
 
-1. In WordPress admin panel, please go to "BWS Plugins", find "Social Buttons" > "Facebook" settings page and choose one of the listed positions: Standard Facebook image or Custom Facebook image. Then click "Save Changes".
+1. In WordPress admin panel, please go to "BWS Panel", find "Social Buttons" > "Facebook" settings page and choose one of the listed positions: Standard Facebook image or Custom Facebook image. Then click "Save Changes".
 2. If you choose Custom Facebook image, you can upload your own picture. You should click "Choose file" and choose an image in your folder. Then click "Save Changes".
 
 = After clicking the Twitter icon I see the Twitter Home page instead of the necessary account page =
 
-1. In the WordPress admin panel go to "BWS Plugins", find the "Social Buttons" > "Twitter" settings page and enter your Twitter login. Then click "Save Changes".
+1. In the WordPress admin panel go to "BWS Panel", find the "Social Buttons" > "Twitter" settings page and enter your Twitter login. Then click "Save Changes".
 2. If you do not have Twitter account yet you should create it using this link: https://twitter.com/signup. After account is created please follow the instructions above.
 
 = Why does the Google +1 button become red after clicking? =
@@ -98,7 +98,7 @@ For correct work of the Google +1 buttons do not use it locally and on a free ho
 
 = Pinterest Follow button is not displaying properly =
 
-In WordPress admin panel, please go to "BWS Plugins", find find the "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
+In WordPress admin panel, please go to "BWS Panel", find find the "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
 
 = Pinterest widget is not displaying =
 
@@ -148,6 +148,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.0.8 - 13.07.2016 =
+* NEW : The Google Badge settings were added.
+* Update : Images size for meta property 'og:image' in Facebook Button has been changed.
+* Bugfix : The bug with excerpt when twitter button shows up has been fixed.
+
 = V1.0.7 - 07.06.2016 =
 * NEW : Pinterest buttons and widgets were added.
 * NEW : LinkedIn Widgets, 'Share' and 'Follow' Buttons were added.
@@ -187,6 +192,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.8 =
+Functionality has been expanded. Bugs have been fixed.
 
 = V1.0.7 =
 Pinterest buttons and widgets were added. LinkedIn Widgets, 'Share' and 'Follow' Buttons were added.

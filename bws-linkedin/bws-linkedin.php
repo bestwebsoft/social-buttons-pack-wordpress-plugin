@@ -61,9 +61,9 @@ if ( ! function_exists ( 'lnkdn_settings' ) ) {
 			'use_multilanguage_locale'	=> 0			
 		);
 
-		if ( ! get_option( 'lnkdn_options' ) ) {
+		if ( ! get_option( 'lnkdn_options' ) )
 			add_option( 'lnkdn_options', $lnkdn_options_defaults );
-		}
+
 		$lnkdn_options = get_option( 'lnkdn_options' );
 
 		if ( ! isset( $lnkdn_options['plugin_option_version'] ) || $lnkdn_options['plugin_option_version'] != $lnkdn_plugin_info["Version"] ) {
@@ -112,6 +112,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 				$error = __( 'Enter the Company/Showcase Page ID for "Follow" button. Settings are not saved.', 'bws-linkedin' );
 			}
 			if ( empty( $error ) ) {
+				$lnkdn_options = apply_filters( 'lnkdn_before_save_options', $lnkdn_options );
 				update_option( 'lnkdn_options', $lnkdn_options );
 				$message = __( 'Settings saved', 'bws-linkedin' );
 			}
@@ -125,7 +126,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 			<?php ?>
 					<div class="lnkdn_settings_block">
 						<br />
-						<div><?php $icon_shortcode = ( "linkedin.php" == $_GET['page'] ) ? plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) : plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' );
+						<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
 							printf( 
 								__( "If you'd like to add LinkedIn Buttons to your page or post, please use %s button", 'bws-linkedin' ), 
 								'<span class="bws_code"><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt=""/></span>' 
@@ -238,6 +239,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 												</p>
 											</td>
 										</tr>
+										<?php do_action( 'lnkdn_settings_page_action', $lnkdn_options ); ?>
 									</tbody>
 								</table>
 								<table class="form-table">
@@ -344,12 +346,8 @@ if ( ! function_exists( 'lnkdn_return_button' ) ) {
 if ( ! function_exists( 'lnkdn_position' ) ) {
 	function lnkdn_position( $content ) {
 		global $lnkdn_options;
-
-		if ( is_feed() ) {
-			return $content;
-		}
 		
-		if ( 'only_shortcode' != $lnkdn_options['position'] ) {
+		if ( ! is_feed() && 'only_shortcode' != $lnkdn_options['position'] ) {
 			if ( ( ! is_home() && ! is_front_page() ) || 1 == $lnkdn_options['homepage'] ) {
 				if ( ( is_single() && 1 == $lnkdn_options['posts'] ) || ( is_page() && 1 == $lnkdn_options['pages'] ) || ( is_home() && 1 == $lnkdn_options['homepage'] ) ) {
 					$share  = ( 1 == $lnkdn_options['share'] ) ? lnkdn_return_button( 'share' ) : '';
@@ -359,6 +357,8 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 			}
 
 			if ( ! empty( $button ) ) {
+				$button = apply_filters( 'lnkdn_button_in_the_content', $button );
+
 				if ( 'before_post' == $lnkdn_options['position'] ) {
 					return $button . $content;
 				} elseif ( 'after_post' == $lnkdn_options['position'] ) {

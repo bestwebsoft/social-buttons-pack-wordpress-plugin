@@ -2,6 +2,12 @@
 	position: relative;
 	overflow: hidden;
 }
+.gglplsn_how_to_use {
+	float: right;
+}
+.rtl .gglplsn_how_to_use {
+	float: left;
+}
 .gglplsn_buttons {
 	margin-bottom: 5px;
 }
@@ -20,7 +26,7 @@
 .gglplsn_share {
 	margin-right: 5px;
 	display: inline-block;
-    vertical-align: bottom;
+	vertical-align: bottom;
 }
 .gglplsn-form {
 	display: inline-block;
@@ -221,7 +227,7 @@
 		display: none;
 	}
 	th .gglplsn-premium-option {
-		background-position: 0 4px; 
+		background-position: 0 4px;
 	}
 	.gglplsn-view-invited-noscript {
 		margin-bottom: -9px;

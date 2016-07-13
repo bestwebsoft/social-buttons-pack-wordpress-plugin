@@ -70,7 +70,7 @@
 				var max = parseInt( $( this ).attr( 'max' ) );
 				if( val < min ) {
 					console.log('min ' + min);
-					$( this ).val( min ); 
+					$( this ).val( min );
 				} else if( val > max ) {
 					console.log('max ' + max);
 					$( this ).val( max );
@@ -113,8 +113,8 @@
 				$( '.gglplsn-badge-tagline-info' ).html( '(' + js_string.person_tagline_info + ')' );
 			}
 		} );
-		
-		/* Display Width for +1 and Share */		
+
+		/* Display Width for +1 and Share */
 		$( 'select[name="gglplsn_plus_one_annotation"]' ).change( function() {
 			if( 'inline' == $( this ).val() ) {
 				$( '.gglplsn-plus-one-annotation-type' ).show();
@@ -194,7 +194,7 @@
 						if( -1 != data ) {
 							ajax_success = true;
 						}
-						
+
 						if( false == data.gglplsn_email_validate ) {
 							validate_email = false;
 						}
@@ -258,7 +258,7 @@
 		$( '.gglplsn-view-invited' ).on( 'click', '.delbutton', function() {
 			$( this ).parent().parent().remove();
 		} );
-		
+
 		/* Check the isset id for follow and badge */
 		$( '#gglplsn_settings_form_block #bws-submit-button' ).click( function() {
 			if ( $( 'input[name="gglplsn_follow_js"]' ).is( ':checked' ) && '' == $( 'input[name="gglplsn_follow_id"]' ).val() ) {

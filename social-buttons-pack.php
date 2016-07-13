@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Social Buttons Pack by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/
-Description: Add social buttons and widgets in to your site.
+Plugin URI: http://bestwebsoft.com/products/social-buttons-pack/
+Description: Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
 Author: BestWebSoft
-Version: 1.0.7
+Version: 1.0.8
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -36,7 +36,7 @@ require_once( dirname( __FILE__ ) . '/bws-pinterest/bws-pinterest.php' );
 if ( ! function_exists( 'sclbttns_add_pages' ) ) {
 	function sclbttns_add_pages() {
 		bws_general_menu();
-		$settings = add_submenu_page( 'bws_plugins', __( 'Social Buttons Settings' ), 'Social Buttons', 'manage_options', "social-buttons.php", 'sclbttns_settings_page' );
+		$settings = add_submenu_page( 'bws_panel', __( 'Social Buttons Settings' ), 'Social Buttons', 'manage_options', "social-buttons.php", 'sclbttns_settings_page' );
 		add_action( 'load-' . $settings, 'sclbttns_add_tabs' );
 	}
 }

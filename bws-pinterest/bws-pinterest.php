@@ -45,6 +45,7 @@ if ( ! function_exists( 'pntrst_admin_init' ) ) {
 if ( ! function_exists ( 'pntrst_enqueue' ) ) {
 	function pntrst_enqueue( $hook ) {
 		if ( isset( $_GET['page'] ) && ( 'pinterest.php' == $_GET['page'] || 'social-buttons.php' == $_GET['page'] ) ) {
+			wp_enqueue_style( 'pntrst_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 			wp_enqueue_script( 'pntrst_script', plugins_url( 'js/script.js', __FILE__ ) );
 
 			if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
@@ -180,6 +181,7 @@ if ( ! function_exists( 'pntrst_settings_page' ) ) {
 				$error = __( 'Error: select the upload file', 'bws-pinterest' );
 			}
 			if ( empty( $error ) ) {
+				$pntrst_options = apply_filters( 'pntrst_before_save_options', $pntrst_options );
 				update_option( 'pntrst_options', $pntrst_options );
 				$message = __( 'Settings saved', 'bws-pinterest' );
 			}
@@ -197,7 +199,7 @@ if ( ! function_exists( 'pntrst_settings_page' ) ) {
 			?>
 					<br />
 					<div>
-						<?php $icon_shortcode = ( "pinterest.php" == $_GET['page'] ) ? plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) : plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' );
+						<?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
 						printf(
 							__( 'If you would like to add Pinterest buttons or widgets to your page or post, please use %s button', 'bws-pinterest' ),
 							'<span class="bws_code"><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt=""/></span>' ); ?>
@@ -226,6 +228,7 @@ if ( ! function_exists( 'pntrst_settings_page' ) ) {
 									</div>
 								</td>
 							</tr>
+							<?php do_action( 'pntrst_settings_page_action', $pntrst_options ); ?>
 						</table>
 						<hr />
 						<h3><?php _e( 'Settings for Pin It Button', 'bws-pinterest' ); ?></h3>
@@ -423,6 +426,9 @@ if ( ! function_exists( 'pntrst_frontend' ) ) {
 				$after .= $pinit_code;
 			if ( 1 == $pntrst_options['follow_after'] )
 				$after .= $follow_code;
+
+			$before = apply_filters( 'pntrst_button_in_the_content', $before );
+			$after = apply_filters( 'pntrst_button_in_the_content', $after );
 		}
 		return $before . $content . $after;
 	}

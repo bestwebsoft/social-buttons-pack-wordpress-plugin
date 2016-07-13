@@ -50,6 +50,9 @@ if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 
 		$fcbkbttn_options_default = array(
 			'plugin_option_version'		=> $fcbkbttn_plugin_info["Version"],
+			'display_settings_notice'	=>	1,
+			'first_install'				=>	strtotime( "now" ),
+			'suggest_feature_banner'	=> 1,
 			'link'						=>	'',
 			'my_page'					=>	1,
 			'like'						=>	1,
@@ -67,45 +70,35 @@ if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 			'locale' 					=>	'en_US',
 			'html5'						=>	0,
 			'use_multilanguage_locale'	=>  0,
-			'display_for_excerpt'		=>  0,
-			'display_settings_notice'	=>	1,
-			'first_install'				=>	strtotime( "now" ),
-			'suggest_feature_banner'	=> 1
+			'display_for_excerpt'		=>  0			
 		);
-		/* Install the option defaults */
-		if ( ! get_option( 'fcbk_bttn_plgn_options' ) ) {
-			if ( false !== get_option( 'fcbk_bttn_plgn_options_array' ) ) {
-				$old_options = get_option( 'fcbk_bttn_plgn_options_array' );
-				foreach ( $fcbkbttn_options_default as $key => $value ) {
-					if ( isset( $old_options['fcbk_bttn_plgn_' . $key ] ) )
-					$fcbkbttn_options_default[ $key ] = $old_options['fcbk_bttn_plgn_' . $key ];
-				}
-				update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options_default );
-				delete_option( 'fcbk_bttn_plgn_options_array' );
-			}
-			add_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options_default );
+		/**
+		* @since 2.49
+		* @todo remove after 08.02.2017
+		*/
+		if ( $old_options = get_option( 'fcbk_bttn_plgn_options' ) ) {
+			if ( ! get_option( 'fcbkbttn_options' ) )
+				add_option( 'fcbkbttn_options', $old_options );
+			else
+				update_option( 'fcbkbttn_options', $old_options );
+			delete_option( 'fcbk_bttn_plgn_options' );
 		}
+		/* end @todo */
+
+		/* Install the option defaults */
+		if ( ! get_option( 'fcbkbttn_options' ) )
+			add_option( 'fcbkbttn_options', $fcbkbttn_options_default );
+
 		/* Get options from the database */
-		$fcbkbttn_options = get_option( 'fcbk_bttn_plgn_options' );
+		$fcbkbttn_options = get_option( 'fcbkbttn_options' );
 
 		if ( ! isset( $fcbkbttn_options['plugin_option_version'] ) || $fcbkbttn_options['plugin_option_version'] != $fcbkbttn_plugin_info["Version"] ) {
-			if ( stristr( $fcbkbttn_options['fb_img_link'], 'standart-facebook-ico.jpg' ) || stristr( $fcbkbttn_options['fb_img_link'], 'standart-facebook-ico.png' ) )
-				$fcbkbttn_options['fb_img_link'] = plugins_url( "images/standard-facebook-ico.png", __FILE__ );	
-
-			if ( 'standart' == $fcbkbttn_options['display_option'] )
-				$fcbkbttn_options['display_option'] = 'standard';
-
-			if ( stristr( $fcbkbttn_options['fb_img_link'], 'img/' ) )
-				$fcbkbttn_options['fb_img_link'] = plugins_url( str_replace( 'img/', 'images/', $fcbkbttn_options['fb_img_link'] ), __FILE__ );	
-
-			$fcbkbttn_options_default['display_settings_notice'] = 0;
-
 			/* show pro features */
 			$fcbkbttn_options['hide_premium_options'] = array();
 
 			$fcbkbttn_options = array_merge( $fcbkbttn_options_default, $fcbkbttn_options );
 			$fcbkbttn_options['plugin_option_version'] = $fcbkbttn_plugin_info["Version"];
-			update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
+			update_option( 'fcbkbttn_options', $fcbkbttn_options );
 		}
 	}
 }
@@ -129,7 +122,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 				$fcbkbttn_options = $hide_result['options'];
 			}
 
-			/* Takes all the changed settings on the plugin's admin page and saves them in array 'fcbk_bttn_plgn_options'. */
+			/* Takes all the changed settings on the plugin's admin page and saves them in array 'fcbkbttn_options'. */
 			$fcbkbttn_options['link']			 =	stripslashes( esc_html( $_REQUEST['fcbkbttn_link'] ) );
 			$fcbkbttn_options['link']			 = 	str_replace( 'https://www.facebook.com/profile.php?id=', '', $fcbkbttn_options['link'] );
 			$fcbkbttn_options['link']			 = 	str_replace( 'https://www.facebook.com/', '', $fcbkbttn_options['link'] );
@@ -161,7 +154,8 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 			$fcbkbttn_options['use_multilanguage_locale'] =	isset( $_REQUEST['fcbkbttn_use_multilanguage_locale'] ) ? 1 : 0;
 			$fcbkbttn_options['display_for_excerpt'] =	isset( $_REQUEST['fcbkbttn_display_for_excerpt'] ) ? 1 : 0;
 
-			update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
+			$lnkdn_options = apply_filters( 'fcbkbttn_before_save_options', $fcbkbttn_options );
+			update_option( 'fcbkbttn_options', $fcbkbttn_options );
 			$message = __( "Settings saved", 'facebook-button-plugin' );
 			
 			if ( isset( $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) &&  "" != $_FILES['fcbkbttn_uploadfile']['tmp_name'] ) {
@@ -205,7 +199,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 										$fb_img_link = $upload_dir['baseurl'] . '/facebook-image/facebook-ico' . $fcbkbttn_options['count_icon'] . '.' . $fcbkbttn_options['extention'];
 									}
 									$fcbkbttn_options['fb_img_link'] = $fb_img_link ;
-									update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
+									update_option( 'fcbkbttn_options', $fcbkbttn_options );
 								} else {
 									$error = __( "Error: moving file failed", 'facebook-button-plugin' );
 								}
@@ -306,8 +300,10 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 										<input name='fcbkbttn_display_for_excerpt' type='checkbox' value='1' <?php if ( 1 == $fcbkbttn_options['display_for_excerpt'] ) echo 'checked="checked "'; ?>/>
 									</td>
 								</tr>
+								<?php do_action( 'fcbkbttn_settings_page_action', $fcbkbttn_options ); ?>
 							</table>
-														<table class="form-table">
+							<!-- end pls -->
+							<table class="form-table">
 								<tr id="fcbkbttn_id_option" class="fcbkbttn_my_page" <?php if ( 1 != $fcbkbttn_options['my_page'] ) echo 'style="display:none"'; ?>>
 									<th scope="row"><?php _e( 'Your Facebook ID or username', 'facebook-button-plugin' ); ?></th>
 									<td>
@@ -398,13 +394,15 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 									</td>
 								</tr>
 							</table>
-														<p class="submit">
+							<!-- end pls -->
+							<p class="submit">
 								<input type="hidden" name="fcbkbttn_form_submit" value="submit" />
 								<input id="bws-submit-button" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'facebook-button-plugin' ); ?>" />
 								<?php wp_nonce_field( $plugin_basename, 'fcbkbttn_nonce_name' ); ?>
 							</p>
 						</div>
-											</form>
+						<!-- end pls -->
+					</form>
 						<?php }
 }
 
@@ -456,7 +454,7 @@ if ( ! function_exists( 'fcbkbttn_button' ) ) {
 	}
 }
 
-/* Function taking from array 'fcbk_bttn_plgn_options' necessary information to create Facebook Button and reacting to your choise in plugin menu - points where it appears. */
+/* Function taking from array 'fcbkbttn_options' necessary information to create Facebook Button and reacting to your choise in plugin menu - points where it appears. */
 if ( ! function_exists( 'fcbkbttn_display_button' ) ) {
 	function fcbkbttn_display_button( $content ) {
 
@@ -464,10 +462,10 @@ if ( ! function_exists( 'fcbkbttn_display_button' ) ) {
 			return $content;
 
 		global $fcbkbttn_options;
-		/* Query the database to receive array 'fcbk_bttn_plgn_options' and receiving necessary information to create button */
+		/* Query the database to receive array 'fcbkbttn_options' and receiving necessary information to create button */
 		$fcbkbttn_where	= $fcbkbttn_options['where'];
 		
-		$button = fcbkbttn_button();
+		$button = apply_filters( 'fcbkbttn_button_in_the_content', fcbkbttn_button() );
 		/* Indication where show Facebook Button depending on selected item in admin page. */
 		if ( 'before' == $fcbkbttn_where ) {
 			return $button . $content;
@@ -521,7 +519,7 @@ if ( ! function_exists( 'fcbkbttn_meta' ) ) {
 			if ( is_singular() ) {
 				$image = '';
 				if ( has_post_thumbnail( get_the_ID() ) ) {
-					$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );
+					$image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' );
 					$image = $image[0];
 				}
 				print "\n" . '<meta property="og:title" content="' . esc_attr( get_the_title() ) . '"/>';

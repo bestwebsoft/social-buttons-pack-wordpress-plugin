@@ -7,6 +7,22 @@
 .pntrst-widget-admin input {
 	margin: 5px 0;
 }
+/* link how_to_use */
+.pntrst_how_to_use {
+	float: right;
+}
+.rtl .pntrst_how_to_use {
+	float: left;
+}
+@media only screen and ( max-width: 782px ) {
+	.pntrst_how_to_use {
+		float: none;
+		text-align: left;
+	}
+	.rtl .pntrst_how_to_use {
+		text-align: right;
+	}
+}
 
 /*
  * Plugin frontend css
