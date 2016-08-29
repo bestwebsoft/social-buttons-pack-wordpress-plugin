@@ -28,3 +28,33 @@
 .twttr_mention {
 	vertical-align: middle;
 }
+body.twentyfourteen .pntrst-button-wrap,
+body.twentyfourteen .fcbk_share {
+    vertical-align: super;
+}
+body.twentyfifteen .pntrst-button-wrap,
+body.twentyfifteen .gglplsn_buttons {
+	vertical-align: top;
+}
+body.twentysixteen .lnkdn_buttons,
+body.twentysixteen .fcbk_share {
+	vertical-align: middle;
+}
+body.twentytwelve .pntrst-button-wrap,
+body.twentytwelve .lnkdn_buttons,
+body.twentytwelve .gglplsn_buttons {
+	vertical-align: middle;
+}
+body.twentytwelve .fcbk_share,
+body.twentytwelve .pntrst-button-wrap span {
+	vertical-align: top;
+}
+body.twentythirteen .fcbk_share {
+	vertical-align: super;
+}
+body.twentythirteen .pntrst-button-wrap span {
+	vertical-align: top;
+}
+body.twentythirteen .lnkdn_buttons {
+	vertical-align: middle;
+}

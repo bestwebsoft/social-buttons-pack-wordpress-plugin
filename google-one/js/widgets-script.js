@@ -1,12 +1,10 @@
 ( function( $ ) {
 	$( document ).ready( function() {
-		$( '.gglplsn-badge-type' ).live( "change", function() {
+		$( document ).on( 'change', '.gglplsn-badge-type', function() {
 			if( 'community' == $( this ).val() ) {
-				$( this ).parent().parent().find( '.gglplsn-show-owners input' ).attr("disabled", false);
-				$( this ).parent().parent().find( '.gglplsn-show-owners' ).show();
+				$( this ).parents( '.widget-content' ).find( '.gglplsn-show-owners' ).show().find( 'input' ).attr( "disabled", false );
 			} else {
-				$( this ).parent().parent().find( '.gglplsn-show-owners input' ).attr("disabled", true);
-				$( this ).parent().parent().find( '.gglplsn-show-owners' ).hide();
+				$( this ).parents( '.widget-content' ).find( '.gglplsn-show-owners' ).hide().find( 'input' ).attr( "disabled", true );
 			}
 		} );
 	} );

@@ -4,8 +4,8 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
 google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.8
-Tested up to: 4.5.3
-Stable tag: 1.0.8
+Tested up to: 4.6
+Stable tag: 1.0.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -148,6 +148,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 
 == Changelog ==
 
+= V1.0.9 - 29.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
 = V1.0.8 - 13.07.2016 =
 * NEW : The Google Badge settings were added.
 * Update : Images size for meta property 'og:image' in Facebook Button has been changed.
@@ -192,6 +195,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.0.9 =
+* The compatibility with new WordPress version updated.
 
 = V1.0.8 =
 Functionality has been expanded. Bugs have been fixed.

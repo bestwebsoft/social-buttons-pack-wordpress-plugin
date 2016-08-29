@@ -366,7 +366,7 @@ if ( ! function_exists( 'gglplsn_options' ) ) {
 															<input disabled="disabled" type="checkbox" name="gglplsn_use_multilanguage_locale" value="1" />
 															<?php _e( 'Use the current site language', 'google-one' ); ?>
 															<span class="bws_info">(<?php _e( 'Using', 'google-one' ); ?> Multilanguage by BestWebSoft)
-																<a href="http://bestwebsoft.com/products/multilanguage/?k=196fb3bb74b6e8b1e08f92cddfd54313&pn=78&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'google-one' ); ?> Multilanguage</a>
+																<a href="http://bestwebsoft.com/products/multilanguage/?k=4f26802e271bc07146a382140164abc1&pn=102&v=<?php echo $gglplsn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'google-one' ); ?> Multilanguage</a>
 															</span>
 														<?php } ?>
 													</label>
@@ -838,7 +838,7 @@ if ( ! function_exists( 'gglplsn_js' ) ) {
 			}
 			if ( empty( $gglplsn_locale ) )
 				$gglplsn_locale = $gglplsn_options['lang']; ?>
-			<script>
+			<script type="text/javascript">
 				window.___gcfg = {
 					lang: '<?php echo $gglplsn_locale; ?>',
 				};

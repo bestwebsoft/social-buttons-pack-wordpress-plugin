@@ -4,7 +4,7 @@ Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: http://bestwebsoft.com/products/social-buttons-pack/
 Description: Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
 Author: BestWebSoft
-Version: 1.0.8
+Version: 1.0.9
 Author URI: http://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -109,7 +109,7 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
             $gglplsn_options = $gglplsn_option_defaults;
             update_option( 'gglplsn_options', $gglplsn_options );
             $fcbkbttn_options = $fcbkbttn_options_default;
-            update_option( 'fcbk_bttn_plgn_options', $fcbkbttn_options );
+            update_option( 'fcbkbttn_options', $fcbkbttn_options );
             $twttr_options = $twttr_options_default;
             update_option( 'twttr_options', $twttr_options );
             $pntrst_options = $pntrst_options_defaults;
@@ -170,6 +170,17 @@ if ( ! function_exists ( 'sclbttns_admin_enqueue_scripts' ) ) {
 if ( ! function_exists( 'sclbttns_wp_enqueue_scripts' ) ) {
     function sclbttns_wp_enqueue_scripts() {
         wp_enqueue_style( 'sclbttns_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+    }
+}
+
+
+if ( ! function_exists ( 'sclbttns_theme_body_classes' ) ) {
+    function sclbttns_theme_body_classes( $classes ) {
+        if ( function_exists( 'wp_get_theme' ) ) {
+            $current_theme = wp_get_theme();
+            $classes[] = basename( $current_theme->get( 'ThemeURI' ) );
+        }
+        return $classes;
     }
 }
 
@@ -236,62 +247,57 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
         $all_plugins = get_plugins();
 
         /* TWITTER */
-        if ( ! array_key_exists( 'twitter-plugin/twitter-plugin.php', $all_plugins ) ) {
-            if ( ! array_key_exists( 'twitter-pro/twitter-pro.php', $all_plugins ) ) {
-                /* delete custom images if no PRO version */
-                $upload_dir = wp_upload_dir();
-                $twttr_cstm_mg_folder = $upload_dir['basedir'] . '/twitter-logo/';
-                if ( is_dir( $twttr_cstm_mg_folder ) ) {
-                    $twttr_cstm_mg_files = scandir( $twttr_cstm_mg_folder );
-                    foreach ( $twttr_cstm_mg_files as $value ) {
-                        @unlink ( $twttr_cstm_mg_folder . $value );
-                    }
-                    @rmdir( $twttr_cstm_mg_folder );
+        if ( ! array_key_exists( 'twitter-plugin/twitter-plugin.php', $all_plugins ) && ! array_key_exists( 'twitter-pro/twitter-pro.php', $all_plugins ) ) {
+            /* delete custom images if no PRO version */
+            $upload_dir = wp_upload_dir();
+            $twttr_cstm_mg_folder = $upload_dir['basedir'] . '/twitter-logo/';
+            if ( is_dir( $twttr_cstm_mg_folder ) ) {
+                $twttr_cstm_mg_files = scandir( $twttr_cstm_mg_folder );
+                foreach ( $twttr_cstm_mg_files as $value ) {
+                    @unlink ( $twttr_cstm_mg_folder . $value );
                 }
+                @rmdir( $twttr_cstm_mg_folder );
             } 
-            $delete_twitter = true;                         
+
+            $delete_twitter = true;                                    
         }
 
         /* google-plus-one */
-        if ( ! array_key_exists( 'google-one/google-plus-one.php', $all_plugins ) )
+        if ( ! array_key_exists( 'google-one/google-plus-one.php', $all_plugins ) && ! array_key_exists( 'google-one-pro/google-plus-one-pro.php', $all_plugins ) )
             $delete_google_one = true;
 
         /* FB */
-        if ( ! array_key_exists( 'facebook-button-plugin/facebook-button-plugin.php', $all_plugins ) ) {
-            if ( ! array_key_exists( 'facebook-button-pro/facebook-button-pro.php', $all_plugins ) ) {
-                /* delete custom images if no PRO version */
-                $upload_dir = wp_upload_dir();
-                $fcbkbttn_cstm_mg_folder = $upload_dir['basedir'] . '/facebook-image/';
-                if ( is_dir( $fcbkbttn_cstm_mg_folder ) ) {
-                    $fcbkbttn_cstm_mg_files = scandir( $fcbkbttn_cstm_mg_folder );
-                    foreach ( $fcbkbttn_cstm_mg_files as $value ) {
-                        @unlink ( $fcbkbttn_cstm_mg_folder . $value );
-                    }
-                    @rmdir( $fcbkbttn_cstm_mg_folder );
+        if ( ! array_key_exists( 'facebook-button-plugin/facebook-button-plugin.php', $all_plugins ) && ! array_key_exists( 'facebook-button-pro/facebook-button-pro.php', $all_plugins ) ) {
+            /* delete custom images if no PRO version */
+            $upload_dir = wp_upload_dir();
+            $fcbkbttn_cstm_mg_folder = $upload_dir['basedir'] . '/facebook-image/';
+            if ( is_dir( $fcbkbttn_cstm_mg_folder ) ) {
+                $fcbkbttn_cstm_mg_files = scandir( $fcbkbttn_cstm_mg_folder );
+                foreach ( $fcbkbttn_cstm_mg_files as $value ) {
+                    @unlink ( $fcbkbttn_cstm_mg_folder . $value );
                 }
+                @rmdir( $fcbkbttn_cstm_mg_folder );
             }
             $delete_facebook = true;
         }
 
         /* pinterest */
-        if ( ! array_key_exists( 'bws-pinterest-plugin/bws-pinterest-plugin.php', $all_plugins ) ) {
-            if ( ! array_key_exists( 'bws-pinterest-pro/bws-pinterest-pro.php', $all_plugins ) ) {
-                /* delete custom images if no PRO version */
-                $upload_dir = wp_upload_dir();
-                $custom_img_folder = $upload_dir['basedir'] . '/pinterest-image/';
-                if ( is_dir( $custom_img_folder ) ) {
-                    $pntrstpr_custom_img_files = scandir( $custom_img_folder );
-                    foreach ( $pntrstpr_custom_img_files as $value ) {
-                        @unlink( $custom_img_folder . $value );
-                    }
-                    @rmdir( $custom_img_folder );
+        if ( ! array_key_exists( 'bws-pinterest-plugin/bws-pinterest-plugin.php', $all_plugins ) && ! array_key_exists( 'bws-pinterest-pro/bws-pinterest-pro.php', $all_plugins ) ) {
+            /* delete custom images if no PRO version */
+            $upload_dir = wp_upload_dir();
+            $custom_img_folder = $upload_dir['basedir'] . '/pinterest-image/';
+            if ( is_dir( $custom_img_folder ) ) {
+                $pntrstpr_custom_img_files = scandir( $custom_img_folder );
+                foreach ( $pntrstpr_custom_img_files as $value ) {
+                    @unlink( $custom_img_folder . $value );
                 }
+                @rmdir( $custom_img_folder );
             }
-            $delete_pinterest = true;
+            $delete_pinterest = true;          
         }
 
         /* linkedin */
-        if ( ! array_key_exists( 'bws-linkedin/bws-linkedin.php', $all_plugins ) )
+        if ( ! array_key_exists( 'bws-linkedin/bws-linkedin.php', $all_plugins ) && ! array_key_exists( 'bws-linkedin-pro/bws-linkedin-pro.php', $all_plugins ) )
             $delete_linkedin = true;
 
         if ( isset( $delete_twitter ) || isset( $delete_google_one ) || isset( $delete_facebook ) || isset( $delete_linkedin ) || isset( $delete_pinterest ) ) {
@@ -306,7 +312,7 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                     if ( isset( $delete_google_one ) )
                         delete_option( 'gglplsn_options' );
                     if ( isset( $delete_facebook ) )
-                        delete_option( 'fcbk_bttn_plgn_options' );
+                        delete_option( 'fcbkbttn_options' );
                     if ( isset( $delete_linkedin ) )
                         delete_option( 'lnkdn_options' );
                     if ( isset( $delete_pinterest ) )
@@ -319,7 +325,7 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                 if ( isset( $delete_google_one ) )
                     delete_option( 'gglplsn_options' );
                 if ( isset( $delete_facebook ) )
-                    delete_option( 'fcbk_bttn_plgn_options' );
+                    delete_option( 'fcbkbttn_options' );
                 if ( isset( $delete_linkedin ) )
                     delete_option( 'lnkdn_options' );
                 if ( isset( $delete_pinterest ) )
@@ -346,5 +352,7 @@ add_filter( 'plugin_action_links', 'sclbttns_action_links', 10, 2 );
 add_filter( 'plugin_row_meta', 'sclbttns_links', 10, 2 );
 /* Adding banner */
 add_action( 'admin_notices', 'sclbttns_plugin_banner' );
+/* add theme name as class to body tag */
+add_filter( 'body_class', 'sclbttns_theme_body_classes' );
 
 register_uninstall_hook( __FILE__, 'sclbttns_uninstall' );

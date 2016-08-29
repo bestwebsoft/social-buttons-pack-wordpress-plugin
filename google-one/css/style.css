@@ -208,14 +208,12 @@
 	}
 }
 @media screen and ( max-width: 1077px ) {
-
 	.gglplsn-form {
 		width: auto !important;
 		display: inherit;
 	}
 }
 @media screen and ( max-width: 783px ) {
-
 	.gglplsn-premium-option-tr th {
 		padding-right: 30px;
 		height: 34px;
@@ -237,5 +235,15 @@
 	}
 	.gglplsn-view-invited-noscript > p:last-child {
 		margin-bottom: 0 !important;
+	}
+	.gglplsn_how_to_use,
+	.rtl .gglplsn_how_to_use {
+		float: none;
+	}
+	.gglplsn_how_to_use {
+		text-align: left;
+	}
+	.rtl .gglplsn_how_to_use {
+		float: right;
 	}
 }

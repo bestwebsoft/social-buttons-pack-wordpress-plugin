@@ -354,9 +354,10 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 					$follow = ( 1 == $lnkdn_options['follow'] ) ? lnkdn_return_button( 'follow' ) : '';
 					$button = '<div class="lnkdn_buttons">' . $share . $follow . '</div>';
 				}
-			}
+			}			
 
 			if ( ! empty( $button ) ) {
+				
 				$button = apply_filters( 'lnkdn_button_in_the_content', $button );
 
 				if ( 'before_post' == $lnkdn_options['position'] ) {
