@@ -1,0 +1,693 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: social-buttons-pack\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-11 17:24+0300\n"
+"PO-Revision-Date: 2016-11-11 17:24+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: social-buttons-pack.php:41 social-buttons-pack.php:143
+msgid "Social Buttons Settings"
+msgstr "Налаштування Social Buttons"
+
+#: social-buttons-pack.php:131
+msgid "All plugin settings were restored."
+msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#: social-buttons-pack.php:150
+msgid "Extra settings"
+msgstr "Додаткові налаштування"
+
+#: social-buttons-pack.php:151
+msgid "Custom code"
+msgstr "Користувацький код"
+
+#: social-buttons-pack.php:152
+msgid "Go PRO"
+msgstr "Перейти на Pro версію"
+
+#: social-buttons-pack.php:184
+msgid ""
+"Please choose the necessary post types (or single pages) where Social "
+"Buttons will be displayed"
+msgstr ""
+"Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
+"відображатися соціальні кнопки"
+
+#: social-buttons-pack.php:191
+msgid "Show URL"
+msgstr "Відображати URL"
+
+#: social-buttons-pack.php:197
+msgid "Example of the site's pages tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: social-buttons-pack.php:197
+msgid "Example of site pages' tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: social-buttons-pack.php:202
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
+
+#: social-buttons-pack.php:209
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
+
+#: social-buttons-pack.php:211
+msgid "Learn More"
+msgstr "Докладніше"
+
+#: social-buttons-pack.php:259 social-buttons-pack.php:272
+msgid "Settings"
+msgstr "Налаштування"
+
+#: social-buttons-pack.php:273
+msgid "FAQ"
+msgstr "FAQ"
+
+#: social-buttons-pack.php:274
+msgid "Support"
+msgstr "Підтримка"
+
+#~ msgid "Please, enable JavaScript in Your browser."
+#~ msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
+
+#~ msgid "Settings saved."
+#~ msgstr "Налаштування збережено."
+
+#~ msgid "Saving"
+#~ msgstr "Збереження"
+
+#~ msgid "Changes you made are not saved. Please wait few minutes."
+#~ msgstr "Внесені зміни не збережені. Будь ласка, зачекайте кілька хвилин."
+
+#~ msgid "no title"
+#~ msgstr "без назви"
+
+#~ msgid "Email is invalid"
+#~ msgstr "Невірний Email"
+
+#~ msgid "Please, select the invitation type"
+#~ msgstr "Будь ласка, оберіть тип запрошення"
+
+#~ msgid "Invitation field can't be empty"
+#~ msgstr "Поле для запрошення не може бути порожнім"
+
+#~ msgid "Only one phone number can be added"
+#~ msgstr "Тільки один номер телефону може бути доданий"
+
+#~ msgid ""
+#~ "You can't add the invitation because the phone number is already added"
+#~ msgstr ""
+#~ "Неможливо додати запрошення, тому що запрошення за номером телефону вже "
+#~ "додано"
+
+#~ msgid ""
+#~ "You can't add the phone number because another invitation type is already "
+#~ "added"
+#~ msgstr ""
+#~ "Неможливо додати запрошення за номером телефону, тому що запрошення "
+#~ "іншого типу вже додано"
+
+#~ msgid "Is already added"
+#~ msgstr "Вже додано"
+
+#~ msgid "Network"
+#~ msgstr "Мережа"
+
+#~ msgid "How to Use Step-by-step Instruction"
+#~ msgstr "Покрокова інструкція з використання плагіна"
+
+#~ msgid "Notice:"
+#~ msgstr "Зауважте:"
+
+#~ msgid "This option will replace all current settings on separate sites."
+#~ msgstr "Ця опція замінить всі поточні налаштування на окремих сайтах."
+
+#~ msgid ""
+#~ "It is prohibited to change Google +1 Pro settings on this site in the "
+#~ "Google +1 Pro network settings."
+#~ msgstr ""
+#~ "Заборонено змінювати налаштування Google +1 Pro на цьому сайті в "
+#~ "налаштуваннях мережі Google +1 Pro."
+
+#~ msgid ""
+#~ "It is prohibited to view Google +1 Pro settings on this site in the "
+#~ "Google +1 Pro network settings."
+#~ msgstr ""
+#~ "Заборонено переглядати налаштування Google +1 Pro на цьому сайті в "
+#~ "налаштуваннях мережі Google +1 Pro."
+
+#~ msgid ""
+#~ "For the correct work of the button do not use it locally or on a free "
+#~ "hosting"
+#~ msgstr ""
+#~ "Для коректної роботи кнопки, не використовуйте її на локальному сервері "
+#~ "або безкоштовних хостингах."
+
+#~ msgid ""
+#~ "If you'd like to add Google Buttons to your page or post, please use %s "
+#~ "button"
+#~ msgstr ""
+#~ "Якщо ви хочете додати кнопки Google на вашу сторінку або пост, будь "
+#~ "ласка, використовуйте кнопку %s"
+
+#~ msgid ""
+#~ "You can add Google Buttons to your page or post by clicking on %s button "
+#~ "in the content edit block using the Visual mode. If the button isn't "
+#~ "displayed, please use the shortcode %s to show the Google +1 Button, or "
+#~ "use parameter 'display', e.g. %s to display these buttons"
+#~ msgstr ""
+#~ "Ви можете додати кнопки Google на вашу сторінку або пост, натиснувши на "
+#~ "кнопку %s в блоці редагування контенту в режимі \"Візуально\". Якщо "
+#~ "кнопка не відображається, будь ласка, використовуйте шорткод %s для "
+#~ "кнопки \"Плюс Один\", або використайте параметр \"display\", напр. %s,"
+#~ "<br /> де<br /><code>plusone</code> - \"Плюс Один\",<br /> <code>share</"
+#~ "code> - \"Поділитись\",<br /> <code>follow</code> - \"Підписатися\",<br /"
+#~ "> <code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\""
+
+#~ msgid "Apply network settings"
+#~ msgstr "Застосувати налаштування мережі"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Застосувати до всіх сайтів і використовувати за замовчуванням"
+
+#~ msgid "All current settings on separate sites will be replaced"
+#~ msgstr "Всі поточні налаштування на окремих сайтах буде замінено"
+
+#~ msgid "Allow to change the settings on separate websites"
+#~ msgstr "Дозволити зміну налаштувань на окремих сайтах"
+
+#~ msgid "Allow to view the settings on separate websites"
+#~ msgstr "Дозволити перегляд налаштувань на окремих сайтах"
+
+#~ msgid "By default"
+#~ msgstr "За замовчуванням"
+
+#~ msgid "Settings will be applied to newly added websites by default"
+#~ msgstr ""
+#~ "Налаштування застосовуватимуться до всіх новододаних сайтів автоматично"
+
+#~ msgid "Do not apply"
+#~ msgstr "Не застосовувати"
+
+#~ msgid "Change the settings on separate sites of the multisite only"
+#~ msgstr "Змінити налаштування лише для окремих сайтів мультисайту"
+
+#~ msgid "Display Google Buttons"
+#~ msgstr "Відображати кнопки Google"
+
+#~ msgid "Google +1"
+#~ msgstr "\"Плюс один\""
+
+#~ msgid "Share"
+#~ msgstr "\"Поділитись\""
+
+#~ msgid "Follow"
+#~ msgstr "\"Підписатися\""
+
+#~ msgid "To see this button, please"
+#~ msgstr "Щоб побачити кнопку, будь ласка"
+
+#~ msgid "enter"
+#~ msgstr "вкажіть"
+
+#~ msgid "the Google+ ID"
+#~ msgstr "Google+ ID"
+
+#~ msgid "Hangout"
+#~ msgstr "\"Чат\""
+
+#~ msgid "Badge"
+#~ msgstr "\"Значок\""
+
+#~ msgid "Language"
+#~ msgstr "Мова"
+
+#~ msgid "Select the language to display information on the button"
+#~ msgstr "Оберіть мову відображення інформації на кнопці"
+
+#~ msgid "Use the current site language"
+#~ msgstr "Використовувати поточну мову сайту"
+
+#~ msgid "Using"
+#~ msgstr "Використовуючи"
+
+#~ msgid "Activate"
+#~ msgstr "Активувати"
+
+#~ msgid "Download"
+#~ msgstr "Завантажити"
+
+#~ msgid "Buttons Position"
+#~ msgstr "Розташування кнопок"
+
+#~ msgid "Before"
+#~ msgstr "Перед постом"
+
+#~ msgid "After"
+#~ msgstr "Після посту"
+
+#~ msgid "Before And After"
+#~ msgstr "Перед та після посту"
+
+#~ msgid "Only Shortcode"
+#~ msgstr "Тільки Шорткод"
+
+#~ msgid "Please select location for the buttons on the page"
+#~ msgstr "Будь ласка, оберіть розташування кнопок на сторінці"
+
+#~ msgid "Show buttons on homepage"
+#~ msgstr "Відображати на домашній сторінці"
+
+#~ msgid "Settings for Google +1 Button"
+#~ msgstr "Налаштування для кнопки Google +1"
+
+#~ msgid "\"+1\" for an entire site on every page"
+#~ msgstr "\"+1\" для всього сайту на кожній сторінці"
+
+#~ msgid ""
+#~ "This option does not create an extra button. This option merely allows "
+#~ "your users to +1 the entire website when this option is enabled, or a "
+#~ "single post when this option is disabled, when clicking the regular "
+#~ "\"+1\" button."
+#~ msgstr ""
+#~ "Ця опція не створює додаткову кнопку. Ця опція дозволяє при кліку "
+#~ "користувачами на стандартну кнопку плагіна ставити \"+1\" усьому сайту , "
+#~ "якщо ця опція увімкнена, або ставити \"+1\" окремим постам, якщо опція "
+#~ "вимкнена."
+
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgctxt "for:size"
+#~ msgid "Standard"
+#~ msgstr "Стандартна"
+
+#~ msgid "Small"
+#~ msgstr "Маленька"
+
+#~ msgid "Medium"
+#~ msgstr "Середня"
+
+#~ msgid "Tall"
+#~ msgstr "Велика"
+
+#~ msgid "Annotation"
+#~ msgstr "Примітка"
+
+#~ msgid "Inline"
+#~ msgstr "Вбудована"
+
+#~ msgid "Bubble"
+#~ msgstr "Спливаюча"
+
+#~ msgid "None"
+#~ msgstr "Немає"
+
+#~ msgid "Display counters showing how many times your article has been liked"
+#~ msgstr "Відображати лічильник лайків вашої статті"
+
+#~ msgid "Annotation Type"
+#~ msgstr "Варіант примітки"
+
+#~ msgctxt "for:annotation type"
+#~ msgid "Standard"
+#~ msgstr "Стандартна"
+
+#~ msgid "Short"
+#~ msgstr "Коротка"
+
+#~ msgid "Settings for Share Button"
+#~ msgstr "Налаштування для кнопки \"Поділитись\""
+
+#~ msgid "Vertical-bubble"
+#~ msgstr "Вертикальна спливаюча"
+
+#~ msgid "Display the number of users who have shared the page"
+#~ msgstr "Відображати кількість людей, що поділилися сторінкою"
+
+#~ msgid "Large"
+#~ msgstr "Велика"
+
+#~ msgid "Settings for Follow Button"
+#~ msgstr "Налаштування для кнопки \"Підписатися\""
+
+#~ msgid "Google+ ID"
+#~ msgstr "Google+ ID"
+
+#~ msgid "Enter the Google+ ID, e.g."
+#~ msgstr "Вкажіть Google+ ID, напр."
+
+#~ msgid "or"
+#~ msgstr "або"
+
+#~ msgid "Relationship"
+#~ msgstr "Відношення"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Publisher"
+#~ msgstr "Видавець"
+
+#~ msgid ""
+#~ "Describes your relationship to content of the page, where the button is "
+#~ "embedded"
+#~ msgstr ""
+#~ "Вказує на ваше відношення до змісту сторінки, на якій розміщено кнопку"
+
+#~ msgid "Display the number of users who are following this page or person"
+#~ msgstr ""
+#~ "Відображати кількість людей, що підписалися  на сторінку або профіль"
+
+#~ msgid "Settings for Hangout Button"
+#~ msgstr "Налаштування для кнопки \"Чат\""
+
+#~ msgid "Topic"
+#~ msgstr "Тема Чату"
+
+#~ msgid "Use the title of the page"
+#~ msgstr "Використовувати заголовок сторінки "
+
+#~ msgid "Narrow"
+#~ msgstr "Вузька"
+
+#~ msgid "Wide"
+#~ msgstr "Широка"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Normal"
+#~ msgstr "Звичайний"
+
+#~ msgid "Onair"
+#~ msgstr "В ефірі"
+
+#~ msgid "Party"
+#~ msgstr "Груповий"
+
+#~ msgid "Moderated"
+#~ msgstr "З налаштуваннями"
+
+#~ msgid "Invitation Type"
+#~ msgstr "Варіант Запрошення"
+
+#~ msgid "Select The Type"
+#~ msgstr "Вкажіть тип"
+
+#~ msgid "Google+ Profile ID"
+#~ msgstr "Google+ ID Профілю"
+
+#~ msgid "Google+ Circle ID"
+#~ msgstr "Google+ ID Кола"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Phone Number"
+#~ msgstr "Номер Телефону"
+
+#~ msgid "Google+ ID, Phone Number or Email"
+#~ msgstr "Google+ ID, Номер Телефону або Email"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Видалити позначене"
+
+#~ msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
+#~ msgstr ""
+#~ "Якщо обрано тип запрошення 'Google+  ID Профілю', то вказанний ID має "
+#~ "мати вигляд"
+
+#~ msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
+#~ msgstr ""
+#~ "Якщо обрано тип запрошення 'Google+ ID Кола', то вказана адреса має мати "
+#~ "вигляд"
+
+#~ msgid "If Invitation Type is 'Email', it should look like"
+#~ msgstr ""
+#~ "Якщо обрано тип запрошення 'Email', то вказана адреса має мати вигляд"
+
+#~ msgid "If Invitation Type is 'Phone Number', it should look like"
+#~ msgstr ""
+#~ "Якщо обрано тип запрошення 'Номер Телефону', то вказана номер має мати "
+#~ "вигляд"
+
+#~ msgid "Settings for Badge"
+#~ msgstr "Налаштування для Значка"
+
+#~ msgid "Person"
+#~ msgstr "Профіль"
+
+#~ msgid "Page"
+#~ msgstr "Сторінка"
+
+#~ msgid "Community"
+#~ msgstr "Спільнота"
+
+#~ msgid "Display the user's tag line"
+#~ msgstr "Відображати слоган користувача"
+
+#~ msgid "Google+ Page ID"
+#~ msgstr "Google+ ID Сторінки"
+
+#~ msgid "Enter the Google+ Page ID, e.g."
+#~ msgstr "Вкажіть Google+ ID Сторінки, напр."
+
+#~ msgid "Display the company tag line"
+#~ msgstr "Відображати слоган компанії"
+
+#~ msgid "Google+ Community ID"
+#~ msgstr "Google+ ID Спільноти"
+
+#~ msgid "Enter the Google+ Community ID, e.g."
+#~ msgstr "Вкажіть Google+ ID Спільноти, напр."
+
+#~ msgid "Display the community tag line"
+#~ msgstr "Відображати слоган спільноти"
+
+#~ msgid "Layout"
+#~ msgstr "Орієнтація"
+
+#~ msgid "Portrait"
+#~ msgstr "Вертикальна"
+
+#~ msgid "Landscape"
+#~ msgstr "Горизонтальна"
+
+#~ msgid "Sets the orientation of the badge"
+#~ msgstr "Оберіть орєнтацію Значка"
+
+#~ msgid "Show Cover Photo"
+#~ msgstr "Відображати Фото Обкладинки"
+
+#~ msgid "Show Tag Line"
+#~ msgstr "Відображати слоган"
+
+#~ msgid "Show Owners"
+#~ msgstr "Відображати засновників"
+
+#~ msgid "Display a list of community owners"
+#~ msgstr "Відображати список засновників спільноти"
+
+#~ msgid "Theme"
+#~ msgstr "Тема"
+
+#~ msgid "Light"
+#~ msgstr "Світла"
+
+#~ msgid "Dark"
+#~ msgstr "Темна"
+
+#~ msgid "Width"
+#~ msgstr "Ширина"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Save Changes"
+#~ msgstr "Зберегти зміни"
+
+#~ msgid "Preview"
+#~ msgstr "Прев’ю"
+
+#~ msgid "This field can't be empty"
+#~ msgstr "Це поле не може бути порожнім"
+
+#~ msgid "Please, enter the valid Email"
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#~ msgid "Email of Invited Person"
+#~ msgstr "Email для запрошення"
+
+#~ msgid "Please, enter the Email of invited person, e.g."
+#~ msgstr "Будь ласка, вкажіть Email для запрошення, напр."
+
+#~ msgid "Phone Number of Invited Person"
+#~ msgstr "Номер Телефону для запрошення"
+
+#~ msgid "Please, enter the phone number of invited person, e.g."
+#~ msgstr "Будь ласка, вкажіть номер телефону для запрошення, напр."
+
+#~ msgid "Google+ Profile ID of Invited Person"
+#~ msgstr "Google+ ID Профілю для запрошення"
+
+#~ msgid "Please, enter the Google+ Profile ID of invited person, e.g."
+#~ msgstr "Будь ласка, вкажіть Google+ ID Профілю для запрошення, напр."
+
+#~ msgid "Google+ Circle ID for Invitation"
+#~ msgstr "Google+ ID Кола для запрошення"
+
+#~ msgid "Please, enter the Google+ Circle ID for invitation, e.g."
+#~ msgstr "Будь ласка, вкажіть Google+ ID Кола для запрошення, напр."
+
+#~ msgid "Add Google Buttons to your page or post"
+#~ msgstr "Додати кнопки Google на вашу сторінку або пост"
+
+#~ msgid "Google+ Badge Widget"
+#~ msgstr "Віджет Значка Google+"
+
+#~ msgid "Show Google Badge on your site"
+#~ msgstr "Відображати Google Значок на вашому сайті"
+
+#~ msgid "Email is incorrect"
+#~ msgstr "Невірний Email"
+
+#~ msgid "Field for invite can't be empty"
+#~ msgstr "Поле для запрошення не може бути порожнім"
+
+#~ msgid "Invite Type"
+#~ msgstr "Тип запрошення"
+
+#~ msgid "Show buttons"
+#~ msgstr "Відображати кнопки"
+
+#~ msgid "Show in posts"
+#~ msgstr "Відображати в постах"
+
+#~ msgid "Show in pages"
+#~ msgstr "Відображати на сторінках"
+
+#~ msgid "Please select the page on which you want to see the buttons"
+#~ msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопки"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "немає"
+
+#, fuzzy
+#~ msgid "Active Theme"
+#~ msgstr "Активувати"
+
+#, fuzzy
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "Themes"
+#~ msgstr "Тема"
+
+#, fuzzy
+#~ msgid "Preview %s"
+#~ msgstr "Прев’ю"
+
+#, fuzzy
+#~ msgid "Already Installed"
+#~ msgstr "Вже додано"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Підтримка"
+
+#, fuzzy
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "the setting page"
+#~ msgstr "Відображати на сторінках"
+
+#, fuzzy
+#~ msgid "Show Pro features"
+#~ msgstr "Відображати на сторінках"
+
+#, fuzzy
+#~ msgid "Please, enter your license key"
+#~ msgstr "Будь ласка введіть коректний Email"
+
+#, fuzzy
+#~ msgid "Configure Settings"
+#~ msgstr "Налаштування"
+
+#, fuzzy
+#~ msgid "Notice"
+#~ msgstr "Зауважте:"
+
+#, fuzzy
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#, fuzzy
+#~ msgid "Add shortcode"
+#~ msgstr "Тільки Шорткод"
+
+#, fuzzy
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#, fuzzy
+#~ msgid "Restore settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Shortcode settings"
+#~ msgstr "Додаткові налаштування"
+
+#, fuzzy
+#~ msgid "Documentation"
+#~ msgstr "Примітка"
+
+#~ msgid "Enable or Disable Google+1 JavaScript"
+#~ msgstr "Увімкнути або вимкнути Google+1 JavaScript"
+
+#~ msgid "Please choose one of four different sizes of buttons"
+#~ msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Налаштування плагіну змінились. Щось зберегти їх, будь ласка, клікніть "
+#~ "\"Зберегти зміни\"."
+
+#~ msgid ""
+#~ "If you want to insert the button in any place on the site, please use the "
+#~ "following code:"
+#~ msgstr ""
+#~ "Для розміщення кнопки у будь-якому місці на сайті, будь ласка, вставте "
+#~ "цей код:"
+
+#~ msgid "Show +1 count in the button"
+#~ msgstr "Показувати лічильник +1 у кнопці"
+
+#~ msgid "Button Size"
+#~ msgstr "Розмір кнопки"

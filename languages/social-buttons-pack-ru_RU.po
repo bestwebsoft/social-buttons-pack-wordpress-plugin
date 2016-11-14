@@ -1,0 +1,908 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: social-buttons-pack\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-11 17:24+0300\n"
+"PO-Revision-Date: 2016-11-11 17:24+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: social-buttons-pack.php:41 social-buttons-pack.php:143
+msgid "Social Buttons Settings"
+msgstr "Настройки Social Buttons"
+
+#: social-buttons-pack.php:131
+msgid "All plugin settings were restored."
+msgstr "Все настройки плагина восстановлены."
+
+#: social-buttons-pack.php:150
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+#: social-buttons-pack.php:151
+msgid "Custom code"
+msgstr "Пользовательский код"
+
+#: social-buttons-pack.php:152
+msgid "Go PRO"
+msgstr "Перейти на PRO версию"
+
+#: social-buttons-pack.php:184
+msgid ""
+"Please choose the necessary post types (or single pages) where Social "
+"Buttons will be displayed"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+"будут отображаться социальные кнопки"
+
+#: social-buttons-pack.php:191
+msgid "Show URL"
+msgstr "Показать URL"
+
+#: social-buttons-pack.php:197
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: social-buttons-pack.php:197
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#: social-buttons-pack.php:202
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#: social-buttons-pack.php:209
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#: social-buttons-pack.php:211
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: social-buttons-pack.php:259 social-buttons-pack.php:272
+msgid "Settings"
+msgstr "Настройки"
+
+#: social-buttons-pack.php:273
+msgid "FAQ"
+msgstr "FAQ"
+
+#: social-buttons-pack.php:274
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "Please, enable JavaScript in Your browser."
+#~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#~ msgid "Settings saved."
+#~ msgstr "Настройки сохранены."
+
+#~ msgid "Saving"
+#~ msgstr "Сохранение"
+
+#~ msgid "Changes you made are not saved. Please wait few minutes."
+#~ msgstr ""
+#~ "Внесенные изменения не сохранены. Пожалуйста, подождите несколько минут."
+
+#~ msgid "no title"
+#~ msgstr "без названия"
+
+#~ msgid "Email is invalid"
+#~ msgstr "Неверный Email"
+
+# Please, select the invite type >> Please, select the invitation type
+#~ msgid "Please, select the invitation type"
+#~ msgstr "Пожалуйста, укажите вариант приглашения"
+
+#~ msgid "Invitation field can't be empty"
+#~ msgstr "Поле для приглашения не может быть пустым"
+
+#~ msgid "Only one phone number can be added"
+#~ msgstr "Только один номер телефона может быть добавлен"
+
+# You can't add invite because the phone number is already added >> You can't add the invitation because the phone number is already added
+#~ msgid ""
+#~ "You can't add the invitation because the phone number is already added"
+#~ msgstr ""
+#~ "Невозможно добавить приглашение, потому что приглашение по номеру "
+#~ "телефона уже добавлено"
+
+# You can't add the phone number because another type is already added >> You can't add the phone number because another invitation type is already added
+#~ msgid ""
+#~ "You can't add the phone number because another invitation type is already "
+#~ "added"
+#~ msgstr ""
+#~ "Невозможно добавить приглашение по номеру телефона, потому что "
+#~ "приглашение другого типа уже добавлено"
+
+#~ msgid "Is already added"
+#~ msgstr "Уже добавлен"
+
+#~ msgid "Network"
+#~ msgstr "Сетевые"
+
+#~ msgid "How to Use Step-by-step Instruction"
+#~ msgstr "Пошаговая инструкция по использованию плагина"
+
+#~ msgid "Notice:"
+#~ msgstr "Внимание:"
+
+#~ msgid "This option will replace all current settings on separate sites."
+#~ msgstr "Эта настройка заменит все текущие настройки отдельных сайтов."
+
+#~ msgid ""
+#~ "It is prohibited to change Google +1 Pro settings on this site in the "
+#~ "Google +1 Pro network settings."
+#~ msgstr ""
+#~ "Запрещается изменять настройки Google +1 Pro на этом сайте в сетевых "
+#~ "настройках Google +1 Pro."
+
+#~ msgid ""
+#~ "It is prohibited to view Google +1 Pro settings on this site in the "
+#~ "Google +1 Pro network settings."
+#~ msgstr ""
+#~ "Запрещается просматривать настройки Google +1 Pro на этом сайте в сетевых "
+#~ "настройках Google +1 Pro."
+
+#~ msgid ""
+#~ "For the correct work of the button do not use it locally or on a free "
+#~ "hosting"
+#~ msgstr ""
+#~ "Для правильной работы кнопки не используйте её на локальном сервере или "
+#~ "бесплатных хостингах"
+
+# If you would like to add Google Buttons to your page or post, please use %s button >> If you'd like to add Google Buttons to your page or post, please use %s button
+#~ msgid ""
+#~ "If you'd like to add Google Buttons to your page or post, please use %s "
+#~ "button"
+#~ msgstr ""
+#~ "Если вы хотите добавить Google +1 кнопку на вашу страницу или пост, то "
+#~ "используйте кнопку %s"
+
+#~ msgid ""
+#~ "You can add Google Buttons to your page or post by clicking on %s button "
+#~ "in the content edit block using the Visual mode. If the button isn't "
+#~ "displayed, please use the shortcode %s to show the Google +1 Button, or "
+#~ "use parameter 'display', e.g. %s to display these buttons"
+#~ msgstr ""
+#~ "Вы можете добавить кнопки Google на вашу страницу или пост, нажав на "
+#~ "кнопку %s в блоке редактирования контента в режиме \"Визуально\". Если "
+#~ "кнопка не отображается, пожалуйста, используйте шорткод  %s для кнопки "
+#~ "\"Плюс Один\" или используйте параметр \"display\", напр. %s,<br /> "
+#~ "где<br /><code>plusone</code> - \"Плюс Один\",<br /> <code>share</code> - "
+#~ "\"Поделиться\",<br /> <code>follow</code> - \"Подписаться\",<br /> "
+#~ "<code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\" "
+
+#~ msgid "Apply network settings"
+#~ msgstr "Применить сетевые настройки"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Применить для всех сайтов и использовать по умолчанию"
+
+#~ msgid "All current settings on separate sites will be replaced"
+#~ msgstr "Все текущие настройки в отдельных сайтах будут заменены"
+
+#~ msgid "Allow to change the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах"
+
+#~ msgid "Allow to view the settings on separate websites"
+#~ msgstr "Разрешить просмотр настроек на отдельных сайтах"
+
+#~ msgid "By default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Settings will be applied to newly added websites by default"
+#~ msgstr ""
+#~ "Настройки будут использоваться по умолчанию для вновь добавленных сайтов"
+
+#~ msgid "Do not apply"
+#~ msgstr "Не применять"
+
+#~ msgid "Change the settings on separate sites of the multisite only"
+#~ msgstr "Изменять настройки только на отдельных сайтах"
+
+#~ msgid "Display Google Buttons"
+#~ msgstr "Отображать Кнопки Google"
+
+#~ msgid "Google +1"
+#~ msgstr "\"Плюс один\""
+
+#~ msgid "Share"
+#~ msgstr "\"Поделиться\""
+
+#~ msgid "Follow"
+#~ msgstr "\"Подписаться\""
+
+#~ msgid "To see this button, please"
+#~ msgstr "Чтобы увидеть кнопку, пожалуйста"
+
+#~ msgid "enter"
+#~ msgstr "укажите"
+
+#~ msgid "the Google+ ID"
+#~ msgstr "Google+ ID"
+
+#~ msgid "Hangout"
+#~ msgstr "\"Чат\""
+
+#~ msgid "Badge"
+#~ msgstr "\"Значок\""
+
+#~ msgid "Language"
+#~ msgstr "Язык"
+
+#~ msgid "Select the language to display information on the button"
+#~ msgstr "Выберите язык отображения информации на кнопке"
+
+#~ msgid "Use the current site language"
+#~ msgstr "Использовать текущий язык сайта"
+
+#~ msgid "Using"
+#~ msgstr "Используя"
+
+#~ msgid "Activate"
+#~ msgstr "Активировать"
+
+#~ msgid "Download"
+#~ msgstr "Загрузить"
+
+#~ msgid "Buttons Position"
+#~ msgstr "Положение кнопок"
+
+#~ msgid "Before"
+#~ msgstr "Перед"
+
+#~ msgid "After"
+#~ msgstr "После"
+
+#~ msgid "Before And After"
+#~ msgstr "Перед и После"
+
+#~ msgid "Only Shortcode"
+#~ msgstr "Только Шорткод"
+
+#~ msgid "Please select location for the buttons on the page"
+#~ msgstr "Пожалуйста, выберите расположение кнопок на странице"
+
+#~ msgid "Show buttons on homepage"
+#~ msgstr "Отображать кнопки на домашней странице"
+
+#~ msgid "Settings for Google +1 Button"
+#~ msgstr "Натройки для кнопки Google +1"
+
+#~ msgid "\"+1\" for an entire site on every page"
+#~ msgstr "Ставить \"+1\" всему сайту на каждой странице"
+
+#~ msgid ""
+#~ "This option does not create an extra button. This option merely allows "
+#~ "your users to +1 the entire website when this option is enabled, or a "
+#~ "single post when this option is disabled, when clicking the regular "
+#~ "\"+1\" button."
+#~ msgstr ""
+#~ "Эта опция не создает дополнительную кнопку. Эта опция позволяет при клике "
+#~ "пользователями на стандартную кнопку ставить \"+1\" для всего сайта, если "
+#~ "эта опция включена, или \"+1\" для отдельной записи, когда эта опция "
+#~ "выключена."
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgctxt "for:size"
+#~ msgid "Standard"
+#~ msgstr "Стандартная"
+
+#~ msgid "Small"
+#~ msgstr "Маленькая"
+
+#~ msgid "Medium"
+#~ msgstr "Средняя"
+
+#~ msgid "Tall"
+#~ msgstr "Высокая"
+
+#~ msgid "Annotation"
+#~ msgstr "Примечание"
+
+#~ msgid "Inline"
+#~ msgstr "Встроенное"
+
+#~ msgid "Bubble"
+#~ msgstr "Всплывающее"
+
+#~ msgid "None"
+#~ msgstr "Нет"
+
+#~ msgid "Display counters showing how many times your article has been liked"
+#~ msgstr "Показывать счетчик количества нажатий +1"
+
+#~ msgid "Annotation Type"
+#~ msgstr "Вариант Примечания"
+
+#~ msgctxt "for:annotation type"
+#~ msgid "Standard"
+#~ msgstr "Стандартное"
+
+#~ msgid "Short"
+#~ msgstr "Короткое"
+
+#~ msgid "Settings for Share Button"
+#~ msgstr "Настройки для кнопки \"Поделиться\""
+
+#~ msgid "Vertical-bubble"
+#~ msgstr "Вертикальное всплывающее"
+
+#~ msgid "Display the number of users who have shared the page"
+#~ msgstr "Показывать количество человек поделившихся страницей"
+
+#~ msgid "Large"
+#~ msgstr "Большая"
+
+#~ msgid "Settings for Follow Button"
+#~ msgstr "Настройки для кнопки \"Подписаться\""
+
+#~ msgid "Google+ ID"
+#~ msgstr "Google+ ID"
+
+#~ msgid "Enter the Google+ ID, e.g."
+#~ msgstr "Укажите Google+ ID, напр."
+
+#~ msgid "or"
+#~ msgstr "или"
+
+#~ msgid "Relationship"
+#~ msgstr "Отношение"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Publisher"
+#~ msgstr "Издатель"
+
+#~ msgid ""
+#~ "Describes your relationship to content of the page, where the button is "
+#~ "embedded"
+#~ msgstr ""
+#~ "Указывает ваше отношение к содержанию страницы, на которой встроена кнопка"
+
+#~ msgid "Display the number of users who are following this page or person"
+#~ msgstr ""
+#~ "Показывать количество человек, подписавшихся на страницу или профиль"
+
+#~ msgid "Settings for Hangout Button"
+#~ msgstr "Настройки для кнопки \"Чат\""
+
+#~ msgid "Topic"
+#~ msgstr "Тема Чата"
+
+#~ msgid "Use the title of the page"
+#~ msgstr "Использовать заголовок страницы"
+
+#~ msgid "Narrow"
+#~ msgstr "Узкая"
+
+#~ msgid "Wide"
+#~ msgstr "Широкая"
+
+#~ msgid "Type"
+#~ msgstr "Вариант"
+
+#~ msgid "Normal"
+#~ msgstr "Обычный"
+
+#~ msgid "Onair"
+#~ msgstr "В эфире"
+
+#~ msgid "Party"
+#~ msgstr "Групповой"
+
+#~ msgid "Moderated"
+#~ msgstr "Настраиваемый"
+
+#~ msgid "Invitation Type"
+#~ msgstr "Вариант Приглашения"
+
+#~ msgid "Select The Type"
+#~ msgstr "Выберите Вариант"
+
+#~ msgid "Google+ Profile ID"
+#~ msgstr "Google+ ID Профиля"
+
+#~ msgid "Google+ Circle ID"
+#~ msgstr "Google+ ID Круга"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "Phone Number"
+#~ msgstr "Номер Телефона"
+
+#~ msgid "Google+ ID, Phone Number or Email"
+#~ msgstr "Google+ ID, Номер Телефона или Email"
+
+#~ msgid "Add"
+#~ msgstr "Добавить"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Удалить Выбранные"
+
+# If Invite Type is 'Google+ Profile ID' it should be the form like >> If Invitation Type is 'Google+ Profile ID', it should look like
+#~ msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
+#~ msgstr ""
+#~ "Если выбран тип приглашения 'Google+  ID Профиля', то введённый ID  "
+#~ "должен иметь вид"
+
+# If Invite Type is 'Google+ Circle ID' it should be the form like >> If Invitation Type is 'Google+ Circle ID', it should look like
+#~ msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
+#~ msgstr ""
+#~ "Если выбран тип приглашения 'Google+  ID Круга', то введённый ID  должен "
+#~ "иметь вид"
+
+# If Invite Type is 'Email' it should be the form like >> If Invitation Type is 'Email', it should look like
+#~ msgid "If Invitation Type is 'Email', it should look like"
+#~ msgstr ""
+#~ "Если выбран тип приглашения 'Email', то введённый адрес должен иметь вид"
+
+# If Invite Type is 'Phone Number' it should be the form like >> If Invitation Type is 'Phone Number', it should look like
+#~ msgid "If Invitation Type is 'Phone Number', it should look like"
+#~ msgstr ""
+#~ "Если выбран тип приглашения 'Номер Телефона', то введённый номер должен "
+#~ "иметь вид"
+
+#~ msgid "Settings for Badge"
+#~ msgstr "Настройки для \"Значка\""
+
+#~ msgid "Person"
+#~ msgstr "Профиль"
+
+#~ msgid "Page"
+#~ msgstr "Страница"
+
+#~ msgid "Community"
+#~ msgstr "Сообщество"
+
+#~ msgid "Display the user's tag line"
+#~ msgstr "Показывать слоган пользователя"
+
+#~ msgid "Google+ Page ID"
+#~ msgstr "Google+ ID Страницы"
+
+#~ msgid "Enter the Google+ Page ID, e.g."
+#~ msgstr "Укажите Google+ ID Страницы, напр."
+
+#~ msgid "Display the company tag line"
+#~ msgstr "Показывать слоган компании"
+
+#~ msgid "Google+ Community ID"
+#~ msgstr "Google+ ID Сообщества"
+
+#~ msgid "Enter the Google+ Community ID, e.g."
+#~ msgstr "Укажите Google+ ID  Сообщества, напр."
+
+#~ msgid "Display the community tag line"
+#~ msgstr "Показывать слоган сообщества"
+
+#~ msgid "Layout"
+#~ msgstr "Ориентация"
+
+#~ msgid "Portrait"
+#~ msgstr "Вертикальная"
+
+#~ msgid "Landscape"
+#~ msgstr "Горизонтальная"
+
+#~ msgid "Sets the orientation of the badge"
+#~ msgstr "Выберите ориентацию Значка"
+
+#~ msgid "Show Cover Photo"
+#~ msgstr "Показывать Фото Обложки"
+
+#~ msgid "Show Tag Line"
+#~ msgstr "Показывать слоган"
+
+#~ msgid "Show Owners"
+#~ msgstr "Показывать Основателей"
+
+#~ msgid "Display a list of community owners"
+#~ msgstr "Показывать список основателей сообщества"
+
+#~ msgid "Theme"
+#~ msgstr "Тема"
+
+#~ msgid "Light"
+#~ msgstr "Светлая"
+
+#~ msgid "Dark"
+#~ msgstr "Тёмная"
+
+#~ msgid "Width"
+#~ msgstr "Ширина"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+#~ msgid "Save Changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Preview"
+#~ msgstr "Превью"
+
+#~ msgid "This field can't be empty"
+#~ msgstr "Поле не может быть пустым"
+
+#~ msgid "Please, enter the valid Email"
+#~ msgstr "Пожалуйста, введите корректный Email"
+
+#~ msgid "Email of Invited Person"
+#~ msgstr "Email Приглашаемого"
+
+#~ msgid "Please, enter the Email of invited person, e.g."
+#~ msgstr "Пожалуйста, укажите E-mail приглашаемого, напр."
+
+#~ msgid "Phone Number of Invited Person"
+#~ msgstr "Номер Телефона Приглашаемого"
+
+# Please, enter the phone number of ivited, e.g. >> Please, enter the phone number of invited person, e.g.
+#~ msgid "Please, enter the phone number of invited person, e.g."
+#~ msgstr "Пожалуйста, введите номер телефона приглашаемого, напр."
+
+# Google+ Profile ID of Invited >> Google+ Profile ID of Invited Person
+#~ msgid "Google+ Profile ID of Invited Person"
+#~ msgstr "Google+ ID Профиля Приглашаемого"
+
+# Please, enter ivited Google+ Profile ID, e.g. >> Please, enter Google+ Profile ID, e.g.
+#~ msgid "Please, enter the Google+ Profile ID of invited person, e.g."
+#~ msgstr "Пожалуйста, укажите Google + ID Профиля приглашаемого, напр."
+
+# Google+ Circle ID for Invite >> Google+ Circle ID for Invitation
+#~ msgid "Google+ Circle ID for Invitation"
+#~ msgstr "Google+ ID Круга для приглашения"
+
+# Please, enter ivited Google+ Circle ID, e.g. >> Please, enter Google+ Circle ID, e.g.
+#~ msgid "Please, enter the Google+ Circle ID for invitation, e.g."
+#~ msgstr "Пожалуйста, укажите Google+ ID Круга для приглашения, напр."
+
+#~ msgid "Add Google Buttons to your page or post"
+#~ msgstr "Добавить Google  Кнопки на вашу страницу или пост"
+
+#~ msgid "Google+ Badge Widget"
+#~ msgstr "Виджет Значка Google+"
+
+# Show the Google Badge on your site >> Show Google Badge on your site
+#~ msgid "Show Google Badge on your site"
+#~ msgstr "Отображать Google Значок на вашем сайте"
+
+#~ msgid "No"
+#~ msgstr "Нет"
+
+#, fuzzy
+#~ msgid "PHP Exif support"
+#~ msgstr "Поддержка"
+
+#, fuzzy
+#~ msgid "PHP IPTC support"
+#~ msgstr "Поддержка"
+
+#, fuzzy
+#~ msgid "PHP XML support"
+#~ msgstr "Поддержка"
+
+#, fuzzy
+#~ msgid "Active Theme"
+#~ msgstr "Активировать"
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Пожалуйста, введите корректный email"
+
+#, fuzzy
+#~ msgid "Plugins"
+#~ msgstr "Страницу плагинов"
+
+#, fuzzy
+#~ msgid "Themes"
+#~ msgstr "Тема"
+
+#, fuzzy
+#~ msgid "Installed"
+#~ msgstr "Уже добавлен"
+
+#, fuzzy
+#~ msgid "Installed plugins"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "Learn more"
+#~ msgstr "Подробнее"
+
+#, fuzzy
+#~ msgid "Activate this plugin"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Preview %s"
+#~ msgstr "Превью"
+
+#, fuzzy
+#~ msgid "Already Installed"
+#~ msgstr "Уже добавлен"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Send to support"
+#~ msgstr "Поддержка"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому он был деактивирован! Пожалуйста, обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Вернуться к WordPress на"
+
+#~ msgid "Plugins page"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Если вам понравился плагин, то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#, fuzzy
+#~ msgid "Wrong license key"
+#~ msgstr "Неправильный лицензионный ключ!"
+
+#, fuzzy
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
+#~ msgstr ""
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами"
+
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates you should extend it in your"
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#, fuzzy
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "UploadDir is not writable. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
+
+#, fuzzy
+#~ msgid "Please, enter Your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid "the setting page"
+#~ msgstr "На страницах"
+
+#, fuzzy
+#~ msgid "Show Pro features"
+#~ msgstr "На страницах"
+
+#, fuzzy
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта), где вы можете сделать необходимые изменения."
+
+#, fuzzy
+#~ msgid "After that you can activate it by entering your license key."
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "Wrong license key."
+#~ msgstr "Неправильный лицензионный ключ!"
+
+#, fuzzy
+#~ msgid "This license key is bind to another site."
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "Лицензионный ключ принят, но срок действия лицензии истек. Если вы хотите "
+#~ "обновлять плагин в будущем, вы должны продлить лицензию."
+
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "Лицензионный ключ принят."
+
+#~ msgid "The license key is valid."
+#~ msgstr "Лицензионный ключ принят."
+
+#, fuzzy
+#~ msgid "Your license will expire on"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет"
+
+#~ msgid "Please, enter your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid ""
+#~ "If needed you can check if the license key is correct or reenter it in "
+#~ "the field below. You can find your license key on your personal page - "
+#~ "Client area - on our website"
+#~ msgstr ""
+#~ "При необходимости вы можете проверить валидность лицензионного ключа или "
+#~ "повторно ввести его в поле ниже. Вы можете найти ваш лицензионный ключ на "
+#~ "своей личной странице - Client area - на нашем сайте"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта). При необходимости нажмите \"Lost your password?\"."
+
+#~ msgid "Check license key"
+#~ msgstr "Проверка лицензионного ключа"
+
+#, fuzzy
+#~ msgid ""
+#~ "You can use one license of the Pro plugin for one domain only. Please "
+#~ "check and edit your license or domain if necessary using you personal "
+#~ "Client Area. We strongly recommend you to solve the problem within 24 "
+#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ msgstr ""
+#~ "ВНИМАНИЕ: Было замечено незаконное использования вами нашего плагина. Мы "
+#~ "настоятельно рекомендуем Вам решить данную проблему в течение 24 часов, в "
+#~ "противном случае плагин будет деативирован. Пожалуйста, перейдите на вашу "
+#~ "личную"
+
+#, fuzzy
+#~ msgid ""
+#~ "Notice: Your Pro Trial license has expired. To continue using the plugin "
+#~ "you should buy a Pro license"
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it."
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#, fuzzy
+#~ msgid "The Pro Trial license will expire on"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет"
+
+#~ msgid "You license for"
+#~ msgstr "Ваша лицензия для"
+
+#~ msgid "expires on"
+#~ msgstr "истекает"
+
+#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+#~ msgstr ""
+#~ "и у вас не будет возможности обновляться или иметь приорететную тех. "
+#~ "поддержку."
+
+#, fuzzy
+#~ msgid "Configure Settings"
+#~ msgstr "Настройки"
+
+#, fuzzy
+#~ msgid "Notice"
+#~ msgstr "Внимание:"
+
+#, fuzzy
+#~ msgid "The plugin's settings have been changed."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#, fuzzy
+#~ msgid "Add BWS Plugins Shortcode"
+#~ msgstr "Добавить шорткод"
+
+#~ msgid "Add shortcode"
+#~ msgstr "Добавить шорткод"
+
+#, fuzzy
+#~ msgid "Restore all plugin settings to defaults"
+#~ msgstr "Все настройки плагина восстановлены."
+
+#, fuzzy
+#~ msgid "Restore settings"
+#~ msgstr "Дополнительные настройки"
+
+#, fuzzy
+#~ msgid "Yes, restore all settings"
+#~ msgstr "Дополнительные настройки"
+
+#, fuzzy
+#~ msgid "No, go back to the settings page"
+#~ msgstr "На страницах"
+
+#, fuzzy
+#~ msgid "Plugin"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "Shortcode settings"
+#~ msgstr "Настройки шорткода"
+
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "Шорткод будет добавлен"
+
+#, fuzzy
+#~ msgid "Documentation"
+#~ msgstr "Примечание"

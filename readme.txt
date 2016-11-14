@@ -4,8 +4,8 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
 google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.8
-Tested up to: 4.6
-Stable tag: 1.0.9
+Tested up to: 4.6.1
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,53 +13,103 @@ Add social media buttons and widgets to WordPress posts, pages and widgets. FB, 
 
 == Description ==
 
-If you are looking for a powerful and easy-to-use WordPress social media plugin, Social Buttons plugin is exactly what you need! This stylish sharing solution allows you to add main social buttons ( Twitter, Facebook, Google+1, Pinterest, LinkedIn ) and widgets ( Google Badge+1, Pinterest, LinkedIn ) on your website, and hence to monitor, share and increase your social engagement. The content of your blog will appear on various social media platforms via flexible, good-looking and light share buttons.
+Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.
+
+Increase shares and social media engagement today!
 
 http://www.youtube.com/watch?v=3FxIReS0hP4 
 
-<a href="http://www.youtube.com/watch?v=1PZPCL76aBk" target="_blank">Social Buttons Pack by BestWebSoft Video instruction on Installation</a>
+= Free Features =
 
-<a href="http://wordpress.org/plugins/social-buttons-pack/faq/" target="_blank">Social Buttons Pack by BestWebSoft FAQ</a>
+* Automatically add:
+	* Facebook buttons
+		* Follow
+		* Like
+		* Share
+	* Twitter buttons
+		* Tweet
+		* Follow me
+		* Hashtag
+		* Mention
+	* Google buttons
+		* Google +1
+		* Share
+		* Follow
+		* Hangout
+	* Pinterest buttons
+		* Pin it
+		* Follow
+	* LinkedIn buttons
+		* Share
+		* Follow
+* Choose buttons position:
+	* Before 
+	* After 
+	* Before and after
+	* Shortcode
+* Add social buttons widgets:
+	* LinkedIn
+		* Member Profile
+		* Company Profile
+		* Company Insider
+		* Jobs you may be interested in
+		* Alumni Tool
+	* Google +1 Badge
+	* Pinterest
+		* Pin
+		* Board
+		* Profile
+* Add social buttons via shortcode
+* Customize each button and widget with a number of options
+* Add custom code via plugin settings page
+* Compatible with latest WordPress version
+* Incredibly simple settings for fast setup without modifying code
+* Detailed step-by-step documentation and videos
+* Multilingual and RTL ready
 
-<a href="http://support.bestwebsoft.com" target="_blank">Social Buttons Pack by BestWebSoft Support</a>
+> **Pro Features**
+>
+> All features from Free version included plus:
+>
+> * Display social buttons for certain pages and/or post types
+> * Social buttons preview
+> * Сonfigure all subsites on the network
+> * Get answer to your support question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
+>
+> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=3406f2d071a1e01c756c57133cdd9480)
 
-= Features =
+If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
 
-* Add Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons in the easiest way.
-* Show Google Badge+1 on your site.
-* Add Pinterest widgets (Pin, Board, Profile) on your site.
-* Add LinkedIn widgets (Member Profile, Company Profile, Company Insider, Jobs You Might Be Interested In, Alumni Tool) on your site.
-* Select the button position: before the content, after the content or before and after.
-* Display buttons using a shortcode.
-* Configure the buttons according to your needs.
+= Documentation & Videos =
 
-If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">Suggest a Feature</a>
+* [[Doc] Installation](https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/)
+* [[Video] Installation Instruction](http://www.youtube.com/watch?v=1PZPCL76aBk)
 
-= Recommended Plugins =
+= Help & Support =
 
-The author of the Social Buttons Pack also recommends the following plugins:
-
-* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <http://support.bestwebsoft.com/>
 
 = Translation =
 
-* French (fr_FR) (thanks to <a href="mailto:wpthemefr@gmail.com">Murat</a>)
+* French (fr_FR) (thanks to [Murat](mailto:wpthemefr@gmail.com))
 * Indonesian (id_ID) (thanks to Nasrulhaq, www.al-badar.net)
-* Hungarian (hu_HU) (thanks to <a href="mailto:solarside09@gmail.com">Peter Aprily</a> www.aprily.com)
+* Hungarian (hu_HU) (thanks to [Peter Aprily](mailto:solarside09@gmail.com) www.aprily.com)
 * Russian (ru_RU)
-* Turkish (tr_TR) (thanks to <a href="mailto:webmaster@canatasever.com">Can Atasever</a>)
+* Turkish (tr_TR) (thanks to [Can Atasever](mailto:webmaster@canatasever.com))
 * Ukrainian (uk)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](http://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
 
-= Technical support =
+= Recommended Plugins =
 
-Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in other languages won't be accepted.
+* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
 
-If you notice any bugs in the plugins, you can notify us about it and we'll investigate and fix the issue then. Your request should contain URL of the website, issues description and WordPress admin panel credentials.
-Moreover, we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then. 
-We can fix some things for free for the users who provide translation of our plugin into their native language (this should be a new translation of a certain plugin, you can check available translations on the official plugin page).
+= Donate =
+
+Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
+
+[Donate Now](http://bestwebsoft.com/donate/)
 
 == Installation ==
 
@@ -67,7 +117,7 @@ We can fix some things for free for the users who provide translation of our plu
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust the necessary settings in your WordPress admin panel - "BWS Panel" > "Social Buttons".
 
-<a href="https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/edit" target="_blank">View a Step-by-step Instruction on Social Buttons Pack Installation</a>.
+[View a Step-by-step Instruction on Social Buttons Pack Installation](https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/)
 
 http://www.youtube.com/watch?v=1PZPCL76aBk
 
@@ -122,12 +172,12 @@ URL, which you add, should be public. It can be configured via "public profile s
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
-Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+Please make sure that the problem hasn't been discussed yet on our forum (<http://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
 
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit" target="_blank">Instuction on System Status</a>
+4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
 
 == Screenshots ==
 
@@ -147,6 +197,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 14. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.0 - 14.11.2016 =
+* Update : BWS plugins section is updated.
 
 = V1.0.9 - 29.08.2016 =
 * Update : All functionality for WordPress 4.6 was updated.
@@ -195,6 +248,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.0 =
+* Plugin optimization completed.
 
 = V1.0.9 =
 * The compatibility with new WordPress version updated.
