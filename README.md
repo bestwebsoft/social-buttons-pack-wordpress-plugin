@@ -3,8 +3,6 @@
 
 Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
 
-<img src="http://bestwebsoft.com/wp-content/uploads/2015/04/social-buttons-pack-banner-website.jpg" />
-
 <p>Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.</p>
 
 <p>Increase shares and social media engagement today!</p>
