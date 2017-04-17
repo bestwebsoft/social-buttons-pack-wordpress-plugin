@@ -213,15 +213,14 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 			<div class="error below-h2" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<?php ?>
 					<br>
-					<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
-					printf( 
+					<div><?php printf( 
 						__( "If you want to add twitter buttons to your page or post, please use %s button", 'twitter-plugin' ),
-						'<span class="bws_code"><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt=""/></span>' ); ?>
+						'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' ); ?>
 						<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 							<div class="bws_hidden_help_text" style="min-width: 180px;">
 								<?php printf(
 									__( "You can add Twitter buttons to your page or post by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s. Instead of asterisk, please add the necessary buttons separated by commas (Ex:", 'twitter-plugin' ),
-									'<code><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt="" /></code>',
+									'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 									'<code>[twitter_buttons display=*]</code>'
 								); ?>
 								<code>[twitter_buttons display=tweet,follow,hashtag,mention]</code>)

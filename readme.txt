@@ -1,11 +1,11 @@
 ﻿=== Social Buttons Pack by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: http://bestwebsoft.com/donate/
+Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
 google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.8
-Tested up to: 4.6.1
-Stable tag: 1.1.0
+Tested up to: 4.7.3
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,7 +17,7 @@ Powerful and easy-to-use social media plugin for WordPress which adds Twitter, F
 
 Increase shares and social media engagement today!
 
-http://www.youtube.com/watch?v=3FxIReS0hP4 
+https://www.youtube.com/watch?v=3FxIReS0hP4 
 
 = Free Features =
 
@@ -74,23 +74,25 @@ http://www.youtube.com/watch?v=3FxIReS0hP4
 > * Display social buttons for certain pages and/or post types
 > * Social buttons preview
 > * Сonfigure all subsites on the network
-> * Get answer to your support question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
+> * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
-> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=3406f2d071a1e01c756c57133cdd9480)
+> [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=3406f2d071a1e01c756c57133cdd9480)
 
-If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
+If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
 
 = Documentation & Videos =
 
-* [[Doc] Installation](https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/)
-* [[Video] Installation Instruction](http://www.youtube.com/watch?v=1PZPCL76aBk)
+* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Video] Installation Instruction](https://www.youtube.com/watch?v=1PZPCL76aBk)
 
 = Help & Support =
 
-Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <http://support.bestwebsoft.com/>
+Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <https://support.bestwebsoft.com/>
 
 = Translation =
 
+* Czech (cs_CZ) (thanks to [Michal Kučera](mailto:mailus@n0lim.it) www.n0lim.it)
 * French (fr_FR) (thanks to [Murat](mailto:wpthemefr@gmail.com))
 * Indonesian (id_ID) (thanks to Nasrulhaq, www.al-badar.net)
 * Hungarian (hu_HU) (thanks to [Peter Aprily](mailto:solarside09@gmail.com) www.aprily.com)
@@ -98,18 +100,12 @@ Visit our Help Center if you have any questions, our friendly Support Team is ha
 * Turkish (tr_TR) (thanks to [Can Atasever](mailto:webmaster@canatasever.com))
 * Ukrainian (uk)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](http://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
 
 = Recommended Plugins =
 
-* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
-* [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
-
-= Donate =
-
-Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
-
-[Donate Now](http://bestwebsoft.com/donate/)
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
 
 == Installation ==
 
@@ -117,9 +113,9 @@ Donations play an important role in supporting open-source projects. We greatly 
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust the necessary settings in your WordPress admin panel - "BWS Panel" > "Social Buttons".
 
-[View a Step-by-step Instruction on Social Buttons Pack Installation](https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/)
+[View a Step-by-step Instruction on Social Buttons Pack Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 
-http://www.youtube.com/watch?v=1PZPCL76aBk
+https://www.youtube.com/watch?v=1PZPCL76aBk
 
 == Frequently Asked Questions ==
 
@@ -130,7 +126,7 @@ In WordPress admin panel go to "BWS Panel", find the Social Buttons Plugin setti
 = After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
 
 1. In WordPress admin panel, please go to "BWS Panel", find "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
-2. If you do not have Facebook account yet, you should create it using this link: http://www.facebook.com. After the account is created please follow the instructions above.
+2. If you do not have Facebook account yet, you should create it using this link: https://www.facebook.com. After the account is created please follow the instructions above.
 
 = How to change Facebook Button icon ("My page") =
 
@@ -172,7 +168,7 @@ URL, which you add, should be public. It can be configured via "public profile s
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
-Please make sure that the problem hasn't been discussed yet on our forum (<http://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
+Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
 
 1. the link to the page where the problem occurs
 2. the name of the plugin and its version. If you are using a pro version - your order number.
@@ -197,6 +193,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 14. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.1 - 17.04.2017 =
+* Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
+* NEW : Czech language file.
 
 = V1.1.0 - 14.11.2016 =
 * Update : BWS plugins section is updated.
@@ -248,6 +248,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.1 =
+* Bugs fixed.
 
 = V1.1.0 =
 * Plugin optimization completed.

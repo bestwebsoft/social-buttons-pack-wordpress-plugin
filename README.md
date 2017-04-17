@@ -1,4 +1,4 @@
-<a href="http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/" target=_blank>Social Buttons Pack WordPress Plugin</a>
+<a href="https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/" target=_blank>Social Buttons Pack WordPress Plugin</a>
 ========================
 
 Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
@@ -100,28 +100,30 @@ Add social media buttons and widgets to WordPress posts, pages and widgets. FB, 
   <li>Display social buttons for certain pages and/or post types</li>
   <li>Social buttons preview</li>
   <li>Сonfigure all subsites on the network</li>
-  <li>Get answer to your support question within one business day (<a href="http://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
+  <li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
   </ul>
   
-  <p><a href="http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=3406f2d071a1e01c756c57133cdd9480">Upgrade to Pro Now</a></p>
+  <p><a href="https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=3406f2d071a1e01c756c57133cdd9480">Upgrade to Pro Now</a></p>
 </blockquote>
 
-<p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
+<p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
 
 <h4>Documentation &#38; Videos</h4>
 
 <ul>
-<li><a href="https://docs.google.com/document/d/1nJCqbgzxjW7jQcOFHarGAK6a0EjtfFGGmBVTT1M2cmY/">[Doc] Installation</a></li>
-<li><a href="http://www.youtube.com/watch?v=1PZPCL76aBk">[Video] Installation Instruction</a></li>
+<li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/">[Doc] Installation</a></li>
+<li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/">[Doc] Purchase</a></li>
+<li><a href="https://www.youtube.com/watch?v=1PZPCL76aBk">[Video] Installation Instruction</a></li>
 </ul>
 
 <h4>Help &#38; Support</h4>
 
-<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8212; <a href="http://support.bestwebsoft.com/">http://support.bestwebsoft.com/</a></p>
+<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8212; <a href="https://support.bestwebsoft.com/">https://support.bestwebsoft.com/</a></p>
 
 <h4>Translation</h4>
 
 <ul>
+<li>Czech (cs_CZ) (thanks to <a href="mailto:mailus@n0lim.it">Michal Kučera</a> <a href="http://www.n0lim.it" rel="nofollow">http://www.n0lim.it</a>)</li>
 <li>French (fr_FR) (thanks to <a href="mailto:wpthemefr@gmail.com">Murat</a>)</li>
 <li>Indonesian (id_ID) (thanks to Nasrulhaq, <a href="http://www.al-badar.net" rel="nofollow">http://www.al-badar.net</a>)</li>
 <li>Hungarian (hu_HU) (thanks to <a href="mailto:solarside09@gmail.com">Peter Aprily</a> <a href="http://www.aprily.com" rel="nofollow">http://www.aprily.com</a>)</li>
@@ -130,17 +132,11 @@ Add social media buttons and widgets to WordPress posts, pages and widgets. FB, 
 <li>Ukrainian (uk)</li>
 </ul>
 
-<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="http://www.poedit.net/download.php">files Poedit</a>.</p>
+<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="https://www.poedit.net/download.php">files Poedit</a>.</p>
 
 <h4>Recommended Plugins</h4>
 
 <ul>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c">Multilanguage</a> - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c">Multilanguage</a> - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.</li>
 </ul>
-
-<h4>Donate</h4>
-
-<p>Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.</p>
-
-<p><a href="http://bestwebsoft.com/donate/">Donate Now</a></p>

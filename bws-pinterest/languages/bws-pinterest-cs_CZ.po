@@ -1,0 +1,375 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bws-pinterest\n"
+"POT-Creation-Date: 2017-04-17 12:56+0300\n"
+"PO-Revision-Date: 2017-04-17 12:56+0300\n"
+"Last-Translator: \n"
+"Language-Team: Mik013\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bws-pinterest.php:132
+msgid "Follow me"
+msgstr "Sleduj mne"
+
+#: bws-pinterest.php:183
+msgid ""
+"Please, enter \"Pinterest user URL\" to add Follow Button. Settings are not "
+"saved."
+msgstr ""
+"Pro přidání tlačítka, zadejte \"URL uživatele Pinterest\". Nastavení není "
+"uloženo."
+
+#: bws-pinterest.php:205
+#, php-format
+msgid "Error: File size %1s"
+msgstr "Chyba: Velikost souboru %1s"
+
+#: bws-pinterest.php:208
+msgid "Error: Invalid file type"
+msgstr "Chyba: Neplatný typ souboru"
+
+#: bws-pinterest.php:220
+msgid "Error: moving file failed"
+msgstr "Chyba: Soubor se nepodařilo přesunout"
+
+#: bws-pinterest.php:226
+msgid "Error: select the upload file"
+msgstr "Chyba: vyberte soubor pro nahrání"
+
+#: bws-pinterest.php:231
+msgid "Settings saved"
+msgstr "Nastavení uloženo"
+
+#: bws-pinterest.php:239
+msgid "All plugin settings were restored."
+msgstr "Byla obnovena všechna nastavení pluginu."
+
+#: bws-pinterest.php:252
+msgid "Pinterest Settings"
+msgstr "Nastavení Pinterest"
+
+#: bws-pinterest.php:254
+msgid "How to Use Step-by-step Instruction"
+msgstr ""
+
+#: bws-pinterest.php:257 bws-pinterest.php:1011 bws-pinterest.php:1028
+msgid "Settings"
+msgstr "Nastavení"
+
+#: bws-pinterest.php:259
+msgid "Extra settings"
+msgstr "Další nastavení"
+
+#: bws-pinterest.php:261
+msgid "Custom code"
+msgstr "Vlastní kód"
+
+#: bws-pinterest.php:263
+msgid "Go PRO"
+msgstr "Přejít na PRO"
+
+#: bws-pinterest.php:283
+#, php-format
+msgid ""
+"If you would like to add Pinterest buttons or widgets to your page or post, "
+"please use %s button"
+msgstr ""
+"Pokud chcete přidat Pinterest tlačítka na vaši stránku nebo příspěvek, "
+"použijte tlačítko %s "
+
+#: bws-pinterest.php:288
+#, php-format
+msgid ""
+"You can add buttons or widgets to your content by clicking on %1s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %2s for Pin It button, %3s for Follow button or %4s "
+"for Pinteresr widget"
+msgstr ""
+"Pinterest tlačítka nebo widget můžete na vaši stránku nebo příspěvek přidat "
+"kliknutím na tlačítko %1s v bloku úprav obsahu ve vizuálním módu. Pokud "
+"tlačítko není zobrazeno, použijte zkrácený kód %2s pro tlačítko Připnout, "
+"%3s pro tlačítko Sledovat nebo %4s pro widget"
+
+#: bws-pinterest.php:300
+msgid "Pinterest user URL"
+msgstr "URL uživatele Pinterest"
+
+#: bws-pinterest.php:305
+msgid "Example"
+msgstr "Příklad"
+
+#: bws-pinterest.php:313
+msgid "Settings for Pin It Button"
+msgstr "Nastavení tlačítka Připnout"
+
+#: bws-pinterest.php:318
+msgid "Pin It Button place"
+msgstr "Umístění tlačítka Připnout"
+
+#: bws-pinterest.php:321 bws-pinterest.php:406
+msgid "Before the content"
+msgstr "Před obsahem"
+
+#: bws-pinterest.php:322 bws-pinterest.php:407
+msgid "After the content"
+msgstr "Za obsahem"
+
+#: bws-pinterest.php:323
+msgid "On image hover"
+msgstr "Při přejetí obrázku myší"
+
+#: bws-pinterest.php:329
+msgid "Button image type"
+msgstr "Typ zobrazovaného tlačítka"
+
+#: bws-pinterest.php:332
+msgid "Default"
+msgstr "Výchozí"
+
+#: bws-pinterest.php:333
+msgid "Custom"
+msgstr "Vlastní"
+
+#: bws-pinterest.php:339
+#, php-format
+msgid "Max image size: %1s. Allowed file extensions: %2s"
+msgstr "Maximální velikost obrázku: %1s. Povolené přípony souborů: %2s"
+
+#: bws-pinterest.php:346
+msgid "Current custom image"
+msgstr "Aktuální vlastní obrázek"
+
+#: bws-pinterest.php:354
+msgid "Button Shape"
+msgstr "Tvar tlačítka"
+
+#: bws-pinterest.php:357
+msgid "Square"
+msgstr "Hranatý"
+
+#: bws-pinterest.php:358
+msgid "Round"
+msgstr "Kruhový"
+
+#: bws-pinterest.php:364
+msgid "Button Size"
+msgstr "Velikost tlačítka"
+
+#: bws-pinterest.php:367 bws-pinterest.php:722 bws-pinterest.php:878
+msgid "Small"
+msgstr "Malé"
+
+#: bws-pinterest.php:368 bws-pinterest.php:724 bws-pinterest.php:880
+msgid "Large"
+msgstr "Velké"
+
+#: bws-pinterest.php:374
+msgid "Button Color"
+msgstr "Barva tlačítka"
+
+#: bws-pinterest.php:377
+msgid "Red"
+msgstr "červená"
+
+#: bws-pinterest.php:378
+msgid "Gray"
+msgstr "šedá"
+
+#: bws-pinterest.php:379
+msgid "White"
+msgstr "bílá"
+
+#: bws-pinterest.php:381 bws-pinterest.php:393
+msgid "Works only if the square image is chosen"
+msgstr "Funguje pouze v kombinaci s hranatým tvarem"
+
+#: bws-pinterest.php:386
+msgid "Pin Counts"
+msgstr "Počet Pinů"
+
+#: bws-pinterest.php:389
+msgid "None"
+msgstr "Nezobrazovat"
+
+#: bws-pinterest.php:390
+msgid "Above the button"
+msgstr "Nad tlačítkem"
+
+#: bws-pinterest.php:391
+msgid "Beside the button"
+msgstr "Vedle tlačítka"
+
+#: bws-pinterest.php:399
+msgid "Settings for Follow Button"
+msgstr "Nastavení tlačítka Sledovat"
+
+#: bws-pinterest.php:403
+msgid "Follow Button place"
+msgstr "Umístění tlačítka Sledovat"
+
+#: bws-pinterest.php:413
+msgid "Follow Button label"
+msgstr "Popisek tlačítka Sledovat"
+
+#: bws-pinterest.php:421
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: bws-pinterest.php:437
+msgid ""
+"Please choose the necessary post types (or single pages) where Pinterest "
+"buttons will be displayed:"
+msgstr ""
+"Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
+"tlačítka Pinterest  zobrazovat:"
+
+#: bws-pinterest.php:444
+msgid "Show URL for pages"
+msgstr "Zobrazit URL pro stránky"
+
+#: bws-pinterest.php:450
+msgid "Example of the site's pages tree"
+msgstr "Příklad stromu stránek"
+
+#: bws-pinterest.php:450
+msgid "Example of site pages' tree"
+msgstr "Příklad stromu stránku webu"
+
+#: bws-pinterest.php:455
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Pokud upgradujete na verzi Pro všechna vaše nastavení budou zachována."
+
+#: bws-pinterest.php:462
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Odemkněte prémiové možnosti upgradem na Pro verzi"
+
+#: bws-pinterest.php:464
+msgid "Learn More"
+msgstr "Dozvědět se více"
+
+#: bws-pinterest.php:629
+msgid "Pinterest Widget"
+msgstr "Widget Pinterest"
+
+#: bws-pinterest.php:632
+msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
+msgstr "Widget pro přidání Pinterest Pin, widgetu Nástěnka a Profil"
+
+#: bws-pinterest.php:696
+msgid "Title"
+msgstr "Název"
+
+#: bws-pinterest.php:701
+msgid "Type"
+msgstr "Typ"
+
+#: bws-pinterest.php:703 bws-pinterest.php:713 bws-pinterest.php:853
+msgid "Pin Widget"
+msgstr "Widget Pin"
+
+#: bws-pinterest.php:704 bws-pinterest.php:714 bws-pinterest.php:854
+msgid "Board Widget"
+msgstr "Widget Nástěnka"
+
+#: bws-pinterest.php:705 bws-pinterest.php:855
+msgid "Profile Widget"
+msgstr "Widget Profil"
+
+#: bws-pinterest.php:709 bws-pinterest.php:871
+msgid "URL"
+msgstr "URL"
+
+#: bws-pinterest.php:712
+msgid "Examples"
+msgstr "Příklady"
+
+#: bws-pinterest.php:720 bws-pinterest.php:876
+msgid "Size"
+msgstr "Velikost"
+
+#: bws-pinterest.php:723 bws-pinterest.php:879
+msgid "Medium"
+msgstr "Střední"
+
+#: bws-pinterest.php:728 bws-pinterest.php:885
+msgid "Width"
+msgstr "Šířka"
+
+#: bws-pinterest.php:731 bws-pinterest.php:736
+#, php-format
+msgid "Min width%1s. If emtpy width: auto"
+msgstr "Min šířka %1s. Pokud není vyplněno - automaticky"
+
+#: bws-pinterest.php:738 bws-pinterest.php:886
+msgid "Height"
+msgstr "Výška"
+
+#: bws-pinterest.php:741 bws-pinterest.php:745
+msgid "Min height"
+msgstr "Min výška"
+
+#: bws-pinterest.php:746 bws-pinterest.php:887
+msgid "Thumbnails width"
+msgstr "Šířka miniatur"
+
+#: bws-pinterest.php:750 bws-pinterest.php:758
+#, php-format
+msgid ""
+"Min width%1s. If the widget width field is empty, the thumbnail width will "
+"be auto."
+msgstr ""
+"Min šířka %1s. Pokud není vyplněna šířka widgetu bude šířka miniatur "
+"nastavena automaticky."
+
+#: bws-pinterest.php:849
+msgid "Shortcode Type"
+msgstr "Typ zkráceného kódu"
+
+#: bws-pinterest.php:851
+msgid "Follow Button"
+msgstr "Tlačítko Sledovat"
+
+#: bws-pinterest.php:852
+msgid "Pin It button"
+msgstr "Tlačítko Připnout"
+
+#: bws-pinterest.php:859
+msgid "Button label"
+msgstr "Popisek tlačítka"
+
+#: bws-pinterest.php:863
+msgid "Save any image"
+msgstr "Uložit jakýkoli obrázek"
+
+#: bws-pinterest.php:864
+msgid "Save defined image"
+msgstr "Uložit definovaný obrázek"
+
+#: bws-pinterest.php:865
+msgid "Pin image URL"
+msgstr "URL Pinu obrázku"
+
+#: bws-pinterest.php:866
+msgid "Custom button image"
+msgstr "Vlastní obrázek tlačítka"
+
+#: bws-pinterest.php:867
+msgid "Custom image URL"
+msgstr "Vlastní URL obrázku"
+
+#: bws-pinterest.php:1012
+msgid "FAQ"
+msgstr "Často kladené otázky (FAQ)"
+
+#: bws-pinterest.php:1013
+msgid "Support"
+msgstr "Podpora"

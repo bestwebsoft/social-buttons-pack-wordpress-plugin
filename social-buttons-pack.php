@@ -1,17 +1,17 @@
 <?php
 /*
 Plugin Name: Social Buttons Pack by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/
+Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/
 Description: Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
 Author: BestWebSoft
 Text Domain: social-buttons-pack
 Domain Path: /languages
-Version: 1.1.0
-Author URI: http://bestwebsoft.com/
+Version: 1.1.1
+Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
+/*  Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -205,10 +205,7 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
                             </table>    
                         </div>
                         <div class="bws_pro_version_tooltip">
-                            <div class="bws_info">
-                                <?php _e( 'Unlock premium options by upgrading to Pro version', 'social-buttons-pack' ); ?>
-                            </div>
-                            <a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=c0d1b84b603c503e8a16cfa6252b2f70&amp;pn=209&amp;v=<?php echo $sclbttns_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank"><?php _e( 'Learn More', 'social-buttons-pack' ); ?></a>
+                            <a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/?k=c0d1b84b603c503e8a16cfa6252b2f70&amp;pn=209&amp;v=<?php echo $sclbttns_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank"><?php _e( 'Learn More', 'social-buttons-pack' ); ?></a>
                             <div class="clear"></div>          
                         </div>
                     </div>
@@ -271,7 +268,7 @@ if ( ! function_exists( 'sclbttns_links' ) ) {
             if ( ! is_network_admin() )
                 $links[]    =   '<a href="admin.php?page=social-buttons.php">' . __( 'Settings', 'social-buttons-pack' ) . '</a>';
             $links[]    =   '<a href="http://wordpress.org/plugins/social-buttons-pack/faq/" target="_blank">' . __( 'FAQ', 'social-buttons-pack' ) . '</a>';
-            $links[]    =   '<a href="http://support.bestwebsoft.com">' . __( 'Support', 'social-buttons-pack' ) . '</a>';
+            $links[]    =   '<a href="https://support.bestwebsoft.com">' . __( 'Support', 'social-buttons-pack' ) . '</a>';
         }
         return $links;
     }

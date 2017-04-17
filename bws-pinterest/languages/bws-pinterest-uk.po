@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinterest\n"
-"POT-Creation-Date: 2016-05-26 10:53+0300\n"
-"PO-Revision-Date: 2016-05-26 10:54+0300\n"
+"POT-Creation-Date: 2016-10-26 13:58+0300\n"
+"PO-Revision-Date: 2016-11-17 12:26+0300\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugins@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -17,11 +17,11 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: bws-pinterest.php:131
+#: bws-pinterest.php:132
 msgid "Follow me"
 msgstr "Підписатися"
 
-#: bws-pinterest.php:182
+#: bws-pinterest.php:183
 msgid ""
 "Please, enter \"Pinterest user URL\" to add Follow Button. Settings are not "
 "saved."
@@ -29,52 +29,56 @@ msgstr ""
 "Будь ласка, введіть \"Профіль Pinterest\", щоб додати кнопку Follow. "
 "Налаштування не збережені."
 
-#: bws-pinterest.php:204
+#: bws-pinterest.php:205
 #, php-format
 msgid "Error: File size %1s"
 msgstr "Помилка: Розмір файлу %1s"
 
-#: bws-pinterest.php:207
+#: bws-pinterest.php:208
 msgid "Error: Invalid file type"
 msgstr "Помилка: Невірний тип файлу"
 
-#: bws-pinterest.php:219
+#: bws-pinterest.php:220
 msgid "Error: moving file failed"
 msgstr "Помилка: не вдалося переміщення файлів"
 
-#: bws-pinterest.php:225
+#: bws-pinterest.php:226
 msgid "Error: select the upload file"
 msgstr "Помилка: оберіть зображення для завантаження"
 
-#: bws-pinterest.php:229
+#: bws-pinterest.php:231
 msgid "Settings saved"
 msgstr "Налаштування збережені"
 
-#: bws-pinterest.php:237
+#: bws-pinterest.php:239
 msgid "All plugin settings were restored."
 msgstr "Відновлено стандартні налаштування плагіну."
 
-#: bws-pinterest.php:250
+#: bws-pinterest.php:252
 msgid "Pinterest Settings"
 msgstr "Налаштування Pinterest"
 
-#: bws-pinterest.php:252 bws-pinterest.php:996 bws-pinterest.php:1013
+#: bws-pinterest.php:254
+msgid "How to Use Step-by-step Instruction"
+msgstr "Iнструкцiя з використання"
+
+#: bws-pinterest.php:257 bws-pinterest.php:1011 bws-pinterest.php:1028
 msgid "Settings"
 msgstr "Налаштування"
 
-#: bws-pinterest.php:253
+#: bws-pinterest.php:259
 msgid "Extra settings"
 msgstr "Додаткові налаштування"
 
-#: bws-pinterest.php:254
+#: bws-pinterest.php:261
 msgid "Custom code"
 msgstr "Користувацький код"
 
-#: bws-pinterest.php:255
+#: bws-pinterest.php:263
 msgid "Go PRO"
 msgstr "Перейти на Pro версію"
 
-#: bws-pinterest.php:274
+#: bws-pinterest.php:283
 #, php-format
 msgid ""
 "If you would like to add Pinterest buttons or widgets to your page or post, "
@@ -83,7 +87,7 @@ msgstr ""
 "Якщо ви хочете додати кнопки та віджети Pinterest на вашу сторінку або пост, "
 "будь ласка, використовуйте кнопку %s"
 
-#: bws-pinterest.php:279
+#: bws-pinterest.php:288
 #, php-format
 msgid ""
 "You can add buttons or widgets to your content by clicking on %1s button in "
@@ -96,132 +100,132 @@ msgstr ""
 "відображається, будь ласка, використовуйте шорткод %2s для кнопки Pin It,  "
 "%3s для кнопки Follow або %4s для віджету"
 
-#: bws-pinterest.php:291
+#: bws-pinterest.php:300
 msgid "Pinterest user URL"
 msgstr "Адреса профілю Pinterest"
 
-#: bws-pinterest.php:296
+#: bws-pinterest.php:305
 msgid "Example"
 msgstr "Приклад"
 
-#: bws-pinterest.php:303
+#: bws-pinterest.php:313
 msgid "Settings for Pin It Button"
 msgstr "Налаштування кнопки Pin It"
 
-#: bws-pinterest.php:308
+#: bws-pinterest.php:318
 msgid "Pin It Button place"
 msgstr "Розташування кнопки Pin It"
 
-#: bws-pinterest.php:311 bws-pinterest.php:396
+#: bws-pinterest.php:321 bws-pinterest.php:406
 msgid "Before the content"
 msgstr "До контенту"
 
-#: bws-pinterest.php:312 bws-pinterest.php:397
+#: bws-pinterest.php:322 bws-pinterest.php:407
 msgid "After the content"
 msgstr "Після контенту"
 
-#: bws-pinterest.php:313
+#: bws-pinterest.php:323
 msgid "On image hover"
 msgstr "При наведенні на зображення"
 
-#: bws-pinterest.php:319
+#: bws-pinterest.php:329
 msgid "Button image type"
 msgstr "Тип зображення кнопки"
 
-#: bws-pinterest.php:322
+#: bws-pinterest.php:332
 msgid "Default"
 msgstr "Стандартне"
 
-#: bws-pinterest.php:323
+#: bws-pinterest.php:333
 msgid "Custom"
 msgstr "Кастомне"
 
-#: bws-pinterest.php:329
+#: bws-pinterest.php:339
 #, php-format
 msgid "Max image size: %1s. Allowed file extensions: %2s"
 msgstr "Макс. розмір зображення: %1s. Дозволені типи зображення: %2s"
 
-#: bws-pinterest.php:336
+#: bws-pinterest.php:346
 msgid "Current custom image"
 msgstr "Поточне кастомне зображення"
 
-#: bws-pinterest.php:344
+#: bws-pinterest.php:354
 msgid "Button Shape"
 msgstr "Форма кнопки"
 
-#: bws-pinterest.php:347
+#: bws-pinterest.php:357
 msgid "Square"
 msgstr "Квадратна"
 
-#: bws-pinterest.php:348
+#: bws-pinterest.php:358
 msgid "Round"
 msgstr "Кругла"
 
-#: bws-pinterest.php:354
+#: bws-pinterest.php:364
 msgid "Button Size"
 msgstr "Розмір кнопки"
 
-#: bws-pinterest.php:357 bws-pinterest.php:707 bws-pinterest.php:863
+#: bws-pinterest.php:367 bws-pinterest.php:722 bws-pinterest.php:878
 msgid "Small"
 msgstr "Малий"
 
-#: bws-pinterest.php:358 bws-pinterest.php:709 bws-pinterest.php:865
+#: bws-pinterest.php:368 bws-pinterest.php:724 bws-pinterest.php:880
 msgid "Large"
 msgstr "Великий"
 
-#: bws-pinterest.php:364
+#: bws-pinterest.php:374
 msgid "Button Color"
 msgstr "Колір кнопки"
 
-#: bws-pinterest.php:367
+#: bws-pinterest.php:377
 msgid "Red"
 msgstr "Червоний"
 
-#: bws-pinterest.php:368
+#: bws-pinterest.php:378
 msgid "Gray"
 msgstr "Сірий"
 
-#: bws-pinterest.php:369
+#: bws-pinterest.php:379
 msgid "White"
 msgstr "Білий"
 
-#: bws-pinterest.php:371 bws-pinterest.php:383
+#: bws-pinterest.php:381 bws-pinterest.php:393
 msgid "Works only if the square image is chosen"
 msgstr "Тільки для квадратної кнопки."
 
-#: bws-pinterest.php:376
+#: bws-pinterest.php:386
 msgid "Pin Counts"
 msgstr "Кількість збережень"
 
-#: bws-pinterest.php:379
+#: bws-pinterest.php:389
 msgid "None"
 msgstr "Не показувати"
 
-#: bws-pinterest.php:380
+#: bws-pinterest.php:390
 msgid "Above the button"
 msgstr "Над кнопкою"
 
-#: bws-pinterest.php:381
+#: bws-pinterest.php:391
 msgid "Beside the button"
 msgstr "Поряд з кнопкою"
 
-#: bws-pinterest.php:389
+#: bws-pinterest.php:399
 msgid "Settings for Follow Button"
 msgstr "Налаштування кнопки Follow"
 
-#: bws-pinterest.php:393
+#: bws-pinterest.php:403
 msgid "Follow Button place"
 msgstr "Розташування кнопки Follow"
 
-#: bws-pinterest.php:403
+#: bws-pinterest.php:413
 msgid "Follow Button label"
 msgstr "Текст кнопки Follow"
 
-#: bws-pinterest.php:411 bws-pinterest.php:443
+#: bws-pinterest.php:421
 msgid "Save Changes"
 msgstr "Зберегти зміни"
 
-#: bws-pinterest.php:425
+#: bws-pinterest.php:437
 msgid ""
 "Please choose the necessary post types (or single pages) where Pinterest "
 "buttons will be displayed:"
@@ -229,145 +233,145 @@ msgstr ""
 "Будь ласка, оберіть необхідні типи постів (чи сторінок), де будуть "
 "відображатися Pinterest кнопки:"
 
-#: bws-pinterest.php:432
+#: bws-pinterest.php:444
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: bws-pinterest.php:438
+#: bws-pinterest.php:450
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: bws-pinterest.php:438
+#: bws-pinterest.php:450
 msgid "Example of site pages' tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: bws-pinterest.php:448
+#: bws-pinterest.php:455
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
 
-#: bws-pinterest.php:455
+#: bws-pinterest.php:462
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
 
-#: bws-pinterest.php:457
+#: bws-pinterest.php:464
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: bws-pinterest.php:614
+#: bws-pinterest.php:629
 msgid "Pinterest Widget"
 msgstr "Віджет Pinterest"
 
-#: bws-pinterest.php:617
+#: bws-pinterest.php:632
 msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
 msgstr "Відображення Pin, Board або Profile віджетів Pinterest"
 
-#: bws-pinterest.php:681
+#: bws-pinterest.php:696
 msgid "Title"
 msgstr "Назва"
 
-#: bws-pinterest.php:686
+#: bws-pinterest.php:701
 msgid "Type"
 msgstr "Тип"
 
-#: bws-pinterest.php:688 bws-pinterest.php:698 bws-pinterest.php:838
+#: bws-pinterest.php:703 bws-pinterest.php:713 bws-pinterest.php:853
 msgid "Pin Widget"
 msgstr "Pin Віджет"
 
-#: bws-pinterest.php:689 bws-pinterest.php:699 bws-pinterest.php:839
+#: bws-pinterest.php:704 bws-pinterest.php:714 bws-pinterest.php:854
 msgid "Board Widget"
 msgstr "Board Віджет"
 
-#: bws-pinterest.php:690 bws-pinterest.php:840
+#: bws-pinterest.php:705 bws-pinterest.php:855
 msgid "Profile Widget"
 msgstr "Profile Віджет"
 
-#: bws-pinterest.php:694 bws-pinterest.php:856
+#: bws-pinterest.php:709 bws-pinterest.php:871
 msgid "URL"
 msgstr "URL"
 
-#: bws-pinterest.php:697
+#: bws-pinterest.php:712
 msgid "Examples"
 msgstr "Приклади"
 
-#: bws-pinterest.php:705 bws-pinterest.php:861
+#: bws-pinterest.php:720 bws-pinterest.php:876
 msgid "Size"
 msgstr "Розмір"
 
-#: bws-pinterest.php:708 bws-pinterest.php:864
+#: bws-pinterest.php:723 bws-pinterest.php:879
 msgid "Medium"
 msgstr "Середній"
 
-#: bws-pinterest.php:713 bws-pinterest.php:870
+#: bws-pinterest.php:728 bws-pinterest.php:885
 msgid "Width"
 msgstr "Ширина"
 
-#: bws-pinterest.php:716 bws-pinterest.php:721
+#: bws-pinterest.php:731 bws-pinterest.php:736
 #, php-format
 msgid "Min width%1s. If emtpy width: auto"
 msgstr "Мін. ширина%1s. Якщо порожне -авто."
 
-#: bws-pinterest.php:723 bws-pinterest.php:871
+#: bws-pinterest.php:738 bws-pinterest.php:886
 msgid "Height"
 msgstr "Висота"
 
-#: bws-pinterest.php:726 bws-pinterest.php:730
+#: bws-pinterest.php:741 bws-pinterest.php:745
 msgid "Min height"
 msgstr "Мін. висота"
 
-#: bws-pinterest.php:731 bws-pinterest.php:872
+#: bws-pinterest.php:746 bws-pinterest.php:887
 msgid "Thumbnails width"
 msgstr "Ширина мініатюр"
 
-#: bws-pinterest.php:735 bws-pinterest.php:743
+#: bws-pinterest.php:750 bws-pinterest.php:758
 #, php-format
 msgid ""
 "Min width%1s. If the widget width field is empty, the thumbnail width will "
 "be auto."
 msgstr ""
-"Min width%1s. Якщо ширина віджета не задана, то ширина мініатюр буде задана "
-"автоматично."
+"Мін. ширина%1s. Якщо ширина віджета не задана, то ширина мініатюр буде "
+"задана автоматично."
 
-#: bws-pinterest.php:834
+#: bws-pinterest.php:849
 msgid "Shortcode Type"
 msgstr "Тип шорткоду"
 
-#: bws-pinterest.php:836
+#: bws-pinterest.php:851
 msgid "Follow Button"
 msgstr "Кнопка Follow"
 
-#: bws-pinterest.php:837
+#: bws-pinterest.php:852
 msgid "Pin It button"
 msgstr "Кнопка Pin It"
 
-#: bws-pinterest.php:844
+#: bws-pinterest.php:859
 msgid "Button label"
 msgstr "Текст кнопки"
 
-#: bws-pinterest.php:848
+#: bws-pinterest.php:863
 msgid "Save any image"
 msgstr "Зберігати будь-яке зображення"
 
-#: bws-pinterest.php:849
+#: bws-pinterest.php:864
 msgid "Save defined image"
 msgstr "Зберігати задане зображення"
 
-#: bws-pinterest.php:850
+#: bws-pinterest.php:865
 msgid "Pin image URL"
 msgstr "URL заданого зображення"
 
-#: bws-pinterest.php:851
+#: bws-pinterest.php:866
 msgid "Custom button image"
 msgstr "Кастомне зображення кнопки"
 
-#: bws-pinterest.php:852
+#: bws-pinterest.php:867
 msgid "Custom image URL"
 msgstr "URL кастомного зображення"
 
-#: bws-pinterest.php:997
+#: bws-pinterest.php:1012
 msgid "FAQ"
 msgstr "FAQ"
 
-#: bws-pinterest.php:998
+#: bws-pinterest.php:1013
 msgid "Support"
 msgstr "Підтримка"
 

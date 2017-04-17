@@ -1,0 +1,663 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: social-buttons-pack-google-one BWS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-13 12:49+0300\n"
+"PO-Revision-Date: 2017-01-13 12:50+0300\n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
+"Language-Team: Mik013\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../google-plus-one.php:34 ../google-plus-one.php:336
+msgid "Google +1 Settings"
+msgstr "Nastavení Google +1"
+
+#: ../google-plus-one.php:280
+msgid "Email is invalid"
+msgstr "Neplatný Email"
+
+#: ../google-plus-one.php:282
+msgid "Please, select the invitation type"
+msgstr "Prosím, vyberte typ pozvání"
+
+#: ../google-plus-one.php:284
+msgid "Invitation field can't be empty"
+msgstr "Pole pozvánky nemůže být prázdné"
+
+#: ../google-plus-one.php:290 ../google-plus-one.php:976
+msgid "Only one phone number can be added"
+msgstr "Můžete přidat pouze jedno telefonní číslo"
+
+#: ../google-plus-one.php:292 ../google-plus-one.php:977
+msgid "You can't add the invitation because the phone number is already added"
+msgstr "Nemůžete přidat pozvání, protože telefonní číslo je již přidáno"
+
+#: ../google-plus-one.php:294 ../google-plus-one.php:978
+msgid ""
+"You can't add the phone number because another invitation type is already "
+"added"
+msgstr ""
+"Nemůžete přidat telefonní číslo, protože je již přidán jiný typ pozvání"
+
+#: ../google-plus-one.php:299 ../google-plus-one.php:975
+msgid "Is already added"
+msgstr "Již byla přidán"
+
+#: ../google-plus-one.php:312
+msgid "Settings saved"
+msgstr "Nastavení uloženo"
+
+#: ../google-plus-one.php:323
+msgid "All plugin settings were restored."
+msgstr "Byla obnovena všechna nastavení pluginu."
+
+#: ../google-plus-one.php:338
+msgid "How to Use Step-by-step Instruction"
+msgstr "Instrukce jak používat krok-za-krokem"
+
+#: ../google-plus-one.php:341 ../google-plus-one.php:1493
+#: ../google-plus-one.php:1506
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../google-plus-one.php:343
+msgid "Extra settings"
+msgstr "Další nastavení"
+
+#: ../google-plus-one.php:345
+msgid "Custom Code"
+msgstr "Vlastní kód"
+
+#: ../google-plus-one.php:347
+msgid "Go PRO"
+msgstr "Přejít na PRO"
+
+#: ../google-plus-one.php:350
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."
+
+#: ../google-plus-one.php:363
+msgid ""
+"For the correct work of the button do not use it locally or on a free hosting"
+msgstr ""
+"Pro správnou funkci tlačítka jej nepoužívejte lokálně nebo na free hostingu"
+
+#: ../google-plus-one.php:366
+#, php-format
+msgid ""
+"If you'd like to add Google Buttons to your page or post, please use %s "
+"button"
+msgstr ""
+"Pokud chcete přidat Google tlačítka na vaši stránku nebo příspěvek, použijte "
+"tlačítko %s"
+
+#: ../google-plus-one.php:371
+#, php-format
+msgid ""
+"You can add Google Buttons to your page or post by clicking on %s button in "
+"the content edit block using the Visual mode. If the button isn't displayed, "
+"please use the shortcode %s to show the Google +1 Button, or use parameter "
+"'display', e.g. %s to display these buttons"
+msgstr ""
+"Můžete přidat Google tlačítka na vaši stránku nebo příspěvek kliknutím na "
+"tlačítko %s v bloku úprav obsahu pomocí Visual režimu. Pokud tlačítko není "
+"zobrazeno, použijte zkrácený kód  %s pro zobrazení tlačítka Google +1, "
+"použijte parametr \"display\", např.: %s pro zobrazení těchto tlačítek"
+
+#: ../google-plus-one.php:384
+msgid "Display Google Buttons"
+msgstr "Zobrazit tlačítka Google"
+
+#: ../google-plus-one.php:389 ../google-plus-one.php:1410
+msgid "Google +1"
+msgstr "Google +1"
+
+#: ../google-plus-one.php:394 ../google-plus-one.php:1415
+msgid "Share"
+msgstr "Sdílet"
+
+#: ../google-plus-one.php:399 ../google-plus-one.php:1420
+msgid "Follow"
+msgstr "Sledovat"
+
+#: ../google-plus-one.php:403 ../google-plus-one.php:420
+#: ../google-plus-one.php:1423 ../google-plus-one.php:1440
+msgid "To see this button, please"
+msgstr "Pro zobrazení tohoto tlačítka, prosím"
+
+#: ../google-plus-one.php:404 ../google-plus-one.php:421
+#: ../google-plus-one.php:1424 ../google-plus-one.php:1441
+msgid "enter"
+msgstr "vložte"
+
+#: ../google-plus-one.php:405 ../google-plus-one.php:422
+#: ../google-plus-one.php:1425 ../google-plus-one.php:1442
+msgid "the Google+ ID"
+msgstr "Google+ ID"
+
+#: ../google-plus-one.php:411 ../google-plus-one.php:1432
+msgid "Hangout"
+msgstr "Hangout"
+
+#: ../google-plus-one.php:416 ../google-plus-one.php:1437
+msgid "Badge"
+msgstr "Badge"
+
+#: ../google-plus-one.php:429
+msgid "Language"
+msgstr "Jazyk"
+
+#: ../google-plus-one.php:441
+msgid "Select the language to display information on the button"
+msgstr "Zvolte jazyk informačních popisků na tlačítku"
+
+#: ../google-plus-one.php:447 ../google-plus-one.php:450
+#: ../google-plus-one.php:457
+msgid "Use the current site language"
+msgstr "Použít aktuální jazyk webu"
+
+#: ../google-plus-one.php:447 ../google-plus-one.php:451
+#: ../google-plus-one.php:458
+msgid "Using"
+msgstr "S použitím"
+
+#: ../google-plus-one.php:452
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: ../google-plus-one.php:459
+msgid "Download"
+msgstr "Stáhnout"
+
+#: ../google-plus-one.php:467
+msgid "Buttons Position"
+msgstr "Umístění tlačítek"
+
+#: ../google-plus-one.php:470
+msgid "Before"
+msgstr "Před"
+
+#: ../google-plus-one.php:471
+msgid "After"
+msgstr "Po"
+
+#: ../google-plus-one.php:472
+msgid "Before And After"
+msgstr "Před a Po"
+
+#: ../google-plus-one.php:473
+msgid "Only Shortcode"
+msgstr "Pouze zkrácený kód"
+
+#: ../google-plus-one.php:475
+msgid "Please select location for the buttons on the page"
+msgstr "Vyberte prosím umístění tlačítek na stránce"
+
+#: ../google-plus-one.php:479
+msgid "Show buttons"
+msgstr "Zobrazit tlačítka"
+
+#: ../google-plus-one.php:484
+msgid "Show in posts"
+msgstr "Zobrazit v příspěvcích"
+
+#: ../google-plus-one.php:490
+msgid "Show in pages"
+msgstr "Zobrazit na stánkách"
+
+#: ../google-plus-one.php:496
+msgid "Show on the homepage"
+msgstr "Zobrazit na domovské stránce"
+
+#: ../google-plus-one.php:500
+msgid "Please select the page on which you want to see the buttons"
+msgstr "Vyberte prosím, kde se mají tlačítka zobrazovat"
+
+#: ../google-plus-one.php:505
+msgid "Settings for Google +1 Button"
+msgstr "Nastavení tlačítka Google +1"
+
+#: ../google-plus-one.php:514 ../google-plus-one.php:882
+#: ../google-plus-one.php:904
+msgid "Close"
+msgstr "Zavřít"
+
+#: ../google-plus-one.php:518
+msgid "\"+1\" for an entire site on every page"
+msgstr "Vložit \"+1\" na každou stránku na celém webu"
+
+#: ../google-plus-one.php:521
+msgid ""
+"Notice: This option does not create an extra button. This option merely "
+"allows your users to +1 the entire website when this option is enabled, or a "
+"single post when this option is disabled, when clicking the regular \"+1\" "
+"button."
+msgstr ""
+"Upozornění: Tato volba nevytváří další tlačítko. Tato možnost pouze umožňuje "
+"uživatelům dávat +1 na celém vašem webu, je-li tato možnost povolena, nebo "
+"na konkrétní příspěvek, pokud je tato volba vypnutá, při kliknutí na "
+"klasické tlačítko \"+1\"."
+
+#: ../google-plus-one.php:526 ../google-plus-one.php:943
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Pokud upgradujete na verzi Pro budou všechna vaše nastavení  uložena."
+
+#: ../google-plus-one.php:533 ../google-plus-one.php:897
+#: ../google-plus-one.php:910 ../google-plus-one.php:949
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Odemkněte prémiové možnosti upgradem na Pro verzi"
+
+#: ../google-plus-one.php:535 ../google-plus-one.php:899
+#: ../google-plus-one.php:912 ../google-plus-one.php:951
+msgid "Learn More"
+msgstr "Dozvědět se více"
+
+#: ../google-plus-one.php:545 ../google-plus-one.php:594
+#: ../google-plus-one.php:637 ../google-plus-one.php:677
+msgid "Size"
+msgstr "Velikost"
+
+#: ../google-plus-one.php:548 ../google-plus-one.php:680
+msgctxt "for:size"
+msgid "Standard"
+msgstr "Standardní"
+
+#: ../google-plus-one.php:549 ../google-plus-one.php:597
+#: ../google-plus-one.php:640
+msgid "Small"
+msgstr "Malé"
+
+#: ../google-plus-one.php:550 ../google-plus-one.php:598
+#: ../google-plus-one.php:641
+msgid "Medium"
+msgstr "Střední"
+
+#: ../google-plus-one.php:551
+msgid "Tall"
+msgstr "Vysoké"
+
+#: ../google-plus-one.php:556 ../google-plus-one.php:580
+#: ../google-plus-one.php:647
+msgid "Annotation"
+msgstr "Vysvětlivka"
+
+#: ../google-plus-one.php:559 ../google-plus-one.php:583
+msgid "Inline"
+msgstr "V řádku"
+
+#: ../google-plus-one.php:560 ../google-plus-one.php:584
+#: ../google-plus-one.php:650
+msgid "Bubble"
+msgstr "Bublina"
+
+#: ../google-plus-one.php:561 ../google-plus-one.php:586
+#: ../google-plus-one.php:652
+msgid "None"
+msgstr "Žádná"
+
+#: ../google-plus-one.php:564
+msgid "Display counters showing how many times your article has been liked"
+msgstr "Zobrazit počítadlo ukazující, kolikrát byl článek olajkován"
+
+#: ../google-plus-one.php:568 ../google-plus-one.php:604
+msgid "Annotation Type"
+msgstr "Typ vysvětlivky"
+
+#: ../google-plus-one.php:571 ../google-plus-one.php:607
+msgctxt "for:annotation type"
+msgid "Standard"
+msgstr "Standardní"
+
+#: ../google-plus-one.php:572 ../google-plus-one.php:608
+msgid "Short"
+msgstr "Krátká"
+
+#: ../google-plus-one.php:577
+msgid "Settings for Share Button"
+msgstr "Nastavení tlačítka Sdílet"
+
+#: ../google-plus-one.php:585 ../google-plus-one.php:651
+msgid "Vertical-bubble"
+msgstr "Vertikální bublina"
+
+#: ../google-plus-one.php:589
+msgid "Display the number of users who have shared the page"
+msgstr "Zobrazit počet uživatelů, kteří stránku vysdíleli"
+
+#: ../google-plus-one.php:599 ../google-plus-one.php:642
+msgid "Large"
+msgstr "Velké"
+
+#: ../google-plus-one.php:613
+msgid "Settings for Follow Button"
+msgstr "Nastavení tlačítka Sledovat"
+
+#: ../google-plus-one.php:616 ../google-plus-one.php:798
+#: ../google-plus-one.php:989 ../google-plus-one.php:1198
+msgid "Google+ ID"
+msgstr "Google+ ID"
+
+#: ../google-plus-one.php:620 ../google-plus-one.php:799
+#: ../google-plus-one.php:990 ../google-plus-one.php:1200
+msgid "Enter the Google+ ID, e.g."
+msgstr "Vložte Google+ ID, např.:"
+
+#: ../google-plus-one.php:620 ../google-plus-one.php:753
+#: ../google-plus-one.php:799 ../google-plus-one.php:804
+#: ../google-plus-one.php:809 ../google-plus-one.php:986
+#: ../google-plus-one.php:990 ../google-plus-one.php:992
+#: ../google-plus-one.php:994
+msgid "or"
+msgstr "nebo"
+
+#: ../google-plus-one.php:625
+msgid "Relationship"
+msgstr "Vztah"
+
+#: ../google-plus-one.php:628
+msgid "Author"
+msgstr "Autor"
+
+#: ../google-plus-one.php:629
+msgid "Publisher"
+msgstr "Vydavatel"
+
+#: ../google-plus-one.php:632
+msgid ""
+"Describes your relationship to content of the page, where the button is "
+"embedded"
+msgstr "Popisuje vztah k obsahu stránky, kde je tlačítko vloženo"
+
+#: ../google-plus-one.php:655
+msgid "Display the number of users who are following this page or person"
+msgstr "Zobrazit počet uživatelů, kteří sledují tuto stránku, nebo profil"
+
+#: ../google-plus-one.php:660
+msgid "Settings for Hangout Button"
+msgstr "Nastavení tlačítka Hangout"
+
+#: ../google-plus-one.php:663
+msgid "Topic"
+msgstr "Téma"
+
+#: ../google-plus-one.php:667
+msgid "Use the title of the page"
+msgstr "Použít název stránky"
+
+#: ../google-plus-one.php:681
+msgid "Narrow"
+msgstr "Úzká"
+
+#: ../google-plus-one.php:682
+msgid "Wide"
+msgstr "Široká"
+
+#: ../google-plus-one.php:687 ../google-plus-one.php:785
+#: ../google-plus-one.php:1203
+msgid "Type"
+msgstr "Typ"
+
+#: ../google-plus-one.php:690
+msgid "Normal"
+msgstr "Normální"
+
+#: ../google-plus-one.php:691
+msgid "On air"
+msgstr "Naživo"
+
+#: ../google-plus-one.php:692
+msgid "Party"
+msgstr "Skupinový"
+
+#: ../google-plus-one.php:693
+msgid "Moderated"
+msgstr "Moderovaný"
+
+#: ../google-plus-one.php:698
+msgid "Invitation Type"
+msgstr "Typ pozvánky"
+
+#: ../google-plus-one.php:701
+msgid "Select The Type"
+msgstr "Vyberte typ"
+
+#: ../google-plus-one.php:702
+msgid "Google+ Profile ID"
+msgstr "Google+ ID profilu"
+
+#: ../google-plus-one.php:703
+msgid "Google+ Circle ID"
+msgstr "Google+ ID kruhu"
+
+#: ../google-plus-one.php:704
+msgid "Email"
+msgstr "Email"
+
+#: ../google-plus-one.php:705
+msgid "Phone Number"
+msgstr "Telefonní číslo"
+
+#: ../google-plus-one.php:742
+msgid "Google+ ID, Phone Number or Email"
+msgstr "Google+ ID, telefonní číslo nebo Email"
+
+#: ../google-plus-one.php:748 ../google-plus-one.php:774
+msgid "Add"
+msgstr "Přidat"
+
+#: ../google-plus-one.php:750
+msgid "Delete Selected"
+msgstr "Smazat vybrané"
+
+#: ../google-plus-one.php:753
+msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
+msgstr ""
+"Pokud je pozvánka typu \"Google+ ID profilu\", mělo by to vypadat takto"
+
+#: ../google-plus-one.php:757
+msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
+msgstr "Pokud je pozvánka typu \"Google+ ID kruhu\", mělo by to vypadat takto"
+
+#: ../google-plus-one.php:761
+msgid "If Invitation Type is 'Email', it should look like"
+msgstr "Pokud je pozvánka typu \"Email\", mělo by to vypadat takto"
+
+#: ../google-plus-one.php:765
+msgid "If Invitation Type is 'Phone Number', it should look like"
+msgstr "Pokud je pozvánka typu \"Telefonní číslo\", mělo by to vypadat takto"
+
+#: ../google-plus-one.php:782
+msgid "Settings for Badge"
+msgstr "Nastavení pro Badge"
+
+#: ../google-plus-one.php:788 ../google-plus-one.php:1205
+msgid "Person"
+msgstr "Osoba"
+
+#: ../google-plus-one.php:789 ../google-plus-one.php:1206
+msgid "Page"
+msgstr "Stránka"
+
+#: ../google-plus-one.php:790 ../google-plus-one.php:1207
+msgid "Community"
+msgstr "Komunita"
+
+#: ../google-plus-one.php:800 ../google-plus-one.php:995
+msgid "Display the user's tag line"
+msgstr "Zobrazit řádek uživatelova motta"
+
+#: ../google-plus-one.php:803 ../google-plus-one.php:991
+msgid "Google+ Page ID"
+msgstr "Google+ ID stránky"
+
+#: ../google-plus-one.php:804 ../google-plus-one.php:992
+msgid "Enter the Google+ Page ID, e.g."
+msgstr "Vložte Google+ ID stránky, např.:"
+
+#: ../google-plus-one.php:805 ../google-plus-one.php:996
+msgid "Display the company tag line"
+msgstr "Zobrazit řádek firemního motta"
+
+#: ../google-plus-one.php:808 ../google-plus-one.php:993
+msgid "Google+ Community ID"
+msgstr "Google+ ID komunity"
+
+#: ../google-plus-one.php:809 ../google-plus-one.php:994
+msgid "Enter the Google+ Community ID, e.g."
+msgstr "Vložte Google+ ID  komunity, např.:"
+
+#: ../google-plus-one.php:810 ../google-plus-one.php:997
+msgid "Display the community tag line"
+msgstr "Zobrazit řádek komunitního motta"
+
+#: ../google-plus-one.php:823 ../google-plus-one.php:1211
+msgid "Layout"
+msgstr "Vzhled"
+
+#: ../google-plus-one.php:826 ../google-plus-one.php:1213
+msgid "Portrait"
+msgstr "Na výšku"
+
+#: ../google-plus-one.php:827 ../google-plus-one.php:1214
+msgid "Landscape"
+msgstr "Na šířku"
+
+#: ../google-plus-one.php:830
+msgid "Sets the orientation of the badge"
+msgstr "Nastavuje orientaci badge"
+
+#: ../google-plus-one.php:835 ../google-plus-one.php:1219
+msgid "Show Cover Photo"
+msgstr "Zobrazit profilový obrázek"
+
+#: ../google-plus-one.php:843 ../google-plus-one.php:1223
+msgid "Show Tag Line"
+msgstr "Zobrazit řádek motta"
+
+#: ../google-plus-one.php:852 ../google-plus-one.php:1228
+msgid "Show Owners"
+msgstr "Zobrazit vlastníky"
+
+#: ../google-plus-one.php:856
+msgid "Display a list of community owners"
+msgstr "Zobrazit seznam komunitních vlastníků"
+
+#: ../google-plus-one.php:861
+msgid "Theme"
+msgstr "Šablona"
+
+#: ../google-plus-one.php:864
+msgid "Light"
+msgstr "Světlá"
+
+#: ../google-plus-one.php:865
+msgid "Dark"
+msgstr "Tmavá"
+
+#: ../google-plus-one.php:870 ../google-plus-one.php:1231
+msgid "Width"
+msgstr "Šířka"
+
+#: ../google-plus-one.php:873 ../google-plus-one.php:1233
+msgid "px"
+msgstr "px"
+
+#: ../google-plus-one.php:887 ../google-plus-one.php:906
+msgid "Preview"
+msgstr "Náhled"
+
+#: ../google-plus-one.php:919
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: ../google-plus-one.php:936
+msgid ""
+"Please choose the necessary post types (or single pages) where Google button "
+"will be displayed:"
+msgstr ""
+"Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
+"tlačítka Google +1 zobrazovat:"
+
+#: ../google-plus-one.php:939
+msgid "Show URL for pages"
+msgstr "Zobrazit URL pro stránky"
+
+#: ../google-plus-one.php:941
+msgid "Example of the site's pages tree"
+msgstr "Příklad stromu stránek"
+
+#: ../google-plus-one.php:979
+msgid "This field can't be empty"
+msgstr "Toto pole nemůže být prázdné"
+
+#: ../google-plus-one.php:980
+msgid "Please, enter the valid Email"
+msgstr "Vložte platnou e-mailovou adresu"
+
+#: ../google-plus-one.php:981
+msgid "Email of Invited Person"
+msgstr "Email pozvané osoby"
+
+#: ../google-plus-one.php:982
+msgid "Please, enter the Email of invited person, e.g."
+msgstr "Vložte Email pozvaného, např.:"
+
+#: ../google-plus-one.php:983
+msgid "Phone Number of Invited Person"
+msgstr "Telefonní číslo pozvaného"
+
+#: ../google-plus-one.php:984
+msgid "Please, enter the phone number of invited person, e.g."
+msgstr "Vložte telefonní číslo pozvaného, např.:"
+
+#: ../google-plus-one.php:985
+msgid "Google+ Profile ID of Invited Person"
+msgstr "Google+ ID profilu pozvaného"
+
+#: ../google-plus-one.php:986
+msgid "Please, enter the Google+ Profile ID of invited person, e.g."
+msgstr "Vložte Google+ ID profilu pozvaného, např.:"
+
+#: ../google-plus-one.php:987
+msgid "Google+ Circle ID for Invitation"
+msgstr "Google+ ID kruhu pozvaného"
+
+#: ../google-plus-one.php:988
+msgid "Please, enter the Google+ Circle ID for invitation, e.g."
+msgstr "Vložte Google+ ID kruhu pro pozvaného, např.:"
+
+#: ../google-plus-one.php:1124
+msgid "Google+ Badge Widget"
+msgstr "Widget Google+ Badge"
+
+#: ../google-plus-one.php:1124
+msgid "Show Google Badge on your site"
+msgstr "Zobrazit Google Badge na vašem webu"
+
+#: ../google-plus-one.php:1194
+msgid "Title"
+msgstr "Název"
+
+#: ../google-plus-one.php:1406
+msgid "Add Google Buttons to your page or post"
+msgstr "Přidat  Google tlačítka na vaši stránku nebo příspěvek"
+
+#: ../google-plus-one.php:1507
+msgid "FAQ"
+msgstr "Často kladené otázky (FAQ)"
+
+#: ../google-plus-one.php:1508
+msgid "Support"
+msgstr "Podpora"
+
+#~ msgid "Onair"
+#~ msgstr "Naživo"

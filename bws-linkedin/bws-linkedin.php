@@ -126,16 +126,15 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 			<?php ?>
 					<div class="lnkdn_settings_block">
 						<br />
-						<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
-							printf( 
+						<div><?php printf( 
 								__( "If you'd like to add LinkedIn Buttons to your page or post, please use %s button", 'bws-linkedin' ), 
-								'<span class="bws_code"><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt=""/></span>' 
+								'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' 
 							); ?>
 							<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 								<div class="bws_hidden_help_text" style="min-width:200px;">
 									<?php printf(
 										__( "You can add LinkedIn Buttons to your page or post by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s to show LinkedIn Buttons, or use parameter 'display' to show one of them or both, e.g. %s", 'bws-linkedin' ), 
-										'<code><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt="" /></code>',
+										'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 										'<code>[bws_linkedin]</code>',
 										'<br><code>[bws_linkedin display="share,follow"]</code>'
 									); ?>
@@ -194,7 +193,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 															<input disabled="disabled" type="checkbox" name="lnkdn_use_multilanguage_locale" value="1" />
 															<?php _e( 'Use the current site language', 'bws-linkedin' ); ?> 
 															<span class="bws_info">(<?php _e( 'Using', 'bws-linkedin' ); ?> Multilanguage by BestWebSoft) 
-																<a href="http://bestwebsoft.com/products/multilanguage/?k=293cebedcff853dd94d5b373161d4694&pn=588&v=<?php echo $lnkdn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'bws-linkedin' ); ?> Multilanguage</a>
+																<a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=293cebedcff853dd94d5b373161d4694&pn=588&v=<?php echo $lnkdn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'bws-linkedin' ); ?> Multilanguage</a>
 															</span>
 														<?php } ?>
 													</label>
@@ -309,9 +308,10 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 
 if ( ! function_exists( 'lnkdn_admin_head' ) ) {
 	function lnkdn_admin_head() {
+		global $hook_suffix;
 		if ( ! is_admin() ) {
 			wp_enqueue_style( 'lnkdn_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
-		} elseif ( ( isset( $_GET['page'] ) && ( 'linkedin.php' == $_GET['page'] || 'social-buttons.php' == $_GET['page'] ) ) || admin_url( 'widgets.php' ) ) {
+		} elseif ( ( isset( $_GET['page'] ) && ( 'linkedin.php' == $_GET['page'] || 'social-buttons.php' == $_GET['page'] ) ) || 'widgets.php' == $hook_suffix ) {
 			wp_enqueue_style( 'lnkdn_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 			/* Localize script */
 			wp_enqueue_script( 'lnkdn_script', plugins_url( 'js/script.js' , __FILE__ ), array( 'jquery' ) );
@@ -374,9 +374,15 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_js' ) ) {
-	function lnkdn_js() {
-		global $lnkdn_options, $lnkdn_lang_codes, $lnkdn_shortcode_add_script;
-		if ( 1 == $lnkdn_options['share'] || 1 == $lnkdn_options['follow'] || isset( $lnkdn_shortcode_add_script ) ) {
+	function lnkdn_js( $extension = '' ) {
+		global $lnkdn_options, $lnkdn_lang_codes, $lnkdn_shortcode_add_script, $lnkdn_js_added;
+
+		if ( isset( $lnkdn_js_added ) )
+			return;
+
+		if ( 1 == $lnkdn_options['share'] || 1 == $lnkdn_options['follow'] 
+			|| isset( $lnkdn_shortcode_add_script )
+			|| defined( 'BWS_ENQUEUE_ALL_SCRIPTS' ) ) {
 			if ( 1 == $lnkdn_options['use_multilanguage_locale'] && isset( $_SESSION['language'] ) ) {
 				if ( array_key_exists( $_SESSION['language'], $lnkdn_lang_codes ) ) {
 					$lnkdn_locale = $_SESSION['language'];
@@ -389,8 +395,16 @@ if ( ! function_exists( 'lnkdn_js' ) ) {
 			if ( empty( $lnkdn_locale ) ) {
 				$lnkdn_locale = $lnkdn_options['lang'];
 			} ?>
-			<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: <?php echo $lnkdn_locale; ?></script>
-		<?php }
+			<script src="//platform.linkedin.com/in.js" type="text/javascript"> <?php echo 'lang: ' . $lnkdn_locale . "\n" . $extension; ?></script>
+			<?php $lnkdn_js_added = true;
+		}
+	}
+}
+
+if ( ! function_exists( 'lnkdn_pagination_callback' ) ) {
+	function lnkdn_pagination_callback( $content ) {
+		$content .= "if ( typeof( IN ) != 'undefined' ) { IN.parse(); }";
+		return $content;
 	}
 }
 
@@ -525,8 +539,8 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 				</script>
 			<?php }
 
-			if ( 'alumni_tool' == $select_widget ) { ?>
-				<script src="//www.linkedin.com/edu/alumni-facet-extension-js"></script>
+			if ( 'alumni_tool' == $select_widget ) { 
+				lnkdn_js( 'extensions: AlumniFacet@//www.linkedin.com/edu/alumni-facet-extension-js' ); ?>
 				<script type="IN/AlumniFacet" data-linkedin-schoolid="<?php echo $school_id; ?>"></script>
 			<?php }
 			echo $args['after_widget'];
@@ -679,6 +693,7 @@ add_action( 'plugins_loaded', 'lnkdn_plugins_loaded' );
 add_action( 'wp_footer', 'lnkdn_js' );
 add_action( 'admin_enqueue_scripts', 'lnkdn_admin_head' );
 add_action( 'wp_enqueue_scripts', 'lnkdn_admin_head' );
+add_filter( 'pgntn_callback', 'lnkdn_pagination_callback' );
 /* Adding plugin buttons */
 add_shortcode( 'bws_linkedin', 'lnkdn_shortcode' );
 add_filter( 'widget_text', 'do_shortcode' );

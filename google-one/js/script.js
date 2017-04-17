@@ -69,10 +69,8 @@
 				var min = parseInt( $( this ).attr( 'min' ) );
 				var max = parseInt( $( this ).attr( 'max' ) );
 				if( val < min ) {
-					console.log('min ' + min);
 					$( this ).val( min );
 				} else if( val > max ) {
-					console.log('max ' + max);
 					$( this ).val( max );
 				}
 			} );

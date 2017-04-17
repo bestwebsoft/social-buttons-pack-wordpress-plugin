@@ -409,11 +409,11 @@ msgstr "Destek"
 
 #~ msgid ""
 #~ "Something went wrong. Try again later. If the error will appear again, "
-#~ "please, contact us <a href=http://support.bestwebsoft.com>BestWebSoft</"
+#~ "please, contact us <a href=https://support.bestwebsoft.com>BestWebSoft</"
 #~ "a>. We are sorry for inconvenience."
 #~ msgstr ""
 #~ "Bir şeyler ters gitti, lütfen daha sonra tekrar deneyin. Eğer hata tekrar "
-#~ "görünürse, lütfen <a href=http://support.bestwebsoft.com>BestWebSoft</a> "
+#~ "görünürse, lütfen <a href=https://support.bestwebsoft.com>BestWebSoft</a> "
 #~ "üzerinden bizimle iletişime geçin. Yaşadığınız rahatsızlık için üzgünüz."
 
 #~ msgid "This license key is bind to another site"

@@ -199,15 +199,14 @@ if ( ! function_exists( 'pntrst_settings_page' ) ) {
 			?>
 					<br />
 					<div>
-						<?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
-						printf(
+						<?php printf(
 							__( 'If you would like to add Pinterest buttons or widgets to your page or post, please use %s button', 'bws-pinterest' ),
-							'<span class="bws_code"><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt=""/></span>' ); ?>
+							'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' ); ?>
 						<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 							<div class="bws_hidden_help_text" style="min-width: 200px;">
 								<?php printf(
 									__( "You can add buttons or widgets to your content by clicking on %1s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %2s for Pin It button, %3s for Follow button or %4s for Pinteresr widget", 'bws-pinterest' ),
-										'<code><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt="" /></code>',
+										'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 										'<span class="bws_code">[bws_pinterest_pin_it]</span>',
 										'<span class="bws_code">[bws_pinterest_follow]</span>',
 										'<span class="bws_code">[bws_pinterest_widget]</span>'
@@ -431,6 +430,13 @@ if ( ! function_exists( 'pntrst_frontend' ) ) {
 			$after = apply_filters( 'pntrst_button_in_the_content', $after );
 		}
 		return $before . $content . $after;
+	}
+}
+
+if ( ! function_exists( 'pntrst_pagination_callback' ) ) {
+	function pntrst_pagination_callback( $content ) {
+		$content .= "if ( typeof( PinUtils ) != 'undefined' ) { PinUtils.build(); }";
+		return $content;
 	}
 }
 
@@ -885,6 +891,8 @@ add_action( 'wp_head', 'pntrst_pinit_js_config' );
 add_action( 'wp_footer', 'pntrst_custom_hover_img_script' );
 /* show buttons on frontend */
 add_filter( 'the_content', 'pntrst_frontend' );
+add_filter( 'pgntn_callback', 'pntrst_pagination_callback' );
+
 /* add shortcode for Pin It button */
 add_shortcode( 'bws_pinterest_pin_it', 'pntrst_pin_it_shortcode' );
 /* add shortcode for Pin Follow button */

@@ -224,15 +224,14 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 			bws_show_settings_notice();
 			?>
 					<br>
-					<div><?php $icon_shortcode = ( "facebook-button-plugin.php" == $_GET['page'] ) ? plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) : plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' );
-					printf( 
+					<div><?php printf( 
 						__( "If you would like to add Facebook buttons to your page or post, please use %s button", 'facebook-button-plugin' ), 
-						'<span class="bws_code"><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt=""/></span>' ); ?> 
+						'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' ); ?> 
 						<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 							<div class="bws_hidden_help_text" style="min-width: 180px;">
 								<?php printf( 
 									__( "You can add Facebook buttons to your page or post by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s", 'facebook-button-plugin' ), 
-									'<code><img style="vertical-align: sub;" src="' . $icon_shortcode . '" alt="" /></code>',
+									'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 									'<code>[fb_button]</code>'
 								); ?>
 							</div>
@@ -288,7 +287,7 @@ if ( ! function_exists( 'fcbkbttn_settings_page' ) ) {
 												} else { ?>
 													<input disabled="disabled" type="checkbox" name="fcbkbttn_use_multilanguage_locale" value="1" />
 													<?php _e( 'Use the current site language', 'facebook-button-plugin' ); ?>
-													<span class="bws_info">(<?php _e( 'Using', 'facebook-button-plugin' ); ?> Multilanguage by BestWebSoft) <a href="http://bestwebsoft.com/products/multilanguage/?k=196fb3bb74b6e8b1e08f92cddfd54313&pn=78&v=<?php echo $fcbkbttn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'facebook-button-plugin' ); ?> Multilanguage</a></span>
+													<span class="bws_info">(<?php _e( 'Using', 'facebook-button-plugin' ); ?> Multilanguage by BestWebSoft) <a href="https://bestwebsoft.com/products/multilanguage/?k=196fb3bb74b6e8b1e08f92cddfd54313&pn=78&v=<?php echo $fcbkbttn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'facebook-button-plugin' ); ?> Multilanguage</a></span>
 												<?php } ?>
 											</label>
 										</fieldset>

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: google-one\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-28 15:28+0300\n"
-"PO-Revision-Date: 2016-06-28 15:28+0300\n"
+"POT-Creation-Date: 2017-01-12 17:54+0300\n"
+"PO-Revision-Date: 2017-01-12 17:54+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,88 +16,88 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:34 google-plus-one.php:358
+#: google-plus-one.php:34 google-plus-one.php:336
 msgid "Google +1 Settings"
 msgstr "Google +1 Beállítások"
 
-#: google-plus-one.php:302
+#: google-plus-one.php:280
 msgid "Email is invalid"
 msgstr ""
 
-#: google-plus-one.php:304
+#: google-plus-one.php:282
 #, fuzzy
 msgid "Please, select the invitation type"
 msgstr "Kérjük válassza ki, hogy az oldalon hol jelenjen meg a gomb"
 
-#: google-plus-one.php:306
+#: google-plus-one.php:284
 msgid "Invitation field can't be empty"
 msgstr ""
 
-#: google-plus-one.php:312 google-plus-one.php:997
+#: google-plus-one.php:290 google-plus-one.php:976
 msgid "Only one phone number can be added"
 msgstr ""
 
-#: google-plus-one.php:314 google-plus-one.php:998
+#: google-plus-one.php:292 google-plus-one.php:977
 msgid "You can't add the invitation because the phone number is already added"
 msgstr ""
 
-#: google-plus-one.php:316 google-plus-one.php:999
+#: google-plus-one.php:294 google-plus-one.php:978
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added"
 msgstr ""
 
-#: google-plus-one.php:321 google-plus-one.php:996
+#: google-plus-one.php:299 google-plus-one.php:975
 msgid "Is already added"
 msgstr ""
 
-#: google-plus-one.php:334
+#: google-plus-one.php:312
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: google-plus-one.php:345
+#: google-plus-one.php:323
 msgid "All plugin settings were restored."
 msgstr "Minden plugin beállítás visszaállítva."
 
-#: google-plus-one.php:360
+#: google-plus-one.php:338
 msgid "How to Use Step-by-step Instruction"
 msgstr ""
 
-#: google-plus-one.php:363 google-plus-one.php:1461 google-plus-one.php:1474
+#: google-plus-one.php:341 google-plus-one.php:1493 google-plus-one.php:1506
 msgid "Settings"
 msgstr "Beállítások"
 
-#: google-plus-one.php:364
+#: google-plus-one.php:343
 msgid "Extra settings"
 msgstr "Extra beállítások"
 
-#: google-plus-one.php:365
+#: google-plus-one.php:345
 msgid "Custom Code"
 msgstr ""
 
-#: google-plus-one.php:366
+#: google-plus-one.php:347
 msgid "Go PRO"
 msgstr "Mehet a PRO"
 
-#: google-plus-one.php:368
+#: google-plus-one.php:350
 msgid "Please, enable JavaScript in Your browser."
 msgstr ""
 
-#: google-plus-one.php:381
+#: google-plus-one.php:363
 msgid ""
 "For the correct work of the button do not use it locally or on a free hosting"
 msgstr ""
 "A gomb megfelelő működéséhez ne használja helyileg vagy egy ingyenes "
 "tárhelyen"
 
-#: google-plus-one.php:384
+#: google-plus-one.php:366
 #, php-format
 msgid ""
 "If you'd like to add Google Buttons to your page or post, please use %s "
 "button"
 msgstr ""
 
-#: google-plus-one.php:389
+#: google-plus-one.php:371
 #, php-format
 msgid ""
 "You can add Google Buttons to your page or post by clicking on %s button in "
@@ -106,130 +106,133 @@ msgid ""
 "'display', e.g. %s to display these buttons"
 msgstr ""
 
-#: google-plus-one.php:402
+#: google-plus-one.php:384
 #, fuzzy
 msgid "Display Google Buttons"
 msgstr "Google +1 gomb engedélyezése"
 
-#: google-plus-one.php:407 google-plus-one.php:1392
+#: google-plus-one.php:389 google-plus-one.php:1410
 #, fuzzy
 msgid "Google +1"
 msgstr "Google +1 Beállítások"
 
-#: google-plus-one.php:412 google-plus-one.php:1397
+#: google-plus-one.php:394 google-plus-one.php:1415
 msgid "Share"
 msgstr ""
 
-#: google-plus-one.php:417 google-plus-one.php:1402
+#: google-plus-one.php:399 google-plus-one.php:1420
 msgid "Follow"
 msgstr ""
 
-#: google-plus-one.php:421 google-plus-one.php:438
+#: google-plus-one.php:403 google-plus-one.php:420 google-plus-one.php:1423
+#: google-plus-one.php:1440
 msgid "To see this button, please"
 msgstr ""
 
-#: google-plus-one.php:422 google-plus-one.php:439
+#: google-plus-one.php:404 google-plus-one.php:421 google-plus-one.php:1424
+#: google-plus-one.php:1441
 msgid "enter"
 msgstr ""
 
-#: google-plus-one.php:423 google-plus-one.php:440
+#: google-plus-one.php:405 google-plus-one.php:422 google-plus-one.php:1425
+#: google-plus-one.php:1442
 msgid "the Google+ ID"
 msgstr ""
 
-#: google-plus-one.php:429 google-plus-one.php:1407
+#: google-plus-one.php:411 google-plus-one.php:1432
 msgid "Hangout"
 msgstr ""
 
-#: google-plus-one.php:434 google-plus-one.php:1412
+#: google-plus-one.php:416 google-plus-one.php:1437
 msgid "Badge"
 msgstr ""
 
-#: google-plus-one.php:447
+#: google-plus-one.php:429
 msgid "Language"
 msgstr "Nyelv"
 
-#: google-plus-one.php:459
+#: google-plus-one.php:441
 msgid "Select the language to display information on the button"
 msgstr "Válassza ki a gombon megjelenő információ nyelvét"
 
-#: google-plus-one.php:465 google-plus-one.php:468 google-plus-one.php:475
+#: google-plus-one.php:447 google-plus-one.php:450 google-plus-one.php:457
 msgid "Use the current site language"
 msgstr ""
 
-#: google-plus-one.php:465 google-plus-one.php:469 google-plus-one.php:476
+#: google-plus-one.php:447 google-plus-one.php:451 google-plus-one.php:458
 msgid "Using"
 msgstr ""
 
-#: google-plus-one.php:470
+#: google-plus-one.php:452
 msgid "Activate"
 msgstr ""
 
-#: google-plus-one.php:477
+#: google-plus-one.php:459
 msgid "Download"
 msgstr ""
 
-#: google-plus-one.php:485
+#: google-plus-one.php:467
 #, fuzzy
 msgid "Buttons Position"
 msgstr "Gomb pozíció"
 
-#: google-plus-one.php:488
+#: google-plus-one.php:470
 msgid "Before"
 msgstr "Előtte"
 
-#: google-plus-one.php:489
+#: google-plus-one.php:471
 msgid "After"
 msgstr "Utána"
 
-#: google-plus-one.php:490
+#: google-plus-one.php:472
 msgid "Before And After"
 msgstr "Előtte és utána"
 
-#: google-plus-one.php:491
+#: google-plus-one.php:473
 msgid "Only Shortcode"
 msgstr ""
 
-#: google-plus-one.php:493
+#: google-plus-one.php:475
 #, fuzzy
 msgid "Please select location for the buttons on the page"
 msgstr "Kérjük válassza ki, hogy az oldalon hol jelenjen meg a gomb"
 
-#: google-plus-one.php:497
+#: google-plus-one.php:479
 #, fuzzy
 msgid "Show buttons"
 msgstr "Gomb mutatása"
 
-#: google-plus-one.php:502
+#: google-plus-one.php:484
 msgid "Show in posts"
 msgstr "Mutassa a bejegyzésekben"
 
-#: google-plus-one.php:508
+#: google-plus-one.php:490
 msgid "Show in pages"
 msgstr "Mutassa az oldalakon"
 
-#: google-plus-one.php:514
+#: google-plus-one.php:496
 msgid "Show on the homepage"
 msgstr "Mutassa a főoldalon"
 
-#: google-plus-one.php:518
+#: google-plus-one.php:500
 #, fuzzy
 msgid "Please select the page on which you want to see the buttons"
 msgstr "Kérjük válassza ki az oldalt, amelyiken látni szeretné a gombot"
 
-#: google-plus-one.php:523
+#: google-plus-one.php:505
 #, fuzzy
 msgid "Settings for Google +1 Button"
 msgstr "Google +1 gomb engedélyezése"
 
-#: google-plus-one.php:532 google-plus-one.php:900 google-plus-one.php:922
+#: google-plus-one.php:514 google-plus-one.php:882 google-plus-one.php:904
 msgid "Close"
 msgstr ""
 
-#: google-plus-one.php:536
+#: google-plus-one.php:518
 msgid "\"+1\" for an entire site on every page"
 msgstr ""
 
-#: google-plus-one.php:539
+#: google-plus-one.php:521
 msgid ""
 "Notice: This option does not create an extra button. This option merely "
 "allows your users to +1 the entire website when this option is enabled, or a "
@@ -237,402 +240,403 @@ msgid ""
 "button."
 msgstr ""
 
-#: google-plus-one.php:544 google-plus-one.php:962
+#: google-plus-one.php:526 google-plus-one.php:943
 msgid "If you upgrade to Pro version all your settings will be saved."
 msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
 
-#: google-plus-one.php:551 google-plus-one.php:915 google-plus-one.php:928
-#: google-plus-one.php:968
+#: google-plus-one.php:533 google-plus-one.php:897 google-plus-one.php:910
+#: google-plus-one.php:949
 #, fuzzy
 msgid "Unlock premium options by upgrading to Pro version"
 msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
 
-#: google-plus-one.php:553 google-plus-one.php:917 google-plus-one.php:930
-#: google-plus-one.php:970
+#: google-plus-one.php:535 google-plus-one.php:899 google-plus-one.php:912
+#: google-plus-one.php:951
 msgid "Learn More"
 msgstr "Olvasson tovább"
 
-#: google-plus-one.php:563 google-plus-one.php:612 google-plus-one.php:655
-#: google-plus-one.php:695
+#: google-plus-one.php:545 google-plus-one.php:594 google-plus-one.php:637
+#: google-plus-one.php:677
 msgid "Size"
 msgstr ""
 
-#: google-plus-one.php:567 google-plus-one.php:615 google-plus-one.php:658
+#: google-plus-one.php:549 google-plus-one.php:597 google-plus-one.php:640
 msgid "Small"
 msgstr "Kicsi"
 
-#: google-plus-one.php:568 google-plus-one.php:616 google-plus-one.php:659
+#: google-plus-one.php:550 google-plus-one.php:598 google-plus-one.php:641
 msgid "Medium"
 msgstr "Közepes"
 
-#: google-plus-one.php:569
+#: google-plus-one.php:551
 msgid "Tall"
 msgstr "Magas"
 
-#: google-plus-one.php:574 google-plus-one.php:598 google-plus-one.php:665
+#: google-plus-one.php:556 google-plus-one.php:580 google-plus-one.php:647
 msgid "Annotation"
 msgstr ""
 
-#: google-plus-one.php:577 google-plus-one.php:601
+#: google-plus-one.php:559 google-plus-one.php:583
 msgid "Inline"
 msgstr ""
 
-#: google-plus-one.php:578 google-plus-one.php:602 google-plus-one.php:668
+#: google-plus-one.php:560 google-plus-one.php:584 google-plus-one.php:650
 msgid "Bubble"
 msgstr ""
 
-#: google-plus-one.php:579 google-plus-one.php:604 google-plus-one.php:670
+#: google-plus-one.php:561 google-plus-one.php:586 google-plus-one.php:652
 msgid "None"
 msgstr ""
 
-#: google-plus-one.php:582
+#: google-plus-one.php:564
 msgid "Display counters showing how many times your article has been liked"
 msgstr ""
 "Megjeleníti a számlálót, ami megmutatja, hogy a cikkét hányan kedvelték"
 
-#: google-plus-one.php:586 google-plus-one.php:622
+#: google-plus-one.php:568 google-plus-one.php:604
 msgid "Annotation Type"
 msgstr ""
 
-#: google-plus-one.php:590 google-plus-one.php:626
+#: google-plus-one.php:572 google-plus-one.php:608
 msgid "Short"
 msgstr ""
 
-#: google-plus-one.php:595
+#: google-plus-one.php:577
 msgid "Settings for Share Button"
 msgstr ""
 
-#: google-plus-one.php:603 google-plus-one.php:669
+#: google-plus-one.php:585 google-plus-one.php:651
 msgid "Vertical-bubble"
 msgstr ""
 
-#: google-plus-one.php:607
+#: google-plus-one.php:589
 msgid "Display the number of users who have shared the page"
 msgstr ""
 
-#: google-plus-one.php:617 google-plus-one.php:660
+#: google-plus-one.php:599 google-plus-one.php:642
 msgid "Large"
 msgstr ""
 
-#: google-plus-one.php:631
+#: google-plus-one.php:613
 msgid "Settings for Follow Button"
 msgstr ""
 
-#: google-plus-one.php:634 google-plus-one.php:816 google-plus-one.php:1010
-#: google-plus-one.php:1190
+#: google-plus-one.php:616 google-plus-one.php:798 google-plus-one.php:989
+#: google-plus-one.php:1198
 msgid "Google+ ID"
 msgstr ""
 
-#: google-plus-one.php:638 google-plus-one.php:817 google-plus-one.php:1011
-#: google-plus-one.php:1192
+#: google-plus-one.php:620 google-plus-one.php:799 google-plus-one.php:990
+#: google-plus-one.php:1200
 msgid "Enter the Google+ ID, e.g."
 msgstr ""
 
-#: google-plus-one.php:638 google-plus-one.php:771 google-plus-one.php:817
-#: google-plus-one.php:822 google-plus-one.php:827 google-plus-one.php:1007
-#: google-plus-one.php:1011 google-plus-one.php:1013 google-plus-one.php:1015
+#: google-plus-one.php:620 google-plus-one.php:753 google-plus-one.php:799
+#: google-plus-one.php:804 google-plus-one.php:809 google-plus-one.php:986
+#: google-plus-one.php:990 google-plus-one.php:992 google-plus-one.php:994
 msgid "or"
 msgstr ""
 
-#: google-plus-one.php:643
+#: google-plus-one.php:625
 msgid "Relationship"
 msgstr ""
 
-#: google-plus-one.php:646
+#: google-plus-one.php:628
 msgid "Author"
 msgstr ""
 
-#: google-plus-one.php:647
+#: google-plus-one.php:629
 msgid "Publisher"
 msgstr ""
 
-#: google-plus-one.php:650
+#: google-plus-one.php:632
 msgid ""
 "Describes your relationship to content of the page, where the button is "
 "embedded"
 msgstr ""
 
-#: google-plus-one.php:673
+#: google-plus-one.php:655
 msgid "Display the number of users who are following this page or person"
 msgstr ""
 
-#: google-plus-one.php:678
+#: google-plus-one.php:660
 msgid "Settings for Hangout Button"
 msgstr ""
 
-#: google-plus-one.php:681
+#: google-plus-one.php:663
 msgid "Topic"
 msgstr ""
 
-#: google-plus-one.php:685
+#: google-plus-one.php:667
 msgid "Use the title of the page"
 msgstr ""
 
-#: google-plus-one.php:699
+#: google-plus-one.php:681
 msgid "Narrow"
 msgstr ""
 
-#: google-plus-one.php:700
+#: google-plus-one.php:682
 msgid "Wide"
 msgstr ""
 
-#: google-plus-one.php:705 google-plus-one.php:803 google-plus-one.php:1195
+#: google-plus-one.php:687 google-plus-one.php:785 google-plus-one.php:1203
 msgid "Type"
 msgstr ""
 
-#: google-plus-one.php:708
+#: google-plus-one.php:690
 msgid "Normal"
 msgstr ""
 
-#: google-plus-one.php:709
-msgid "Onair"
+#: google-plus-one.php:691
+msgid "On air"
 msgstr ""
 
-#: google-plus-one.php:710
+#: google-plus-one.php:692
 msgid "Party"
 msgstr ""
 
-#: google-plus-one.php:711
+#: google-plus-one.php:693
 msgid "Moderated"
 msgstr ""
 
-#: google-plus-one.php:716
+#: google-plus-one.php:698
 msgid "Invitation Type"
 msgstr ""
 
-#: google-plus-one.php:719
+#: google-plus-one.php:701
 msgid "Select The Type"
 msgstr ""
 
-#: google-plus-one.php:720
+#: google-plus-one.php:702
 msgid "Google+ Profile ID"
 msgstr ""
 
-#: google-plus-one.php:721
+#: google-plus-one.php:703
 msgid "Google+ Circle ID"
 msgstr ""
 
-#: google-plus-one.php:722
+#: google-plus-one.php:704
 msgid "Email"
 msgstr ""
 
-#: google-plus-one.php:723
+#: google-plus-one.php:705
 msgid "Phone Number"
 msgstr ""
 
-#: google-plus-one.php:760
+#: google-plus-one.php:742
 msgid "Google+ ID, Phone Number or Email"
 msgstr ""
 
-#: google-plus-one.php:766 google-plus-one.php:792
+#: google-plus-one.php:748 google-plus-one.php:774
 msgid "Add"
 msgstr ""
 
-#: google-plus-one.php:768
+#: google-plus-one.php:750
 msgid "Delete Selected"
 msgstr ""
 
-#: google-plus-one.php:771
+#: google-plus-one.php:753
 msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
 msgstr ""
 
-#: google-plus-one.php:775
+#: google-plus-one.php:757
 msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
 msgstr ""
 
-#: google-plus-one.php:779
+#: google-plus-one.php:761
 msgid "If Invitation Type is 'Email', it should look like"
 msgstr ""
 
-#: google-plus-one.php:783
+#: google-plus-one.php:765
 msgid "If Invitation Type is 'Phone Number', it should look like"
 msgstr ""
 
-#: google-plus-one.php:800
+#: google-plus-one.php:782
 #, fuzzy
 msgid "Settings for Badge"
 msgstr "Beállítások mentve"
 
-#: google-plus-one.php:806 google-plus-one.php:1197
+#: google-plus-one.php:788 google-plus-one.php:1205
 msgid "Person"
 msgstr ""
 
-#: google-plus-one.php:807 google-plus-one.php:1198
+#: google-plus-one.php:789 google-plus-one.php:1206
 msgid "Page"
 msgstr ""
 
-#: google-plus-one.php:808 google-plus-one.php:1199
+#: google-plus-one.php:790 google-plus-one.php:1207
 msgid "Community"
 msgstr ""
 
-#: google-plus-one.php:818 google-plus-one.php:1016
+#: google-plus-one.php:800 google-plus-one.php:995
 msgid "Display the user's tag line"
 msgstr ""
 
-#: google-plus-one.php:821 google-plus-one.php:1012
+#: google-plus-one.php:803 google-plus-one.php:991
 msgid "Google+ Page ID"
 msgstr ""
 
-#: google-plus-one.php:822 google-plus-one.php:1013
+#: google-plus-one.php:804 google-plus-one.php:992
 msgid "Enter the Google+ Page ID, e.g."
 msgstr ""
 
-#: google-plus-one.php:823 google-plus-one.php:1017
+#: google-plus-one.php:805 google-plus-one.php:996
 msgid "Display the company tag line"
 msgstr ""
 
-#: google-plus-one.php:826 google-plus-one.php:1014
+#: google-plus-one.php:808 google-plus-one.php:993
 msgid "Google+ Community ID"
 msgstr ""
 
-#: google-plus-one.php:827 google-plus-one.php:1015
+#: google-plus-one.php:809 google-plus-one.php:994
 msgid "Enter the Google+ Community ID, e.g."
 msgstr ""
 
-#: google-plus-one.php:828 google-plus-one.php:1018
+#: google-plus-one.php:810 google-plus-one.php:997
 msgid "Display the community tag line"
 msgstr ""
 
-#: google-plus-one.php:841 google-plus-one.php:1203
+#: google-plus-one.php:823 google-plus-one.php:1211
 msgid "Layout"
 msgstr ""
 
-#: google-plus-one.php:844 google-plus-one.php:1205
+#: google-plus-one.php:826 google-plus-one.php:1213
 msgid "Portrait"
 msgstr ""
 
-#: google-plus-one.php:845 google-plus-one.php:1206
+#: google-plus-one.php:827 google-plus-one.php:1214
 msgid "Landscape"
 msgstr ""
 
-#: google-plus-one.php:848
+#: google-plus-one.php:830
 msgid "Sets the orientation of the badge"
 msgstr ""
 
-#: google-plus-one.php:853 google-plus-one.php:1211
+#: google-plus-one.php:835 google-plus-one.php:1219
 msgid "Show Cover Photo"
 msgstr ""
 
-#: google-plus-one.php:861 google-plus-one.php:1215
+#: google-plus-one.php:843 google-plus-one.php:1223
 #, fuzzy
 msgid "Show Tag Line"
 msgstr "Mutassa az oldalakon"
 
-#: google-plus-one.php:870 google-plus-one.php:1220
+#: google-plus-one.php:852 google-plus-one.php:1228
 #, fuzzy
 msgid "Show Owners"
 msgstr "Mutassa az oldalakon"
 
-#: google-plus-one.php:874
+#: google-plus-one.php:856
 msgid "Display a list of community owners"
 msgstr ""
 
-#: google-plus-one.php:879
+#: google-plus-one.php:861
 msgid "Theme"
 msgstr ""
 
-#: google-plus-one.php:882
+#: google-plus-one.php:864
 msgid "Light"
 msgstr ""
 
-#: google-plus-one.php:883
+#: google-plus-one.php:865
 msgid "Dark"
 msgstr ""
 
-#: google-plus-one.php:888 google-plus-one.php:1223
+#: google-plus-one.php:870 google-plus-one.php:1231
 msgid "Width"
 msgstr ""
 
-#: google-plus-one.php:891 google-plus-one.php:1225
+#: google-plus-one.php:873 google-plus-one.php:1233
 msgid "px"
 msgstr ""
 
-#: google-plus-one.php:905 google-plus-one.php:924
+#: google-plus-one.php:887 google-plus-one.php:906
 msgid "Preview"
 msgstr ""
 
-#: google-plus-one.php:937 google-plus-one.php:959
+#: google-plus-one.php:919
 msgid "Save Changes"
 msgstr "Változások mentése"
 
-#: google-plus-one.php:952
+#: google-plus-one.php:936
+#, fuzzy
 msgid ""
-"Please choose the necessary post types (or single pages) where Google +1 "
-"button will be displayed:"
+"Please choose the necessary post types (or single pages) where Google button "
+"will be displayed:"
 msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Google +1 gomb megjelenjen:"
 
-#: google-plus-one.php:955
+#: google-plus-one.php:939
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: google-plus-one.php:957
+#: google-plus-one.php:941
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: google-plus-one.php:1000
+#: google-plus-one.php:979
 msgid "This field can't be empty"
 msgstr ""
 
-#: google-plus-one.php:1001
+#: google-plus-one.php:980
 msgid "Please, enter the valid Email"
 msgstr ""
 
-#: google-plus-one.php:1002
+#: google-plus-one.php:981
 msgid "Email of Invited Person"
 msgstr ""
 
-#: google-plus-one.php:1003
+#: google-plus-one.php:982
 #, fuzzy
 msgid "Please, enter the Email of invited person, e.g."
 msgstr "Kérjük válassza ki, hogy az oldalon hol jelenjen meg a gomb"
 
-#: google-plus-one.php:1004
+#: google-plus-one.php:983
 msgid "Phone Number of Invited Person"
 msgstr ""
 
-#: google-plus-one.php:1005
+#: google-plus-one.php:984
 msgid "Please, enter the phone number of invited person, e.g."
 msgstr ""
 
-#: google-plus-one.php:1006
+#: google-plus-one.php:985
 msgid "Google+ Profile ID of Invited Person"
 msgstr ""
 
-#: google-plus-one.php:1007
+#: google-plus-one.php:986
 msgid "Please, enter the Google+ Profile ID of invited person, e.g."
 msgstr ""
 
-#: google-plus-one.php:1008
+#: google-plus-one.php:987
 msgid "Google+ Circle ID for Invitation"
 msgstr ""
 
-#: google-plus-one.php:1009
+#: google-plus-one.php:988
 msgid "Please, enter the Google+ Circle ID for invitation, e.g."
 msgstr ""
 
-#: google-plus-one.php:1116
+#: google-plus-one.php:1124
 msgid "Google+ Badge Widget"
 msgstr ""
 
-#: google-plus-one.php:1116
+#: google-plus-one.php:1124
 msgid "Show Google Badge on your site"
 msgstr ""
 
-#: google-plus-one.php:1186
+#: google-plus-one.php:1194
 msgid "Title"
 msgstr ""
 
-#: google-plus-one.php:1388
+#: google-plus-one.php:1406
 msgid "Add Google Buttons to your page or post"
 msgstr ""
 
-#: google-plus-one.php:1475
+#: google-plus-one.php:1507
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: google-plus-one.php:1476
+#: google-plus-one.php:1508
 msgid "Support"
 msgstr "Támogatás"
 
