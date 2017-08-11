@@ -98,6 +98,33 @@
 	}
 
 	$(document).ready(function() {
+		/* Show/Hide options in plugin settings*/
+		function pntrst_save() {
+			if ( $( 'input[name="pntrst_save"]' ).is( ':checked' ) ) {
+				$( '.pntrst_save_enabled' ).show();
+			} else {
+				$( '.pntrst_save_enabled' ).hide();
+			}
+		}
+
+		function pntrst_follow() {
+			if ( $( 'input[name="pntrst_follow"]' ).is( ':checked' ) ) {
+				$( '.pntrst_follow_enabled' ).show();
+			} else {
+				$( '.pntrst_follow_enabled' ).hide();
+			}
+		}
+
+		pntrst_save();
+		$( 'input[name="pntrst_save"]' ).change( function() {
+			pntrst_save();
+		} );
+
+		pntrst_follow();
+		$( 'input[name="pntrst_follow"]' ).change( function() {
+			pntrst_follow();
+		} );
+
 		$( document ).ajaxComplete(function() {
 			dynamicWidgetOptions();
 		});

@@ -1,11 +1,10 @@
 ﻿=== Social Buttons Pack by BestWebSoft ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
-Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button,
-google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
-Requires at least: 3.8
-Tested up to: 4.7.3
-Stable tag: 1.1.1
+Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
+Requires at least: 3.9
+Tested up to: 4.8.1
+Stable tag: 1.1.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -28,7 +27,7 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Share
 	* Twitter buttons
 		* Tweet
-		* Follow me
+		* Follow
 		* Hashtag
 		* Mention
 	* Google buttons
@@ -37,7 +36,7 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Follow
 		* Hangout
 	* Pinterest buttons
-		* Pin it
+		* Save
 		* Follow
 	* LinkedIn buttons
 		* Share
@@ -52,7 +51,7 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Member Profile
 		* Company Profile
 		* Company Insider
-		* Jobs you may be interested in
+		* Jobs You May Be Interested In
 		* Alumni Tool
 	* Google +1 Badge
 	* Pinterest
@@ -73,6 +72,15 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 >
 > * Display social buttons for certain pages and/or post types
 > * Social buttons preview
+> * Сhange Facebook meta tags:
+> 	* Image
+> 	* Description
+> * Enable Facebook Like option for:
+> 	* Entire website
+> 	* Single pages
+> * Enable Google "+1" option for:
+> 	* Entire website
+> 	* Single pages (default)
 > * Сonfigure all subsites on the network
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
@@ -104,14 +112,14 @@ Some of these translations are not complete. We are constantly adding new featur
 
 = Recommended Plugins =
 
-* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=e9ee034ff7a7f6c740452c2f78966c8d) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
 * [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
 
 == Installation ==
 
 1. Upload the folder `social-buttons-pack` to the directory `/wp-content/plugins/`.
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings in your WordPress admin panel - "BWS Panel" > "Social Buttons".
+3. You can adjust the necessary settings in your WordPress admin panel - "Social Buttons".
 
 [View a Step-by-step Instruction on Social Buttons Pack Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 
@@ -121,30 +129,60 @@ https://www.youtube.com/watch?v=1PZPCL76aBk
 
 = How to adjust Social Buttons position on the page ? =
 
-In WordPress admin panel go to "BWS Panel", find the Social Buttons Plugin settings page and choose one of the listed positions: Before, After, Before and After or Shortcode. Then click "Update Changes".
+In WordPress admin panel, please go to "Social Buttons" settings page and choose one of the listed positions: Before content or After content. Then click "Save Changes".
 
-= After clicking Facebook Button icon I see the Facebook Home page instead of the necessary account page =
+= How to change Facebook Button icon ("Profile URL")? =
 
-1. In WordPress admin panel, please go to "BWS Panel", find "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
-2. If you do not have Facebook account yet, you should create it using this link: https://www.facebook.com. After the account is created please follow the instructions above.
+1. In WordPress admin panel, please go to "Social Buttons" > "Facebook" and choose one of the listed positions: Default Profile Button Image or Custom Profile Button Image. Then click "Save Changes".
+2. If you choose Custom Profile Button Image, you can upload your own picture. You should click "Choose file" and choose an image in your folder. Then click "Save Changes".
 
-= How to change Facebook Button icon ("My page") =
+= After clicking Facebook Button icon, I see the Facebook Home page instead of the necessary account page =
 
-1. In WordPress admin panel, please go to "BWS Panel", find "Social Buttons" > "Facebook" settings page and choose one of the listed positions: Standard Facebook image or Custom Facebook image. Then click "Save Changes".
-2. If you choose Custom Facebook image, you can upload your own picture. You should click "Choose file" and choose an image in your folder. Then click "Save Changes".
+1. In WordPress admin panel, please go to "Social Buttons" > "Facebook" settings page and enter your Facebook ID or username. Then click "Save Changes".
+2. If you do not have the Facebook account yet, you should create it here. After the account is created, please follow the instructions above.
 
-= After clicking the Twitter icon I see the Twitter Home page instead of the necessary account page =
+= When people like and/or leave comments to my post, will this be displayed on my Facebook page? =
 
-1. In the WordPress admin panel go to "BWS Panel", find the "Social Buttons" > "Twitter" settings page and enter your Twitter login. Then click "Save Changes".
-2. If you do not have Twitter account yet you should create it using this link: https://twitter.com/signup. After account is created please follow the instructions above.
+No, it will not. The case is: Like for a WordPress site is a Like of a certain URL, but not the page content, while on Facebook it's Like of the content, not the URL. I.e. these are two different things, and it is impossible to link them.
+For more data on the Like button, please check the developers' page (<https://developers.facebook.com/docs/plugins/like-button>).
 
-= Why does the Google +1 button become red after clicking? =
+= If I install a new version of the plugin, will I lose all the likes I got on the previous version (I mean will they switch to zero on my website?)? =
+
+You will not lose them because they are stored on the Facebook server.
+
+= I've changed meta tags (image and description), but when I click "Share" button, all data stay the same (unchanged) = 
+
+The case is, after the first circulation to the page, Facebook cache an information about it. These data from the cache are used during the next 24 hours.
+That is why the changes are not displayed. You can wait for 24 hours and check changes, or you can forcibly update the information about your page on Facebook:
+1. Go to <https://developers.facebook.com/tools/debug/og/object/>
+2. Enter a URL of your page in "Input URL" field and click "Fetch new scrape information" button
+
+= Can I control the order of the Twitter recommended accounts? =
+
+Only two accounts are displayed and by default the via user is shown first with the first related account shown afterwards. If the user is a follower of the via user the Share Box will instead show the first two related accounts the user isn’t a follower of. No accounts are displayed if the user follows all of the suggested accounts (via and related).
+
+= How to add Google +1 Button using the shortcode? =
+
+Just paste code [bws_googleplusone] into the necessary page, post or text widget for adding Google +1 Button or use a "display" parameter for adding another button(s).
+
+For example:
+[bws_googleplusone display="plusone,share,follow,hangout,badge"]. You can change the buttons queue in "display" parameter as you want.
+
+= I click the button and it turns red. Why? =
 
 For correct work of the Google +1 buttons do not use it locally and on a free hosting.
 
+= Why I don't see the Follow Button and Google Badge? =
+
+Follow Button and Google Badge don`t work without Google ID. Just enter it on Settings Page.
+
+= I've entered Google ID, but nothing has changed. Why? =
+
+Please check the Badge type. Google Badge works incorrectly if Google ID don`t match with the Badge Type.
+
 = Pinterest Follow button is not displaying properly =
 
-In WordPress admin panel, please go to "BWS Panel", find find the "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
+In WordPress admin panel, please go to "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
 
 = Pinterest widget is not displaying =
 
@@ -162,18 +200,17 @@ Beсause the "Company Insider" widget has 633px width and other LinkedIn widgets
 
 To display widgets, you must fill fields, such as 'Public Profile URL', 'Company ID' or 'School ID'.
 
-= Why doesn't widget 'Member Profile' display? =
+= Why doesn't LinkedIn widget 'Member Profile' display? =
 
 URL, which you add, should be public. It can be configured via "public profile settings" in your Linkedin account.
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
-
-1. the link to the page where the problem occurs
-2. the name of the plugin and its version. If you are using a pro version - your order number.
-3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
+- The link to the page where the problem occurs
+- The name of the plugin and its version. If you are using a pro version - your order number.
+- The version of your WordPress installation
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
 
 == Screenshots ==
 
@@ -193,6 +230,22 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 14. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.3 - 11.08.2017 =
+* Bugfix : Errors which appeared with buttons displaying were fixed.
+
+= V1.1.2 - 10.08.2017 =
+* Update : The plugin settings page has been updated.
+* NEW : Ability to choose Facebook buttons size has been added.
+* Update : Default Facebook button appearance has been updated.
+* Bugfix : Bug with incorrect My Page Facebook button link was fixed.
+* NEW : Ability to set custom URL for LinkedIn Share button has been added.
+* Update : "Pin it" button has renamed as "Save".
+* Update : Pinterest deprecated option "Button color" has been removed.
+* NEW : Ability to set custom language for Pinterest "Save" button has been added.
+* NEW : Ability to use the current site language for Pinterest button (Using Multilanguage by BestWebSoft) has been added.
+* NEW : Ability to add several hashtags and recommended authors has been added for Twitter Hashtag button.
+* Update : Twitter "Follow" button appearance has been updated.
 
 = V1.1.1 - 17.04.2017 =
 * Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
@@ -229,7 +282,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Bugfix : The bug with plugin menu duplicating was fixed.
 
 = V1.0.3 - 05.11.2015 =
-* NEW : A button for Social Buttons Button shortcode inserting to the content was added.
+* NEW : A button for Social Buttons shortcode inserting to the content was added.
 * Update : Textdomain was changed.
 * NEW : Hungarian language file.
 * NEW : Ability to restore settings to defaults.
@@ -248,6 +301,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.3 =
+* Bugs fixed.
+
+= V1.1.2 =
+* Functionality expanded.
+* Appearance improved.
 
 = V1.1.1 =
 * Bugs fixed.

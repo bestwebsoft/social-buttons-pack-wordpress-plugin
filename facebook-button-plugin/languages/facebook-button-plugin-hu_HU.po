@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-05 17:23+0300\n"
-"PO-Revision-Date: 2016-05-05 17:23+0300\n"
+"POT-Creation-Date: 2017-07-10 12:20+0300\n"
+"PO-Revision-Date: 2017-07-10 12:20+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: hu_HU\n"
@@ -13,314 +13,334 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:34 facebook-button-plugin.php:294
+#: facebook-button-plugin.php:35 facebook-button-plugin.php:36
+#: facebook-button-plugin.php:176 includes/class-fcbkbttn-settings.php:181
 msgid "Facebook Button Settings"
 msgstr "Facebook Gomb Beállítások"
 
-#: facebook-button-plugin.php:216
-msgid "Settings saved"
-msgstr "Beállítások mentve"
-
-#: facebook-button-plugin.php:242
-msgid "Error: File size > 32K"
-msgstr "Hiba: File méret > 32k"
-
-#: facebook-button-plugin.php:245
-msgid "Error: Invalid file type"
-msgstr "Hiba: Érvénytelen file típus"
-
-#: facebook-button-plugin.php:251
-msgid "Upload successful."
-msgstr "A feltöltés sikeres."
-
-#: facebook-button-plugin.php:261
-msgid "Error: moving file failed"
-msgstr "Hiba: file mozgatás sikertelen"
-
-#: facebook-button-plugin.php:264
-msgid "Error: check image width or height"
-msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
-
-#: facebook-button-plugin.php:268
-msgid "Uploading Error: check image properties"
-msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
-
-#: facebook-button-plugin.php:281
-msgid "All plugin settings were restored."
-msgstr "Minden plugin paraméter visszaállítva."
-
-#: facebook-button-plugin.php:296
-msgid "How to Use Step-by-step Instruction"
-msgstr ""
-
-#: facebook-button-plugin.php:299 facebook-button-plugin.php:861
-#: facebook-button-plugin.php:875
+#: facebook-button-plugin.php:36 facebook-button-plugin.php:382
+#: facebook-button-plugin.php:396 includes/class-fcbkbttn-settings.php:23
 msgid "Settings"
 msgstr "Beállítások"
 
-#: facebook-button-plugin.php:300
-msgid "Extra settings"
-msgstr "Extra beállítások"
+#: facebook-button-plugin.php:42
+msgid "Upgrade to Pro"
+msgstr ""
 
-#: facebook-button-plugin.php:301
-#, fuzzy
-msgid "Custom code"
-msgstr "Egyéni Facebook kép"
-
-#: facebook-button-plugin.php:302
-msgid "Go PRO"
-msgstr "PRO-ra váltás"
-
-#: facebook-button-plugin.php:305
+#: facebook-button-plugin.php:177
 msgid "Please, enable JavaScript in Your browser."
 msgstr ""
 
-#: facebook-button-plugin.php:320
-#, fuzzy, php-format
-msgid ""
-"If you would like to add Facebook buttons to your page or post, please use "
-"%s button"
-msgstr ""
-"Ha az oldalához Facebook gombot szeretne adni, csak másolja be ezt a rövid "
-"kódot a bejegyzésbe vagy az oldalra:"
+#: facebook-button-plugin.php:275
+#, fuzzy
+msgid "Add Facebook buttons to your page or post"
+msgstr "Facebook gombok helye"
 
-#: facebook-button-plugin.php:325
-#, php-format
-msgid ""
-"You can add Facebook buttons to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s"
-msgstr ""
+#: facebook-button-plugin.php:397
+msgid "FAQ"
+msgstr "Gy.I.K."
 
-#: facebook-button-plugin.php:336
-msgid "Display button"
+#: facebook-button-plugin.php:398
+msgid "Support"
+msgstr "Támogatás"
+
+#: includes/class-fcbkbttn-settings.php:25
+#, fuzzy
+msgid "Display"
 msgstr "Gomb megjelenítése"
 
-#: facebook-button-plugin.php:339
-msgid "My Page"
-msgstr "Oldalam"
+#: includes/class-fcbkbttn-settings.php:27
+msgid "Misc"
+msgstr ""
 
-#: facebook-button-plugin.php:340 facebook-button-plugin.php:507
+#: includes/class-fcbkbttn-settings.php:28
+#, fuzzy
+msgid "Custom Code"
+msgstr "Egyéni Facebook kép"
+
+#: includes/class-fcbkbttn-settings.php:30
+msgid "License Key"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:107
+msgid "Settings saved"
+msgstr "Beállítások mentve"
+
+#: includes/class-fcbkbttn-settings.php:136
+msgid "Error: File size must not exceed 32KB"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:139
+msgid "Error: Invalid file type"
+msgstr "Hiba: Érvénytelen file típus"
+
+#: includes/class-fcbkbttn-settings.php:145
+msgid "Upload successful."
+msgstr "A feltöltés sikeres."
+
+#: includes/class-fcbkbttn-settings.php:153
+#, fuzzy
+msgid "Error: failed to move file."
+msgstr "Hiba: file mozgatás sikertelen"
+
+#: includes/class-fcbkbttn-settings.php:156
+#, fuzzy
+msgid "Error: check image width or height."
+msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
+
+#: includes/class-fcbkbttn-settings.php:160
+msgid "Uploading Error: check image properties"
+msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
+
+#: includes/class-fcbkbttn-settings.php:184
+msgid "General"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:187
+#, fuzzy
+msgid "Buttons"
+msgstr "Facebook gombok helye"
+
+#: includes/class-fcbkbttn-settings.php:190
+msgid "Profile URL"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:191
+#: includes/class-fcbkbttn-settings.php:386
 msgid "Like"
 msgstr "Like"
 
-#: facebook-button-plugin.php:341
+#: includes/class-fcbkbttn-settings.php:192
 msgid "Share"
 msgstr "Megosztás"
 
-#: facebook-button-plugin.php:346
-msgid "Facebook buttons position"
+#: includes/class-fcbkbttn-settings.php:197
+msgid "Buttons Size"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:200
+msgid "Small"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:201
+msgid "Large"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:206
+#, fuzzy
+msgid "Buttons Position"
 msgstr "Facebook gombok helye"
 
-#: facebook-button-plugin.php:349
-msgid "Before"
-msgstr "Előtte"
-
-#: facebook-button-plugin.php:350
-msgid "After"
-msgstr "Utána"
-
-#: facebook-button-plugin.php:351
-msgid "Before and After"
+#: includes/class-fcbkbttn-settings.php:211
+#, fuzzy
+msgid "Before content"
 msgstr "Előtte és Utána"
 
-#: facebook-button-plugin.php:352
-msgid "Shortcode"
-msgstr "Rövid kód"
+#: includes/class-fcbkbttn-settings.php:216
+msgid "After content"
+msgstr ""
 
-#: facebook-button-plugin.php:357
-msgid "Facebook buttons language"
-msgstr "Facebook gomb nyelve"
+#: includes/class-fcbkbttn-settings.php:222
+msgid "Language"
+msgstr ""
 
-#: facebook-button-plugin.php:368
+#: includes/class-fcbkbttn-settings.php:233
 #, fuzzy
-msgid "Change the language of Facebook Button"
+msgid "Select the default language for Facebook button(-s)."
 msgstr "Facebook Like Gomb nyelvének megváltoztatása"
 
-#: facebook-button-plugin.php:373 facebook-button-plugin.php:376
-#: facebook-button-plugin.php:381
-msgid "Use the current site language"
+#: includes/class-fcbkbttn-settings.php:242
+#: includes/class-fcbkbttn-settings.php:245
+#: includes/class-fcbkbttn-settings.php:249
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
 msgstr ""
 
-#: facebook-button-plugin.php:373 facebook-button-plugin.php:377
-#: facebook-button-plugin.php:382
-msgid "Using"
+#: includes/class-fcbkbttn-settings.php:245
+#, php-format
+msgid "Activate %s"
 msgstr ""
 
-#: facebook-button-plugin.php:377
-msgid "Activate"
+#: includes/class-fcbkbttn-settings.php:249
+msgid "Learn More"
+msgstr "Olvasson tovább"
+
+#: includes/class-fcbkbttn-settings.php:254
+msgid "Excerpt"
 msgstr ""
 
-#: facebook-button-plugin.php:382
-msgid "Download"
-msgstr ""
-
-#: facebook-button-plugin.php:389
+#: includes/class-fcbkbttn-settings.php:256
 #, fuzzy
-msgid "Display buttons in excerpt"
+msgid "Enable to display buttons in excerpt."
 msgstr "Gomb megjelenítése"
 
-#: facebook-button-plugin.php:399 facebook-button-plugin.php:548
-#: facebook-button-plugin.php:585
+#: includes/class-fcbkbttn-settings.php:265
+#: includes/class-fcbkbttn-settings.php:441
+#: includes/class-fcbkbttn-settings.php:496
 msgid "Close"
 msgstr ""
 
-#: facebook-button-plugin.php:403
-msgid "Meta tags"
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:269
+#, fuzzy
+msgid "Meta Image"
+msgstr "Egyéni Facebook kép"
 
-#: facebook-button-plugin.php:406
-msgid "Image"
-msgstr ""
-
-#: facebook-button-plugin.php:409
+#: includes/class-fcbkbttn-settings.php:274
 msgid "Featured Image"
 msgstr ""
 
-#: facebook-button-plugin.php:413
+#: includes/class-fcbkbttn-settings.php:278
 #, fuzzy
 msgid "Custom Image"
 msgstr "Egyéni Facebook kép"
 
-#: facebook-button-plugin.php:413
-msgid "This image will be used for all of the posts"
+#: includes/class-fcbkbttn-settings.php:278
+msgid "This image will be used for all posts"
 msgstr ""
 
-#: facebook-button-plugin.php:423
-msgid "Description"
+#: includes/class-fcbkbttn-settings.php:285
+msgid "Meta Description"
 msgstr ""
 
-#: facebook-button-plugin.php:426
-msgid "Post excerpt"
+#: includes/class-fcbkbttn-settings.php:289
+msgid ""
+"This description will be used for all pages and posts. Leave blank to use "
+"page description."
 msgstr ""
 
-#: facebook-button-plugin.php:431
-msgid "This description will be used for all of the posts"
+#: includes/class-fcbkbttn-settings.php:298
+msgid "Profile URL Button"
 msgstr ""
 
-#: facebook-button-plugin.php:438 facebook-button-plugin.php:559
-#: facebook-button-plugin.php:637
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
-
-#: facebook-button-plugin.php:445 facebook-button-plugin.php:566
-#: facebook-button-plugin.php:594 facebook-button-plugin.php:644
+#: includes/class-fcbkbttn-settings.php:301
 #, fuzzy
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
-
-#: facebook-button-plugin.php:447 facebook-button-plugin.php:568
-#: facebook-button-plugin.php:596 facebook-button-plugin.php:646
-msgid "Learn More"
-msgstr "Olvasson tovább"
-
-#: facebook-button-plugin.php:455
-msgid "Your Facebook ID or username"
+msgid "Facebook ID or Username"
 msgstr "Facebook ID-je vagy felhasználóneve"
 
-#: facebook-button-plugin.php:462
-msgid "\"My page\" button image"
-msgstr "\"Oldalam\" gomb képe"
+#: includes/class-fcbkbttn-settings.php:308
+msgid "Profile Button Image"
+msgstr ""
 
-#: facebook-button-plugin.php:467
-msgid "Standard Facebook image"
-msgstr "Normál Facebook kép"
+#: includes/class-fcbkbttn-settings.php:315
+msgid "Default"
+msgstr ""
 
-#: facebook-button-plugin.php:468
-msgid "Custom Facebook image"
+#: includes/class-fcbkbttn-settings.php:320
+#, fuzzy
+msgid "Custom image"
 msgstr "Egyéni Facebook kép"
 
-#: facebook-button-plugin.php:471
+#: includes/class-fcbkbttn-settings.php:324
+#, fuzzy
 msgid ""
-"To use custom image you need to setup permissions to upload directory of "
+"To use custom image, You need to setup permissions for upload directory of "
 "your site"
 msgstr ""
 "Egyedi kép használatához az oldala feltöltési könyvtárához jogosultságot "
 "kell beállítania"
 
-#: facebook-button-plugin.php:478
+#: includes/class-fcbkbttn-settings.php:331
 msgid "Current image"
 msgstr "Aktuális kép"
 
-#: facebook-button-plugin.php:486
+#: includes/class-fcbkbttn-settings.php:339
+#, fuzzy
 msgid ""
-"Image properties: max image width:100px; max image height:40px; max image "
+"Image requirements: max image width:100px; max image height:40px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
 msgstr ""
 "Kép paraméterek: max kép szélesség: 100px; max kép magasság: 40px; max kép "
 "méret: 32Kb; kép típusok:\"jpg\", \"jpeg\", \"png\"."
 
-#: facebook-button-plugin.php:490
-msgid "Button layout"
-msgstr ""
-
-#: facebook-button-plugin.php:504
+#: includes/class-fcbkbttn-settings.php:343
 #, fuzzy
-msgid "Like button action"
+msgid "Like&Share Buttons"
 msgstr "Facebook gombok helye"
 
-#: facebook-button-plugin.php:508
+#: includes/class-fcbkbttn-settings.php:346
+msgid "Layout"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:381
+#, fuzzy
+msgid "Like Button Action"
+msgstr "Facebook gombok helye"
+
+#: includes/class-fcbkbttn-settings.php:391
 msgid "Recommend"
 msgstr ""
 
-#: facebook-button-plugin.php:513
-#, fuzzy
-msgid "Show faces"
-msgstr "URL megjelenítése oldalakon"
-
-#: facebook-button-plugin.php:519
-msgid "Layout width"
+#: includes/class-fcbkbttn-settings.php:397
+msgid "Friends Faces"
 msgstr ""
 
-#: facebook-button-plugin.php:525
-msgid "Color scheme"
+#: includes/class-fcbkbttn-settings.php:400
+msgid " Enable to show faces of your friends who submitted the button."
 msgstr ""
 
-#: facebook-button-plugin.php:528
+#: includes/class-fcbkbttn-settings.php:404
+msgid "Layout Width"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:406
+msgid "px"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:410
+msgid "Theme"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:415
 msgid "Light"
 msgstr ""
 
-#: facebook-button-plugin.php:529
+#: includes/class-fcbkbttn-settings.php:420
 msgid "Dark"
 msgstr ""
 
-#: facebook-button-plugin.php:534
-msgid "Html tag for \"Like\" button"
-msgstr "A \"Like\" gomb html címkéje"
-
-#: facebook-button-plugin.php:539
-msgid "Use this tag to improve validation of your site"
-msgstr "Használja ezt a címkét oldala minősítésének javításához"
-
-#: facebook-button-plugin.php:552
-msgid "\"Like\" for an entire site on every page:"
-msgstr "\"Like\" a weboldal minden lapjára:"
-
-#: facebook-button-plugin.php:554
-msgid ""
-"Notice: \"Like for the entire site\" option does not create an extra button. "
-"This option merely allows your users to like the entire website when this "
-"option is enabled, or a single post when this option is disabled, when "
-"clicking the regular \"Like\" button."
-msgstr ""
-"Megjegyzés: \"Like az egész oldalnak\" beállítás nem hoz létre extra gombot. "
-"Ez a beállítás csupán megengedi a felhasználóknak, hogy az egész oldalt "
-"kedveljék, ha ez a beállítás engedélyezett vagy egy egyedi bejegyzést, ha ez "
-"a beállítás kikapcsolt, ha a normál \"Like\" gombra kattintanak."
-
-#: facebook-button-plugin.php:576 facebook-button-plugin.php:632
-msgid "Save Changes"
-msgstr "Változások mentése"
-
-#: facebook-button-plugin.php:588
+#: includes/class-fcbkbttn-settings.php:426
 #, fuzzy
-msgid "Facebook Button preview:"
+msgid "Like Button HTML Tag"
+msgstr "Facebook gombok helye"
+
+#: includes/class-fcbkbttn-settings.php:432
+#, php-format
+msgid "Tag %s can be used to improve website code validation."
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:445
+msgid "URL to Like"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:447
+msgid "Leave blank to use a current page."
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:475
+msgid "Facebook Buttons Shortcode"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:478
+msgid ""
+"Add Facebook button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:497
+#, fuzzy
+msgid "Facebook Buttons Preview"
 msgstr "Facebook Gomb Beállítások"
 
-#: facebook-button-plugin.php:614
+#: includes/class-fcbkbttn-settings.php:512
+#, fuzzy
+msgid "Display Settings"
+msgstr "Gomb megjelenítése"
+
+#: includes/class-fcbkbttn-settings.php:521
 msgid ""
 "Please choose the necessary post types (or single pages) where Facebook "
 "button will be displayed:"
@@ -328,30 +348,106 @@ msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Facebook gomb megjelenjen:"
 
-#: facebook-button-plugin.php:621
+#: includes/class-fcbkbttn-settings.php:528
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: facebook-button-plugin.php:627
-msgid "Example of the site's pages tree"
-msgstr "Példa az oldal lap struktúrájának fájára"
+#: includes/class-fcbkbttn-settings.php:534
+msgid "Example of site pages tree"
+msgstr ""
 
-#: facebook-button-plugin.php:627
-msgid "Example of site pages' tree"
-msgstr "Példa oldal lapjainak fa struktúrájára"
+#~ msgid "Error: File size > 32K"
+#~ msgstr "Hiba: File méret > 32k"
 
-#: facebook-button-plugin.php:765
+#~ msgid "Example of the site's pages tree"
+#~ msgstr "Példa az oldal lap struktúrájának fájára"
+
+#~ msgid "Example of site pages' tree"
+#~ msgstr "Példa oldal lapjainak fa struktúrájára"
+
 #, fuzzy
-msgid "Add Facebook buttons to your page or post"
-msgstr "Facebook gombok helye"
+#~ msgid "Facebook Buttons Shortchode"
+#~ msgstr "Facebook gombok helye"
 
-#: facebook-button-plugin.php:876
-msgid "FAQ"
-msgstr "Gy.I.K."
+#, fuzzy
+#~ msgid "Facebook button Settings"
+#~ msgstr "Facebook Gomb Beállítások"
 
-#: facebook-button-plugin.php:877
-msgid "Support"
-msgstr "Támogatás"
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Minden plugin paraméter visszaállítva."
+
+#~ msgid "Extra settings"
+#~ msgstr "Extra beállítások"
+
+#~ msgid "Go PRO"
+#~ msgstr "PRO-ra váltás"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like to add Facebook buttons to your page or post, please "
+#~ "use %s button"
+#~ msgstr ""
+#~ "Ha az oldalához Facebook gombot szeretne adni, csak másolja be ezt a "
+#~ "rövid kódot a bejegyzésbe vagy az oldalra:"
+
+#~ msgid "My Page"
+#~ msgstr "Oldalam"
+
+#~ msgid "Before"
+#~ msgstr "Előtte"
+
+#~ msgid "After"
+#~ msgstr "Utána"
+
+#~ msgid "Shortcode"
+#~ msgstr "Rövid kód"
+
+#~ msgid "Facebook buttons language"
+#~ msgstr "Facebook gomb nyelve"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "Ha a PRO verzióra vált, minden paramétere el lesz mentve."
+
+#, fuzzy
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "A prémium paramétereket elérheti a PRO változatra váltással."
+
+#~ msgid "\"My page\" button image"
+#~ msgstr "\"Oldalam\" gomb képe"
+
+#~ msgid "Standard Facebook image"
+#~ msgstr "Normál Facebook kép"
+
+#~ msgid "Custom Facebook image"
+#~ msgstr "Egyéni Facebook kép"
+
+#, fuzzy
+#~ msgid "Show faces"
+#~ msgstr "URL megjelenítése oldalakon"
+
+#~ msgid "Html tag for \"Like\" button"
+#~ msgstr "A \"Like\" gomb html címkéje"
+
+#~ msgid "Use this tag to improve validation of your site"
+#~ msgstr "Használja ezt a címkét oldala minősítésének javításához"
+
+#~ msgid "\"Like\" for an entire site on every page:"
+#~ msgstr "\"Like\" a weboldal minden lapjára:"
+
+#~ msgid ""
+#~ "Notice: \"Like for the entire site\" option does not create an extra "
+#~ "button. This option merely allows your users to like the entire website "
+#~ "when this option is enabled, or a single post when this option is "
+#~ "disabled, when clicking the regular \"Like\" button."
+#~ msgstr ""
+#~ "Megjegyzés: \"Like az egész oldalnak\" beállítás nem hoz létre extra "
+#~ "gombot. Ez a beállítás csupán megengedi a felhasználóknak, hogy az egész "
+#~ "oldalt kedveljék, ha ez a beállítás engedélyezett vagy egy egyedi "
+#~ "bejegyzést, ha ez a beállítás kikapcsolt, ha a normál \"Like\" gombra "
+#~ "kattintanak."
+
+#~ msgid "Save Changes"
+#~ msgstr "Változások mentése"
 
 #~ msgid "Notice:"
 #~ msgstr "Megjegyzés:"

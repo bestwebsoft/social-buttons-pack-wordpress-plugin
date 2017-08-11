@@ -1,0 +1,25 @@
+#adminmenu #toplevel_page_social-buttons .wp-menu-image:before {
+	content: "\e92c";
+	font-family: 'bwsicons' !important;
+}
+
+#bws_settings_tabs li.bws-tab-facebook a:before {
+	content: "\e90d";
+	font-family: 'bwsicons' !important;
+}
+#bws_settings_tabs li.bws-tab-twitter a:before {
+	content: "\e931";
+	font-family: 'bwsicons' !important;
+}
+#bws_settings_tabs li.bws-tab-googleone a:before {
+	content: "\e914";
+	font-family: 'bwsicons' !important;
+}
+#bws_settings_tabs li.bws-tab-pinterest a:before {
+	content: "\e91f";
+	font-family: 'bwsicons' !important;
+}
+#bws_settings_tabs li.bws-tab-linkedin a:before {
+	content: "\e91b";
+	font-family: 'bwsicons' !important;
+}

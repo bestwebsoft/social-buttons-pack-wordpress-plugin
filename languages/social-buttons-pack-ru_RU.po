@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: social-buttons-pack\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-11 17:24+0300\n"
-"PO-Revision-Date: 2016-11-11 17:24+0300\n"
+"POT-Creation-Date: 2017-07-24 11:44+0300\n"
+"PO-Revision-Date: 2017-07-24 11:44+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -13,78 +13,111 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: social-buttons-pack.php:41 social-buttons-pack.php:143
+#: includes/class-sclbttns-settings.php:29
+msgid "Display"
+msgstr "Отображение"
+
+#: includes/class-sclbttns-settings.php:30
+msgid "Misc"
+msgstr "Разное"
+
+#: includes/class-sclbttns-settings.php:31
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: includes/class-sclbttns-settings.php:32
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: includes/class-sclbttns-settings.php:89
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: includes/class-sclbttns-settings.php:121
+msgid "Display Settings"
+msgstr "Настройка отображения"
+
+#: includes/class-sclbttns-settings.php:130
+msgid ""
+"Please choose the necessary post types (or single pages) where Social "
+"Suttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+"будут отображаться социальные кнопки:"
+
+#: includes/class-sclbttns-settings.php:137
+msgid "Show URL for pages"
+msgstr "Показать URL для страниц"
+
+#: includes/class-sclbttns-settings.php:143
+msgid "Example of site pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: social-buttons-pack.php:41 social-buttons-pack.php:42
+#: social-buttons-pack.php:124
 msgid "Social Buttons Settings"
 msgstr "Настройки Social Buttons"
 
-#: social-buttons-pack.php:131
-msgid "All plugin settings were restored."
-msgstr "Все настройки плагина восстановлены."
-
-#: social-buttons-pack.php:150
-msgid "Extra settings"
-msgstr "Дополнительные настройки"
-
-#: social-buttons-pack.php:151
-msgid "Custom code"
-msgstr "Пользовательский код"
-
-#: social-buttons-pack.php:152
-msgid "Go PRO"
-msgstr "Перейти на PRO версию"
-
-#: social-buttons-pack.php:184
-msgid ""
-"Please choose the necessary post types (or single pages) where Social "
-"Buttons will be displayed"
-msgstr ""
-"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
-"будут отображаться социальные кнопки"
-
-#: social-buttons-pack.php:191
-msgid "Show URL"
-msgstr "Показать URL"
-
-#: social-buttons-pack.php:197
-msgid "Example of the site's pages tree"
-msgstr "Пример дерева страниц сайта"
-
-#: social-buttons-pack.php:197
-msgid "Example of site pages' tree"
-msgstr "Пример дерева страниц сайта"
-
-#: social-buttons-pack.php:202
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
-
-#: social-buttons-pack.php:209
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Активируйте премиум опции обновившись до Pro версии"
-
-#: social-buttons-pack.php:211
-msgid "Learn More"
-msgstr "Подробнее"
-
-#: social-buttons-pack.php:259 social-buttons-pack.php:272
+#: social-buttons-pack.php:42 social-buttons-pack.php:167
+#: social-buttons-pack.php:180
 msgid "Settings"
 msgstr "Настройки"
 
-#: social-buttons-pack.php:273
+#: social-buttons-pack.php:47
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
+
+#: social-buttons-pack.php:125
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#: social-buttons-pack.php:181
 msgid "FAQ"
 msgstr "FAQ"
 
-#: social-buttons-pack.php:274
+#: social-buttons-pack.php:182
 msgid "Support"
 msgstr "Поддержка"
 
-#~ msgid "Please, enable JavaScript in Your browser."
-#~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Все настройки плагина восстановлены."
 
-#~ msgid "Settings saved."
-#~ msgstr "Настройки сохранены."
+#~ msgid "Extra settings"
+#~ msgstr "Дополнительные настройки"
+
+#~ msgid "Custom code"
+#~ msgstr "Пользовательский код"
+
+#~ msgid "Go PRO"
+#~ msgstr "Перейти на PRO версию"
+
+#~ msgid ""
+#~ "Please choose the necessary post types (or single pages) where Social "
+#~ "Buttons will be displayed"
+#~ msgstr ""
+#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+#~ "будут отображаться социальные кнопки"
+
+#~ msgid "Show URL"
+#~ msgstr "Показать URL"
+
+#~ msgid "Example of the site's pages tree"
+#~ msgstr "Пример дерева страниц сайта"
+
+#~ msgid "Example of site pages' tree"
+#~ msgstr "Пример дерева страниц сайта"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#~ msgid "Learn More"
+#~ msgstr "Подробнее"
 
 #~ msgid "Saving"
 #~ msgstr "Сохранение"

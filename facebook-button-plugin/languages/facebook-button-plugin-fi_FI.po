@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-05 17:23+0300\n"
-"PO-Revision-Date: 2016-05-05 17:23+0300\n"
+"POT-Creation-Date: 2017-07-10 12:20+0300\n"
+"PO-Revision-Date: 2017-07-10 12:20+0300\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: Juhani Honkanen <juhani.honkanen@dnainternet.net>\n"
 "Language: fi_FI\n"
@@ -13,317 +13,331 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:34 facebook-button-plugin.php:294
+#: facebook-button-plugin.php:35 facebook-button-plugin.php:36
+#: facebook-button-plugin.php:176 includes/class-fcbkbttn-settings.php:181
 msgid "Facebook Button Settings"
 msgstr "Facebook Napin asetukset"
 
-#: facebook-button-plugin.php:216
-msgid "Settings saved"
-msgstr "Asetukset tallennettu"
-
-#: facebook-button-plugin.php:242
-msgid "Error: File size > 32K"
-msgstr "Virhe: Tiedoston koko > 32K"
-
-#: facebook-button-plugin.php:245
-msgid "Error: Invalid file type"
-msgstr "Virhe: Väärä tiedostotyyppi"
-
-#: facebook-button-plugin.php:251
-msgid "Upload successful."
-msgstr "Lataaminen onnistui"
-
-#: facebook-button-plugin.php:261
-msgid "Error: moving file failed"
-msgstr "Virhe: tiedoston siirto epäonnistui"
-
-#: facebook-button-plugin.php:264
-msgid "Error: check image width or height"
-msgstr "Virhe: tarkista kuvan leveys tai korkeus"
-
-#: facebook-button-plugin.php:268
-msgid "Uploading Error: check image properties"
-msgstr "Virhe latauksessa: tarkista kuvan ominaisuudet"
-
-#: facebook-button-plugin.php:281
-msgid "All plugin settings were restored."
-msgstr ""
-
-#: facebook-button-plugin.php:296
-msgid "How to Use Step-by-step Instruction"
-msgstr ""
-
-#: facebook-button-plugin.php:299 facebook-button-plugin.php:861
-#: facebook-button-plugin.php:875
+#: facebook-button-plugin.php:36 facebook-button-plugin.php:382
+#: facebook-button-plugin.php:396 includes/class-fcbkbttn-settings.php:23
 msgid "Settings"
 msgstr "Asetukset"
 
-#: facebook-button-plugin.php:300
-msgid "Extra settings"
-msgstr "Lisää asetuksia"
+#: facebook-button-plugin.php:42
+msgid "Upgrade to Pro"
+msgstr ""
 
-#: facebook-button-plugin.php:301
-#, fuzzy
-msgid "Custom code"
-msgstr "Mukautettu Fecabook kuva"
-
-#: facebook-button-plugin.php:302
-msgid "Go PRO"
-msgstr "Hanki PRO versio"
-
-#: facebook-button-plugin.php:305
+#: facebook-button-plugin.php:177
 msgid "Please, enable JavaScript in Your browser."
 msgstr ""
 
-#: facebook-button-plugin.php:320
-#, fuzzy, php-format
-msgid ""
-"If you would like to add Facebook buttons to your page or post, please use "
-"%s button"
-msgstr ""
-"Mikäli haluat lisätä Facebook napin sivullesi, kopioi ja liitä tämä "
-"lyhytkoodi artikkeliisi tai sivullesi:"
-
-#: facebook-button-plugin.php:325
-#, php-format
-msgid ""
-"You can add Facebook buttons to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s"
-msgstr ""
-
-#: facebook-button-plugin.php:336
+#: facebook-button-plugin.php:275
 #, fuzzy
-msgid "Display button"
+msgid "Add Facebook buttons to your page or post"
+msgstr "Facebook napin paikka:"
+
+#: facebook-button-plugin.php:397
+msgid "FAQ"
+msgstr "FAQ"
+
+#: facebook-button-plugin.php:398
+msgid "Support"
+msgstr "Tuki"
+
+#: includes/class-fcbkbttn-settings.php:25
+#, fuzzy
+msgid "Display"
 msgstr "Näytä nappi:"
 
-#: facebook-button-plugin.php:339
-msgid "My Page"
-msgstr "Minun sivuni"
+#: includes/class-fcbkbttn-settings.php:27
+msgid "Misc"
+msgstr ""
 
-#: facebook-button-plugin.php:340 facebook-button-plugin.php:507
+#: includes/class-fcbkbttn-settings.php:28
+#, fuzzy
+msgid "Custom Code"
+msgstr "Mukautettu Fecabook kuva"
+
+#: includes/class-fcbkbttn-settings.php:30
+msgid "License Key"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:107
+msgid "Settings saved"
+msgstr "Asetukset tallennettu"
+
+#: includes/class-fcbkbttn-settings.php:136
+msgid "Error: File size must not exceed 32KB"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:139
+msgid "Error: Invalid file type"
+msgstr "Virhe: Väärä tiedostotyyppi"
+
+#: includes/class-fcbkbttn-settings.php:145
+msgid "Upload successful."
+msgstr "Lataaminen onnistui"
+
+#: includes/class-fcbkbttn-settings.php:153
+#, fuzzy
+msgid "Error: failed to move file."
+msgstr "Virhe: tiedoston siirto epäonnistui"
+
+#: includes/class-fcbkbttn-settings.php:156
+#, fuzzy
+msgid "Error: check image width or height."
+msgstr "Virhe: tarkista kuvan leveys tai korkeus"
+
+#: includes/class-fcbkbttn-settings.php:160
+msgid "Uploading Error: check image properties"
+msgstr "Virhe latauksessa: tarkista kuvan ominaisuudet"
+
+#: includes/class-fcbkbttn-settings.php:184
+msgid "General"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:187
+#, fuzzy
+msgid "Buttons"
+msgstr "Facebook napin paikka:"
+
+#: includes/class-fcbkbttn-settings.php:190
+msgid "Profile URL"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:191
+#: includes/class-fcbkbttn-settings.php:386
 msgid "Like"
 msgstr "Tykkää"
 
-#: facebook-button-plugin.php:341
+#: includes/class-fcbkbttn-settings.php:192
 msgid "Share"
 msgstr "Jaa"
 
-#: facebook-button-plugin.php:346
+#: includes/class-fcbkbttn-settings.php:197
+msgid "Buttons Size"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:200
+msgid "Small"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:201
+msgid "Large"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:206
 #, fuzzy
-msgid "Facebook buttons position"
+msgid "Buttons Position"
 msgstr "Facebook napin paikka:"
 
-#: facebook-button-plugin.php:349
-msgid "Before"
-msgstr "Ennen"
-
-#: facebook-button-plugin.php:350
-msgid "After"
-msgstr "Jälkeen"
-
-#: facebook-button-plugin.php:351
-msgid "Before and After"
+#: includes/class-fcbkbttn-settings.php:211
+#, fuzzy
+msgid "Before content"
 msgstr "Ennen ja Jälkeen"
 
-#: facebook-button-plugin.php:352
-msgid "Shortcode"
-msgstr "Lyhytkoodi"
+#: includes/class-fcbkbttn-settings.php:216
+msgid "After content"
+msgstr ""
 
-#: facebook-button-plugin.php:357
-#, fuzzy
-msgid "Facebook buttons language"
-msgstr "Facebook Napin kieli:"
+#: includes/class-fcbkbttn-settings.php:222
+msgid "Language"
+msgstr ""
 
-#: facebook-button-plugin.php:368
+#: includes/class-fcbkbttn-settings.php:233
 #, fuzzy
-msgid "Change the language of Facebook Button"
+msgid "Select the default language for Facebook button(-s)."
 msgstr "Vaihda Facebook napin kieli"
 
-#: facebook-button-plugin.php:373 facebook-button-plugin.php:376
-#: facebook-button-plugin.php:381
-msgid "Use the current site language"
+#: includes/class-fcbkbttn-settings.php:242
+#: includes/class-fcbkbttn-settings.php:245
+#: includes/class-fcbkbttn-settings.php:249
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
 msgstr ""
 
-#: facebook-button-plugin.php:373 facebook-button-plugin.php:377
-#: facebook-button-plugin.php:382
-msgid "Using"
+#: includes/class-fcbkbttn-settings.php:245
+#, php-format
+msgid "Activate %s"
 msgstr ""
 
-#: facebook-button-plugin.php:377
-msgid "Activate"
+#: includes/class-fcbkbttn-settings.php:249
+msgid "Learn More"
+msgstr "Lue Lisää"
+
+#: includes/class-fcbkbttn-settings.php:254
+msgid "Excerpt"
 msgstr ""
 
-#: facebook-button-plugin.php:382
-msgid "Download"
-msgstr ""
-
-#: facebook-button-plugin.php:389
+#: includes/class-fcbkbttn-settings.php:256
 #, fuzzy
-msgid "Display buttons in excerpt"
+msgid "Enable to display buttons in excerpt."
 msgstr "Näytä nappi:"
 
-#: facebook-button-plugin.php:399 facebook-button-plugin.php:548
-#: facebook-button-plugin.php:585
+#: includes/class-fcbkbttn-settings.php:265
+#: includes/class-fcbkbttn-settings.php:441
+#: includes/class-fcbkbttn-settings.php:496
 msgid "Close"
 msgstr ""
 
-#: facebook-button-plugin.php:403
-msgid "Meta tags"
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:269
+#, fuzzy
+msgid "Meta Image"
+msgstr "Mukautettu Fecabook kuva"
 
-#: facebook-button-plugin.php:406
-msgid "Image"
-msgstr ""
-
-#: facebook-button-plugin.php:409
+#: includes/class-fcbkbttn-settings.php:274
 msgid "Featured Image"
 msgstr ""
 
-#: facebook-button-plugin.php:413
+#: includes/class-fcbkbttn-settings.php:278
 #, fuzzy
 msgid "Custom Image"
 msgstr "Mukautettu Fecabook kuva"
 
-#: facebook-button-plugin.php:413
-msgid "This image will be used for all of the posts"
+#: includes/class-fcbkbttn-settings.php:278
+msgid "This image will be used for all posts"
 msgstr ""
 
-#: facebook-button-plugin.php:423
-msgid "Description"
+#: includes/class-fcbkbttn-settings.php:285
+msgid "Meta Description"
 msgstr ""
 
-#: facebook-button-plugin.php:426
-msgid "Post excerpt"
+#: includes/class-fcbkbttn-settings.php:289
+msgid ""
+"This description will be used for all pages and posts. Leave blank to use "
+"page description."
 msgstr ""
 
-#: facebook-button-plugin.php:431
-msgid "This description will be used for all of the posts"
+#: includes/class-fcbkbttn-settings.php:298
+msgid "Profile URL Button"
 msgstr ""
 
-#: facebook-button-plugin.php:438 facebook-button-plugin.php:559
-#: facebook-button-plugin.php:637
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Mikäli päivität Pro versioon, kaikki asetuksesi tallennetaan."
-
-#: facebook-button-plugin.php:445 facebook-button-plugin.php:566
-#: facebook-button-plugin.php:594 facebook-button-plugin.php:644
+#: includes/class-fcbkbttn-settings.php:301
 #, fuzzy
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Ota käyttöön premium valinnat päivittämällä PRO versioon."
-
-#: facebook-button-plugin.php:447 facebook-button-plugin.php:568
-#: facebook-button-plugin.php:596 facebook-button-plugin.php:646
-msgid "Learn More"
-msgstr "Lue Lisää"
-
-#: facebook-button-plugin.php:455
-#, fuzzy
-msgid "Your Facebook ID or username"
+msgid "Facebook ID or Username"
 msgstr "Sinun Facebook ID:si tai käyttäjänimesi:"
 
-#: facebook-button-plugin.php:462
-msgid "\"My page\" button image"
+#: includes/class-fcbkbttn-settings.php:308
+msgid "Profile Button Image"
 msgstr ""
 
-#: facebook-button-plugin.php:467
-msgid "Standard Facebook image"
-msgstr "Standardi Facebook kuva"
+#: includes/class-fcbkbttn-settings.php:315
+msgid "Default"
+msgstr ""
 
-#: facebook-button-plugin.php:468
-msgid "Custom Facebook image"
+#: includes/class-fcbkbttn-settings.php:320
+#, fuzzy
+msgid "Custom image"
 msgstr "Mukautettu Fecabook kuva"
 
-#: facebook-button-plugin.php:471
+#: includes/class-fcbkbttn-settings.php:324
+#, fuzzy
 msgid ""
-"To use custom image you need to setup permissions to upload directory of "
+"To use custom image, You need to setup permissions for upload directory of "
 "your site"
 msgstr "Käyttääksesi mukautettua, kuva pitää voida ladata hakemistoosi"
 
-#: facebook-button-plugin.php:478
+#: includes/class-fcbkbttn-settings.php:331
 #, fuzzy
 msgid "Current image"
 msgstr "Nykyinen kuva:"
 
-#: facebook-button-plugin.php:486
+#: includes/class-fcbkbttn-settings.php:339
+#, fuzzy
 msgid ""
-"Image properties: max image width:100px; max image height:40px; max image "
+"Image requirements: max image width:100px; max image height:40px; max image "
 "size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
 msgstr ""
 "Kuvan ominaisuudet: max leveys 100px; max korkeus 40px; max koko 32Kb; kuvan "
 "tyypit:\"jpg\", \"jpeg\", \"png\"."
 
-#: facebook-button-plugin.php:490
-msgid "Button layout"
+#: includes/class-fcbkbttn-settings.php:343
+msgid "Like&Share Buttons"
 msgstr ""
 
-#: facebook-button-plugin.php:504
-msgid "Like button action"
+#: includes/class-fcbkbttn-settings.php:346
+msgid "Layout"
 msgstr ""
 
-#: facebook-button-plugin.php:508
+#: includes/class-fcbkbttn-settings.php:381
+msgid "Like Button Action"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:391
 msgid "Recommend"
 msgstr ""
 
-#: facebook-button-plugin.php:513
-msgid "Show faces"
+#: includes/class-fcbkbttn-settings.php:397
+msgid "Friends Faces"
 msgstr ""
 
-#: facebook-button-plugin.php:519
-msgid "Layout width"
+#: includes/class-fcbkbttn-settings.php:400
+msgid " Enable to show faces of your friends who submitted the button."
 msgstr ""
 
-#: facebook-button-plugin.php:525
-msgid "Color scheme"
+#: includes/class-fcbkbttn-settings.php:404
+msgid "Layout Width"
 msgstr ""
 
-#: facebook-button-plugin.php:528
+#: includes/class-fcbkbttn-settings.php:406
+msgid "px"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:410
+msgid "Theme"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:415
 msgid "Light"
 msgstr ""
 
-#: facebook-button-plugin.php:529
+#: includes/class-fcbkbttn-settings.php:420
 msgid "Dark"
 msgstr ""
 
-#: facebook-button-plugin.php:534
-#, fuzzy
-msgid "Html tag for \"Like\" button"
-msgstr "HTML tagi Tykkää Napille:"
-
-#: facebook-button-plugin.php:539
-msgid "Use this tag to improve validation of your site"
-msgstr "Käytä tätä tagia parantamaan sivusi näkyvyyttä"
-
-#: facebook-button-plugin.php:552
-msgid "\"Like\" for an entire site on every page:"
-msgstr "\"Like\" koko sivustolle ja kaikille sivuille:"
-
-#: facebook-button-plugin.php:554
-msgid ""
-"Notice: \"Like for the entire site\" option does not create an extra button. "
-"This option merely allows your users to like the entire website when this "
-"option is enabled, or a single post when this option is disabled, when "
-"clicking the regular \"Like\" button."
+#: includes/class-fcbkbttn-settings.php:426
+msgid "Like Button HTML Tag"
 msgstr ""
-"Huomautus: \"Tykkää koko sivustosta\" tämä valinta ei tee ylimääräistä "
-"nappia. Tämä valinnan avulla käyttäjät tykkäävät koko sivustosta. Mikäli ei "
-"ole valittu, niin käyttäjä tykkää vain yhdestä sivusta klikatessaan \"Tykkää"
-"\" nappia."
 
-#: facebook-button-plugin.php:576 facebook-button-plugin.php:632
-msgid "Save Changes"
-msgstr "Tallenna muutokset"
+#: includes/class-fcbkbttn-settings.php:432
+#, php-format
+msgid "Tag %s can be used to improve website code validation."
+msgstr ""
 
-#: facebook-button-plugin.php:588
+#: includes/class-fcbkbttn-settings.php:445
+msgid "URL to Like"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:447
+msgid "Leave blank to use a current page."
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:475
+msgid "Facebook Buttons Shortcode"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:478
+msgid ""
+"Add Facebook button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+
+#: includes/class-fcbkbttn-settings.php:497
 #, fuzzy
-msgid "Facebook Button preview:"
+msgid "Facebook Buttons Preview"
 msgstr "Facebook Nappi"
 
-#: facebook-button-plugin.php:614
+#: includes/class-fcbkbttn-settings.php:512
+#, fuzzy
+msgid "Display Settings"
+msgstr "Näytä nappi:"
+
+#: includes/class-fcbkbttn-settings.php:521
 msgid ""
 "Please choose the necessary post types (or single pages) where Facebook "
 "button will be displayed:"
@@ -331,30 +345,97 @@ msgstr ""
 "Valitse haluamasi viestin tyyppi (tai yksittäiset sivut) joissa Facebook "
 "nappi näytetään:"
 
-#: facebook-button-plugin.php:621
+#: includes/class-fcbkbttn-settings.php:528
 msgid "Show URL for pages"
 msgstr "Näytä URL sivuilla"
 
-#: facebook-button-plugin.php:627
-msgid "Example of the site's pages tree"
-msgstr "Esimerkki sivuston sivuhakemistosta"
+#: includes/class-fcbkbttn-settings.php:534
+msgid "Example of site pages tree"
+msgstr ""
 
-#: facebook-button-plugin.php:627
-msgid "Example of site pages' tree"
-msgstr "Esimerkki sivun sivuhakemistosta"
+#~ msgid "Error: File size > 32K"
+#~ msgstr "Virhe: Tiedoston koko > 32K"
 
-#: facebook-button-plugin.php:765
+#~ msgid "Example of the site's pages tree"
+#~ msgstr "Esimerkki sivuston sivuhakemistosta"
+
+#~ msgid "Example of site pages' tree"
+#~ msgstr "Esimerkki sivun sivuhakemistosta"
+
 #, fuzzy
-msgid "Add Facebook buttons to your page or post"
-msgstr "Facebook napin paikka:"
+#~ msgid "Facebook Buttons Shortchode"
+#~ msgstr "Facebook napin paikka:"
 
-#: facebook-button-plugin.php:876
-msgid "FAQ"
-msgstr "FAQ"
+#, fuzzy
+#~ msgid "Facebook button Settings"
+#~ msgstr "Facebook Napin asetukset"
 
-#: facebook-button-plugin.php:877
-msgid "Support"
-msgstr "Tuki"
+#~ msgid "Extra settings"
+#~ msgstr "Lisää asetuksia"
+
+#~ msgid "Go PRO"
+#~ msgstr "Hanki PRO versio"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you would like to add Facebook buttons to your page or post, please "
+#~ "use %s button"
+#~ msgstr ""
+#~ "Mikäli haluat lisätä Facebook napin sivullesi, kopioi ja liitä tämä "
+#~ "lyhytkoodi artikkeliisi tai sivullesi:"
+
+#~ msgid "My Page"
+#~ msgstr "Minun sivuni"
+
+#~ msgid "Before"
+#~ msgstr "Ennen"
+
+#~ msgid "After"
+#~ msgstr "Jälkeen"
+
+#~ msgid "Shortcode"
+#~ msgstr "Lyhytkoodi"
+
+#, fuzzy
+#~ msgid "Facebook buttons language"
+#~ msgstr "Facebook Napin kieli:"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "Mikäli päivität Pro versioon, kaikki asetuksesi tallennetaan."
+
+#, fuzzy
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Ota käyttöön premium valinnat päivittämällä PRO versioon."
+
+#~ msgid "Standard Facebook image"
+#~ msgstr "Standardi Facebook kuva"
+
+#~ msgid "Custom Facebook image"
+#~ msgstr "Mukautettu Fecabook kuva"
+
+#, fuzzy
+#~ msgid "Html tag for \"Like\" button"
+#~ msgstr "HTML tagi Tykkää Napille:"
+
+#~ msgid "Use this tag to improve validation of your site"
+#~ msgstr "Käytä tätä tagia parantamaan sivusi näkyvyyttä"
+
+#~ msgid "\"Like\" for an entire site on every page:"
+#~ msgstr "\"Like\" koko sivustolle ja kaikille sivuille:"
+
+#~ msgid ""
+#~ "Notice: \"Like for the entire site\" option does not create an extra "
+#~ "button. This option merely allows your users to like the entire website "
+#~ "when this option is enabled, or a single post when this option is "
+#~ "disabled, when clicking the regular \"Like\" button."
+#~ msgstr ""
+#~ "Huomautus: \"Tykkää koko sivustosta\" tämä valinta ei tee ylimääräistä "
+#~ "nappia. Tämä valinnan avulla käyttäjät tykkäävät koko sivustosta. Mikäli "
+#~ "ei ole valittu, niin käyttäjä tykkää vain yhdestä sivusta klikatessaan "
+#~ "\"Tykkää\" nappia."
+
+#~ msgid "Save Changes"
+#~ msgstr "Tallenna muutokset"
 
 #~ msgid "Notice:"
 #~ msgstr "Huomautus:"

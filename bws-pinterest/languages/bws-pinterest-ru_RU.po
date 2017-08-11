@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinterest\n"
-"POT-Creation-Date: 2016-10-26 13:58+0300\n"
-"PO-Revision-Date: 2016-11-17 12:25+0300\n"
+"POT-Creation-Date: 2017-06-30 12:15+0300\n"
+"PO-Revision-Date: 2017-06-30 12:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugins@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
@@ -17,312 +17,83 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: bws-pinterest.php:132
-msgid "Follow me"
-msgstr "Подписаться"
-
-#: bws-pinterest.php:183
-msgid ""
-"Please, enter \"Pinterest user URL\" to add Follow Button. Settings are not "
-"saved."
-msgstr ""
-"Пожалуйста, введите \"Профиль Pinterest\", чтобы добавить кнопку Follow. "
-"Настройки не сохранены."
-
-#: bws-pinterest.php:205
-#, php-format
-msgid "Error: File size %1s"
-msgstr "Ошибка: Размер файла %1s"
-
-#: bws-pinterest.php:208
-msgid "Error: Invalid file type"
-msgstr "Ошибка: Некорректный тип файла"
-
-#: bws-pinterest.php:220
-msgid "Error: moving file failed"
-msgstr "Ошибка: При загрузке произошла ошибка"
-
-#: bws-pinterest.php:226
-msgid "Error: select the upload file"
-msgstr "Ошибка:  Выберите файл для загрузки"
-
-#: bws-pinterest.php:231
-msgid "Settings saved"
-msgstr "Настройки сохранены"
-
-#: bws-pinterest.php:239
-msgid "All plugin settings were restored."
-msgstr "Все настройки плагина восстановлены."
-
-#: bws-pinterest.php:252
+#: bws-pinterest.php:35 bws-pinterest.php:36
+#: includes/class-pntrst-settings.php:157
 msgid "Pinterest Settings"
 msgstr "Настройки Pinterest"
 
-#: bws-pinterest.php:254
-msgid "How to Use Step-by-step Instruction"
-msgstr "Инструкция по использованию"
-
-#: bws-pinterest.php:257 bws-pinterest.php:1011 bws-pinterest.php:1028
+#: bws-pinterest.php:36 bws-pinterest.php:187 bws-pinterest.php:732
+#: bws-pinterest.php:749 includes/class-pntrst-settings.php:23
 msgid "Settings"
 msgstr "Настройки"
 
-#: bws-pinterest.php:259
-msgid "Extra settings"
-msgstr "Дополнительные настройки"
+#: bws-pinterest.php:41
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
 
-#: bws-pinterest.php:261
-msgid "Custom code"
-msgstr "Пользовательский код"
-
-#: bws-pinterest.php:263
-msgid "Go PRO"
-msgstr "Перейти на PRO версию"
-
-#: bws-pinterest.php:283
-#, php-format
-msgid ""
-"If you would like to add Pinterest buttons or widgets to your page or post, "
-"please use %s button"
-msgstr ""
-"Если вы хотите добавить кнопки и виджеты Pinterest   на вашу страницу или "
-"пост, то используйте кнопку %s"
-
-#: bws-pinterest.php:288
-#, php-format
-msgid ""
-"You can add buttons or widgets to your content by clicking on %1s button in "
-"the content edit block using the Visual mode. If the button isn't displayed, "
-"please use the shortcode %2s for Pin It button, %3s for Follow button or %4s "
-"for Pinteresr widget"
-msgstr ""
-"Вы можете добавить кнопки или виджеты на вашу страницу или пост, нажав на "
-"кнопку %1s в блоке редактирования контента в режиме Visual. Если кнопка не "
-"отображается, пожалуйста, используйте шорткод %2s для кнопки Pin It, %3s для "
-"кнопки Follow или %4s для виджета Pinterest"
-
-#: bws-pinterest.php:300
-msgid "Pinterest user URL"
-msgstr "Профиль Pinterest"
-
-#: bws-pinterest.php:305
-msgid "Example"
-msgstr "Пример"
-
-#: bws-pinterest.php:313
-msgid "Settings for Pin It Button"
-msgstr "Настройки кнопки Pin It"
-
-#: bws-pinterest.php:318
-msgid "Pin It Button place"
-msgstr "Отображение кнопки"
-
-#: bws-pinterest.php:321 bws-pinterest.php:406
-msgid "Before the content"
-msgstr "Перед контентом"
-
-#: bws-pinterest.php:322 bws-pinterest.php:407
-msgid "After the content"
-msgstr "После контента"
-
-#: bws-pinterest.php:323
-msgid "On image hover"
-msgstr "При наведении на изображение"
-
-#: bws-pinterest.php:329
-msgid "Button image type"
-msgstr "Тип изображения кнопки"
-
-#: bws-pinterest.php:332
-msgid "Default"
-msgstr "Стандартное"
-
-#: bws-pinterest.php:333
-msgid "Custom"
-msgstr "Пользовательское"
-
-#: bws-pinterest.php:339
-#, php-format
-msgid "Max image size: %1s. Allowed file extensions: %2s"
-msgstr "Макс. размер изображения: %1s. Разрешенные типы: %2s"
-
-#: bws-pinterest.php:346
-msgid "Current custom image"
-msgstr "Текущее пользовательское изображение"
-
-#: bws-pinterest.php:354
-msgid "Button Shape"
-msgstr "Форма кнопки"
-
-#: bws-pinterest.php:357
-msgid "Square"
-msgstr "Квадратная"
-
-#: bws-pinterest.php:358
-msgid "Round"
-msgstr "Круглая"
+#: bws-pinterest.php:168
+msgid "Follow me"
+msgstr "Подписаться"
 
 #: bws-pinterest.php:364
-msgid "Button Size"
-msgstr "Размер кнопки"
-
-#: bws-pinterest.php:367 bws-pinterest.php:722 bws-pinterest.php:878
-msgid "Small"
-msgstr "Маленький"
-
-#: bws-pinterest.php:368 bws-pinterest.php:724 bws-pinterest.php:880
-msgid "Large"
-msgstr "Большой"
-
-#: bws-pinterest.php:374
-msgid "Button Color"
-msgstr "Цвет кнопки"
-
-#: bws-pinterest.php:377
-msgid "Red"
-msgstr "Красный"
-
-#: bws-pinterest.php:378
-msgid "Gray"
-msgstr "Серый"
-
-#: bws-pinterest.php:379
-msgid "White"
-msgstr "Белый"
-
-#: bws-pinterest.php:381 bws-pinterest.php:393
-msgid "Works only if the square image is chosen"
-msgstr "Работает только для квадратной формы"
-
-#: bws-pinterest.php:386
-msgid "Pin Counts"
-msgstr "Количество сохранений"
-
-#: bws-pinterest.php:389
-msgid "None"
-msgstr "Не показывать"
-
-#: bws-pinterest.php:390
-msgid "Above the button"
-msgstr "Над кнопкой"
-
-#: bws-pinterest.php:391
-msgid "Beside the button"
-msgstr "Справа"
-
-#: bws-pinterest.php:399
-msgid "Settings for Follow Button"
-msgstr "Настройки для кнопки Follow"
-
-#: bws-pinterest.php:403
-msgid "Follow Button place"
-msgstr "Отображение кнопки"
-
-#: bws-pinterest.php:413
-msgid "Follow Button label"
-msgstr "Текст кнопки"
-
-#: bws-pinterest.php:421
-msgid "Save Changes"
-msgstr "Сохранить изменения"
-
-#: bws-pinterest.php:437
-msgid ""
-"Please choose the necessary post types (or single pages) where Pinterest "
-"buttons will be displayed:"
-msgstr ""
-"Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
-"отображаться Pinterest кнопки:"
-
-#: bws-pinterest.php:444
-msgid "Show URL for pages"
-msgstr "Отображать URL для страниц"
-
-#: bws-pinterest.php:450
-msgid "Example of the site's pages tree"
-msgstr "Пример дерева страниц сайта"
-
-#: bws-pinterest.php:450
-msgid "Example of site pages' tree"
-msgstr "Пример дерева страниц сайта"
-
-#: bws-pinterest.php:455
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
-
-#: bws-pinterest.php:462
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Активируйте премиум опции обновившись до Pro версии"
-
-#: bws-pinterest.php:464
-msgid "Learn More"
-msgstr "Подробнее"
-
-#: bws-pinterest.php:629
 msgid "Pinterest Widget"
 msgstr "Виджет Pinterest"
 
-#: bws-pinterest.php:632
+#: bws-pinterest.php:367
 msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
 msgstr "Отображение виджетов Pinterest"
 
-#: bws-pinterest.php:696
+#: bws-pinterest.php:431
 msgid "Title"
 msgstr "Название"
 
-#: bws-pinterest.php:701
+#: bws-pinterest.php:436
 msgid "Type"
 msgstr "Тип"
 
-#: bws-pinterest.php:703 bws-pinterest.php:713 bws-pinterest.php:853
+#: bws-pinterest.php:438 bws-pinterest.php:448 bws-pinterest.php:576
 msgid "Pin Widget"
 msgstr "Pin виджет"
 
-#: bws-pinterest.php:704 bws-pinterest.php:714 bws-pinterest.php:854
+#: bws-pinterest.php:439 bws-pinterest.php:449 bws-pinterest.php:577
 msgid "Board Widget"
 msgstr "Board виджет"
 
-#: bws-pinterest.php:705 bws-pinterest.php:855
+#: bws-pinterest.php:440 bws-pinterest.php:578
 msgid "Profile Widget"
 msgstr "Profile виджет"
 
-#: bws-pinterest.php:709 bws-pinterest.php:871
+#: bws-pinterest.php:444 bws-pinterest.php:594
 msgid "URL"
 msgstr "URL"
 
-#: bws-pinterest.php:712
+#: bws-pinterest.php:447
 msgid "Examples"
 msgstr "Примеры"
 
-#: bws-pinterest.php:720 bws-pinterest.php:876
+#: bws-pinterest.php:453 bws-pinterest.php:599
 msgid "Size"
 msgstr "Размер"
 
-#: bws-pinterest.php:723 bws-pinterest.php:879
+#: bws-pinterest.php:455 bws-pinterest.php:601
+#: includes/class-pntrst-settings.php:269
+msgid "Small"
+msgstr "Маленький"
+
+#: bws-pinterest.php:456 bws-pinterest.php:602
 msgid "Medium"
 msgstr "Средний"
 
-#: bws-pinterest.php:728 bws-pinterest.php:885
+#: bws-pinterest.php:457 bws-pinterest.php:603
+#: includes/class-pntrst-settings.php:270
+msgid "Large"
+msgstr "Большой"
+
+#: bws-pinterest.php:461 bws-pinterest.php:608
 msgid "Width"
 msgstr "Ширина"
 
-#: bws-pinterest.php:731 bws-pinterest.php:736
-#, php-format
-msgid "Min width%1s. If emtpy width: auto"
-msgstr "Мин. ширина%1s. Если пусто - ширина: авто"
-
-#: bws-pinterest.php:738 bws-pinterest.php:886
-msgid "Height"
-msgstr "Высота"
-
-#: bws-pinterest.php:741 bws-pinterest.php:745
-msgid "Min height"
-msgstr "Мин. высота"
-
-#: bws-pinterest.php:746 bws-pinterest.php:887
-msgid "Thumbnails width"
-msgstr "Ширина миниатюр"
-
-#: bws-pinterest.php:750 bws-pinterest.php:758
+#: bws-pinterest.php:465 bws-pinterest.php:481
 #, php-format
 msgid ""
 "Min width%1s. If the widget width field is empty, the thumbnail width will "
@@ -331,61 +102,420 @@ msgstr ""
 "Мин. ширина%1s. Если ширина виджета не задана, то ширина миниатюр будет "
 "задана автоматически."
 
-#: bws-pinterest.php:849
+#: bws-pinterest.php:469 bws-pinterest.php:609
+msgid "Height"
+msgstr "Высота"
+
+#: bws-pinterest.php:473
+#, php-format
+msgid "Min height%1s."
+msgstr "Мин. высота%1s."
+
+#: bws-pinterest.php:477 bws-pinterest.php:610
+msgid "Thumbnails width"
+msgstr "Ширина миниатюр"
+
+#: bws-pinterest.php:572
 msgid "Shortcode Type"
 msgstr "Тип шорткода"
 
-#: bws-pinterest.php:851
+#: bws-pinterest.php:574 includes/class-pntrst-settings.php:286
 msgid "Follow Button"
-msgstr "Кнопка Follow"
+msgstr "Кнопка \"Подписаться\""
 
-#: bws-pinterest.php:852
-msgid "Pin It button"
-msgstr "Кнопка Pin It"
+#: bws-pinterest.php:575 includes/class-pntrst-settings.php:221
+msgid "Save Button"
+msgstr "Кнопка \"Сохранить\""
 
-#: bws-pinterest.php:859
+#: bws-pinterest.php:582
 msgid "Button label"
 msgstr "Текст кнопки"
 
-#: bws-pinterest.php:863
+#: bws-pinterest.php:586
 msgid "Save any image"
 msgstr "Сохранять любое изображение"
 
-#: bws-pinterest.php:864
+#: bws-pinterest.php:587
 msgid "Save defined image"
 msgstr "Сохранять заданное изображение"
 
-#: bws-pinterest.php:865
+#: bws-pinterest.php:588
 msgid "Pin image URL"
 msgstr "URL заданого изображения"
 
-#: bws-pinterest.php:866
+#: bws-pinterest.php:589
 msgid "Custom button image"
 msgstr "Пользовательское изображение кнопки"
 
-#: bws-pinterest.php:867
+#: bws-pinterest.php:590
 msgid "Custom image URL"
-msgstr "URL кастомного изображения кнопки"
+msgstr "URL пользовательского изображения кнопки"
 
-#: bws-pinterest.php:1012
+#: bws-pinterest.php:733
 msgid "FAQ"
 msgstr "FAQ"
 
-#: bws-pinterest.php:1013
+#: bws-pinterest.php:734
 msgid "Support"
 msgstr "Поддержка"
+
+#: includes/class-pntrst-settings.php:25
+msgid "Display"
+msgstr "Отображать"
+
+#: includes/class-pntrst-settings.php:27
+msgid "Misc"
+msgstr "Разное"
+
+#: includes/class-pntrst-settings.php:28
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: includes/class-pntrst-settings.php:30
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: includes/class-pntrst-settings.php:86
+msgid ""
+"Please, enter \"Pinterest User URL\" to add Follow Button. Settings are not "
+"saved."
+msgstr ""
+"Пожалуйста, введите \"Профиль Pinterest\", чтобы добавить кнопку "
+"\"Подписаться\". Настройки не сохранены."
+
+#: includes/class-pntrst-settings.php:112
+#, php-format
+msgid "Error: File size %1s"
+msgstr "Ошибка: Размер файла %1s"
+
+#: includes/class-pntrst-settings.php:115
+msgid "Error: Invalid file type"
+msgstr "Ошибка: Некорректный тип файла"
+
+#: includes/class-pntrst-settings.php:127
+msgid "Error: moving file failed"
+msgstr "Ошибка: При загрузке произошла ошибка"
+
+#: includes/class-pntrst-settings.php:133
+msgid "Error: select the upload file"
+msgstr "Ошибка:  Выберите файл для загрузки"
+
+#: includes/class-pntrst-settings.php:140
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: includes/class-pntrst-settings.php:160
+msgid "General"
+msgstr "Общее"
+
+#: includes/class-pntrst-settings.php:163
+msgid "Pinterest User ID"
+msgstr "Pinterest ID профиля"
+
+#: includes/class-pntrst-settings.php:166
+msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
+msgstr "Введите ваш Pinterest ID профиля. Например, \"bestwebsoft\"."
+
+#: includes/class-pntrst-settings.php:170
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: includes/class-pntrst-settings.php:175
+#: includes/class-pntrst-settings.php:330
+msgid "Save"
+msgstr "\"Сохранить\""
+
+#: includes/class-pntrst-settings.php:180
+#: includes/class-pntrst-settings.php:334
+msgid "Follow"
+msgstr "\"Подписаться\""
+
+#: includes/class-pntrst-settings.php:186
+msgid "Language"
+msgstr "Язык"
+
+#: includes/class-pntrst-settings.php:197
+msgid "Select the default language for Pinterest button(-s)."
+msgstr "Выберите язык отображения по умолчанию для кнопок Pinterest."
+
+#: includes/class-pntrst-settings.php:207
+#: includes/class-pntrst-settings.php:211
+#: includes/class-pntrst-settings.php:215
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
+msgstr ""
+"Включить, чтобы переключить язык автоматически на многоязычном сайте, "
+"используя Multilanguage плагин."
+
+#: includes/class-pntrst-settings.php:211
+#, php-format
+msgid "Activate %s"
+msgstr "Активировать %s"
+
+#: includes/class-pntrst-settings.php:215
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: includes/class-pntrst-settings.php:224
+#: includes/class-pntrst-settings.php:296
+msgid "Button Position"
+msgstr "Положение кнопки"
+
+#: includes/class-pntrst-settings.php:227
+#: includes/class-pntrst-settings.php:299
+msgid "Before content"
+msgstr "Перед контентом"
+
+#: includes/class-pntrst-settings.php:228
+#: includes/class-pntrst-settings.php:300
+msgid "After content"
+msgstr "После контента"
+
+#: includes/class-pntrst-settings.php:229
+msgid "On image hover"
+msgstr "При наведении на изображение"
+
+#: includes/class-pntrst-settings.php:234
+msgid "Button Image"
+msgstr "Изображение кнопки"
+
+#: includes/class-pntrst-settings.php:237
+msgid "Default"
+msgstr "Стандартное"
+
+#: includes/class-pntrst-settings.php:238
+msgid "Custom"
+msgstr "Пользовательское"
+
+#: includes/class-pntrst-settings.php:243
+#, php-format
+msgid "Max image size: %1s. Allowed file extensions: %2s"
+msgstr "Макс. размер изображения: %1s. Разрешенные типы: %2s"
+
+#: includes/class-pntrst-settings.php:250
+msgid "Current custom image"
+msgstr "Текущее пользовательское изображение"
+
+#: includes/class-pntrst-settings.php:257
+msgid "Button Shape"
+msgstr "Форма кнопки"
+
+#: includes/class-pntrst-settings.php:260
+msgid "Square"
+msgstr "Квадратная"
+
+#: includes/class-pntrst-settings.php:261
+msgid "Round"
+msgstr "Круглая"
+
+#: includes/class-pntrst-settings.php:266
+msgid "Button Size"
+msgstr "Размер кнопки"
+
+#: includes/class-pntrst-settings.php:275
+msgid "Show Pin Count"
+msgstr "Отображать количество сохранений"
+
+#: includes/class-pntrst-settings.php:278
+msgid "Not shown"
+msgstr "Не показывать"
+
+#: includes/class-pntrst-settings.php:279
+msgid "Above the button"
+msgstr "Над кнопкой"
+
+#: includes/class-pntrst-settings.php:280
+msgid "Beside the button"
+msgstr "Справа"
+
+#: includes/class-pntrst-settings.php:289
+msgid "Full Name"
+msgstr "Имя профиля"
+
+#: includes/class-pntrst-settings.php:292
+msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
+msgstr "Введите имя вашего профиля Pinterest. Например, \"bestwebsoft\"."
+
+#: includes/class-pntrst-settings.php:324
+msgid "Pinterest Buttons Shortcode"
+msgstr "Шорткод кнопок Pinterest"
+
+#: includes/class-pntrst-settings.php:327
+msgid "Add Pinterest to a widget."
+msgstr "Добавьте Pinterest в виджет."
+
+#: includes/class-pntrst-settings.php:327
+msgid "Navigate to Widgets"
+msgstr "Перейти к Виджетам"
+
+#: includes/class-pntrst-settings.php:328
+msgid ""
+"Add a Pinterest button(-s) to your posts, pages or custom post types by "
+"using the following shortcode:"
+msgstr ""
+"Добавить кнопки Pinterest на ваши записи, страницы, пользовательские типы "
+"записей с помощью данного шорткода:"
+
+#: includes/class-pntrst-settings.php:345
+msgid "Display Settings"
+msgstr "Настройка отображения"
+
+#: includes/class-pntrst-settings.php:354
+msgid ""
+"Please choose the necessary post types (or single pages) where Pinterest "
+"buttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
+"отображаться Pinterest кнопки:"
+
+#: includes/class-pntrst-settings.php:361
+msgid "Show URL for pages"
+msgstr "Отображать URL для страниц"
+
+#: includes/class-pntrst-settings.php:367
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: includes/class-pntrst-settings.php:367
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#~ msgid "Pinterest User URL"
+#~ msgstr "Профиль Pinterest"
+
+#~ msgid "Button image"
+#~ msgstr "Изображение кнопки"
+
+#~ msgid "Before the content"
+#~ msgstr "Перед контентом"
+
+#~ msgid "After the content"
+#~ msgstr "После контента"
+
+#~ msgid ""
+#~ "Please, enter \"Pinterest user URL\" to add Follow Button. Settings are "
+#~ "not saved."
+#~ msgstr ""
+#~ "Пожалуйста, введите \"Профиль Pinterest\", чтобы добавить кнопку "
+#~ "\"Подписаться\". Настройки не сохранены."
+
+#~ msgid "Pinterest user URL"
+#~ msgstr "Профиль Pinterest"
+
+#~ msgid "Button image type"
+#~ msgstr "Тип изображения кнопки"
+
+#~ msgid "Min height"
+#~ msgstr "Мин. высота"
+
+#~ msgid "Can't create a widget?"
+#~ msgstr "Не удается создать виджет?"
+
+#~ msgid "Read the instruction"
+#~ msgstr "Пожалуйста, ознакомьтесь с инструкцией"
+
+#~ msgid "Save button"
+#~ msgstr "Кнопка \"Сохранить\""
+
+#~ msgid "Min width%1s. If emtpy width: auto"
+#~ msgstr "Мин. ширина%1s. Если пусто - ширина: авто"
+
+#~ msgid "Add \"Pinterest\" to a widget."
+#~ msgstr "Добавьте Pinterest в виджет."
+
+#~ msgid "Save Widget"
+#~ msgstr "Save виджет"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#~ msgid "How to Use Step-by-step Instruction"
+#~ msgstr "Инструкция по использованию"
+
+#~ msgid "Extra settings"
+#~ msgstr "Дополнительные настройки"
+
+#~ msgid "Custom code"
+#~ msgstr "Пользовательский код"
+
+#~ msgid "Go PRO"
+#~ msgstr "Перейти на PRO версию"
+
+#~ msgid ""
+#~ "If you would like to add Pinterest buttons or widgets to your page or "
+#~ "post, please use %s button"
+#~ msgstr ""
+#~ "Если вы хотите добавить кнопки и виджеты Pinterest   на вашу страницу или "
+#~ "пост, то используйте кнопку %s"
+
+#~ msgid ""
+#~ "You can add buttons or widgets to your content by clicking on %1s button "
+#~ "in the content edit block using the Visual mode. If the button isn't "
+#~ "displayed, please use the shortcode %2s for Pin It button, %3s for Follow "
+#~ "button or %4s for Pinteresr widget"
+#~ msgstr ""
+#~ "Вы можете добавить кнопки или виджеты на вашу страницу или пост, нажав на "
+#~ "кнопку %1s в блоке редактирования контента в режиме Visual. Если кнопка "
+#~ "не отображается, пожалуйста, используйте шорткод %2s для кнопки Pin It, "
+#~ "%3s для кнопки Follow или %4s для виджета Pinterest"
+
+#~ msgid "Example"
+#~ msgstr "Пример"
+
+#~ msgid "Settings for Pin It Button"
+#~ msgstr "Настройки кнопки Pin It"
+
+#~ msgid "Pin It Button place"
+#~ msgstr "Отображение кнопки"
+
+#~ msgid "Button Color"
+#~ msgstr "Цвет кнопки"
+
+#~ msgid "Red"
+#~ msgstr "Красный"
+
+#~ msgid "Gray"
+#~ msgstr "Серый"
+
+#~ msgid "White"
+#~ msgstr "Белый"
+
+#~ msgid "Works only if the square image is chosen"
+#~ msgstr "Работает только для квадратной формы"
+
+#~ msgid "Pin Counts"
+#~ msgstr "Количество сохранений"
+
+#~ msgid "None"
+#~ msgstr "Не показывать"
+
+#~ msgid "Settings for Follow Button"
+#~ msgstr "Настройки для кнопки Follow"
+
+#~ msgid "Follow Button place"
+#~ msgstr "Отображение кнопки"
+
+#~ msgid "Follow Button label"
+#~ msgstr "Текст кнопки"
+
+#~ msgid "Save Changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
+
+#~ msgid "Pin It button"
+#~ msgstr "Кнопка Pin It"
 
 #~ msgid "Pinterest"
 #~ msgstr "Pinterest"
 
 #~ msgid "Min width"
 #~ msgstr "Мин. ширина"
-
-#~ msgid "Before content"
-#~ msgstr "Перед контентом"
-
-#~ msgid "After content"
-#~ msgstr "После контента"
 
 #~ msgid "Default button image settings"
 #~ msgstr "Настройки стандартной кнопки"

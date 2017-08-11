@@ -1,12 +1,12 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: twitter\n"
+"Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-27 15:36+0300\n"
-"PO-Revision-Date: 2016-05-27 15:59+0300\n"
+"POT-Creation-Date: 2017-07-13 16:47+0300\n"
+"PO-Revision-Date: 2017-07-13 16:51+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
-"Language: uk\n"
+"Language: ua_UA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,321 +16,599 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: twitter.php:35
+#: twitter.php:36 twitter.php:37 twitter.php:190
+#: includes/class-twttr-settings.php:221
 msgid "Twitter Button Settings"
 msgstr "Налаштування Twitter Button"
 
-#: twitter.php:209
-msgid "Settings saved"
-msgstr "Налаштування збережено"
-
-#: twitter.php:231
-msgid "Error: File size > 32K"
-msgstr "Помилка: Розмір файлу > 32K"
-
-#: twitter.php:233
-msgid "Error: Invalid file type"
-msgstr "Помилка: Невірний тип файлу"
-
-#: twitter.php:250
-msgid "The upload was successful"
-msgstr "Завантаження пройшло вдало"
-
-#: twitter.php:252
-msgid "Error: Failed to move file"
-msgstr "Помилка: не вдалося перемістити файл"
-
-#: twitter.php:255
-msgid "Error: check image width or height"
-msgstr "Помилка: перевірте ширину або висоту зображення"
-
-#: twitter.php:259
-msgid "Uploading Error: check image properties"
-msgstr "Помилка завантаження: перевірте властивості зображення"
-
-#: twitter.php:269
-msgid "All plugin settings were restored."
-msgstr "Всі налаштування плагіну було скинуто до стандартних."
-
-#: twitter.php:283 twitter.php:882 twitter.php:895
+#: twitter.php:37 twitter.php:423 twitter.php:436
+#: includes/class-twttr-settings.php:24
 msgid "Settings"
 msgstr "Налаштування"
 
-#: twitter.php:284
-msgid "Extra settings"
-msgstr "Додаткові налаштування"
+#: twitter.php:43
+msgid "Upgrade to Pro"
+msgstr "Оновитися до Pro"
 
-#: twitter.php:285
-msgid "Custom Code"
-msgstr "Код користувача"
+#: twitter.php:191
+msgid "Please enable JavaScript in Your browser."
+msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
 
-#: twitter.php:286
-msgid "Go PRO"
-msgstr "Перейти на Pro версію"
+#: twitter.php:255 twitter.php:305 twitter.php:309 twitter.php:381
+#: includes/class-twttr-settings.php:230
+msgid "Tweet"
+msgstr "Твіт"
 
-#: twitter.php:299
-#, php-format
-msgid ""
-"If you want to add twitter buttons to your page or post, please use %s button"
-msgstr ""
-"Якщо ви хочете додати кнопки твіттера на вашу сторінку або пост, будь ласка, "
-"використовуйте кнопку %s "
-
-#: twitter.php:304
-#, php-format
-msgid ""
-"You can add Twitter buttons to your page or post by clicking on %s button in "
-"the content edit block using the Visual mode. If the button isn't displayed, "
-"please use the shortcode %s. Instead of asterisk, please add the necessary "
-"buttons separated by commas (Ex:"
-msgstr ""
-"Ви можете додати кнопки твіттера на вашу сторінку або пост, натиснувши на "
-"кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
-"відображається, будь ласка, використовуйте шорткод %s "
-
-#: twitter.php:317
-msgid "Twitter buttons position"
-msgstr "Розташування кнопок"
-
-#: twitter.php:321
-msgid "Before"
-msgstr "До"
-
-#: twitter.php:322
-msgid "After"
-msgstr "Після"
-
-#: twitter.php:323
-msgid "Before And After"
-msgstr "До і після"
-
-#: twitter.php:324
-msgid "Only shortcode"
-msgstr "Тільки шорткод"
-
-#: twitter.php:329
-msgid "Show button"
-msgstr "Відобразити кнопки"
-
-#: twitter.php:332
-msgid "Tweet (Share a link)"
-msgstr "Твіттнути (дати посилання)"
-
-#: twitter.php:334 twitter.php:741 twitter.php:745 twitter.php:841
+#: twitter.php:272 twitter.php:276
 msgid "Follow me"
 msgstr "Читати"
 
-#: twitter.php:336 twitter.php:443 twitter.php:515 twitter.php:842
+#: twitter.php:285
+msgid "TwitterStories"
+msgstr "Твіттер історія"
+
+#: twitter.php:326 includes/class-twttr-settings.php:457
+msgid "Tweet to"
+msgstr "Твіт для"
+
+#: twitter.php:380
+msgid "Please select twitter buttons which will be displayed"
+msgstr "Будь-ласка, оберіть твіттер кнопки, що будуть відображені"
+
+#: twitter.php:382 includes/class-twttr-settings.php:232
+msgid "Follow"
+msgstr "Читати"
+
+#: twitter.php:383 includes/class-twttr-settings.php:234
+#: includes/class-twttr-settings.php:354 includes/class-twttr-settings.php:415
 msgid "Hashtag"
 msgstr "Мітка"
 
-#: twitter.php:338 twitter.php:843
+#: twitter.php:384 includes/class-twttr-settings.php:236
 msgid "Mention"
 msgstr "Згадати"
 
-#: twitter.php:343
-msgid "Language"
-msgstr "Мова"
-
-#: twitter.php:347
-msgid "Automatic"
-msgstr "Автоматично"
-
-#: twitter.php:382
-msgid "Size"
-msgstr "Розмір"
-
-#: twitter.php:386
-msgid "Small"
-msgstr "Маленька"
-
-#: twitter.php:387
-msgid "Large"
-msgstr "Велика"
-
-#: twitter.php:393
-msgid "Opt-out of tailoring Twitter"
-msgstr "Відмовитися від адаптації Твіттера"
-
-#: twitter.php:397
-msgid "For getting more information about this option, please"
-msgstr "Для отримання додаткової інформації про цю опції, будь ласка"
-
-#: twitter.php:397
-msgid "click here"
-msgstr "натисніть тут"
-
-#: twitter.php:402
-msgid "Settings for the \"Tweet\" button"
-msgstr "Налаштування для кнопки \"Твіттнути\""
-
-#: twitter.php:407 twitter.php:533
-msgid "Share URL"
-msgstr "Відправити URL-адресу"
-
-#: twitter.php:410 twitter.php:538
-msgid "the page URL"
-msgstr "поточної сторінки"
-
-#: twitter.php:411 twitter.php:537
-msgid "home URL"
-msgstr "головної сторінки"
-
-#: twitter.php:416 twitter.php:523 twitter.php:564
-msgid "Tweet text"
-msgstr "Текст твітту"
-
-#: twitter.php:419 twitter.php:526 twitter.php:567
-msgid "the title of the page"
-msgstr "заголовок поточної сторінки"
-
-#: twitter.php:426
-msgid "Via"
-msgstr "За допомогою"
-
-#: twitter.php:430
-msgid "Tweet been received from the Twitter username"
-msgstr "Твітт було отримано від твітт-користувача"
-
-#: twitter.php:435 twitter.php:543 twitter.php:574
-msgid "Recommend"
-msgstr "Рекомендувати"
-
-#: twitter.php:438 twitter.php:546 twitter.php:577
-msgid "Enter username of someone you recomend"
-msgstr "Ввести твітт-користувача, якому рекомендується"
-
-#: twitter.php:451
-msgid "Settings for the \"Follow me\" button"
-msgstr "Налаштування для кнопки \"Читати\""
-
-#: twitter.php:456
-msgid "Your username"
-msgstr "Ваше ім'я користувача"
-
-#: twitter.php:460
-msgid ""
-"If you do not have Twitter account yet, you should create it using this link"
-msgstr ""
-"Якщо ви ще не маєте акаунту Twitter, вам слід створити його, використовуючи "
-"це посилання"
-
-#: twitter.php:465
-msgid "\"Follow me\" button image"
-msgstr "Зображення кнопки \"Читати\""
-
-#: twitter.php:470
-msgid "Standard image"
-msgstr "Стандартне зображення"
-
-#: twitter.php:471
-msgid "Custom image"
-msgstr "Кастомне зображення"
-
-#: twitter.php:474
-msgid ""
-"To use custom image You need to setup permissions to upload directory of "
-"your site"
-msgstr ""
-"Для того, щоб використовувати кастомне зображення, Вам потрібно встановити "
-"необхідні права для папки завантажень Вашого сайту"
-
-#: twitter.php:481
-msgid "Current image"
-msgstr "Поточне зображення"
-
-#: twitter.php:488
-msgid ""
-"Image properties: max image width:100px; max image height:100px; max image "
-"size:32Kb; image types:\"jpg\", \"jpeg\"."
-msgstr ""
-"Властивості зображення: макс. ширина зображення: 100px; макс. висота "
-"зображення: 100px; макс. розмір зображення: 32Kb; типи зображень: \"jpg\", "
-"\"jpeg\"."
-
-#: twitter.php:493
-msgid "Show username"
-msgstr "Показувати ім'я користувача"
-
-#: twitter.php:501
-msgid "Show count"
-msgstr "Показувати кількість твіттов"
-
-#: twitter.php:505
-msgid "Show the number of Twitter accounts following the specified account"
-msgstr "Показувати кількість акаунтів твіттера , які твіттнулі цей твітт"
-
-#: twitter.php:510
-msgid "Settings for the \"Hashtag\" button"
-msgstr "Налаштування для кнопки \"Мітка\""
-
-#: twitter.php:536
-msgid "no URL"
-msgstr "URL-адреси немає"
-
-#: twitter.php:551
-msgid "Settings for the \"Mention\" button"
-msgstr "Налаштування для кнопки \"Згадати\""
-
-#: twitter.php:556 twitter.php:790
-msgid "Tweet to"
-msgstr "Твіттнути для"
-
-#: twitter.php:583 twitter.php:636
-msgid "Save Changes"
-msgstr "Зберегти зміни"
-
-#: twitter.php:593
-msgid "Preview"
-msgstr "Перегляд"
-
-#: twitter.php:599 twitter.php:648
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
-
-#: twitter.php:601 twitter.php:650
-msgid "Learn More"
-msgstr "Докладніше"
-
-#: twitter.php:618
-msgid ""
-"Please choose the necessary post types (or single pages) where Twitter "
-"Button will be displayed:"
-msgstr ""
-"Будь ласка, оберіть необхідні типи постів (чи сторінок), де буде "
-"відображатися Twitter Button:"
-
-#: twitter.php:625
-msgid "Show URL for pages"
-msgstr "Відображати URL сторінок"
-
-#: twitter.php:631
-msgid "Example of the site's pages tree"
-msgstr "Приклад дерева сторінок сайту"
-
-#: twitter.php:641
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "Якщо ви перейдете на Pro версію, усі налаштування будуть збережені."
-
-#: twitter.php:725 twitter.php:769 twitter.php:773 twitter.php:840
-msgid "Tweet"
-msgstr "Твіттнути"
-
-#: twitter.php:753 twitter.php:755
-msgid "TwitterStories"
-msgstr "Твітт історія"
-
-#: twitter.php:839
-msgid "Please select twitter buttons which will be displayed"
-msgstr "Будь-ласка, оберіть твітт кнопки, що будуть відображені "
-
-#: twitter.php:896
+#: twitter.php:437
 msgid "FAQ"
 msgstr "FAQ"
 
-#: twitter.php:897
+#: twitter.php:438
 msgid "Support"
 msgstr "Підтримка"
+
+#: includes/class-twttr-settings.php:26
+msgid "Display"
+msgstr "Відображення"
+
+#: includes/class-twttr-settings.php:28
+msgid "Misc"
+msgstr "Різне"
+
+#: includes/class-twttr-settings.php:29
+msgid "Custom Code"
+msgstr "Код користувача"
+
+#: includes/class-twttr-settings.php:31
+msgid "License Key"
+msgstr "Ліцензійний ключ"
+
+#: includes/class-twttr-settings.php:178
+msgid "Error: File size > 32K"
+msgstr "Помилка: Розмір файлу > 32K"
+
+#: includes/class-twttr-settings.php:180
+msgid "Error: Invalid file type"
+msgstr "Помилка: Невірний тип файлу"
+
+#: includes/class-twttr-settings.php:194
+msgid "Error: Failed to move file"
+msgstr "Помилка: не вдалося перемістити файл "
+
+#: includes/class-twttr-settings.php:197
+msgid "Error: check image width or height"
+msgstr "Помилка: перевірте ширину або висоту зображення"
+
+#: includes/class-twttr-settings.php:201
+msgid "Uploading Error: check image properties"
+msgstr "Помилка завантаження: перевірте властивості зображення"
+
+#: includes/class-twttr-settings.php:209
+msgid "Settings saved"
+msgstr "Налаштування збережено"
+
+#: includes/class-twttr-settings.php:224
+msgid "General"
+msgstr "Загальне"
+
+#: includes/class-twttr-settings.php:227
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: includes/class-twttr-settings.php:241
+msgid "Buttons Size"
+msgstr "Розмір кнопок"
+
+#: includes/class-twttr-settings.php:244
+msgid "Small"
+msgstr "Малий"
+
+#: includes/class-twttr-settings.php:245
+msgid "Large"
+msgstr "Великий"
+
+#: includes/class-twttr-settings.php:250
+msgid "Buttons Position"
+msgstr "Розташування кнопок"
+
+#: includes/class-twttr-settings.php:255
+msgid "Before content"
+msgstr "Перед вмістом"
+
+#: includes/class-twttr-settings.php:260
+msgid "After content"
+msgstr "Після вмісту"
+
+#: includes/class-twttr-settings.php:266
+msgid "Language"
+msgstr "Мова"
+
+#: includes/class-twttr-settings.php:268
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: includes/class-twttr-settings.php:301
+msgid "Select the default language for Twitter button(-s)."
+msgstr "Оберіть мову відображення за замовчуванням для кнопок Twitter."
+
+#: includes/class-twttr-settings.php:305
+msgid "Twitter Tailoring"
+msgstr "Адаптація Твіттера"
+
+#: includes/class-twttr-settings.php:308
+msgid "Enable tailored suggestions from Twitter."
+msgstr "Увімкніть адаптовані пропозиції Твіттера."
+
+#: includes/class-twttr-settings.php:308
+msgid "Learn More"
+msgstr "Дізнатись більше "
+
+#: includes/class-twttr-settings.php:313
+msgid "Tweet Button"
+msgstr "Кнопка \"Твіт\""
+
+#: includes/class-twttr-settings.php:316 includes/class-twttr-settings.php:422
+msgid "Share URL"
+msgstr "Відправити URL-адресу"
+
+#: includes/class-twttr-settings.php:319 includes/class-twttr-settings.php:427
+#: includes/class-twttr-settings.php:468
+msgid "Current page"
+msgstr "Поточна сторінка"
+
+#: includes/class-twttr-settings.php:321 includes/class-twttr-settings.php:429
+msgid "Home page"
+msgstr "Головна сторінка"
+
+#: includes/class-twttr-settings.php:327 includes/class-twttr-settings.php:434
+#: includes/class-twttr-settings.php:465
+msgid "Tweet Text"
+msgstr "Текст твіту"
+
+#: includes/class-twttr-settings.php:331 includes/class-twttr-settings.php:437
+msgid "Current page title"
+msgstr "Заголовок поточної сторінки"
+
+#: includes/class-twttr-settings.php:333 includes/class-twttr-settings.php:377
+#: includes/class-twttr-settings.php:439 includes/class-twttr-settings.php:470
+msgid "Custom"
+msgstr "Користувацький"
+
+#: includes/class-twttr-settings.php:340
+msgid "Via"
+msgstr "За допомогою"
+
+#: includes/class-twttr-settings.php:343
+msgid "Enter username for Tweet via parameter."
+msgstr "Введіть ім'я користувача для параметра \"Твіт за допомогою\"."
+
+#: includes/class-twttr-settings.php:347 includes/class-twttr-settings.php:446
+#: includes/class-twttr-settings.php:477
+msgid "Recommend"
+msgstr "Рекомендувати"
+
+#: includes/class-twttr-settings.php:350 includes/class-twttr-settings.php:449
+#: includes/class-twttr-settings.php:480
+msgid ""
+"Enter usernames of someone you recommend (maximum 2 allowed). For example: "
+"bestwebsoft, wordpress."
+msgstr ""
+"Введiть iмена користувачів, яких ви хочете порекомендувати (максимум 2). "
+"Наприклад: bestwebsoft, wordpress."
+
+#: includes/class-twttr-settings.php:357 includes/class-twttr-settings.php:418
+msgid ""
+"Enter one or multiple hashtags for your tweet. For example: bestwebsoft, "
+"wordpress, etc."
+msgstr ""
+"Введiть один чи декiлка хeштегiв для вашого твiту. Наприклад: bestwebsoft, "
+"wordpress, тощо."
+
+#: includes/class-twttr-settings.php:361
+msgid "Follow Button"
+msgstr "Кнопка \"Читати\""
+
+#: includes/class-twttr-settings.php:364
+msgid "Twitter username"
+msgstr "Ім'я користувача Твіттера"
+
+#: includes/class-twttr-settings.php:367
+#, php-format
+msgid "Enter your Twitter account username or %s create a new one %s."
+msgstr ""
+"Введіть ім'я користувача вашого облікового запису Твіттера або %s створіть "
+"нову %s."
+
+#: includes/class-twttr-settings.php:371
+msgid "Follow Button Image"
+msgstr "Зображення кнопки \"Читати\""
+
+#: includes/class-twttr-settings.php:375
+msgid "Default"
+msgstr "Стандартне"
+
+#: includes/class-twttr-settings.php:381
+#, php-format
+msgid ""
+"To use custom image, You need to setup permissions to upload directory of "
+"your site - %s"
+msgstr ""
+"Щоб використовувати власні зображення вам необхідно налаштувати дозволи для "
+"їх завантаження - %s"
+
+#: includes/class-twttr-settings.php:389
+msgid "Current image"
+msgstr "Поточне зображення"
+
+#: includes/class-twttr-settings.php:397
+#, php-format
+msgid ""
+"Upload image with the %s dimensions, JPG, JPEG or PNG formats (maximum file "
+"size - %s)."
+msgstr ""
+"Завантажте зображення з параметрами %s, в JPG, JPEG або PNG форматі "
+"(максімальній розмір файлу - %s)."
+
+#: includes/class-twttr-settings.php:402
+msgid "Show Follow Button"
+msgstr "Відображати для кнопки \"Читати\""
+
+#: includes/class-twttr-settings.php:405
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: includes/class-twttr-settings.php:407
+msgid "Count"
+msgstr "Лічильник"
+
+#: includes/class-twttr-settings.php:412
+msgid "Hashtag Button"
+msgstr "Кнопка \"Мітка\""
+
+#: includes/class-twttr-settings.php:425
+msgid "None"
+msgstr "Немає"
+
+#: includes/class-twttr-settings.php:453
+msgid "Mention Button"
+msgstr "Кнопка \"Згадати\""
+
+#: includes/class-twttr-settings.php:461
+msgid "Enter username of someone you want to mention."
+msgstr "Введіть ім'я користувача, якого ви хочете згадати."
+
+#: includes/class-twttr-settings.php:461
+#, php-format
+msgid "For example, %s."
+msgstr "Наприклад,%s."
+
+#: includes/class-twttr-settings.php:504
+msgid "Twitter Buttons Shortchode"
+msgstr "Шорткод кнопок Twitter"
+
+#: includes/class-twttr-settings.php:507
+msgid ""
+"Add Twitter button(-s) to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
+msgstr ""
+"Додати Твіттер кнопки на ваші записи, сторінки, користувацькі типи записів "
+"або віджети за допомогою даного шорткода:"
+
+#: includes/class-twttr-settings.php:518
+msgid "Close"
+msgstr "Закрити"
+
+#: includes/class-twttr-settings.php:519
+msgid "Twitter Buttons Preview"
+msgstr "Попередній перегляд кнопок Twitter"
+
+#: includes/class-twttr-settings.php:533
+msgid "Display Settings"
+msgstr "Налаштування відображення"
+
+#: includes/class-twttr-settings.php:542
+msgid ""
+"Please choose the necessary post types (or single pages) where Twitter "
+"buttons will be displayed:"
+msgstr ""
+"Будь ласка, оберіть потрібні типи постів (чи сторінки), де будуть "
+"відображатись Твіттер кнопки"
+
+#: includes/class-twttr-settings.php:549
+msgid "Show URL for pages"
+msgstr "Відображати URL сторінок"
+
+#: includes/class-twttr-settings.php:555
+msgid "Example of the site's pages tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: includes/class-twttr-settings.php:555
+msgid "Example of site pages' tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#~ msgid "Twitter button Settings"
+#~ msgstr "Налаштування Твіттер кнопок"
+
+#~ msgid "Enter recommended username for Tweet."
+#~ msgstr "Введіть ім'я користувача, якому рекомендуєте твіт."
+
+#~ msgid "Enter custom hashtag for Tweet."
+#~ msgstr "Введіть користувацьку мітку для твіта."
+
+#~ msgid "Enter hashtag for your tweet."
+#~ msgstr "Введіть мітку для вашого твіта."
+
+#~ msgid "Enter username of someone you recommend."
+#~ msgstr "Введіть ім'я користувача, якому рекомендуєте."
+
+#~ msgid "Select the default display language for Twitter button(-s)."
+#~ msgstr "Оберіть мову відображення за замовчуванням для кнопок Twitter."
+
+#~ msgid ""
+#~ "To use custom image You need to setup permissions to upload directory of "
+#~ "your site - %s"
+#~ msgstr ""
+#~ "Щоб використовувати власні зображення, вам необхідно налаштувати дозволи "
+#~ "для їх завантаження - %s"
+
+#~ msgid "Please, enable JavaScript in Your browser."
+#~ msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
+
+#~ msgid "Network"
+#~ msgstr "Мережа"
+
+#~ msgid "Notice:"
+#~ msgstr "Зауважте:"
+
+#~ msgid "This option will replace all current settings on separate sites."
+#~ msgstr "Ця настройка замінить усі поточні настройки окремих сайтів."
+
+#~ msgid ""
+#~ "It is prohibited to view Twitter Button Pro settings on this site in the "
+#~ "Twitter Button Pro network settings."
+#~ msgstr ""
+#~ "Забороняється переглядати настройки Twitter Button Pro на цьому сайті в "
+#~ "мережевих настройках Twitter Button Pro."
+
+#~ msgid ""
+#~ "It is prohibited to change Twitter Button Pro settings on this site in "
+#~ "the Twitter Button Pro network settings."
+#~ msgstr ""
+#~ "Забороняється змінювати настройки Twitter Button Pro на цьому сайті в "
+#~ "мережевих настройках Twitter Button Pro."
+
+#~ msgid "Apply network settings"
+#~ msgstr "Застосувати мережеві настройки"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Застосувати для усіх сайтів та використовувати за замовчуванням"
+
+#~ msgid "All current settings on separate sites will be replaced"
+#~ msgstr "Усі поточні настройки в окремих сайтах будуть замінені"
+
+#~ msgid "Allow changing the settings on separate websites"
+#~ msgstr "Дозволити змінювати настройки на окремих сайтах"
+
+#~ msgid "Allow viewing the settings on separate websites"
+#~ msgstr "Дозволити переглядати настройки на окремих сайтах"
+
+#~ msgid "By default"
+#~ msgstr "За замовчуванням"
+
+#~ msgid "Settings will be applied to newly added websites by default"
+#~ msgstr ""
+#~ "Налаштування будуть використовуватися за замовчуванням для знову доданих "
+#~ "сайтів"
+
+#~ msgid "Do not apply"
+#~ msgstr "Не застосовувати"
+
+#~ msgid "Change the settings on separate sites of the multisite only"
+#~ msgstr "Змінювати установки тільки на окремих сайтах"
+
+#~ msgid ""
+#~ "Please choose the necessary post types (or single pages) where Twitter "
+#~ "buttons will be displayed"
+#~ msgstr ""
+#~ "Будь ласка, оберіть потрібні типи постів (чи сторінки), де будуть "
+#~ "відображатись Твіттер кнопки"
+
+#~ msgid "Show URL"
+#~ msgstr "Показати URL"
+
+#~ msgid "Settings saved."
+#~ msgstr "Налаштування збережено."
+
+#~ msgid "Saving"
+#~ msgstr "Збереження"
+
+#~ msgid "Changes you made are not saved. Please wait few minutes."
+#~ msgstr "Внесені зміни не збережені. Будь ласка, зачекайте кілька хвилин."
+
+#~ msgid "no title"
+#~ msgstr "без назви"
+
+#~ msgid "The upload was successful"
+#~ msgstr "Завантаження пройшло успішно"
+
+#~ msgid ""
+#~ "Image properties: max image width:100px; max image height:100px; max "
+#~ "image size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+#~ msgstr ""
+#~ "Властивості зображення: макс. ширина зображення: 100px; макс. висота "
+#~ "зображення: 100px; макс. розмір зображення: 32Kb; типи зображень: \"jpg"
+#~ "\", \"jpeg\", \"png\"."
+
+#~ msgid "Tweet text"
+#~ msgstr "Текст твітту"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+
+#~ msgid "Extra settings"
+#~ msgstr "Додаткові налаштування"
+
+#~ msgid ""
+#~ "If you want to add Twitter buttons to your page or post, please use %s "
+#~ "button"
+#~ msgstr ""
+#~ "Якщо ви хочете додати кнопки твіттера на вашу сторінку або пост, будь "
+#~ "ласка, використовуйте кнопку %s "
+
+#~ msgid ""
+#~ "You can add Twitter buttons to your page or post by clicking on %s button "
+#~ "in the content edit block using the Visual mode. If the button isn't "
+#~ "displayed, please use the shortcode %s. Instead of asterisk, please add "
+#~ "the necessary buttons separated by commas (Ex:"
+#~ msgstr ""
+#~ "Ви можете додати кнопки твіттера на вашу сторінку або пост, натиснувши на "
+#~ "кнопку %s в блоці редагування контенту в режимі Visual. Якщо кнопка не "
+#~ "відображається, будь ласка, використовуйте шорткод %s "
+
+#~ msgid "Allow to change the settings on separate websites"
+#~ msgstr "Дозволити змінювати настройки на окремих сайтах"
+
+#~ msgid "Allow to view the settings on separate websites"
+#~ msgstr "Дозволити переглядати настройки на окремих сайтах"
+
+#~ msgid "Change settings only on the multisite separate sites"
+#~ msgstr "Дозволити змінювати настройки на окремих сайтах "
+
+#~ msgid "Twitter buttons position"
+#~ msgstr "Pозташування кнопок"
+
+#~ msgid "Before"
+#~ msgstr "До"
+
+#~ msgid "After"
+#~ msgstr "Після"
+
+#~ msgid "Before And After"
+#~ msgstr "До і після"
+
+#~ msgid "Only shortcode"
+#~ msgstr "Тільки шорткод"
+
+#~ msgid "Show button"
+#~ msgstr "Відобразити кнопки"
+
+#~ msgid "Tweet (Share a link)"
+#~ msgstr "Твіттнути (дати посилання)"
+
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgid "Opt-out of tailoring Twitter"
+#~ msgstr "Відмовитися від адаптації Твіттера"
+
+#~ msgid "For getting more information about this option, please"
+#~ msgstr "Для отримання додаткової інформації про цю опції, будь ласка"
+
+#~ msgid "click here"
+#~ msgstr "натисніть тут"
+
+#~ msgid "Settings for the \"Tweet\" button"
+#~ msgstr "Налаштування для кнопки \"Твіттнути\""
+
+#~ msgid "the page URL"
+#~ msgstr "поточної сторінки"
+
+#~ msgid "home URL"
+#~ msgstr "головної сторінки"
+
+#~ msgid "the title of the page"
+#~ msgstr "заголовок поточної сторінки"
+
+#~ msgid "Tweet been received from the Twitter username"
+#~ msgstr "Твітт було отримано від твітт-користувача"
+
+#~ msgid "Enter username of someone you recommend"
+#~ msgstr "Ввести твітт-користувача, якому ви рекомендуєте"
+
+#~ msgid "Settings for the \"Follow me\" button"
+#~ msgstr "Налаштування для кнопки \"Читати\""
+
+#~ msgid "Your username"
+#~ msgstr "Ваше ім'я користувача"
+
+#~ msgid ""
+#~ "If you do not have Twitter account yet, you should create it using this "
+#~ "link"
+#~ msgstr ""
+#~ "Якщо ви не маєте акаунту Twitter, створіть його за допомогою цього "
+#~ "посилання"
+
+#~ msgid "\"Follow me\" button image"
+#~ msgstr "Зображення для кнопки \"Читати\""
+
+#~ msgid "Standard image"
+#~ msgstr "Стандартне зображення"
+
+#~ msgid "Custom image"
+#~ msgstr "Кастомне зображення"
+
+#~ msgid ""
+#~ "To use custom image You need to setup permissions to upload directory of "
+#~ "your site"
+#~ msgstr ""
+#~ "Щоб використовувати власні зображення вам необхідно налаштувати дозволи "
+#~ "для їх завантаження "
+
+#~ msgid "Show username"
+#~ msgstr "Показувати ім'я користувача"
+
+#~ msgid "Show count"
+#~ msgstr "Показувати кількість твіттов"
+
+#~ msgid "Show the number of Twitter accounts following the specified account"
+#~ msgstr "Показувати кількість акаунтів твіттера, які твіттнулі цей твітт"
+
+#~ msgid "Settings for the \"Hashtag\" button"
+#~ msgstr "Налаштування для кнопки \"Мітка\""
+
+#~ msgid "no URL"
+#~ msgstr "URL-адреси немає"
+
+#~ msgid "Settings for the \"Mention\" button"
+#~ msgstr "Налаштування для кнопки \"Згадати\""
+
+#~ msgid "Save Changes"
+#~ msgstr "Зберегти зміни"
+
+#~ msgid "Preview"
+#~ msgstr "Перегляд"
+
+#~ msgid "Enter username of someone you recomend"
+#~ msgstr "Ввести твітт-користувача, якому ви рекомендуєте"
 
 #~ msgid "support"
 #~ msgstr "Підтримка "
@@ -361,7 +639,7 @@ msgstr "Підтримка"
 #~ msgstr "Введіть ім'я користувача"
 
 #~ msgid "Choose display settings"
-#~ msgstr "Виберіть установки відображення"
+#~ msgstr "Виберіть налаштування дисплею"
 
 #~ msgid "Custom button"
 #~ msgstr "Кастомна кнопка"
@@ -394,13 +672,13 @@ msgstr "Підтримка"
 #~ msgstr "Сервер"
 
 #~ msgid "Memory usage"
-#~ msgstr "Memory usage"
+#~ msgstr "Використано пам'яті"
 
 #~ msgid "MYSQL Version"
-#~ msgstr "MYSQL Version"
+#~ msgstr "MYSQL версія"
 
 #~ msgid "SQL Mode"
-#~ msgstr "SQL Mode"
+#~ msgstr "Режим SQL"
 
 #~ msgid "PHP Version"
 #~ msgstr "PHP версія"
@@ -469,7 +747,7 @@ msgstr "Підтримка"
 #~ msgstr "Статус системи"
 
 #~ msgid "Plugins"
-#~ msgstr "Сторінку плагинів "
+#~ msgstr "Сторінку плагінів "
 
 #~ msgid "Themes"
 #~ msgstr "Теми"
@@ -484,7 +762,7 @@ msgstr "Підтримка"
 #~ msgstr "Встановлені плагіни"
 
 #~ msgid "Learn more"
-#~ msgstr "Докладніше "
+#~ msgstr "Дізнатись більше"
 
 #~ msgid "Activate this plugin"
 #~ msgstr "Активуйте цей плагін"
@@ -493,7 +771,7 @@ msgstr "Підтримка"
 #~ msgstr "Активувати"
 
 #~ msgid "Go"
-#~ msgstr "Перейти"
+#~ msgstr "Перейти на"
 
 #~ msgid "DONATE"
 #~ msgstr "DONATE"
@@ -556,14 +834,14 @@ msgstr "Підтримка"
 #~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
 #~ "and try again."
 #~ msgstr ""
-#~ "чи вище, тому він був деактивований! Будь ласка оновіть WordPress та "
+#~ "чи вище, тому він був деактивований! Будь ласка, оновіть WordPress та "
 #~ "спробуйте ще раз."
 
 #~ msgid "Back to the WordPress"
-#~ msgstr "Повернутися до WordPress на"
+#~ msgstr "Повернутись на WordPress"
 
 #~ msgid "Plugins page"
-#~ msgstr "Сторінку плагинів"
+#~ msgstr "Сторінку плагінів"
 
 #~ msgid ""
 #~ "or higher! We do not guarantee that our plugin will work correctly. "
@@ -582,46 +860,42 @@ msgstr "Підтримка"
 #~ msgstr "версія!"
 
 #~ msgid "Extend standard plugin functionality with new great options."
-#~ msgstr "Розширити стандартний функціонал плагіну новими опціями. "
+#~ msgstr "Розширення стандартного функціоналу плагіна новими опціями"
 
 #~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 #~ msgstr ""
-#~ "Якщо Вам сподобався наш плагін, ми будемо раді, якщо Ви оціните його у "
-#~ "п'ять зірочок на WordPress"
+#~ "Якщо вам сподобався наш плагін, будь ласка, поставте п’ять зірочок на "
+#~ "сайті WordPress"
 
 #~ msgid "Rate the plugin"
-#~ msgstr "Оцініти плагін"
+#~ msgstr "Оцініть плагін"
 
 #~ msgid "If there is something wrong about it, please contact us"
-#~ msgstr "Якщо у вас є запитання, будь ласка, звертайтесь до нас"
+#~ msgstr "Якщо виникли проблеми, будь ласка, повідомте нам"
 
 #~ msgid "Check premium options on the plugin settings page!"
 #~ msgstr "Перевірте преміум опції на сторінці налаштувань плагіна !"
 
 #~ msgid "Wrong license key"
-#~ msgstr "Невірний ліцензійний ключ!"
+#~ msgstr "Невірний ключ ліцензії!  "
 
 #~ msgid ""
 #~ "Something went wrong. Please try again later. If the error appears again, "
 #~ "please contact us"
 #~ msgstr ""
-#~ "Виникли певні проблеми. Спробуйте ще раз пізніше. Якщо помилка виникатиме "
-#~ "знову, будь ласка, зверніться до нашої служби підтримки href=http://"
-#~ "support.bestwebsoft.com>BestWebSoft</a>. Просимо вибачення за "
-#~ "незручності. "
+#~ "Щось не так. Спробуйте пізніше. Якщо проблема повториться, будь ласка, "
+#~ "повідомте нам "
 
 #~ msgid "We are sorry for inconvenience."
 #~ msgstr "Просимо вибачення за незручності."
 
 #~ msgid "This license key is bind to another site"
-#~ msgstr "Ліцензійний ключ прив'язано до іншого сайту"
+#~ msgstr "Цей ліцензійний ключ прив’язаний до іншого сайту."
 
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day. "
 #~ "Please, upload the plugin manually."
-#~ msgstr ""
-#~ "На жаль, Ви перевищили кількість доступних спроб на день. Будь ласка, "
-#~ "завантажте плагін вручну."
+#~ msgstr "На жаль, ви перевищили кількість можливих спроб. "
 
 #~ msgid ""
 #~ "Unfortunately, Your license has expired. To continue getting top-priority "
@@ -640,49 +914,47 @@ msgstr "Підтримка"
 #~ msgid ""
 #~ "Failed to download the zip archive. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Виникли проблеми під час завантаження zip-архіву. Будь ласка, завантажте "
-#~ "архів вручну."
+#~ "Не вдалося завантажити архів плагіна. Будь ласка, завантажте плагін вручну"
 
 #~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Виникли проблеми під чаз розпакування zip-архіву. Будь ласка, завантажте "
-#~ "плагін вручну."
+#~ "Не вдалося відкрити архів ZIP . Будь ласка, завантажте плагін вручну"
 
 #~ msgid ""
 #~ "Your server does not support either ZipArchive or Phar. Please, upload "
 #~ "the plugin manually"
 #~ msgstr ""
-#~ "Ваш сервер не підтримує ані ZipArchive, ані Phar. Будь ласка, завантажте "
-#~ "плагін вручну"
+#~ "Ваш сервер не підтримує ні бібліотеку ZipArchive , ні бібліотеку Phar . "
+#~ "Будь ласка, завантажте плагін вручну"
 
 #~ msgid "UploadDir is not writable. Please, upload the plugin manually"
 #~ msgstr ""
-#~ "Виникли проблеми під чаз розпакування zip-архіву. Будь ласка, завантажте "
-#~ "плагін вручну. "
+#~ "Не вдалося відкрити архів ZIP . Будь ласка, завантажте плагін вручну"
 
 #~ msgid ""
 #~ "Something went wrong. Try again later or upload the plugin manually. We "
 #~ "are sorry for inconvenience."
 #~ msgstr ""
-#~ "Виникли певні проблеми. Спробуйте ще раз пізніше або завантажте плагін "
-#~ "вручну. Просимо вібачення за незручності. "
+#~ "Щось не так. Спробуйте пізніше. Якщо проблема повториться, будь ласка, "
+#~ "повідомте нам <a href=https://support.bestwebsoft.com>BestWebSoft</a>. "
+#~ "Просимо вибачення за незручності. "
 
 #~ msgid "Please, enter Your license key"
-#~ msgstr "Будь ласка, впишіть ваш ліцензійний ключ"
+#~ msgstr "Будь ласка, введіть ліцензійний ключ "
 
 #~ msgid ""
 #~ "Congratulations! The Pro version of the plugin is successfully download "
 #~ "and activated."
-#~ msgstr "Вітаємо! PRO версію плагіну успішно завантажено та активовано. "
+#~ msgstr "Вітаємо! PRO версія плагіна була успішно завантажена і активована ."
 
 #~ msgid "Please, go to"
-#~ msgstr "Будь ласка, перейдіть"
+#~ msgstr "Будь ласка, перейдіть на"
 
 #~ msgid "the setting page"
-#~ msgstr "сторінку установок"
+#~ msgstr "Додаткові налаштування "
 
 #~ msgid "You will be redirected automatically in 5 seconds."
-#~ msgstr "Вас буде перенаправлено автоматично через 5 секунд."
+#~ msgstr "Ви будете перенаправлені автоматично через 5 секунд."
 
 #~ msgid "Show Pro features"
 #~ msgstr "Показати Pro можливості"
@@ -691,20 +963,20 @@ msgstr "Підтримка"
 #~ msgstr "Ви можете завантажити та активувати"
 
 #~ msgid "version of this plugin by entering Your license key."
-#~ msgstr "версію уього плагіну, якщо впишете ваш ліцензійний ключ."
+#~ msgstr "версію цього плагіна , ввівши ваш ліцензійний ключ."
 
 #~ msgid ""
 #~ "You can find your license key on your personal page Client area, by "
 #~ "clicking on the link"
 #~ msgstr ""
-#~ "Ви можете знайти ваш ліцензійний ключ на вашій персональній сторінці у  "
-#~ "Client area, перейшовши за посиланням"
+#~ "Ви можете знайти ваш ліцензійний ключ на вашій особистій сторінці Client "
+#~ "area , натиснувши на посилання"
 
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product)."
 #~ msgstr ""
-#~ "(ім'я користувача - це електронна адреса, яку ви вказуєте при купівлі "
-#~ "продукту)."
+#~ "(ваше ім’я - це емейл, який ви вказували під час покупки), де ви можете "
+#~ "змінити налаштування "
 
 #~ msgid "or"
 #~ msgstr "або"
@@ -723,19 +995,17 @@ msgstr "Підтримка"
 
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day."
-#~ msgstr ""
-#~ "На жаль, Ви перевищили кількість доступних спроб на день. Будь ласка, "
-#~ "завантажте плагін вручну. "
+#~ msgstr "На жаль, ви перевищили кількість можливих спроб. "
 
 #~ msgid ""
 #~ "Congratulations! The Pro license of the plugin is successfully activated."
-#~ msgstr "Вітаємо! PRO версію плагіну успішно завантажено та активовано. "
+#~ msgstr "Вітаємо! PRO версія плагіна була успішно завантажена і активована ."
 
 #~ msgid "Wrong license key."
-#~ msgstr "Невірний ліцензійний ключ! "
+#~ msgstr "Невірний ключ ліцензії!  "
 
 #~ msgid "This license key is bind to another site."
-#~ msgstr "Ліцензійний ключ прив'язано до іншого сайту "
+#~ msgstr "Цей ліцензійний ключ прив’язаний до іншого сайту. "
 
 #~ msgid ""
 #~ "This license key is valid, but Your license has expired. If you want to "
@@ -745,9 +1015,7 @@ msgstr "Підтримка"
 #~ "ліцензію, якщо ви хочете отримувати оновлення нашого плагіну."
 
 #~ msgid "Unfortunately, you have exceeded the number of available tries."
-#~ msgstr ""
-#~ "На жаль, Ви перевищили кількість доступних спроб на день. Будь ласка, "
-#~ "завантажте плагін вручну. "
+#~ msgstr "На жаль, ви перевищили кількість можливих спроб."
 
 #~ msgid ""
 #~ "Unfortunately, the Pro Trial licence was already installed to this "
@@ -755,16 +1023,16 @@ msgstr "Підтримка"
 #~ msgstr "На жаль, ви перевищили кількість доступних спроб."
 
 #~ msgid "The Pro Trial license key is valid."
-#~ msgstr " Ключ ліцензії вірний. "
+#~ msgstr "Ключ ліцензії вірний. "
 
 #~ msgid "The license key is valid."
-#~ msgstr " Ключ ліцензії вірний. "
+#~ msgstr "Ключ ліцензії вірний."
 
 #~ msgid "Your license will expire on"
 #~ msgstr "Ключ ліцензії вірний. Термін дії ліцензії закінчується "
 
 #~ msgid "Please, enter your license key"
-#~ msgstr "Будь ласка, впишіть ваш ліцензійний ключ "
+#~ msgstr "Будь ласка, введіть ліцензійний ключ"
 
 #~ msgid ""
 #~ "If needed you can check if the license key is correct or reenter it in "
@@ -846,7 +1114,7 @@ msgstr "Підтримка"
 #~ msgstr "Закрити повідомлення"
 
 #~ msgid "Notice"
-#~ msgstr "Нагадування: "
+#~ msgstr "Зауважте: "
 
 #~ msgid "The plugin's settings have been changed."
 #~ msgstr "Всі налаштування плагіну було скинуто до стандартних. "
@@ -867,9 +1135,6 @@ msgstr "Підтримка"
 #~ msgid "Add BestWebSoft plugins' shortcodes using this button."
 #~ msgstr "Додати BestWebSoft шорткод плагіна використовуючи цю кнопку"
 
-#~ msgid "Close"
-#~ msgstr "Закрити"
-
 #~ msgid "Restore all plugin settings to defaults"
 #~ msgstr "Всі налаштування плагіну було скинуто до стандартних. "
 
@@ -887,7 +1152,7 @@ msgstr "Підтримка"
 #~ msgstr "Ні, повернутися на сторінку налаштувань"
 
 #~ msgid "Plugin"
-#~ msgstr "Сторінку плагинів "
+#~ msgstr "Сторінку плагінів "
 
 #~ msgid "Shortcode settings"
 #~ msgstr "Налаштування шорткоду"
@@ -919,8 +1184,8 @@ msgstr "Підтримка"
 #~ msgid "Shortcode"
 #~ msgstr "Шорткод"
 
-#~ msgid "Settings for the button \"Follow Me\""
-#~ msgstr "Установки для кнопки \"Follow Me\""
+#~ msgid "Settings for the button \"Follow Me\":"
+#~ msgstr "Налаштування кнопки  \"Follow Me\":"
 
 #~ msgid "Disable the \"Twitter\" button"
 #~ msgstr "Вимкнути кнопку \"Twitter\""
@@ -936,11 +1201,11 @@ msgstr "Підтримка"
 #~ "By clicking this icon a user can add the article he/she likes to his/her "
 #~ "Twitter page."
 #~ msgstr ""
-#~ "При натисканні на цю піктограму користувач може додати статтю, яка йому "
-#~ "сподобалась, до своєї сторінки Twitter."
+#~ "Клікаючи на значок, користувач може додати вподобану статтю до своєї "
+#~ "сторінки Twitter."
 
 #~ msgid "Click here if you like this article."
-#~ msgstr "Натисніть тут, якщо Вам сподобалася ця стаття."
+#~ msgstr "Клікніть, якщо Вам сподобалась ця стаття."
 
 #~ msgid "Insert the shortcode to use the \"Follow Me\" button."
 #~ msgstr "Додайте шорткод, щоб побачити кнопку \"Follow Me\"."
@@ -949,15 +1214,15 @@ msgstr "Підтримка"
 #~ "Paste the shortcode %s into the necessary page or post to use the "
 #~ "\"Follow Me\" button."
 #~ msgstr ""
-#~ "Додайте шорткод %s в контент сторінки або поста, де ви хочете вивести "
+#~ "Додайте шорткод %s в контент сторінки чи посту, де ви хочете бачити "
 #~ "кнопку \"Follow Me\"."
 
 #~ msgid ""
 #~ "The plugin's settings have been changed. In order to save them please "
 #~ "don't forget to click the 'Save Changes' button."
 #~ msgstr ""
-#~ "Налаштування плагіну було змінено. Для того, щоб зберегти ці зміни, не "
-#~ "забудьте нажати кнопку \"Зберегти зміни\"."
+#~ "Налаштування плагіну змінились. Щоб зберегти їх, будь ласка, клікніть "
+#~ "\"Зберегти зміни\"."
 
 #~ msgid "Top position"
 #~ msgstr "Верхнє положення"
@@ -965,11 +1230,5 @@ msgstr "Підтримка"
 #~ msgid "Bottom position"
 #~ msgstr "Нижнє положення"
 
-#~ msgid "Go!"
-#~ msgstr "Перейти!"
-
-#~ msgid ""
-#~ "It's time to upgrade your <strong>Twitter</strong> to <strong>PRO</"
-#~ "strong> version"
-#~ msgstr ""
-#~ "Час оновити ваш <strong>Twitter</strong> до <strong>PRO</strong> версії!"
+#~ msgid "Twitter Pro"
+#~ msgstr "Twitter Pro"

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: twitter\n"
+"Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-27 15:42+0300\n"
-"PO-Revision-Date: 2016-05-27 15:42+0300\n"
+"POT-Creation-Date: 2017-07-13 16:47+0300\n"
+"PO-Revision-Date: 2017-07-13 16:51+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,322 +16,593 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: twitter.php:35
+#: twitter.php:36 twitter.php:37 twitter.php:190
+#: includes/class-twttr-settings.php:221
 msgid "Twitter Button Settings"
 msgstr "Настройки Twitter Button"
 
-#: twitter.php:209
-msgid "Settings saved"
-msgstr "Настройки сохранены"
-
-#: twitter.php:231
-msgid "Error: File size > 32K"
-msgstr "Ошибка: Размер файла > 32К"
-
-#: twitter.php:233
-msgid "Error: Invalid file type"
-msgstr "Ошибка: Некорректный тип файла"
-
-#: twitter.php:250
-msgid "The upload was successful"
-msgstr "Загрузка успешно завершена"
-
-#: twitter.php:252
-msgid "Error: Failed to move file"
-msgstr "Ошибка: не удалось переместить файл"
-
-#: twitter.php:255
-msgid "Error: check image width or height"
-msgstr "Ошибка: Проверьте ширину и высоту изображения"
-
-#: twitter.php:259
-msgid "Uploading Error: check image properties"
-msgstr "Ошибка загрузки: Проверьте опции изображения"
-
-#: twitter.php:269
-msgid "All plugin settings were restored."
-msgstr "Все настройки плагина восстановлены."
-
-#: twitter.php:283 twitter.php:882 twitter.php:895
+#: twitter.php:37 twitter.php:423 twitter.php:436
+#: includes/class-twttr-settings.php:24
 msgid "Settings"
 msgstr "Настройки"
 
-#: twitter.php:284
-msgid "Extra settings"
-msgstr "Дополнительные настройки"
+#: twitter.php:43
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
 
-#: twitter.php:285
-msgid "Custom Code"
-msgstr "Пользовательский код"
+#: twitter.php:191
+msgid "Please enable JavaScript in Your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
 
-#: twitter.php:286
-msgid "Go PRO"
-msgstr "Перейти на PRO версию"
+#: twitter.php:255 twitter.php:305 twitter.php:309 twitter.php:381
+#: includes/class-twttr-settings.php:230
+msgid "Tweet"
+msgstr "Твитнуть"
 
-#: twitter.php:299
-#, php-format
-msgid ""
-"If you want to add twitter buttons to your page or post, please use %s button"
-msgstr ""
-"Если вы хотите добавить кнопки твиттера на вашу страницу или пост, то "
-"используйте кнопку %s "
-
-#: twitter.php:304
-#, php-format
-msgid ""
-"You can add Twitter buttons to your page or post by clicking on %s button in "
-"the content edit block using the Visual mode. If the button isn't displayed, "
-"please use the shortcode %s. Instead of asterisk, please add the necessary "
-"buttons separated by commas (Ex:"
-msgstr ""
-"Вы можете добавить кнопки твиттера на вашу страницу или пост, нажав на "
-"кнопку %s в блоке редактирования контента в режиме Visual. Если кнопка не "
-"отображается, пожалуйста, используйте шорткод %s. В шорткоде * перечень "
-"кнопок разделенные запятой, которые будут отображены. (Например: "
-
-#: twitter.php:317
-msgid "Twitter buttons position"
-msgstr "Выбор позиции для иконки \"Twitter\" "
-
-#: twitter.php:321
-msgid "Before"
-msgstr "Перед"
-
-#: twitter.php:322
-msgid "After"
-msgstr "После"
-
-#: twitter.php:323
-msgid "Before And After"
-msgstr "Перед и после"
-
-#: twitter.php:324
-msgid "Only shortcode"
-msgstr "Только шорткод "
-
-#: twitter.php:329
-msgid "Show button"
-msgstr "Отображать кнопки"
-
-#: twitter.php:332
-msgid "Tweet (Share a link)"
-msgstr "Твиттнуть (поделиться ссылкой)"
-
-#: twitter.php:334 twitter.php:741 twitter.php:745 twitter.php:841
+#: twitter.php:272 twitter.php:276
 msgid "Follow me"
 msgstr "Читать"
 
-#: twitter.php:336 twitter.php:443 twitter.php:515 twitter.php:842
-msgid "Hashtag"
-msgstr "Метка"
-
-#: twitter.php:338 twitter.php:843
-msgid "Mention"
-msgstr "Упомянуть"
-
-#: twitter.php:343
-msgid "Language"
-msgstr "Язык"
-
-#: twitter.php:347
-msgid "Automatic"
-msgstr "Автоматически"
-
-#: twitter.php:382
-msgid "Size"
-msgstr "Размер"
-
-#: twitter.php:386
-msgid "Small"
-msgstr "Маленькая"
-
-#: twitter.php:387
-msgid "Large"
-msgstr "Большая"
-
-#: twitter.php:393
-msgid "Opt-out of tailoring Twitter"
-msgstr "Отказаться от адаптации Твиттера"
-
-#: twitter.php:397
-msgid "For getting more information about this option, please"
-msgstr "Для получения дополнительной информации об этой опции, пожалуйста"
-
-#: twitter.php:397
-msgid "click here"
-msgstr "нажмите здесь"
-
-#: twitter.php:402
-msgid "Settings for the \"Tweet\" button"
-msgstr "Настройки для кнопки Твиттнуть "
-
-#: twitter.php:407 twitter.php:533
-msgid "Share URL"
-msgstr "Отправить URL-адрес"
-
-#: twitter.php:410 twitter.php:538
-msgid "the page URL"
-msgstr "текущей страницы"
-
-#: twitter.php:411 twitter.php:537
-msgid "home URL"
-msgstr "главной страницы"
-
-#: twitter.php:416 twitter.php:523 twitter.php:564
-msgid "Tweet text"
-msgstr "Текст твитта"
-
-#: twitter.php:419 twitter.php:526 twitter.php:567
-msgid "the title of the page"
-msgstr "заголовок текущей страницы"
-
-#: twitter.php:426
-msgid "Via"
-msgstr "С помощью"
-
-#: twitter.php:430
-msgid "Tweet been received from the Twitter username"
-msgstr "Твитт был получен от твитт-пользователя"
-
-#: twitter.php:435 twitter.php:543 twitter.php:574
-msgid "Recommend"
-msgstr "Рекомендовать"
-
-#: twitter.php:438 twitter.php:546 twitter.php:577
-msgid "Enter username of someone you recomend"
-msgstr "Ввести имя твитт-пользователя, которому рекомендуете"
-
-#: twitter.php:451
-msgid "Settings for the \"Follow me\" button"
-msgstr "Настройки для кнопки \"Читать\""
-
-#: twitter.php:456
-msgid "Your username"
-msgstr "Ваше имя пользователя"
-
-#: twitter.php:460
-msgid ""
-"If you do not have Twitter account yet, you should create it using this link"
-msgstr ""
-"Если у вас еще нет аккаунта на Twitter, вам надо создать его, перейдя по "
-"этой ссылке"
-
-#: twitter.php:465
-msgid "\"Follow me\" button image"
-msgstr "Изображение для кнопки \"Читать\""
-
-#: twitter.php:470
-msgid "Standard image"
-msgstr "Стандартное изображение"
-
-#: twitter.php:471
-msgid "Custom image"
-msgstr "Пользовательское изображение"
-
-#: twitter.php:474
-msgid ""
-"To use custom image You need to setup permissions to upload directory of "
-"your site"
-msgstr ""
-"Для того, чтобы использовать кастомное изображение, Вам необходимо выставить "
-"необходимые права для папки загрузок Вашего сайта"
-
-#: twitter.php:481
-msgid "Current image"
-msgstr "Текущее изображение"
-
-#: twitter.php:488
-msgid ""
-"Image properties: max image width:100px; max image height:100px; max image "
-"size:32Kb; image types:\"jpg\", \"jpeg\"."
-msgstr ""
-"Опции изображения для загрузки: максимальная ширина:100px; максимальная "
-"высота:100px; максимальный размер:32Kb; тип файла:\"jpg\", \"jpeg\"."
-
-#: twitter.php:493
-msgid "Show username"
-msgstr "Показывать имя пользователя"
-
-#: twitter.php:501
-msgid "Show count"
-msgstr "Показывать количество твиттов"
-
-#: twitter.php:505
-msgid "Show the number of Twitter accounts following the specified account"
-msgstr ""
-"Показывать количество аккаунтов твиттера, которые твиттнули данный твитт"
-
-#: twitter.php:510
-msgid "Settings for the \"Hashtag\" button"
-msgstr "Настройки для кнопки \"Метка\""
-
-#: twitter.php:536
-msgid "no URL"
-msgstr "нет URL-адреса"
-
-#: twitter.php:551
-msgid "Settings for the \"Mention\" button"
-msgstr "Настройки для кнопки \"Упомянуть\""
-
-#: twitter.php:556 twitter.php:790
-msgid "Tweet to"
-msgstr "Твиттнуть для"
-
-#: twitter.php:583 twitter.php:636
-msgid "Save Changes"
-msgstr "Сохранить изменения"
-
-#: twitter.php:593
-msgid "Preview"
-msgstr "Предварительный просмотр"
-
-#: twitter.php:599 twitter.php:648
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Активируйте премиум опции обновившись до Pro версии"
-
-#: twitter.php:601 twitter.php:650
-msgid "Learn More"
-msgstr "Подробнее"
-
-#: twitter.php:618
-msgid ""
-"Please choose the necessary post types (or single pages) where Twitter "
-"Button will be displayed:"
-msgstr ""
-"Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
-"отображаться Twitter Button:"
-
-#: twitter.php:625
-msgid "Show URL for pages"
-msgstr "Отображать URL для страниц"
-
-#: twitter.php:631
-msgid "Example of the site's pages tree"
-msgstr "Пример дерева страниц сайта"
-
-#: twitter.php:641
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
-
-#: twitter.php:725 twitter.php:769 twitter.php:773 twitter.php:840
-msgid "Tweet"
-msgstr "Твиттнуть"
-
-#: twitter.php:753 twitter.php:755
+#: twitter.php:285
 msgid "TwitterStories"
-msgstr "Твитт история"
+msgstr "Твит история"
 
-#: twitter.php:839
+#: twitter.php:326 includes/class-twttr-settings.php:457
+msgid "Tweet to"
+msgstr "Твитнуть для"
+
+#: twitter.php:380
 msgid "Please select twitter buttons which will be displayed"
 msgstr "Пожалуйста выберите кнопки твиттера, которые будут отображены "
 
-#: twitter.php:896
+#: twitter.php:382 includes/class-twttr-settings.php:232
+msgid "Follow"
+msgstr "Читать"
+
+#: twitter.php:383 includes/class-twttr-settings.php:234
+#: includes/class-twttr-settings.php:354 includes/class-twttr-settings.php:415
+msgid "Hashtag"
+msgstr "Метка"
+
+#: twitter.php:384 includes/class-twttr-settings.php:236
+msgid "Mention"
+msgstr "Упомянуть"
+
+#: twitter.php:437
 msgid "FAQ"
 msgstr "FAQ"
 
-#: twitter.php:897
+#: twitter.php:438
 msgid "Support"
 msgstr "Тех. поддержка"
+
+#: includes/class-twttr-settings.php:26
+msgid "Display"
+msgstr "Отображение"
+
+#: includes/class-twttr-settings.php:28
+msgid "Misc"
+msgstr "Разное"
+
+#: includes/class-twttr-settings.php:29
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: includes/class-twttr-settings.php:31
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: includes/class-twttr-settings.php:178
+msgid "Error: File size > 32K"
+msgstr "Ошибка: Размер файла > 32К"
+
+#: includes/class-twttr-settings.php:180
+msgid "Error: Invalid file type"
+msgstr "Ошибка: Некорректный тип файла"
+
+#: includes/class-twttr-settings.php:194
+msgid "Error: Failed to move file"
+msgstr "Ошибка: не удалось переместить файл "
+
+#: includes/class-twttr-settings.php:197
+msgid "Error: check image width or height"
+msgstr "Ошибка: Проверьте ширину и высоту изображения"
+
+#: includes/class-twttr-settings.php:201
+msgid "Uploading Error: check image properties"
+msgstr "Ошибка загрузки: Проверьте опции изображения"
+
+#: includes/class-twttr-settings.php:209
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: includes/class-twttr-settings.php:224
+msgid "General"
+msgstr "Общее"
+
+#: includes/class-twttr-settings.php:227
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: includes/class-twttr-settings.php:241
+msgid "Buttons Size"
+msgstr "Размер кнопок"
+
+#: includes/class-twttr-settings.php:244
+msgid "Small"
+msgstr "Маленький"
+
+#: includes/class-twttr-settings.php:245
+msgid "Large"
+msgstr "Большой"
+
+#: includes/class-twttr-settings.php:250
+msgid "Buttons Position"
+msgstr "Позиция кнопок"
+
+#: includes/class-twttr-settings.php:255
+msgid "Before content"
+msgstr "Перед содержимым"
+
+#: includes/class-twttr-settings.php:260
+msgid "After content"
+msgstr "После содержимого"
+
+#: includes/class-twttr-settings.php:266
+msgid "Language"
+msgstr "Язык"
+
+#: includes/class-twttr-settings.php:268
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: includes/class-twttr-settings.php:301
+msgid "Select the default language for Twitter button(-s)."
+msgstr "Выберите язык отображения по умолчанию для кнопок Twitter."
+
+#: includes/class-twttr-settings.php:305
+msgid "Twitter Tailoring"
+msgstr "Адаптация Твиттера"
+
+#: includes/class-twttr-settings.php:308
+msgid "Enable tailored suggestions from Twitter."
+msgstr "Включите адаптированные предложения Твиттера."
+
+#: includes/class-twttr-settings.php:308
+msgid "Learn More"
+msgstr "Подробнее "
+
+#: includes/class-twttr-settings.php:313
+msgid "Tweet Button"
+msgstr "Кнопка \"Твитнуть\""
+
+#: includes/class-twttr-settings.php:316 includes/class-twttr-settings.php:422
+msgid "Share URL"
+msgstr "Отправить URL-адрес"
+
+#: includes/class-twttr-settings.php:319 includes/class-twttr-settings.php:427
+#: includes/class-twttr-settings.php:468
+msgid "Current page"
+msgstr "Текущая страница"
+
+#: includes/class-twttr-settings.php:321 includes/class-twttr-settings.php:429
+msgid "Home page"
+msgstr "Главная страница"
+
+#: includes/class-twttr-settings.php:327 includes/class-twttr-settings.php:434
+#: includes/class-twttr-settings.php:465
+msgid "Tweet Text"
+msgstr "Текст твита"
+
+#: includes/class-twttr-settings.php:331 includes/class-twttr-settings.php:437
+msgid "Current page title"
+msgstr "Заголовок текущей страницы"
+
+#: includes/class-twttr-settings.php:333 includes/class-twttr-settings.php:377
+#: includes/class-twttr-settings.php:439 includes/class-twttr-settings.php:470
+msgid "Custom"
+msgstr "Пользовательский"
+
+#: includes/class-twttr-settings.php:340
+msgid "Via"
+msgstr "С помощью"
+
+#: includes/class-twttr-settings.php:343
+msgid "Enter username for Tweet via parameter."
+msgstr "Введите имя пользователя для параметра \"твит с помощью\"."
+
+#: includes/class-twttr-settings.php:347 includes/class-twttr-settings.php:446
+#: includes/class-twttr-settings.php:477
+msgid "Recommend"
+msgstr "Рекомендовать"
+
+#: includes/class-twttr-settings.php:350 includes/class-twttr-settings.php:449
+#: includes/class-twttr-settings.php:480
+msgid ""
+"Enter usernames of someone you recommend (maximum 2 allowed). For example: "
+"bestwebsoft, wordpress."
+msgstr ""
+"Введите имена пользователей, которых вы хотите порекомендовать (максимум 2). "
+"Например: bestwebsoft, wordpress."
+
+#: includes/class-twttr-settings.php:357 includes/class-twttr-settings.php:418
+msgid ""
+"Enter one or multiple hashtags for your tweet. For example: bestwebsoft, "
+"wordpress, etc."
+msgstr ""
+"Введите один или несколько хэштегов для вашего твита. Например: bestwebsoft, "
+"wordpress, и тд."
+
+#: includes/class-twttr-settings.php:361
+msgid "Follow Button"
+msgstr "Кнопка \"Читать\""
+
+#: includes/class-twttr-settings.php:364
+msgid "Twitter username"
+msgstr "Имя пользователя Tвиттера"
+
+#: includes/class-twttr-settings.php:367
+#, php-format
+msgid "Enter your Twitter account username or %s create a new one %s."
+msgstr ""
+"Введите имя пользователя вашей учетной записи твиттера или %s создайте новую "
+"%s."
+
+#: includes/class-twttr-settings.php:371
+msgid "Follow Button Image"
+msgstr "Изображение для кнопки \"Читать\""
+
+#: includes/class-twttr-settings.php:375
+msgid "Default"
+msgstr "Стандартное"
+
+#: includes/class-twttr-settings.php:381
+#, php-format
+msgid ""
+"To use custom image, You need to setup permissions to upload directory of "
+"your site - %s"
+msgstr ""
+"Для использования кастомного изображения Вам нужно выдать  права доступа на "
+"папку загрузок на вашем сайте - %s"
+
+#: includes/class-twttr-settings.php:389
+msgid "Current image"
+msgstr "Текущее изображение"
+
+#: includes/class-twttr-settings.php:397
+#, php-format
+msgid ""
+"Upload image with the %s dimensions, JPG, JPEG or PNG formats (maximum file "
+"size - %s)."
+msgstr ""
+"Загрузите изображение с параметрами %s, в JPG, JPEG или PNG формате "
+"(максимальній размер файла - %s)."
+
+#: includes/class-twttr-settings.php:402
+msgid "Show Follow Button"
+msgstr "Отображать для кнопки \"Читать\""
+
+#: includes/class-twttr-settings.php:405
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: includes/class-twttr-settings.php:407
+msgid "Count"
+msgstr "Счетчик"
+
+#: includes/class-twttr-settings.php:412
+msgid "Hashtag Button"
+msgstr "Кнопка \"Метка\""
+
+#: includes/class-twttr-settings.php:425
+msgid "None"
+msgstr "Нет"
+
+#: includes/class-twttr-settings.php:453
+msgid "Mention Button"
+msgstr "Кнопка \"Упомянуть\""
+
+#: includes/class-twttr-settings.php:461
+msgid "Enter username of someone you want to mention."
+msgstr "Введите имя пользователя, кого вы хотите упомянуть."
+
+#: includes/class-twttr-settings.php:461
+#, php-format
+msgid "For example, %s."
+msgstr "Например, %s."
+
+#: includes/class-twttr-settings.php:504
+msgid "Twitter Buttons Shortchode"
+msgstr "Шорткод кнопок Twitter"
+
+#: includes/class-twttr-settings.php:507
+msgid ""
+"Add Twitter button(-s) to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
+msgstr ""
+"Добавить кнопки Twitter на ваши записи, страницы, пользовательские типы "
+"записей или виджеты с помощью данного шорткода:"
+
+#: includes/class-twttr-settings.php:518
+msgid "Close"
+msgstr "Закрыть"
+
+#: includes/class-twttr-settings.php:519
+msgid "Twitter Buttons Preview"
+msgstr "Предварительный просмотр кнопок Twitter"
+
+#: includes/class-twttr-settings.php:533
+msgid "Display Settings"
+msgstr "Настройка отображения"
+
+#: includes/class-twttr-settings.php:542
+msgid ""
+"Please choose the necessary post types (or single pages) where Twitter "
+"buttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+"будут отображаться Twitter кнопки:"
+
+#: includes/class-twttr-settings.php:549
+msgid "Show URL for pages"
+msgstr "Показать URL для страниц"
+
+#: includes/class-twttr-settings.php:555
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: includes/class-twttr-settings.php:555
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#~ msgid "Twitter button Settings"
+#~ msgstr "Настройки Twitter"
+
+#~ msgid "Enter recommended username for Tweet."
+#~ msgstr "Введите имя твит-пользователя, которому рекомендуете."
+
+#~ msgid "Enter custom hashtag for Tweet."
+#~ msgstr "Введите пользовательскую метку для твита."
+
+#~ msgid "Enter hashtag for your tweet."
+#~ msgstr "Введите метку для вашего твита."
+
+#~ msgid "Enter username of someone you recommend."
+#~ msgstr "Введите имя твит-пользователя, которому рекомендуете."
+
+#~ msgid "Please, enable JavaScript in Your browser."
+#~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#~ msgid "Select the default display language for Twitter button(-s)."
+#~ msgstr "Выберите язык отображения по умолчанию для кнопок Twitter."
+
+#~ msgid ""
+#~ "To use custom image You need to setup permissions to upload directory of "
+#~ "your site - %s"
+#~ msgstr ""
+#~ "Для использования кастомного изображения Вам нужно выдать  права доступа "
+#~ "на папку загрузок на вашем сайте - %s"
+
+#~ msgid "Network"
+#~ msgstr "Сетевые"
+
+#~ msgid "Notice:"
+#~ msgstr "Внимание:"
+
+#~ msgid "This option will replace all current settings on separate sites."
+#~ msgstr "Эта настройка заменит все текущие настройки отдельных сайтов."
+
+#~ msgid ""
+#~ "It is prohibited to view Twitter Button Pro settings on this site in the "
+#~ "Twitter Button Pro network settings."
+#~ msgstr ""
+#~ "Запрещается просматривать настройки Twitter Button Pro на этом сайте в "
+#~ "сетевых настройках Twitter Button Pro."
+
+#~ msgid ""
+#~ "It is prohibited to change Twitter Button Pro settings on this site in "
+#~ "the Twitter Button Pro network settings."
+#~ msgstr ""
+#~ "Запрещается изменять настройки Twitter Button Pro на этом сайте в сетевых "
+#~ "настройках Twitter Button Pro."
+
+#~ msgid "Apply network settings"
+#~ msgstr "Применить сетевые настройки"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Применить для всех сайтов и использовать по умолчанию"
+
+#~ msgid "All current settings on separate sites will be replaced"
+#~ msgstr "Все текущие настройки в отдельных сайтах будут заменены"
+
+#~ msgid "Allow changing the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки для отдельных сайтов"
+
+#~ msgid "Allow viewing the settings on separate websites"
+#~ msgstr "Разрешить просматривать настройки для отдельных сайтов"
+
+#~ msgid "By default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Settings will be applied to newly added websites by default"
+#~ msgstr ""
+#~ "Настройки будут использоваться по умолчанию для вновь добавленных сайтов"
+
+#~ msgid "Do not apply"
+#~ msgstr "Не применять"
+
+#~ msgid "Change the settings on separate sites of the multisite only"
+#~ msgstr "Изменять настройки только на отдельных сайтах"
+
+#~ msgid "Show URL"
+#~ msgstr "Показать URL"
+
+#~ msgid "Settings saved."
+#~ msgstr "Настройки сохранены."
+
+#~ msgid "Saving"
+#~ msgstr "Сохранение"
+
+#~ msgid "Changes you made are not saved. Please wait few minutes."
+#~ msgstr ""
+#~ "Внесенные изменения не сохранены. Пожалуйста, подождите несколько минут."
+
+#~ msgid "no title"
+#~ msgstr "без названия"
+
+#~ msgid "The upload was successful"
+#~ msgstr "Загрузка успешно завершена"
+
+#~ msgid ""
+#~ "Image properties: max image width:100px; max image height:100px; max "
+#~ "image size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+#~ msgstr ""
+#~ "Опции изображения для загрузки: максимальная ширина:100px; максимальная "
+#~ "высота:100px; максимальный размер:32Kb; тип файла:\"jpg\", \"jpeg\", \"png"
+#~ "\"."
+
+#~ msgid "Tweet text"
+#~ msgstr "Текст твита"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#~ msgid "Extra settings"
+#~ msgstr "Дополнительные настройки"
+
+#~ msgid ""
+#~ "If you want to add Twitter buttons to your page or post, please use %s "
+#~ "button"
+#~ msgstr ""
+#~ "Если вы хотите добавить кнопки Твиттера на вашу страницу или пост, то "
+#~ "используйте кнопку %s "
+
+#~ msgid ""
+#~ "You can add Twitter buttons to your page or post by clicking on %s button "
+#~ "in the content edit block using the Visual mode. If the button isn't "
+#~ "displayed, please use the shortcode %s. Instead of asterisk, please add "
+#~ "the necessary buttons separated by commas (Ex:"
+#~ msgstr ""
+#~ "Вы можете добавить кнопки Твиттера на вашу страницу или пост, нажав на "
+#~ "кнопку %s в блоке редактирования контента в режиме Visual. Если кнопка не "
+#~ "отображается, пожалуйста, используйте шорткод %s "
+
+#~ msgid "Allow to change the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах"
+
+#~ msgid "Allow to view the settings on separate websites"
+#~ msgstr "Разрешить просмотр настроек на отдельных сайтах"
+
+#~ msgid "Change settings only on the multisite separate sites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах "
+
+#~ msgid "Twitter buttons position"
+#~ msgstr "Расположение кнопок"
+
+#~ msgid "Before"
+#~ msgstr "Перед"
+
+#~ msgid "After"
+#~ msgstr "После"
+
+#~ msgid "Before And After"
+#~ msgstr "Перед и после"
+
+#~ msgid "Only shortcode"
+#~ msgstr "Только шорткод"
+
+#~ msgid "Show button"
+#~ msgstr "Отображать кнопки"
+
+#~ msgid "Tweet (Share a link)"
+#~ msgstr "Твиттнуть (поделиться ссылкой)"
+
+#~ msgid "Size"
+#~ msgstr "Размер"
+
+#~ msgid "Opt-out of tailoring Twitter"
+#~ msgstr "Отказаться от адаптации Твиттера"
+
+#~ msgid "For getting more information about this option, please"
+#~ msgstr "Для получения дополнительной информации об этой опции, пожалуйста"
+
+#~ msgid "click here"
+#~ msgstr "нажмите здесь"
+
+#~ msgid "Settings for the \"Tweet\" button"
+#~ msgstr "Настройки для кнопки Твиттнуть "
+
+#~ msgid "the page URL"
+#~ msgstr "текущей страницы"
+
+#~ msgid "home URL"
+#~ msgstr "главной страницы"
+
+#~ msgid "the title of the page"
+#~ msgstr "заголовок текущей страницы"
+
+#~ msgid "Tweet been received from the Twitter username"
+#~ msgstr "Твитт был получен от твитт-пользователя"
+
+#~ msgid "Enter username of someone you recommend"
+#~ msgstr "Ввести имя твитт-пользователя, которому рекомендуете"
+
+#~ msgid "Settings for the \"Follow me\" button"
+#~ msgstr "Настройки для кнопки \"Читать\""
+
+#~ msgid "Your username"
+#~ msgstr "Имя пользователя"
+
+#~ msgid ""
+#~ "If you do not have Twitter account yet, you should create it using this "
+#~ "link"
+#~ msgstr ""
+#~ "Если у вас еще нет аккаунта на Twitter, вам надо создать его, перейдя по "
+#~ "этой ссылке"
+
+#~ msgid "\"Follow me\" button image"
+#~ msgstr "Изображение для кнопки \"Читать\""
+
+#~ msgid "Standard image"
+#~ msgstr "Стандартное изображение"
+
+#~ msgid "Custom image"
+#~ msgstr "Пользовательское изображение"
+
+#~ msgid ""
+#~ "To use custom image You need to setup permissions to upload directory of "
+#~ "your site"
+#~ msgstr ""
+#~ "Для использования кастомного изображения Вам нужно выдать  права доступа "
+#~ "на папку загрузок на вашем сайте"
+
+#~ msgid "Show username"
+#~ msgstr "Показывать имя пользователя"
+
+#~ msgid "Show count"
+#~ msgstr "Показывать количество твиттов"
+
+#~ msgid "Show the number of Twitter accounts following the specified account"
+#~ msgstr ""
+#~ "Показывать количество аккаунтов твиттера, которые твиттнули данный твитт"
+
+#~ msgid "Settings for the \"Hashtag\" button"
+#~ msgstr "Настройки для кнопки \"Метка\""
+
+#~ msgid "no URL"
+#~ msgstr "нет URL-адреса"
+
+#~ msgid "Settings for the \"Mention\" button"
+#~ msgstr "Настройки для кнопки \"Упомянуть\""
+
+#~ msgid "Save Changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Preview"
+#~ msgstr "Предварительный просмотр"
+
+#~ msgid "Enter username of someone you recomend"
+#~ msgstr "Ввести имя твитт-пользователя, которому рекомендуете"
 
 #~ msgid "support"
 #~ msgstr "Поддержка "
@@ -346,8 +617,17 @@ msgstr "Тех. поддержка"
 #~ msgid "no default text"
 #~ msgstr "текст по умолчанию не задан"
 
-#~ msgid "Use home URL"
+#, fuzzy
+#~ msgid "use home URL"
 #~ msgstr "Использовать URL- адрес домашней страницы"
+
+#, fuzzy
+#~ msgid "use the page URL"
+#~ msgstr "Использовать URL-адрес текущей страницы"
+
+#, fuzzy
+#~ msgid "use the title of the page"
+#~ msgstr "Использовать заголовок текущей страницы"
 
 #~ msgid "Enter via"
 #~ msgstr "Ввести виа (\"с помощью\")"
@@ -380,7 +660,7 @@ msgstr "Тех. поддержка"
 #~ msgstr "N/A"
 
 #~ msgid " Mb"
-#~ msgstr "Мг"
+#~ msgstr "Мб"
 
 #~ msgid "Yes"
 #~ msgstr "Да"
@@ -471,7 +751,7 @@ msgstr "Тех. поддержка"
 #~ msgstr "Статус системы"
 
 #~ msgid "Plugins"
-#~ msgstr "Страница плагинов"
+#~ msgstr "Страницу плагинов "
 
 #~ msgid "Themes"
 #~ msgstr "Темы"
@@ -486,7 +766,7 @@ msgstr "Тех. поддержка"
 #~ msgstr "Установленные плагины"
 
 #~ msgid "Learn more"
-#~ msgstr "Подробнее "
+#~ msgstr "Подробнее"
 
 #~ msgid "Activate this plugin"
 #~ msgstr "Активировать плагин"
@@ -571,8 +851,8 @@ msgstr "Тех. поддержка"
 #~ "or higher! We do not guarantee that our plugin will work correctly. "
 #~ "Please upgrade to WordPress latest version."
 #~ msgstr ""
-#~ "или выше! Мы не гарантируем , что наш плагин будет работать правильно . "
-#~ "Пожалуйста, обновите WordPress до последней версии ."
+#~ "или выше, поэтому он был деактивирован! Пожалуйста обновите WordPress и "
+#~ "попробуйте еще раз."
 
 #~ msgid "It’s time to upgrade your"
 #~ msgstr "Пора обновить"
@@ -599,18 +879,17 @@ msgstr "Тех. поддержка"
 #~ msgstr "Проверьте премиум опции на странице настроек плагина !"
 
 #~ msgid "Wrong license key"
-#~ msgstr "Неправильный лицензионный ключ"
+#~ msgstr "Неправильный лицензионный ключ! "
 
 #~ msgid ""
 #~ "Something went wrong. Please try again later. If the error appears again, "
 #~ "please contact us"
 #~ msgstr ""
-#~ "Что-то пошло не так. Повторите попытку позже. Если ошибка появится снова, "
-#~ "пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
-#~ "com>BestWebSoft</a>. Приносим извинения за неудобства. "
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами "
 
 #~ msgid "We are sorry for inconvenience."
-#~ msgstr "Приносим извинения за доставленные неудобства."
+#~ msgstr "Приносим извинения за неудобства."
 
 #~ msgid "This license key is bind to another site"
 #~ msgstr "Этот лицензионный ключ привязан к другому сайту"
@@ -618,17 +897,15 @@ msgstr "Тех. поддержка"
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day. "
 #~ "Please, upload the plugin manually."
-#~ msgstr ""
-#~ "К сожалению, вы превысили количество доступных попыток в день. "
-#~ "Пожалуйста, загрузите плагин вручную."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток. "
 
 #~ msgid ""
 #~ "Unfortunately, Your license has expired. To continue getting top-priority "
 #~ "support and plugin updates you should extend it in your"
 #~ msgstr ""
-#~ "К сожалению, Ваша лицензия истекла . Чтобы продолжить получать "
-#~ "первоочередное поддержку и обновления плагина вы должны расширить его в "
-#~ "вашем"
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "первостепенную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию. "
 
 #~ msgid ""
 #~ "Unfortunately, the Pro licence was already installed to this domain. The "
@@ -659,11 +936,12 @@ msgstr "Тех. поддержка"
 #~ "Something went wrong. Try again later or upload the plugin manually. We "
 #~ "are sorry for inconvenience."
 #~ msgstr ""
-#~ "Что-то пошло не так. Повторите попытку позже или загрузите плагин "
-#~ "вручную. Приносим извинения за неудобства. "
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства. "
 
 #~ msgid "Please, enter Your license key"
-#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ "
 
 #~ msgid ""
 #~ "Congratulations! The Pro version of the plugin is successfully download "
@@ -675,7 +953,7 @@ msgstr "Тех. поддержка"
 #~ msgstr "Пожалуйста, перейдите на"
 
 #~ msgid "the setting page"
-#~ msgstr "страницу настроек"
+#~ msgstr "Дополнительные настройки "
 
 #~ msgid "You will be redirected automatically in 5 seconds."
 #~ msgstr "Вы будете перенаправлены автоматически через 5 секунд."
@@ -699,8 +977,8 @@ msgstr "Тех. поддержка"
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product)."
 #~ msgstr ""
-#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
-#~ "продукта)"
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта), где вы можете сделать необходимые изменения. "
 
 #~ msgid "or"
 #~ msgstr "или"
@@ -714,7 +992,7 @@ msgstr "Тех. поддержка"
 #~ "Для того, чтобы продолжать использовать плагин нужно купить лицензию %s "
 
 #~ msgid "After that you can activate it by entering your license key."
-#~ msgstr "версию этого плагина, введя ваш лицензионный ключ. "
+#~ msgstr "После этого вы можете активировать, введя ваш лицензионный ключ. "
 
 #~ msgid ""
 #~ "Unfortunately, you have exceeded the number of available tries per day."
@@ -737,14 +1015,11 @@ msgstr "Тех. поддержка"
 #~ "This license key is valid, but Your license has expired. If you want to "
 #~ "update our plugin in future, you should extend the license."
 #~ msgstr ""
-#~ "Этот лицензионный ключ действителен , но срок действия лицензии истек . "
-#~ "Если вы хотите , чтобы наш плагин в будущем обновлялся , вы должны "
-#~ "продлить лицензию ."
+#~ "Лицензионный ключ принят, но срок действия лицензии истек. Если вы хотите "
+#~ "обновлять плагин в будущем, вы должны продлить лицензию."
 
 #~ msgid "Unfortunately, you have exceeded the number of available tries."
-#~ msgstr ""
-#~ "К сожалению, вы превысили количество доступных попыток в день. "
-#~ "Пожалуйста, загрузите плагин вручную. "
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
 
 #~ msgid ""
 #~ "Unfortunately, the Pro Trial licence was already installed to this "
@@ -754,35 +1029,35 @@ msgstr "Тех. поддержка"
 #~ "Пробная лицензия может быть установлена лишь раз"
 
 #~ msgid "The Pro Trial license key is valid."
-#~ msgstr "Pro пробный лицензионный ключ действителен ."
+#~ msgstr "Лицензионный ключ принят.  "
 
 #~ msgid "The license key is valid."
-#~ msgstr "Этот лицензионный ключ привязан к другому сайту "
+#~ msgstr "Лицензионный ключ принят. "
 
 #~ msgid "Your license will expire on"
-#~ msgstr "Ваша лицензия истекает"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет "
 
 #~ msgid "Please, enter your license key"
-#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ "
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
 
 #~ msgid ""
 #~ "If needed you can check if the license key is correct or reenter it in "
 #~ "the field below. You can find your license key on your personal page - "
 #~ "Client area - on our website"
 #~ msgstr ""
-#~ "При необходимости вы можете проверить правильность лицензионного ключа "
-#~ "или повторно его ввести в поле ниже . Вы можете найти ваш лицензионный "
-#~ "ключ на вашей личной странице - Client area - на нашем сайте"
+#~ "При необходимости вы можете проверить валидность лицензионного ключа или "
+#~ "повторно ввести его в поле ниже. Вы можете найти ваш лицензионный ключ на "
+#~ "своей личной странице -  Client area - на нашем сайте"
 
 #~ msgid ""
 #~ "(your username is the email you specify when purchasing the product). If "
 #~ "necessary, please submit \"Lost your password?\" request."
 #~ msgstr ""
-#~ "(ваше имя пользователя - это электронный адрес, указанный при покупке "
-#~ "продукта) "
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта). При необходимости нажмите \"Lost your password?\""
 
 #~ msgid "Check license key"
-#~ msgstr "Неправильный лицензионный ключ "
+#~ msgstr "Проверка лицензионного ключа"
 
 #~ msgid "WARNING: Illegal use notification"
 #~ msgstr "ВНИМАНИЕ : Незаконное использование"
@@ -793,25 +1068,26 @@ msgstr "Тех. поддержка"
 #~ "Client Area. We strongly recommend you to solve the problem within 24 "
 #~ "hours, otherwise the Pro plugin will be deactivated."
 #~ msgstr ""
-#~ "Вы можете использовать лицензию Pro плагина только для одного домена . "
-#~ "Пожалуйста, проверьте и отредактируйте вашу лицензию или домен, если "
-#~ "необходимо , используя персональную Client Area. Мы настоятельно "
-#~ "рекомендуем вам решить проблему в течение 24 часов , в противном случае "
-#~ "плагин Pro будет отключен."
+#~ "ВНИМАНИЕ: Было замечено незаконное использования вами нашего плагина. Мы "
+#~ "настоятельно рекомендуем Вам решить данную проблему в течение 24 часов, в "
+#~ "противном случае плагин будет деативирован. Пожалуйста, перейдите на вашу "
+#~ "личную "
 
 #~ msgid ""
 #~ "Notice: Your Pro Trial license has expired. To continue using the plugin "
 #~ "you should buy a Pro license"
 #~ msgstr ""
-#~ "Внимание: Срок вашей пробной Pro  лицензии истек. Для продолжения "
-#~ "использования плагина вы должны купить Pro лицензию"
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "первостепенную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию. "
 
 #~ msgid ""
 #~ "Your license has expired. To continue getting top-priority support and "
 #~ "plugin updates you should extend it."
 #~ msgstr ""
-#~ "Срок действия лицензии истек . Чтобы продолжить получать первоочередное "
-#~ "поддержку и обновления плагина вы должны продлить ее ."
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "первостепенную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
 
 #~ msgid "Notice: You are using the Pro Trial license of %s plugin."
 #~ msgstr "Внимание: Вы пользуетесь пробной Pro лицензией %s плагина"
@@ -820,16 +1096,18 @@ msgstr "Тех. поддержка"
 #~ msgstr "Внимание: Вы пользуетесь пробной Pro лицензией плагина"
 
 #~ msgid "The Pro Trial license will expire on"
-#~ msgstr "Пробная лицензия Pro истекает"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет "
 
 #~ msgid "You license for"
-#~ msgstr "Неправильный лицензионный ключ "
+#~ msgstr "Ваша лицензия для"
 
 #~ msgid "expires on"
-#~ msgstr "годен до"
+#~ msgstr "истекает"
 
 #~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
-#~ msgstr "и вам не будет предоставлен  TOP-PRIORITY SUPPORT или UPDATES."
+#~ msgstr ""
+#~ "и у вас не будет возможности обновляться или иметь приорететную тех. "
+#~ "поддержку."
 
 #~ msgid "Thank you for installing"
 #~ msgstr "Спасибо за установку"
@@ -867,9 +1145,6 @@ msgstr "Тех. поддержка"
 
 #~ msgid "Add BestWebSoft plugins' shortcodes using this button."
 #~ msgstr "Добавить BestWebSoft шорткод плагина используя эту кнопку"
-
-#~ msgid "Close"
-#~ msgstr "Закрыть"
 
 #~ msgid "Restore all plugin settings to defaults"
 #~ msgstr "Все настройки плагина восстановлены. "
@@ -919,8 +1194,8 @@ msgstr "Тех. поддержка"
 #~ msgid "Shortcode"
 #~ msgstr "Шорткод"
 
-#~ msgid "Settings for the button \"Follow Me\""
-#~ msgstr "Настройки для кнопки \"Follow Me\""
+#~ msgid "Settings for the button \"Follow Me\":"
+#~ msgstr "Настройки для кнопки \"Follow Me\":"
 
 #~ msgid "Disable the \"Twitter\" button"
 #~ msgstr "Отключить кнопку \"Twitter\""
@@ -936,8 +1211,8 @@ msgstr "Тех. поддержка"
 #~ "By clicking this icon a user can add the article he/she likes to his/her "
 #~ "Twitter page."
 #~ msgstr ""
-#~ "При нажатии этой иконки пользователь добавляет на свою  twitter страницу "
-#~ "статью, которая им нравится, а также ссылку на него."
+#~ "При нажатии этой иконки пользователь добавляет на свою twitter страницу "
+#~ "статью, которая им нравится, а также ссылку на нее."
 
 #~ msgid "Click here if you like this article."
 #~ msgstr "Кликай, если понравилась данная статья."
@@ -965,19 +1240,8 @@ msgstr "Тех. поддержка"
 #~ msgid "Bottom position"
 #~ msgstr "Позиция внизу"
 
-#~ msgid "Go!"
-#~ msgstr "Перейти!"
+#~ msgid "Twitter Pro"
+#~ msgstr "Twitter Pro"
 
-#~ msgid ""
-#~ "It's time to upgrade your <strong>Twitter</strong> to <strong>PRO</"
-#~ "strong> version"
-#~ msgstr ""
-#~ "Пора обновить ваш <strong>плагин Twitter</strong> до <strong>PRO</strong> "
-#~ "версии"
-
-#~ msgid ""
-#~ "This functionality is available in the Pro version of the plugin. For "
-#~ "more details, please follow the link"
-#~ msgstr ""
-#~ "Данный функционал доступен в Про версии плагина. Для более детальной "
-#~ "информации смотрите"
+#~ msgid "where you'll be able to do that once this period expires."
+#~ msgstr "где появится такая возможность по истечении данного срока."

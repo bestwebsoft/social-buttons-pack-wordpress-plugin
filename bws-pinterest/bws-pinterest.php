@@ -13,7 +13,7 @@ if ( ! function_exists( 'pntrst_loaded' ) ) {
 /* Plugin init function */
 if ( ! function_exists ( 'pntrst_init' ) ) {
 	function pntrst_init() {
-		global $bws_plugin_info, $pntrst_plugin_info;		
+		global $bws_plugin_info, $pntrst_plugin_info, $pntrst_lang_codes;		
 
 		if ( empty( $pntrst_plugin_info ) ) {
 			if ( ! function_exists( 'get_plugin_data' ) )
@@ -26,6 +26,9 @@ if ( ! function_exists ( 'pntrst_init' ) ) {
 		/* Call register settings function pntrst_register_settings() */
 		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "pinterest.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) ) {
 			pntrst_register_settings();
+			$pntrst_lang_codes = array(
+				'en' => "English", 'cs' => "Czech", 'da' => "Danish", 'de' => "German", 'el' => "Greek", 'fr' => "French", 'hi' => "Hindu", 'hu' => "Hungarian", 'id' => "Indonesian", 'it' => "Italian", 'ja' => "Japanese", 'ko' => "Korean", 'ms' => "Malaysian", 'nb' => "Norwegian", 'nl' => "Dutch", 'pl' => "Polish", 'pt' => "Portuguese", 'pt-br' => "Portuguese (Brazil)", 'ro' => "Romanian", 'ru' => "Russian", 'sk' => "Slovak", 'sv' => "Swedish", 'tl' => "Tagalog", 'th' => "Thai", 'tr' => "Turkish", 'uk' => "Ukrainian", 'vi' => "Vietnamese"
+			);			
 		}
 	}
 }
@@ -44,12 +47,13 @@ if ( ! function_exists( 'pntrst_admin_init' ) ) {
 /* Enqueue plugin scripts and styles for admin */
 if ( ! function_exists ( 'pntrst_enqueue' ) ) {
 	function pntrst_enqueue( $hook ) {
+		wp_enqueue_style( 'pntrst_icon', plugins_url( 'css/icon.css', __FILE__ ) );
 		if ( isset( $_GET['page'] ) && ( 'pinterest.php' == $_GET['page'] || 'social-buttons.php' == $_GET['page'] ) ) {
 			wp_enqueue_style( 'pntrst_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 			wp_enqueue_script( 'pntrst_script', plugins_url( 'js/script.js', __FILE__ ) );
 
-			if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] )
-				bws_plugins_include_codemirror();
+			bws_plugins_include_codemirror();
+			bws_enqueue_settings_scripts();
 		}
 
 		if ( $hook == 'widgets.php' || $hook == 'customize.php' ) {
@@ -69,9 +73,32 @@ if ( ! function_exists( 'pntrst_script_enqueue' ) ) {
 /* Register settings */
 if ( ! function_exists( 'pntrst_register_settings' ) ) {
 	function pntrst_register_settings() {
-		global $pntrst_options, $pntrst_plugin_info, $pntrst_options_defaults;
+		global $pntrst_options, $pntrst_plugin_info, $sclbttns_plugin_info;
 
-		$pntrst_options_defaults = array(
+		/* Install the option defaults */
+		if ( ! get_option( 'pntrst_options' ) ) {
+			$options_defaults = pntrst_get_options_default();
+			add_option( 'pntrst_options', $options_defaults );			
+		}
+
+		/* Get options from the database */
+		$pntrst_options = get_option( 'pntrst_options' );
+
+		/* Array merge incase this version has added new options */
+		if ( ! isset( $pntrst_options['plugin_option_version'] ) || $pntrst_options['plugin_option_version'] != $pntrst_plugin_info["Version"] || $pntrst_options['plugin_option_version'] != $sclbttns_plugin_info["Version"] ) {
+			$options_defaults = pntrst_get_options_default();
+			$pntrst_options = array_merge( $options_defaults, $pntrst_options );
+			$pntrst_options['plugin_option_version'] = $pntrst_plugin_info["Version"];
+			update_option( 'pntrst_options', $pntrst_options );
+		}
+	}
+}
+
+if ( ! function_exists( 'pntrst_get_options_default' ) ) {
+	function pntrst_get_options_default() {
+		global $pntrst_plugin_info;
+
+		$options_defaults = array(
 			'plugin_option_version'		=> $pntrst_plugin_info["Version"],
 			'pinit_before'				=> 1,
 			'pinit_after'				=> 0,
@@ -80,277 +107,46 @@ if ( ! function_exists( 'pntrst_register_settings' ) ) {
 			'pinit_custom_image_link'	=> '',
 			'pinit_image_shape'			=> 1,
 			'pinit_image_size'			=> 1,
-			'pinit_image_color'			=> 'red',
 			'pinit_counts'				=> 'none',
 			'follow_before'				=> 0,
 			'follow_after'				=> 0,
 			'follow_button_label'		=> __( 'Follow me', 'bws-pinterest' ),
 			'profile_url'				=> '',
+			'lang' 						=> 'en',
 			'display_settings_notice'	=> 0,
-			'suggest_feature_banner'	=> 1
+			'suggest_feature_banner'	=> 1,
+			'use_multilanguage_locale'	=> 0
 		);
 
-		/* Install the option defaults */
-		if ( ! get_option( 'pntrst_options' ) )
-			add_option( 'pntrst_options', $pntrst_options_defaults );
-
-		/* Get options from the database */
-		$pntrst_options = get_option( 'pntrst_options' );
-
-		/* Array merge incase this version has added new options */
-		if ( ! isset( $pntrst_options['plugin_option_version'] ) || $pntrst_options['plugin_option_version'] != $pntrst_plugin_info["Version"] ) {
-			$pntrst_options = array_merge( $pntrst_options_defaults, $pntrst_options );
-			$pntrst_options['plugin_option_version'] = $pntrst_plugin_info["Version"];
-			update_option( 'pntrst_options', $pntrst_options );
-		}
+		return $options_defaults;
 	}
 }
 
-/* Plugin's settings page in the admin */
-if ( ! function_exists( 'pntrst_settings_page' ) ) {
-	function pntrst_settings_page() {
-		global $wp_version, $pntrst_options, $pntrst_plugin_info, $pntrst_options_defaults;
 
-		$message = $error = "";
-		$plugin_basename = plugin_basename( __FILE__ );
-
-		/* save options */
-		if ( isset( $_POST["pntrst_submit"] ) && check_admin_referer( $plugin_basename, 'pntrst_nonce_name' ) ) {
-			$pntrst_options['pinit_before'] 		= isset( $_REQUEST['pntrst_before'] ) ? 1 : 0;
-			$pntrst_options['pinit_after'] 			= isset( $_REQUEST['pntrst_after'] ) ? 1 : 0;
-			$pntrst_options['pinit_hover'] 			= isset( $_REQUEST['pntrst_hover'] ) ? 1 : 0;
-			if ( '0' == $_REQUEST['pntrst_image'] || '1' == $_REQUEST['pntrst_image'] )
-				$pntrst_options['pinit_image'] = $_REQUEST['pntrst_image'];
-			if ( '0' == $_REQUEST['pntrst_image_shape'] || '1' == $_REQUEST['pntrst_image_shape'] )
-				$pntrst_options['pinit_image_shape'] = $_REQUEST['pntrst_image_shape'];
-			if ( '0' == $_REQUEST['pntrst_image_size'] || '1' == $_REQUEST['pntrst_image_size'] )
-				$pntrst_options['pinit_image_size'] = $_REQUEST['pntrst_image_size'];
-			if ( 'red' == $_REQUEST['pntrst_image_color'] || 'gray' == $_REQUEST['pntrst_image_color'] || 'white' == $_REQUEST['pntrst_image_color'] )
-				$pntrst_options['pinit_image_color'] = $_REQUEST['pntrst_image_color'];
-			if ( 'none' == $_REQUEST['pntrst_pin_counts'] || 'above' == $_REQUEST['pntrst_pin_counts'] || 'beside' == $_REQUEST['pntrst_pin_counts'] )
-				$pntrst_options['pinit_counts'] = $_REQUEST['pntrst_pin_counts'];
-			$pntrst_options['follow_before'] 		= isset( $_REQUEST['pntrst_follow_before'] ) ? 1 : 0;
-			$pntrst_options['follow_after'] 		= isset( $_REQUEST['pntrst_follow_after'] ) ? 1 : 0;
-			$pntrst_options['follow_button_label'] 	= sanitize_text_field( $_REQUEST['pntrst_follow_button_label'] );
-			$pntrst_options['profile_url'] 			= sanitize_text_field( str_replace( '/', '', $_REQUEST['pntrst_profile_url'] ) );
-
-			if ( ( 1 == $pntrst_options['follow_before'] || 1 == $pntrst_options['follow_after'] ) && empty( $pntrst_options['profile_url'] ) )
-				$error = __( 'Please, enter "Pinterest user URL" to add Follow Button. Settings are not saved.', 'bws-pinterest' );
-
-			/* file upload script */
-			if ( isset( $_FILES['pntrst-custom-image']['tmp_name'] ) &&  "" != $_FILES['pntrst-custom-image']['tmp_name'] ) {
-				$upload_dir = wp_upload_dir();
-				if ( ! $upload_dir["error"] ) {
-					/* create image directory in WP /uploads */
-					$pntrst_custom_img_folder = $upload_dir['basedir'] . '/pinterest-image';
-					if ( ! is_dir( $pntrst_custom_img_folder ) ) {
-						wp_mkdir_p( $pntrst_custom_img_folder, 0755 );
-					}
-				}
-
-				/* Checks is file download initiated by user */
-				if ( isset( $_FILES['pntrst-custom-image'] ) && '0' == $_REQUEST['pntrst_image'] ) {
-					if ( is_uploaded_file( $_FILES['pntrst-custom-image']['tmp_name'] ) ) {
-						$filename = $_FILES['pntrst-custom-image']['tmp_name'];
-						$ext = substr( $_FILES['pntrst-custom-image']['name'], 1 + strrpos( $_FILES['pntrst-custom-image']['name'], '.' ) );
-						$max_image_size = 512 * 1024;
-						$valid_types = array( 'jpg', 'jpeg', 'png' );
-						/*check if valid file size */
-						if ( filesize( $filename ) > $max_image_size ) {
-							$error = sprintf( __( 'Error: File size %1s', 'bws-pinterest' ), '> 512Kb' );
-						/*check if valid file type */
-						} elseif ( ! in_array( strtolower( $ext ), $valid_types ) ) {
-							$error = __( 'Error: Invalid file type', 'bws-pinterest' );
-						} else {
-							/* Construction to rename downloading file */
-							$file_ext = wp_check_filetype( $_FILES['pntrst-custom-image']['name'] );
-							$new_name = 'pinterest-button';
-							$namefile = $new_name . '.' . $file_ext['ext'];
-							$uploadfile = $pntrst_custom_img_folder . '/' . $namefile;
-							/* Move uploaded file to image directory /uploads/pinterest-image */
-							if ( move_uploaded_file( $_FILES['pntrst-custom-image']['tmp_name'], $uploadfile ) ) {
-								/* link to uploaded file */
-								$pntrst_options['pinit_custom_image_link'] = $upload_dir['baseurl'] . '/pinterest-image/pinterest-button' . '.' . $file_ext['ext'];
-							} else {
-								$error = __( 'Error: moving file failed', 'bws-pinterest' );
-							}
-						}
-					}
-				}
-			} elseif ( isset( $_FILES['pntrst-custom-image']['tmp_name'] ) && "" == $_FILES['pntrst-custom-image']['tmp_name'] && "" == $pntrst_options['pinit_custom_image_link'] ) {
-				$error = __( 'Error: select the upload file', 'bws-pinterest' );
-			}
-			if ( empty( $error ) ) {
-				$pntrst_options = apply_filters( 'pntrst_before_save_options', $pntrst_options );
-				update_option( 'pntrst_options', $pntrst_options );
-				$message = __( 'Settings saved', 'bws-pinterest' );
-			}
-		}
-		
-		?>
-		
-			<?php if ( ! empty( $message ) ) { ?>
-				<div  class="updated fade below-h2"><p><strong><?php echo $message; ?></strong></p></div>
-			<?php }
-			if ( ! empty( $error ) ) { ?>
-				<div class="error below-h2"><p><strong><?php echo $error; ?></strong></p></div>
-			<?php }
-			bws_show_settings_notice();
-			?>
-					<br />
-					<div>
-						<?php printf(
-							__( 'If you would like to add Pinterest buttons or widgets to your page or post, please use %s button', 'bws-pinterest' ),
-							'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' ); ?>
-						<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
-							<div class="bws_hidden_help_text" style="min-width: 200px;">
-								<?php printf(
-									__( "You can add buttons or widgets to your content by clicking on %1s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %2s for Pin It button, %3s for Follow button or %4s for Pinteresr widget", 'bws-pinterest' ),
-										'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
-										'<span class="bws_code">[bws_pinterest_pin_it]</span>',
-										'<span class="bws_code">[bws_pinterest_follow]</span>',
-										'<span class="bws_code">[bws_pinterest_widget]</span>'
-								); ?>
-							</div>
-						</div>
-					</div>
-					<form  class="bws_form" name="pntrst_form" enctype="multipart/form-data" method="post" action="">
-						<table class="form-table">
-							<tr class="pntrst-profile-url">
-								<th scope="row"><?php _e( 'Pinterest user URL', 'bws-pinterest' ); ?></th>
-								<td>
-									<label>https://www.pinterest.com/<input name="pntrst_profile_url" type="text" maxlength="250" value="<?php echo $pntrst_options['profile_url']; ?>"></label>
-									<div class="bws_help_box dashicons dashicons-editor-help">
-										<div class="bws_hidden_help_text" style="min-width: 200px;">
-											<?php _e( 'Example', 'bws-pinterest' ); ?> : https://www.pinterest.com/pinterest/
-										</div>
-									</div>
-								</td>
-							</tr>
-							<?php do_action( 'pntrst_settings_page_action', $pntrst_options ); ?>
-						</table>
-						<hr />
-						<h3><?php _e( 'Settings for Pin It Button', 'bws-pinterest' ); ?></h3>
-						<!--I. Pin it button -->
-						<table class="form-table">
-							<!--1. Place (Checkbox field) -->
-							<tr>
-								<th scope="row"><?php _e( 'Pin It Button place', 'bws-pinterest' ); ?></th>
-								<td>
-									<fieldset>
-										<label><input name="pntrst_before" type="checkbox" value="1" <?php if ( 1 == $pntrst_options['pinit_before'] ) echo 'checked="checked"'; ?> /><?php _e( 'Before the content', 'bws-pinterest' ); ?></label><br />
-										<label><input name="pntrst_after" type="checkbox" value="1" <?php if ( 1 == $pntrst_options['pinit_after'] ) echo 'checked="checked"'; ?> /><?php _e( 'After the content', 'bws-pinterest' ); ?></label><br />
-										<label><input name="pntrst_hover" type="checkbox" value="1" <?php if ( 1 == $pntrst_options['pinit_hover'] ) echo 'checked="checked"'; ?> /><?php _e( 'On image hover', 'bws-pinterest' ); ?></label><br />
-									</fieldset>
-								</td>
-							</tr>
-							<!-- 2. Image type (Radio) -->
-							<tr class="pntrst-image">
-								<th scope="row"><?php _e( 'Button image type', 'bws-pinterest' ); ?></th>
-								<td>
-									<fieldset>
-										<label><input id="pntrst_image_default"name="pntrst_image" type="radio" value="1" <?php if ( 1 == $pntrst_options['pinit_image'] ) echo 'checked="checked"'; ?> /><?php _e( 'Default', 'bws-pinterest' ); ?></label><br />
-										<label><input id="pntrst_image_custom" name="pntrst_image" type="radio" value="0" <?php if ( 0 == $pntrst_options['pinit_image'] ) echo 'checked="checked"'; ?> /><?php _e( 'Custom', 'bws-pinterest' ); ?></label><br/>
-										<div class="pntrst-custom-button">
-											<input id="pntrst-custom-image" name="pntrst-custom-image" type="file">
-											<div class="bws_help_box dashicons dashicons-editor-help">
-												<div class="bws_hidden_help_text" style="min-width: 210px;">
-													<?php printf( 
-														__( 'Max image size: %1s. Allowed file extensions: %2s' , 'bws-pinterest' ),
-															'512Kb',
-															'jpg, jpeg, png'
-													); ?>
-												</div>
-											</div><br />
-											<?php if ( ! empty ( $pntrst_options['pinit_custom_image_link'] ) ) { ?>
-											<p><?php _e( 'Current custom image', 'bws-pinterest' ); ?>:</p><img width="50" src="<?php echo esc_url( $pntrst_options['pinit_custom_image_link'] ); ?>" />
-											<?php } ?>
-										</div>
-									</fieldset>
-								</td>
-							</tr>
-							<!--3. Image form (Radio) -->
-							<tr class="pntrst-image-shape">
-								<th scope="row"><?php _e( 'Button Shape', 'bws-pinterest' ); ?></th>
-								<td>
-									<fieldset>
-										<label><input name="pntrst_image_shape" type="radio" value="1" <?php if ( 1 == $pntrst_options['pinit_image_shape'] ) echo 'checked="checked"'; ?> /><?php _e( 'Square', 'bws-pinterest' ); ?></label><br />
-										<label><input name="pntrst_image_shape" type="radio" value="0" <?php if ( 0 == $pntrst_options['pinit_image_shape'] ) echo 'checked="checked"'; ?> /><?php _e( 'Round', 'bws-pinterest' ); ?></label>
-									</fieldset>
-								</td>
-							</tr>
-							<!--4. Image size (Radio)-->
-							<tr class="pntrst-image-size">
-								<th scope="row"><?php _e( 'Button Size', 'bws-pinterest' ); ?></th>
-								<td>
-									<fieldset>
-										<label><input name="pntrst_image_size" type="radio" value="1" <?php if ( 1 == $pntrst_options['pinit_image_size'] ) echo 'checked="checked"'; ?> /><?php _e( 'Small', 'bws-pinterest' ); ?></label><br />
-										<label><input name="pntrst_image_size" type="radio" value="0" <?php if ( 0 == $pntrst_options['pinit_image_size'] ) echo 'checked="checked"'; ?> /><?php _e( 'Large', 'bws-pinterest' ); ?></label>
-									</fieldset>
-								</td>
-							</tr>
-							<!--5. Image color (Selectbox)-->
-							<tr class="pntrst-image-color">
-								<th scope="row"><?php _e( 'Button Color', 'bws-pinterest' ); ?></th>
-								<td>
-									<select name="pntrst_image_color">
-										<option value="red" <?php if ( 'red' == $pntrst_options['pinit_image_color']  ) echo 'selected="selected"'; ?> ><?php _e( 'Red', 'bws-pinterest' ); ?></option>
-										<option value="gray" <?php if ( 'gray' == $pntrst_options['pinit_image_color']  ) echo 'selected="selected"'; ?> ><?php _e( 'Gray', 'bws-pinterest' ); ?></option>
-										<option value="white" <?php if ( 'white' == $pntrst_options['pinit_image_color']  ) echo 'selected="selected"'; ?> ><?php _e( 'White', 'bws-pinterest' ); ?></option>
-									</select>
-									<p class="description hide-if-js"><?php _e( 'Works only if the square image is chosen', 'bws-pinterest' ); ?>.</p>
-								</td>
-							</tr>
-							<!--6. Pin Counts (Selectbox)-->
-							<tr class="pntrst-pin-counts">
-								<th scope="row"><?php _e( 'Pin Counts', 'bws-pinterest' ); ?></th>
-								<td>
-									<select name="pntrst_pin_counts">
-										<option value="none" <?php if ( 'none' == $pntrst_options['pinit_counts']  ) echo 'selected="selected"'; ?> ><?php _e( 'None', 'bws-pinterest' ); ?></option>
-										<option value="above" <?php if ( 'above' == $pntrst_options['pinit_counts']  ) echo 'selected="selected"'; ?> ><?php _e( 'Above the button', 'bws-pinterest' ); ?></option>
-										<option value="beside" <?php if ( 'beside' == $pntrst_options['pinit_counts']  ) echo 'selected="selected"'; ?> ><?php _e( 'Beside the button', 'bws-pinterest' ); ?></option>
-									</select>
-									<p class="description hide-if-js"><?php _e( 'Works only if the square image is chosen', 'bws-pinterest' ); ?>.</p>
-								</td>
-							</tr>
-						</table>
-						<hr />
-						<!-- II. Follow button -->
-						<h3><?php _e( 'Settings for Follow Button', 'bws-pinterest' ); ?></h3>
-						<table class="form-table">
-							<!-- 1. Place (Checkbox field)-->
-							<tr>
-								<th scope="row"><?php _e( 'Follow Button place', 'bws-pinterest' ); ?></th>
-								<td>
-									<fieldset>
-										<label><input name="pntrst_follow_before" type="checkbox" value="0" <?php if ( 1 == $pntrst_options['follow_before'] ) echo 'checked="checked"'; ?> /><?php _e( 'Before the content', 'bws-pinterest' ); ?></label><br />
-										<label><input name="pntrst_follow_after" type="checkbox" value="1" <?php if ( 1 == $pntrst_options['follow_after'] ) echo 'checked="checked"'; ?> /><?php _e( 'After the content', 'bws-pinterest' ); ?></label>
-									</fieldset>
-								</td>
-							</tr>
-							<!--2. Button text (Text field)-->
-							<tr class="pntrst-follow-button-label">
-								<th scope="row"><?php _e( 'Follow Button label', 'bws-pinterest' ); ?></th>
-								<td>
-									<input name="pntrst_follow_button_label" type="text" size="30" maxlength="250" value="<?php echo $pntrst_options['follow_button_label']; ?>">
-								</td>
-							</tr>
-						</table>
-						<p class="submit">
-							<input type="hidden" name="pntrst_submit" value="submit">
-							<input id="bws-submit-button" type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'bws-pinterest' ); ?>" />
-							<?php wp_nonce_field( $plugin_basename, 'pntrst_nonce_name' ); ?>
-						</p>
-					</form>
-					
-	<?php }
-}
-
-/* Add pinterest.js */
 if ( ! function_exists( 'pntrst_pinit_js_config' ) ) {
 	function pntrst_pinit_js_config() {
-		global $pntrst_options;
+		global $pntrst_options, $pntrst_lang_codes;
 		$return_string = "async";
+
+		/* Add multilanguage options */
+		if ( 1 == $pntrst_options['use_multilanguage_locale'] && isset( $_SESSION['language'] ) ) {
+			if ( array_key_exists( $_SESSION['language'], $pntrst_lang_codes ) ) {
+				$pntrst_locale = $_SESSION['language'];
+			} else {
+				$pntrst_locale_from_multilanguage = str_replace( '_', '-', $_SESSION['language'] );
+				if ( array_key_exists( $pntrst_locale_from_multilanguage, $pntrst_lang_codes ) ) {
+					$pntrst_locale = $pntrst_locale_from_multilanguage;
+				} else {
+					$pntrst_locale_from_multilanguage = explode( '_', $_SESSION['language']  );
+					if ( is_array( $pntrst_locale_from_multilanguage ) && array_key_exists( $pntrst_locale_from_multilanguage[0], $pntrst_lang_codes ) )
+						$pntrst_locale = $pntrst_locale_from_multilanguage[0];
+				}
+			}
+		}
+
+		if ( empty( $pntrst_locale ) ) {
+			$pntrst_locale = $pntrst_options['lang'];
+		}
 
 		/* check if custom image is chosen and load pntrst_custom_hover_img_script */
 		if ( "0" !== $pntrst_options['pinit_image'] && "1" !== $pntrst_options['pinit_hover'] ) {
@@ -359,14 +155,13 @@ if ( ! function_exists( 'pntrst_pinit_js_config' ) ) {
 				$return_string .= ' data-pin-hover="true"';
 			/* button shape */
 			if ( 0 == $pntrst_options['pinit_image_shape'] )
-				$return_string .= ' data-pin-round="true"';
+				$return_string .= ' data-pin-round="true" data-pin-save="false"';
 			/* button size */
 			if ( 0 == $pntrst_options['pinit_image_size'] )
 				$return_string .= ' data-pin-tall="true"';
 			/* if image shape square */
 			if ( 1 == $pntrst_options['pinit_image_shape'] ) {
-				if ( isset( $pntrst_options['pinit_image_color'] ) )
-					$return_string .= ' data-pin-color="' . $pntrst_options['pinit_image_color'] . '"';
+				$return_string .= ' data-pin-save="true" data-pin-lang="' . $pntrst_locale . '"';
 
 				if ( isset( $pntrst_options['pinit_counts'] ) )
 					$return_string .= ' data-pin-count="' . $pntrst_options['pinit_counts'] . '"';
@@ -511,7 +306,7 @@ if ( ! class_exists( 'Pinterest_Widget' ) ) {
 		function widget( $args, $instance ) {			
 			global $pntrst_options;		
 			if ( empty( $pntrst_options ) )
-				$pntrst_options = get_option( 'pntrst_options' );	
+				pntrst_register_settings();	
 
 			$title 					= empty( $instance['pntrst_title'] ) ? '' : apply_filters( 'widget_title', $instance['pntrst_title'], $instance, $this->id_base );
 			$widget_type 			= empty( $instance['pntrst_widget_type'] ) ? '' : $instance['pntrst_widget_type'];
@@ -544,7 +339,7 @@ if ( ! class_exists( 'Pinterest_Widget' ) ) {
 		function form( $instance ) {
 			global $pntrst_options;
 			if ( empty( $pntrst_options ) )
-				$pntrst_options = get_option( 'pntrst_options' );
+				pntrst_register_settings();	
 			/* outputs the options form on admin */
 			$instance = wp_parse_args( (array) $instance,
 				array(
@@ -577,18 +372,16 @@ if ( ! class_exists( 'Pinterest_Widget' ) ) {
 						<option value="embedUser"<?php if ( 'embedUser' == $widget_type ) echo 'selected="selected"'; ?>><?php _e( 'Profile Widget', 'bws-pinterest' ) ?></option>
 					</select>
 				</label>
-				<div class="pntrst-widget-admin pntrst-widget-url <?php if ( 'embedUser' == $widget_type ) echo 'hidden'; ?>">
+				<p class="pntrst-widget-url <?php if ( 'embedUser' == $widget_type ) echo 'hidden'; ?>">
 					<label for="<?php echo $this->get_field_id( 'pntrst_widget_url' ); ?>"><?php _e( 'URL', 'bws-pinterest' ); ?>*:</label>
-					<div class="bws_help_box dashicons dashicons-editor-help">
-						<div class="bws_hidden_help_text" style="min-width: 200px;">
-							<?php  _e( 'Examples', 'bws-pinterest' ); ?>:<br />
-							<?php  _e( 'Pin Widget', 'bws-pinterest' ); ?>: https://www.pinterest.com/pin/99360735500167749/<br />
-							<?php  _e( 'Board Widget', 'bws-pinterest' ); ?>: https://www.pinterest.com/pinterest/official-news/
-						</div>
-					</div>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'pntrst_widget_url' ); ?>" name="<?php echo $this->get_field_name( 'pntrst_widget_url' ); ?>" type="url" value="<?php echo esc_url( $widget_url ); ?>" />
-				</div>
-				<div class="pntrst-widget-admin pntrst-pin-widget-size <?php if ( 'embedBoard' == $widget_type || 'embedUser' == $widget_type ) echo 'hidden'; ?>">
+					<span class="bws_info">
+						<?php  _e( 'Examples', 'bws-pinterest' ); ?>:<br />
+						<?php  _e( 'Pin Widget', 'bws-pinterest' ); ?>: https://www.pinterest.com/pin/99360735500167749/<br />
+						<?php  _e( 'Board Widget', 'bws-pinterest' ); ?>: https://www.pinterest.com/pinterest/official-news/
+					</span><br />
+				</p>
+				<div class="pntrst-pin-widget-size <?php if ( 'embedBoard' == $widget_type || 'embedUser' == $widget_type ) echo 'hidden'; ?>">
 					<label for="<?php echo $this->get_field_id( 'pntrst_pin_widget_size' ); ?>"><?php _e( 'Size', 'bws-pinterest' ); ?>:</label>
 					<select id="<?php echo $this->get_field_id( 'pntrst_pin_widget_size' ); ?>" name="<?php echo $this->get_field_name( 'pntrst_pin_widget_size' ); ?>">
 						<option value="small"<?php selected( $pin_widget_size, 'small' ); ?>><?php _e( 'Small', 'bws-pinterest' ) ?></option>
@@ -596,42 +389,32 @@ if ( ! class_exists( 'Pinterest_Widget' ) ) {
 						<option value="large"<?php selected( $pin_widget_size, 'large' ); ?>><?php _e( 'Large', 'bws-pinterest' ) ?></option>
 					</select>
 				</div>
-				<div class="pntrst-widget-admin pntrst-widget-size <?php if ( 'embedPin' == $widget_type ) echo 'hidden'; ?>">
+				<p class="pntrst-widget-size <?php if ( 'embedPin' == $widget_type ) echo 'hidden'; ?>">
 					<label for="<?php echo $this->get_field_id( 'pntrst_widget_width' ); ?>"><?php _e( 'Width', 'bws-pinterest' ); ?>:</label>
-					<div class="bws_help_box dashicons dashicons-editor-help">
-						<div class="bws_hidden_help_text" style="min-width: 120px;">
-							<?php printf( __( 'Min width%1s. If emtpy width: auto', 'bws-pinterest' ), ': 130px' ); ?>
-						</div>
-					</div>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'pntrst_widget_width' ); ?>" name="<?php echo $this->get_field_name( 'pntrst_widget_width' ); ?>" type="number" min="130" max="10000" value="<?php echo $widget_width; ?>" />
-					<em class="description hide-if-js">
-						<?php printf( __( 'Min width%1s. If emtpy width: auto', 'bws-pinterest' ), ': 130px' ); ?>
-					</em>
+					<span class="bws_info">
+						<?php printf( 
+							__( 'Min width%1s. If the widget width field is empty, the thumbnail width will be auto.', 'bws-pinterest' ),
+							': 130px'
+						); ?>
+					</span><br />
 					<label for="<?php echo $this->get_field_id( 'pntrst_widget_height' ); ?>"><?php _e( 'Height', 'bws-pinterest' ); ?>:</label>
-					<div class="bws_help_box dashicons dashicons-editor-help" >
-						<div class="bws_hidden_help_text" style="min-width: 120px;">
-							<?php _e( 'Min height', 'bws-pinterest'); ?>: 60px
-						</div>
-					</div>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'pntrst_widget_height' ); ?>" name="<?php echo $this->get_field_name( 'pntrst_widget_height' ); ?>" type="number" min="60" max="10000" value="<?php echo $widget_height; ?>" />
-					<em class="description hide-if-js"><?php _e( 'Min height', 'bws-pinterest' ) ?>: 60px.</em>
+					<span class="bws_info">
+						<?php printf(
+							__( 'Min height%1s.', 'bws-pinterest' ),
+							': 60px'
+						); ?>
+					</span><br />
 					<label for="<?php echo $this->get_field_id( 'pntrst_widget_pin_scale' ); ?>"><?php _e( 'Thumbnails width', 'bws-pinterest' ); ?>:</label>
-					<div class="bws_help_box dashicons dashicons-editor-help">
-						<div class="bws_hidden_help_text" style="min-width: 120px;">
-							<?php printf(
-								__( 'Min width%1s. If the widget width field is empty, the thumbnail width will be auto.', 'bws-pinterest' ),
-								': 60px'
-							); ?>
-						</div>
-					</div>
 					<input class="widefat" id="<?php echo $this->get_field_id( 'pntrst_widget_pin_scale' ); ?>" name="<?php echo $this->get_field_name( 'pntrst_widget_pin_scale' ); ?>" type="number" min="60" max="10000" value="<?php echo $widget_pin_scale; ?>" />
-					<em class="description hide-if-js">
+					<span class="bws_info">
 						<?php printf(
 							__( 'Min width%1s. If the widget width field is empty, the thumbnail width will be auto.', 'bws-pinterest' ),
 							': 60px'
 						); ?>
-					</em>
-				</div>
+					</span>
+				</p>
 			</div>
 		<?php }
 		/**
@@ -715,13 +498,13 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 	function pntrst_shortcode_content( $content ) {
 		global $pntrst_options, $wp_version; 
 		if ( empty( $pntrst_options ) )
-			$pntrst_options = get_option( 'pntrst_options' ); ?>
+			pntrst_register_settings(); ?>
 		<div id="pntrst" style="display:none;">
 			<div>
 				<?php _e( 'Shortcode Type', 'bws-pinterest' ); ?>:
 				<select name="pntrst_shortcode_type">
 					<option selected="selected" value="follow"><?php _e( 'Follow Button', 'bws-pinterest' ); ?></option>
-					<option value="pin_it"><?php _e( 'Pin It button', 'bws-pinterest' ); ?></option>
+					<option value="pin_it"><?php _e( 'Save Button', 'bws-pinterest' ); ?></option>
 					<option value="pin_widget"><?php _e( 'Pin Widget', 'bws-pinterest' ); ?></option>
 					<option value="board_widget"><?php _e( 'Board Widget', 'bws-pinterest' ); ?></option>
 					<option value="profile_widget"><?php _e( 'Profile Widget', 'bws-pinterest' ); ?></option>
@@ -763,36 +546,34 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 			<script type="text/javascript">
 				function pntrst_shortcode_init() {
 					(function($) {
-						var current_object = '<?php echo ( $wp_version < 3.9 ) ? "#TB_ajaxContent" : ".mce-reset"; ?>';
-
-						$( current_object + ' #pntrst input, ' + current_object + ' #pntrst select' ).change( function() {
+						$( '.mce-reset #pntrst input, .mce-reset #pntrst select' ).change( function() {
 							
-							var shortcodeType = $( current_object + ' select[name="pntrst_shortcode_type"] option:selected' ).val();
+							var shortcodeType = $( '.mce-reset select[name="pntrst_shortcode_type"] option:selected' ).val();
 							
 							if ( 'follow' == shortcodeType ) {
-								$( current_object + ' .pntrst-follow-shortcode' ).show();
-								$( current_object + ' .pntrst-pin-it-shortcode, ' + current_object + ' .pntrst-widget-shortcode' ).hide();
+								$( '.mce-reset .pntrst-follow-shortcode' ).show();
+								$( '.mce-reset .pntrst-pin-it-shortcode, .mce-reset .pntrst-widget-shortcode' ).hide();
 								/* Display follow button shortcode */
-								var shortcode = '[bws_pinterest_follow label="' + $( current_object + ' input[name="pntrst_follow_label"]' ).val() + '"]';			
+								var shortcode = '[bws_pinterest_follow label="' + $( '.mce-reset input[name="pntrst_follow_label"]' ).val() + '"]';			
 							} else if ( 'pin_it' == shortcodeType ) {
-								$( current_object + ' .pntrst-pin-it-shortcode' ).show();
-								$( current_object + ' .pntrst-follow-shortcode, ' + current_object + ' .pntrst-widget-shortcode' ).hide();
+								$( '.mce-reset .pntrst-pin-it-shortcode' ).show();
+								$( '.mce-reset .pntrst-follow-shortcode, .mce-reset .pntrst-widget-shortcode' ).hide();
 								/* Display pin it button shortcode */
-								var buttonType = $( current_object + ' input[name="pntrst_pit_it_type"]:checked' ).val();		
+								var buttonType = $( '.mce-reset input[name="pntrst_pit_it_type"]:checked' ).val();
 
-								if ( $( current_object + ' input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
-									$( current_object + ' input[name="pntrst_custom_button_image"]' ).show();		
-									var customButtonImage = $( current_object + ' input[name="pntrst_custom_button_image"]' ).val();
+								if ( $( '.mce-reset input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
+									$( '.mce-reset input[name="pntrst_custom_button_image"]' ).show();
+									var customButtonImage = $( '.mce-reset input[name="pntrst_custom_button_image"]' ).val();
 									if ( false === /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test( customButtonImage ) ) {
 										customButtonImage = '';
 									}
 								} else {
-									$( current_object + ' input[name="pntrst_custom_button_image"]' ).hide();
+									$( '.mce-reset input[name="pntrst_custom_button_image"]' ).hide();
 								}
 
-								if ( buttonType == 'any' ) {	
-									$( current_object + ' input[name="pntrst_pin_image_url"]' ).hide();								
-									if ( $( current_object + ' input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
+								if ( buttonType == 'any' ) {
+									$( '.mce-reset input[name="pntrst_pin_image_url"]' ).hide();
+									if ( $( '.mce-reset input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
 										if ( customButtonImage.length > 0 ) {
 											var shortcode = '[bws_pinterest_pin_it type="' + buttonType + '" custom="true" url="' + customButtonImage + '"]';
 										} else {
@@ -802,12 +583,12 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 										var shortcode = '[bws_pinterest_pin_it type="' + buttonType + '"]';
 									}
 								} else if ( buttonType == 'one' ) {
-									$( current_object + ' input[name="pntrst_pin_image_url"]' ).show();
-									var pinImageUrl = $( current_object + ' input[name="pntrst_pin_image_url"]' ).val();	
+									$( '.mce-reset input[name="pntrst_pin_image_url"]' ).show();
+									var pinImageUrl = $( '.mce-reset input[name="pntrst_pin_image_url"]' ).val();	
 									if ( false === /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test( pinImageUrl ) ) {
 										pinImageUrl = '';
-									}							
-									if ( $( current_object + ' input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
+									}
+									if ( $( '.mce-reset input[name="pntrst_custom_button"]' ).is( ':checked' ) ) {
 										if ( customButtonImage.length > 0 ) {
 											var shortcode = '[bws_pinterest_pin_it type="' + buttonType + '" image_url="' + pinImageUrl + '" custom="true" url="' + customButtonImage + '"]';
 										} else {
@@ -816,14 +597,14 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 									} else {
 										var shortcode = '[bws_pinterest_pin_it type="' + buttonType + '" image_url="' + pinImageUrl + '"]';
 									}
-								}								
+								}
 							} else if ( 'pin_widget' == shortcodeType || 'board_widget' == shortcodeType || 'profile_widget' == shortcodeType ) {
-								$( current_object + ' .pntrst-widget-shortcode' ).show();
-								$( current_object + ' .pntrst-follow-shortcode, ' + current_object + ' .pntrst-pin-it-shortcode' ).hide();
+								$( '.mce-reset .pntrst-widget-shortcode' ).show();
+								$( '.mce-reset .pntrst-follow-shortcode, .mce-reset .pntrst-pin-it-shortcode' ).hide();
 								
-								var widgetWidth = $( current_object + ' input[name="pntrst_widget_width"]' ).val();
-								var widgetHeight = $( current_object + ' input[name="pntrst_widget_height"]' ).val();
-								var widgetThumbnail = $( current_object + ' input[name="pntrst_widget_thumbnail"]' ).val();
+								var widgetWidth = $( '.mce-reset input[name="pntrst_widget_width"]' ).val();
+								var widgetHeight = $( '.mce-reset input[name="pntrst_widget_height"]' ).val();
+								var widgetThumbnail = $( '.mce-reset input[name="pntrst_widget_thumbnail"]' ).val();
 
 								if ( '' != widgetWidth ) {
 									widgetWidth = parseInt( widgetWidth ) < 130 ? 130 : parseInt( widgetWidth );
@@ -831,21 +612,21 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 								widgetHeight = parseInt( widgetHeight ) < 60 ? 60 : parseInt( widgetHeight );
 								widgetThumbnail = parseInt( widgetThumbnail ) < 60 ? 60 : parseInt( widgetThumbnail );
 
-								var widgetUrl = $( current_object + ' input[name="pntrst_widget_url"]' ).val();
+								var widgetUrl = $( '.mce-reset input[name="pntrst_widget_url"]' ).val();
 
 								if ( false === /^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i.test( widgetUrl ) ) {
 									widgetUrl = '';
 								}
 
 								if ( 'pin_widget' == shortcodeType ) {
-									$( current_object + ' #pntrst_pin_widget_size, ' + current_object + ' #pntrst-widget-url' ).show();
-									$( current_object + ' #pntrst_widget_size' ).hide();
+									$( '.mce-reset #pntrst_pin_widget_size, .mce-reset #pntrst-widget-url' ).show();
+									$( '.mce-reset #pntrst_widget_size' ).hide();
 
-									var pinWidgetSize = $( current_object + ' select[name="pntrst_pin_widget_size"] option:selected' ).val();
+									var pinWidgetSize = $( '.mce-reset select[name="pntrst_pin_widget_size"] option:selected' ).val();
 									var shortcode = '[bws_pinterest_widget type="pin" size="' + pinWidgetSize + '" url="' + widgetUrl + '"]';
 								} else if ( 'board_widget' == shortcodeType ) {
-									$( current_object + ' #pntrst_pin_widget_size' ).hide();
-									$( current_object + ' #pntrst_widget_size, ' + current_object + ' #pntrst-widget-url' ).show();
+									$( '.mce-reset #pntrst_pin_widget_size' ).hide();
+									$( '.mce-reset #pntrst_widget_size, .mce-reset #pntrst-widget-url' ).show();
 
 									if ( '' != widgetWidth || widgetHeight != 60 || widgetThumbnail != 60 ) {
 										var shortcode = '[bws_pinterest_widget type="board" width="' + widgetWidth + '" height="' + widgetHeight + '" thumbnail="' + widgetThumbnail + '" url="' + widgetUrl + '"]';
@@ -853,18 +634,18 @@ if ( ! function_exists( 'pntrst_shortcode_content' ) ) {
 										var shortcode = '[bws_pinterest_widget type="board" url="' + widgetUrl + '"]';
 									}
 								} else {
-									$( current_object + ' #pntrst_pin_widget_size, ' + current_object + ' #pntrst-widget-url' ).hide();
-									$( current_object + ' #pntrst_widget_size' ).show();
+									$( '.mce-reset #pntrst_pin_widget_size, .mce-reset #pntrst-widget-url' ).hide();
+									$( '.mce-reset #pntrst_widget_size' ).show();
 
 									if ( '' != widgetWidth || widgetHeight != 60 || widgetThumbnail != 60 ) {
 										var shortcode = '[bws_pinterest_widget type="profile" width="' + widgetWidth + '" height="' + widgetHeight + '" thumbnail="' + widgetThumbnail + '"]';
 									} else {
 										var shortcode = '[bws_pinterest_widget type="profile"]';
 									}
-								}						
+								}
 							}
 							/* Shortcode output */
-							$( current_object + ' #bws_shortcode_display' ).text( shortcode );
+							$( '.mce-reset #bws_shortcode_display' ).text( shortcode );
 						});
 					})(jQuery);
 				}
