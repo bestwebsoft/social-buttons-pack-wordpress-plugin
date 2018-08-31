@@ -1,43 +1,107 @@
 /*
 * Plugin styles
 */
-.fcbk_share {
+.fcbkbttn_buttons_block {
 	clear: both;
 	line-height: 1;
 }
-.fcbk_share * {
-    vertical-align: top;
+.fcbkbttn_buttons_block * {
+	vertical-align: top;
 }
-.fcbk_button {
+.fb-share-button,
+.fcbkbttn_button {
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 5px;
 }
-.fcbk_button a {
+.fcbkbttn_button a {
 	display: block;
 	border-bottom: 0px !important;
 	box-shadow: none !important;
 }
-.fcbk_button a:hover {
+.fcbkbttn_button a:hover {
 	opacity: 0.9;
 }
-.fcbk_like {
+.fcbkbttn_like {
 	display: inline-block;
 	position: relative;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
 .fb_edge_widget_with_comment span {
 	width: 450px !important;
 }
-.fcbk_like iframe {
-	max-width: 450px;
+.fb_iframe_widget_fluid {
+	max-width: 100% !important;
 }
-.fcbk_button a img {
+.fcbkbttn_button a img {
 	display: inline-block !important;
 }
-.fcbk_share img,
-.fcbk_like .fb_iframe_widget span {
-    vertical-align: top !important;
+.fcbkbttn_buttons_block img,
+.fcbkbttn_like .fb_iframe_widget span {
+	vertical-align: top !important;
 }
 .form-table td fieldset.fcbkbttn_layout_option label {
 	display: block;
+}
+.fcbkbttn_pro_block {
+	max-width: 100%;
+}
+#fcbkbttn_right {
+	text-align: right;
+}
+#fcbkbttn_middle {
+	text-align: center;
+}
+#fcbkbttn_left {
+	text-align: left;
+}
+.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+	display: inline-block !important;
+	margin-bottom: 10px;
+}
+
+@media screen and ( max-width: 1070px ) {
+	.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+		display: inline-block !important;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and ( max-width: 990px ) {
+	.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+		display: inline-block !important;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+		display: inline-block !important;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and ( max-width: 505px ) {
+	.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+		display: inline-block !important;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and ( max-width: 482px ) {
+	.fcbkbttn_button,
+	.fcbkbttn_like {
+		display: block;
+	}
+}
+
+@media screen and ( max-width: 386px ) {
+	.fcbkbttn_buttons_block {
+	margin-top: 20px;
+	}
+	.fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
+		display: inline-block !important;
+		margin-bottom: 10px;
+	}
 }

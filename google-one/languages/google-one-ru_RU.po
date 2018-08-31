@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: google-one\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-10 11:23+0300\n"
-"PO-Revision-Date: 2017-05-10 11:23+0300\n"
+"POT-Creation-Date: 2018-02-28 14:32+0200\n"
+"PO-Revision-Date: 2018-02-28 14:32+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,40 +16,52 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../google-plus-one.php:35 ../google-plus-one.php:36
-#: ../includes/class-gglplsn-settings.php:195
+#: ../google-plus-one.php:37 ../google-plus-one.php:38
+#: ../includes/class-gglplsn-settings.php:196
 msgid "Google +1 Settings"
 msgstr "Настройки Google +1"
 
-#: ../google-plus-one.php:36 ../google-plus-one.php:203
-#: ../google-plus-one.php:737 ../google-plus-one.php:750
-#: ../includes/class-gglplsn-settings.php:23
+#: ../google-plus-one.php:38 ../google-plus-one.php:190
+#: ../google-plus-one.php:726 ../google-plus-one.php:739
+#: ../includes/class-gglplsn-settings.php:24
 msgid "Settings"
 msgstr "Настройки"
 
-#: ../google-plus-one.php:42
+#: ../google-plus-one.php:44
 msgid "Upgrade to Pro"
 msgstr "Обновиться до Pro"
 
-#: ../google-plus-one.php:204
-msgid "Please enable JavaScript in Your browser."
+#: ../google-plus-one.php:191
+msgid "Please enable JavaScript in your browser."
 msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
 
-#: ../google-plus-one.php:219
+#: ../google-plus-one.php:193
+msgid "Important"
+msgstr "Важно"
+
+#: ../google-plus-one.php:193
+msgid "The Google+ API for Hangouts is no longer supported."
+msgstr "Google+ API для Hangouts больше не поддерживается."
+
+#: ../google-plus-one.php:193
+msgid "Learn more"
+msgstr "Подробнее"
+
+#: ../google-plus-one.php:209
 msgid "Is already added."
 msgstr "Уже добавлен."
 
-#: ../google-plus-one.php:220
+#: ../google-plus-one.php:210
 msgid "Only one phone number can be added."
-msgstr "Только один номер телефона может быть добавлен."
+msgstr "Можно добавить только один номер телефона."
 
-#: ../google-plus-one.php:221
+#: ../google-plus-one.php:211
 msgid "You can't add the invitation because the phone number is already added."
 msgstr ""
 "Невозможно добавить приглашение, потому что приглашение по номеру телефона "
 "уже добавлено."
 
-#: ../google-plus-one.php:222
+#: ../google-plus-one.php:212
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added."
@@ -57,257 +69,255 @@ msgstr ""
 "Невозможно добавить номер телефона, потому что приглашение другого типа уже "
 "добавлено."
 
-#: ../google-plus-one.php:223
+#: ../google-plus-one.php:213
 msgid "This field can't be empty."
-msgstr "Поле не может быть пустым."
+msgstr "Поле не должно быть пустым."
 
-#: ../google-plus-one.php:224
+#: ../google-plus-one.php:214
 msgid "Enter the valid Email."
-msgstr "Введите валидный емейл."
+msgstr "Введите действующий email."
 
-#: ../google-plus-one.php:225
+#: ../google-plus-one.php:215
 msgid "Email of Invited Person"
 msgstr "Email приглашаемого"
 
-#: ../google-plus-one.php:226
+#: ../google-plus-one.php:216
 msgid "Enter the Email of invited person."
-msgstr "Введите емейл приглашаемого."
+msgstr "Введите email приглашаемого."
 
-#: ../google-plus-one.php:226 ../google-plus-one.php:228
-#: ../google-plus-one.php:230 ../google-plus-one.php:232
-#: ../google-plus-one.php:234 ../google-plus-one.php:236
-#: ../google-plus-one.php:238 ../google-plus-one.php:444
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:676
-#: ../includes/class-gglplsn-settings.php:681
-#: ../includes/class-gglplsn-settings.php:686
+#: ../google-plus-one.php:216 ../google-plus-one.php:218
+#: ../google-plus-one.php:220 ../google-plus-one.php:222
+#: ../google-plus-one.php:224 ../google-plus-one.php:226
+#: ../google-plus-one.php:228 ../google-plus-one.php:434
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:610
+#: ../includes/class-gglplsn-settings.php:615
+#: ../includes/class-gglplsn-settings.php:620
 msgid "For example"
 msgstr "Например"
 
-#: ../google-plus-one.php:227
-msgid "Phone Number of Invited Person"
-msgstr "Номер Телефона Приглашаемого"
+#: ../google-plus-one.php:217
+msgid "Phone number of invited person"
+msgstr "Номер телефона приглашаемого"
 
-#: ../google-plus-one.php:228
+#: ../google-plus-one.php:218
 msgid "Enter the phone number of invited person."
 msgstr "Введите номер телефона приглашаемого."
 
-#: ../google-plus-one.php:229
+#: ../google-plus-one.php:219
 msgid "Google+ Profile ID of Invited Person"
-msgstr "Google+ ID Профиля Приглашаемого"
+msgstr "Google+ ID профиля приглашаемого"
 
-#: ../google-plus-one.php:230
+#: ../google-plus-one.php:220
 msgid "Enter the Google+ Profile ID of invited person."
-msgstr "Введите Google + ID Профиля приглашаемого."
+msgstr "Введите Google + ID профиля приглашаемого."
 
-#: ../google-plus-one.php:230 ../google-plus-one.php:234
-#: ../google-plus-one.php:236 ../google-plus-one.php:238
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:622
-#: ../includes/class-gglplsn-settings.php:676
-#: ../includes/class-gglplsn-settings.php:681
-#: ../includes/class-gglplsn-settings.php:686
+#: ../google-plus-one.php:220 ../google-plus-one.php:224
+#: ../google-plus-one.php:226 ../google-plus-one.php:228
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:556
+#: ../includes/class-gglplsn-settings.php:610
+#: ../includes/class-gglplsn-settings.php:615
+#: ../includes/class-gglplsn-settings.php:620
 msgid "or"
 msgstr "или"
 
-#: ../google-plus-one.php:231
+#: ../google-plus-one.php:221
 msgid "Google+ Circle ID for the Invitation"
 msgstr "Google+ ID Круга для приглашения"
 
-#: ../google-plus-one.php:232
+#: ../google-plus-one.php:222
 msgid "Enter the Google+ Circle ID for the Invitation."
 msgstr "Введите Google+ ID Круга для приглашения."
 
-#: ../google-plus-one.php:233 ../google-plus-one.php:442
+#: ../google-plus-one.php:223 ../google-plus-one.php:432
+#: ../google-plus-one.php:658 ../google-plus-one.php:675
+#: ../includes/class-gglplsn-settings.php:220
+#: ../includes/class-gglplsn-settings.php:242
 msgid "Google+ ID"
 msgstr "Google+ ID"
 
-#: ../google-plus-one.php:234
+#: ../google-plus-one.php:224
 msgid "Enter the Google+ ID."
 msgstr "Введите Google + ID."
 
-#: ../google-plus-one.php:235 ../includes/class-gglplsn-settings.php:680
+#: ../google-plus-one.php:225 ../includes/class-gglplsn-settings.php:614
 msgid "Google+ Page ID"
 msgstr "Google+ ID Страницы"
 
-#: ../google-plus-one.php:236
+#: ../google-plus-one.php:226
 msgid "Enter the Google+ Page ID."
 msgstr "Введите Google+ ID Страницы."
 
-#: ../google-plus-one.php:237 ../includes/class-gglplsn-settings.php:685
+#: ../google-plus-one.php:227 ../includes/class-gglplsn-settings.php:619
 msgid "Google+ Community ID"
 msgstr "Google+ ID Сообщества"
 
-#: ../google-plus-one.php:238
+#: ../google-plus-one.php:228
 msgid "Enter the Google+ Community ID."
 msgstr "Введите Google+ ID Сообщества."
 
-#: ../google-plus-one.php:239
+#: ../google-plus-one.php:229
 msgid "Display the user's tag line."
 msgstr "Показывать слоган пользователя."
 
-#: ../google-plus-one.php:240
+#: ../google-plus-one.php:230
 msgid "Display the company tag line."
 msgstr "Показывать слоган компании."
 
-#: ../google-plus-one.php:241
+#: ../google-plus-one.php:231
 msgid "Display the community tag line."
 msgstr "Показывать слоган сообщества."
 
-#: ../google-plus-one.php:368
+#: ../google-plus-one.php:358
 msgid "Google+ Badge Widget"
 msgstr "Виджет Значка Google+"
 
-#: ../google-plus-one.php:368
+#: ../google-plus-one.php:358
 msgid "Show Google Badge on your site"
-msgstr "Отображать Google Значок на вашем сайте"
+msgstr "Отображать Значок Google на вашем сайте"
 
-#: ../google-plus-one.php:438
+#: ../google-plus-one.php:428
 msgid "Title"
 msgstr "Заголовок"
 
-#: ../google-plus-one.php:444
+#: ../google-plus-one.php:434
 msgid "Enter your Google+ ID."
-msgstr "Введите ваш Google + ID."
+msgstr "Введите ваш Google+ ID."
 
-#: ../google-plus-one.php:447 ../includes/class-gglplsn-settings.php:549
-#: ../includes/class-gglplsn-settings.php:654
+#: ../google-plus-one.php:437 ../includes/class-gglplsn-settings.php:483
+#: ../includes/class-gglplsn-settings.php:588
 msgid "Type"
 msgstr "Вариант"
 
-#: ../google-plus-one.php:449 ../includes/class-gglplsn-settings.php:658
+#: ../google-plus-one.php:439 ../includes/class-gglplsn-settings.php:592
 msgid "Person"
 msgstr "Профиль"
 
-#: ../google-plus-one.php:450 ../includes/class-gglplsn-settings.php:662
+#: ../google-plus-one.php:440 ../includes/class-gglplsn-settings.php:596
 msgid "Page"
 msgstr "Страница"
 
-#: ../google-plus-one.php:451 ../includes/class-gglplsn-settings.php:666
+#: ../google-plus-one.php:441 ../includes/class-gglplsn-settings.php:600
 msgid "Community"
 msgstr "Сообщество"
 
-#: ../google-plus-one.php:455 ../includes/class-gglplsn-settings.php:697
+#: ../google-plus-one.php:445 ../includes/class-gglplsn-settings.php:645
 msgid "Layout"
 msgstr "Ориентация"
 
-#: ../google-plus-one.php:457 ../includes/class-gglplsn-settings.php:701
+#: ../google-plus-one.php:447 ../includes/class-gglplsn-settings.php:649
 msgid "Portrait"
 msgstr "Вертикальная"
 
-#: ../google-plus-one.php:458 ../includes/class-gglplsn-settings.php:705
+#: ../google-plus-one.php:448 ../includes/class-gglplsn-settings.php:653
 msgid "Landscape"
 msgstr "Горизонтальная"
 
-#: ../google-plus-one.php:463
+#: ../google-plus-one.php:453
 msgid "Show Cover Photo"
-msgstr "Показывать Фото Обложки"
+msgstr "Отображать фото обложки"
 
-#: ../google-plus-one.php:467
+#: ../google-plus-one.php:457
 msgid "Show Tag Line"
-msgstr "Показывать Слоган"
+msgstr "Отображать слоган"
 
-#: ../google-plus-one.php:472
+#: ../google-plus-one.php:462
 msgid "Show Owners"
-msgstr "Показывать Основателей"
+msgstr "Отображать"
 
-#: ../google-plus-one.php:475 ../includes/class-gglplsn-settings.php:712
+#: ../google-plus-one.php:465 ../includes/class-gglplsn-settings.php:660
 msgid "Width"
 msgstr "Ширина"
 
-#: ../google-plus-one.php:477 ../includes/class-gglplsn-settings.php:716
+#: ../google-plus-one.php:467 ../includes/class-gglplsn-settings.php:664
 msgid "px"
 msgstr "px"
 
-#: ../google-plus-one.php:650
+#: ../google-plus-one.php:639
 msgid "Add Google Buttons to your page or post"
-msgstr "Добавить Google  Кнопки на вашу страницу или пост"
+msgstr "Добавить Google Кнопки на вашу страницу или пост"
 
-#: ../google-plus-one.php:654 ../includes/class-gglplsn-settings.php:205
+#: ../google-plus-one.php:643 ../includes/class-gglplsn-settings.php:206
 msgid "Google +1"
 msgstr "\"+1\""
 
-#: ../google-plus-one.php:659 ../includes/class-gglplsn-settings.php:209
+#: ../google-plus-one.php:648 ../includes/class-gglplsn-settings.php:210
 msgid "Share"
 msgstr "\"Поделиться\""
 
-#: ../google-plus-one.php:664 ../includes/class-gglplsn-settings.php:214
+#: ../google-plus-one.php:653 ../includes/class-gglplsn-settings.php:215
 msgid "Follow"
 msgstr "\"Подписаться\""
 
-#: ../google-plus-one.php:667 ../google-plus-one.php:684
-#: ../includes/class-gglplsn-settings.php:217
-#: ../includes/class-gglplsn-settings.php:239
+#: ../google-plus-one.php:656 ../google-plus-one.php:673
+#: ../includes/class-gglplsn-settings.php:218
+#: ../includes/class-gglplsn-settings.php:240
 msgid "To see this button, please"
 msgstr "Чтобы увидеть кнопку, пожалуйста"
 
-#: ../google-plus-one.php:668 ../google-plus-one.php:685
-#: ../includes/class-gglplsn-settings.php:218
-#: ../includes/class-gglplsn-settings.php:240
+#: ../google-plus-one.php:657 ../google-plus-one.php:674
+#: ../includes/class-gglplsn-settings.php:219
+#: ../includes/class-gglplsn-settings.php:241
 msgid "enter"
 msgstr "укажите"
 
-#: ../google-plus-one.php:669 ../google-plus-one.php:686
-#: ../includes/class-gglplsn-settings.php:219
-#: ../includes/class-gglplsn-settings.php:241
-msgid "the Google+ ID"
-msgstr "Google+ ID"
-
-#: ../google-plus-one.php:676 ../includes/class-gglplsn-settings.php:226
+#: ../google-plus-one.php:665 ../includes/class-gglplsn-settings.php:227
 msgid "Hangout"
 msgstr "Hangout"
 
-#: ../google-plus-one.php:681 ../includes/class-gglplsn-settings.php:232
+#: ../google-plus-one.php:670 ../includes/class-gglplsn-settings.php:233
+#: ../includes/class-gglplsn-settings.php:635
 msgid "Badge"
 msgstr "Значок"
 
-#: ../google-plus-one.php:751
+#: ../google-plus-one.php:740
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../google-plus-one.php:752
+#: ../google-plus-one.php:741
 msgid "Support"
 msgstr "Поддержка"
 
-#: ../includes/class-gglplsn-settings.php:24
+#: ../includes/class-gglplsn-settings.php:25
 msgid "Display"
 msgstr "Отображать"
 
-#: ../includes/class-gglplsn-settings.php:25
+#: ../includes/class-gglplsn-settings.php:26
 msgid "Misc"
 msgstr "Разное"
 
-#: ../includes/class-gglplsn-settings.php:26
+#: ../includes/class-gglplsn-settings.php:27
 msgid "Custom Code"
 msgstr "Пользовательский код"
 
-#: ../includes/class-gglplsn-settings.php:27
+#: ../includes/class-gglplsn-settings.php:28
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: ../includes/class-gglplsn-settings.php:143
+#: ../includes/class-gglplsn-settings.php:145
 msgid "Email is invalid"
 msgstr "Неверный Email"
 
-#: ../includes/class-gglplsn-settings.php:145
-msgid "Please select the invitation type"
-msgstr "Пожалуйста, укажите вариант приглашения"
-
 #: ../includes/class-gglplsn-settings.php:147
-msgid "Invitation field can't be empty"
-msgstr "Поле для приглашения не может быть пустым"
+msgid "Please select the invitation type"
+msgstr "Пожалуйста, выберите вариант приглашения"
 
-#: ../includes/class-gglplsn-settings.php:153
-msgid "Only one phone number can be added"
-msgstr "Только один номер телефона может быть добавлен"
+#: ../includes/class-gglplsn-settings.php:149
+msgid "Invitation field can't be empty"
+msgstr "Поле для приглашения не должно быть пустым"
 
 #: ../includes/class-gglplsn-settings.php:155
+msgid "Only one phone number can be added"
+msgstr "Вы можете добавить только один номер телефона"
+
+#: ../includes/class-gglplsn-settings.php:157
 msgid "You can't add the invitation because the phone number is already added"
 msgstr ""
 "Невозможно добавить приглашение, потому что приглашение по номеру телефона "
 "уже добавлено"
 
-#: ../includes/class-gglplsn-settings.php:157
+#: ../includes/class-gglplsn-settings.php:159
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added"
@@ -315,65 +325,65 @@ msgstr ""
 "Невозможно добавить приглашение по номеру телефона, потому что приглашение "
 "другого типа уже добавлено"
 
-#: ../includes/class-gglplsn-settings.php:162
+#: ../includes/class-gglplsn-settings.php:164
 msgid "Is already added"
 msgstr "Уже добавлен"
 
-#: ../includes/class-gglplsn-settings.php:178
+#: ../includes/class-gglplsn-settings.php:180
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: ../includes/class-gglplsn-settings.php:198
+#: ../includes/class-gglplsn-settings.php:199
 msgid "General"
 msgstr "Общее"
 
-#: ../includes/class-gglplsn-settings.php:201
+#: ../includes/class-gglplsn-settings.php:202
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: ../includes/class-gglplsn-settings.php:236
-msgid "Enable to display a Google+ badge in the front-end."
-msgstr "Включить отображение значка Google+ во фронтенде."
+#: ../includes/class-gglplsn-settings.php:237
+msgid "Enable to link your existing Google+ account page to your site."
+msgstr "Включите, чтобы связать вашу страницу Google+ со своим сайтом."
 
-#: ../includes/class-gglplsn-settings.php:248
+#: ../includes/class-gglplsn-settings.php:249
 msgid "Display on"
 msgstr "Отображать для"
 
-#: ../includes/class-gglplsn-settings.php:251
+#: ../includes/class-gglplsn-settings.php:252
 msgid "Home page"
 msgstr "Главной страницы"
 
-#: ../includes/class-gglplsn-settings.php:255
+#: ../includes/class-gglplsn-settings.php:256
 msgid "Posts"
-msgstr "Постов"
+msgstr "Записей"
 
-#: ../includes/class-gglplsn-settings.php:260
+#: ../includes/class-gglplsn-settings.php:261
 msgid "Pages"
 msgstr "Страниц"
 
-#: ../includes/class-gglplsn-settings.php:266
+#: ../includes/class-gglplsn-settings.php:267
 msgid "Buttons Position"
 msgstr "Положение кнопок"
 
-#: ../includes/class-gglplsn-settings.php:271
+#: ../includes/class-gglplsn-settings.php:272
 msgid "Before content"
 msgstr "Перед содержимым"
 
-#: ../includes/class-gglplsn-settings.php:276
+#: ../includes/class-gglplsn-settings.php:277
 msgid "After content"
 msgstr "После содержимого"
 
-#: ../includes/class-gglplsn-settings.php:282
+#: ../includes/class-gglplsn-settings.php:283
 msgid "Language"
 msgstr "Язык"
 
-#: ../includes/class-gglplsn-settings.php:294
+#: ../includes/class-gglplsn-settings.php:295
 msgid "Select the default language for Google+ button(-s)."
 msgstr "Выберите язык отображения по умолчанию для кнопок Google+."
 
-#: ../includes/class-gglplsn-settings.php:304
-#: ../includes/class-gglplsn-settings.php:307
-#: ../includes/class-gglplsn-settings.php:311
+#: ../includes/class-gglplsn-settings.php:305
+#: ../includes/class-gglplsn-settings.php:308
+#: ../includes/class-gglplsn-settings.php:312
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
@@ -381,370 +391,418 @@ msgstr ""
 "Включить, чтобы переключить язык автоматически на многоязычном сайте, "
 "используя Multilanguage плагин."
 
-#: ../includes/class-gglplsn-settings.php:307
+#: ../includes/class-gglplsn-settings.php:308
 #, php-format
 msgid "Activate %s"
 msgstr "Активировать %s"
 
-#: ../includes/class-gglplsn-settings.php:311
+#: ../includes/class-gglplsn-settings.php:312
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: ../includes/class-gglplsn-settings.php:316
+#: ../includes/class-gglplsn-settings.php:317
 msgid "Google+ Button"
 msgstr "Кнопка Google+"
 
-#: ../includes/class-gglplsn-settings.php:320
-#: ../includes/class-gglplsn-settings.php:777
+#: ../includes/class-gglplsn-settings.php:322
+#: ../includes/class-gglplsn-settings.php:750
 msgid "Close"
 msgstr "Закрыть"
 
-#: ../includes/class-gglplsn-settings.php:323
+#: ../includes/class-gglplsn-settings.php:325
 msgid "+1 Entire Website"
-msgstr "+1 Всему Сайту"
+msgstr "+1 Всему сайту"
 
-#: ../includes/class-gglplsn-settings.php:326
+#: ../includes/class-gglplsn-settings.php:328
 msgid "Enable to +1 the entire website using +1 button."
 msgstr "Включить +1 для всего сайта с помощью кнопки +1."
 
-#: ../includes/class-gglplsn-settings.php:335
-#: ../includes/class-gglplsn-settings.php:415
-#: ../includes/class-gglplsn-settings.php:473
-#: ../includes/class-gglplsn-settings.php:531
+#: ../includes/class-gglplsn-settings.php:338
+#: ../includes/class-gglplsn-settings.php:363
+#: ../includes/class-gglplsn-settings.php:407
+#: ../includes/class-gglplsn-settings.php:465
 msgid "Size"
 msgstr "Размер"
 
-#: ../includes/class-gglplsn-settings.php:339
+#: ../includes/class-gglplsn-settings.php:342
 msgctxt "for:size"
 msgid "Small"
 msgstr "Маленький"
 
-#: ../includes/class-gglplsn-settings.php:343
+#: ../includes/class-gglplsn-settings.php:346
 msgctxt "for:size"
 msgid "Medium"
 msgstr "Средний"
 
-#: ../includes/class-gglplsn-settings.php:347
+#: ../includes/class-gglplsn-settings.php:350
 msgctxt "for:size"
 msgid "Standard"
 msgstr "Стандартный"
 
-#: ../includes/class-gglplsn-settings.php:351
+#: ../includes/class-gglplsn-settings.php:354
 msgctxt "for:size"
 msgid "Tall"
 msgstr "Высокий"
 
-#: ../includes/class-gglplsn-settings.php:357
-#: ../includes/class-gglplsn-settings.php:392
-#: ../includes/class-gglplsn-settings.php:491
-msgid "Annotation"
-msgstr "Примечание"
-
-#: ../includes/class-gglplsn-settings.php:361
-#: ../includes/class-gglplsn-settings.php:396
-#: ../includes/class-gglplsn-settings.php:495
-msgid "None"
-msgstr "Нет"
-
-#: ../includes/class-gglplsn-settings.php:365
-#: ../includes/class-gglplsn-settings.php:404
-#: ../includes/class-gglplsn-settings.php:408
-#: ../includes/class-gglplsn-settings.php:499
-#: ../includes/class-gglplsn-settings.php:503
-msgid "Bubble"
-msgstr "Всплывающее"
-
-#: ../includes/class-gglplsn-settings.php:369
-#: ../includes/class-gglplsn-settings.php:400
-msgid "Inline"
-msgstr "Встроенное"
-
-#: ../includes/class-gglplsn-settings.php:375
-#: ../includes/class-gglplsn-settings.php:433
-msgid "Annotation Type"
-msgstr "Вариант Примечания"
-
-#: ../includes/class-gglplsn-settings.php:379
-#: ../includes/class-gglplsn-settings.php:437
-msgid "Standard"
-msgstr "Стандартное"
-
-#: ../includes/class-gglplsn-settings.php:383
-#: ../includes/class-gglplsn-settings.php:441
-msgid "Short"
-msgstr "Короткое"
-
-#: ../includes/class-gglplsn-settings.php:389
+#: ../includes/class-gglplsn-settings.php:360
 msgid "Share Button"
 msgstr "Кнопка \"Поделиться\""
 
-#: ../includes/class-gglplsn-settings.php:400
-#: ../includes/class-gglplsn-settings.php:404
-#: ../includes/class-gglplsn-settings.php:499
-msgid "horizontal"
-msgstr "горизонтальное"
-
-#: ../includes/class-gglplsn-settings.php:408
-#: ../includes/class-gglplsn-settings.php:503
-msgid "vertical"
-msgstr "вертикальное"
-
+#: ../includes/class-gglplsn-settings.php:367
 #: ../includes/class-gglplsn-settings.php:411
-msgid "Display the number of users who have shared the page."
-msgstr "Показывать количество человек поделившихся страницей."
-
-#: ../includes/class-gglplsn-settings.php:419
-#: ../includes/class-gglplsn-settings.php:477
+#: ../includes/class-gglplsn-settings.php:710
 msgid "Small"
 msgstr "Маленькая"
 
-#: ../includes/class-gglplsn-settings.php:423
-#: ../includes/class-gglplsn-settings.php:481
+#: ../includes/class-gglplsn-settings.php:371
+#: ../includes/class-gglplsn-settings.php:415
+#: ../includes/class-gglplsn-settings.php:714
 msgid "Medium"
 msgstr "Средняя"
 
-#: ../includes/class-gglplsn-settings.php:427
-#: ../includes/class-gglplsn-settings.php:485
+#: ../includes/class-gglplsn-settings.php:375
+#: ../includes/class-gglplsn-settings.php:419
+#: ../includes/class-gglplsn-settings.php:718
 msgid "Large"
 msgstr "Большая"
 
-#: ../includes/class-gglplsn-settings.php:447
+#: ../includes/class-gglplsn-settings.php:381
 msgid "Follow Button"
 msgstr "Кнопка \"Читать\""
 
-#: ../includes/class-gglplsn-settings.php:450
-#: ../includes/class-gglplsn-settings.php:675
+#: ../includes/class-gglplsn-settings.php:384
+#: ../includes/class-gglplsn-settings.php:609
 msgid "Google+ User ID"
 msgstr "Google+ ID Профиля"
 
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:676
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:610
 msgid "Enter your Google+ user ID."
-msgstr "Введите ваш Google + ID профиля."
+msgstr "Введите ваш Google+ ID профиля."
 
-#: ../includes/class-gglplsn-settings.php:457
+#: ../includes/class-gglplsn-settings.php:391
 msgid "Relationship"
 msgstr "Отношение"
 
-#: ../includes/class-gglplsn-settings.php:461
+#: ../includes/class-gglplsn-settings.php:395
 msgid "Author"
 msgstr "Автор"
 
-#: ../includes/class-gglplsn-settings.php:465
+#: ../includes/class-gglplsn-settings.php:399
 msgid "Publisher"
 msgstr "Издатель"
 
-#: ../includes/class-gglplsn-settings.php:468
+#: ../includes/class-gglplsn-settings.php:402
 msgid ""
 "Describes your relationship to the content of the page where the button is "
 "added."
-msgstr ""
-"Указывает ваше отношение к содержанию страницы, на которой встроена кнопка."
+msgstr "Указывает ваше отношение к содержанию страницы, куда добавлена кнопка."
 
-#: ../includes/class-gglplsn-settings.php:506
-msgid "Display the number of users who are following this page or person."
+#: ../includes/class-gglplsn-settings.php:425
+msgid "Annotation"
+msgstr "Примечание"
+
+#: ../includes/class-gglplsn-settings.php:429
+msgid "None"
+msgstr "Нет"
+
+#: ../includes/class-gglplsn-settings.php:433
+#: ../includes/class-gglplsn-settings.php:437
+msgid "Bubble"
+msgstr "Всплывающее"
+
+#: ../includes/class-gglplsn-settings.php:433
+msgid "horizontal"
+msgstr "горизонтальное"
+
+#: ../includes/class-gglplsn-settings.php:437
+msgid "vertical"
+msgstr "вертикальное"
+
+#: ../includes/class-gglplsn-settings.php:440
+msgid "Display the number of users who are following this page."
 msgstr "Показывать количество человек поделившихся страницей."
 
-#: ../includes/class-gglplsn-settings.php:510
-msgid "Hangout Button"
-msgstr "Кнопка \"Hangout\""
+#: ../includes/class-gglplsn-settings.php:444
+msgid "Hangouts Button"
+msgstr "Кнопка \"Hangouts\""
 
-#: ../includes/class-gglplsn-settings.php:513
+#: ../includes/class-gglplsn-settings.php:447
 msgid "Topic"
 msgstr "Тема Чата"
 
-#: ../includes/class-gglplsn-settings.php:518
+#: ../includes/class-gglplsn-settings.php:452
 msgid "Current page title"
 msgstr "Заголовок текущей страницы"
 
-#: ../includes/class-gglplsn-settings.php:523
+#: ../includes/class-gglplsn-settings.php:457
 msgid "Custom"
 msgstr "Пользовательская"
 
-#: ../includes/class-gglplsn-settings.php:535
+#: ../includes/class-gglplsn-settings.php:469
 msgctxt "for:hangout_size"
 msgid "Standard"
 msgstr "Стандартная"
 
-#: ../includes/class-gglplsn-settings.php:539
+#: ../includes/class-gglplsn-settings.php:473
 msgid "Narrow"
 msgstr "Узкая"
 
-#: ../includes/class-gglplsn-settings.php:543
+#: ../includes/class-gglplsn-settings.php:477
 msgid "Wide"
 msgstr "Широкая"
 
-#: ../includes/class-gglplsn-settings.php:553
+#: ../includes/class-gglplsn-settings.php:487
 msgid "Normal"
 msgstr "Обычный"
 
-#: ../includes/class-gglplsn-settings.php:557
+#: ../includes/class-gglplsn-settings.php:491
 msgid "On air"
 msgstr "В прямом эфире"
 
-#: ../includes/class-gglplsn-settings.php:561
+#: ../includes/class-gglplsn-settings.php:495
 msgid "Party"
 msgstr "Групповой"
 
-#: ../includes/class-gglplsn-settings.php:567
+#: ../includes/class-gglplsn-settings.php:501
 msgid "Invitation Type"
 msgstr "Вариант Приглашения"
 
-#: ../includes/class-gglplsn-settings.php:570
+#: ../includes/class-gglplsn-settings.php:504
 msgid "Select The Type"
 msgstr "Выберите Вариант"
 
-#: ../includes/class-gglplsn-settings.php:571
+#: ../includes/class-gglplsn-settings.php:505
 msgid "Google+ Profile ID"
 msgstr "Google+ ID Профиля"
 
-#: ../includes/class-gglplsn-settings.php:572
+#: ../includes/class-gglplsn-settings.php:506
 msgid "Google+ Circle ID"
 msgstr "Google+ ID Круга"
 
-#: ../includes/class-gglplsn-settings.php:573
+#: ../includes/class-gglplsn-settings.php:507
 msgid "Email"
 msgstr "Email"
 
-#: ../includes/class-gglplsn-settings.php:574
+#: ../includes/class-gglplsn-settings.php:508
 msgid "Phone Number"
-msgstr "Номер Телефона"
+msgstr "Номер телефона"
 
-#: ../includes/class-gglplsn-settings.php:611
+#: ../includes/class-gglplsn-settings.php:545
 msgid "Google+ ID, Phone Number or Email"
-msgstr "Google+ ID, Номер Телефона или Email"
+msgstr "Google+ ID, номер телефона или email"
 
-#: ../includes/class-gglplsn-settings.php:617
-#: ../includes/class-gglplsn-settings.php:643
+#: ../includes/class-gglplsn-settings.php:551
+#: ../includes/class-gglplsn-settings.php:577
 msgid "Add"
 msgstr "Добавить"
 
-#: ../includes/class-gglplsn-settings.php:619
+#: ../includes/class-gglplsn-settings.php:553
 msgid "Delete Selected"
-msgstr "Удалить Выбранные"
+msgstr "Удалить выбранные"
 
-#: ../includes/class-gglplsn-settings.php:622
+#: ../includes/class-gglplsn-settings.php:556
 msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
 msgstr ""
 "Если выбран тип приглашения 'Google+  ID Профиля', то введённый ID  должен "
 "иметь вид"
 
-#: ../includes/class-gglplsn-settings.php:626
+#: ../includes/class-gglplsn-settings.php:560
 msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
 msgstr ""
 "Если выбран тип приглашения 'Google+  ID Круга', то введённый ID  должен "
 "иметь вид"
 
-#: ../includes/class-gglplsn-settings.php:630
+#: ../includes/class-gglplsn-settings.php:564
 msgid "If Invitation Type is 'Email', it should look like"
 msgstr ""
 "Если выбран тип приглашения 'Email', то введённый адрес должен иметь вид"
 
-#: ../includes/class-gglplsn-settings.php:634
+#: ../includes/class-gglplsn-settings.php:568
 msgid "If Invitation Type is 'Phone Number', it should look like"
 msgstr ""
 "Если выбран тип приглашения 'Номер Телефона', то введённый номер должен "
 "иметь вид"
 
-#: ../includes/class-gglplsn-settings.php:651
+#: ../includes/class-gglplsn-settings.php:585
 msgid "Google+ Badge"
-msgstr "Google+ Значек"
+msgstr "Google+ Значок"
 
-#: ../includes/class-gglplsn-settings.php:677
+#: ../includes/class-gglplsn-settings.php:611
 msgid "Enable to display the user's tag line."
-msgstr "Включите, чтобы показывать слоган пользователя."
+msgstr "Включите, чтобы отображать слоган пользователя."
 
-#: ../includes/class-gglplsn-settings.php:681
+#: ../includes/class-gglplsn-settings.php:615
 msgid "Enter your Google+ page ID."
-msgstr "Введите ваш Google+ ID Страницы."
+msgstr "Введите ваш ID cтраницы Google+."
 
-#: ../includes/class-gglplsn-settings.php:682
+#: ../includes/class-gglplsn-settings.php:616
 msgid "Enable to display the company tag line."
-msgstr "Включите, чтобы показывать слоган компании."
+msgstr "Включите, чтобы отбражать слоган компании."
 
-#: ../includes/class-gglplsn-settings.php:686
+#: ../includes/class-gglplsn-settings.php:620
 msgid "Enter your Google+ community ID."
-msgstr "Введите ваш Google+ ID Сообщества."
+msgstr "Введите ваш ID сообщества Google+."
 
-#: ../includes/class-gglplsn-settings.php:687
+#: ../includes/class-gglplsn-settings.php:621
 msgid "Enable to display the community tag line."
-msgstr "Включите, чтобы показывать слоган сообщества."
+msgstr "Включите, чтобы отображать слоган сообщества."
 
-#: ../includes/class-gglplsn-settings.php:708
+#: ../includes/class-gglplsn-settings.php:631
+msgid "Features"
+msgstr "Свойства"
+
+#: ../includes/class-gglplsn-settings.php:639
+msgid "Icon"
+msgstr "Иконка"
+
+#: ../includes/class-gglplsn-settings.php:656
 msgid "Sets the orientation of the badge."
-msgstr "Задайте ориентацию Значка."
+msgstr "Задайте ориентацию значка."
 
-#: ../includes/class-gglplsn-settings.php:720
+#: ../includes/class-gglplsn-settings.php:668
 msgid "Color Theme"
-msgstr "Цветовая Тема"
+msgstr "Цветовая тема"
 
-#: ../includes/class-gglplsn-settings.php:724
+#: ../includes/class-gglplsn-settings.php:672
 msgid "Light"
 msgstr "Светлая"
 
-#: ../includes/class-gglplsn-settings.php:728
+#: ../includes/class-gglplsn-settings.php:676
 msgid "Dark"
 msgstr "Тёмная"
 
-#: ../includes/class-gglplsn-settings.php:734
+#: ../includes/class-gglplsn-settings.php:682
 msgid "Cover Photo"
-msgstr "Фото Обложки"
+msgstr "Фото обложки"
 
-#: ../includes/class-gglplsn-settings.php:736
+#: ../includes/class-gglplsn-settings.php:684
 msgid "Enable to display a cover photo."
-msgstr "Включите, чтобы показывать фото обложки."
+msgstr "Включите, чтобы отображать фото обложки."
 
-#: ../includes/class-gglplsn-settings.php:740
+#: ../includes/class-gglplsn-settings.php:688
 msgid "Tag Line"
 msgstr "Слоган"
 
-#: ../includes/class-gglplsn-settings.php:746
+#: ../includes/class-gglplsn-settings.php:694
 msgid "Owners"
 msgstr "Основатели"
 
-#: ../includes/class-gglplsn-settings.php:748
+#: ../includes/class-gglplsn-settings.php:696
 msgid "Enable to display a list of community owners."
-msgstr "Включите, чтобы показывать список основателей сообщества."
+msgstr "Включите, чтобы отображать список основателей сообщества."
 
-#: ../includes/class-gglplsn-settings.php:763
+#: ../includes/class-gglplsn-settings.php:700
+msgid "Custom Name"
+msgstr "Название"
+
+#: ../includes/class-gglplsn-settings.php:706
+msgid "Icon Size"
+msgstr "Размер иконки"
+
+#: ../includes/class-gglplsn-settings.php:735
 msgid "Google +1 Buttons Shortchode"
-msgstr "Шорткод Google +1 кнопок"
+msgstr "Шорткод кнопок Google +1"
 
-#: ../includes/class-gglplsn-settings.php:766
+#: ../includes/class-gglplsn-settings.php:738
+msgid "Add Google +1 Buttons to a widget."
+msgstr "Добавьте кнопки Google +1 в виджет."
+
+#: ../includes/class-gglplsn-settings.php:738
+msgid "Navigate to Widgets"
+msgstr "Перейти к Виджетам"
+
+#: ../includes/class-gglplsn-settings.php:739
 msgid ""
 "Add Google +1 button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
 msgstr ""
-"Добавить кнопки Google +1 на ваши записи, страницы, пользовательские типы "
+"Добавляйте кнопки Google +1 на ваши записи, страницы, пользовательские типы "
 "записей или виджеты с помощью данного шорткода:"
 
-#: ../includes/class-gglplsn-settings.php:778
+#: ../includes/class-gglplsn-settings.php:751
 msgid "Google +1 Buttons Preview"
 msgstr "Предварительный просмотр кнопок Google +1"
 
-#: ../includes/class-gglplsn-settings.php:792
+#: ../includes/class-gglplsn-settings.php:765
 msgid "Display Settings"
 msgstr "Настройка отображения"
 
-#: ../includes/class-gglplsn-settings.php:801
+#: ../includes/class-gglplsn-settings.php:774
 msgid ""
 "Please choose the necessary post types (or single pages) where Google "
 "buttons will be displayed:"
 msgstr ""
-"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
-"будут отображаться Google кнопки:"
+"Пожалуйста, выберите те типы записей (или отдельные страницы), на которых "
+"будут отображаться кнопки Google:"
 
-#: ../includes/class-gglplsn-settings.php:808
+#: ../includes/class-gglplsn-settings.php:781
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: ../includes/class-gglplsn-settings.php:814
+#: ../includes/class-gglplsn-settings.php:787
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
 
-#: ../includes/class-gglplsn-settings.php:814
+#: ../includes/class-gglplsn-settings.php:787
 msgid "Example of site pages' tree"
 msgstr "Пример дерева страниц сайта"
+
+#, fuzzy
+#~ msgid "icon"
+#~ msgstr "иконка"
+
+#, fuzzy
+#~ msgid "badge"
+#~ msgstr "значок"
+
+#~ msgid "Hangout Button"
+#~ msgstr "Кнопка \"Hangout\""
+
+#, fuzzy
+#~ msgid "Enable to link your Google+ page to your site."
+#~ msgstr "Включить что бы связать вашу страницу Google+ со своим сайтом."
+
+#~ msgid "API The Google+ for Hangouts is no longer supported."
+#~ msgstr "API Google+ для Hangouts больше не поддерживается."
+
+#, fuzzy
+#~ msgid "Custom name"
+#~ msgstr "Введите название"
+
+#, fuzzy
+#~ msgid "Icon size"
+#~ msgstr "Размер иконки"
+
+#~ msgid "Enable to display a Google+ badge in the front-end."
+#~ msgstr "Включите, чтобы отображать значок Google+ во фронтенде."
+
+#~ msgid "Display the number of users who are following this page or person."
+#~ msgstr "Показывать количество человек поделившихся страницей."
+
+#~ msgid "the Google+ ID"
+#~ msgstr "Google+ ID"
+
+#~ msgid "Phone Number of Invited Person"
+#~ msgstr "Номер Телефона Приглашаемого"
+
+#~ msgid "Please enable JavaScript in Your browser."
+#~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#~ msgid "Inline"
+#~ msgstr "Встроенное"
+
+#~ msgid "Annotation Type"
+#~ msgstr "Вариант Примечания"
+
+#~ msgid "Standard"
+#~ msgstr "Стандартное"
+
+#~ msgid "Short"
+#~ msgstr "Короткое"
+
+#~ msgid "Display the number of users who have shared the page."
+#~ msgstr "Показывать количество человек поделившихся страницей."
 
 #~ msgid "Please, enable JavaScript in Your browser."
 #~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
@@ -1055,10 +1113,6 @@ msgstr "Пример дерева страниц сайта"
 #, fuzzy
 #~ msgid "Themes"
 #~ msgstr "Тема"
-
-#, fuzzy
-#~ msgid "Learn more"
-#~ msgstr "Подробнее"
 
 #, fuzzy
 #~ msgid "Activate this plugin"

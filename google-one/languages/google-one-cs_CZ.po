@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: social-buttons-pack-google-one BWS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-13 15:03+0300\n"
-"PO-Revision-Date: 2017-07-13 15:03+0300\n"
+"POT-Creation-Date: 2018-03-22 17:43+0200\n"
+"PO-Revision-Date: 2018-03-22 17:43+0200\n"
 "Last-Translator: Mik013\n"
 "Language-Team: Mik013\n"
 "Language: cs_CZ\n"
@@ -17,933 +17,729 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../google-plus-one.php:35 ../google-plus-one.php:36
-#: ../includes/class-gglplsn-settings.php:195
+#: ../google-plus-one.php:37 ../google-plus-one.php:38
+#: ../includes/class-gglplsn-settings.php:196
 msgid "Google +1 Settings"
 msgstr "Nastavení Google +1"
 
-#: ../google-plus-one.php:36 ../google-plus-one.php:203
-#: ../google-plus-one.php:737 ../google-plus-one.php:750
-#: ../includes/class-gglplsn-settings.php:23
+#: ../google-plus-one.php:38 ../google-plus-one.php:190
+#: ../google-plus-one.php:722 ../google-plus-one.php:735
+#: ../includes/class-gglplsn-settings.php:24
 msgid "Settings"
 msgstr "Nastavení"
 
-#: ../google-plus-one.php:42
+#: ../google-plus-one.php:44
 msgid "Upgrade to Pro"
+msgstr "Aktualizovat na Pro"
+
+#: ../google-plus-one.php:191
+msgid "Please enable JavaScript in your browser."
+msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."
+
+#: ../google-plus-one.php:193
+msgid "Important"
 msgstr ""
 
-#: ../google-plus-one.php:204
-msgid "Please enable JavaScript in Your browser."
+#: ../google-plus-one.php:193
+msgid "The Google+ API for Hangouts is no longer supported."
 msgstr ""
 
-#: ../google-plus-one.php:219
+#: ../google-plus-one.php:193
+msgid "Learn more"
+msgstr ""
+
+#: ../google-plus-one.php:209
 msgid "Is already added."
-msgstr ""
+msgstr "Již byla přidán."
 
-#: ../google-plus-one.php:220
+#: ../google-plus-one.php:210
 msgid "Only one phone number can be added."
-msgstr ""
+msgstr "Může být přidáno pouze jedno telefonní číslo."
 
-#: ../google-plus-one.php:221
+#: ../google-plus-one.php:211
 msgid "You can't add the invitation because the phone number is already added."
-msgstr ""
+msgstr "Nemůžete přidat pozvání, protože telefonní číslo je již přidáno."
 
-#: ../google-plus-one.php:222
+#: ../google-plus-one.php:212
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added."
 msgstr ""
+"Nemůžete přidat telefonní číslo, protože je již přidán jiný typ pozvání."
 
-#: ../google-plus-one.php:223
+#: ../google-plus-one.php:213
 msgid "This field can't be empty."
-msgstr ""
+msgstr "Toto pole nemůže být prázdné."
 
-#: ../google-plus-one.php:224
+#: ../google-plus-one.php:214
 msgid "Enter the valid Email."
-msgstr ""
+msgstr "Vložte platnou e-mailovou adresu."
 
-#: ../google-plus-one.php:225
+#: ../google-plus-one.php:215
 msgid "Email of Invited Person"
 msgstr "Email pozvané osoby"
 
-#: ../google-plus-one.php:226
+#: ../google-plus-one.php:216
 msgid "Enter the Email of invited person."
-msgstr ""
+msgstr "Vložte email pozvané osoby."
 
-#: ../google-plus-one.php:226 ../google-plus-one.php:228
-#: ../google-plus-one.php:230 ../google-plus-one.php:232
-#: ../google-plus-one.php:234 ../google-plus-one.php:236
-#: ../google-plus-one.php:238 ../google-plus-one.php:444
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:676
-#: ../includes/class-gglplsn-settings.php:681
-#: ../includes/class-gglplsn-settings.php:686
+#: ../google-plus-one.php:216 ../google-plus-one.php:218
+#: ../google-plus-one.php:220 ../google-plus-one.php:222
+#: ../google-plus-one.php:224 ../google-plus-one.php:226
+#: ../google-plus-one.php:228 ../google-plus-one.php:434
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:610
+#: ../includes/class-gglplsn-settings.php:615
+#: ../includes/class-gglplsn-settings.php:620
 msgid "For example"
-msgstr ""
+msgstr "Například"
 
-#: ../google-plus-one.php:227
-msgid "Phone Number of Invited Person"
-msgstr "Telefonní číslo pozvaného"
+#: ../google-plus-one.php:217
+msgid "Phone number of invited person"
+msgstr "Telefonní číslo pozvané osoby"
 
-#: ../google-plus-one.php:228
+#: ../google-plus-one.php:218
 msgid "Enter the phone number of invited person."
-msgstr ""
+msgstr "Vložte telefonní číslo pozvané osoby."
 
-#: ../google-plus-one.php:229
+#: ../google-plus-one.php:219
 msgid "Google+ Profile ID of Invited Person"
 msgstr "Google+ ID profilu pozvaného"
 
-#: ../google-plus-one.php:230
+#: ../google-plus-one.php:220
 msgid "Enter the Google+ Profile ID of invited person."
-msgstr ""
+msgstr "Vložte ID Google+ pozvané osoby."
 
-#: ../google-plus-one.php:230 ../google-plus-one.php:234
-#: ../google-plus-one.php:236 ../google-plus-one.php:238
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:622
-#: ../includes/class-gglplsn-settings.php:676
-#: ../includes/class-gglplsn-settings.php:681
-#: ../includes/class-gglplsn-settings.php:686
+#: ../google-plus-one.php:220 ../google-plus-one.php:224
+#: ../google-plus-one.php:226 ../google-plus-one.php:228
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:556
+#: ../includes/class-gglplsn-settings.php:610
+#: ../includes/class-gglplsn-settings.php:615
+#: ../includes/class-gglplsn-settings.php:620
 msgid "or"
 msgstr "nebo"
 
-#: ../google-plus-one.php:231
+#: ../google-plus-one.php:221
 msgid "Google+ Circle ID for the Invitation"
-msgstr ""
+msgstr "Pro pozvání ID Google+ kruhu"
 
-#: ../google-plus-one.php:232
+#: ../google-plus-one.php:222
 msgid "Enter the Google+ Circle ID for the Invitation."
-msgstr ""
+msgstr "Pro pozvání vložte ID Google+ kruhu."
 
-#: ../google-plus-one.php:233 ../google-plus-one.php:442
+#: ../google-plus-one.php:223 ../google-plus-one.php:432
+#: ../google-plus-one.php:654 ../google-plus-one.php:671
+#: ../includes/class-gglplsn-settings.php:220
+#: ../includes/class-gglplsn-settings.php:242
 msgid "Google+ ID"
 msgstr "Google+ ID"
 
-#: ../google-plus-one.php:234
+#: ../google-plus-one.php:224
 msgid "Enter the Google+ ID."
-msgstr ""
+msgstr "Vložte ID Google+."
 
-#: ../google-plus-one.php:235 ../includes/class-gglplsn-settings.php:680
+#: ../google-plus-one.php:225 ../includes/class-gglplsn-settings.php:614
 msgid "Google+ Page ID"
 msgstr "Google+ ID stránky"
 
-#: ../google-plus-one.php:236
+#: ../google-plus-one.php:226
 msgid "Enter the Google+ Page ID."
-msgstr ""
+msgstr "Vložte ID Google+ stránky."
 
-#: ../google-plus-one.php:237 ../includes/class-gglplsn-settings.php:685
+#: ../google-plus-one.php:227 ../includes/class-gglplsn-settings.php:619
 msgid "Google+ Community ID"
 msgstr "Google+ ID komunity"
 
-#: ../google-plus-one.php:238
+#: ../google-plus-one.php:228
 msgid "Enter the Google+ Community ID."
-msgstr ""
+msgstr "Vložte ID Google+ komunity."
 
-#: ../google-plus-one.php:239
+#: ../google-plus-one.php:229
 msgid "Display the user's tag line."
-msgstr ""
+msgstr "Zobrazit řádek uživatelského motta."
 
-#: ../google-plus-one.php:240
+#: ../google-plus-one.php:230
 msgid "Display the company tag line."
-msgstr ""
+msgstr "Zobrazit řádek firemního motta."
 
-#: ../google-plus-one.php:241
+#: ../google-plus-one.php:231
 msgid "Display the community tag line."
-msgstr ""
+msgstr "Zobrazit řádek komunitního motta."
 
-#: ../google-plus-one.php:368
+#: ../google-plus-one.php:358
 msgid "Google+ Badge Widget"
 msgstr "Widget Google+ Badge"
 
-#: ../google-plus-one.php:368
+#: ../google-plus-one.php:358
 msgid "Show Google Badge on your site"
 msgstr "Zobrazit Google Badge na vašem webu"
 
-#: ../google-plus-one.php:438
+#: ../google-plus-one.php:428
 msgid "Title"
 msgstr "Název"
 
-#: ../google-plus-one.php:444
+#: ../google-plus-one.php:434
 msgid "Enter your Google+ ID."
-msgstr ""
+msgstr "Vložte své ID Google+."
 
-#: ../google-plus-one.php:447 ../includes/class-gglplsn-settings.php:549
-#: ../includes/class-gglplsn-settings.php:654
+#: ../google-plus-one.php:437 ../includes/class-gglplsn-settings.php:483
+#: ../includes/class-gglplsn-settings.php:588
 msgid "Type"
 msgstr "Typ"
 
-#: ../google-plus-one.php:449 ../includes/class-gglplsn-settings.php:658
+#: ../google-plus-one.php:439 ../includes/class-gglplsn-settings.php:592
 msgid "Person"
 msgstr "Osoba"
 
-#: ../google-plus-one.php:450 ../includes/class-gglplsn-settings.php:662
+#: ../google-plus-one.php:440 ../includes/class-gglplsn-settings.php:596
 msgid "Page"
 msgstr "Stránka"
 
-#: ../google-plus-one.php:451 ../includes/class-gglplsn-settings.php:666
+#: ../google-plus-one.php:441 ../includes/class-gglplsn-settings.php:600
 msgid "Community"
 msgstr "Komunita"
 
-#: ../google-plus-one.php:455 ../includes/class-gglplsn-settings.php:697
+#: ../google-plus-one.php:448 ../includes/class-gglplsn-settings.php:645
 msgid "Layout"
 msgstr "Vzhled"
 
-#: ../google-plus-one.php:457 ../includes/class-gglplsn-settings.php:701
+#: ../google-plus-one.php:450 ../includes/class-gglplsn-settings.php:649
 msgid "Portrait"
 msgstr "Na výšku"
 
-#: ../google-plus-one.php:458 ../includes/class-gglplsn-settings.php:705
+#: ../google-plus-one.php:451 ../includes/class-gglplsn-settings.php:653
 msgid "Landscape"
 msgstr "Na šířku"
 
-#: ../google-plus-one.php:463
+#: ../google-plus-one.php:456
 msgid "Show Cover Photo"
 msgstr "Zobrazit profilový obrázek"
 
-#: ../google-plus-one.php:467
+#: ../google-plus-one.php:460
 msgid "Show Tag Line"
 msgstr "Zobrazit řádek motta"
 
-#: ../google-plus-one.php:472
+#: ../google-plus-one.php:465
 msgid "Show Owners"
 msgstr "Zobrazit vlastníky"
 
-#: ../google-plus-one.php:475 ../includes/class-gglplsn-settings.php:712
+#: ../google-plus-one.php:468 ../includes/class-gglplsn-settings.php:660
 msgid "Width"
 msgstr "Šířka"
 
-#: ../google-plus-one.php:477 ../includes/class-gglplsn-settings.php:716
+#: ../google-plus-one.php:470 ../includes/class-gglplsn-settings.php:664
 msgid "px"
 msgstr "px"
 
-#: ../google-plus-one.php:650
+#: ../google-plus-one.php:635
 msgid "Add Google Buttons to your page or post"
 msgstr "Přidat  Google tlačítka na vaši stránku nebo příspěvek"
 
-#: ../google-plus-one.php:654 ../includes/class-gglplsn-settings.php:205
+#: ../google-plus-one.php:639 ../includes/class-gglplsn-settings.php:206
 msgid "Google +1"
 msgstr "Google +1"
 
-#: ../google-plus-one.php:659 ../includes/class-gglplsn-settings.php:209
+#: ../google-plus-one.php:644 ../includes/class-gglplsn-settings.php:210
 msgid "Share"
 msgstr "Sdílet"
 
-#: ../google-plus-one.php:664 ../includes/class-gglplsn-settings.php:214
+#: ../google-plus-one.php:649 ../includes/class-gglplsn-settings.php:215
 msgid "Follow"
 msgstr "Sledovat"
 
-#: ../google-plus-one.php:667 ../google-plus-one.php:684
-#: ../includes/class-gglplsn-settings.php:217
-#: ../includes/class-gglplsn-settings.php:239
+#: ../google-plus-one.php:652 ../google-plus-one.php:669
+#: ../includes/class-gglplsn-settings.php:218
+#: ../includes/class-gglplsn-settings.php:240
 msgid "To see this button, please"
 msgstr "Pro zobrazení tohoto tlačítka, prosím"
 
-#: ../google-plus-one.php:668 ../google-plus-one.php:685
-#: ../includes/class-gglplsn-settings.php:218
-#: ../includes/class-gglplsn-settings.php:240
+#: ../google-plus-one.php:653 ../google-plus-one.php:670
+#: ../includes/class-gglplsn-settings.php:219
+#: ../includes/class-gglplsn-settings.php:241
 msgid "enter"
 msgstr "vložte"
 
-#: ../google-plus-one.php:669 ../google-plus-one.php:686
-#: ../includes/class-gglplsn-settings.php:219
-#: ../includes/class-gglplsn-settings.php:241
-msgid "the Google+ ID"
-msgstr "Google+ ID"
-
-#: ../google-plus-one.php:676 ../includes/class-gglplsn-settings.php:226
+#: ../google-plus-one.php:661 ../includes/class-gglplsn-settings.php:227
 msgid "Hangout"
 msgstr "Hangout"
 
-#: ../google-plus-one.php:681 ../includes/class-gglplsn-settings.php:232
+#: ../google-plus-one.php:666 ../includes/class-gglplsn-settings.php:233
+#: ../includes/class-gglplsn-settings.php:635
 msgid "Badge"
 msgstr "Badge"
 
-#: ../google-plus-one.php:751
+#: ../google-plus-one.php:736
 msgid "FAQ"
-msgstr "Často kladené otázky (FAQ)"
+msgstr ""
+"Časté dotazy <acronym title=\"Frequently asked questions\">(FAQ)</acronym>"
 
-#: ../google-plus-one.php:752
+#: ../google-plus-one.php:737
 msgid "Support"
 msgstr "Podpora"
 
-#: ../includes/class-gglplsn-settings.php:24
-msgid "Display"
-msgstr ""
-
 #: ../includes/class-gglplsn-settings.php:25
-msgid "Misc"
-msgstr ""
+msgid "Display"
+msgstr "Zobrazení"
 
 #: ../includes/class-gglplsn-settings.php:26
+msgid "Misc"
+msgstr "Různé"
+
+#: ../includes/class-gglplsn-settings.php:27
 msgid "Custom Code"
 msgstr "Vlastní kód"
 
-#: ../includes/class-gglplsn-settings.php:27
+#: ../includes/class-gglplsn-settings.php:28
 msgid "License Key"
-msgstr ""
+msgstr "Licenční klíč"
 
-#: ../includes/class-gglplsn-settings.php:143
+#: ../includes/class-gglplsn-settings.php:145
 msgid "Email is invalid"
 msgstr "Neplatný Email"
 
-#: ../includes/class-gglplsn-settings.php:145
-msgid "Please select the invitation type"
-msgstr ""
-
 #: ../includes/class-gglplsn-settings.php:147
+msgid "Please select the invitation type"
+msgstr "Prosím, vyberte typ pozvání"
+
+#: ../includes/class-gglplsn-settings.php:149
 msgid "Invitation field can't be empty"
 msgstr "Pole pozvánky nemůže být prázdné"
 
-#: ../includes/class-gglplsn-settings.php:153
+#: ../includes/class-gglplsn-settings.php:155
 msgid "Only one phone number can be added"
 msgstr "Můžete přidat pouze jedno telefonní číslo"
 
-#: ../includes/class-gglplsn-settings.php:155
+#: ../includes/class-gglplsn-settings.php:157
 msgid "You can't add the invitation because the phone number is already added"
 msgstr "Nemůžete přidat pozvání, protože telefonní číslo je již přidáno"
 
-#: ../includes/class-gglplsn-settings.php:157
+#: ../includes/class-gglplsn-settings.php:159
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added"
 msgstr ""
 "Nemůžete přidat telefonní číslo, protože je již přidán jiný typ pozvání"
 
-#: ../includes/class-gglplsn-settings.php:162
+#: ../includes/class-gglplsn-settings.php:164
 msgid "Is already added"
 msgstr "Již byla přidán"
 
-#: ../includes/class-gglplsn-settings.php:178
+#: ../includes/class-gglplsn-settings.php:180
 msgid "Settings saved"
 msgstr "Nastavení uloženo"
 
-#: ../includes/class-gglplsn-settings.php:198
+#: ../includes/class-gglplsn-settings.php:199
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
-#: ../includes/class-gglplsn-settings.php:201
+#: ../includes/class-gglplsn-settings.php:202
 msgid "Buttons"
+msgstr "Tlačítka"
+
+#: ../includes/class-gglplsn-settings.php:237
+msgid "Enable to link your existing Google+ account page to your site."
 msgstr ""
 
-#: ../includes/class-gglplsn-settings.php:236
-msgid "Enable to display a Google+ badge in the front-end."
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:248
+#: ../includes/class-gglplsn-settings.php:249
 msgid "Display on"
-msgstr ""
+msgstr "Zobrazit"
 
-#: ../includes/class-gglplsn-settings.php:251
+#: ../includes/class-gglplsn-settings.php:252
 msgid "Home page"
-msgstr ""
+msgstr "Domovská stránka"
 
-#: ../includes/class-gglplsn-settings.php:255
+#: ../includes/class-gglplsn-settings.php:256
 msgid "Posts"
-msgstr ""
+msgstr "Příspěvky"
 
-#: ../includes/class-gglplsn-settings.php:260
+#: ../includes/class-gglplsn-settings.php:261
 msgid "Pages"
-msgstr ""
+msgstr "Stránky"
 
-#: ../includes/class-gglplsn-settings.php:266
+#: ../includes/class-gglplsn-settings.php:267
 msgid "Buttons Position"
 msgstr "Umístění tlačítek"
 
-#: ../includes/class-gglplsn-settings.php:271
+#: ../includes/class-gglplsn-settings.php:272
 msgid "Before content"
-msgstr ""
+msgstr "Před obsahem"
 
-#: ../includes/class-gglplsn-settings.php:276
+#: ../includes/class-gglplsn-settings.php:277
 msgid "After content"
-msgstr ""
+msgstr "Za obsahem"
 
-#: ../includes/class-gglplsn-settings.php:282
+#: ../includes/class-gglplsn-settings.php:283
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../includes/class-gglplsn-settings.php:294
+#: ../includes/class-gglplsn-settings.php:295
 msgid "Select the default language for Google+ button(-s)."
-msgstr ""
+msgstr "Vyberte výchozí jazyk pro Google+ tlačítko/a."
 
-#: ../includes/class-gglplsn-settings.php:304
-#: ../includes/class-gglplsn-settings.php:307
-#: ../includes/class-gglplsn-settings.php:311
+#: ../includes/class-gglplsn-settings.php:305
+#: ../includes/class-gglplsn-settings.php:308
+#: ../includes/class-gglplsn-settings.php:312
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
 msgstr ""
+"Povolit automatické přepnutí jazyka na vícejazyčných webech s pluginem "
+"Multilanguage."
 
-#: ../includes/class-gglplsn-settings.php:307
+#: ../includes/class-gglplsn-settings.php:308
 #, php-format
 msgid "Activate %s"
-msgstr ""
+msgstr "Aktivovat %s"
 
-#: ../includes/class-gglplsn-settings.php:311
+#: ../includes/class-gglplsn-settings.php:312
 msgid "Learn More"
 msgstr "Dozvědět se více"
 
-#: ../includes/class-gglplsn-settings.php:316
+#: ../includes/class-gglplsn-settings.php:317
 msgid "Google+ Button"
-msgstr ""
+msgstr "Google+ Tlačítko"
 
-#: ../includes/class-gglplsn-settings.php:320
-#: ../includes/class-gglplsn-settings.php:777
+#: ../includes/class-gglplsn-settings.php:322
+#: ../includes/class-gglplsn-settings.php:750
 msgid "Close"
 msgstr "Zavřít"
 
-#: ../includes/class-gglplsn-settings.php:323
+#: ../includes/class-gglplsn-settings.php:325
 msgid "+1 Entire Website"
-msgstr ""
+msgstr "+ 1 celý web"
 
-#: ../includes/class-gglplsn-settings.php:326
+#: ../includes/class-gglplsn-settings.php:328
 msgid "Enable to +1 the entire website using +1 button."
-msgstr ""
+msgstr "Povolit +1 použití tlačítka +1 pro celý web."
 
-#: ../includes/class-gglplsn-settings.php:335
-#: ../includes/class-gglplsn-settings.php:415
-#: ../includes/class-gglplsn-settings.php:473
-#: ../includes/class-gglplsn-settings.php:531
+#: ../includes/class-gglplsn-settings.php:338
+#: ../includes/class-gglplsn-settings.php:363
+#: ../includes/class-gglplsn-settings.php:407
+#: ../includes/class-gglplsn-settings.php:465
 msgid "Size"
 msgstr "Velikost"
 
-#: ../includes/class-gglplsn-settings.php:339
+#: ../includes/class-gglplsn-settings.php:342
 msgctxt "for:size"
 msgid "Small"
-msgstr ""
+msgstr "Malé"
 
-#: ../includes/class-gglplsn-settings.php:343
+#: ../includes/class-gglplsn-settings.php:346
 msgctxt "for:size"
 msgid "Medium"
-msgstr ""
+msgstr "Střední"
 
-#: ../includes/class-gglplsn-settings.php:347
+#: ../includes/class-gglplsn-settings.php:350
 msgctxt "for:size"
 msgid "Standard"
 msgstr "Standardní"
 
-#: ../includes/class-gglplsn-settings.php:351
+#: ../includes/class-gglplsn-settings.php:354
 msgctxt "for:size"
 msgid "Tall"
-msgstr ""
+msgstr "Vysoké"
 
-#: ../includes/class-gglplsn-settings.php:357
-#: ../includes/class-gglplsn-settings.php:392
-#: ../includes/class-gglplsn-settings.php:491
-msgid "Annotation"
-msgstr "Vysvětlivka"
-
-#: ../includes/class-gglplsn-settings.php:361
-#: ../includes/class-gglplsn-settings.php:396
-#: ../includes/class-gglplsn-settings.php:495
-msgid "None"
-msgstr "Žádná"
-
-#: ../includes/class-gglplsn-settings.php:365
-#: ../includes/class-gglplsn-settings.php:404
-#: ../includes/class-gglplsn-settings.php:408
-#: ../includes/class-gglplsn-settings.php:499
-#: ../includes/class-gglplsn-settings.php:503
-msgid "Bubble"
-msgstr "Bublina"
-
-#: ../includes/class-gglplsn-settings.php:369
-#: ../includes/class-gglplsn-settings.php:400
-msgid "Inline"
-msgstr "V řádku"
-
-#: ../includes/class-gglplsn-settings.php:375
-#: ../includes/class-gglplsn-settings.php:433
-msgid "Annotation Type"
-msgstr "Typ vysvětlivky"
-
-#: ../includes/class-gglplsn-settings.php:379
-#: ../includes/class-gglplsn-settings.php:437
-msgid "Standard"
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:383
-#: ../includes/class-gglplsn-settings.php:441
-msgid "Short"
-msgstr "Krátká"
-
-#: ../includes/class-gglplsn-settings.php:389
+#: ../includes/class-gglplsn-settings.php:360
 msgid "Share Button"
-msgstr ""
+msgstr "Tlačítko Sdílet"
 
-#: ../includes/class-gglplsn-settings.php:400
-#: ../includes/class-gglplsn-settings.php:404
-#: ../includes/class-gglplsn-settings.php:499
-msgid "horizontal"
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:408
-#: ../includes/class-gglplsn-settings.php:503
-msgid "vertical"
-msgstr ""
-
+#: ../includes/class-gglplsn-settings.php:367
 #: ../includes/class-gglplsn-settings.php:411
-msgid "Display the number of users who have shared the page."
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:419
-#: ../includes/class-gglplsn-settings.php:477
+#: ../includes/class-gglplsn-settings.php:710
 msgid "Small"
 msgstr "Malé"
 
-#: ../includes/class-gglplsn-settings.php:423
-#: ../includes/class-gglplsn-settings.php:481
+#: ../includes/class-gglplsn-settings.php:371
+#: ../includes/class-gglplsn-settings.php:415
+#: ../includes/class-gglplsn-settings.php:714
 msgid "Medium"
 msgstr "Střední"
 
-#: ../includes/class-gglplsn-settings.php:427
-#: ../includes/class-gglplsn-settings.php:485
+#: ../includes/class-gglplsn-settings.php:375
+#: ../includes/class-gglplsn-settings.php:419
+#: ../includes/class-gglplsn-settings.php:718
 msgid "Large"
 msgstr "Velké"
 
-#: ../includes/class-gglplsn-settings.php:447
+#: ../includes/class-gglplsn-settings.php:381
 msgid "Follow Button"
-msgstr ""
+msgstr "Tlačítko Sledovat"
 
-#: ../includes/class-gglplsn-settings.php:450
-#: ../includes/class-gglplsn-settings.php:675
+#: ../includes/class-gglplsn-settings.php:384
+#: ../includes/class-gglplsn-settings.php:609
 msgid "Google+ User ID"
-msgstr ""
+msgstr "Uživatelské ID Google+"
 
-#: ../includes/class-gglplsn-settings.php:453
-#: ../includes/class-gglplsn-settings.php:676
+#: ../includes/class-gglplsn-settings.php:387
+#: ../includes/class-gglplsn-settings.php:610
 msgid "Enter your Google+ user ID."
-msgstr ""
+msgstr "Vložte své uživatelské ID Google+."
 
-#: ../includes/class-gglplsn-settings.php:457
+#: ../includes/class-gglplsn-settings.php:391
 msgid "Relationship"
 msgstr "Vztah"
 
-#: ../includes/class-gglplsn-settings.php:461
+#: ../includes/class-gglplsn-settings.php:395
 msgid "Author"
 msgstr "Autor"
 
-#: ../includes/class-gglplsn-settings.php:465
+#: ../includes/class-gglplsn-settings.php:399
 msgid "Publisher"
 msgstr "Vydavatel"
 
-#: ../includes/class-gglplsn-settings.php:468
+#: ../includes/class-gglplsn-settings.php:402
 msgid ""
 "Describes your relationship to the content of the page where the button is "
 "added."
+msgstr "Popisuje váš vztah k obsahu stránky, kde je tlačítko vloženo."
+
+#: ../includes/class-gglplsn-settings.php:425
+msgid "Annotation"
+msgstr "Anotace"
+
+#: ../includes/class-gglplsn-settings.php:429
+msgid "None"
+msgstr "Žádná"
+
+#: ../includes/class-gglplsn-settings.php:433
+#: ../includes/class-gglplsn-settings.php:437
+msgid "Bubble"
+msgstr "Bublina"
+
+#: ../includes/class-gglplsn-settings.php:433
+msgid "horizontal"
+msgstr "vodorovné"
+
+#: ../includes/class-gglplsn-settings.php:437
+msgid "vertical"
+msgstr "svislé"
+
+#: ../includes/class-gglplsn-settings.php:440
+msgid "Display the number of users who are following this page."
+msgstr "Zobrazovat počet uživatelů, kteří sledují tuto stránku."
+
+#: ../includes/class-gglplsn-settings.php:444
+msgid "Hangouts Button"
 msgstr ""
 
-#: ../includes/class-gglplsn-settings.php:506
-msgid "Display the number of users who are following this page or person."
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:510
-msgid "Hangout Button"
-msgstr ""
-
-#: ../includes/class-gglplsn-settings.php:513
+#: ../includes/class-gglplsn-settings.php:447
 msgid "Topic"
 msgstr "Téma"
 
-#: ../includes/class-gglplsn-settings.php:518
+#: ../includes/class-gglplsn-settings.php:452
 msgid "Current page title"
-msgstr ""
+msgstr "Nadpis aktuální stránky"
 
-#: ../includes/class-gglplsn-settings.php:523
+#: ../includes/class-gglplsn-settings.php:457
 msgid "Custom"
-msgstr ""
+msgstr "Vlastní"
 
-#: ../includes/class-gglplsn-settings.php:535
+#: ../includes/class-gglplsn-settings.php:469
 msgctxt "for:hangout_size"
 msgid "Standard"
-msgstr ""
+msgstr "Standardní"
 
-#: ../includes/class-gglplsn-settings.php:539
+#: ../includes/class-gglplsn-settings.php:473
 msgid "Narrow"
 msgstr "Úzká"
 
-#: ../includes/class-gglplsn-settings.php:543
+#: ../includes/class-gglplsn-settings.php:477
 msgid "Wide"
 msgstr "Široká"
 
-#: ../includes/class-gglplsn-settings.php:553
+#: ../includes/class-gglplsn-settings.php:487
 msgid "Normal"
 msgstr "Normální"
 
-#: ../includes/class-gglplsn-settings.php:557
+#: ../includes/class-gglplsn-settings.php:491
 msgid "On air"
 msgstr "Naživo"
 
-#: ../includes/class-gglplsn-settings.php:561
+#: ../includes/class-gglplsn-settings.php:495
 msgid "Party"
 msgstr "Skupinový"
 
-#: ../includes/class-gglplsn-settings.php:567
+#: ../includes/class-gglplsn-settings.php:501
 msgid "Invitation Type"
 msgstr "Typ pozvánky"
 
-#: ../includes/class-gglplsn-settings.php:570
+#: ../includes/class-gglplsn-settings.php:504
 msgid "Select The Type"
 msgstr "Vyberte typ"
 
-#: ../includes/class-gglplsn-settings.php:571
+#: ../includes/class-gglplsn-settings.php:505
 msgid "Google+ Profile ID"
 msgstr "Google+ ID profilu"
 
-#: ../includes/class-gglplsn-settings.php:572
+#: ../includes/class-gglplsn-settings.php:506
 msgid "Google+ Circle ID"
 msgstr "Google+ ID kruhu"
 
-#: ../includes/class-gglplsn-settings.php:573
+#: ../includes/class-gglplsn-settings.php:507
 msgid "Email"
 msgstr "Email"
 
-#: ../includes/class-gglplsn-settings.php:574
+#: ../includes/class-gglplsn-settings.php:508
 msgid "Phone Number"
 msgstr "Telefonní číslo"
 
-#: ../includes/class-gglplsn-settings.php:611
+#: ../includes/class-gglplsn-settings.php:545
 msgid "Google+ ID, Phone Number or Email"
-msgstr "Google+ ID, telefonní číslo nebo Email"
+msgstr "Google+ ID, telefonní číslo nebo email"
 
-#: ../includes/class-gglplsn-settings.php:617
-#: ../includes/class-gglplsn-settings.php:643
+#: ../includes/class-gglplsn-settings.php:551
+#: ../includes/class-gglplsn-settings.php:577
 msgid "Add"
 msgstr "Přidat"
 
-#: ../includes/class-gglplsn-settings.php:619
+#: ../includes/class-gglplsn-settings.php:553
 msgid "Delete Selected"
 msgstr "Smazat vybrané"
 
-#: ../includes/class-gglplsn-settings.php:622
+#: ../includes/class-gglplsn-settings.php:556
 msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
 msgstr ""
 "Pokud je pozvánka typu \"Google+ ID profilu\", mělo by to vypadat takto"
 
-#: ../includes/class-gglplsn-settings.php:626
+#: ../includes/class-gglplsn-settings.php:560
 msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
 msgstr "Pokud je pozvánka typu \"Google+ ID kruhu\", mělo by to vypadat takto"
 
-#: ../includes/class-gglplsn-settings.php:630
+#: ../includes/class-gglplsn-settings.php:564
 msgid "If Invitation Type is 'Email', it should look like"
 msgstr "Pokud je pozvánka typu \"Email\", mělo by to vypadat takto"
 
-#: ../includes/class-gglplsn-settings.php:634
+#: ../includes/class-gglplsn-settings.php:568
 msgid "If Invitation Type is 'Phone Number', it should look like"
 msgstr "Pokud je pozvánka typu \"Telefonní číslo\", mělo by to vypadat takto"
 
-#: ../includes/class-gglplsn-settings.php:651
+#: ../includes/class-gglplsn-settings.php:585
 msgid "Google+ Badge"
-msgstr ""
+msgstr "Google+ Badge"
 
-#: ../includes/class-gglplsn-settings.php:677
+#: ../includes/class-gglplsn-settings.php:611
 msgid "Enable to display the user's tag line."
-msgstr ""
+msgstr "Povolit zobrazení řádku uživatelského motta."
 
-#: ../includes/class-gglplsn-settings.php:681
+#: ../includes/class-gglplsn-settings.php:615
 msgid "Enter your Google+ page ID."
-msgstr ""
+msgstr "Vložte své ID Google+ stránky."
 
-#: ../includes/class-gglplsn-settings.php:682
+#: ../includes/class-gglplsn-settings.php:616
 msgid "Enable to display the company tag line."
-msgstr ""
+msgstr "Povolit zobrazení řádku firemního motta."
 
-#: ../includes/class-gglplsn-settings.php:686
+#: ../includes/class-gglplsn-settings.php:620
 msgid "Enter your Google+ community ID."
-msgstr ""
+msgstr "Vložte své ID Google+ komunity."
 
-#: ../includes/class-gglplsn-settings.php:687
+#: ../includes/class-gglplsn-settings.php:621
 msgid "Enable to display the community tag line."
+msgstr "Povolit zobrazení řádku komunitního motta."
+
+#: ../includes/class-gglplsn-settings.php:631
+msgid "Features"
 msgstr ""
 
-#: ../includes/class-gglplsn-settings.php:708
+#: ../includes/class-gglplsn-settings.php:639
+msgid "Icon"
+msgstr ""
+
+#: ../includes/class-gglplsn-settings.php:656
 msgid "Sets the orientation of the badge."
-msgstr ""
+msgstr "Nastavuje orientaci badge."
 
-#: ../includes/class-gglplsn-settings.php:720
+#: ../includes/class-gglplsn-settings.php:668
 msgid "Color Theme"
-msgstr ""
+msgstr "Barva šablony"
 
-#: ../includes/class-gglplsn-settings.php:724
+#: ../includes/class-gglplsn-settings.php:672
 msgid "Light"
 msgstr "Světlá"
 
-#: ../includes/class-gglplsn-settings.php:728
+#: ../includes/class-gglplsn-settings.php:676
 msgid "Dark"
 msgstr "Tmavá"
 
-#: ../includes/class-gglplsn-settings.php:734
+#: ../includes/class-gglplsn-settings.php:682
 msgid "Cover Photo"
-msgstr ""
+msgstr "Titulní fotografie"
 
-#: ../includes/class-gglplsn-settings.php:736
+#: ../includes/class-gglplsn-settings.php:684
 msgid "Enable to display a cover photo."
-msgstr ""
+msgstr "Povolit zobrazení titulní fotografie."
 
-#: ../includes/class-gglplsn-settings.php:740
+#: ../includes/class-gglplsn-settings.php:688
 msgid "Tag Line"
-msgstr ""
+msgstr "Řádek motta"
 
-#: ../includes/class-gglplsn-settings.php:746
+#: ../includes/class-gglplsn-settings.php:694
 msgid "Owners"
-msgstr ""
+msgstr "Vlastníci"
 
-#: ../includes/class-gglplsn-settings.php:748
+#: ../includes/class-gglplsn-settings.php:696
 msgid "Enable to display a list of community owners."
+msgstr "Zobrazit seznam komunitních vlastníků."
+
+#: ../includes/class-gglplsn-settings.php:700
+msgid "Custom Name"
 msgstr ""
 
-#: ../includes/class-gglplsn-settings.php:763
+#: ../includes/class-gglplsn-settings.php:706
+msgid "Icon Size"
+msgstr ""
+
+#: ../includes/class-gglplsn-settings.php:735
 msgid "Google +1 Buttons Shortchode"
-msgstr ""
+msgstr "Zkrácený kód Google + 1 tlačítek"
 
-#: ../includes/class-gglplsn-settings.php:766
+#: ../includes/class-gglplsn-settings.php:738
+msgid "Add Google +1 Buttons to a widget."
+msgstr "Přidat tlačítko Google +1 do widgetu."
+
+#: ../includes/class-gglplsn-settings.php:738
+msgid "Navigate to Widgets"
+msgstr "Přejít k widgetům"
+
+#: ../includes/class-gglplsn-settings.php:739
 msgid ""
 "Add Google +1 button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
 msgstr ""
+"Přidat Google +1 tlačítko/a do příspěvků, stránek, vlastních typů příspěvků "
+"nebo widgetů pomocí následujícího zkráceného kódu:"
 
-#: ../includes/class-gglplsn-settings.php:778
+#: ../includes/class-gglplsn-settings.php:751
 msgid "Google +1 Buttons Preview"
-msgstr ""
+msgstr "Náhled Google+1 tlačítek"
 
-#: ../includes/class-gglplsn-settings.php:792
+#: ../includes/class-gglplsn-settings.php:765
 msgid "Display Settings"
-msgstr ""
+msgstr "Nastavení zobrazení"
 
-#: ../includes/class-gglplsn-settings.php:801
+#: ../includes/class-gglplsn-settings.php:774
 msgid ""
 "Please choose the necessary post types (or single pages) where Google "
 "buttons will be displayed:"
 msgstr ""
+"Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
+"tlačítka Google +1 zobrazovat:"
 
-#: ../includes/class-gglplsn-settings.php:808
+#: ../includes/class-gglplsn-settings.php:781
 msgid "Show URL for pages"
 msgstr "Zobrazit URL pro stránky"
 
-#: ../includes/class-gglplsn-settings.php:814
+#: ../includes/class-gglplsn-settings.php:787
 msgid "Example of the site's pages tree"
 msgstr "Příklad stromu stránek"
 
-#: ../includes/class-gglplsn-settings.php:814
+#: ../includes/class-gglplsn-settings.php:787
 msgid "Example of site pages' tree"
-msgstr ""
+msgstr "Příklad stromu stránku webu"
 
-#~ msgid "Please, select the invitation type"
-#~ msgstr "Prosím, vyberte typ pozvání"
+#~ msgid "Enable to display a Google+ badge in the front-end."
+#~ msgstr "Povolit zobrazení Google + badge na front-endu."
 
-#~ msgid "All plugin settings were restored."
-#~ msgstr "Byla obnovena všechna nastavení pluginu."
-
-#~ msgid "How to Use Step-by-step Instruction"
-#~ msgstr "Instrukce jak používat krok-za-krokem"
-
-#~ msgid "Extra settings"
-#~ msgstr "Další nastavení"
-
-#~ msgid "Go PRO"
-#~ msgstr "Přejít na PRO"
-
-#~ msgid "Please, enable JavaScript in Your browser."
-#~ msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."
-
-#~ msgid ""
-#~ "For the correct work of the button do not use it locally or on a free "
-#~ "hosting"
-#~ msgstr ""
-#~ "Pro správnou funkci tlačítka jej nepoužívejte lokálně nebo na free "
-#~ "hostingu"
-
-#~ msgid ""
-#~ "If you'd like to add Google Buttons to your page or post, please use %s "
-#~ "button"
-#~ msgstr ""
-#~ "Pokud chcete přidat Google tlačítka na vaši stránku nebo příspěvek, "
-#~ "použijte tlačítko %s"
-
-#~ msgid ""
-#~ "You can add Google Buttons to your page or post by clicking on %s button "
-#~ "in the content edit block using the Visual mode. If the button isn't "
-#~ "displayed, please use the shortcode %s to show the Google +1 Button, or "
-#~ "use parameter 'display', e.g. %s to display these buttons"
-#~ msgstr ""
-#~ "Můžete přidat Google tlačítka na vaši stránku nebo příspěvek kliknutím na "
-#~ "tlačítko %s v bloku úprav obsahu pomocí Visual režimu. Pokud tlačítko "
-#~ "není zobrazeno, použijte zkrácený kód  %s pro zobrazení tlačítka Google "
-#~ "+1, použijte parametr \"display\", např.: %s pro zobrazení těchto tlačítek"
-
-#~ msgid "Display Google Buttons"
-#~ msgstr "Zobrazit tlačítka Google"
-
-#~ msgid "Select the language to display information on the button"
-#~ msgstr "Zvolte jazyk informačních popisků na tlačítku"
-
-#~ msgid "Use the current site language"
-#~ msgstr "Použít aktuální jazyk webu"
-
-#~ msgid "Using"
-#~ msgstr "S použitím"
-
-#~ msgid "Activate"
-#~ msgstr "Aktivovat"
-
-#~ msgid "Download"
-#~ msgstr "Stáhnout"
-
-#~ msgid "Before"
-#~ msgstr "Před"
-
-#~ msgid "After"
-#~ msgstr "Po"
-
-#~ msgid "Before And After"
-#~ msgstr "Před a Po"
-
-#~ msgid "Only Shortcode"
-#~ msgstr "Pouze zkrácený kód"
-
-#~ msgid "Please select location for the buttons on the page"
-#~ msgstr "Vyberte prosím umístění tlačítek na stránce"
-
-#~ msgid "Show buttons"
-#~ msgstr "Zobrazit tlačítka"
-
-#~ msgid "Show in posts"
-#~ msgstr "Zobrazit v příspěvcích"
-
-#~ msgid "Show in pages"
-#~ msgstr "Zobrazit na stánkách"
-
-#~ msgid "Show on the homepage"
-#~ msgstr "Zobrazit na domovské stránce"
-
-#~ msgid "Please select the page on which you want to see the buttons"
-#~ msgstr "Vyberte prosím, kde se mají tlačítka zobrazovat"
-
-#~ msgid "Settings for Google +1 Button"
-#~ msgstr "Nastavení tlačítka Google +1"
-
-#~ msgid "\"+1\" for an entire site on every page"
-#~ msgstr "Vložit \"+1\" na každou stránku na celém webu"
-
-#~ msgid ""
-#~ "Notice: This option does not create an extra button. This option merely "
-#~ "allows your users to +1 the entire website when this option is enabled, "
-#~ "or a single post when this option is disabled, when clicking the regular "
-#~ "\"+1\" button."
-#~ msgstr ""
-#~ "Upozornění: Tato volba nevytváří další tlačítko. Tato možnost pouze "
-#~ "umožňuje uživatelům dávat +1 na celém vašem webu, je-li tato možnost "
-#~ "povolena, nebo na konkrétní příspěvek, pokud je tato volba vypnutá, při "
-#~ "kliknutí na klasické tlačítko \"+1\"."
-
-#~ msgid "If you upgrade to Pro version all your settings will be saved."
-#~ msgstr ""
-#~ "Pokud upgradujete na verzi Pro budou všechna vaše nastavení  uložena."
-
-#~ msgid "Unlock premium options by upgrading to Pro version"
-#~ msgstr "Odemkněte prémiové možnosti upgradem na Pro verzi"
-
-#~ msgid "Tall"
-#~ msgstr "Vysoké"
-
-#~ msgid "Display counters showing how many times your article has been liked"
-#~ msgstr "Zobrazit počítadlo ukazující, kolikrát byl článek olajkován"
-
-#~ msgctxt "for:annotation type"
-#~ msgid "Standard"
-#~ msgstr "Standardní"
-
-#~ msgid "Settings for Share Button"
-#~ msgstr "Nastavení tlačítka Sdílet"
-
-#~ msgid "Vertical-bubble"
-#~ msgstr "Vertikální bublina"
-
-#~ msgid "Display the number of users who have shared the page"
-#~ msgstr "Zobrazit počet uživatelů, kteří stránku vysdíleli"
-
-#~ msgid "Settings for Follow Button"
-#~ msgstr "Nastavení tlačítka Sledovat"
-
-#~ msgid "Enter the Google+ ID, e.g."
-#~ msgstr "Vložte Google+ ID, např."
-
-#~ msgid ""
-#~ "Describes your relationship to content of the page, where the button is "
-#~ "embedded"
-#~ msgstr "Popisuje vztah k obsahu stránky, kde je tlačítko vloženo"
-
-#~ msgid "Display the number of users who are following this page or person"
-#~ msgstr "Zobrazit počet uživatelů, kteří sledují tuto stránku, nebo profil"
-
-#~ msgid "Settings for Hangout Button"
-#~ msgstr "Nastavení tlačítka Hangout"
-
-#~ msgid "Use the title of the page"
-#~ msgstr "Použít název stránky"
-
-#~ msgid "Moderated"
-#~ msgstr "Moderovaný"
-
-#~ msgid "Settings for Badge"
-#~ msgstr "Nastavení pro Badge"
-
-#~ msgid "Display the user's tag line"
-#~ msgstr "Zobrazit řádek uživatelova motta"
-
-#~ msgid "Enter the Google+ Page ID, e.g."
-#~ msgstr "Vložte Google+ ID stránky, např."
-
-#~ msgid "Display the company tag line"
-#~ msgstr "Zobrazit řádek firemního motta"
-
-#~ msgid "Enter the Google+ Community ID, e.g."
-#~ msgstr "Vložte Google+ ID  komunity, např."
-
-#~ msgid "Display the community tag line"
-#~ msgstr "Zobrazit řádek komunitního motta"
-
-#~ msgid "Sets the orientation of the badge"
-#~ msgstr "Nastavuje orientaci badge"
-
-#~ msgid "Display a list of community owners"
-#~ msgstr "Zobrazit seznam komunitních vlastníků"
-
-#~ msgid "Theme"
-#~ msgstr "Šablona"
-
-#~ msgid "Preview"
-#~ msgstr "Náhled"
-
-#~ msgid "Save Changes"
-#~ msgstr "Uložit změny"
-
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where Google "
-#~ "button will be displayed:"
-#~ msgstr ""
-#~ "Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
-#~ "tlačítka Google +1 zobrazovat:"
-
-#~ msgid "This field can't be empty"
-#~ msgstr "Toto pole nemůže být prázdné"
-
-#~ msgid "Please, enter the valid Email"
-#~ msgstr "Vložte platnou e-mailovou adresu"
-
-#~ msgid "Please, enter the Email of invited person, e.g."
-#~ msgstr "Vložte Email pozvaného, např."
-
-#~ msgid "Please, enter the phone number of invited person, e.g."
-#~ msgstr "Vložte telefonní číslo pozvaného, např."
-
-#~ msgid "Please, enter the Google+ Profile ID of invited person, e.g."
-#~ msgstr "Vložte Google+ ID profilu pozvaného, např."
-
-#~ msgid "Google+ Circle ID for Invitation"
-#~ msgstr "Google+ ID kruhu pozvaného"
-
-#~ msgid "Please, enter the Google+ Circle ID for invitation, e.g."
-#~ msgstr "Vložte Google+ ID kruhu pro pozvaného, např."
-
-#~ msgid "Onair"
-#~ msgstr "Naživo"
+#~ msgid "Hangout Button"
+#~ msgstr "Tlačítko Hangout"

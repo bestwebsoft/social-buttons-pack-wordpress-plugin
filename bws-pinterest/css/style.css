@@ -1,23 +1,12 @@
 /*
  * Plugin admin css
  */
-/* link how_to_use */
-.pntrst_how_to_use {
-	float: right;
+.pntrst-widget-url {
+	word-wrap: break-word;
 }
-.rtl .pntrst_how_to_use {
-	float: left;
+.pntrst_pro_version_show {
+	max-width: 100%;
 }
-@media only screen and ( max-width: 782px ) {
-	.pntrst_how_to_use {
-		float: none;
-		text-align: left;
-	}
-	.rtl .pntrst_how_to_use {
-		text-align: right;
-	}
-}
-
 /*
  * Plugin frontend css
  */
@@ -26,7 +15,7 @@
 	vertical-align: bottom;
 }
 .pntrst-widget span {
-    min-width: 0 !important;
+	min-width: 0 !important;
 }
 .pntrst-button-wrap {
 	display: inline-block;

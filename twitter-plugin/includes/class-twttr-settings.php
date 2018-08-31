@@ -97,7 +97,7 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 			
 			$this->options['tweet_to_mention']			= stripslashes( esc_html( $_REQUEST['twttr_tweet_to_mention'] ) );
 			/* '\w' can not be used due to php 5.2.4 have bugs with cirillic symbols in preg_ functions */
-			$this->options['tweet_to_mention']			= preg_replace( '~[^\d_a-z]~', '', $this->options['tweet_to_mention'] );
+			$this->options['tweet_to_mention']			= preg_replace( '~[^\d_a-zA-Z]~', '', $this->options['tweet_to_mention'] );
 
 			$this->options['text_option_mention']		= stripslashes( esc_html( $_REQUEST['twttr_text_option_mention'] ) );
 			$this->options['text_mention']				= stripslashes( esc_html( $_REQUEST['twttr_text_mention'] ) );
@@ -192,11 +192,11 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 									$error = __( "Error: Failed to move file", 'twitter-plugin' );
 								}
 							} else {
-								$error = __( "Error: check image width or height", 'twitter-plugin' );
+								$error = __( "Error: Check image width or height", 'twitter-plugin' );
 							}
 						}
 					} else {
-						$error = __( "Uploading Error: check image properties", 'twitter-plugin' );
+						$error = __( "Uploading Error: Check image properties", 'twitter-plugin' );
 					}
 				}
 			}
@@ -499,7 +499,7 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 		public function display_metabox() { ?>
 			<div class="postbox">
 				<h3 class="hndle">
-					<?php _e( 'Twitter Buttons Shortchode', 'twitter-plugin' ); ?>
+					<?php _e( 'Twitter Buttons Shortcode', 'twitter-plugin' ); ?>
 				</h3>
 				<div class="inside">
 					<?php _e( "Add Twitter button(-s) to your posts, pages, custom post types or widgets by using the following shortcode:", 'twitter-plugin' ); ?>

@@ -49,28 +49,6 @@ if ( ! function_exists ( 'gglplsn_settings' ) ) {
 
 		if ( ! isset( $gglplsn_options['plugin_option_version'] ) || $gglplsn_options['plugin_option_version'] != $gglplsn_plugin_info["Version"] || $gglplsn_options['plugin_option_version'] != $sclbttns_plugin_info["Version"] ) {
 
-			/**
-			* @since 1.3.5
-			* @todo remove after 12.10.2017
-			*/
-			if ( ! is_array( $gglplsn_options['position'] ) ) {
-				switch ( $gglplsn_options['position'] ) {
-					case 'only_shortcode':
-						$gglplsn_options['position'] = array();
-						break;
-					case 'afterandbefore':
-						$gglplsn_options['position'] = array( 'before', 'after' );
-						break;
-					case 'before_post':
-						$gglplsn_options['position'] = array( 'before' );
-						break;
-					case 'after_post':
-						$gglplsn_options['position'] = array( 'after' );
-						break;
-				}
-			}
-			/* end @todo */
-
 			$options_default = gglplsn_get_options_default();
 			$gglplsn_options = array_merge( $options_default, $gglplsn_options );
 			$gglplsn_options['plugin_option_version'] = $gglplsn_plugin_info["Version"];
@@ -89,13 +67,9 @@ if ( ! function_exists( 'gglplsn_get_options_default' ) ) {
 		$options_default = array(
 			'plugin_option_version'		=>	$gglplsn_plugin_info['Version'],
 			'plus_one_js'				=>	1,
-			'plus_one_annotation'		=>	'none',
 			'plus_one_size'				=>	'standard',
-			'plus_one_annotation_type'	=>	'standard',
 			'share_js'					=>	0,
 			'share_size'				=>	20,
-			'share_annotation'			=>	'none',
-			'share_annotation_type'		=>	'standard',
 			'follow_js'					=>	0,
 			'follow_size'				=>	20,
 			'follow_annotation'			=>	'none',
@@ -109,6 +83,7 @@ if ( ! function_exists( 'gglplsn_get_options_default' ) ) {
 			'hangout_invite_type'		=>	array(),
 			'hangout_invite_id'			=>	array(),
 			'badge_js'					=>	0,
+			'badge_js_type'				=>	'badge',
 			'badge_type'				=>	'person',
 			'badge_id'					=>	'',
 			'badge_layout'				=>	'portrait',
@@ -117,6 +92,8 @@ if ( ! function_exists( 'gglplsn_get_options_default' ) ) {
 			'badge_show_owners'			=>	false,
 			'badge_theme'				=>	'light',
 			'badge_width'				=>	300,
+			'badge_icon_size'			=> 	16,
+			'badge_custom_name'			=>	'',
 			'position'					=>	array( 'before' ),
 			'homepage'					=>	1,
 			'posts'						=>	1,
@@ -150,7 +127,7 @@ if ( ! function_exists( 'gglplsn_admin_head' ) ) {
 				'invalid_email'     		=>  __( 'Enter the valid Email.', 'google-one' ),
 				'email_th'					=>  __( 'Email of Invited Person', 'google-one' ),
 				'email_info'				=>  __( 'Enter the Email of invited person.', 'google-one' ) . '&nbsp;' . __( 'For example', 'google-one' ) . ',&nbsp;"example@gmail.com".',
-				'phone_th'					=>  __( 'Phone Number of Invited Person', 'google-one' ),
+				'phone_th'					=>  __( 'Phone number of invited person', 'google-one' ),
 				'phone_info'				=>  __( 'Enter the phone number of invited person.', 'google-one' ) . '&nbsp;' . __( 'For example', 'google-one' ) . ',&nbsp;"+38001234567".',
 				'profile_th'				=>  __( 'Google+ Profile ID of Invited Person', 'google-one' ),
 				'profile_info'				=>  __( 'Enter the Google+ Profile ID of invited person.', 'google-one' ) . '&nbsp;' . __( 'For example', 'google-one' ) . ',&nbsp;"12345678912345678912"&nbsp;' . __( 'or', 'google-one' ) . '&nbsp;"+YouName".',
@@ -206,7 +183,7 @@ if ( ! function_exists( 'gglplsn_js' ) ) {
 	function gglplsn_js() {
 		global $gglplsn_is_button_shown;
 		if ( ! empty( $gglplsn_is_button_shown ) || defined( 'BWS_ENQUEUE_ALL_SCRIPTS' ) ) {
-			global $gglplsn_options, $gglplsn_lang_codes;
+			global $gglplsn_options, $gglplsn_lang_codes, $mltlngg_current_language;
 			
 			if (
 				1 == $gglplsn_options['plus_one_js'] ||
@@ -215,15 +192,15 @@ if ( ! function_exists( 'gglplsn_js' ) ) {
 				1 == $gglplsn_options['hangout_js'] ||
 				1 == $gglplsn_options['badge_js']
 			) {
-				if ( 1 == $gglplsn_options['use_multilanguage_locale'] && isset( $_SESSION['language'] ) ) {
-					if ( array_key_exists( $_SESSION['language'], $gglplsn_lang_codes ) ) {
-						$gglplsn_locale = $_SESSION['language'];
+				if ( 1 == $gglplsn_options['use_multilanguage_locale'] && isset( $mltlngg_current_language ) ) {
+					if ( array_key_exists( $mltlngg_current_language, $gglplsn_lang_codes ) ) {
+						$gglplsn_locale = $mltlngg_current_language;
 					} else {
-						$gglplsn_locale_from_multilanguage = str_replace( '_', '-', $_SESSION['language'] );
+						$gglplsn_locale_from_multilanguage = str_replace( '_', '-', $mltlngg_current_language );
 						if ( array_key_exists( $gglplsn_locale_from_multilanguage, $gglplsn_lang_codes ) ) {
 							$gglplsn_locale = $gglplsn_locale_from_multilanguage;
 						} else {
-							$gglplsn_locale_from_multilanguage = explode( '_', $_SESSION['language']  );
+							$gglplsn_locale_from_multilanguage = explode( '_', $mltlngg_current_language );
 							if( is_array( $gglplsn_locale_from_multilanguage ) && array_key_exists( $gglplsn_locale_from_multilanguage[0], $gglplsn_lang_codes ) )
 								$gglplsn_locale = $gglplsn_locale_from_multilanguage[0];
 						}
@@ -315,7 +292,7 @@ if ( ! class_exists( 'Gglplsn_Badge_Widget' ) ) {
 			if ( ! empty( $title ) ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			}
-			$badge = gglplsn_return_button( 'badge', $instance );
+			$badge = gglplsn_return_button( 'widget', $instance );
 			echo $badge;
 			echo $args['after_widget'];
 			$gglplsn_is_button_shown = true;
@@ -367,15 +344,18 @@ if ( ! class_exists( 'Gglplsn_Badge_Widget' ) ) {
 			<p>
 				<label for="<?php echo $this->get_field_id( 'badge_id' ); ?>"><?php _e( 'Google+ ID', 'google-one' ); ?>:</label>
 				<input type="text" class="widefat" name="<?php echo $this->get_field_name( 'badge_id' ); ?>" <?php echo 'required="required"'; ?> value="<?php echo $badge_id; ?>" />
-				<span class="bws_info gglplsn-badge-id-info"><?php echo __( 'Enter your Google+ ID.', 'google-one' ) . '&nbsp;' . __( 'For example', 'google-one' ) . ',&nbsp;"12345678912345678912"&nbsp;'; ?>)</span>
+				<span class="bws_info gglplsn-badge-id-info"><?php echo __( 'Enter your Google+ ID.', 'google-one' ) . '&nbsp;' . __( 'For example', 'google-one' ) . ',&nbsp;"12345678912345678912"&nbsp;'; ?></span>
 			</p>
 			<p>
 				<label for="<?php echo $this->get_field_id( 'badge_type' ); ?>"><?php _e( 'Type', 'google-one' ); ?></label>
 				<select id="<?php echo $this->get_field_id( 'badge_type' ); ?>" class="gglplsn-badge-type" name="<?php echo $this->get_field_name( 'badge_type' ); ?>">
 					<option value="person" <?php selected( 'person', $badge_type ); ?>><?php _e( 'Person', 'google-one' ); ?></option>
-					<option value="page" <?php selected('page', $badge_type ); ?>><?php _e( 'Page', 'google-one' ); ?></option>
+					<option value="page" <?php selected( 'page', $badge_type ); ?>><?php _e( 'Page', 'google-one' ); ?></option>
 					<option value="community" <?php selected( 'community', $badge_type ); ?>><?php _e( 'Community', 'google-one' ); ?></option>
 				</select>
+			</p>
+			<p>
+				
 			</p>
 			<p>
 				<label for="<?php echo $this->get_field_id( 'badge_layout' ); ?>"><?php _e( 'Layout', 'google-one' ); ?></label>
@@ -417,48 +397,18 @@ if ( ! function_exists( 'gglplsn_return_button' ) ) {
 	function gglplsn_return_button( $request, $options ) {
 		extract( $options );
 		if ( 'plusone' == $request ) {
-			switch( $plus_one_size ) {
-				case 'standard' :
-					$plus_one_width = ( 'standard' == $plus_one_annotation_type ) ? 189 : 139;
-					break;
-				case 'small' :
-					$plus_one_width = ( 'standard' == $plus_one_annotation_type ) ? 185 : 129;
-					break;
-				case 'medium' :
-					$plus_one_width = ( 'standard' == $plus_one_annotation_type ) ? 183 : 133;
-					break;
-				case 'tall' :
-					$plus_one_width = ( 'standard' == $plus_one_annotation_type ) ? 201 : 151;
-					break;
-			}
-
-			$plus_one = '<span class="gglplsn_plus_one"><g:plusone
-				size="' . $plus_one_size . '"
-				'. ( ( 'inline' == $plus_one_annotation ) ? 'width="' . $plus_one_width . '"' : "" ) .
-				'annotation="' . $plus_one_annotation . '"
-				callback="on"
-				href="' . get_permalink() . '"></g:plusone></span>';
+			$plus_one = sprintf(
+				'<span class="gglplsn_plus_one"><g:plusone size="%s" callback="on" href="%s"></g:plusone></span>',
+				$plus_one_size, get_permalink()
+			);
 			return $plus_one;
 		}
 
 		if ( 'share' == $request ) {
-			switch( $share_size ) {
-				case 20 :
-					$share_width = ( 'standard' == $share_annotation_type ) ? 200 : 150;
-					break;
-				case 15 :
-					$share_width = ( 'standard' == $share_annotation_type ) ? 205 : 140;
-					break;
-				case 24 :
-					$share_width = ( 'standard' == $share_annotation_type ) ? 206 : 150;
-					break;
-			}
-
-			$share = '<span class="gglplsn_share"><g:plus action="share"
-				href="'. get_permalink() . '"
-				'. ( ( 'vertical-bubble' != $share_annotation ) ? 'height="' . $share_size . '"' : "" ) . '
-				annotation="' . $share_annotation .'"
-				'. ( ( 'inline' == $share_annotation ) ? 'width="' . $share_width . '"' : "" ) . '> </span></span>';
+			$share = sprintf(
+				'<span class="gglplsn_share"><g:plus action="share" href="%s" height="%d"> </span></span>',
+				get_permalink(), intval( $share_size )
+			);
 			return $share;
 		}
 
@@ -466,11 +416,10 @@ if ( ! function_exists( 'gglplsn_return_button' ) ) {
 			$follow_id = sanitize_text_field( $follow_id );
 			if ( ! empty( $follow_id ) ) {
 				$href = 'https://plus.google.com/' . $follow_id;
-				$follow = '<span class="gglplsn_follow"><g:follow
-					href="' . esc_url( $href ) . '"
-					height="' . intval( $follow_size ) . '"
-					annotation="' . $follow_annotation .'"
-					rel="' . $follow_relationship . '"></g:follow></span>';
+				$follow = sprintf(
+					'<span class="gglplsn_follow"><g:follow href="%s" height="%d" annotation="%s" rel="%s"> </span></span>',
+					esc_url( $href ), intval( $follow_size ), $follow_annotation, $follow_relationship
+				);
 				return $follow;
 			} else {
 				return '';
@@ -489,16 +438,14 @@ if ( ! function_exists( 'gglplsn_return_button' ) ) {
 				$hangout_width = ( 'narrow' == $hangout_size ) ? 72 : 175;
 			}
 
-			$hangout = '<span class="gglplsn_hangout"><g:hangout
-				render="createhangout"
-				topic="' . $hangout_topic_string . '"
-				hangout_type="' . $hangout_type . '"
-				'. ( ( 'standard' != $hangout_size ) ? 'widget_size="' . $hangout_width . '"' : "" ) . '
-				invites="[' . $hangout_invite . ']"></g:hangout></span>';
+			$hangout = sprintf(
+				'<span class="gglplsn_hangout"><g:hangout render="createhangout" topic="%s" hangout_type="%d" %s invites="[%s]"> </g:hangout></span>',
+				$hangout_topic_string, $hangout_type, ( 'standard' != $hangout_size ) ? 'widget_size="' . $hangout_width . '"' : "", $hangout_invite
+			);
 			return $hangout;
 		}
-
-		if ( 'badge' == $request ) {
+		
+		if ( 'badge' == $request && 'badge' == $badge_js_type || 'widget' == $request ) {
 			$badge_id = esc_html( $badge_id );
 			if ( ! empty( $badge_id ) ) {
 				$href = 'https://plus.google.com/' . ( 'community' == $badge_type ? 'communities/': '' ) . $badge_id;
@@ -511,15 +458,42 @@ if ( ! function_exists( 'gglplsn_return_button' ) ) {
 				} elseif ( $badge_width > 450 ) {
 					$badge_width = 450;
 				}
+				$badge = sprintf(
+					'<p class="gglplsn_badge"><g:%s href="%s" layout="%s" width="%s" theme="%s" %s showowners="%s" showtagline="%s"></g:%s></p>',
+					$badge_type, esc_url( $href ), $badge_layout, $badge_width, $badge_theme, $photo, $badge_show_owners, $badge_show_tagline, $badge_type
+				);
 
-				$badge = '<p class="gglplsn_badge"><g:' . $badge_type . '
-					href="' . esc_url( $href ) . '"
-					layout="' . $badge_layout . '"
-					width="' . $badge_width . '"
-					theme="' . $badge_theme . '"
-					' . $photo . '
-					showowners="' . $badge_show_owners . '"
-					showtagline="' . $badge_show_tagline . '"></g:' . $badge_type . '></p>';
+				return $badge;
+			} else {
+				return '';
+			}
+		} elseif ( 'badge' == $request && 'icon' == $badge_js_type ) {
+			$badge_id = esc_html( $badge_id );
+			if ( ! empty( $badge_id ) ) {
+				$href = 'https://plus.google.com/' . ( 'community' == $badge_type ? 'communities/': '' ) . $badge_id;
+				if ( ! empty( $badge_custom_name ) ) {
+					if ( 64 != $badge_icon_size ) {
+						$badge = sprintf(
+							'<a href="%s" rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+							<span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:8px;">%s</span><span style="display:inline-block;vertical-align:top;margin-right:15px; margin-top:8px;">on</span>
+							<img src="//ssl.gstatic.com/images/icons/gplus-%s.png" alt="Google+" style="border:0;width:%3$spx;height:%3$spx;"/>
+							</a>', esc_url( $href ), $badge_custom_name, $badge_icon_size
+						);
+					} elseif ( 64 == $badge_icon_size ) {
+						$badge = sprintf(
+							'<a href="%s" rel="publisher" target="_top" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+							<img src="//ssl.gstatic.com/images/icons/gplus-64.png" alt="" style="border:0;width:64px;height:64px;"/><br/>
+							<span style="font-weight:bold;">%s</span><br/><span>on Google+</span>
+							</a>', esc_url( $href ), $badge_custom_name
+						);
+					}
+				} else {
+					$badge = sprintf(
+						'<a href="%s" rel="publisher" target="_top" style="text-decoration:none;">
+						<img src="//ssl.gstatic.com/images/icons/gplus-%s.png" alt="Google+" style="border:0;width:%2$spx;height:%2$spx;"/>
+						</a>', esc_url( $href ), $badge_icon_size
+					);
+				}
 				return $badge;
 			} else {
 				return '';
@@ -568,11 +542,9 @@ if ( ! function_exists( 'gglplsn_shortcode' ) ) {
 /* add shortcode content  */
 if ( ! function_exists( 'gglplsn_shortcode_button_content' ) ) {
 	function gglplsn_shortcode_button_content( $content ) {
-		global $wp_version, $gglplsn_options, $sclbttns_plugin_info;
+		global $wp_version, $gglplsn_options;
 		if ( empty( $gglplsn_options ) )
-			$gglplsn_options = get_option( 'gglplsn_options' ); 
-
-		$settings_page = $sclbttns_plugin_info ? 'admin.php?page=social-buttons.php' : 'admin.php?page=google-plus-one.php'; ?>
+			$gglplsn_options = get_option( 'gglplsn_options' ); ?>
 		<div id="gglplsn" style="display:none;">
 			<fieldset>
 				<?php _e( 'Add Google Buttons to your page or post', 'google-one' ); ?>
@@ -593,8 +565,8 @@ if ( ! function_exists( 'gglplsn_shortcode_button_content' ) ) {
 						<?php if ( empty( $gglplsn_options['follow_id'] ) ) { ?>
 							<span class="bws_info">
 								(<?php _e( 'To see this button, please', 'google-one' ); ?>
-								<a style="color: #0073aa;" href="<?php echo $settings_page; ?>"><?php _e( 'enter', 'google-one' ) ?></a>
-								<?php _e( 'the Google+ ID', 'google-one' ); ?>)
+								<a style="color: #0073aa;" href="admin.php?page=google-plus-one.php"><?php _e( 'enter', 'google-one' ) ?></a>
+								<?php _e( 'Google+ ID', 'google-one' ); ?>)
 							</span>
 						<?php } ?>
 					</label>
@@ -610,8 +582,8 @@ if ( ! function_exists( 'gglplsn_shortcode_button_content' ) ) {
 						<?php if ( empty( $gglplsn_options['badge_id'] ) ) { ?>
 						<span class="bws_info">
 							(<?php _e( 'To see this button, please', 'google-one' ); ?>
-							<a style="color: #0073aa;" href="<?php echo $settings_page; ?>"><?php _e( 'enter', 'google-one' ) ?></a>
-							<?php _e( 'the Google+ ID', 'google-one' ); ?>)
+							<a style="color: #0073aa;" href="admin.php?page=google-plus-one.php"><?php _e( 'enter', 'google-one' ) ?></a>
+							<?php _e( 'Google+ ID', 'google-one' ); ?>)
 						</span>
 					<?php } ?>
 					</label>
@@ -622,18 +594,19 @@ if ( ! function_exists( 'gglplsn_shortcode_button_content' ) ) {
 		<script type="text/javascript">
 			function gglplsn_shortcode_init() {
 				( function( $ ) {
-					$( '.mce-reset input[name^="gglplsn_selected"]' ).change( function() {
+					var current_object = '<?php echo ( $wp_version < 3.9 ) ? "#TB_ajaxContent" : ".mce-reset"; ?>';
+					$( current_object + ' input[name^="gglplsn_selected"]' ).change( function() {
 						var result = '';
-						$( '.mce-reset input[name^="gglplsn_selected"]' ).each( function() {
+						$( current_object + ' input[name^="gglplsn_selected"]' ).each( function() {
 							if ( $( this ).is( ':checked' ) ) {
 								result += $( this ).val() + ',';
 							}
 						} );
 						if ( '' == result ) {
-							$( '.mce-reset #bws_shortcode_display' ).text( '' );
+							$( current_object + ' #bws_shortcode_display' ).text( '' );
 						} else {
 							result = result.slice( 0, - 1 );
-							$( '.mce-reset #bws_shortcode_display' ).text( '[bws_googleplusone display="' + result + '"]' );
+							$( current_object + ' #bws_shortcode_display' ).text( '[bws_googleplusone display="' + result + '"]' );
 						}
 					} );
 				} ) ( jQuery );
@@ -656,13 +629,10 @@ if ( ! function_exists( 'gglplsn_validate_email' ) ) {
 add_action( 'init', 'gglplsn_init' );
 add_action( 'plugins_loaded', 'gglplsn_plugins_loaded' );
 add_action( 'admin_init', 'gglplsn_admin_init' );
-
 /* Adding stylesheets */
 add_action( 'wp_footer', 'gglplsn_footer_actions' );
 add_action( 'admin_enqueue_scripts', 'gglplsn_admin_head' );
-
 add_filter( 'pgntn_callback', 'gglplsn_pagination_callback' );
-
 /* Adding plugin buttons */
 add_shortcode( 'bws_googleplusone', 'gglplsn_shortcode' );
 add_filter( 'widget_text', 'do_shortcode' );

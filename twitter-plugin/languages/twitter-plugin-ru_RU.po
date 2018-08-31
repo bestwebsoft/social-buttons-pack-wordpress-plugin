@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-13 16:47+0300\n"
-"PO-Revision-Date: 2017-07-13 16:51+0300\n"
+"POT-Creation-Date: 2018-04-09 17:53+0300\n"
+"PO-Revision-Date: 2018-04-09 17:53+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -13,68 +13,13 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: twitter.php:36 twitter.php:37 twitter.php:190
-#: includes/class-twttr-settings.php:221
-msgid "Twitter Button Settings"
-msgstr "Настройки Twitter Button"
-
-#: twitter.php:37 twitter.php:423 twitter.php:436
-#: includes/class-twttr-settings.php:24
+#: includes/class-twttr-settings.php:24 twitter.php:37 twitter.php:440
+#: twitter.php:453
 msgid "Settings"
 msgstr "Настройки"
-
-#: twitter.php:43
-msgid "Upgrade to Pro"
-msgstr "Обновиться до Pro"
-
-#: twitter.php:191
-msgid "Please enable JavaScript in Your browser."
-msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
-
-#: twitter.php:255 twitter.php:305 twitter.php:309 twitter.php:381
-#: includes/class-twttr-settings.php:230
-msgid "Tweet"
-msgstr "Твитнуть"
-
-#: twitter.php:272 twitter.php:276
-msgid "Follow me"
-msgstr "Читать"
-
-#: twitter.php:285
-msgid "TwitterStories"
-msgstr "Твит история"
-
-#: twitter.php:326 includes/class-twttr-settings.php:457
-msgid "Tweet to"
-msgstr "Твитнуть для"
-
-#: twitter.php:380
-msgid "Please select twitter buttons which will be displayed"
-msgstr "Пожалуйста выберите кнопки твиттера, которые будут отображены "
-
-#: twitter.php:382 includes/class-twttr-settings.php:232
-msgid "Follow"
-msgstr "Читать"
-
-#: twitter.php:383 includes/class-twttr-settings.php:234
-#: includes/class-twttr-settings.php:354 includes/class-twttr-settings.php:415
-msgid "Hashtag"
-msgstr "Метка"
-
-#: twitter.php:384 includes/class-twttr-settings.php:236
-msgid "Mention"
-msgstr "Упомянуть"
-
-#: twitter.php:437
-msgid "FAQ"
-msgstr "FAQ"
-
-#: twitter.php:438
-msgid "Support"
-msgstr "Тех. поддержка"
 
 #: includes/class-twttr-settings.php:26
 msgid "Display"
@@ -102,19 +47,24 @@ msgstr "Ошибка: Некорректный тип файла"
 
 #: includes/class-twttr-settings.php:194
 msgid "Error: Failed to move file"
-msgstr "Ошибка: не удалось переместить файл "
+msgstr "Ошибка: Не удалось переместить файл"
 
 #: includes/class-twttr-settings.php:197
-msgid "Error: check image width or height"
+msgid "Error: Check image width or height"
 msgstr "Ошибка: Проверьте ширину и высоту изображения"
 
 #: includes/class-twttr-settings.php:201
-msgid "Uploading Error: check image properties"
+msgid "Uploading Error: Check image properties"
 msgstr "Ошибка загрузки: Проверьте опции изображения"
 
 #: includes/class-twttr-settings.php:209
 msgid "Settings saved"
 msgstr "Настройки сохранены"
+
+#: includes/class-twttr-settings.php:221 twitter.php:36 twitter.php:37
+#: twitter.php:207
+msgid "Twitter Button Settings"
+msgstr "Настройки Twitter Button"
 
 #: includes/class-twttr-settings.php:224
 msgid "General"
@@ -123,6 +73,24 @@ msgstr "Общее"
 #: includes/class-twttr-settings.php:227
 msgid "Buttons"
 msgstr "Кнопки"
+
+#: includes/class-twttr-settings.php:230 twitter.php:272 twitter.php:322
+#: twitter.php:326 twitter.php:398
+msgid "Tweet"
+msgstr "Твитнуть"
+
+#: includes/class-twttr-settings.php:232 twitter.php:399
+msgid "Follow"
+msgstr "Читать"
+
+#: includes/class-twttr-settings.php:234 includes/class-twttr-settings.php:354
+#: includes/class-twttr-settings.php:415 twitter.php:400
+msgid "Hashtag"
+msgstr "Метка"
+
+#: includes/class-twttr-settings.php:236 twitter.php:401
+msgid "Mention"
+msgstr "Упомянуть"
 
 #: includes/class-twttr-settings.php:241
 msgid "Buttons Size"
@@ -262,8 +230,8 @@ msgid ""
 "To use custom image, You need to setup permissions to upload directory of "
 "your site - %s"
 msgstr ""
-"Для использования кастомного изображения Вам нужно выдать  права доступа на "
-"папку загрузок на вашем сайте - %s"
+"Чтобы использовать пользовательское изображение Вам нужно выдать права "
+"доступа на папку загрузок на вашем сайте - %s"
 
 #: includes/class-twttr-settings.php:389
 msgid "Current image"
@@ -276,7 +244,7 @@ msgid ""
 "size - %s)."
 msgstr ""
 "Загрузите изображение с параметрами %s, в JPG, JPEG или PNG формате "
-"(максимальній размер файла - %s)."
+"(максимальный размер файла - %s)."
 
 #: includes/class-twttr-settings.php:402
 msgid "Show Follow Button"
@@ -302,9 +270,13 @@ msgstr "Нет"
 msgid "Mention Button"
 msgstr "Кнопка \"Упомянуть\""
 
+#: includes/class-twttr-settings.php:457 twitter.php:343
+msgid "Tweet to"
+msgstr "Упомянуть"
+
 #: includes/class-twttr-settings.php:461
 msgid "Enter username of someone you want to mention."
-msgstr "Введите имя пользователя, кого вы хотите упомянуть."
+msgstr "Введите имя пользователя, которого вы хотите упомянуть."
 
 #: includes/class-twttr-settings.php:461
 #, php-format
@@ -312,7 +284,7 @@ msgid "For example, %s."
 msgstr "Например, %s."
 
 #: includes/class-twttr-settings.php:504
-msgid "Twitter Buttons Shortchode"
+msgid "Twitter Buttons Shortcode"
 msgstr "Шорткод кнопок Twitter"
 
 #: includes/class-twttr-settings.php:507
@@ -340,7 +312,7 @@ msgid ""
 "Please choose the necessary post types (or single pages) where Twitter "
 "buttons will be displayed:"
 msgstr ""
-"Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+"Пожалуйста, выберите те типы записей (или отдельные страницы), на которых "
 "будут отображаться Twitter кнопки:"
 
 #: includes/class-twttr-settings.php:549
@@ -354,6 +326,40 @@ msgstr "Пример дерева страниц сайта"
 #: includes/class-twttr-settings.php:555
 msgid "Example of site pages' tree"
 msgstr "Пример дерева страниц сайта"
+
+#: twitter.php:43
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
+
+#: twitter.php:208
+msgid "Please enable JavaScript in Your browser."
+msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
+
+#: twitter.php:289 twitter.php:293
+msgid "Follow me"
+msgstr "Читать"
+
+#: twitter.php:302
+msgid "TwitterStories"
+msgstr "Твит история"
+
+#: twitter.php:397
+msgid "Please select twitter buttons which will be displayed"
+msgstr "Пожалуйста выберите кнопки твиттера, которые будут отображены"
+
+#: twitter.php:454
+msgid "FAQ"
+msgstr "FAQ"
+
+#: twitter.php:455
+msgid "Support"
+msgstr "Тех. поддержка"
+
+#~ msgid "Uploading Error: check image properties"
+#~ msgstr "Ошибка загрузки: Проверьте опции изображения"
+
+#~ msgid "Error: check image width or height"
+#~ msgstr "Ошибка: Проверьте ширину и высоту изображения"
 
 #~ msgid "Twitter button Settings"
 #~ msgstr "Настройки Twitter"

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-13 16:47+0300\n"
-"PO-Revision-Date: 2017-07-13 16:47+0300\n"
+"POT-Creation-Date: 2018-04-09 17:53+0300\n"
+"PO-Revision-Date: 2018-04-09 17:53+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -13,71 +13,13 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: twitter.php:36 twitter.php:37 twitter.php:190
-#: includes/class-twttr-settings.php:221
-#, fuzzy
-msgid "Twitter Button Settings"
-msgstr "Twitter beállítások"
-
-#: twitter.php:37 twitter.php:423 twitter.php:436
-#: includes/class-twttr-settings.php:24
+#: includes/class-twttr-settings.php:24 twitter.php:37 twitter.php:440
+#: twitter.php:453
 msgid "Settings"
 msgstr "Beállítások"
-
-#: twitter.php:43
-msgid "Upgrade to Pro"
-msgstr ""
-
-#: twitter.php:191
-msgid "Please enable JavaScript in Your browser."
-msgstr ""
-
-#: twitter.php:255 twitter.php:305 twitter.php:309 twitter.php:381
-#: includes/class-twttr-settings.php:230
-msgid "Tweet"
-msgstr ""
-
-#: twitter.php:272 twitter.php:276
-#, fuzzy
-msgid "Follow me"
-msgstr "\"Follow Me\" kép"
-
-#: twitter.php:285
-msgid "TwitterStories"
-msgstr ""
-
-#: twitter.php:326 includes/class-twttr-settings.php:457
-msgid "Tweet to"
-msgstr ""
-
-#: twitter.php:380
-msgid "Please select twitter buttons which will be displayed"
-msgstr ""
-
-#: twitter.php:382 includes/class-twttr-settings.php:232
-#, fuzzy
-msgid "Follow"
-msgstr "\"Follow Me\" kép"
-
-#: twitter.php:383 includes/class-twttr-settings.php:234
-#: includes/class-twttr-settings.php:354 includes/class-twttr-settings.php:415
-msgid "Hashtag"
-msgstr ""
-
-#: twitter.php:384 includes/class-twttr-settings.php:236
-msgid "Mention"
-msgstr ""
-
-#: twitter.php:437
-msgid "FAQ"
-msgstr "Gy.I.K."
-
-#: twitter.php:438
-msgid "Support"
-msgstr "Támogatás"
 
 #: includes/class-twttr-settings.php:26
 msgid "Display"
@@ -110,16 +52,22 @@ msgid "Error: Failed to move file"
 msgstr "Hiba: file mozgatás sikertelen"
 
 #: includes/class-twttr-settings.php:197
-msgid "Error: check image width or height"
-msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
+msgid "Error: Check image width or height"
+msgstr ""
 
 #: includes/class-twttr-settings.php:201
-msgid "Uploading Error: check image properties"
-msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
+msgid "Uploading Error: Check image properties"
+msgstr ""
 
 #: includes/class-twttr-settings.php:209
 msgid "Settings saved"
 msgstr "Beállítások mentve"
+
+#: includes/class-twttr-settings.php:221 twitter.php:36 twitter.php:37
+#: twitter.php:207
+#, fuzzy
+msgid "Twitter Button Settings"
+msgstr "Twitter beállítások"
 
 #: includes/class-twttr-settings.php:224
 msgid "General"
@@ -127,6 +75,25 @@ msgstr ""
 
 #: includes/class-twttr-settings.php:227
 msgid "Buttons"
+msgstr ""
+
+#: includes/class-twttr-settings.php:230 twitter.php:272 twitter.php:322
+#: twitter.php:326 twitter.php:398
+msgid "Tweet"
+msgstr ""
+
+#: includes/class-twttr-settings.php:232 twitter.php:399
+#, fuzzy
+msgid "Follow"
+msgstr "\"Follow Me\" kép"
+
+#: includes/class-twttr-settings.php:234 includes/class-twttr-settings.php:354
+#: includes/class-twttr-settings.php:415 twitter.php:400
+msgid "Hashtag"
+msgstr ""
+
+#: includes/class-twttr-settings.php:236 twitter.php:401
+msgid "Mention"
 msgstr ""
 
 #: includes/class-twttr-settings.php:241
@@ -309,6 +276,10 @@ msgstr ""
 msgid "Mention Button"
 msgstr ""
 
+#: includes/class-twttr-settings.php:457 twitter.php:343
+msgid "Tweet to"
+msgstr ""
+
 #: includes/class-twttr-settings.php:461
 msgid "Enter username of someone you want to mention."
 msgstr ""
@@ -320,7 +291,7 @@ msgstr ""
 
 #: includes/class-twttr-settings.php:504
 #, fuzzy
-msgid "Twitter Buttons Shortchode"
+msgid "Twitter Buttons Shortcode"
 msgstr "A \"Twitter\" ikon helye"
 
 #: includes/class-twttr-settings.php:507
@@ -364,6 +335,41 @@ msgstr "Példa az oldal lap struktúrájának fájára"
 #, fuzzy
 msgid "Example of site pages' tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
+
+#: twitter.php:43
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: twitter.php:208
+msgid "Please enable JavaScript in Your browser."
+msgstr ""
+
+#: twitter.php:289 twitter.php:293
+#, fuzzy
+msgid "Follow me"
+msgstr "\"Follow Me\" kép"
+
+#: twitter.php:302
+msgid "TwitterStories"
+msgstr ""
+
+#: twitter.php:397
+msgid "Please select twitter buttons which will be displayed"
+msgstr ""
+
+#: twitter.php:454
+msgid "FAQ"
+msgstr "Gy.I.K."
+
+#: twitter.php:455
+msgid "Support"
+msgstr "Támogatás"
+
+#~ msgid "Error: check image width or height"
+#~ msgstr "Hiba: ellenőrizze a kép szélességét és magasságát"
+
+#~ msgid "Uploading Error: check image properties"
+#~ msgstr "Feltöltési Hiba: ellenőrizze a kép tulajdonságait"
 
 #, fuzzy
 #~ msgid "Twitter button Settings"

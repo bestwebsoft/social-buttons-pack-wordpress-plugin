@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinterest\n"
-"POT-Creation-Date: 2017-06-30 12:28+0300\n"
-"PO-Revision-Date: 2017-06-30 12:28+0300\n"
+"POT-Creation-Date: 2018-01-15 13:21+0200\n"
+"PO-Revision-Date: 2018-01-15 13:21+0200\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugins@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -17,13 +17,13 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: bws-pinterest.php:35 bws-pinterest.php:36
-#: includes/class-pntrst-settings.php:157
+#: bws-pinterest.php:35 bws-pinterest.php:36 bws-pinterest.php:205
+#: includes/class-pntrst-settings.php:180
 msgid "Pinterest Settings"
 msgstr "Налаштування Pinterest"
 
-#: bws-pinterest.php:36 bws-pinterest.php:187 bws-pinterest.php:732
-#: bws-pinterest.php:749 includes/class-pntrst-settings.php:23
+#: bws-pinterest.php:36 bws-pinterest.php:793 bws-pinterest.php:811
+#: includes/class-pntrst-settings.php:23
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -31,69 +31,69 @@ msgstr "Налаштування"
 msgid "Upgrade to Pro"
 msgstr "Оновитися на Pro"
 
-#: bws-pinterest.php:168
+#: bws-pinterest.php:187
 msgid "Follow me"
 msgstr "Підписатися"
 
-#: bws-pinterest.php:364
+#: bws-pinterest.php:392
 msgid "Pinterest Widget"
 msgstr "Віджет Pinterest"
 
-#: bws-pinterest.php:367
-msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
+#: bws-pinterest.php:395
+msgid "Widget for adding Pinterest Pin, Board, and Profile widgets"
 msgstr "Відображення Pin, Board або Profile віджетів Pinterest"
 
-#: bws-pinterest.php:431
+#: bws-pinterest.php:461
 msgid "Title"
 msgstr "Назва"
 
-#: bws-pinterest.php:436
+#: bws-pinterest.php:466
 msgid "Type"
 msgstr "Тип"
 
-#: bws-pinterest.php:438 bws-pinterest.php:448 bws-pinterest.php:576
+#: bws-pinterest.php:468 bws-pinterest.php:478 bws-pinterest.php:621
 msgid "Pin Widget"
 msgstr "Pin Віджет"
 
-#: bws-pinterest.php:439 bws-pinterest.php:449 bws-pinterest.php:577
+#: bws-pinterest.php:469 bws-pinterest.php:479 bws-pinterest.php:622
 msgid "Board Widget"
 msgstr "Board Віджет"
 
-#: bws-pinterest.php:440 bws-pinterest.php:578
+#: bws-pinterest.php:470 bws-pinterest.php:623
 msgid "Profile Widget"
 msgstr "Profile Віджет"
 
-#: bws-pinterest.php:444 bws-pinterest.php:594
+#: bws-pinterest.php:474 bws-pinterest.php:639
 msgid "URL"
 msgstr "URL"
 
-#: bws-pinterest.php:447
+#: bws-pinterest.php:477
 msgid "Examples"
 msgstr "Приклади"
 
-#: bws-pinterest.php:453 bws-pinterest.php:599
+#: bws-pinterest.php:483 bws-pinterest.php:644
 msgid "Size"
 msgstr "Розмір"
 
-#: bws-pinterest.php:455 bws-pinterest.php:601
-#: includes/class-pntrst-settings.php:269
+#: bws-pinterest.php:485 bws-pinterest.php:646
+#: includes/class-pntrst-settings.php:293
 msgid "Small"
 msgstr "Малий"
 
-#: bws-pinterest.php:456 bws-pinterest.php:602
+#: bws-pinterest.php:486 bws-pinterest.php:647
 msgid "Medium"
 msgstr "Середній"
 
-#: bws-pinterest.php:457 bws-pinterest.php:603
-#: includes/class-pntrst-settings.php:270
+#: bws-pinterest.php:487 bws-pinterest.php:648
+#: includes/class-pntrst-settings.php:294
 msgid "Large"
 msgstr "Великий"
 
-#: bws-pinterest.php:461 bws-pinterest.php:608
+#: bws-pinterest.php:491 bws-pinterest.php:653
 msgid "Width"
 msgstr "Ширина"
 
-#: bws-pinterest.php:465 bws-pinterest.php:481
+#: bws-pinterest.php:495 bws-pinterest.php:511
 #, php-format
 msgid ""
 "Min width%1s. If the widget width field is empty, the thumbnail width will "
@@ -102,60 +102,60 @@ msgstr ""
 "Мін. ширина%1s. Якщо ширина віджета не задана, то ширина мініатюр буде "
 "задана автоматично."
 
-#: bws-pinterest.php:469 bws-pinterest.php:609
+#: bws-pinterest.php:499 bws-pinterest.php:654
 msgid "Height"
 msgstr "Висота"
 
-#: bws-pinterest.php:473
+#: bws-pinterest.php:503
 #, php-format
 msgid "Min height%1s."
 msgstr "Мін. висота%1s."
 
-#: bws-pinterest.php:477 bws-pinterest.php:610
+#: bws-pinterest.php:507 bws-pinterest.php:655
 msgid "Thumbnails width"
 msgstr "Ширина мініатюр"
 
-#: bws-pinterest.php:572
+#: bws-pinterest.php:617
 msgid "Shortcode Type"
 msgstr "Тип шорткоду"
 
-#: bws-pinterest.php:574 includes/class-pntrst-settings.php:286
+#: bws-pinterest.php:619 includes/class-pntrst-settings.php:310
 msgid "Follow Button"
 msgstr "Кнопка \"Підписатися\""
 
-#: bws-pinterest.php:575 includes/class-pntrst-settings.php:221
+#: bws-pinterest.php:620 includes/class-pntrst-settings.php:245
 msgid "Save Button"
 msgstr "Кнопка \"Зберегти\""
 
-#: bws-pinterest.php:582
+#: bws-pinterest.php:627
 msgid "Button label"
 msgstr "Текст кнопки"
 
-#: bws-pinterest.php:586
+#: bws-pinterest.php:631
 msgid "Save any image"
 msgstr "Зберігати будь-яке зображення"
 
-#: bws-pinterest.php:587
+#: bws-pinterest.php:632
 msgid "Save defined image"
 msgstr "Зберігати задане зображення"
 
-#: bws-pinterest.php:588
+#: bws-pinterest.php:633
 msgid "Pin image URL"
 msgstr "URL заданого зображення"
 
-#: bws-pinterest.php:589
+#: bws-pinterest.php:634
 msgid "Custom button image"
 msgstr "Користувацьке зображення кнопки"
 
-#: bws-pinterest.php:590
+#: bws-pinterest.php:635
 msgid "Custom image URL"
 msgstr "URL користувацького зображення"
 
-#: bws-pinterest.php:733
+#: bws-pinterest.php:795
 msgid "FAQ"
 msgstr "FAQ"
 
-#: bws-pinterest.php:734
+#: bws-pinterest.php:796
 msgid "Support"
 msgstr "Підтримка"
 
@@ -175,211 +175,258 @@ msgstr "Користувацький код"
 msgid "License Key"
 msgstr "Ліцензійний ключ"
 
-#: includes/class-pntrst-settings.php:86
+#: includes/class-pntrst-settings.php:67
+msgid ""
+"\"Save\" button location is not selected. The button will be displayed only "
+"via shortcode."
+msgstr ""
+"Не вибрано розташування кнопки \"Зберегти\". Кнопка буде відображатися "
+"тільки по шорткоду."
+
+#: includes/class-pntrst-settings.php:71
+msgid ""
+"\"Follow\" button location is not selected. The button will be displayed "
+"only via shortcode."
+msgstr ""
+"Не вибрано розташування кнопки \"Підписатися\". Кнопка буде відображатися "
+"тільки по шорткоду."
+
+#: includes/class-pntrst-settings.php:111
 msgid ""
 "Please, enter \"Pinterest User ID\" to add Follow Button. Settings are not "
 "saved."
 msgstr ""
-"Будь ласка, введіть \"Pinterest ID профілю\", щоб додати кнопку \"Підписатися"
+"Будь ласка, введіть \"ID профілю Pinterest\", щоб додати кнопку \"Підписатися"
 "\". Налаштування не збережені."
 
-#: includes/class-pntrst-settings.php:112
+#: includes/class-pntrst-settings.php:132
 #, php-format
 msgid "Error: File size %1s"
 msgstr "Помилка: Розмір файлу %1s"
 
-#: includes/class-pntrst-settings.php:115
+#: includes/class-pntrst-settings.php:135
 msgid "Error: Invalid file type"
 msgstr "Помилка: Невірний тип файлу"
 
-#: includes/class-pntrst-settings.php:127
+#: includes/class-pntrst-settings.php:147
 msgid "Error: moving file failed"
 msgstr "Помилка: не вдалося переміщення файлів"
 
-#: includes/class-pntrst-settings.php:133
+#: includes/class-pntrst-settings.php:152
+msgid "Can't find upload directory path. Settings are not saved."
+msgstr "Не знайдений шлях до каталогу завантаження. Налаштування не збережені."
+
+#: includes/class-pntrst-settings.php:155
 msgid "Error: select the upload file"
 msgstr "Помилка: оберіть зображення для завантаження"
 
-#: includes/class-pntrst-settings.php:140
+#: includes/class-pntrst-settings.php:162
 msgid "Settings saved"
 msgstr "Налаштування збережені"
 
-#: includes/class-pntrst-settings.php:160
+#: includes/class-pntrst-settings.php:183
 msgid "General"
 msgstr "Загальне"
 
-#: includes/class-pntrst-settings.php:163
+#: includes/class-pntrst-settings.php:186
 msgid "Pinterest User ID"
-msgstr "Pinterest ID профілю"
+msgstr "ID профілю Pinterest "
 
-#: includes/class-pntrst-settings.php:166
+#: includes/class-pntrst-settings.php:189
 msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
-msgstr "Введіть ваш Pinterest ID профілю. Наприклад, \"bestwebsoft\"."
+msgstr "Введіть ваш ID профілю Pinterest . Наприклад, \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:170
+#: includes/class-pntrst-settings.php:193
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: includes/class-pntrst-settings.php:175
-#: includes/class-pntrst-settings.php:330
+#: includes/class-pntrst-settings.php:198
+#: includes/class-pntrst-settings.php:354
 msgid "Save"
 msgstr "\"Зберегти\""
 
-#: includes/class-pntrst-settings.php:180
-#: includes/class-pntrst-settings.php:334
+#: includes/class-pntrst-settings.php:203
+#: includes/class-pntrst-settings.php:358
 msgid "Follow"
 msgstr "\"Підписатися\""
 
-#: includes/class-pntrst-settings.php:186
+#: includes/class-pntrst-settings.php:209
 msgid "Language"
 msgstr "Мова"
 
-#: includes/class-pntrst-settings.php:197
+#: includes/class-pntrst-settings.php:220
 msgid "Select the default language for Pinterest button(-s)."
-msgstr "Оберіть мову за замовчуванням для кнопок Pinterest."
+msgstr "Оберіть стандартну мову відображення кнопок Pinterest."
 
-#: includes/class-pntrst-settings.php:207
-#: includes/class-pntrst-settings.php:211
-#: includes/class-pntrst-settings.php:215
+#: includes/class-pntrst-settings.php:230
+#: includes/class-pntrst-settings.php:234
+#: includes/class-pntrst-settings.php:238
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
 msgstr ""
-"Включити, щоб перемкнути мову автоматично на багатомовному сайті, "
+"Включіть, щоб перемикати мову автоматично на багатомовному сайті, "
 "використовуючи Multilanguage плагін."
 
-#: includes/class-pntrst-settings.php:211
+#: includes/class-pntrst-settings.php:234
 #, php-format
 msgid "Activate %s"
 msgstr "Активувати %s"
 
-#: includes/class-pntrst-settings.php:215
+#: includes/class-pntrst-settings.php:238
 msgid "Learn More"
 msgstr "Докладніше"
 
-#: includes/class-pntrst-settings.php:224
-#: includes/class-pntrst-settings.php:296
+#: includes/class-pntrst-settings.php:248
+#: includes/class-pntrst-settings.php:320
 msgid "Button Position"
 msgstr "Розташування кнопки"
 
-#: includes/class-pntrst-settings.php:227
-#: includes/class-pntrst-settings.php:299
+#: includes/class-pntrst-settings.php:251
+#: includes/class-pntrst-settings.php:323
 msgid "Before content"
 msgstr "До контенту"
 
-#: includes/class-pntrst-settings.php:228
-#: includes/class-pntrst-settings.php:300
+#: includes/class-pntrst-settings.php:252
+#: includes/class-pntrst-settings.php:324
 msgid "After content"
 msgstr "Після контенту"
 
-#: includes/class-pntrst-settings.php:229
+#: includes/class-pntrst-settings.php:253
 msgid "On image hover"
 msgstr "При наведенні на зображення"
 
-#: includes/class-pntrst-settings.php:234
+#: includes/class-pntrst-settings.php:258
 msgid "Button Image"
 msgstr "Зображення кнопки"
 
-#: includes/class-pntrst-settings.php:237
+#: includes/class-pntrst-settings.php:261
 msgid "Default"
 msgstr "Стандартне"
 
-#: includes/class-pntrst-settings.php:238
+#: includes/class-pntrst-settings.php:262
 msgid "Custom"
 msgstr "Користувацьке"
 
-#: includes/class-pntrst-settings.php:243
+#: includes/class-pntrst-settings.php:267
 #, php-format
 msgid "Max image size: %1s. Allowed file extensions: %2s"
 msgstr "Макс. розмір зображення: %1s. Дозволені типи зображення: %2s"
 
-#: includes/class-pntrst-settings.php:250
+#: includes/class-pntrst-settings.php:274
 msgid "Current custom image"
 msgstr "Поточне користувацьке зображення"
 
-#: includes/class-pntrst-settings.php:257
+#: includes/class-pntrst-settings.php:281
 msgid "Button Shape"
 msgstr "Форма кнопки"
 
-#: includes/class-pntrst-settings.php:260
+#: includes/class-pntrst-settings.php:284
 msgid "Square"
 msgstr "Квадратна"
 
-#: includes/class-pntrst-settings.php:261
+#: includes/class-pntrst-settings.php:285
 msgid "Round"
 msgstr "Кругла"
 
-#: includes/class-pntrst-settings.php:266
+#: includes/class-pntrst-settings.php:290
 msgid "Button Size"
 msgstr "Розмір кнопки"
 
-#: includes/class-pntrst-settings.php:275
+#: includes/class-pntrst-settings.php:299
 msgid "Show Pin Count"
 msgstr "Відображати кількість збережень"
 
-#: includes/class-pntrst-settings.php:278
+#: includes/class-pntrst-settings.php:302
 msgid "Not shown"
 msgstr "Не показувати"
 
-#: includes/class-pntrst-settings.php:279
+#: includes/class-pntrst-settings.php:303
 msgid "Above the button"
 msgstr "Над кнопкою"
 
-#: includes/class-pntrst-settings.php:280
+#: includes/class-pntrst-settings.php:304
 msgid "Beside the button"
 msgstr "Поряд з кнопкою"
 
-#: includes/class-pntrst-settings.php:289
+#: includes/class-pntrst-settings.php:313
 msgid "Full Name"
 msgstr "Ім'я профілю"
 
-#: includes/class-pntrst-settings.php:292
+#: includes/class-pntrst-settings.php:316
 msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
 msgstr "Введіть ім'я вашого профілю Pinterest. Наприклад, \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:324
+#: includes/class-pntrst-settings.php:348
 msgid "Pinterest Buttons Shortcode"
 msgstr "Шорткод кнопок Pinterest"
 
-#: includes/class-pntrst-settings.php:327
+#: includes/class-pntrst-settings.php:351
 msgid "Add Pinterest to a widget."
 msgstr "Додайте Pinterest в віджет."
 
-#: includes/class-pntrst-settings.php:327
+#: includes/class-pntrst-settings.php:351
 msgid "Navigate to Widgets"
 msgstr "Перейти до Віджетів"
 
-#: includes/class-pntrst-settings.php:328
+#: includes/class-pntrst-settings.php:352
 msgid ""
-"Add a Pinterest button(-s) to your posts, pages or custom post types by "
-"using the following shortcode:"
+"Add Pinterest button(-s) to your posts, pages or custom post types using the "
+"following shortcode:"
 msgstr ""
 "Додати кнопки Pinterest на ваші записи, сторінки, користувацькі типи записів "
 "за допомогою даного шорткода:"
 
-#: includes/class-pntrst-settings.php:345
+#: includes/class-pntrst-settings.php:369
 msgid "Display Settings"
 msgstr "Налаштування відображення"
 
-#: includes/class-pntrst-settings.php:354
+#: includes/class-pntrst-settings.php:378
 msgid ""
 "Please choose the necessary post types (or single pages) where Pinterest "
 "buttons will be displayed:"
 msgstr ""
-"Будь ласка, оберіть необхідні типи постів (чи сторінок), де будуть "
+"Будь ласка, оберіть необхідні типи записів (чи сторінок), де будуть "
 "відображатися Pinterest кнопки:"
 
-#: includes/class-pntrst-settings.php:361
+#: includes/class-pntrst-settings.php:385
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: includes/class-pntrst-settings.php:367
+#: includes/class-pntrst-settings.php:391
 msgid "Example of the site's pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: includes/class-pntrst-settings.php:367
-msgid "Example of site pages' tree"
-msgstr "Приклад дерева сторінок сайту"
+#~ msgid ""
+#~ "The location of the \"Save\" button is not selected. Your changes have "
+#~ "not been saved."
+#~ msgstr ""
+#~ "Не вибрано розташування кнопки \"Зберегти\". Зміни не були збережені."
+
+#~ msgid ""
+#~ "The location of the \"Follow\" button is not selected. Your changes have "
+#~ "not been saved."
+#~ msgstr ""
+#~ "Не вибрано розташування кнопки \"Підписатися\". Зміни не були збережені."
+
+#~ msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
+#~ msgstr "Відображення Pin, Board або Profile віджетів Pinterest"
+
+#~ msgid ""
+#~ "Add a Pinterest button(-s) to your posts, pages or custom post types by "
+#~ "using the following shortcode:"
+#~ msgstr ""
+#~ "Додати кнопки Pinterest на ваші записи, сторінки, користувацькі типи "
+#~ "записів за допомогою даного шорткода:"
+
+#~ msgid "Example of site pages' tree"
+#~ msgstr "Приклад дерева сторінок сайту"
+
+#~ msgid "Save Changes"
+#~ msgstr "Зберегти зміни"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Відновлено стандартні налаштування плагіну."
 
 #~ msgid ""
 #~ "Please, enter \"Pinterest User URL\" to add Follow Button. Settings are "
@@ -427,9 +474,6 @@ msgstr "Приклад дерева сторінок сайту"
 
 #~ msgid "Min width%1s. If emtpy width: auto"
 #~ msgstr "Мін. ширина%1s. Якщо порожне -авто."
-
-#~ msgid "All plugin settings were restored."
-#~ msgstr "Відновлено стандартні налаштування плагіну."
 
 #~ msgid "How to Use Step-by-step Instruction"
 #~ msgstr "Iнструкцiя з використання"
@@ -499,9 +543,6 @@ msgstr "Приклад дерева сторінок сайту"
 
 #~ msgid "Follow Button label"
 #~ msgstr "Текст кнопки Follow"
-
-#~ msgid "Save Changes"
-#~ msgstr "Зберегти зміни"
 
 #~ msgid "If you upgrade to Pro version all your settings will be saved."
 #~ msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."

@@ -48,24 +48,6 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 
 		if ( ! isset( $twttr_options['plugin_option_version'] ) || $twttr_options['plugin_option_version'] != $twttr_plugin_info["Version"] || $twttr_options['plugin_option_version'] != $sclbttns_plugin_info["Version"] ) {
 			$options_default = twttr_get_options_default();
-			/**
-			* @since 2.54
-			* @todo remove after 11.02.2018
-			*/
-			if ( ! is_array( $twttr_options['position'] ) ) {
-				switch ( $twttr_options['position'] ) {
-					case 'shortcode':
-						$twttr_options['position'] = array();
-						break;
-					case 'after_and_before':
-						$twttr_options['position'] = array( 'before', 'after' );
-						break;
-					default:
-						$twttr_options['position'] = array( $twttr_options['position'] );
-						break;
-				}
-			}
-			/* end @todo */
 
 			$twttr_options = array_merge( $options_default, $twttr_options );
 			$twttr_options['plugin_option_version'] = $twttr_plugin_info["Version"];

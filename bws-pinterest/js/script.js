@@ -1,7 +1,7 @@
 /*
  * Scripts for BWS Pinterest plugin.
  */
-(function($){
+(function( $ ) {
 	/*
 	 * Function for enable/disable fields in admin plugin options page.
 	 */
@@ -9,15 +9,15 @@
 		/* Check state of radio buttons for custom image and enable/disable file input. */
 		if ( $( "#pntrst_image_custom" ).length > 0 ) {
 			if ( $( "#pntrst_image_custom" ).is( ':checked' ) ) {
-				$("#pntrst-custom-image").prop( "disabled", false );
+				$( "#pntrst-custom-image" ).prop( "disabled", false );
 			} else if ( $( "#pntrst_image_default" ).is( ':checked' ) ) {
 				$( "#pntrst-custom-image" ).prop( "disabled", true );
 			}
 
-			$( "#pntrst_image_custom" ).click( function() {
+			$( "#pntrst_image_custom" ).click(function() {
 				$( "#pntrst-custom-image" ).attr( "disabled", false );
 			});
-			$( "#pntrst_image_default" ).click( function() {
+			$( "#pntrst_image_default" ).click(function() {
 				$( "#pntrst-custom-image" ).attr( "disabled", true );
 			});
 		}
@@ -77,7 +77,7 @@
 			var optionField1 = $( this ).find( ".pntrst-pin-widget-size" );
 			var optionField2 = $( this ).find( ".pntrst-widget-size" );
 			var optionField3 = $( this ).find( ".pntrst-widget-url" );
-			$( this ).find( "select[id*='-pntrst_widget_type']" ).each(function () {
+			$( this ).find( "select[id*='-pntrst_widget_type']" ).each(function() {
 				$( this ).change(function() {
 					if ( 'embedPin' == $( this ).val() ) {
 						optionField1.show();
@@ -97,7 +97,7 @@
 		});
 	}
 
-	$(document).ready(function() {
+	$( document ).ready(function() {
 		/* Show/Hide options in plugin settings*/
 		function pntrst_save() {
 			if ( $( 'input[name="pntrst_save"]' ).is( ':checked' ) ) {
@@ -116,12 +116,12 @@
 		}
 
 		pntrst_save();
-		$( 'input[name="pntrst_save"]' ).change( function() {
+		$( 'input[name="pntrst_save"]' ).change(function() {
 			pntrst_save();
 		} );
 
 		pntrst_follow();
-		$( 'input[name="pntrst_follow"]' ).change( function() {
+		$( 'input[name="pntrst_follow"]' ).change(function() {
 			pntrst_follow();
 		} );
 
@@ -129,9 +129,9 @@
 			dynamicWidgetOptions();
 		});
 
-		$(window).load(function() {
+		$( window ).load(function() {
 			dynamicButtonOptions();
 			dynamicWidgetOptions();
 		});
 	});
-})(jQuery);
+})( jQuery );

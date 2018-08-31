@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-10 12:20+0300\n"
-"PO-Revision-Date: 2017-07-10 12:20+0300\n"
-"Last-Translator: Mik013 <n0lim.it>\n"
+"POT-Creation-Date: 2018-01-26 07:39-0500\n"
+"PO-Revision-Date: 2018-04-20 18:33+0300\n"
+"Last-Translator: Mik013\n"
 "Language-Team: Mik013\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
@@ -17,306 +17,322 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: facebook-button-plugin.php:35 facebook-button-plugin.php:36
-#: facebook-button-plugin.php:176 includes/class-fcbkbttn-settings.php:181
+#: facebook-button-plugin.php:36 facebook-button-plugin.php:37
+#: facebook-button-plugin.php:207 includes/class-fcbkbttn-settings.php:179
 msgid "Facebook Button Settings"
 msgstr "Nastavení tlačítka Facebook"
 
-#: facebook-button-plugin.php:36 facebook-button-plugin.php:382
-#: facebook-button-plugin.php:396 includes/class-fcbkbttn-settings.php:23
+#: facebook-button-plugin.php:37 facebook-button-plugin.php:423
+#: facebook-button-plugin.php:437 includes/class-fcbkbttn-settings.php:23
 msgid "Settings"
 msgstr "Nastavení"
 
 #: facebook-button-plugin.php:42
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Aktualizovat na Pro"
 
-#: facebook-button-plugin.php:177
-msgid "Please, enable JavaScript in Your browser."
+#: facebook-button-plugin.php:208
+msgid "Please, enable JavaScript in your browser."
 msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."
 
-#: facebook-button-plugin.php:275
+#: facebook-button-plugin.php:310
 msgid "Add Facebook buttons to your page or post"
 msgstr "Přidat Facebook tlačítka na vaši stránku nebo příspěvek"
 
-#: facebook-button-plugin.php:397
+#: facebook-button-plugin.php:439
 msgid "FAQ"
-msgstr "Často kladené otázky (FAQ)"
+msgstr ""
+"Časté dotazy <acronym title=\"Frequently asked questions\">(FAQ)</acronym>"
 
-#: facebook-button-plugin.php:398
+#: facebook-button-plugin.php:440
 msgid "Support"
 msgstr "Podpora"
 
-#: includes/class-fcbkbttn-settings.php:25
+#: includes/class-fcbkbttn-settings.php:24
 msgid "Display"
-msgstr ""
+msgstr "Zobrazit"
+
+#: includes/class-fcbkbttn-settings.php:25
+msgid "Misc"
+msgstr "Různé"
+
+#: includes/class-fcbkbttn-settings.php:26
+msgid "Custom Code"
+msgstr "Vlastní kód"
 
 #: includes/class-fcbkbttn-settings.php:27
-msgid "Misc"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:28
-msgid "Custom Code"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:30
 msgid "License Key"
-msgstr ""
+msgstr "Licenční klíč"
 
-#: includes/class-fcbkbttn-settings.php:107
+#: includes/class-fcbkbttn-settings.php:103
 msgid "Settings saved"
 msgstr "Nastavení uloženo"
 
-#: includes/class-fcbkbttn-settings.php:136
+#: includes/class-fcbkbttn-settings.php:132
 msgid "Error: File size must not exceed 32KB"
-msgstr ""
+msgstr "Chyba: Velikost souboru nesmí přesáhnout 32KB"
 
-#: includes/class-fcbkbttn-settings.php:139
+#: includes/class-fcbkbttn-settings.php:135
 msgid "Error: Invalid file type"
 msgstr "Chyba: Neplatný typ souboru"
 
-#: includes/class-fcbkbttn-settings.php:145
+#: includes/class-fcbkbttn-settings.php:141
 msgid "Upload successful."
 msgstr "Úspěšně nahráno."
 
-#: includes/class-fcbkbttn-settings.php:153
-msgid "Error: failed to move file."
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:149
+msgid "Error: Failed to move file."
+msgstr "Chyba: Soubor se nepodařilo přesunout."
+
+#: includes/class-fcbkbttn-settings.php:152
+msgid "Error: Check image width or height."
+msgstr "Chyba: zkontrolujte šířku nebo výšku obrázku."
 
 #: includes/class-fcbkbttn-settings.php:156
-msgid "Error: check image width or height."
-msgstr ""
+msgid "Uploading Error: Check image properties"
+msgstr "Chyba nahrávání: zkontrolujte vlastnosti obrázku"
 
-#: includes/class-fcbkbttn-settings.php:160
-msgid "Uploading Error: check image properties"
-msgstr "Chyba nahrávání: zkontrolujte vlastnosti obrazu"
-
-#: includes/class-fcbkbttn-settings.php:184
+#: includes/class-fcbkbttn-settings.php:182
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
-#: includes/class-fcbkbttn-settings.php:187
+#: includes/class-fcbkbttn-settings.php:185
 msgid "Buttons"
-msgstr ""
+msgstr "Tlačítka"
 
-#: includes/class-fcbkbttn-settings.php:190
+#: includes/class-fcbkbttn-settings.php:188
 msgid "Profile URL"
-msgstr ""
+msgstr "URL profilu"
 
-#: includes/class-fcbkbttn-settings.php:191
-#: includes/class-fcbkbttn-settings.php:386
+#: includes/class-fcbkbttn-settings.php:189
+#: includes/class-fcbkbttn-settings.php:401
 msgid "Like"
 msgstr "To se mi líbí"
 
-#: includes/class-fcbkbttn-settings.php:192
+#: includes/class-fcbkbttn-settings.php:190
 msgid "Share"
 msgstr "Sdílet"
 
-#: includes/class-fcbkbttn-settings.php:197
+#: includes/class-fcbkbttn-settings.php:195
 msgid "Buttons Size"
-msgstr ""
+msgstr "Velikost tlačítek"
 
-#: includes/class-fcbkbttn-settings.php:200
+#: includes/class-fcbkbttn-settings.php:198
 msgid "Small"
-msgstr ""
+msgstr "Malá"
 
-#: includes/class-fcbkbttn-settings.php:201
+#: includes/class-fcbkbttn-settings.php:199
 msgid "Large"
-msgstr ""
+msgstr "Velká"
 
-#: includes/class-fcbkbttn-settings.php:206
+#: includes/class-fcbkbttn-settings.php:204
 msgid "Buttons Position"
-msgstr ""
+msgstr "Umístění tlačítek"
 
-#: includes/class-fcbkbttn-settings.php:211
+#: includes/class-fcbkbttn-settings.php:209
 msgid "Before content"
-msgstr ""
+msgstr "Před obsahem"
 
-#: includes/class-fcbkbttn-settings.php:216
+#: includes/class-fcbkbttn-settings.php:214
 msgid "After content"
-msgstr ""
+msgstr "Za obsahem"
 
-#: includes/class-fcbkbttn-settings.php:222
+#: includes/class-fcbkbttn-settings.php:220
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
-#: includes/class-fcbkbttn-settings.php:233
+#: includes/class-fcbkbttn-settings.php:231
 msgid "Select the default language for Facebook button(-s)."
-msgstr ""
+msgstr "Vyberte výchozí jazyk pro Facebook tlačítko/a."
 
-#: includes/class-fcbkbttn-settings.php:242
-#: includes/class-fcbkbttn-settings.php:245
-#: includes/class-fcbkbttn-settings.php:249
+#: includes/class-fcbkbttn-settings.php:240
+#: includes/class-fcbkbttn-settings.php:243
+#: includes/class-fcbkbttn-settings.php:247
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
 msgstr ""
+"Povolit automatické přepnutí jazyka na vícejazyčných webech s pluginem "
+"Multilanguage."
 
-#: includes/class-fcbkbttn-settings.php:245
-#, php-format
-msgid "Activate %s"
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:243
+msgid "Activate"
+msgstr "Aktivovat"
 
-#: includes/class-fcbkbttn-settings.php:249
-msgid "Learn More"
-msgstr "Více informací"
+#: includes/class-fcbkbttn-settings.php:247
+msgid "Install Now"
+msgstr "Instalovat nyní"
+
+#: includes/class-fcbkbttn-settings.php:252
+msgid "Excerpt"
+msgstr "Stručný obsah"
 
 #: includes/class-fcbkbttn-settings.php:254
-msgid "Excerpt"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:256
 msgid "Enable to display buttons in excerpt."
-msgstr ""
+msgstr "Zobrazit tlačítka ve stručném obsahu."
 
-#: includes/class-fcbkbttn-settings.php:265
-#: includes/class-fcbkbttn-settings.php:441
-#: includes/class-fcbkbttn-settings.php:496
+#: includes/class-fcbkbttn-settings.php:262
+#: includes/class-fcbkbttn-settings.php:455
+#: includes/class-fcbkbttn-settings.php:509
 msgid "Close"
 msgstr "Zavřít"
 
-#: includes/class-fcbkbttn-settings.php:269
+#: includes/class-fcbkbttn-settings.php:266
 msgid "Meta Image"
-msgstr ""
+msgstr "Meta obrázek"
 
-#: includes/class-fcbkbttn-settings.php:274
+#: includes/class-fcbkbttn-settings.php:271
 msgid "Featured Image"
 msgstr "Vybraný obrázek"
 
-#: includes/class-fcbkbttn-settings.php:278
+#: includes/class-fcbkbttn-settings.php:275
 msgid "Custom Image"
 msgstr "Vlastní obrázek"
 
-#: includes/class-fcbkbttn-settings.php:278
+#: includes/class-fcbkbttn-settings.php:275
 msgid "This image will be used for all posts"
-msgstr ""
+msgstr "Tento obrázek bude použit pro všechny příspěvky"
 
-#: includes/class-fcbkbttn-settings.php:285
+#: includes/class-fcbkbttn-settings.php:282
 msgid "Meta Description"
-msgstr ""
+msgstr "Meta popis"
 
-#: includes/class-fcbkbttn-settings.php:289
+#: includes/class-fcbkbttn-settings.php:286
 msgid ""
 "This description will be used for all pages and posts. Leave blank to use "
 "page description."
 msgstr ""
+"Tento popis bude použit pro všechny stránky a příspěvky. Ponechte nevyplněné "
+"pro použití původního popisu stránky."
 
-#: includes/class-fcbkbttn-settings.php:298
+#: includes/class-fcbkbttn-settings.php:294
 msgid "Profile URL Button"
-msgstr ""
+msgstr "Tlačítko URL profilu"
 
-#: includes/class-fcbkbttn-settings.php:301
+#: includes/class-fcbkbttn-settings.php:297
 msgid "Facebook ID or Username"
-msgstr ""
+msgstr "Facebook ID nebo uživatelské jméno"
 
-#: includes/class-fcbkbttn-settings.php:308
+#: includes/class-fcbkbttn-settings.php:304
 msgid "Profile Button Image"
-msgstr ""
+msgstr "Obrázek tlačítka profilu"
 
-#: includes/class-fcbkbttn-settings.php:315
+#: includes/class-fcbkbttn-settings.php:311
 msgid "Default"
-msgstr ""
+msgstr "Výchozí"
+
+#: includes/class-fcbkbttn-settings.php:316
+msgid "Custom image"
+msgstr "Vlastní obrázek"
 
 #: includes/class-fcbkbttn-settings.php:320
-msgid "Custom image"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:324
 msgid ""
 "To use custom image, You need to setup permissions for upload directory of "
 "your site"
 msgstr ""
+"Chcete-li použít vlastní obrázek, je nutné nastavit oprávnění ke složce "
+"Upload na vašem webu"
 
-#: includes/class-fcbkbttn-settings.php:331
+#: includes/class-fcbkbttn-settings.php:327
 msgid "Current image"
 msgstr "Aktuální obrázek"
 
-#: includes/class-fcbkbttn-settings.php:339
+#: includes/class-fcbkbttn-settings.php:335
 msgid ""
-"Image requirements: max image width:100px; max image height:40px; max image "
-"size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
+"Image requirements: max image width: 100px; max image height: 40px; max "
+"image size: 32Kb; image types: \"jpg\", \"jpeg\", \"png\"."
 msgstr ""
+"Požadavky obrázku: maximální šířka:100px; maximální výška:40px; maximální "
+"velikost:32Kb; typy obrázků: „jpg“, „jpeg“, „png“."
 
-#: includes/class-fcbkbttn-settings.php:343
+#: includes/class-fcbkbttn-settings.php:339
 msgid "Like&Share Buttons"
-msgstr ""
+msgstr "Tlačítka To se mi líbí a Sdílet"
 
-#: includes/class-fcbkbttn-settings.php:346
-msgid "Layout"
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:342
+msgid "Like Button Layout"
+msgstr "Vzhled tlačítka To se mi líbí"
 
-#: includes/class-fcbkbttn-settings.php:381
+#: includes/class-fcbkbttn-settings.php:365
+msgid "Share Button Layout"
+msgstr "Vzhled tlačítka Sdílet"
+
+#: includes/class-fcbkbttn-settings.php:396
 msgid "Like Button Action"
-msgstr ""
+msgstr "Akce tlačítka To se mi líbí"
 
-#: includes/class-fcbkbttn-settings.php:391
+#: includes/class-fcbkbttn-settings.php:406
 msgid "Recommend"
 msgstr "Doporučit"
 
-#: includes/class-fcbkbttn-settings.php:397
+#: includes/class-fcbkbttn-settings.php:412
 msgid "Friends Faces"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:400
-msgid " Enable to show faces of your friends who submitted the button."
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:404
-msgid "Layout Width"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:406
-msgid "px"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:410
-msgid "Theme"
-msgstr ""
+msgstr "Profilové foto přátel"
 
 #: includes/class-fcbkbttn-settings.php:415
+msgid "Enable to show faces of your friends who submitted the button."
+msgstr ""
+"Zapnout zobrazování profilové fotky vašich přátel, kteří kliknuli na "
+"tlačítko."
+
+#: includes/class-fcbkbttn-settings.php:419
+msgid "Layout Width"
+msgstr "Šířka layoutu"
+
+#: includes/class-fcbkbttn-settings.php:421
+msgid "px"
+msgstr "px"
+
+#: includes/class-fcbkbttn-settings.php:425
+msgid "Theme"
+msgstr "Šablona"
+
+#: includes/class-fcbkbttn-settings.php:430
 msgid "Light"
 msgstr "Světlé"
 
-#: includes/class-fcbkbttn-settings.php:420
+#: includes/class-fcbkbttn-settings.php:435
 msgid "Dark"
 msgstr "Tmavé"
 
-#: includes/class-fcbkbttn-settings.php:426
+#: includes/class-fcbkbttn-settings.php:441
 msgid "Like Button HTML Tag"
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:432
-#, php-format
-msgid "Tag %s can be used to improve website code validation."
-msgstr ""
-
-#: includes/class-fcbkbttn-settings.php:445
-msgid "URL to Like"
-msgstr ""
+msgstr "HTML tag pro tlačítko To se mi líbí"
 
 #: includes/class-fcbkbttn-settings.php:447
-msgid "Leave blank to use a current page."
-msgstr ""
+#, php-format
+msgid "Tag %s can be used to improve website code validation."
+msgstr "Ke zlepšení ověření kódu webové stránky lze použít štítek %s."
 
-#: includes/class-fcbkbttn-settings.php:475
-msgid "Facebook Buttons Shortcode"
-msgstr ""
+#: includes/class-fcbkbttn-settings.php:459
+msgid "URL to Like"
+msgstr "URL pro To se mi líbí"
 
-#: includes/class-fcbkbttn-settings.php:478
+#: includes/class-fcbkbttn-settings.php:461
+msgid "Leave blank to use current page URL."
+msgstr "Ponechte nevyplněné pro použití URL adresy aktuální stránky."
+
+#: includes/class-fcbkbttn-settings.php:488
+msgid "Facebook Button Shortcode"
+msgstr "Zkrácený kód Facebook tlačítek"
+
+#: includes/class-fcbkbttn-settings.php:491
 msgid ""
 "Add Facebook button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
 msgstr ""
+"Přidat Facebook tlačítko/a do příspěvků, stránek, vlastních typů příspěvků "
+"nebo widgetů pomocí následujícího zkráceného kódu:"
 
-#: includes/class-fcbkbttn-settings.php:497
+#: includes/class-fcbkbttn-settings.php:510
 msgid "Facebook Buttons Preview"
-msgstr ""
+msgstr "Náhled Facebook tlačítek"
 
-#: includes/class-fcbkbttn-settings.php:512
+#: includes/class-fcbkbttn-settings.php:524
 msgid "Display Settings"
-msgstr ""
+msgstr "Nastavení zobrazení"
 
-#: includes/class-fcbkbttn-settings.php:521
+#: includes/class-fcbkbttn-settings.php:533
 msgid ""
 "Please choose the necessary post types (or single pages) where Facebook "
 "button will be displayed:"
@@ -324,191 +340,10 @@ msgstr ""
 "Prosím, vyberte požadované typy příspěvků (nebo jednotlivé stránky), kde "
 "budou zobrazeno tlačítko Facebook:"
 
-#: includes/class-fcbkbttn-settings.php:528
+#: includes/class-fcbkbttn-settings.php:540
 msgid "Show URL for pages"
 msgstr "Zobrazit URL pro stránky"
 
-#: includes/class-fcbkbttn-settings.php:534
+#: includes/class-fcbkbttn-settings.php:546
 msgid "Example of site pages tree"
-msgstr ""
-
-#~ msgid "Error: File size > 32K"
-#~ msgstr "Chyba: Velikost souboru > 32K"
-
-#~ msgid "Example of the site's pages tree"
-#~ msgstr "Příklad stromu webu"
-
-#~ msgid "Example of site pages' tree"
-#~ msgstr "Example of site pages' tree"
-
-#~ msgid "Error: moving file failed"
-#~ msgstr "Chyba: přesun souboru se nezdařil"
-
-#~ msgid "Error: check image width or height"
-#~ msgstr "Chyba: zkontrolujte šířku nebo výšku obrázku"
-
-#~ msgid "All plugin settings were restored."
-#~ msgstr "Byla obnovena všechna nastavení pluginu."
-
-#~ msgid "How to Use Step-by-step Instruction"
-#~ msgstr "Instrukce jak používat krok-za-krokem"
-
-#~ msgid "Extra settings"
-#~ msgstr "Další nastavení"
-
-#~ msgid "Custom code"
-#~ msgstr "Vlastní kód"
-
-#~ msgid "Go PRO"
-#~ msgstr "Přejít na PRO"
-
-#~ msgid ""
-#~ "If you would like to add Facebook buttons to your page or post, please "
-#~ "use %s button"
-#~ msgstr ""
-#~ "Pokud chcete přidat Facebook tlačítka na vaši stránku nebo příspěvek, "
-#~ "použijte tlačítko %s"
-
-#~ msgid ""
-#~ "You can add Facebook buttons to your page or post by clicking on %s "
-#~ "button in the content edit block using the Visual mode. If the button "
-#~ "isn't displayed, please use the shortcode %s"
-#~ msgstr ""
-#~ "Můžete přidat Facebook tlačítka na vaši stránku nebo příspěvek kliknutím "
-#~ "na tlačítko %s v bloku úprav obsahu pomocí Visual režimu. Pokud tlačítko "
-#~ "není zobrazeno, použijte zkrácený kód  %s"
-
-#~ msgid "Display button"
-#~ msgstr "Zobrazit tlačítko"
-
-#~ msgid "My Page"
-#~ msgstr "Moje stránka"
-
-#~ msgid "Facebook buttons position"
-#~ msgstr "Umístění Facebook tlačítka"
-
-#~ msgid "Before"
-#~ msgstr "Před"
-
-#~ msgid "After"
-#~ msgstr "Po"
-
-#~ msgid "Before and After"
-#~ msgstr "Před a Po"
-
-#~ msgid "Shortcode"
-#~ msgstr "Zkrácený kód"
-
-#~ msgid "Facebook buttons language"
-#~ msgstr "Jazyk Facebook tlačítek"
-
-#~ msgid "Change the language of Facebook Button"
-#~ msgstr "Změnit jazyk Facebook tlačítka"
-
-#~ msgid "Use the current site language"
-#~ msgstr "Použít aktuální jazyk webu"
-
-#~ msgid "Using"
-#~ msgstr "Použití"
-
-#~ msgid "Activate"
-#~ msgstr "Aktivovat"
-
-#~ msgid "Download"
-#~ msgstr "Stáhnout"
-
-#~ msgid "Display buttons in excerpt"
-#~ msgstr "Zobrazit tlačítka ve stručném obsahu"
-
-#~ msgid "Meta tags"
-#~ msgstr "Meta tagy"
-
-#~ msgid "Image"
-#~ msgstr "Obrázek"
-
-#~ msgid "This image will be used for all of the posts"
-#~ msgstr "Tento obrázek bude použit pro všechny příspěvky"
-
-#~ msgid "Description"
-#~ msgstr "Popis"
-
-#~ msgid "Post excerpt"
-#~ msgstr "Stručný obsah příspěvku"
-
-#~ msgid "This description will be used for all of the posts"
-#~ msgstr "Tento popis bude použit pro všechny příspěvky"
-
-#~ msgid "If you upgrade to Pro version all your settings will be saved."
-#~ msgstr ""
-#~ "Pokud upgradujete na verzi Pro budou všechna vaše nastavení  uložena."
-
-#~ msgid "Unlock premium options by upgrading to Pro version"
-#~ msgstr "Odemknout prémiové možnosti upgradem na Pro verzi"
-
-#~ msgid "Your Facebook ID or username"
-#~ msgstr "Vaše Facebook ID nebo uživatelské jméno"
-
-#~ msgid "\"My page\" button image"
-#~ msgstr "\"Moje stránka\" obrázek tlačítka"
-
-#~ msgid "Standard Facebook image"
-#~ msgstr "Standardní Facebook obrázek"
-
-#~ msgid "Custom Facebook image"
-#~ msgstr "Vlastní Facebook obrázek"
-
-#~ msgid ""
-#~ "To use custom image you need to setup permissions to upload directory of "
-#~ "your site"
-#~ msgstr ""
-#~ "Chcete-li použít vlastní obrázek, je nutné nastavit oprávnění k nahrávání "
-#~ "složek na vašem webu"
-
-#~ msgid ""
-#~ "Image properties: max image width:100px; max image height:40px; max image "
-#~ "size:32Kb; image types:\"jpg\", \"jpeg\", \"png\"."
-#~ msgstr ""
-#~ "Vlastnosti obrazu: max šířka obrázku: 100px; max výška obrázku: 40px; "
-#~ "Maximální velikost obrazu: 32 Kb; typy obrázků: \"JPG\", \"JPEG\", \"png"
-#~ "\"."
-
-#~ msgid "Button layout"
-#~ msgstr "Rozložení tlačítek"
-
-#~ msgid "Like button action"
-#~ msgstr "Akce tlačítka To se mi líbí"
-
-#~ msgid "Show faces"
-#~ msgstr "Ukázat tváře"
-
-#~ msgid "Layout width"
-#~ msgstr "Šířka layoutu"
-
-#~ msgid "Color scheme"
-#~ msgstr "Barevné schéma"
-
-#~ msgid "Html tag for \"Like\" button"
-#~ msgstr "HTML tag pro tlačítko \"To se mi líbí\""
-
-#~ msgid "Use this tag to improve validation of your site"
-#~ msgstr "Použijte tento tag s cílem zlepšit validitu vašeho webu"
-
-#~ msgid "\"Like\" for an entire site on every page:"
-#~ msgstr "\"To se mi líbí\" pro celý web na každé stránce:"
-
-#~ msgid ""
-#~ "Notice: \"Like for the entire site\" option does not create an extra "
-#~ "button. This option merely allows your users to like the entire website "
-#~ "when this option is enabled, or a single post when this option is "
-#~ "disabled, when clicking the regular \"Like\" button."
-#~ msgstr ""
-#~ "Upozornění: Volba \"To se mi líbí\" nevytváří tlačítko navíc. Tato "
-#~ "možnost pouze umožňuje uživatelům mít rád celý web, pokud je tato volba "
-#~ "zapnuta, nebo na konkrétní příspěvek, pokud je tato volba vypnutá, při "
-#~ "kliknutí na klasické \"To se mi líbí\" tlačítko."
-
-#~ msgid "Save Changes"
-#~ msgstr "Uložit změny"
-
-#~ msgid "Facebook Button preview:"
-#~ msgstr "Náhled tlačítka Facebook:"
+msgstr "Příklad stromu stránek webu"

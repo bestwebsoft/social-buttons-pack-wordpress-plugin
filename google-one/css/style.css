@@ -10,7 +10,7 @@
 .gglplsn_share {
 	margin-right: 5px;
 	display: inline-block;
-    vertical-align: bottom;
+	vertical-align: bottom;
 }
 .gglplsn-unvisible-notice {
 	display: none;
@@ -49,7 +49,6 @@
 	width: calc(100% - 32px);
 	word-wrap: break-word;
 	display: inline-block;
-	float; left;
 	padding-left: 3px;
 	margin-top: -9px;
 }
@@ -63,31 +62,31 @@
 	padding-top: 3px;
 }
 .gglplsn-view-invited {
-    margin-left: 14px;
-    font-size: 12px;
-    overflow: auto;
+	margin-left: 14px;
+	font-size: 12px;
+	overflow: auto;
 }
 .gglplsn-view-invited span {
-    margin-right: 25px;
-    font-size: 13px;
-    line-height: 1.8em;
-    cursor: default;
-    max-width: 100%;
-    text-overflow: ellipsis;
-    display: block;
-    float: left;
-    overflow: hidden;
+	margin-right: 25px;
+	font-size: 13px;
+	line-height: 1.8em;
+	cursor: default;
+	max-width: 100%;
+	text-overflow: ellipsis;
+	display: block;
+	float: left;
+	overflow: hidden;
 }
 .gglplsn-delbutton {
 	margin: 1px 0 0 -17px;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    text-indent: 0;
-    position: absolute;
-    display: block;
-    float: left;
-    overflow: hidden;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	text-indent: 0;
+	position: absolute;
+	display: block;
+	float: left;
+	overflow: hidden;
 }
 .gglplsn-delbutton:before {
 	background: 0 0;
@@ -105,6 +104,14 @@
 }
 .gglplsn-delbutton:hover:before {
 	color: #c00;
+}
+.bws_pro_version_bloc img {
+	max-width: 100%;
+}
+.gglplsn_badge {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 @media screen and ( max-width: 1170px ) {
 	.gglplsn-view-invited-noscript p {

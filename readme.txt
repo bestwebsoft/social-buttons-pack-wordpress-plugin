@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.9
-Tested up to: 4.8.1
-Stable tag: 1.1.3
+Tested up to: 4.9.8
+Stable tag: 1.1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -133,7 +133,7 @@ In WordPress admin panel, please go to "Social Buttons" settings page and choose
 
 = How to change Facebook Button icon ("Profile URL")? =
 
-1. In WordPress admin panel, please go to "Social Buttons" > "Facebook" and choose one of the listed positions: Default Profile Button Image or Custom Profile Button Image. Then click "Save Changes".
+1. In WordPress admin panel, please go to "Social Buttons" > "Facebook" and choose one of the listed options: Default Profile Button Image or Custom Profile Button Image. Then click "Save Changes".
 2. If you choose Custom Profile Button Image, you can upload your own picture. You should click "Choose file" and choose an image in your folder. Then click "Save Changes".
 
 = After clicking Facebook Button icon, I see the Facebook Home page instead of the necessary account page =
@@ -231,6 +231,33 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.4 - 31.08.2018 =
+* Bugfix: Bug with incorrect Facebook buttons displaying has been fixed.
+* Bugfix: Bug with incorrect Facebook buttons preview has been fixed.
+* Bugfix: Compatibility of Facebook buttons with Graph API v2.12 has been fixed.
+* NEW : Ability to change Facebook buttons align has been added.
+* NEW : Ability to change Facebook App ID has been added.
+* Bugfix : Compatibility of Facebook buttons with Multilanguage plugin by BestWebSoft has been fixed.
+* Update : The Czech language file has been updated.
+* Bugfix : The bug with Google+1 plugin general settings has been fixed.
+* NEW : Ability to change Google badge type has been added.
+* Update : Deprecated Google buttons option "Annotation" has been removed.
+* Bugfix : The bug with incorrect saving of the Pinterest plugin settings has been fixed.
+* Bugfix : The bug with incorrect saving of the custom image for Pinterest "Save" button has been fixed.
+* Update : Pinterest "Save" button functionality to display on the pop-up images has been updated.
+* Bugfix : The problem with "Save" button displaying on image hover has been fixed.
+* Update : Pinterest "Save" button is visible when JS is disabled.
+* Bugfix : Pinterest plugin options removal from the database when working on a multisite network has been fixed.
+* Bugfix : Compatibility of Pinterest buttons with Multilanguage plugin by BestWebSoft has been fixed.
+* Bugfix : LinkedIn Widgets menu has been fixed.
+* Bugfix : LinkedIn plugin options removal from the database when working on a multisite network has been fixed.
+* Bugfix : Compatibility of LinkedIn buttons with Multilanguage plugin by BestWebSoft has been fixed.
+* Bugfix : Facebook plugin options removal from the database when working on a multisite network have been fixed.
+* Bugfix : The problem with Pinterest plugin option switching on network settings page has been fixed.
+* Bugfix : The error with saving when JS is disabled and there is no user image for Pinterest "Save" button has been fixed.
+* Bugfix : The notice about blank location for the Pinterest "Subscribe" and "Save" buttons has been added
+* Bugfix : Twitter plugin options removal from the database when working on a multisite network has been fixed.
+
 = V1.1.3 - 11.08.2017 =
 * Bugfix : Errors which appeared with buttons displaying were fixed.
 
@@ -301,6 +328,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.4 =
+* Functionality expanded.
+* Bugs fixed.
 
 = V1.1.3 =
 * Bugs fixed.

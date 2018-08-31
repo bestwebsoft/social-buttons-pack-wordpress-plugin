@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: google-one\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-10 11:23+0300\n"
-"PO-Revision-Date: 2017-05-10 11:23+0300\n"
+"POT-Creation-Date: 2018-03-22 17:43+0200\n"
+"PO-Revision-Date: 2018-03-22 17:43+0200\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,690 +16,691 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: google-plus-one.php:35 google-plus-one.php:36
-#: includes/class-gglplsn-settings.php:195
+#: google-plus-one.php:37 google-plus-one.php:38
+#: includes/class-gglplsn-settings.php:196
 msgid "Google +1 Settings"
 msgstr "Google +1 Beállítások"
 
-#: google-plus-one.php:36 google-plus-one.php:203 google-plus-one.php:737
-#: google-plus-one.php:750 includes/class-gglplsn-settings.php:23
+#: google-plus-one.php:38 google-plus-one.php:190 google-plus-one.php:722
+#: google-plus-one.php:735 includes/class-gglplsn-settings.php:24
 msgid "Settings"
 msgstr "Beállítások"
 
-#: google-plus-one.php:42
+#: google-plus-one.php:44
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: google-plus-one.php:204
-msgid "Please enable JavaScript in Your browser."
+#: google-plus-one.php:191
+msgid "Please enable JavaScript in your browser."
 msgstr ""
 
-#: google-plus-one.php:219
+#: google-plus-one.php:193
+msgid "Important"
+msgstr ""
+
+#: google-plus-one.php:193
+msgid "The Google+ API for Hangouts is no longer supported."
+msgstr ""
+
+#: google-plus-one.php:193
+msgid "Learn more"
+msgstr ""
+
+#: google-plus-one.php:209
 msgid "Is already added."
 msgstr ""
 
-#: google-plus-one.php:220
+#: google-plus-one.php:210
 msgid "Only one phone number can be added."
 msgstr ""
 
-#: google-plus-one.php:221
+#: google-plus-one.php:211
 msgid "You can't add the invitation because the phone number is already added."
 msgstr ""
 
-#: google-plus-one.php:222
+#: google-plus-one.php:212
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added."
 msgstr ""
 
-#: google-plus-one.php:223
+#: google-plus-one.php:213
 msgid "This field can't be empty."
 msgstr ""
 
-#: google-plus-one.php:224
+#: google-plus-one.php:214
 msgid "Enter the valid Email."
 msgstr ""
 
-#: google-plus-one.php:225
+#: google-plus-one.php:215
 msgid "Email of Invited Person"
 msgstr ""
 
-#: google-plus-one.php:226
+#: google-plus-one.php:216
 msgid "Enter the Email of invited person."
 msgstr ""
 
-#: google-plus-one.php:226 google-plus-one.php:228 google-plus-one.php:230
-#: google-plus-one.php:232 google-plus-one.php:234 google-plus-one.php:236
-#: google-plus-one.php:238 google-plus-one.php:444
-#: includes/class-gglplsn-settings.php:453
-#: includes/class-gglplsn-settings.php:676
-#: includes/class-gglplsn-settings.php:681
-#: includes/class-gglplsn-settings.php:686
+#: google-plus-one.php:216 google-plus-one.php:218 google-plus-one.php:220
+#: google-plus-one.php:222 google-plus-one.php:224 google-plus-one.php:226
+#: google-plus-one.php:228 google-plus-one.php:434
+#: includes/class-gglplsn-settings.php:387
+#: includes/class-gglplsn-settings.php:610
+#: includes/class-gglplsn-settings.php:615
+#: includes/class-gglplsn-settings.php:620
 msgid "For example"
 msgstr ""
 
-#: google-plus-one.php:227
-msgid "Phone Number of Invited Person"
+#: google-plus-one.php:217
+msgid "Phone number of invited person"
 msgstr ""
 
-#: google-plus-one.php:228
+#: google-plus-one.php:218
 msgid "Enter the phone number of invited person."
 msgstr ""
 
-#: google-plus-one.php:229
+#: google-plus-one.php:219
 msgid "Google+ Profile ID of Invited Person"
 msgstr ""
 
-#: google-plus-one.php:230
+#: google-plus-one.php:220
 msgid "Enter the Google+ Profile ID of invited person."
 msgstr ""
 
-#: google-plus-one.php:230 google-plus-one.php:234 google-plus-one.php:236
-#: google-plus-one.php:238 includes/class-gglplsn-settings.php:453
-#: includes/class-gglplsn-settings.php:622
-#: includes/class-gglplsn-settings.php:676
-#: includes/class-gglplsn-settings.php:681
-#: includes/class-gglplsn-settings.php:686
+#: google-plus-one.php:220 google-plus-one.php:224 google-plus-one.php:226
+#: google-plus-one.php:228 includes/class-gglplsn-settings.php:387
+#: includes/class-gglplsn-settings.php:556
+#: includes/class-gglplsn-settings.php:610
+#: includes/class-gglplsn-settings.php:615
+#: includes/class-gglplsn-settings.php:620
 msgid "or"
 msgstr ""
 
-#: google-plus-one.php:231
+#: google-plus-one.php:221
 msgid "Google+ Circle ID for the Invitation"
 msgstr ""
 
-#: google-plus-one.php:232
+#: google-plus-one.php:222
 msgid "Enter the Google+ Circle ID for the Invitation."
 msgstr ""
 
-#: google-plus-one.php:233 google-plus-one.php:442
+#: google-plus-one.php:223 google-plus-one.php:432 google-plus-one.php:654
+#: google-plus-one.php:671 includes/class-gglplsn-settings.php:220
+#: includes/class-gglplsn-settings.php:242
 msgid "Google+ ID"
 msgstr ""
 
-#: google-plus-one.php:234
+#: google-plus-one.php:224
 msgid "Enter the Google+ ID."
 msgstr ""
 
-#: google-plus-one.php:235 includes/class-gglplsn-settings.php:680
+#: google-plus-one.php:225 includes/class-gglplsn-settings.php:614
 msgid "Google+ Page ID"
 msgstr ""
 
-#: google-plus-one.php:236
+#: google-plus-one.php:226
 msgid "Enter the Google+ Page ID."
 msgstr ""
 
-#: google-plus-one.php:237 includes/class-gglplsn-settings.php:685
+#: google-plus-one.php:227 includes/class-gglplsn-settings.php:619
 msgid "Google+ Community ID"
 msgstr ""
 
-#: google-plus-one.php:238
+#: google-plus-one.php:228
 msgid "Enter the Google+ Community ID."
 msgstr ""
 
-#: google-plus-one.php:239
+#: google-plus-one.php:229
 msgid "Display the user's tag line."
 msgstr ""
 
-#: google-plus-one.php:240
+#: google-plus-one.php:230
 msgid "Display the company tag line."
 msgstr ""
 
-#: google-plus-one.php:241
+#: google-plus-one.php:231
 msgid "Display the community tag line."
 msgstr ""
 
-#: google-plus-one.php:368
+#: google-plus-one.php:358
 msgid "Google+ Badge Widget"
 msgstr ""
 
-#: google-plus-one.php:368
+#: google-plus-one.php:358
 msgid "Show Google Badge on your site"
 msgstr ""
 
-#: google-plus-one.php:438
+#: google-plus-one.php:428
 msgid "Title"
 msgstr ""
 
-#: google-plus-one.php:444
+#: google-plus-one.php:434
 msgid "Enter your Google+ ID."
 msgstr ""
 
-#: google-plus-one.php:447 includes/class-gglplsn-settings.php:549
-#: includes/class-gglplsn-settings.php:654
+#: google-plus-one.php:437 includes/class-gglplsn-settings.php:483
+#: includes/class-gglplsn-settings.php:588
 msgid "Type"
 msgstr ""
 
-#: google-plus-one.php:449 includes/class-gglplsn-settings.php:658
+#: google-plus-one.php:439 includes/class-gglplsn-settings.php:592
 msgid "Person"
 msgstr ""
 
-#: google-plus-one.php:450 includes/class-gglplsn-settings.php:662
+#: google-plus-one.php:440 includes/class-gglplsn-settings.php:596
 msgid "Page"
 msgstr ""
 
-#: google-plus-one.php:451 includes/class-gglplsn-settings.php:666
+#: google-plus-one.php:441 includes/class-gglplsn-settings.php:600
 msgid "Community"
 msgstr ""
 
-#: google-plus-one.php:455 includes/class-gglplsn-settings.php:697
+#: google-plus-one.php:448 includes/class-gglplsn-settings.php:645
 msgid "Layout"
 msgstr ""
 
-#: google-plus-one.php:457 includes/class-gglplsn-settings.php:701
+#: google-plus-one.php:450 includes/class-gglplsn-settings.php:649
 msgid "Portrait"
 msgstr ""
 
-#: google-plus-one.php:458 includes/class-gglplsn-settings.php:705
+#: google-plus-one.php:451 includes/class-gglplsn-settings.php:653
 msgid "Landscape"
 msgstr ""
 
-#: google-plus-one.php:463
+#: google-plus-one.php:456
 msgid "Show Cover Photo"
 msgstr ""
 
-#: google-plus-one.php:467
-#, fuzzy
+#: google-plus-one.php:460
 msgid "Show Tag Line"
 msgstr "Mutassa az oldalakon"
 
-#: google-plus-one.php:472
-#, fuzzy
+#: google-plus-one.php:465
 msgid "Show Owners"
 msgstr "Mutassa az oldalakon"
 
-#: google-plus-one.php:475 includes/class-gglplsn-settings.php:712
+#: google-plus-one.php:468 includes/class-gglplsn-settings.php:660
 msgid "Width"
 msgstr ""
 
-#: google-plus-one.php:477 includes/class-gglplsn-settings.php:716
+#: google-plus-one.php:470 includes/class-gglplsn-settings.php:664
 msgid "px"
 msgstr ""
 
-#: google-plus-one.php:650
+#: google-plus-one.php:635
 msgid "Add Google Buttons to your page or post"
 msgstr ""
 
-#: google-plus-one.php:654 includes/class-gglplsn-settings.php:205
-#, fuzzy
+#: google-plus-one.php:639 includes/class-gglplsn-settings.php:206
 msgid "Google +1"
 msgstr "Google +1 Beállítások"
 
-#: google-plus-one.php:659 includes/class-gglplsn-settings.php:209
+#: google-plus-one.php:644 includes/class-gglplsn-settings.php:210
 msgid "Share"
 msgstr ""
 
-#: google-plus-one.php:664 includes/class-gglplsn-settings.php:214
+#: google-plus-one.php:649 includes/class-gglplsn-settings.php:215
 msgid "Follow"
 msgstr ""
 
-#: google-plus-one.php:667 google-plus-one.php:684
-#: includes/class-gglplsn-settings.php:217
-#: includes/class-gglplsn-settings.php:239
+#: google-plus-one.php:652 google-plus-one.php:669
+#: includes/class-gglplsn-settings.php:218
+#: includes/class-gglplsn-settings.php:240
 msgid "To see this button, please"
 msgstr ""
 
-#: google-plus-one.php:668 google-plus-one.php:685
-#: includes/class-gglplsn-settings.php:218
-#: includes/class-gglplsn-settings.php:240
+#: google-plus-one.php:653 google-plus-one.php:670
+#: includes/class-gglplsn-settings.php:219
+#: includes/class-gglplsn-settings.php:241
 msgid "enter"
 msgstr ""
 
-#: google-plus-one.php:669 google-plus-one.php:686
-#: includes/class-gglplsn-settings.php:219
-#: includes/class-gglplsn-settings.php:241
-msgid "the Google+ ID"
-msgstr ""
-
-#: google-plus-one.php:676 includes/class-gglplsn-settings.php:226
+#: google-plus-one.php:661 includes/class-gglplsn-settings.php:227
 msgid "Hangout"
 msgstr ""
 
-#: google-plus-one.php:681 includes/class-gglplsn-settings.php:232
+#: google-plus-one.php:666 includes/class-gglplsn-settings.php:233
+#: includes/class-gglplsn-settings.php:635
 msgid "Badge"
 msgstr ""
 
-#: google-plus-one.php:751
+#: google-plus-one.php:736
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: google-plus-one.php:752
+#: google-plus-one.php:737
 msgid "Support"
 msgstr "Támogatás"
 
-#: includes/class-gglplsn-settings.php:24
+#: includes/class-gglplsn-settings.php:25
 msgid "Display"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:25
+#: includes/class-gglplsn-settings.php:26
 msgid "Misc"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:26
+#: includes/class-gglplsn-settings.php:27
 msgid "Custom Code"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:27
+#: includes/class-gglplsn-settings.php:28
 msgid "License Key"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:143
+#: includes/class-gglplsn-settings.php:145
 msgid "Email is invalid"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:145
+#: includes/class-gglplsn-settings.php:147
 msgid "Please select the invitation type"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:147
+#: includes/class-gglplsn-settings.php:149
 msgid "Invitation field can't be empty"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:153
+#: includes/class-gglplsn-settings.php:155
 msgid "Only one phone number can be added"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:155
+#: includes/class-gglplsn-settings.php:157
 msgid "You can't add the invitation because the phone number is already added"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:157
+#: includes/class-gglplsn-settings.php:159
 msgid ""
 "You can't add the phone number because another invitation type is already "
 "added"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:162
+#: includes/class-gglplsn-settings.php:164
 msgid "Is already added"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:178
+#: includes/class-gglplsn-settings.php:180
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: includes/class-gglplsn-settings.php:198
+#: includes/class-gglplsn-settings.php:199
 msgid "General"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:201
+#: includes/class-gglplsn-settings.php:202
 msgid "Buttons"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:236
-msgid "Enable to display a Google+ badge in the front-end."
+#: includes/class-gglplsn-settings.php:237
+msgid "Enable to link your existing Google+ account page to your site."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:248
+#: includes/class-gglplsn-settings.php:249
 msgid "Display on"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:251
+#: includes/class-gglplsn-settings.php:252
 msgid "Home page"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:255
+#: includes/class-gglplsn-settings.php:256
 msgid "Posts"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:260
+#: includes/class-gglplsn-settings.php:261
 msgid "Pages"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:266
-#, fuzzy
+#: includes/class-gglplsn-settings.php:267
 msgid "Buttons Position"
 msgstr "Gomb pozíció"
 
-#: includes/class-gglplsn-settings.php:271
+#: includes/class-gglplsn-settings.php:272
 msgid "Before content"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:276
+#: includes/class-gglplsn-settings.php:277
 msgid "After content"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:282
+#: includes/class-gglplsn-settings.php:283
 msgid "Language"
 msgstr "Nyelv"
 
-#: includes/class-gglplsn-settings.php:294
+#: includes/class-gglplsn-settings.php:295
 msgid "Select the default language for Google+ button(-s)."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:304
-#: includes/class-gglplsn-settings.php:307
-#: includes/class-gglplsn-settings.php:311
+#: includes/class-gglplsn-settings.php:305
+#: includes/class-gglplsn-settings.php:308
+#: includes/class-gglplsn-settings.php:312
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:307
+#: includes/class-gglplsn-settings.php:308
 #, php-format
 msgid "Activate %s"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:311
+#: includes/class-gglplsn-settings.php:312
 msgid "Learn More"
 msgstr "Olvasson tovább"
 
-#: includes/class-gglplsn-settings.php:316
+#: includes/class-gglplsn-settings.php:317
 msgid "Google+ Button"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:320
-#: includes/class-gglplsn-settings.php:777
+#: includes/class-gglplsn-settings.php:322
+#: includes/class-gglplsn-settings.php:750
 msgid "Close"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:323
+#: includes/class-gglplsn-settings.php:325
 msgid "+1 Entire Website"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:326
+#: includes/class-gglplsn-settings.php:328
 msgid "Enable to +1 the entire website using +1 button."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:335
-#: includes/class-gglplsn-settings.php:415
-#: includes/class-gglplsn-settings.php:473
-#: includes/class-gglplsn-settings.php:531
+#: includes/class-gglplsn-settings.php:338
+#: includes/class-gglplsn-settings.php:363
+#: includes/class-gglplsn-settings.php:407
+#: includes/class-gglplsn-settings.php:465
 msgid "Size"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:357
-#: includes/class-gglplsn-settings.php:392
-#: includes/class-gglplsn-settings.php:491
-msgid "Annotation"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:361
-#: includes/class-gglplsn-settings.php:396
-#: includes/class-gglplsn-settings.php:495
-msgid "None"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:365
-#: includes/class-gglplsn-settings.php:404
-#: includes/class-gglplsn-settings.php:408
-#: includes/class-gglplsn-settings.php:499
-#: includes/class-gglplsn-settings.php:503
-msgid "Bubble"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:369
-#: includes/class-gglplsn-settings.php:400
-msgid "Inline"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:375
-#: includes/class-gglplsn-settings.php:433
-msgid "Annotation Type"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:379
-#: includes/class-gglplsn-settings.php:437
-#, fuzzy
-msgid "Standard"
-msgstr "Standard"
-
-#: includes/class-gglplsn-settings.php:383
-#: includes/class-gglplsn-settings.php:441
-msgid "Short"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:389
+#: includes/class-gglplsn-settings.php:360
 msgid "Share Button"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:400
-#: includes/class-gglplsn-settings.php:404
-#: includes/class-gglplsn-settings.php:499
-msgid "horizontal"
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:408
-#: includes/class-gglplsn-settings.php:503
-msgid "vertical"
-msgstr ""
-
+#: includes/class-gglplsn-settings.php:367
 #: includes/class-gglplsn-settings.php:411
-msgid "Display the number of users who have shared the page."
-msgstr ""
-
-#: includes/class-gglplsn-settings.php:419
-#: includes/class-gglplsn-settings.php:477
+#: includes/class-gglplsn-settings.php:710
 msgid "Small"
 msgstr "Kicsi"
 
-#: includes/class-gglplsn-settings.php:423
-#: includes/class-gglplsn-settings.php:481
+#: includes/class-gglplsn-settings.php:371
+#: includes/class-gglplsn-settings.php:415
+#: includes/class-gglplsn-settings.php:714
 msgid "Medium"
 msgstr "Közepes"
 
-#: includes/class-gglplsn-settings.php:427
-#: includes/class-gglplsn-settings.php:485
+#: includes/class-gglplsn-settings.php:375
+#: includes/class-gglplsn-settings.php:419
+#: includes/class-gglplsn-settings.php:718
 msgid "Large"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:447
+#: includes/class-gglplsn-settings.php:381
 msgid "Follow Button"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:450
-#: includes/class-gglplsn-settings.php:675
+#: includes/class-gglplsn-settings.php:384
+#: includes/class-gglplsn-settings.php:609
 msgid "Google+ User ID"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:453
-#: includes/class-gglplsn-settings.php:676
+#: includes/class-gglplsn-settings.php:387
+#: includes/class-gglplsn-settings.php:610
 msgid "Enter your Google+ user ID."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:457
+#: includes/class-gglplsn-settings.php:391
 msgid "Relationship"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:461
+#: includes/class-gglplsn-settings.php:395
 msgid "Author"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:465
+#: includes/class-gglplsn-settings.php:399
 msgid "Publisher"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:468
+#: includes/class-gglplsn-settings.php:402
 msgid ""
 "Describes your relationship to the content of the page where the button is "
 "added."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:506
-msgid "Display the number of users who are following this page or person."
+#: includes/class-gglplsn-settings.php:425
+msgid "Annotation"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:510
-msgid "Hangout Button"
+#: includes/class-gglplsn-settings.php:429
+msgid "None"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:513
+#: includes/class-gglplsn-settings.php:433
+#: includes/class-gglplsn-settings.php:437
+msgid "Bubble"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:433
+msgid "horizontal"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:437
+msgid "vertical"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:440
+msgid "Display the number of users who are following this page."
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:444
+msgid "Hangouts Button"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:447
 msgid "Topic"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:518
+#: includes/class-gglplsn-settings.php:452
 msgid "Current page title"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:523
+#: includes/class-gglplsn-settings.php:457
 msgid "Custom"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:539
+#: includes/class-gglplsn-settings.php:473
 msgid "Narrow"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:543
+#: includes/class-gglplsn-settings.php:477
 msgid "Wide"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:553
+#: includes/class-gglplsn-settings.php:487
 msgid "Normal"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:557
+#: includes/class-gglplsn-settings.php:491
 msgid "On air"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:561
+#: includes/class-gglplsn-settings.php:495
 msgid "Party"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:567
+#: includes/class-gglplsn-settings.php:501
 msgid "Invitation Type"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:570
+#: includes/class-gglplsn-settings.php:504
 msgid "Select The Type"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:571
+#: includes/class-gglplsn-settings.php:505
 msgid "Google+ Profile ID"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:572
+#: includes/class-gglplsn-settings.php:506
 msgid "Google+ Circle ID"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:573
+#: includes/class-gglplsn-settings.php:507
 msgid "Email"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:574
+#: includes/class-gglplsn-settings.php:508
 msgid "Phone Number"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:611
+#: includes/class-gglplsn-settings.php:545
 msgid "Google+ ID, Phone Number or Email"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:617
-#: includes/class-gglplsn-settings.php:643
+#: includes/class-gglplsn-settings.php:551
+#: includes/class-gglplsn-settings.php:577
 msgid "Add"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:619
+#: includes/class-gglplsn-settings.php:553
 msgid "Delete Selected"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:622
+#: includes/class-gglplsn-settings.php:556
 msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:626
+#: includes/class-gglplsn-settings.php:560
 msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:630
+#: includes/class-gglplsn-settings.php:564
 msgid "If Invitation Type is 'Email', it should look like"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:634
+#: includes/class-gglplsn-settings.php:568
 msgid "If Invitation Type is 'Phone Number', it should look like"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:651
+#: includes/class-gglplsn-settings.php:585
 msgid "Google+ Badge"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:677
+#: includes/class-gglplsn-settings.php:611
 msgid "Enable to display the user's tag line."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:681
+#: includes/class-gglplsn-settings.php:615
 msgid "Enter your Google+ page ID."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:682
+#: includes/class-gglplsn-settings.php:616
 msgid "Enable to display the company tag line."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:686
+#: includes/class-gglplsn-settings.php:620
 msgid "Enter your Google+ community ID."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:687
+#: includes/class-gglplsn-settings.php:621
 msgid "Enable to display the community tag line."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:708
+#: includes/class-gglplsn-settings.php:631
+msgid "Features"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:639
+msgid "Icon"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:656
 msgid "Sets the orientation of the badge."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:720
+#: includes/class-gglplsn-settings.php:668
 msgid "Color Theme"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:724
+#: includes/class-gglplsn-settings.php:672
 msgid "Light"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:728
+#: includes/class-gglplsn-settings.php:676
 msgid "Dark"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:734
+#: includes/class-gglplsn-settings.php:682
 msgid "Cover Photo"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:736
+#: includes/class-gglplsn-settings.php:684
 msgid "Enable to display a cover photo."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:740
+#: includes/class-gglplsn-settings.php:688
 msgid "Tag Line"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:746
+#: includes/class-gglplsn-settings.php:694
 msgid "Owners"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:748
+#: includes/class-gglplsn-settings.php:696
 msgid "Enable to display a list of community owners."
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:763
+#: includes/class-gglplsn-settings.php:700
+msgid "Custom Name"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:706
+msgid "Icon Size"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:735
 msgid "Google +1 Buttons Shortchode"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:766
+#: includes/class-gglplsn-settings.php:738
+msgid "Add Google +1 Buttons to a widget."
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:738
+msgid "Navigate to Widgets"
+msgstr ""
+
+#: includes/class-gglplsn-settings.php:739
 msgid ""
 "Add Google +1 button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:778
+#: includes/class-gglplsn-settings.php:751
 msgid "Google +1 Buttons Preview"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:792
+#: includes/class-gglplsn-settings.php:765
 msgid "Display Settings"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:801
+#: includes/class-gglplsn-settings.php:774
 msgid ""
 "Please choose the necessary post types (or single pages) where Google "
 "buttons will be displayed:"
 msgstr ""
 
-#: includes/class-gglplsn-settings.php:808
+#: includes/class-gglplsn-settings.php:781
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: includes/class-gglplsn-settings.php:814
+#: includes/class-gglplsn-settings.php:787
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: includes/class-gglplsn-settings.php:814
+#: includes/class-gglplsn-settings.php:787
 msgid "Example of site pages' tree"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Standard"
+#~ msgstr "Standard"
 
 #, fuzzy
 #~ msgid "Please, select the invitation type"
