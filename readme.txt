@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 3.9
-Tested up to: 4.9.8
-Stable tag: 1.1.4
+Tested up to: 5.2.2
+Stable tag: 1.1.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -231,6 +231,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.5 - 4.09.2019 =
+* Update: The deactivation feedback has been changed. Misleading buttons have been removed.
+
 = V1.1.4 - 31.08.2018 =
 * Bugfix: Bug with incorrect Facebook buttons displaying has been fixed.
 * Bugfix: Bug with incorrect Facebook buttons preview has been fixed.
@@ -328,6 +331,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.5 =
+* Usability improved.
 
 = V1.1.4 =
 * Functionality expanded.
