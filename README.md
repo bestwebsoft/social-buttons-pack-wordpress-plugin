@@ -1,7 +1,7 @@
 <a href="https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/" target=_blank>Social Buttons Pack WordPress Plugin</a>
 ========================
 
-<p>Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.</p>
+<p>Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.</p>
 <p>Increase shares and social media engagement today!</p>
 <p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
 <h4>Free Features</h4>
@@ -21,14 +21,6 @@
 <li>Follow</li>
 <li>Hashtag</li>
 <li>Mention</li>
-</ul>
-</li>
-<li>Google buttons
-<ul>
-<li>Google +1</li>
-<li>Share</li>
-<li>Follow</li>
-<li>Hangout</li>
 </ul>
 </li>
 <li>Pinterest buttons
@@ -64,7 +56,6 @@
 <li>Alumni Tool</li>
 </ul>
 </li>
-<li>Google +1 Badge</li>
 <li>Pinterest
 <ul>
 <li>Pin</li>
@@ -98,12 +89,6 @@
 <ul>
 <li>Entire website</li>
 <li>Single pages</li>
-</ul>
-</li>
-<li>Enable Google &#8220;+1&#8221; option for:
-<ul>
-<li>Entire website</li>
-<li>Single pages (default)</li>
 </ul>
 </li>
 <li>Сonfigure all subsites on the network</li>

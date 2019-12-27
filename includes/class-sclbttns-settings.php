@@ -3,11 +3,9 @@
  * Displays the content on the plugin settings page
  */
 
-require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
-
 if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 	class Sclbttns_Settings_Tabs extends Bws_Settings_Tabs {
-		public $fcbkbttn_page, $twttr_page, $gglplsn_page, $pntrst_page, $lnkdn_page;
+		public $fcbkbttn_page, $twttr_page, $pntrst_page, $lnkdn_page;
 		/**
 		 * Constructor.
 		 *
@@ -23,7 +21,6 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 			$tabs = array(
 				'facebook' 		=> array( 'label' => 'Facebook' ),
 				'twitter' 		=> array( 'label' => 'Twitter' ),
-				'googleone' 	=> array( 'label' => 'Google +1' ),
 				'pinterest' 	=> array( 'label' => 'Pinterest' ),
 				'linkedin' 		=> array( 'label' => 'LinkedIn' ),
 				'display' 		=> array( 'label' => __( 'Display', 'social-buttons-pack' ), 'is_pro' => 1 ),
@@ -42,7 +39,7 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 				'tabs' 				 => $tabs,				
 				'wp_slug'			 => 'social-buttons-pack',
 				'pro_page' 			 => 'admin.php?page=social-buttons.php',
-				'bws_license_plugin' => 'social-buttons-pack-pro/social-buttons-pack-pro',
+				'bws_license_plugin' => 'social-buttons-pack-pro/social-buttons-pack-pro.php',
 				'link_key' 			 => 'c0d1b84b603c503e8a16cfa6252b2f70',
 				'link_pn' 			 => '209'
 			) );
@@ -52,9 +49,6 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 
 			require_once( dirname( dirname( __FILE__ ) ) . '/twitter-plugin/includes/class-twttr-settings.php' );
 			$this->twttr_page = new Twttr_Settings_Tabs( plugin_basename( __FILE__ ) );
-
-			require_once( dirname( dirname( __FILE__ ) ) . '/google-one/includes/class-gglplsn-settings.php' );
-			$this->gglplsn_page = new Gglplsn_Settings_Tabs( plugin_basename( __FILE__ ) );
 
 			require_once( dirname( dirname( __FILE__ ) ) . '/bws-pinterest/includes/class-pntrst-settings.php' );
 			$this->pntrst_page = new Pntrst_Settings_Tabs( plugin_basename( __FILE__ ) );
@@ -70,12 +64,11 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 		 * @return array    The action results
 		 */
 		public function save_options() {
-			$error = '';
+			$message = $notice = $error = '';
 
 			$socials = array(
 				$this->fcbkbttn_page,	
-				$this->twttr_page,
-				$this->gglplsn_page,		
+				$this->twttr_page,	
 				$this->pntrst_page,			
 				$this->lnkdn_page
 			);
@@ -86,7 +79,7 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 					$error .= $result['error'];
 			}
 
-			$message = __( 'Settings saved.', 'social-buttons-pack' );
+			$message .= __( 'Settings saved.', 'social-buttons-pack' );
 
 			return compact( 'message', 'notice', 'error' );
 		}
@@ -100,10 +93,6 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 
 		public function tab_twitter() {			
 			$this->twttr_page->tab_settings();
-		}
-
-		public function tab_googleone() {			
-			$this->gglplsn_page->tab_settings();
 		}
 
 		public function tab_pinterest() {			
@@ -155,8 +144,7 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 		public function restore_options() {
 			$socials = array(
 				$this->fcbkbttn_page,	
-				$this->twttr_page,
-				$this->gglplsn_page,		
+				$this->twttr_page,		
 				$this->pntrst_page,			
 				$this->lnkdn_page
 			);

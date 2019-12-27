@@ -11,10 +11,6 @@
 	content: "\e931";
 	font-family: 'bwsicons' !important;
 }
-#bws_settings_tabs li.bws-tab-googleone a:before {
-	content: "\e914";
-	font-family: 'bwsicons' !important;
-}
 #bws_settings_tabs li.bws-tab-pinterest a:before {
 	content: "\e91f";
 	font-family: 'bwsicons' !important;

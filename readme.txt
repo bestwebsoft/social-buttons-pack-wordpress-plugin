@@ -2,17 +2,17 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
-Requires at least: 3.9
-Tested up to: 5.2.2
-Stable tag: 1.1.5
+Requires at least: 4.5
+Tested up to: 5.3.2
+Stable tag: 1.1.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
+Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, Pinterest, LinkedIn.
 
 == Description ==
 
-Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Google+1, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.
+Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.
 
 Increase shares and social media engagement today!
 
@@ -30,11 +30,6 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Follow
 		* Hashtag
 		* Mention
-	* Google buttons
-		* Google +1
-		* Share
-		* Follow
-		* Hangout
 	* Pinterest buttons
 		* Save
 		* Follow
@@ -53,7 +48,6 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Company Insider
 		* Jobs You May Be Interested In
 		* Alumni Tool
-	* Google +1 Badge
 	* Pinterest
 		* Pin
 		* Board
@@ -78,9 +72,6 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 > * Enable Facebook Like option for:
 > 	* Entire website
 > 	* Single pages
-> * Enable Google "+1" option for:
-> 	* Entire website
-> 	* Single pages (default)
 > * Сonfigure all subsites on the network
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
@@ -161,25 +152,6 @@ That is why the changes are not displayed. You can wait for 24 hours and check c
 
 Only two accounts are displayed and by default the via user is shown first with the first related account shown afterwards. If the user is a follower of the via user the Share Box will instead show the first two related accounts the user isn’t a follower of. No accounts are displayed if the user follows all of the suggested accounts (via and related).
 
-= How to add Google +1 Button using the shortcode? =
-
-Just paste code [bws_googleplusone] into the necessary page, post or text widget for adding Google +1 Button or use a "display" parameter for adding another button(s).
-
-For example:
-[bws_googleplusone display="plusone,share,follow,hangout,badge"]. You can change the buttons queue in "display" parameter as you want.
-
-= I click the button and it turns red. Why? =
-
-For correct work of the Google +1 buttons do not use it locally and on a free hosting.
-
-= Why I don't see the Follow Button and Google Badge? =
-
-Follow Button and Google Badge don`t work without Google ID. Just enter it on Settings Page.
-
-= I've entered Google ID, but nothing has changed. Why? =
-
-Please check the Badge type. Google Badge works incorrectly if Google ID don`t match with the Badge Type.
-
 = Pinterest Follow button is not displaying properly =
 
 In WordPress admin panel, please go to "Social Buttons" > "Pinterest" settings page and check if Pinterest username is correct.
@@ -215,21 +187,24 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 == Screenshots ==
 
 1. Displaying Social Buttons in your post.
-2. Displaying Google+ Badge Widget.
-3. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
-4. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
-5. Displaying Pinterest Pin widget.
-6. Displaying Pinterest Board widget.
-7. Displaying Pinterest Profile widget.
-8. Plugin settings page: Facebook.
-9. Plugin settings page: Twitter.
-10. Plugin settings page: Google+1.
-11. Plugin settings page: Pinterest.
-12. Plugin settings page: LinkedIn.
-13. Adding widgets to the sidebar.
-14. Adding Social Buttons shortcode to your post or page.
+2. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
+3. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
+4. Displaying Pinterest Pin widget.
+5. Displaying Pinterest Board widget.
+6. Displaying Pinterest Profile widget.
+7. Plugin settings page: Facebook.
+8. Plugin settings page: Twitter.
+9. Plugin settings page: Pinterest.
+10. Plugin settings page: LinkedIn.
+11. Adding widgets to the sidebar.
+12. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.6 - 26.12.2019 =
+* Update : We updated all functionality for wordpress 5.3.2.
+* Update : Google+1 buttons were deleted.
+* Update : BWS plugins section is updated.
 
 = V1.1.5 - 4.09.2019 =
 * Update: The deactivation feedback has been changed. Misleading buttons have been removed.
@@ -331,6 +306,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.6 =
+* Bugs fixed.
 
 = V1.1.5 =
 * Usability improved.

@@ -2,11 +2,11 @@
 /*
 Plugin Name: Social Buttons Pack by BestWebSoft
 Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/social-buttons-pack/
-Description: Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, G+1, Pinterest, LinkedIn.
+Description: Add social media buttons and widgets to WordPress posts, pages and widgets. FB, Twitter, Pinterest, LinkedIn.
 Author: BestWebSoft
 Text Domain: social-buttons-pack
 Domain Path: /languages
-Version: 1.1.5
+Version: 1.1.6
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -58,16 +58,15 @@ if ( ! function_exists( 'sclbttns_init' ) ) {
         require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
         bws_include_init( plugin_basename( __FILE__ ) );
 
-        bws_wp_min_version_check( plugin_basename( __FILE__ ), $sclbttns_plugin_info, '3.9' );
+        bws_wp_min_version_check( plugin_basename( __FILE__ ), $sclbttns_plugin_info, '4.5' );
     }
 }
 
 if ( ! function_exists( 'sclbttns_admin_init' ) ) {
     function sclbttns_admin_init() {
-        global $bws_plugin_info, $sclbttns_plugin_info;
+        global $bws_plugin_info, $sclbttns_plugin_info, $sclbttns_options, $pagenow;
 
         $deactivate_plugins = array( 
-            'google-one/google-plus-one.php', 
             'twitter-plugin/twitter.php', 
             'facebook-button-plugin/facebook-button-plugin.php',
             'bws-pinterest/bws-pinterest.php',
@@ -102,6 +101,14 @@ if ( ! function_exists( 'sclbttns_admin_init' ) ) {
 
         if ( isset( $_GET['page'] ) && 'social-buttons.php' == $_GET['page'] )
             sclbttns_settings();
+
+        if ( 'plugins.php' == $pagenow ) {
+            /* Install the option defaults */
+            if ( function_exists( 'bws_plugin_banner_go_pro' ) ) {
+	            sclbttns_settings();
+                bws_plugin_banner_go_pro( $sclbttns_options, $sclbttns_plugin_info, 'sclbttns', 'social-buttons-pack', '8e369cddbfb4fe0b44a75ee687df1716', '209', 'social-buttons-pack' );
+            }
+        }
     }
 }
 
@@ -154,6 +161,8 @@ if ( ! function_exists( 'sclbttns_get_option_defaults' ) ) {
 
 if ( ! function_exists( 'sclbttns_settings_page' ) ) {
     function sclbttns_settings_page() { 
+        if ( ! class_exists( 'Bws_Settings_Tabs' ) )
+            require_once( dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php' );
         require_once( dirname( __FILE__ ) . '/includes/class-sclbttns-settings.php' );
         $page = new Sclbttns_Settings_Tabs( plugin_basename( __FILE__ ) ); ?>
         <div class="wrap">
@@ -223,14 +232,8 @@ if ( ! function_exists( 'sclbttns_links' ) ) {
 
 if ( ! function_exists ( 'sclbttns_plugin_banner' ) ) {
     function sclbttns_plugin_banner() {
-        global $hook_suffix, $sclbttns_plugin_info, $sclbttns_options;
+        global $hook_suffix, $sclbttns_plugin_info;
         if ( 'plugins.php' == $hook_suffix && ! is_network_admin() ) {
-            if ( empty( $sclbttns_options ) )
-                $sclbttns_options = get_option( 'sclbttns_options' );
-
-            if ( isset( $sclbttns_options['first_install'] ) && strtotime( '-1 week' ) > $sclbttns_options['first_install'] )
-                bws_plugin_banner( $sclbttns_plugin_info, 'sclbttns', 'social-buttons-pack', '8e369cddbfb4fe0b44a75ee687df1716', '209', 'social-buttons-pack' );
-        
             bws_plugin_banner_to_settings( $sclbttns_plugin_info, 'sclbttns_options', 'social-buttons-pack', 'admin.php?page=social-buttons.php' );
         }
 
@@ -276,24 +279,20 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                 $delete_twitter = true;                                    
             }
 
-            /* google-plus-one */
-            if ( ! array_key_exists( 'google-one/google-plus-one.php', $all_plugins ) && ! array_key_exists( 'google-one-pro/google-plus-one-pro.php', $all_plugins ) )
-                $delete_google_one = true;
-
-            /* FB */
-            if ( ! array_key_exists( 'facebook-button-plugin/facebook-button-plugin.php', $all_plugins ) && ! array_key_exists( 'facebook-button-pro/facebook-button-pro.php', $all_plugins ) ) {
-                /* delete custom images if no PRO version */
-                $upload_dir = wp_upload_dir();
-                $fcbkbttn_cstm_mg_folder = $upload_dir['basedir'] . '/facebook-image/';
-                if ( is_dir( $fcbkbttn_cstm_mg_folder ) ) {
-                    $fcbkbttn_cstm_mg_files = scandir( $fcbkbttn_cstm_mg_folder );
-                    foreach ( $fcbkbttn_cstm_mg_files as $value ) {
-                        @unlink ( $fcbkbttn_cstm_mg_folder . $value );
-                    }
-                    @rmdir( $fcbkbttn_cstm_mg_folder );
-                }
-                $delete_facebook = true;
-            }
+	        /* FB */
+	        if ( ! array_key_exists( 'facebook-button-plugin/facebook-button-plugin.php', $all_plugins ) && ! array_key_exists( 'facebook-button-pro/facebook-button-pro.php', $all_plugins ) ) {
+		        /* delete custom images if no PRO version */
+		        $upload_dir = wp_upload_dir();
+		        $fcbkbttn_cstm_mg_folder = $upload_dir['basedir'] . '/facebook-image/';
+		        if ( is_dir( $fcbkbttn_cstm_mg_folder ) ) {
+			        $fcbkbttn_cstm_mg_files = scandir( $fcbkbttn_cstm_mg_folder );
+			        foreach ( $fcbkbttn_cstm_mg_files as $value ) {
+				        @unlink ( $fcbkbttn_cstm_mg_folder . $value );
+			        }
+			        @rmdir( $fcbkbttn_cstm_mg_folder );
+		        }
+		        $delete_facebook = true;
+	        }
 
             /* pinterest */
             if ( ! array_key_exists( 'bws-pinterest-plugin/bws-pinterest-plugin.php', $all_plugins ) && ! array_key_exists( 'bws-pinterest-pro/bws-pinterest-pro.php', $all_plugins ) ) {
@@ -314,7 +313,7 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
             if ( ! array_key_exists( 'bws-linkedin/bws-linkedin.php', $all_plugins ) && ! array_key_exists( 'bws-linkedin-pro/bws-linkedin-pro.php', $all_plugins ) )
                 $delete_linkedin = true;
 
-            if ( isset( $delete_twitter ) || isset( $delete_google_one ) || isset( $delete_facebook ) || isset( $delete_linkedin ) || isset( $delete_pinterest ) ) {
+            if ( isset( $delete_twitter ) || isset( $delete_facebook ) || isset( $delete_linkedin ) || isset( $delete_pinterest ) ) {
                 if ( function_exists( 'is_multisite' ) && is_multisite() ) {               
                     $old_blog = $wpdb->blogid;
                     /* Get all blog ids */
@@ -323,8 +322,6 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                         switch_to_blog( $blog_id );
                         if ( isset( $delete_twitter ) )
                             delete_option( 'twttr_options' );
-                        if ( isset( $delete_google_one ) )
-                            delete_option( 'gglplsn_options' );
                         if ( isset( $delete_facebook ) )
                             delete_option( 'fcbkbttn_options' );
                         if ( isset( $delete_linkedin ) )
@@ -336,8 +333,6 @@ if ( ! function_exists( 'sclbttns_uninstall' ) ) {
                 } else {
                     if ( isset( $delete_twitter ) )
                         delete_option( 'twttr_options' );
-                    if ( isset( $delete_google_one ) )
-                        delete_option( 'gglplsn_options' );
                     if ( isset( $delete_facebook ) )
                         delete_option( 'fcbkbttn_options' );
                     if ( isset( $delete_linkedin ) )
@@ -389,6 +384,5 @@ register_uninstall_hook( __FILE__, 'sclbttns_uninstall' );
 /* add buttons file - we added it after all actions&filter because we need to add theirs filter after */
 require_once( dirname( __FILE__ ) . '/facebook-button-plugin/facebook-button-plugin.php' );
 require_once( dirname( __FILE__ ) . '/twitter-plugin/twitter.php' );
-require_once( dirname( __FILE__ ) . '/google-one/google-plus-one.php' );
 require_once( dirname( __FILE__ ) . '/bws-linkedin/bws-linkedin.php' );
 require_once( dirname( __FILE__ ) . '/bws-pinterest/bws-pinterest.php' );
