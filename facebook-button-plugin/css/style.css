@@ -1,6 +1,10 @@
 /*
 * Plugin styles
 */
+.fcbkbttn-image img {
+	max-width: 120px;
+}
+
 .fcbkbttn_buttons_block {
 	clear: both;
 	line-height: 1;
@@ -59,6 +63,9 @@
 .fb-share-button.fb_iframe_widget.fb_iframe_widget_fluid {
 	display: inline-block !important;
 	margin-bottom: 10px;
+}
+.fcbkbttn_arhiv {
+	margin-bottom: 50px;
 }
 
 @media screen and ( max-width: 1070px ) {

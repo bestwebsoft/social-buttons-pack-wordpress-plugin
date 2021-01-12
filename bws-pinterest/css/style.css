@@ -28,3 +28,13 @@
 .pntrst-button-wrap span {
 	vertical-align: bottom;
 }
+.pntrst_style_add_large_folow_button span {
+	font-size: 16px !important;
+	padding: 4px 6px 0 25px !important;
+}
+.rtl .pntrst-button-wrap span {
+	padding-left: 28px !important;
+}
+.pntrst_main_before_after {
+	display: flex;
+}

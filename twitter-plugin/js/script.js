@@ -30,7 +30,7 @@
 		}
 		/* Follow Button Image */
 		function twttr_display_option() {
-			if ( $( 'input[name="twttr_display_option"]:checked' ).val() == 'custom' ) {
+			if ( $( 'input[name="twttr_display_option"]:checked' ).val() === 'custom' ) {
 				$( '.twttr_display_option_custom' ).show();
 				$( '.twttr_display_option_standart' ).hide();
 			} else {
@@ -49,13 +49,13 @@
 		/* custom text */
 		function twttr_custom_text( element ) {
 			if ( element.is( ':checked' ) ) {
-				if ( element.val() == 'custom' ) {
+				if ( element.val() === 'custom' ) {
 					element.parent().siblings( ".twttr_custom_input" ).show();
 				} else {
 					element.parent().siblings( ".twttr_custom_input" ).hide();
 				}
 			}
-		}			
+		}
 
 		twttr_tweet_display();
 		$( 'input[name="twttr_tweet_display"]' ).click( function() {
@@ -89,6 +89,6 @@
 			$( this ).change( function() {
 				twttr_custom_text( $( this ) );
 			} );
-		});
+		} );
 	} );
-} ) ( jQuery );
+} )( jQuery );

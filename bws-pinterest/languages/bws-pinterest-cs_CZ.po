@@ -1,28 +1,31 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bws-pinterest\n"
-"POT-Creation-Date: 2018-04-12 14:25+0300\n"
-"PO-Revision-Date: 2018-04-12 14:25+0300\n"
+"POT-Creation-Date: 2020-08-27 15:30+0300\n"
+"PO-Revision-Date: 2020-08-27 15:30+0300\n"
 "Last-Translator: Mik013\n"
 "Language-Team: Mik013\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: bws-pinterest.php:35 bws-pinterest.php:36 bws-pinterest.php:205
-#: includes/class-pntrst-settings.php:180
+#: bws-pinterest.php:35 bws-pinterest.php:36 bws-pinterest.php:204
+#: includes/class-pntrst-settings.php:185
+#, fuzzy
+#| msgid "Pinterest Widget"
 msgid "Pinterest Settings"
-msgstr "Nastavení Pinterest"
+msgstr "Widget Pinterest"
 
-#: bws-pinterest.php:36 bws-pinterest.php:793 bws-pinterest.php:811
-#: includes/class-pntrst-settings.php:23
+#: bws-pinterest.php:36 bws-pinterest.php:838 bws-pinterest.php:856
+#: includes/class-pntrst-settings.php:21
 msgid "Settings"
 msgstr "Nastavení"
 
@@ -30,69 +33,78 @@ msgstr "Nastavení"
 msgid "Upgrade to Pro"
 msgstr "Aktualizovat na Pro"
 
-#: bws-pinterest.php:187
+#: bws-pinterest.php:184
 msgid "Follow me"
 msgstr "Sleduj mne"
 
-#: bws-pinterest.php:392
+#: bws-pinterest.php:207
+msgid "WARNING"
+msgstr "Upozornění"
+
+#: bws-pinterest.php:208
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr ""
+"Zásuvný modul funguje správně pouze v případě, že je povolen JavaScript."
+
+#: bws-pinterest.php:436
 msgid "Pinterest Widget"
 msgstr "Widget Pinterest"
 
-#: bws-pinterest.php:395
+#: bws-pinterest.php:439
 msgid "Widget for adding Pinterest Pin, Board, and Profile widgets"
 msgstr "Widget pro přidání Pinterest Pin, widgetu Nástěnka a Profil"
 
-#: bws-pinterest.php:461
+#: bws-pinterest.php:505
 msgid "Title"
 msgstr "Název"
 
-#: bws-pinterest.php:466
+#: bws-pinterest.php:510
 msgid "Type"
 msgstr "Typ"
 
-#: bws-pinterest.php:468 bws-pinterest.php:478 bws-pinterest.php:621
+#: bws-pinterest.php:512 bws-pinterest.php:522 bws-pinterest.php:665
 msgid "Pin Widget"
 msgstr "Widget Pin"
 
-#: bws-pinterest.php:469 bws-pinterest.php:479 bws-pinterest.php:622
+#: bws-pinterest.php:513 bws-pinterest.php:523 bws-pinterest.php:666
 msgid "Board Widget"
 msgstr "Widget Nástěnka"
 
-#: bws-pinterest.php:470 bws-pinterest.php:623
+#: bws-pinterest.php:514 bws-pinterest.php:667
 msgid "Profile Widget"
 msgstr "Widget Profil"
 
-#: bws-pinterest.php:474 bws-pinterest.php:639
+#: bws-pinterest.php:518 bws-pinterest.php:683
 msgid "URL"
 msgstr "URL"
 
-#: bws-pinterest.php:477
+#: bws-pinterest.php:521
 msgid "Examples"
 msgstr "Příklady"
 
-#: bws-pinterest.php:483 bws-pinterest.php:644
+#: bws-pinterest.php:527 bws-pinterest.php:688
 msgid "Size"
 msgstr "Velikost"
 
-#: bws-pinterest.php:485 bws-pinterest.php:646
-#: includes/class-pntrst-settings.php:293
+#: bws-pinterest.php:529 bws-pinterest.php:690
+#: includes/class-pntrst-settings.php:298
 msgid "Small"
 msgstr "Malé"
 
-#: bws-pinterest.php:486 bws-pinterest.php:647
+#: bws-pinterest.php:530 bws-pinterest.php:691
 msgid "Medium"
 msgstr "Střední"
 
-#: bws-pinterest.php:487 bws-pinterest.php:648
-#: includes/class-pntrst-settings.php:294
+#: bws-pinterest.php:531 bws-pinterest.php:692
+#: includes/class-pntrst-settings.php:299
 msgid "Large"
 msgstr "Velké"
 
-#: bws-pinterest.php:491 bws-pinterest.php:653
+#: bws-pinterest.php:535 bws-pinterest.php:697
 msgid "Width"
 msgstr "Šířka"
 
-#: bws-pinterest.php:495 bws-pinterest.php:511
+#: bws-pinterest.php:539 bws-pinterest.php:555
 #, php-format
 msgid ""
 "Min width%1s. If the widget width field is empty, the thumbnail width will "
@@ -101,81 +113,81 @@ msgstr ""
 "Min šířka %1s. Pokud není vyplněna šířka widgetu bude šířka miniatur "
 "nastavena automaticky."
 
-#: bws-pinterest.php:499 bws-pinterest.php:654
+#: bws-pinterest.php:543 bws-pinterest.php:698
 msgid "Height"
 msgstr "Výška"
 
-#: bws-pinterest.php:503
+#: bws-pinterest.php:547
 #, php-format
 msgid "Min height%1s."
 msgstr "Min výška%1s."
 
-#: bws-pinterest.php:507 bws-pinterest.php:655
+#: bws-pinterest.php:551 bws-pinterest.php:699
 msgid "Thumbnails width"
 msgstr "Šířka miniatur"
 
-#: bws-pinterest.php:617
+#: bws-pinterest.php:661
 msgid "Shortcode Type"
 msgstr "Typ zkráceného kódu"
 
-#: bws-pinterest.php:619 includes/class-pntrst-settings.php:310
+#: bws-pinterest.php:663 includes/class-pntrst-settings.php:317
 msgid "Follow Button"
 msgstr "Tlačítko Sledovat"
 
-#: bws-pinterest.php:620 includes/class-pntrst-settings.php:245
+#: bws-pinterest.php:664 includes/class-pntrst-settings.php:250
 msgid "Save Button"
 msgstr "Tlačítko Uložit"
 
-#: bws-pinterest.php:627
+#: bws-pinterest.php:671
 msgid "Button label"
 msgstr "Popisek tlačítka"
 
-#: bws-pinterest.php:631
+#: bws-pinterest.php:675
 msgid "Save any image"
 msgstr "Uložit jakýkoli obrázek"
 
-#: bws-pinterest.php:632
+#: bws-pinterest.php:676
 msgid "Save defined image"
 msgstr "Uložit definovaný obrázek"
 
-#: bws-pinterest.php:633
+#: bws-pinterest.php:677
 msgid "Pin image URL"
 msgstr "URL Pinu obrázku"
 
-#: bws-pinterest.php:634
+#: bws-pinterest.php:678
 msgid "Custom button image"
 msgstr "Vlastní obrázek tlačítka"
 
-#: bws-pinterest.php:635
+#: bws-pinterest.php:679
 msgid "Custom image URL"
 msgstr "Vlastní URL obrázku"
 
-#: bws-pinterest.php:795
+#: bws-pinterest.php:840
 msgid "FAQ"
 msgstr ""
 "Časté dotazy <acronym title=\"Frequently asked questions\">(FAQ)</acronym>"
 
-#: bws-pinterest.php:796
+#: bws-pinterest.php:841
 msgid "Support"
 msgstr "Podpora"
 
-#: includes/class-pntrst-settings.php:25
+#: includes/class-pntrst-settings.php:23
 msgid "Display"
 msgstr "Zobrazení"
 
-#: includes/class-pntrst-settings.php:27
+#: includes/class-pntrst-settings.php:25
 msgid "Misc"
 msgstr "Různé"
 
-#: includes/class-pntrst-settings.php:28
+#: includes/class-pntrst-settings.php:26
 msgid "Custom Code"
 msgstr "Vlastní kód"
 
-#: includes/class-pntrst-settings.php:30
+#: includes/class-pntrst-settings.php:28
 msgid "License Key"
 msgstr "Licenční klíč"
 
-#: includes/class-pntrst-settings.php:67
+#: includes/class-pntrst-settings.php:65
 msgid ""
 "\"Save\" button location is not selected. The button will be displayed only "
 "via shortcode."
@@ -183,7 +195,7 @@ msgstr ""
 "Není zvoleno umístění tlačítka \"Uložit\". Tlačítko se zobrazí pouze "
 "prostřednictvím zkráceného kódu."
 
-#: includes/class-pntrst-settings.php:71
+#: includes/class-pntrst-settings.php:69
 msgid ""
 "\"Follow\" button location is not selected. The button will be displayed "
 "only via shortcode."
@@ -191,7 +203,7 @@ msgstr ""
 "Není zvoleno umístění tlačítka \"Sledovat\". Tlačítko se zobrazí pouze "
 "prostřednictvím zkráceného kódu."
 
-#: includes/class-pntrst-settings.php:111
+#: includes/class-pntrst-settings.php:119
 msgid ""
 "Please, enter \"Pinterest User ID\" to add Follow Button. Settings are not "
 "saved."
@@ -199,68 +211,70 @@ msgstr ""
 "Pro přidání tlačítka Sledovat, zadejte \"ID Pinterest uživatele\". Nastavení "
 "nebylo uloženo."
 
-#: includes/class-pntrst-settings.php:132
+#: includes/class-pntrst-settings.php:139
 #, php-format
 msgid "Error: File size %1s"
 msgstr "Chyba: Velikost souboru %1s"
 
-#: includes/class-pntrst-settings.php:135
+#: includes/class-pntrst-settings.php:142
 msgid "Error: Invalid file type"
 msgstr "Chyba: Neplatný typ souboru"
 
-#: includes/class-pntrst-settings.php:147
+#: includes/class-pntrst-settings.php:154
 msgid "Error: moving file failed"
 msgstr "Chyba: Soubor se nepodařilo přesunout"
 
-#: includes/class-pntrst-settings.php:152
+#: includes/class-pntrst-settings.php:159
 msgid "Can't find upload directory path. Settings are not saved."
 msgstr "Nelze najít cestu k adresáři upload. Nastavení nebylo uloženo."
 
-#: includes/class-pntrst-settings.php:155
+#: includes/class-pntrst-settings.php:162
 msgid "Error: select the upload file"
 msgstr "Chyba: vyberte soubor pro nahrání"
 
-#: includes/class-pntrst-settings.php:162
+#: includes/class-pntrst-settings.php:169
 msgid "Settings saved"
 msgstr "Nastavení uloženo"
 
-#: includes/class-pntrst-settings.php:183
+#: includes/class-pntrst-settings.php:188
 msgid "General"
 msgstr "Obecné"
 
-#: includes/class-pntrst-settings.php:186
+#: includes/class-pntrst-settings.php:191
 msgid "Pinterest User ID"
 msgstr "ID Pinterest uživatele"
 
-#: includes/class-pntrst-settings.php:189
+#: includes/class-pntrst-settings.php:194
 msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
 msgstr "Zadejte své ID uživatele Pinterestu. Například \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:193
+#: includes/class-pntrst-settings.php:198
 msgid "Buttons"
 msgstr "Tlačítka"
 
-#: includes/class-pntrst-settings.php:198
-#: includes/class-pntrst-settings.php:354
+#: includes/class-pntrst-settings.php:203
+#: includes/class-pntrst-settings.php:361
 msgid "Save"
 msgstr "Uložit"
 
-#: includes/class-pntrst-settings.php:203
-#: includes/class-pntrst-settings.php:358
+#: includes/class-pntrst-settings.php:208
+#: includes/class-pntrst-settings.php:365
 msgid "Follow"
 msgstr "Sledovat"
 
-#: includes/class-pntrst-settings.php:209
+#: includes/class-pntrst-settings.php:214
 msgid "Language"
 msgstr "Jazyk"
 
-#: includes/class-pntrst-settings.php:220
+#: includes/class-pntrst-settings.php:225
+#, fuzzy
+#| msgid "Select the default language for Image Pinning button(-s)."
 msgid "Select the default language for Pinterest button(-s)."
-msgstr "Vyberte výchozí jazyk pro Pinterest tlačítko/a."
+msgstr "Vyberte výchozí jazyk pro Image Pinning tlačítko/a."
 
-#: includes/class-pntrst-settings.php:230
-#: includes/class-pntrst-settings.php:234
-#: includes/class-pntrst-settings.php:238
+#: includes/class-pntrst-settings.php:235
+#: includes/class-pntrst-settings.php:239
+#: includes/class-pntrst-settings.php:243
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
@@ -268,131 +282,153 @@ msgstr ""
 "Povolit automatické přepnutí jazyka na vícejazyčných webech s pluginem "
 "Multilanguage."
 
-#: includes/class-pntrst-settings.php:234
+#: includes/class-pntrst-settings.php:239
 #, php-format
 msgid "Activate %s"
 msgstr "Aktivovat %s"
 
-#: includes/class-pntrst-settings.php:238
+#: includes/class-pntrst-settings.php:243
 msgid "Learn More"
 msgstr "Dozvědět se více"
 
-#: includes/class-pntrst-settings.php:248
-#: includes/class-pntrst-settings.php:320
+#: includes/class-pntrst-settings.php:253
+#: includes/class-pntrst-settings.php:327
 msgid "Button Position"
 msgstr "Umístění tlačítka"
 
-#: includes/class-pntrst-settings.php:251
-#: includes/class-pntrst-settings.php:323
+#: includes/class-pntrst-settings.php:256
+#: includes/class-pntrst-settings.php:330
 msgid "Before content"
 msgstr "Před obsahem"
 
-#: includes/class-pntrst-settings.php:252
-#: includes/class-pntrst-settings.php:324
+#: includes/class-pntrst-settings.php:257
+#: includes/class-pntrst-settings.php:331
 msgid "After content"
 msgstr "Za obsahem"
 
-#: includes/class-pntrst-settings.php:253
+#: includes/class-pntrst-settings.php:258
 msgid "On image hover"
 msgstr "Při přejetí obrázku myší"
 
-#: includes/class-pntrst-settings.php:258
+#: includes/class-pntrst-settings.php:263
 msgid "Button Image"
 msgstr "Vzhled tlačítka"
 
-#: includes/class-pntrst-settings.php:261
+#: includes/class-pntrst-settings.php:266
 msgid "Default"
 msgstr "Výchozí"
 
-#: includes/class-pntrst-settings.php:262
+#: includes/class-pntrst-settings.php:267
 msgid "Custom"
 msgstr "Vlastní"
 
-#: includes/class-pntrst-settings.php:267
+#: includes/class-pntrst-settings.php:272
 #, php-format
 msgid "Max image size: %1s. Allowed file extensions: %2s"
 msgstr "Maximální velikost obrázku: %1s. Povolené přípony souborů: %2s"
 
-#: includes/class-pntrst-settings.php:274
+#: includes/class-pntrst-settings.php:279
 msgid "Current custom image"
 msgstr "Aktuální vlastní obrázek"
 
-#: includes/class-pntrst-settings.php:281
+#: includes/class-pntrst-settings.php:286
 msgid "Button Shape"
 msgstr "Tvar tlačítka"
 
-#: includes/class-pntrst-settings.php:284
+#: includes/class-pntrst-settings.php:289
 msgid "Square"
 msgstr "Hranaté"
 
-#: includes/class-pntrst-settings.php:285
+#: includes/class-pntrst-settings.php:290
 msgid "Round"
 msgstr "Kulaté"
 
-#: includes/class-pntrst-settings.php:290
+#: includes/class-pntrst-settings.php:295
 msgid "Button Size"
 msgstr "Velikost tlačítka"
 
-#: includes/class-pntrst-settings.php:299
+#: includes/class-pntrst-settings.php:304
 msgid "Show Pin Count"
 msgstr "Zobrazit počet pinů"
 
-#: includes/class-pntrst-settings.php:302
+#: includes/class-pntrst-settings.php:307
 msgid "Not shown"
 msgstr "Nezobrazeno"
 
-#: includes/class-pntrst-settings.php:303
+#: includes/class-pntrst-settings.php:309
 msgid "Above the button"
 msgstr "Nad tlačítkem"
 
-#: includes/class-pntrst-settings.php:304
+#: includes/class-pntrst-settings.php:311
 msgid "Beside the button"
 msgstr "Vedle tlačítka"
 
-#: includes/class-pntrst-settings.php:313
+#: includes/class-pntrst-settings.php:320
 msgid "Full Name"
 msgstr "Celé jméno"
 
-#: includes/class-pntrst-settings.php:316
+#: includes/class-pntrst-settings.php:323
 msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
 msgstr "Zadejte název svého Pinterest profilu. Například \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:348
+#: includes/class-pntrst-settings.php:355
+#, fuzzy
+#| msgid "Image Pinning Buttons Shortcode"
 msgid "Pinterest Buttons Shortcode"
-msgstr "Zkrácený kód Pinteret tlačítek"
+msgstr "Zkrácený kód Image Pinning tlačítek"
 
-#: includes/class-pntrst-settings.php:351
+#: includes/class-pntrst-settings.php:358
+#, fuzzy
+#| msgid "Add Image Pinning to a widget."
 msgid "Add Pinterest to a widget."
-msgstr "Přidat Pinterest do widgetu."
+msgstr "Přidat Image Pinning do widgetu."
 
-#: includes/class-pntrst-settings.php:351
+#: includes/class-pntrst-settings.php:358
 msgid "Navigate to Widgets"
 msgstr "Přejít k widgetům"
 
-#: includes/class-pntrst-settings.php:352
+#: includes/class-pntrst-settings.php:359
+#, fuzzy
+#| msgid ""
+#| "Add Image Pinning button(-s) to your posts, pages or custom post types "
+#| "using the following shortcode:"
 msgid ""
 "Add Pinterest button(-s) to your posts, pages or custom post types using the "
 "following shortcode:"
 msgstr ""
-"Přidejte Pinterest tlačítko/a na své příspěvky, stránky nebo vlastní typy "
-"příspěvků pomocí následujícího zkráceného kódu:"
+"Přidejte Image Pinning tlačítko/a na své příspěvky, stránky nebo vlastní "
+"typy příspěvků pomocí následujícího zkráceného kódu:"
 
-#: includes/class-pntrst-settings.php:369
+#: includes/class-pntrst-settings.php:376
 msgid "Display Settings"
 msgstr "Nastavení zobrazení"
 
-#: includes/class-pntrst-settings.php:378
+#: includes/class-pntrst-settings.php:380
+msgid "Close"
+msgstr ""
+
+#: includes/class-pntrst-settings.php:386
+#, fuzzy
+#| msgid ""
+#| "Please choose the necessary post types (or single pages) where Image "
+#| "Pinning buttons will be displayed:"
 msgid ""
 "Please choose the necessary post types (or single pages) where Pinterest "
 "buttons will be displayed:"
 msgstr ""
 "Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
-"tlačítka Pinterest  zobrazovat:"
+"tlačítka Image Pinning  zobrazovat:"
 
-#: includes/class-pntrst-settings.php:385
+#: includes/class-pntrst-settings.php:393
 msgid "Show URL for pages"
 msgstr "Zobrazit URL pro stránky"
 
-#: includes/class-pntrst-settings.php:391
+#: includes/class-pntrst-settings.php:399
 msgid "Example of the site's pages tree"
 msgstr "Příklad stromu stránek"
+
+#~ msgid "Image Pinning Settings"
+#~ msgstr "Nastavení Pinterest"
+
+#~ msgid "Image Pinning Widget"
+#~ msgstr "Widget Image Pinning"

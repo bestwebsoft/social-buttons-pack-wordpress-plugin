@@ -1,25 +1,6 @@
 /*
 * Plugin css
 */
-.fcbk_share {
-	display: inline-block;
-	margin: 0 10px 0 0;
-	line-height: inherit;
-	height: auto;
-}
-.fcbk_share img,
-.fcbk_like .fb_iframe_widget span {
-	vertical-align: middle !important;
-}
-.fcbk_button a {
-	height: auto;
-}
-.twttr_buttons {
-	display: inline-block;
-	margin: 0 5px 0 0;
-	line-height: inherit;
-	height: auto;
-}
 .twttr_twitter,
 .twttr_followme,
 .twttr_hashtag,

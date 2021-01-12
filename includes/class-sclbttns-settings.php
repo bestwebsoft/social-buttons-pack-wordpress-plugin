@@ -38,8 +38,6 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 				'is_network_options' => is_network_admin(),
 				'tabs' 				 => $tabs,				
 				'wp_slug'			 => 'social-buttons-pack',
-				'pro_page' 			 => 'admin.php?page=social-buttons.php',
-				'bws_license_plugin' => 'social-buttons-pack-pro/social-buttons-pack-pro.php',
 				'link_key' 			 => 'c0d1b84b603c503e8a16cfa6252b2f70',
 				'link_pn' 			 => '209'
 			) );
@@ -76,7 +74,7 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 			foreach ( $socials as $current_class ) {
 				$result = $current_class->save_options();
 				if ( ! empty( $result['error'] ) )
-					$error .= $result['error'];
+					$error .= $result['error'] . '<br/>';
 			}
 
 			$message .= __( 'Settings saved.', 'social-buttons-pack' );

@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 4.5
-Tested up to: 5.3.2
-Stable tag: 1.1.6
+Tested up to: 5.6
+Stable tag: 1.1.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,23 +37,17 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Share
 		* Follow
 * Choose buttons position:
-	* Before 
-	* After 
+	* Before content
+	* After content
 	* Before and after
-	* Shortcode
 * Add social buttons widgets:
-	* LinkedIn
-		* Member Profile
-		* Company Profile
-		* Company Insider
-		* Jobs You May Be Interested In
-		* Alumni Tool
 	* Pinterest
 		* Pin
 		* Board
 		* Profile
 * Add social buttons via shortcode
 * Customize each button and widget with a number of options
+* Compatible with [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=2ec37323803cbfb57b0ae57aa32caf8c)
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
@@ -66,6 +60,8 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 >
 > * Display social buttons for certain pages and/or post types
 > * Social buttons preview
+> * Add Twitter Timeline
+> * Facebook widget with the most liked posts
 > * Сhange Facebook meta tags:
 > 	* Image
 > 	* Description
@@ -187,19 +183,28 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 == Screenshots ==
 
 1. Displaying Social Buttons in your post.
-2. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
-3. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
-4. Displaying Pinterest Pin widget.
-5. Displaying Pinterest Board widget.
-6. Displaying Pinterest Profile widget.
-7. Plugin settings page: Facebook.
-8. Plugin settings page: Twitter.
-9. Plugin settings page: Pinterest.
-10. Plugin settings page: LinkedIn.
-11. Adding widgets to the sidebar.
-12. Adding Social Buttons shortcode to your post or page.
+2. Displaying Pinterest Pin widget.
+3. Displaying Pinterest Board widget.
+4. Displaying Pinterest Profile widget.
+5. Plugin settings page: Facebook.
+6. Plugin settings page: Twitter.
+7. Plugin settings page: Pinterest.
+8. Plugin settings page: LinkedIn.
+9. Adding widgets to the sidebar.
+10. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.7 - 12.01.2021 =
+* NEW : Ability to add Twitter Timeline has been added.
+* Bugfix : Button intermittently showing/not showing has been fixed.
+* Bugfix : The compatibility with Graph API v6.0 has been fixed.
+* Bugfix : The problem with "Save" button displaying on image hover has been fixed.
+* Bugfix : The problem with "Pin" button displaying has been fixed.
+* Bugfix : The bug with resizing buttons has been fixed.
+* Bugfix : The bug with displaying the "Save" button when hovering over an image when selecting post or page has been fixed.
+* Update : Widgets was removed due to a change in the linkedin API.
+* Update : BWS plugins section is updated.
 
 = V1.1.6 - 26.12.2019 =
 * Update : We updated all functionality for wordpress 5.3.2.
@@ -306,6 +311,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.7 =
+* Functionality expanded.
+* Bugs fixed.
 
 = V1.1.6 =
 * Bugs fixed.

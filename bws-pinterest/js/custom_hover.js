@@ -23,7 +23,7 @@
 					'z-index': '999999'
 				} );
 			}
-		} );
+		} );		
 		$( document ).on( 'mouseleave', 'img', function( e ) {
 			if ( ! $( e.relatedTarget ).is( '#pntrst-custom-hover > img' ) ) {
 				$( '#pntrst-custom-hover' ).remove();

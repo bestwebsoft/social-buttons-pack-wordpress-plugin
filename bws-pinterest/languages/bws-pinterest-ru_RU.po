@@ -1,29 +1,30 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Pinterest\n"
-"POT-Creation-Date: 2018-01-15 13:20+0200\n"
-"PO-Revision-Date: 2018-01-15 13:21+0200\n"
+"POT-Creation-Date: 2020-08-27 15:29+0300\n"
+"PO-Revision-Date: 2020-08-27 15:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugins@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: bws-pinterest.php:35 bws-pinterest.php:36 bws-pinterest.php:205
-#: includes/class-pntrst-settings.php:180
+#: bws-pinterest.php:35 bws-pinterest.php:36 bws-pinterest.php:204
+#: includes/class-pntrst-settings.php:185
 msgid "Pinterest Settings"
-msgstr "Настройки Pinterest"
+msgstr "Виджет Pinterest"
 
-#: bws-pinterest.php:36 bws-pinterest.php:793 bws-pinterest.php:811
-#: includes/class-pntrst-settings.php:23
+#: bws-pinterest.php:36 bws-pinterest.php:838 bws-pinterest.php:856
+#: includes/class-pntrst-settings.php:21
 msgid "Settings"
 msgstr "Настройки"
 
@@ -31,69 +32,78 @@ msgstr "Настройки"
 msgid "Upgrade to Pro"
 msgstr "Обновиться до Pro"
 
-#: bws-pinterest.php:187
+#: bws-pinterest.php:184
 msgid "Follow me"
 msgstr "Подписаться"
 
-#: bws-pinterest.php:392
+#: bws-pinterest.php:207
+msgid "WARNING"
+msgstr "ВНИМАНИЕ"
+
+#: bws-pinterest.php:208
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr ""
+"Плагин работает корректно только в том случае, если включен JavaScript."
+
+#: bws-pinterest.php:436
 msgid "Pinterest Widget"
 msgstr "Виджет Pinterest"
 
-#: bws-pinterest.php:395
+#: bws-pinterest.php:439
 msgid "Widget for adding Pinterest Pin, Board, and Profile widgets"
 msgstr "Отображение виджетов Pinterest"
 
-#: bws-pinterest.php:461
+#: bws-pinterest.php:505
 msgid "Title"
 msgstr "Название"
 
-#: bws-pinterest.php:466
+#: bws-pinterest.php:510
 msgid "Type"
 msgstr "Тип"
 
-#: bws-pinterest.php:468 bws-pinterest.php:478 bws-pinterest.php:621
+#: bws-pinterest.php:512 bws-pinterest.php:522 bws-pinterest.php:665
 msgid "Pin Widget"
 msgstr "Pin виджет"
 
-#: bws-pinterest.php:469 bws-pinterest.php:479 bws-pinterest.php:622
+#: bws-pinterest.php:513 bws-pinterest.php:523 bws-pinterest.php:666
 msgid "Board Widget"
 msgstr "Board виджет"
 
-#: bws-pinterest.php:470 bws-pinterest.php:623
+#: bws-pinterest.php:514 bws-pinterest.php:667
 msgid "Profile Widget"
 msgstr "Profile виджет"
 
-#: bws-pinterest.php:474 bws-pinterest.php:639
+#: bws-pinterest.php:518 bws-pinterest.php:683
 msgid "URL"
 msgstr "URL"
 
-#: bws-pinterest.php:477
+#: bws-pinterest.php:521
 msgid "Examples"
 msgstr "Примеры"
 
-#: bws-pinterest.php:483 bws-pinterest.php:644
+#: bws-pinterest.php:527 bws-pinterest.php:688
 msgid "Size"
 msgstr "Размер"
 
-#: bws-pinterest.php:485 bws-pinterest.php:646
-#: includes/class-pntrst-settings.php:293
+#: bws-pinterest.php:529 bws-pinterest.php:690
+#: includes/class-pntrst-settings.php:298
 msgid "Small"
 msgstr "Маленький"
 
-#: bws-pinterest.php:486 bws-pinterest.php:647
+#: bws-pinterest.php:530 bws-pinterest.php:691
 msgid "Medium"
 msgstr "Средний"
 
-#: bws-pinterest.php:487 bws-pinterest.php:648
-#: includes/class-pntrst-settings.php:294
+#: bws-pinterest.php:531 bws-pinterest.php:692
+#: includes/class-pntrst-settings.php:299
 msgid "Large"
 msgstr "Большой"
 
-#: bws-pinterest.php:491 bws-pinterest.php:653
+#: bws-pinterest.php:535 bws-pinterest.php:697
 msgid "Width"
 msgstr "Ширина"
 
-#: bws-pinterest.php:495 bws-pinterest.php:511
+#: bws-pinterest.php:539 bws-pinterest.php:555
 #, php-format
 msgid ""
 "Min width%1s. If the widget width field is empty, the thumbnail width will "
@@ -102,80 +112,80 @@ msgstr ""
 "Мин. ширина%1s. Если ширина виджета не задана, то ширина миниатюр будет "
 "задана автоматически."
 
-#: bws-pinterest.php:499 bws-pinterest.php:654
+#: bws-pinterest.php:543 bws-pinterest.php:698
 msgid "Height"
 msgstr "Высота"
 
-#: bws-pinterest.php:503
+#: bws-pinterest.php:547
 #, php-format
 msgid "Min height%1s."
 msgstr "Мин. высота%1s."
 
-#: bws-pinterest.php:507 bws-pinterest.php:655
+#: bws-pinterest.php:551 bws-pinterest.php:699
 msgid "Thumbnails width"
 msgstr "Ширина миниатюр"
 
-#: bws-pinterest.php:617
+#: bws-pinterest.php:661
 msgid "Shortcode Type"
 msgstr "Тип шорткода"
 
-#: bws-pinterest.php:619 includes/class-pntrst-settings.php:310
+#: bws-pinterest.php:663 includes/class-pntrst-settings.php:317
 msgid "Follow Button"
 msgstr "Кнопка \"Подписаться\""
 
-#: bws-pinterest.php:620 includes/class-pntrst-settings.php:245
+#: bws-pinterest.php:664 includes/class-pntrst-settings.php:250
 msgid "Save Button"
 msgstr "Кнопка \"Сохранить\""
 
-#: bws-pinterest.php:627
+#: bws-pinterest.php:671
 msgid "Button label"
 msgstr "Текст кнопки"
 
-#: bws-pinterest.php:631
+#: bws-pinterest.php:675
 msgid "Save any image"
 msgstr "Сохранять любое изображение"
 
-#: bws-pinterest.php:632
+#: bws-pinterest.php:676
 msgid "Save defined image"
 msgstr "Сохранять заданное изображение"
 
-#: bws-pinterest.php:633
+#: bws-pinterest.php:677
 msgid "Pin image URL"
 msgstr "URL заданого изображения"
 
-#: bws-pinterest.php:634
+#: bws-pinterest.php:678
 msgid "Custom button image"
 msgstr "Пользовательское изображение кнопки"
 
-#: bws-pinterest.php:635
+#: bws-pinterest.php:679
 msgid "Custom image URL"
 msgstr "URL пользовательского изображения кнопки"
 
-#: bws-pinterest.php:795
+#: bws-pinterest.php:840
 msgid "FAQ"
 msgstr "FAQ"
 
-#: bws-pinterest.php:796
+#: bws-pinterest.php:841
 msgid "Support"
 msgstr "Поддержка"
 
-#: includes/class-pntrst-settings.php:25
+#: includes/class-pntrst-settings.php:23
 msgid "Display"
 msgstr "Отображение"
 
-#: includes/class-pntrst-settings.php:27
+#: includes/class-pntrst-settings.php:25
 msgid "Misc"
 msgstr "Разное"
 
-#: includes/class-pntrst-settings.php:28
+#: includes/class-pntrst-settings.php:26
 msgid "Custom Code"
 msgstr "Пользовательский код"
 
-#: includes/class-pntrst-settings.php:30
+#: includes/class-pntrst-settings.php:28
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: includes/class-pntrst-settings.php:67
+#: includes/class-pntrst-settings.php:65
 msgid ""
 "\"Save\" button location is not selected. The button will be displayed only "
 "via shortcode."
@@ -183,7 +193,7 @@ msgstr ""
 "Не выбрано расположение кнопки \"Сохранить\". Кнопка будет отображаться "
 "только по шорткоду."
 
-#: includes/class-pntrst-settings.php:71
+#: includes/class-pntrst-settings.php:69
 msgid ""
 "\"Follow\" button location is not selected. The button will be displayed "
 "only via shortcode."
@@ -191,7 +201,7 @@ msgstr ""
 "Не выбрано расположение кнопки \"Подписаться\". Кнопка будет отображаться "
 "только по шорткоду."
 
-#: includes/class-pntrst-settings.php:111
+#: includes/class-pntrst-settings.php:119
 msgid ""
 "Please, enter \"Pinterest User ID\" to add Follow Button. Settings are not "
 "saved."
@@ -199,68 +209,70 @@ msgstr ""
 "Пожалуйста, введите \"ID профиля Pinterest\", чтобы добавить кнопку "
 "\"Подписаться\". Настройки не сохранены."
 
-#: includes/class-pntrst-settings.php:132
+#: includes/class-pntrst-settings.php:139
 #, php-format
 msgid "Error: File size %1s"
 msgstr "Ошибка: Размер файла %1s"
 
-#: includes/class-pntrst-settings.php:135
+#: includes/class-pntrst-settings.php:142
 msgid "Error: Invalid file type"
 msgstr "Ошибка: Некорректный тип файла"
 
-#: includes/class-pntrst-settings.php:147
+#: includes/class-pntrst-settings.php:154
 msgid "Error: moving file failed"
 msgstr "Ошибка: При загрузке произошла ошибка"
 
-#: includes/class-pntrst-settings.php:152
+#: includes/class-pntrst-settings.php:159
 msgid "Can't find upload directory path. Settings are not saved."
 msgstr "Не найден путь к каталогу загрузки. Настройки не сохранены."
 
-#: includes/class-pntrst-settings.php:155
+#: includes/class-pntrst-settings.php:162
 msgid "Error: select the upload file"
 msgstr "Ошибка:  Выберите файл для загрузки"
 
-#: includes/class-pntrst-settings.php:162
+#: includes/class-pntrst-settings.php:169
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: includes/class-pntrst-settings.php:183
+#: includes/class-pntrst-settings.php:188
 msgid "General"
 msgstr "Общее"
 
-#: includes/class-pntrst-settings.php:186
+#: includes/class-pntrst-settings.php:191
 msgid "Pinterest User ID"
 msgstr "ID профиля Pinterest"
 
-#: includes/class-pntrst-settings.php:189
+#: includes/class-pntrst-settings.php:194
 msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
 msgstr "Введите ваш ID профиля Pinterest. Например, \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:193
+#: includes/class-pntrst-settings.php:198
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: includes/class-pntrst-settings.php:198
-#: includes/class-pntrst-settings.php:354
+#: includes/class-pntrst-settings.php:203
+#: includes/class-pntrst-settings.php:361
 msgid "Save"
 msgstr "\"Сохранить\""
 
-#: includes/class-pntrst-settings.php:203
-#: includes/class-pntrst-settings.php:358
+#: includes/class-pntrst-settings.php:208
+#: includes/class-pntrst-settings.php:365
 msgid "Follow"
 msgstr "\"Подписаться\""
 
-#: includes/class-pntrst-settings.php:209
+#: includes/class-pntrst-settings.php:214
 msgid "Language"
 msgstr "Язык"
 
-#: includes/class-pntrst-settings.php:220
+#: includes/class-pntrst-settings.php:225
+#, fuzzy
+#| msgid "Select the default language for Image Pinning button(-s)."
 msgid "Select the default language for Pinterest button(-s)."
-msgstr "Выберите стандартный язык отображения кнопок Pinterest."
+msgstr "Выберите стандартный язык отображения кнопок Image Pinning."
 
-#: includes/class-pntrst-settings.php:230
-#: includes/class-pntrst-settings.php:234
-#: includes/class-pntrst-settings.php:238
+#: includes/class-pntrst-settings.php:235
+#: includes/class-pntrst-settings.php:239
+#: includes/class-pntrst-settings.php:243
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
@@ -268,108 +280,116 @@ msgstr ""
 "Включите, чтобы переключать язык автоматически на многоязычном сайте, "
 "используя Multilanguage плагин."
 
-#: includes/class-pntrst-settings.php:234
+#: includes/class-pntrst-settings.php:239
 #, php-format
 msgid "Activate %s"
 msgstr "Активировать %s"
 
-#: includes/class-pntrst-settings.php:238
+#: includes/class-pntrst-settings.php:243
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: includes/class-pntrst-settings.php:248
-#: includes/class-pntrst-settings.php:320
+#: includes/class-pntrst-settings.php:253
+#: includes/class-pntrst-settings.php:327
 msgid "Button Position"
 msgstr "Положение кнопки"
 
-#: includes/class-pntrst-settings.php:251
-#: includes/class-pntrst-settings.php:323
+#: includes/class-pntrst-settings.php:256
+#: includes/class-pntrst-settings.php:330
 msgid "Before content"
 msgstr "Перед содержимым"
 
-#: includes/class-pntrst-settings.php:252
-#: includes/class-pntrst-settings.php:324
+#: includes/class-pntrst-settings.php:257
+#: includes/class-pntrst-settings.php:331
 msgid "After content"
 msgstr "После содержимого"
 
-#: includes/class-pntrst-settings.php:253
+#: includes/class-pntrst-settings.php:258
 msgid "On image hover"
 msgstr "При наведении на изображение"
 
-#: includes/class-pntrst-settings.php:258
+#: includes/class-pntrst-settings.php:263
 msgid "Button Image"
 msgstr "Изображение кнопки"
 
-#: includes/class-pntrst-settings.php:261
+#: includes/class-pntrst-settings.php:266
 msgid "Default"
 msgstr "Стандартное"
 
-#: includes/class-pntrst-settings.php:262
+#: includes/class-pntrst-settings.php:267
 msgid "Custom"
 msgstr "Пользовательское"
 
-#: includes/class-pntrst-settings.php:267
+#: includes/class-pntrst-settings.php:272
 #, php-format
 msgid "Max image size: %1s. Allowed file extensions: %2s"
 msgstr "Макс. размер изображения: %1s. Разрешенные типы: %2s"
 
-#: includes/class-pntrst-settings.php:274
+#: includes/class-pntrst-settings.php:279
 msgid "Current custom image"
 msgstr "Текущее пользовательское изображение"
 
-#: includes/class-pntrst-settings.php:281
+#: includes/class-pntrst-settings.php:286
 msgid "Button Shape"
 msgstr "Форма кнопки"
 
-#: includes/class-pntrst-settings.php:284
+#: includes/class-pntrst-settings.php:289
 msgid "Square"
 msgstr "Квадратная"
 
-#: includes/class-pntrst-settings.php:285
+#: includes/class-pntrst-settings.php:290
 msgid "Round"
 msgstr "Круглая"
 
-#: includes/class-pntrst-settings.php:290
+#: includes/class-pntrst-settings.php:295
 msgid "Button Size"
 msgstr "Размер кнопки"
 
-#: includes/class-pntrst-settings.php:299
+#: includes/class-pntrst-settings.php:304
 msgid "Show Pin Count"
 msgstr "Отображать количество сохранений"
 
-#: includes/class-pntrst-settings.php:302
+#: includes/class-pntrst-settings.php:307
 msgid "Not shown"
 msgstr "Не показывать"
 
-#: includes/class-pntrst-settings.php:303
+#: includes/class-pntrst-settings.php:309
 msgid "Above the button"
 msgstr "Над кнопкой"
 
-#: includes/class-pntrst-settings.php:304
+#: includes/class-pntrst-settings.php:311
 msgid "Beside the button"
 msgstr "Справа"
 
-#: includes/class-pntrst-settings.php:313
+#: includes/class-pntrst-settings.php:320
 msgid "Full Name"
 msgstr "Имя профиля"
 
-#: includes/class-pntrst-settings.php:316
+#: includes/class-pntrst-settings.php:323
 msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
 msgstr "Введите имя вашего профиля Pinterest. Например, \"bestwebsoft\"."
 
-#: includes/class-pntrst-settings.php:348
+#: includes/class-pntrst-settings.php:355
+#, fuzzy
+#| msgid "Image Pinning Buttons Shortcode"
 msgid "Pinterest Buttons Shortcode"
-msgstr "Шорткод кнопок Pinterest"
+msgstr "Шорткод кнопок Image Pinning"
 
-#: includes/class-pntrst-settings.php:351
+#: includes/class-pntrst-settings.php:358
+#, fuzzy
+#| msgid "Add \"Pinterest\" to a widget."
 msgid "Add Pinterest to a widget."
 msgstr "Добавьте Pinterest в виджет."
 
-#: includes/class-pntrst-settings.php:351
+#: includes/class-pntrst-settings.php:358
 msgid "Navigate to Widgets"
 msgstr "Перейти к Виджетам"
 
-#: includes/class-pntrst-settings.php:352
+#: includes/class-pntrst-settings.php:359
+#, fuzzy
+#| msgid ""
+#| "Add a Pinterest button(-s) to your posts, pages or custom post types by "
+#| "using the following shortcode:"
 msgid ""
 "Add Pinterest button(-s) to your posts, pages or custom post types using the "
 "following shortcode:"
@@ -377,25 +397,49 @@ msgstr ""
 "Добавить кнопки Pinterest на ваши записи, страницы, пользовательские типы "
 "записей с помощью данного шорткода:"
 
-#: includes/class-pntrst-settings.php:369
+#: includes/class-pntrst-settings.php:376
 msgid "Display Settings"
 msgstr "Настройка отображения"
 
-#: includes/class-pntrst-settings.php:378
+#: includes/class-pntrst-settings.php:380
+msgid "Close"
+msgstr "Закрыть"
+
+#: includes/class-pntrst-settings.php:386
+#, fuzzy
+#| msgid ""
+#| "Please choose the necessary post types (or single pages) where Image "
+#| "Pinning buttons will be displayed:"
 msgid ""
 "Please choose the necessary post types (or single pages) where Pinterest "
 "buttons will be displayed:"
 msgstr ""
 "Пожалуйста, выберите те типы записей (или отдельные страницы), где будут "
-"отображаться Pinterest кнопки:"
+"отображаться Image Pinning кнопки:"
 
-#: includes/class-pntrst-settings.php:385
+#: includes/class-pntrst-settings.php:393
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: includes/class-pntrst-settings.php:391
+#: includes/class-pntrst-settings.php:399
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
+
+#~ msgid "Image Pinning Settings"
+#~ msgstr "Настройки Pinterest"
+
+#~ msgid "Image Pinning Widget"
+#~ msgstr "Image Pinning виджет"
+
+#~ msgid "Add Image Pinning to a widget."
+#~ msgstr "Добавьте Image Pinning в виджет."
+
+#~ msgid ""
+#~ "Add Image Pinning button(-s) to your posts, pages or custom post types "
+#~ "using the following shortcode:"
+#~ msgstr ""
+#~ "Добавить кнопки Image Pinning на ваши записи, страницы, пользовательские "
+#~ "типы записей с помощью данного шорткода:"
 
 #~ msgid ""
 #~ "The location of the \"Save\" button is not selected. Your changes have "
@@ -411,13 +455,6 @@ msgstr "Пример дерева страниц сайта"
 
 #~ msgid "Example of site pages' tree"
 #~ msgstr "Пример дерева страниц сайта"
-
-#~ msgid ""
-#~ "Add a Pinterest button(-s) to your posts, pages or custom post types by "
-#~ "using the following shortcode:"
-#~ msgstr ""
-#~ "Добавить кнопки Pinterest на ваши записи, страницы, пользовательские типы "
-#~ "записей с помощью данного шорткода:"
 
 #~ msgid "Widget for adding Pinterest Pin, Board and Profile widgets"
 #~ msgstr "Отображение виджетов Pinterest"
@@ -474,9 +511,6 @@ msgstr "Пример дерева страниц сайта"
 
 #~ msgid "Min width%1s. If emtpy width: auto"
 #~ msgstr "Мин. ширина%1s. Если пусто - ширина: авто"
-
-#~ msgid "Add \"Pinterest\" to a widget."
-#~ msgstr "Добавьте Pinterest в виджет."
 
 #~ msgid "Save Widget"
 #~ msgstr "Save виджет"

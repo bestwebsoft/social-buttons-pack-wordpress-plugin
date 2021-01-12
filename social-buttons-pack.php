@@ -6,12 +6,12 @@ Description: Add social media buttons and widgets to WordPress posts, pages and 
 Author: BestWebSoft
 Text Domain: social-buttons-pack
 Domain Path: /languages
-Version: 1.1.6
+Version: 1.1.7
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
 
-/*  Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
+/*  Copyright 2021  BestWebSoft  ( https://support.bestwebsoft.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 

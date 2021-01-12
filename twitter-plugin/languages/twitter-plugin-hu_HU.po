@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 17:53+0300\n"
-"PO-Revision-Date: 2018-04-09 17:53+0300\n"
+"POT-Creation-Date: 2019-07-24 13:13+0300\n"
+"PO-Revision-Date: 2019-07-24 13:13+0300\n"
 "Last-Translator: Áprily Péter <info@aprily.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/class-twttr-settings.php:24 twitter.php:37 twitter.php:440
-#: twitter.php:453
+#: includes/class-twttr-settings.php:24 twitter.php:47 twitter.php:461
+#: twitter.php:474
 msgid "Settings"
 msgstr "Beállítások"
 
@@ -38,283 +38,389 @@ msgstr "Aktuális kép"
 msgid "License Key"
 msgstr ""
 
-#: includes/class-twttr-settings.php:178
+#: includes/class-twttr-settings.php:169
 msgid "Error: File size > 32K"
 msgstr "Hiba: File méret > 32k"
 
-#: includes/class-twttr-settings.php:180
+#: includes/class-twttr-settings.php:171
 msgid "Error: Invalid file type"
 msgstr "Hiba: Érvénytelen file típus"
 
-#: includes/class-twttr-settings.php:194
+#: includes/class-twttr-settings.php:184
 #, fuzzy
 msgid "Error: Failed to move file"
 msgstr "Hiba: file mozgatás sikertelen"
 
-#: includes/class-twttr-settings.php:197
+#: includes/class-twttr-settings.php:187
 msgid "Error: Check image width or height"
 msgstr ""
 
-#: includes/class-twttr-settings.php:201
+#: includes/class-twttr-settings.php:191
 msgid "Uploading Error: Check image properties"
 msgstr ""
 
-#: includes/class-twttr-settings.php:209
+#: includes/class-twttr-settings.php:197
 msgid "Settings saved"
 msgstr "Beállítások mentve"
 
-#: includes/class-twttr-settings.php:221 twitter.php:36 twitter.php:37
-#: twitter.php:207
+#: includes/class-twttr-settings.php:208 twitter.php:37 twitter.php:46
+#: twitter.php:213
 #, fuzzy
 msgid "Twitter Button Settings"
 msgstr "Twitter beállítások"
 
-#: includes/class-twttr-settings.php:224
+#: includes/class-twttr-settings.php:211
 msgid "General"
 msgstr ""
 
-#: includes/class-twttr-settings.php:227
+#: includes/class-twttr-settings.php:214
 msgid "Buttons"
 msgstr ""
 
-#: includes/class-twttr-settings.php:230 twitter.php:272 twitter.php:322
-#: twitter.php:326 twitter.php:398
+#: includes/class-twttr-settings.php:217 twitter.php:282 twitter.php:333
+#: twitter.php:337 twitter.php:417
 msgid "Tweet"
 msgstr ""
 
-#: includes/class-twttr-settings.php:232 twitter.php:399
+#: includes/class-twttr-settings.php:219 twitter.php:418
 #, fuzzy
 msgid "Follow"
 msgstr "\"Follow Me\" kép"
 
-#: includes/class-twttr-settings.php:234 includes/class-twttr-settings.php:354
-#: includes/class-twttr-settings.php:415 twitter.php:400
+#: includes/class-twttr-settings.php:221 includes/class-twttr-settings.php:434
+#: includes/class-twttr-settings.php:495 twitter.php:419
 msgid "Hashtag"
 msgstr ""
 
-#: includes/class-twttr-settings.php:236 twitter.php:401
+#: includes/class-twttr-settings.php:223 twitter.php:420
 msgid "Mention"
 msgstr ""
 
-#: includes/class-twttr-settings.php:241
+#: includes/class-twttr-settings.php:228
 msgid "Buttons Size"
 msgstr ""
 
-#: includes/class-twttr-settings.php:244
+#: includes/class-twttr-settings.php:231
 msgid "Small"
 msgstr ""
 
-#: includes/class-twttr-settings.php:245
+#: includes/class-twttr-settings.php:232
 msgid "Large"
 msgstr ""
 
-#: includes/class-twttr-settings.php:250
+#: includes/class-twttr-settings.php:237
 #, fuzzy
 msgid "Buttons Position"
 msgstr "A \"Twitter\" ikon helye"
 
-#: includes/class-twttr-settings.php:255
+#: includes/class-twttr-settings.php:242
 #, fuzzy
 msgid "Before content"
 msgstr "Előtte és Utána"
 
-#: includes/class-twttr-settings.php:260
+#: includes/class-twttr-settings.php:247
 msgid "After content"
 msgstr ""
 
-#: includes/class-twttr-settings.php:266
+#: includes/class-twttr-settings.php:253 includes/class-twttr-settings.php:332
 msgid "Language"
 msgstr ""
 
-#: includes/class-twttr-settings.php:268
+#: includes/class-twttr-settings.php:255
 msgid "Automatic"
 msgstr ""
 
-#: includes/class-twttr-settings.php:301
+#: includes/class-twttr-settings.php:288
 msgid "Select the default language for Twitter button(-s)."
 msgstr ""
 
-#: includes/class-twttr-settings.php:305
+#: includes/class-twttr-settings.php:292
 #, fuzzy
 msgid "Twitter Tailoring"
 msgstr "Twitter beállítások"
 
-#: includes/class-twttr-settings.php:308
+#: includes/class-twttr-settings.php:295
 msgid "Enable tailored suggestions from Twitter."
 msgstr ""
 
-#: includes/class-twttr-settings.php:308
+#: includes/class-twttr-settings.php:295
 msgid "Learn More"
 msgstr "Olvasson tovább"
 
-#: includes/class-twttr-settings.php:313
+#: includes/class-twttr-settings.php:303 includes/class-twttr-settings.php:593
+#: includes/class-twttr-settings.php:609 includes/class-twttr-settings.php:625
+msgid "Close"
+msgstr ""
+
+#: includes/class-twttr-settings.php:305
+msgid "Twitter Timeline"
+msgstr ""
+
+#: includes/class-twttr-settings.php:309
+msgid "Twitter URL"
+msgstr ""
+
+#: includes/class-twttr-settings.php:312
+msgid "Enter Twitter account URL to display the timeline"
+msgstr ""
+
+#: includes/class-twttr-settings.php:316
+msgid "Number Of Tweets"
+msgstr ""
+
+#: includes/class-twttr-settings.php:319
+msgid ""
+"Enter the number of Tweets which will be displayed on the timeline. Enter "
+"\"0\" to display maximum number"
+msgstr ""
+
+#: includes/class-twttr-settings.php:323
+msgid "Theme"
+msgstr ""
+
+#: includes/class-twttr-settings.php:326
+msgid "Light"
+msgstr ""
+
+#: includes/class-twttr-settings.php:327
+msgid "Dark"
+msgstr ""
+
+#: includes/class-twttr-settings.php:340
+msgid "Height"
+msgstr ""
+
+#: includes/class-twttr-settings.php:343
+msgid ""
+"Set a fixed height of the timeline block. The height parameter doesn't work "
+"when a \"Number Of Tweets\" is set to 0."
+msgstr ""
+
+#: includes/class-twttr-settings.php:347
+msgid "Width"
+msgstr ""
+
+#: includes/class-twttr-settings.php:350
+msgid ""
+"Set the maximum width of the timeline block. Set 0 to automatically "
+"determine the width"
+msgstr ""
+
+#: includes/class-twttr-settings.php:354
+msgid "Design Elements"
+msgstr ""
+
+#: includes/class-twttr-settings.php:357
+msgid "Hide the timeline header"
+msgstr ""
+
+#: includes/class-twttr-settings.php:359
+msgid "Hide the timeline footer"
+msgstr ""
+
+#: includes/class-twttr-settings.php:361
+msgid "Hide the timeline borders"
+msgstr ""
+
+#: includes/class-twttr-settings.php:363
+msgid "Remove the timeline background color"
+msgstr ""
+
+#: includes/class-twttr-settings.php:365
+msgid "Hide the timeline scrollbar"
+msgstr ""
+
+#: includes/class-twttr-settings.php:370
+msgid "Border color"
+msgstr ""
+
+#: includes/class-twttr-settings.php:374
+msgid "Set the color of borders inside of the timeline block."
+msgstr ""
+
+#: includes/class-twttr-settings.php:379
+msgid "Link color"
+msgstr ""
+
+#: includes/class-twttr-settings.php:383
+msgid ""
+"Set the color of links, including hashtags and @mentions, inside each Tweet."
+msgstr ""
+
+#: includes/class-twttr-settings.php:393
 #, fuzzy
 msgid "Tweet Button"
 msgstr "Egyéni gomb"
 
-#: includes/class-twttr-settings.php:316 includes/class-twttr-settings.php:422
+#: includes/class-twttr-settings.php:396 includes/class-twttr-settings.php:502
 msgid "Share URL"
 msgstr ""
 
-#: includes/class-twttr-settings.php:319 includes/class-twttr-settings.php:427
-#: includes/class-twttr-settings.php:468
+#: includes/class-twttr-settings.php:399 includes/class-twttr-settings.php:507
+#: includes/class-twttr-settings.php:548
 #, fuzzy
 msgid "Current page"
 msgstr "Aktuális kép"
 
-#: includes/class-twttr-settings.php:321 includes/class-twttr-settings.php:429
+#: includes/class-twttr-settings.php:401 includes/class-twttr-settings.php:509
 msgid "Home page"
 msgstr ""
 
-#: includes/class-twttr-settings.php:327 includes/class-twttr-settings.php:434
-#: includes/class-twttr-settings.php:465
+#: includes/class-twttr-settings.php:407 includes/class-twttr-settings.php:514
+#: includes/class-twttr-settings.php:545
 msgid "Tweet Text"
 msgstr ""
 
-#: includes/class-twttr-settings.php:331 includes/class-twttr-settings.php:437
+#: includes/class-twttr-settings.php:411 includes/class-twttr-settings.php:517
 #, fuzzy
 msgid "Current page title"
 msgstr "Aktuális kép"
 
-#: includes/class-twttr-settings.php:333 includes/class-twttr-settings.php:377
-#: includes/class-twttr-settings.php:439 includes/class-twttr-settings.php:470
+#: includes/class-twttr-settings.php:413 includes/class-twttr-settings.php:457
+#: includes/class-twttr-settings.php:519 includes/class-twttr-settings.php:550
 #, fuzzy
 msgid "Custom"
 msgstr "Aktuális kép"
 
-#: includes/class-twttr-settings.php:340
+#: includes/class-twttr-settings.php:420
 msgid "Via"
 msgstr ""
 
-#: includes/class-twttr-settings.php:343
+#: includes/class-twttr-settings.php:423
 msgid "Enter username for Tweet via parameter."
 msgstr ""
 
-#: includes/class-twttr-settings.php:347 includes/class-twttr-settings.php:446
-#: includes/class-twttr-settings.php:477
+#: includes/class-twttr-settings.php:427 includes/class-twttr-settings.php:526
+#: includes/class-twttr-settings.php:557
 msgid "Recommend"
 msgstr ""
 
-#: includes/class-twttr-settings.php:350 includes/class-twttr-settings.php:449
-#: includes/class-twttr-settings.php:480
+#: includes/class-twttr-settings.php:430 includes/class-twttr-settings.php:529
+#: includes/class-twttr-settings.php:560
 msgid ""
 "Enter usernames of someone you recommend (maximum 2 allowed). For example: "
 "bestwebsoft, wordpress."
 msgstr ""
 
-#: includes/class-twttr-settings.php:357 includes/class-twttr-settings.php:418
+#: includes/class-twttr-settings.php:437 includes/class-twttr-settings.php:498
 msgid ""
 "Enter one or multiple hashtags for your tweet. For example: bestwebsoft, "
 "wordpress, etc."
 msgstr ""
 
-#: includes/class-twttr-settings.php:361
+#: includes/class-twttr-settings.php:441
 #, fuzzy
 msgid "Follow Button"
 msgstr "Egyéni gomb"
 
-#: includes/class-twttr-settings.php:364
+#: includes/class-twttr-settings.php:444
 #, fuzzy
 msgid "Twitter username"
 msgstr "Adja meg felhasználónevét"
 
-#: includes/class-twttr-settings.php:367
+#: includes/class-twttr-settings.php:447
 #, php-format
 msgid "Enter your Twitter account username or %s create a new one %s."
 msgstr ""
 
-#: includes/class-twttr-settings.php:371
+#: includes/class-twttr-settings.php:451
 #, fuzzy
 msgid "Follow Button Image"
 msgstr "\"Follow Me\" kép"
 
-#: includes/class-twttr-settings.php:375
+#: includes/class-twttr-settings.php:455
 msgid "Default"
 msgstr ""
 
-#: includes/class-twttr-settings.php:381
+#: includes/class-twttr-settings.php:461
 #, php-format
 msgid ""
 "To use custom image, You need to setup permissions to upload directory of "
 "your site - %s"
 msgstr ""
 
-#: includes/class-twttr-settings.php:389
+#: includes/class-twttr-settings.php:469
 msgid "Current image"
 msgstr "Aktuális kép"
 
-#: includes/class-twttr-settings.php:397
+#: includes/class-twttr-settings.php:477
 #, php-format
 msgid ""
 "Upload image with the %s dimensions, JPG, JPEG or PNG formats (maximum file "
 "size - %s)."
 msgstr ""
 
-#: includes/class-twttr-settings.php:402
+#: includes/class-twttr-settings.php:482
 #, fuzzy
 msgid "Show Follow Button"
 msgstr "Egyéni gomb"
 
-#: includes/class-twttr-settings.php:405
+#: includes/class-twttr-settings.php:485
 #, fuzzy
 msgid "Username"
 msgstr "Adja meg felhasználónevét"
 
-#: includes/class-twttr-settings.php:407
+#: includes/class-twttr-settings.php:487
 msgid "Count"
 msgstr ""
 
-#: includes/class-twttr-settings.php:412
+#: includes/class-twttr-settings.php:492
 msgid "Hashtag Button"
 msgstr ""
 
-#: includes/class-twttr-settings.php:425
+#: includes/class-twttr-settings.php:505
 msgid "None"
 msgstr ""
 
-#: includes/class-twttr-settings.php:453
+#: includes/class-twttr-settings.php:533
 msgid "Mention Button"
 msgstr ""
 
-#: includes/class-twttr-settings.php:457 twitter.php:343
+#: includes/class-twttr-settings.php:537 twitter.php:354
 msgid "Tweet to"
 msgstr ""
 
-#: includes/class-twttr-settings.php:461
+#: includes/class-twttr-settings.php:541
 msgid "Enter username of someone you want to mention."
 msgstr ""
 
-#: includes/class-twttr-settings.php:461
+#: includes/class-twttr-settings.php:541
 #, php-format
 msgid "For example, %s."
 msgstr ""
 
-#: includes/class-twttr-settings.php:504
+#: includes/class-twttr-settings.php:584
 #, fuzzy
 msgid "Twitter Buttons Shortcode"
 msgstr "A \"Twitter\" ikon helye"
 
-#: includes/class-twttr-settings.php:507
+#: includes/class-twttr-settings.php:587
 msgid ""
 "Add Twitter button(-s) to your posts, pages, custom post types or widgets by "
 "using the following shortcode:"
 msgstr ""
 
-#: includes/class-twttr-settings.php:518
-msgid "Close"
+#: includes/class-twttr-settings.php:595
+msgid ""
+"Add Twitter timeline to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
 msgstr ""
 
-#: includes/class-twttr-settings.php:519
+#: includes/class-twttr-settings.php:610
 #, fuzzy
 msgid "Twitter Buttons Preview"
 msgstr "Twitter beállítások"
 
-#: includes/class-twttr-settings.php:533
+#: includes/class-twttr-settings.php:626
+msgid "Twitter Timeline Preview"
+msgstr ""
+
+#: includes/class-twttr-settings.php:640
 #, fuzzy
 msgid "Display Settings"
 msgstr "A megjelenítás beállításainak kiválasztása"
 
-#: includes/class-twttr-settings.php:542
+#: includes/class-twttr-settings.php:649
 #, fuzzy
 msgid ""
 "Please choose the necessary post types (or single pages) where Twitter "
@@ -323,45 +429,45 @@ msgstr ""
 "Kérjük válassza ki a szükséges bejegyzés típusokat (vagy egyedi oldalakat) "
 "ahol a Twitter gomb megjelenjen:"
 
-#: includes/class-twttr-settings.php:549
+#: includes/class-twttr-settings.php:656
 msgid "Show URL for pages"
 msgstr "URL megjelenítése oldalakon"
 
-#: includes/class-twttr-settings.php:555
+#: includes/class-twttr-settings.php:662
 msgid "Example of the site's pages tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: includes/class-twttr-settings.php:555
+#: includes/class-twttr-settings.php:662
 #, fuzzy
 msgid "Example of site pages' tree"
 msgstr "Példa az oldal lap struktúrájának fájára"
 
-#: twitter.php:43
+#: twitter.php:64
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: twitter.php:208
+#: twitter.php:214
 msgid "Please enable JavaScript in Your browser."
 msgstr ""
 
-#: twitter.php:289 twitter.php:293
+#: twitter.php:300 twitter.php:304
 #, fuzzy
 msgid "Follow me"
 msgstr "\"Follow Me\" kép"
 
-#: twitter.php:302
+#: twitter.php:313
 msgid "TwitterStories"
 msgstr ""
 
-#: twitter.php:397
+#: twitter.php:416
 msgid "Please select twitter buttons which will be displayed"
 msgstr ""
 
-#: twitter.php:454
+#: twitter.php:476
 msgid "FAQ"
 msgstr "Gy.I.K."
 
-#: twitter.php:455
+#: twitter.php:477
 msgid "Support"
 msgstr "Támogatás"
 

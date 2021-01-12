@@ -12,14 +12,16 @@ if ( ! function_exists( 'twttr_init' ) ) {
 		global $twttr_plugin_info;
 
 		if ( empty( $twttr_plugin_info ) ) {
-			if ( ! function_exists( 'get_plugin_data' ) )
-				require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			if ( ! function_exists( 'get_plugin_data' ) ) {
+			    require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+			}
 			$twttr_plugin_info = get_plugin_data( __FILE__ );
 		}
 
 				/* Get/Register and check settings for plugin */
-		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "twitter.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) )
-			twttr_settings();
+		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "twitter.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) ) {
+		    twttr_settings();
+		}
 	}
 }
 
@@ -27,9 +29,9 @@ if ( ! function_exists( 'twttr_init' ) ) {
 if ( ! function_exists( 'twttr_admin_init' ) ) {
 	function twttr_admin_init() {
 		/* Add variable for bws_menu */
-		global $bws_plugin_info, $twttr_plugin_info, $bws_shortcode_list;
+		global $bws_plugin_info, $twttr_plugin_info, $bws_shortcode_list, $pagenow, $twttr_options;
 
-				$bws_shortcode_list['twttr'] = array( 'name' => 'Twitter Button', 'js_function' => 'twttr_shortcode_init' );
+				$bws_shortcode_list['twttr'] = array( 'name' => 'Twitter', 'js_function' => 'twttr_shortcode_init' );
 	}
 }
 /* end twttr_admin_init */
@@ -37,7 +39,7 @@ if ( ! function_exists( 'twttr_admin_init' ) ) {
 /* Register settings for plugin */
 if ( ! function_exists( 'twttr_settings' ) ) {
 	function twttr_settings() {
-		global $twttr_options, $twttr_plugin_info, $sclbttns_plugin_info;
+		global $twttr_options, $twttr_plugin_info;
 		/* Get options from the database */
 		if ( ! get_option( 'twttr_options' ) ) {
 			$options_default = twttr_get_options_default();
@@ -46,10 +48,9 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 
 		$twttr_options = get_option( 'twttr_options' );
 
-		if ( ! isset( $twttr_options['plugin_option_version'] ) || $twttr_options['plugin_option_version'] != $twttr_plugin_info["Version"] || $twttr_options['plugin_option_version'] != $sclbttns_plugin_info["Version"] ) {
+		if ( ! isset( $twttr_options['plugin_option_version'] ) || $twttr_options['plugin_option_version'] != $twttr_plugin_info["Version"] ) {
 			$options_default = twttr_get_options_default();
-
-			$twttr_options = array_merge( $options_default, $twttr_options );
+						$twttr_options = array_merge( $options_default, $twttr_options );
 			$twttr_options['plugin_option_version'] = $twttr_plugin_info["Version"];
 			update_option( 'twttr_options', $twttr_options );
 		}
@@ -65,7 +66,7 @@ if ( ! function_exists( 'twttr_get_options_default' ) ) {
 			'plugin_option_version' 	=> $twttr_plugin_info["Version"],
 			'display_settings_notice'	=> 1,
 			'suggest_feature_banner'	=> 1,
-			'url_twitter' 				=> 'admin',
+			'url_twitter' 				=> 'twitter',
 			'display_option'			=> 'standart',
 			'count_icon' 				=> 1,
 			'img_link' 					=> plugins_url( 'images/twitter-follow.png', __FILE__ ),
@@ -101,6 +102,7 @@ if ( ! function_exists( 'twttr_get_options_default' ) ) {
 	}
 }
 
+/* Function to creates shortcode [twitter_buttons] */
 if ( ! function_exists( 'twttr_twitter_buttons' ) ) {
 	function twttr_twitter_buttons( $atts = array( 'display' => 'follow' ) ) {
 		$atts = shortcode_atts( array( 'display' => 'follow' ), $atts, 'twitter_buttons' );
@@ -119,32 +121,36 @@ if ( ! function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
 		global $post, $twttr_options, $wp_current_filter;
 
-		if ( ! empty( $wp_current_filter ) && in_array( 'get_the_excerpt', $wp_current_filter ) )
+		if ( ! empty( $wp_current_filter ) && in_array( 'get_the_excerpt', $wp_current_filter ) ) {
 			return $content;
-
+		}
 		if ( ! empty( $twttr_options['position'] ) &&
 			( 1 == $twttr_options['tweet_display'] || 1 == $twttr_options['followme_display'] || 1 == $twttr_options['hashtag_display'] || 1 == $twttr_options['mention_display'] ) ) {
 
 			$buttons = twttr_show_button( $twttr_options['tweet_display'], $twttr_options['followme_display'], $twttr_options['hashtag_display'], $twttr_options['mention_display'] );
 			$buttons = apply_filters( 'twttr_button_in_the_content', $buttons );
 
-			if ( in_array( 'before', $twttr_options['position'] ) )
+			if ( in_array( 'before', $twttr_options['position'] ) ) {
 				$content = $buttons . $content;
-			if ( in_array( 'after', $twttr_options['position'] ) )
+			}
+			if ( in_array( 'after', $twttr_options['position'] ) ) {
 				$content = $content . $buttons;
+			}
 		}
 		return $content;
 	}
 }
+
 
 /* Function for showing buttons */
 if ( ! function_exists( 'twttr_show_button' ) ) {
 	function twttr_show_button( $tweet, $follow, $hashtag, $mention ) {
 		global $post, $twttr_options, $twttr_add_api_script;
 
-		if ( is_feed() )
-			return;
+		if ( is_feed() ) {
 
+			return;
+		}
 		if ( 1 == $tweet || 1 == $follow || 1 == $hashtag || 1 == $mention ) {
 
 			$twttr_add_api_script = true;
@@ -165,8 +171,9 @@ if ( ! function_exists( 'twttr_show_button' ) ) {
 			}
 			if ( 1 == $follow ) {
 				/*option for follow me button*/
-				if ( $twttr_options['url_twitter'] == "" )
+				if ( $twttr_options['url_twitter'] == "" ) {
 					$twttr_options['url_twitter'] = "twitter";
+				}
 
 				/*show follow me button*/
 				$upload_dir = wp_upload_dir();
@@ -223,9 +230,9 @@ if ( ! function_exists( 'twttr_show_button' ) ) {
 				if ( empty( $twttr_options['tweet_to_mention'] ) ) {
 					$twttr_options['tweet_to_mention'] = "support";
 				}
-				if ( 'page_title' == $twttr_options['text_option_mention'] )
+				if ( 'page_title' == $twttr_options['text_option_mention'] ) {
 					$text_mention = '';
-
+				}
 				$text_mention = ( 'page_title' == $twttr_options['text_option_mention'] ) ? htmlspecialchars( urlencode( $post->post_title ) ) : urlencode( $twttr_options['text_mention'] );
 				/*show mention button*/
 				$mention = '<div class="twttr_mention">
@@ -248,6 +255,7 @@ if ( ! function_exists( 'twttr_wp_head' ) ) {
 
 if ( ! function_exists( 'twttr_admin_enqueue_scripts' ) ) {
 	function twttr_admin_enqueue_scripts() {
+	    wp_enqueue_style( 'twttr_icon', plugins_url( 'css/icon.css', __FILE__ ) );
 		if ( isset( $_GET['page'] ) && ( "twitter.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) {
 			wp_enqueue_style( 'twttr_stylesheet', plugins_url( 'css/style.css', __FILE__ ) );
 			wp_enqueue_script( 'twttr_script', plugins_url( 'js/script.js' , __FILE__ ), array( 'jquery' ) );
@@ -261,11 +269,20 @@ if ( ! function_exists( 'twttr_admin_enqueue_scripts' ) ) {
 if ( ! function_exists( 'twttr_api_scripts' ) ) {
 	function twttr_api_scripts() {
 		global $twttr_add_api_script;
-		if ( true == $twttr_add_api_script || defined( 'BWS_ENQUEUE_ALL_SCRIPTS' ) ) { ?>
-			<script type="text/javascript">
-				!function(d,s,id) {var js,fjs=d.getElementsByTagName(s)[0];if (!d.getElementById(id)) {js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-			</script>
-			<?php $twttr_add_api_script = false;
+		if ( true == $twttr_add_api_script || defined( 'BWS_ENQUEUE_ALL_SCRIPTS' ) ) { 
+			$script_api = "!function(d,s,id) {
+					var js,fjs=d.getElementsByTagName(s)[0];
+					if (!d.getElementById(id)) {
+						js=d.createElement(s);
+						js.id=id;
+						js.src=\"https://platform.twitter.com/widgets.js\";
+						fjs.parentNode.insertBefore(js,fjs);
+					}
+				}(document,\"script\",\"twitter-wjs\")";
+			wp_register_script( 'twttr_api_scripts_init', '' );
+			wp_enqueue_script( 'twttr_api_scripts_init' );
+			wp_add_inline_script( 'twttr_api_scripts_init', sprintf( $script_api ) );
+			$twttr_add_api_script = false;
 		}
 	}
 }
@@ -280,7 +297,7 @@ if ( ! function_exists( 'twttr_pagination_callback' ) ) {
 /* add shortcode content */
 if ( ! function_exists( 'twttr_shortcode_button_content' ) ) {
 	function twttr_shortcode_button_content( $content ) {
-		global $wp_version, $post; ?>
+		global $post; ?>
 		<div id="twttr" style="display:none;">
 			<fieldset>
 				<?php _e( 'Please select twitter buttons which will be displayed', 'twitter-plugin' ); ?><br />
@@ -290,14 +307,9 @@ if ( ! function_exists( 'twttr_shortcode_button_content' ) ) {
 				<label><input type="checkbox" value="1" id="twttr_mention" name="twttr_mention"><?php _e( 'Mention', 'twitter-plugin' ); ?></label><br />
 			</fieldset>
 			<input class="bws_default_shortcode" type="hidden" name="default" value="[twitter_buttons]" />
-			<script type="text/javascript">
-				function twttr_shortcode_init() {
-					(function($) {
-						<?php if ( $wp_version < '3.9' ) { ?>
-							var current_object = '#TB_ajaxContent';
-						<?php } else { ?>
-							var current_object = '.mce-reset';
-						<?php } ?>
+			<?php $script = "function twttr_shortcode_init() {
+					( function( $ ) {
+						var current_object = '.mce-reset';
 						$( current_object + ' #twttr_tweet,' + current_object + ' #twttr_followme,' + current_object + ' #twttr_hashtag,' + current_object + ' #twttr_mention' ).on( 'change', function() {
 							var tweet = ( $( current_object + ' #twttr_tweet' ).is( ':checked' ) ) ? 'tweet,' : '';
 							var follow_me = ( $( current_object + ' #twttr_followme' ).is( ':checked' ) ) ? 'follow,' : '';
@@ -311,8 +323,10 @@ if ( ! function_exists( 'twttr_shortcode_button_content' ) ) {
 							$( current_object + ' #bws_shortcode_display' ).text( shortcode );
 						} );
 					} ) ( jQuery );
-				}
-			</script>
+				}";
+			wp_register_script( 'twttr_bws_shortcode_button', '' );
+			wp_enqueue_script( 'twttr_bws_shortcode_button' );
+			wp_add_inline_script( 'twttr_bws_shortcode_button', sprintf( $script ) );?>
 			<div class="clear"></div>
 		</div>
 	<?php }

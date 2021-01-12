@@ -68,6 +68,33 @@
 			fcbkbttn_share();
 		} );
 
+		$( '.fcbkbttn_settings_form' ).on( 'click', '#fcbkbttn_image_custom .add_media', function open_media_window() {
+			var currentParent = $( this ).parents( 'td' );
+			if ( this.window === undefined ) {
+				this.window = wp.media({
+					title: fcbkbttn_var.wp_media_title,
+					library: { type: 'image' },
+					multiple: false,
+					button: { text: fcbkbttn_var.wp_media_button }
+				});
+
+				var self = this; /* Needed to retrieve our variable in the anonymous function below */
+				this.window.on( 'select', function() {
+					var all = self.window.state().get( 'selection' ).toJSON();
+					currentParent.find( '.fcbkbttn-image' ).html( '<img src="' + all[0].url + '" /><span class="fcbkbttn-delete-image"><span class="dashicons dashicons-no-alt"></span></span>' );
+					currentParent.find( '.fcbkbttn-image-id' ).val( all[0].id );
+				});
+			}
+
+			this.window.open();
+			return false;
+		});
+
+		$( '.fcbkbttn_settings_form' ).on( 'click', '.fcbkbttn-delete-image', function(){
+			$( this ).parent().next().val( '' );
+			$( this ).parent().html( '' );
+		});
+
 	});
 	
 } )( jQuery );
