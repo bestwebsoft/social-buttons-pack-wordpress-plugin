@@ -31,7 +31,10 @@ if ( ! function_exists( 'twttr_admin_init' ) ) {
 		/* Add variable for bws_menu */
 		global $bws_plugin_info, $twttr_plugin_info, $bws_shortcode_list, $pagenow, $twttr_options;
 
-				$bws_shortcode_list['twttr'] = array( 'name' => 'Twitter', 'js_function' => 'twttr_shortcode_init' );
+		/* pls*/
+
+		/* add Twitter to global $bws_shortcode_list */
+		$bws_shortcode_list['twttr'] = array( 'name' => 'Twitter', 'js_function' => 'twttr_shortcode_init' );
 	}
 }
 /* end twttr_admin_init */

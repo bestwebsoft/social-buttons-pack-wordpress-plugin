@@ -34,7 +34,10 @@ if ( ! function_exists( 'lnkdn_admin_init' ) ) {
 	function lnkdn_admin_init() {
 		global $bws_plugin_info, $lnkdn_plugin_info, $bws_shortcode_list, $pagenow, $lnkdn_options;
 
-				$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init' );
+		/* pls*/
+
+		/* Add LinkedIn to global $bws_shortcode_list */
+		$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init' );
 	}
 }
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: social-buttons-pack\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-10 12:30+0200\n"
-"PO-Revision-Date: 2020-12-10 12:30+0200\n"
+"POT-Creation-Date: 2021-06-21 15:05+0300\n"
+"PO-Revision-Date: 2021-06-21 15:09+0300\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -23,31 +23,32 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-3: facebook-button-plugin\n"
 "X-Poedit-SearchPathExcluded-4: twitter-plugin\n"
 
-#: includes/class-sclbttns-settings.php:26
+#: includes/class-sclbttns-settings.php:27
 msgid "Display"
 msgstr "Відображення"
 
-#: includes/class-sclbttns-settings.php:27
+#: includes/class-sclbttns-settings.php:28
 msgid "Misc"
 msgstr "Різне"
 
-#: includes/class-sclbttns-settings.php:28
+#: includes/class-sclbttns-settings.php:29
 msgid "Custom Code"
 msgstr "Користувацький код"
 
-#: includes/class-sclbttns-settings.php:29
+#: includes/class-sclbttns-settings.php:30
 msgid "License Key"
 msgstr "Ліцензійний ключ"
 
-#: includes/class-sclbttns-settings.php:80
+#: includes/class-sclbttns-settings.php:85
 msgid "Settings saved."
 msgstr "Налаштування збережено."
 
-#: includes/class-sclbttns-settings.php:108
+#: includes/class-sclbttns-settings.php:117
+#: includes/sclbttns-nstgrm-settings.php:336
 msgid "Display Settings"
 msgstr "Налаштування відображення"
 
-#: includes/class-sclbttns-settings.php:117
+#: includes/class-sclbttns-settings.php:126
 msgid ""
 "Please choose the necessary post types (or single pages) where Social "
 "Suttons will be displayed:"
@@ -55,37 +56,212 @@ msgstr ""
 "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
 "відображатися соціальні кнопки:"
 
-#: includes/class-sclbttns-settings.php:124
+#: includes/class-sclbttns-settings.php:133
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: includes/class-sclbttns-settings.php:130
+#: includes/class-sclbttns-settings.php:139
 msgid "Example of site pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
-#: social-buttons-pack.php:34 social-buttons-pack.php:35
-#: social-buttons-pack.php:169
-msgid "Social Buttons Settings"
-msgstr "Налаштування Social Buttons"
-
-#: social-buttons-pack.php:35 social-buttons-pack.php:212
-#: social-buttons-pack.php:225
+#: includes/sclbttns-nstgrm-settings.php:22
+#: includes/sclbttns-nstgrm-settings.php:26 social-buttons-pack.php:35
+#: social-buttons-pack.php:215 social-buttons-pack.php:228
 msgid "Settings"
 msgstr "Налаштування"
+
+#: includes/sclbttns-nstgrm-settings.php:87
+msgid "Settings saved"
+msgstr "Налаштування збережено"
+
+#: includes/sclbttns-nstgrm-settings.php:103
+msgid "Error: Check image width or height."
+msgstr "Помилка: Перевірте ширину або довжину."
+
+#: includes/sclbttns-nstgrm-settings.php:107
+msgid "Error: Invalid file type"
+msgstr "Помилка: неправильний тип файлу"
+
+#: includes/sclbttns-nstgrm-settings.php:154
+msgid "Instagram Settings"
+msgstr "Налаштування Instagram"
+
+#: includes/sclbttns-nstgrm-settings.php:161
+#: includes/sclbttns-nstgrm-settings.php:200
+msgid "Notice:"
+msgstr "Зауважте:"
+
+#: includes/sclbttns-nstgrm-settings.php:161
+msgid ""
+"According to BestWebSoft Instagram network settings, it is prohibited to "
+"view the plugin settings on this site."
+msgstr ""
+"Відповідно до налаштувань мережі BestWebSoft Instagram заборонено "
+"переглядати налаштування плагіна на цьому веб-сайті."
+
+#: includes/sclbttns-nstgrm-settings.php:164
+msgid "General"
+msgstr "Основні"
+
+#: includes/sclbttns-nstgrm-settings.php:168
+msgid "Apply Network Settings"
+msgstr "Застосувати налаштування мережі"
+
+#: includes/sclbttns-nstgrm-settings.php:172
+msgid "Apply to all sites and use by default"
+msgstr "Застосувати до всіх сайтів і використовувати за замовчуванням"
+
+#: includes/sclbttns-nstgrm-settings.php:174
+msgid "Use general settings for all individual websites."
+msgstr "Використовувати загальні налаштування для всіх окремих веб-сайтів."
+
+#: includes/sclbttns-nstgrm-settings.php:178
+msgid "Allow changing the settings on separate websites"
+msgstr "Дозволити зміну налаштувань на окремих сайтах"
+
+#: includes/sclbttns-nstgrm-settings.php:181
+msgid "Allow viewing the settings on separate websites"
+msgstr "Дозволити перегляд налаштувань на окремих сайтах"
+
+#: includes/sclbttns-nstgrm-settings.php:185
+msgid "By default"
+msgstr "За замовчуванням"
+
+#: includes/sclbttns-nstgrm-settings.php:187
+msgid "Settings will be applied to newly added websites by default."
+msgstr ""
+"Налаштування застосовуватимуться до всіх новододаних сайтів автоматично"
+
+#: includes/sclbttns-nstgrm-settings.php:190
+msgid "Do not apply"
+msgstr "Не застосовувати"
+
+#: includes/sclbttns-nstgrm-settings.php:192
+msgid "Change the settings on separate sites of the multisite only."
+msgstr "Змінити налаштування лише для окремих сайтів мультисайту"
+
+#: includes/sclbttns-nstgrm-settings.php:200
+msgid ""
+"According to BestWebSoft Instagram network settings, it is prohibited to "
+"change the plugin settings on this site."
+msgstr ""
+"Згідно з налаштуваннями мережі BestWebSoft Instagram, на цьому веб-сайті "
+"забороняється змінювати налаштування плагіна."
+
+#: includes/sclbttns-nstgrm-settings.php:204
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: includes/sclbttns-nstgrm-settings.php:208
+msgid "Profile URL"
+msgstr "URL профілю"
+
+#: includes/sclbttns-nstgrm-settings.php:214
+msgid "Buttons Size"
+msgstr "Розмір кнопки"
+
+#: includes/sclbttns-nstgrm-settings.php:218
+msgid "Small"
+msgstr "Маленька"
+
+#: includes/sclbttns-nstgrm-settings.php:221
+msgid "Large"
+msgstr "Велика"
+
+#: includes/sclbttns-nstgrm-settings.php:227
+msgid "Buttons Position"
+msgstr "Розташування кнопок"
+
+#: includes/sclbttns-nstgrm-settings.php:232
+msgid "Before content"
+msgstr "Перед постом"
+
+#: includes/sclbttns-nstgrm-settings.php:236
+msgid "After content"
+msgstr "Після посту"
+
+#: includes/sclbttns-nstgrm-settings.php:242
+msgid "Buttons Align"
+msgstr "Розташування кнопок"
+
+#: includes/sclbttns-nstgrm-settings.php:246
+msgid "Right"
+msgstr "Справа"
+
+#: includes/sclbttns-nstgrm-settings.php:249
+msgid "Center"
+msgstr "По центру"
+
+#: includes/sclbttns-nstgrm-settings.php:252
+msgid "Left"
+msgstr "Зліва"
+
+#: includes/sclbttns-nstgrm-settings.php:258
+msgid "Profile URL Button"
+msgstr "Кнопка URL профілю"
+
+#: includes/sclbttns-nstgrm-settings.php:261
+msgid "Account Username"
+msgstr "Ім'я користувача облікового запису"
+
+#: includes/sclbttns-nstgrm-settings.php:268
+msgid "Profile Button Image"
+msgstr "Зображення кнопки профілю"
+
+#: includes/sclbttns-nstgrm-settings.php:274
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: includes/sclbttns-nstgrm-settings.php:282
+msgid "Custom image"
+msgstr "Користувацьке зображення"
+
+#: includes/sclbttns-nstgrm-settings.php:287
+msgid "Add Media"
+msgstr ""
+
+#: includes/sclbttns-nstgrm-settings.php:289
+msgid ""
+"Image requirements: max image width: 50px; max image height: 50px; image "
+"types: \"jpg\", \"jpeg\", \"png\"."
+msgstr ""
+"Вимоги до зображення: максимальна ширина зображення: 50px; максимальна "
+"висота зображення: 50px; типи зображень: \"jpg\", \"jpeg\", \"png\"."
+
+#: includes/sclbttns-nstgrm-settings.php:323
+msgid "Instagram Shortcode"
+msgstr "Instagram Шорткод"
+
+#: includes/sclbttns-nstgrm-settings.php:326
+msgid ""
+"Add Instagram buttons to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
+msgstr ""
+"Додайте кнопки Instagram до своїх публікацій, сторінок, користувацьких типів "
+"публікацій або віджетів, використовуючи такий shortcode:"
+
+#: includes/sclbttns-nstgrm.php:105
+msgid "Add Instagram Profile button to your page or post"
+msgstr "Додати кнопки Instagram на вашу сторінку або пост"
+
+#: social-buttons-pack.php:34 social-buttons-pack.php:35
+#: social-buttons-pack.php:172
+msgid "Social Buttons Settings"
+msgstr "Налаштування Social Buttons"
 
 #: social-buttons-pack.php:40
 msgid "Upgrade to Pro"
 msgstr "Оновитися до Pro"
 
-#: social-buttons-pack.php:170
+#: social-buttons-pack.php:173
 msgid "Please, enable JavaScript in Your browser."
 msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
 
-#: social-buttons-pack.php:226
+#: social-buttons-pack.php:229
 msgid "FAQ"
 msgstr "FAQ"
 
-#: social-buttons-pack.php:227
+#: social-buttons-pack.php:230
 msgid "Support"
 msgstr "Підтримка"
 
@@ -133,19 +309,9 @@ msgstr "Підтримка"
 #~ msgstr "Вкажіть Google+ ID, напр."
 
 #, fuzzy
-#~| msgid "Settings saved."
-#~ msgid "Settings saved"
-#~ msgstr "Налаштування збережено."
-
-#, fuzzy
 #~| msgid "Settings"
 #~ msgid "LinkedIn Settings"
 #~ msgstr "Налаштування"
-
-#, fuzzy
-#~| msgid "Button Size"
-#~ msgid "Buttons"
-#~ msgstr "Розмір кнопки"
 
 #~ msgid "Share"
 #~ msgstr "\"Поділитись\""
@@ -163,14 +329,6 @@ msgstr "Підтримка"
 #~ msgid "Pages"
 #~ msgstr "Сторінка"
 
-#~ msgid "Buttons Position"
-#~ msgstr "Розташування кнопок"
-
-#, fuzzy
-#~| msgid "Before And After"
-#~ msgid "Before content"
-#~ msgstr "Перед та після посту"
-
 #~ msgid "Language"
 #~ msgstr "Мова"
 
@@ -186,11 +344,6 @@ msgstr "Підтримка"
 
 #~ msgid "Learn More"
 #~ msgstr "Докладніше"
-
-#, fuzzy
-#~| msgid "Show buttons"
-#~ msgid "Share Button"
-#~ msgstr "Відображати кнопки"
 
 #, fuzzy
 #~| msgid "Vertical-bubble"
@@ -232,14 +385,8 @@ msgstr "Підтримка"
 #~ msgid "Size"
 #~ msgstr "Розмір"
 
-#~ msgid "Small"
-#~ msgstr "Маленька"
-
 #~ msgid "Medium"
 #~ msgstr "Середня"
-
-#~ msgid "Large"
-#~ msgstr "Велика"
 
 #~ msgid "Width"
 #~ msgstr "Ширина"
@@ -293,11 +440,6 @@ msgstr "Підтримка"
 #~ msgstr "Розмір кнопки"
 
 #, fuzzy
-#~| msgid "By default"
-#~ msgid "Default"
-#~ msgstr "За замовчуванням"
-
-#, fuzzy
 #~| msgid "Custom Code"
 #~ msgid "Custom"
 #~ msgstr "Користувацький код"
@@ -327,34 +469,9 @@ msgstr "Підтримка"
 #~ "відображатися соціальні кнопки:"
 
 #, fuzzy
-#~| msgid "Add Google Buttons to your page or post"
-#~ msgid "Add Facebook buttons to your page or post"
-#~ msgstr "Додати кнопки Google на вашу сторінку або пост"
-
-#, fuzzy
 #~| msgid "Social Buttons Settings"
 #~ msgid "Facebook Button Settings"
 #~ msgstr "Налаштування Social Buttons"
-
-#, fuzzy
-#~| msgid "Button Size"
-#~ msgid "Buttons Size"
-#~ msgstr "Розмір кнопки"
-
-#, fuzzy
-#~| msgid "Buttons Position"
-#~ msgid "Buttons Align"
-#~ msgstr "Розташування кнопок"
-
-#, fuzzy
-#~| msgid "Light"
-#~ msgid "Right"
-#~ msgstr "Світла"
-
-#, fuzzy
-#~| msgid "enter"
-#~ msgid "Center"
-#~ msgstr "вкажіть"
 
 #, fuzzy
 #~| msgid "Select the language to display information on the button"
@@ -363,11 +480,6 @@ msgstr "Підтримка"
 
 #~ msgid "Activate"
 #~ msgstr "Активувати"
-
-#, fuzzy
-#~| msgid "Custom Code"
-#~ msgid "Custom image"
-#~ msgstr "Користувацький код"
 
 #, fuzzy
 #~| msgid "Settings for Share Button"
@@ -422,16 +534,6 @@ msgstr "Підтримка"
 #~ msgstr "Оберіть мову відображення інформації на кнопці"
 
 #, fuzzy
-#~| msgid "Share"
-#~ msgid "Share URL"
-#~ msgstr "\"Поділитись\""
-
-#, fuzzy
-#~| msgid "Show buttons on homepage"
-#~ msgid "Follow Button Image"
-#~ msgstr "Відображати на домашній сторінці"
-
-#, fuzzy
 #~| msgid "Settings for Follow Button"
 #~ msgid "Show Follow Button"
 #~ msgstr "Налаштування для кнопки \"Підписатися\""
@@ -460,9 +562,6 @@ msgstr "Підтримка"
 
 #~ msgid "All plugin settings were restored."
 #~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
-
-#~ msgid "Extra settings"
-#~ msgstr "Додаткові налаштування"
 
 #~ msgid "Custom code"
 #~ msgstr "Користувацький код"
@@ -523,9 +622,6 @@ msgstr "Підтримка"
 #~ msgid "How to Use Step-by-step Instruction"
 #~ msgstr "Покрокова інструкція з використання плагіна"
 
-#~ msgid "Notice:"
-#~ msgstr "Зауважте:"
-
 #~ msgid "This option will replace all current settings on separate sites."
 #~ msgstr "Ця опція замінить всі поточні налаштування на окремих сайтах."
 
@@ -571,30 +667,8 @@ msgstr "Підтримка"
 #~ "code> - \"Поділитись\",<br /> <code>follow</code> - \"Підписатися\",<br /"
 #~ "> <code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\""
 
-#~ msgid "Apply network settings"
-#~ msgstr "Застосувати налаштування мережі"
-
-#~ msgid "Apply to all sites and use by default"
-#~ msgstr "Застосувати до всіх сайтів і використовувати за замовчуванням"
-
 #~ msgid "All current settings on separate sites will be replaced"
 #~ msgstr "Всі поточні налаштування на окремих сайтах буде замінено"
-
-#~ msgid "Allow to change the settings on separate websites"
-#~ msgstr "Дозволити зміну налаштувань на окремих сайтах"
-
-#~ msgid "Allow to view the settings on separate websites"
-#~ msgstr "Дозволити перегляд налаштувань на окремих сайтах"
-
-#~ msgid "Settings will be applied to newly added websites by default"
-#~ msgstr ""
-#~ "Налаштування застосовуватимуться до всіх новододаних сайтів автоматично"
-
-#~ msgid "Do not apply"
-#~ msgstr "Не застосовувати"
-
-#~ msgid "Change the settings on separate sites of the multisite only"
-#~ msgstr "Змінити налаштування лише для окремих сайтів мультисайту"
 
 #~ msgid "Display Google Buttons"
 #~ msgstr "Відображати кнопки Google"
@@ -628,9 +702,6 @@ msgstr "Підтримка"
 
 #~ msgid "After"
 #~ msgstr "Після посту"
-
-#~ msgid "Only Shortcode"
-#~ msgstr "Тільки Шорткод"
 
 #~ msgid "Settings for Google +1 Button"
 #~ msgstr "Налаштування для кнопки Google +1"

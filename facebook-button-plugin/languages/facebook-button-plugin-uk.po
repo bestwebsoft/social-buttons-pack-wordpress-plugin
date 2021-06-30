@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: facebook-button-plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 11:20+0300\n"
-"PO-Revision-Date: 2020-05-04 11:20+0300\n"
+"POT-Creation-Date: 2021-01-06 10:09+0200\n"
+"PO-Revision-Date: 2021-01-06 10:12+0200\n"
 "Last-Translator: plugin@bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
@@ -13,47 +13,152 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
 #: facebook-button-plugin.php:38 facebook-button-plugin.php:46
-#: facebook-button-plugin.php:237 includes/class-fcbkbttn-settings.php:153
+#: facebook-button-plugin.php:546 includes/class-fcbkbttn-settings.php:152
 msgid "Like & Share Settings"
 msgstr "Налаштування Like & Share"
 
-#: facebook-button-plugin.php:47 facebook-button-plugin.php:607
-#: facebook-button-plugin.php:621 includes/class-fcbkbttn-settings.php:21
+#: facebook-button-plugin.php:47 facebook-button-plugin.php:918
+#: facebook-button-plugin.php:932 includes/class-fcbkbttn-settings.php:21
 msgid "Settings"
 msgstr "Налаштування"
 
-#: facebook-button-plugin.php:62
+#: facebook-button-plugin.php:55
+msgid "Statistics"
+msgstr "Статистика"
+
+#: facebook-button-plugin.php:71 facebook-button-plugin.php:472
 msgid "Upgrade to Pro"
 msgstr "Оновитися до Pro"
 
-#: facebook-button-plugin.php:240
+#: facebook-button-plugin.php:188
+msgid "Like & Share Statistics"
+msgstr "Cтатистика Like & Share"
+
+#: facebook-button-plugin.php:195
+msgid "search"
+msgstr "пошук"
+
+#: facebook-button-plugin.php:197
+msgid "Search"
+msgstr "Пошук"
+
+#: facebook-button-plugin.php:202
+msgid "All types"
+msgstr "Усі типи"
+
+#: facebook-button-plugin.php:209 facebook-button-plugin.php:451
+msgid "items"
+msgstr "елементи"
+
+#: facebook-button-plugin.php:214 facebook-button-plugin.php:455
+msgid "Current Page"
+msgstr "Поточна сторінка"
+
+#: facebook-button-plugin.php:216 facebook-button-plugin.php:457
+msgid "of"
+msgstr "з"
+
+#: facebook-button-plugin.php:219 facebook-button-plugin.php:462
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+#: facebook-button-plugin.php:230 facebook-button-plugin.php:431
+msgid "Title"
+msgstr "Заголовок"
+
+#: facebook-button-plugin.php:233 facebook-button-plugin.php:434
+msgid "Type"
+msgstr "Тип"
+
+#: facebook-button-plugin.php:236 facebook-button-plugin.php:437
+msgid "Like Count"
+msgstr "Кількість Like"
+
+#: facebook-button-plugin.php:239 facebook-button-plugin.php:440
+msgid "Share Count"
+msgstr "Кількість Share"
+
+#: facebook-button-plugin.php:242 facebook-button-plugin.php:443
+msgid "Profile URL Count"
+msgstr "Кількість Profile URL"
+
+#: facebook-button-plugin.php:249
+msgid "Hello world"
+msgstr "Привіт Світ"
+
+#: facebook-button-plugin.php:251 facebook-button-plugin.php:260
+#: facebook-button-plugin.php:269 facebook-button-plugin.php:314
+#: facebook-button-plugin.php:332 facebook-button-plugin.php:341
+#: facebook-button-plugin.php:386 facebook-button-plugin.php:404
+#: facebook-button-plugin.php:422
+msgid "post"
+msgstr "запис"
+
+#: facebook-button-plugin.php:258 facebook-button-plugin.php:267
+#: facebook-button-plugin.php:312 facebook-button-plugin.php:330
+#: facebook-button-plugin.php:339 facebook-button-plugin.php:384
+#: facebook-button-plugin.php:402 facebook-button-plugin.php:420
+msgid "Post Example"
+msgstr "Приклад Запису"
+
+#: facebook-button-plugin.php:276 facebook-button-plugin.php:321
+#: facebook-button-plugin.php:348 facebook-button-plugin.php:393
+#: facebook-button-plugin.php:411
+msgid "Post of Custom Type Example"
+msgstr "Приклад Запису Нестандартного типу"
+
+#: facebook-button-plugin.php:285 facebook-button-plugin.php:357
+msgid "Sample Page"
+msgstr "Зразок сторінки"
+
+#: facebook-button-plugin.php:287 facebook-button-plugin.php:296
+#: facebook-button-plugin.php:305 facebook-button-plugin.php:359
+#: facebook-button-plugin.php:368 facebook-button-plugin.php:377
+msgid "page"
+msgstr "сторінка"
+
+#: facebook-button-plugin.php:294 facebook-button-plugin.php:303
+#: facebook-button-plugin.php:366 facebook-button-plugin.php:375
+msgid "Page Example"
+msgstr "Приклад Сторінки"
+
+#: facebook-button-plugin.php:478
+msgid "This tab contains Pro options only."
+msgstr "Ця сторінка містить лише Pro опції"
+
+#: facebook-button-plugin.php:480
+#, php-format
+msgid "%sChange the settings%s to view the Pro options."
+msgstr ""
+
+#: facebook-button-plugin.php:549
 msgid "Please, enable JavaScript in your browser."
 msgstr "Будь ласка, активуйте JavaScript у Вашому браузері."
 
-#: facebook-button-plugin.php:456
+#: facebook-button-plugin.php:766
 msgid "Add Like & Share buttons to your page or post"
 msgstr "Додати кнопки Like & Share на вашу сторінку або запис"
 
-#: facebook-button-plugin.php:585
+#: facebook-button-plugin.php:896
 msgid "Insert Media"
 msgstr "Вставка медіа"
 
-#: facebook-button-plugin.php:586
+#: facebook-button-plugin.php:897
 msgid "Insert"
 msgstr "Вставити"
 
-#: facebook-button-plugin.php:623
+#: facebook-button-plugin.php:934
 msgid "FAQ"
 msgstr "FAQ"
 
-#: facebook-button-plugin.php:624
+#: facebook-button-plugin.php:935
 msgid "Support"
 msgstr "Підтримка"
 
@@ -73,102 +178,102 @@ msgstr "Користувацький код"
 msgid "License Key"
 msgstr "Ліцензійний ключ"
 
-#: includes/class-fcbkbttn-settings.php:119
+#: includes/class-fcbkbttn-settings.php:118
 msgid "Error: Check image width or height."
 msgstr "Помилка: Перевірте ширину або висоту зображення."
 
-#: includes/class-fcbkbttn-settings.php:123
+#: includes/class-fcbkbttn-settings.php:122
 msgid "Error: Invalid file type"
 msgstr "Помилка: Невірний тип файлу"
 
-#: includes/class-fcbkbttn-settings.php:133
+#: includes/class-fcbkbttn-settings.php:132
 msgid "Settings saved"
 msgstr "Налаштування збережені"
 
-#: includes/class-fcbkbttn-settings.php:159
+#: includes/class-fcbkbttn-settings.php:158
 msgid "General"
 msgstr "Загальне"
 
-#: includes/class-fcbkbttn-settings.php:162
+#: includes/class-fcbkbttn-settings.php:161
 msgid "App ID"
 msgstr "App ID"
 
-#: includes/class-fcbkbttn-settings.php:166
+#: includes/class-fcbkbttn-settings.php:165
 msgid "Leave blank to use a default App ID or"
 msgstr "Залиште порожнє, щоб використовувати стандартний App ID або"
 
-#: includes/class-fcbkbttn-settings.php:166
+#: includes/class-fcbkbttn-settings.php:165
 msgid "create a new one."
 msgstr "створити свій власний."
 
-#: includes/class-fcbkbttn-settings.php:170
+#: includes/class-fcbkbttn-settings.php:169
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: includes/class-fcbkbttn-settings.php:173
+#: includes/class-fcbkbttn-settings.php:172
 msgid "Profile URL"
 msgstr "URL профілю"
 
-#: includes/class-fcbkbttn-settings.php:174
-#: includes/class-fcbkbttn-settings.php:411
+#: includes/class-fcbkbttn-settings.php:173
+#: includes/class-fcbkbttn-settings.php:410
 msgid "Like"
 msgstr "Подобається"
 
-#: includes/class-fcbkbttn-settings.php:175
+#: includes/class-fcbkbttn-settings.php:174
 msgid "Share"
 msgstr "Поширити"
 
-#: includes/class-fcbkbttn-settings.php:180
+#: includes/class-fcbkbttn-settings.php:179
 msgid "Buttons Size"
 msgstr "Розмiр кнопок"
 
-#: includes/class-fcbkbttn-settings.php:183
+#: includes/class-fcbkbttn-settings.php:182
 msgid "Small"
 msgstr "Малi"
 
-#: includes/class-fcbkbttn-settings.php:184
+#: includes/class-fcbkbttn-settings.php:183
 msgid "Large"
 msgstr "Великi"
 
-#: includes/class-fcbkbttn-settings.php:189
+#: includes/class-fcbkbttn-settings.php:188
 msgid "Buttons Position"
 msgstr "Розташування кнопок"
 
-#: includes/class-fcbkbttn-settings.php:194
+#: includes/class-fcbkbttn-settings.php:193
 msgid "Before content"
 msgstr "Перед вмістом"
 
-#: includes/class-fcbkbttn-settings.php:199
+#: includes/class-fcbkbttn-settings.php:198
 msgid "After content"
 msgstr "Після вмісту"
 
-#: includes/class-fcbkbttn-settings.php:205
+#: includes/class-fcbkbttn-settings.php:204
 msgid "Buttons Align"
 msgstr "Вирівнювання кнопок"
 
-#: includes/class-fcbkbttn-settings.php:208
+#: includes/class-fcbkbttn-settings.php:207
 msgid "Right"
 msgstr "Зправа"
 
-#: includes/class-fcbkbttn-settings.php:209
+#: includes/class-fcbkbttn-settings.php:208
 msgid "Center"
 msgstr "По середині"
 
-#: includes/class-fcbkbttn-settings.php:210
+#: includes/class-fcbkbttn-settings.php:209
 msgid "Left"
 msgstr "Зліва"
 
-#: includes/class-fcbkbttn-settings.php:215
+#: includes/class-fcbkbttn-settings.php:214
 msgid "Language"
 msgstr "Мова"
 
-#: includes/class-fcbkbttn-settings.php:226
+#: includes/class-fcbkbttn-settings.php:225
 msgid "Select the default language for Like & Share buttons."
 msgstr "Оберіть мову за замовчуванням для кнопок Like & Share."
 
-#: includes/class-fcbkbttn-settings.php:235
-#: includes/class-fcbkbttn-settings.php:238
-#: includes/class-fcbkbttn-settings.php:242
+#: includes/class-fcbkbttn-settings.php:234
+#: includes/class-fcbkbttn-settings.php:237
+#: includes/class-fcbkbttn-settings.php:241
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
@@ -176,57 +281,57 @@ msgstr ""
 "Включiть, щоб перемкнути мову автоматично на багатомовному сайті, "
 "використовуючи плагін Multilanguage."
 
-#: includes/class-fcbkbttn-settings.php:238
+#: includes/class-fcbkbttn-settings.php:237
 msgid "Activate"
 msgstr "Активувати"
 
-#: includes/class-fcbkbttn-settings.php:242
+#: includes/class-fcbkbttn-settings.php:241
 msgid "Install Now"
 msgstr "Встановити зараз"
 
-#: includes/class-fcbkbttn-settings.php:247
+#: includes/class-fcbkbttn-settings.php:246
 msgid "Excerpt"
 msgstr "Уривок"
 
-#: includes/class-fcbkbttn-settings.php:249
+#: includes/class-fcbkbttn-settings.php:248
 msgid "Enable to display buttons in excerpt."
 msgstr "Ввімкнути для відображення кнопок в уривку."
 
-#: includes/class-fcbkbttn-settings.php:253
+#: includes/class-fcbkbttn-settings.php:252
 msgid "Meta Tags"
 msgstr "Мета теги"
 
-#: includes/class-fcbkbttn-settings.php:255
+#: includes/class-fcbkbttn-settings.php:254
 msgid "Enable to use meta tags."
 msgstr "Ввімкнути використання мета тегів."
 
-#: includes/class-fcbkbttn-settings.php:264
-#: includes/class-fcbkbttn-settings.php:470
-#: includes/class-fcbkbttn-settings.php:525
+#: includes/class-fcbkbttn-settings.php:263
+#: includes/class-fcbkbttn-settings.php:469
+#: includes/class-fcbkbttn-settings.php:524
 msgid "Close"
 msgstr "Закрити"
 
-#: includes/class-fcbkbttn-settings.php:268
+#: includes/class-fcbkbttn-settings.php:267
 msgid "Meta Image"
 msgstr "Мета зображення"
 
-#: includes/class-fcbkbttn-settings.php:273
+#: includes/class-fcbkbttn-settings.php:272
 msgid "Featured Image"
 msgstr "Головне зображення"
 
-#: includes/class-fcbkbttn-settings.php:277
+#: includes/class-fcbkbttn-settings.php:276
 msgid "Custom Image"
 msgstr "Користувацьке зображення"
 
-#: includes/class-fcbkbttn-settings.php:279
+#: includes/class-fcbkbttn-settings.php:278
 msgid "This image will be used for all posts."
 msgstr "Це зображення буде використовуватися для всiх записiв."
 
-#: includes/class-fcbkbttn-settings.php:285
+#: includes/class-fcbkbttn-settings.php:284
 msgid "Meta Description"
 msgstr "Мета опис"
 
-#: includes/class-fcbkbttn-settings.php:289
+#: includes/class-fcbkbttn-settings.php:288
 msgid ""
 "Enter a custom description that will be used for all pages and posts. Leave "
 "blank to use a default page description."
@@ -235,31 +340,31 @@ msgstr ""
 "повідомлень. Залиште порожнім, щоб використовувати опис сторінки за "
 "замовчуванням."
 
-#: includes/class-fcbkbttn-settings.php:298
+#: includes/class-fcbkbttn-settings.php:297
 msgid "Profile URL Button"
 msgstr "Кнопка URL профілю"
 
-#: includes/class-fcbkbttn-settings.php:301
+#: includes/class-fcbkbttn-settings.php:300
 msgid "Facebook ID or Username"
 msgstr "Facebook ID або Ім'я користувача"
 
-#: includes/class-fcbkbttn-settings.php:308
+#: includes/class-fcbkbttn-settings.php:307
 msgid "Profile Button Image"
 msgstr "Зображення кнопки профілю"
 
-#: includes/class-fcbkbttn-settings.php:314
+#: includes/class-fcbkbttn-settings.php:313
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: includes/class-fcbkbttn-settings.php:322
+#: includes/class-fcbkbttn-settings.php:321
 msgid "Custom image"
 msgstr "Користувацьке зображення"
 
-#: includes/class-fcbkbttn-settings.php:327
+#: includes/class-fcbkbttn-settings.php:326
 msgid "Add Media"
 msgstr "Додати медіа"
 
-#: includes/class-fcbkbttn-settings.php:329
+#: includes/class-fcbkbttn-settings.php:328
 msgid ""
 "Image requirements: max image width: 100px; max image height: 40px; image "
 "types: \"jpg\", \"jpeg\", \"png\"."
@@ -267,76 +372,76 @@ msgstr ""
 "Вимоги до зображення: максимальна ширина зображення: 100px; максимальна "
 "висота зображення: 40px; типи зображеннь : \"jpg\", \"jpeg\", \"png\"."
 
-#: includes/class-fcbkbttn-settings.php:349
+#: includes/class-fcbkbttn-settings.php:348
 msgid "Like&Share Buttons"
 msgstr "Кнопки \"Подобається\" та \"Поширити\""
 
-#: includes/class-fcbkbttn-settings.php:352
+#: includes/class-fcbkbttn-settings.php:351
 msgid "Like Button Layout"
 msgstr "Вид кнопки \"Подобається\""
 
-#: includes/class-fcbkbttn-settings.php:375
+#: includes/class-fcbkbttn-settings.php:374
 msgid "Share Button Layout"
 msgstr "Вид кнопки \"Поширити\""
 
-#: includes/class-fcbkbttn-settings.php:406
+#: includes/class-fcbkbttn-settings.php:405
 msgid "Like Button Action"
 msgstr "Дія кнопки \"Подобається\""
 
-#: includes/class-fcbkbttn-settings.php:416
+#: includes/class-fcbkbttn-settings.php:415
 msgid "Recommend"
 msgstr "Рекомендую"
 
-#: includes/class-fcbkbttn-settings.php:422
+#: includes/class-fcbkbttn-settings.php:421
 msgid "Friends Faces"
 msgstr "Обличчя друзів"
 
-#: includes/class-fcbkbttn-settings.php:425
+#: includes/class-fcbkbttn-settings.php:424
 msgid "Enable to show faces of your friends who submitted the button."
 msgstr "Включiть, щоб показати обличчя своїх друзів, які натиснули кнопку."
 
-#: includes/class-fcbkbttn-settings.php:429
+#: includes/class-fcbkbttn-settings.php:428
 msgid "Layout Width"
 msgstr "Ширина блоку"
 
-#: includes/class-fcbkbttn-settings.php:433
+#: includes/class-fcbkbttn-settings.php:432
 msgid "px"
 msgstr "пікс"
 
-#: includes/class-fcbkbttn-settings.php:438
+#: includes/class-fcbkbttn-settings.php:437
 msgid "Theme"
 msgstr "Тема"
 
-#: includes/class-fcbkbttn-settings.php:443
+#: includes/class-fcbkbttn-settings.php:442
 msgid "Light"
 msgstr "Світла"
 
-#: includes/class-fcbkbttn-settings.php:448
+#: includes/class-fcbkbttn-settings.php:447
 msgid "Dark"
 msgstr "Темна"
 
-#: includes/class-fcbkbttn-settings.php:454
+#: includes/class-fcbkbttn-settings.php:453
 msgid "Like Button HTML Tag"
 msgstr "HTML тег кнопки \"Подобається\""
 
-#: includes/class-fcbkbttn-settings.php:461
+#: includes/class-fcbkbttn-settings.php:460
 #, php-format
 msgid "Tag %s can be used to improve website code validation."
 msgstr "Тег %s може бути використаний для поліпшення валідації коду сайту."
 
-#: includes/class-fcbkbttn-settings.php:474
+#: includes/class-fcbkbttn-settings.php:473
 msgid "URL to Like"
 msgstr "URL кнопки \"Подобається\""
 
-#: includes/class-fcbkbttn-settings.php:476
+#: includes/class-fcbkbttn-settings.php:475
 msgid "Leave blank to use current page URL."
 msgstr "Залиште порожнім, щоб використовувати посилання на поточну сторінку."
 
-#: includes/class-fcbkbttn-settings.php:504
+#: includes/class-fcbkbttn-settings.php:503
 msgid "Like & Share Shortcode"
 msgstr "Шорткод Like & Share"
 
-#: includes/class-fcbkbttn-settings.php:507
+#: includes/class-fcbkbttn-settings.php:506
 msgid ""
 "Add Like & Share buttons to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
@@ -344,15 +449,15 @@ msgstr ""
 "Додати кнопки Like & Share на ваші записи, сторінки, користувацькі типи "
 "записів або віджети за допомогою даного шорткода:"
 
-#: includes/class-fcbkbttn-settings.php:526
+#: includes/class-fcbkbttn-settings.php:525
 msgid "Like & Share buttons Preview"
 msgstr "Попередній перегляд кнопок Like & Share"
 
-#: includes/class-fcbkbttn-settings.php:540
+#: includes/class-fcbkbttn-settings.php:539
 msgid "Display Settings"
 msgstr "Налаштування відображення"
 
-#: includes/class-fcbkbttn-settings.php:549
+#: includes/class-fcbkbttn-settings.php:548
 msgid ""
 "Choose the necessary post types (or single pages) where Like & Share buttons "
 "will be displayed:"
@@ -360,11 +465,11 @@ msgstr ""
 "Оберіть необхідні типи записів (чи сторінок), де буде відображатися кнопка "
 "Like & Share:"
 
-#: includes/class-fcbkbttn-settings.php:556
+#: includes/class-fcbkbttn-settings.php:555
 msgid "Show URL for pages"
 msgstr "Відображати URL сторінок"
 
-#: includes/class-fcbkbttn-settings.php:562
+#: includes/class-fcbkbttn-settings.php:561
 msgid "Example of site pages tree"
 msgstr "Приклад дерева сторінок сайту"
 
@@ -389,9 +494,6 @@ msgstr "Приклад дерева сторінок сайту"
 #~ msgstr ""
 #~ "Для використання користувацького зображення, вам необхідно видати права "
 #~ "доступу на папку завантажень на вашому сайті"
-
-#~ msgid "Current image"
-#~ msgstr "Поточне зображення"
 
 #, fuzzy
 #~| msgid "Facebook Buttons Preview"

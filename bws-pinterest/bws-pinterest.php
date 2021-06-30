@@ -40,7 +40,9 @@ if ( ! function_exists( 'pntrst_admin_init' ) ) {
 		/* Add variable for bws_menu */
 		global $pagenow, $bws_plugin_info, $pntrst_plugin_info, $bws_shortcode_list, $pntrst_options;
 
-		
+		/* pls*/
+
+		/* add Pinterest to global $bws_shortcode_list */
 		$bws_shortcode_list['pntrst'] = array( 'name' => 'Pinterest', 'js_function' => 'pntrst_shortcode_init' );
 	}
 }

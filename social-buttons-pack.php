@@ -6,7 +6,7 @@ Description: Add social media buttons and widgets to WordPress posts, pages and 
 Author: BestWebSoft
 Text Domain: social-buttons-pack
 Domain Path: /languages
-Version: 1.1.7
+Version: 1.1.8
 Author URI: https://bestwebsoft.com/
 License: GPLv3 or later
 */
@@ -164,7 +164,10 @@ if ( ! function_exists( 'sclbttns_settings_page' ) ) {
         if ( ! class_exists( 'Bws_Settings_Tabs' ) )
             require_once( dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php' );
         require_once( dirname( __FILE__ ) . '/includes/class-sclbttns-settings.php' );
-        $page = new Sclbttns_Settings_Tabs( plugin_basename( __FILE__ ) ); ?>
+        $page = new Sclbttns_Settings_Tabs( plugin_basename( __FILE__ ) ); 
+        if ( method_exists( $page, 'add_request_feature' ) ) {
+            $page->add_request_feature();      
+        } ?>
         <div class="wrap">
             <h1><?php _e( 'Social Buttons Settings', 'social-buttons-pack' ); ?></h1>
             <noscript><div class="error below-h2"><p><strong><?php _e( "Please, enable JavaScript in Your browser.", 'social-buttons-pack' ); ?></strong></p></div></noscript>
@@ -180,6 +183,14 @@ if ( ! function_exists ( 'sclbttns_admin_enqueue_scripts' ) ) {
         if ( isset( $_REQUEST['page'] ) && 'social-buttons.php' == $_REQUEST['page'] ) {
             bws_enqueue_settings_scripts();
             bws_plugins_include_codemirror();
+            wp_enqueue_script( 'sclbttns_script', plugins_url( 'js/admin-script.js', __FILE__ ), array( 'jquery' ) );
+            wp_enqueue_media();
+            wp_localize_script( 'sclbttns_script', 'sclbttns_var',
+                array(
+                    'wp_media_title'    => __( 'Insert Media', 'social-buttons-pack' ),
+                    'wp_media_button'   => __( 'Insert', 'social-buttons-pack' )
+                )
+            );
         }
     }
 }
@@ -386,3 +397,4 @@ require_once( dirname( __FILE__ ) . '/facebook-button-plugin/facebook-button-plu
 require_once( dirname( __FILE__ ) . '/twitter-plugin/twitter.php' );
 require_once( dirname( __FILE__ ) . '/bws-linkedin/bws-linkedin.php' );
 require_once( dirname( __FILE__ ) . '/bws-pinterest/bws-pinterest.php' );
+require_once( dirname( __FILE__ ) . '/includes/sclbttns-nstgrm.php' );

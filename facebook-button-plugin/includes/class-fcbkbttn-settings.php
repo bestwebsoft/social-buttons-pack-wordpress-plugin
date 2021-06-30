@@ -19,10 +19,14 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 
 			$tabs = array(
 				'settings'		=> array( 'label' => __( 'Settings', 'facebook-button-plugin' ) ),
+                /*pls */
 				'display'		=> array( 'label' => __( 'Display', 'facebook-button-plugin' ), 'is_pro' => 1 ),
+                /* pls*/
 				'misc'			=> array( 'label' => __( 'Misc', 'facebook-button-plugin' ) ),
 				'custom_code'	=> array( 'label' => __( 'Custom Code', 'facebook-button-plugin' ) ),
+                /*pls */
 				'license'		=> array( 'label' => __( 'License Key', 'facebook-button-plugin' ) )
+                /* pls*/
 			);
 
 			parent::__construct( array(
@@ -33,15 +37,18 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 				'options'			=> $fcbkbttn_options,
 				'is_network_options'=> is_network_admin(),
 				'tabs'				=> $tabs,
-				'doc_link'			=> 'https://docs.google.com/document/d/1gy5uDVoebmYRUvlKRwBmc97jdJFz7GvUCtXy3L7r_Yg/',
+				'doc_link'			=> 'https://bestwebsoft.com/documentation/bestwebsofts-like-share/bestwebsofts-like-share-user-guide/',
+                /*pls */
 				'wp_slug'			=> 'facebook-button-plugin',
 				'link_key'			=> '427287ceae749cbd015b4bba6041c4b8',
 				'link_pn'			=> '78'
+                /* pls*/
 			) );
 
 			add_action( get_parent_class( $this ) . '_additional_misc_options', array( $this, 'additional_misc_options' ) );
 			add_action( get_parent_class( $this ) . '_display_metabox', array( $this, 'display_metabox' ) );
-					}
+            /*pls */ /* pls*/
+		}
 
 		/**
 		* Save plugin options to the database
@@ -187,12 +194,12 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 						<fieldset>
 							<label>
 								<input type="checkbox" name="fcbkbttn_where[]" value="before" <?php checked( in_array( 'before', $this->options['where'] ) ); ?> />
-								<?php _e( 'Before content', 'facebook-button-plugin' ); ?></option>
+								<?php _e( 'Before content', 'facebook-button-plugin' ); ?>
 							</label>
 							<br />
 							<label>
 								<input type="checkbox" name="fcbkbttn_where[]" value="after" <?php checked( in_array( 'after', $this->options['where'] ) ); ?> />
-								<?php _e( 'After content', 'facebook-button-plugin' ); ?></option>
+								<?php _e( 'After content', 'facebook-button-plugin' ); ?>
 							</label>
 						</fieldset>
 					</td>
@@ -231,7 +238,7 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 								<span class="bws_info"><?php _e( 'Enable to switch language automatically on multilingual website using Multilanguage plugin.', 'facebook-button-plugin' ); ?></span>
 							<?php } else { ?>
 								<input disabled="disabled" type="checkbox" name="fcbkbttn_use_multilanguage_locale" value="1" />
-								<span class="bws_info"><?php _e( 'Enable to switch language automatically on multilingual website using Multilanguage plugin.', 'facebook-button-plugin' ); ?> <a href="<?php echo bloginfo( "url" ); ?>/wp-admin/plugins.php" target="_blank"><?php _e( 'Activate', 'facebook-button-plugin' ); ?></a></span>
+								<span class="bws_info"><?php _e( 'Enable to switch language automatically on multilingual website using Multilanguage plugin.', 'facebook-button-plugin' ); ?> <a href="<?php bloginfo( "url" ); ?>/wp-admin/plugins.php" target="_blank"><?php _e( 'Activate', 'facebook-button-plugin' ); ?></a></span>
 							<?php }
 						} else { ?>
 							<input disabled="disabled" type="checkbox" name="fcbkbttn_use_multilanguage_locale" value="1" />
@@ -451,6 +458,7 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 			</div>
 		<?php }
 
+        /*pls */
 		/**
 		* Display custom metabox
 		* @access public
@@ -458,7 +466,7 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 		* @return array    The action results
 		*/
 		public function display_second_postbox() {
-			/*pls */
+
 			if ( ! $this->hide_pro_tabs ) { ?>
 				<div class="postbox bws_pro_version_bloc">
 					<div class="bws_table_bg"></div>
@@ -508,5 +516,7 @@ if ( ! class_exists( 'Fcbkbttn_Settings_Tabs' ) ) {
 				<?php $this->bws_pro_block_links(); ?>
 			</div>
 		<?php }
+        /* pls*/
+
 	}
 }

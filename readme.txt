@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
 Requires at least: 4.5
-Tested up to: 5.6
-Stable tag: 1.1.7
+Tested up to: 5.7.2
+Stable tag: 1.1.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,6 +15,8 @@ Add social media buttons and widgets to WordPress posts, pages and widgets. FB, 
 Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.
 
 Increase shares and social media engagement today!
+
+[View Demo](https://bestwebsoft.com/demo-social-buttons-pack/?ref=readme)
 
 https://www.youtube.com/watch?v=3FxIReS0hP4 
 
@@ -35,6 +37,8 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 		* Follow
 	* LinkedIn buttons
 		* Share
+		* Follow
+	* Instagram buttons
 		* Follow
 * Choose buttons position:
 	* Before content
@@ -77,8 +81,9 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
-* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Doc] User Guide](https://bestwebsoft.com/documentation/social-buttons-pack/social-buttons-pack-user-guide/)
+* [[Doc] Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
+* [[Doc] Purchase](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
 * [[Video] Installation Instruction](https://www.youtube.com/watch?v=1PZPCL76aBk)
 
 = Help & Support =
@@ -108,7 +113,7 @@ Some of these translations are not complete. We are constantly adding new featur
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
 3. You can adjust the necessary settings in your WordPress admin panel - "Social Buttons".
 
-[View a Step-by-step Instruction on Social Buttons Pack Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+[View a Step-by-step Instruction on Social Buttons Pack Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
 
 https://www.youtube.com/watch?v=1PZPCL76aBk
 
@@ -178,7 +183,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 - The link to the page where the problem occurs
 - The name of the plugin and its version. If you are using a pro version - your order number.
 - The version of your WordPress installation
-- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://bestwebsoft.com/documentation/admin-panel-issues/system-status/)
 
 == Screenshots ==
 
@@ -190,10 +195,16 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 6. Plugin settings page: Twitter.
 7. Plugin settings page: Pinterest.
 8. Plugin settings page: LinkedIn.
-9. Adding widgets to the sidebar.
-10. Adding Social Buttons shortcode to your post or page.
+9. Plugin settings page: Instagram.
+10. Adding widgets to the sidebar.
+11. Adding Social Buttons shortcode to your post or page.
 
 == Changelog ==
+
+= V1.1.8 - 30.06.2021 =
+* NEW: Instagram 'Profile URL' button has been added.
+* Update : All functionality was updated for WordPress 5.7.2
+* Update : BWS plugins section is updated.
 
 = V1.1.7 - 12.01.2021 =
 * NEW : Ability to add Twitter Timeline has been added.
@@ -311,6 +322,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.8 =
+* New features added.
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
 
 = V1.1.7 =
 * Functionality expanded.

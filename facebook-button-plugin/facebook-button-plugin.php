@@ -44,7 +44,10 @@ if ( ! function_exists( 'fcbkbttn_admin_init' ) ) {
 		/* Add variable for bws_menu */
 		global $bws_plugin_info, $fcbkbttn_options, $fcbkbttn_plugin_info, $bws_shortcode_list, $pagenow;
 
-				$bws_shortcode_list['fcbkbttn'] = array( 'name' => 'Like & Share' );
+		/* pls*/
+
+		/* add Facebook to global $bws_shortcode_list */
+		$bws_shortcode_list['fcbkbttn'] = array( 'name' => 'Like & Share' );
 	}
 }
 /* end fcbkbttn_admin_init */
@@ -64,16 +67,7 @@ if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 
 		if ( ! isset( $fcbkbttn_options['plugin_option_version'] ) || $fcbkbttn_options['plugin_option_version'] != $fcbkbttn_plugin_info["Version"] ) {
 			$fcbkbttn_options['hide_premium_options'] = array();
-						/**
-			 * @deprecated 2.65
-			 * @todo Remove after 03.06.2020
-			 */
-			if ( version_compare( $fcbkbttn_plugin_info["Version"], '2.65' ) <= 0 ) {
-				$fcbkbttn_options['display_for_open_graph'] = ( 0 == $fcbkbttn_options['display_for_open_graph'] ) ? 1 : 0;
-			}
-			/* end todo */
-
-			$options_default = fcbkbttn_get_options_default();
+						$options_default = fcbkbttn_get_options_default();
 			$fcbkbttn_options = array_merge( $options_default, $fcbkbttn_options );
 			$fcbkbttn_options['plugin_option_version'] = $fcbkbttn_plugin_info["Version"];
 
@@ -81,6 +75,319 @@ if ( ! function_exists( 'fcbkbttn_settings' ) ) {
 		}
 	}
 }
+
+/*pls */
+if ( ! function_exists( 'fcbkbttn_statistics_page' ) ) {
+	function fcbkbttn_statistics_page() {
+		global $fcbkbttn_plugin_info, $wp_version, $fcbkbttn_options;
+
+		if ( empty( $fcbkbttn_options ) )
+			fcbkbttn_settings();
+
+		$bws_hide_premium_options_check = bws_hide_premium_options_check( $fcbkbttn_options ); ?>
+		<div class="wrap">
+			<h1><?php _e( 'Like & Share Statistics', 'facebook-button-plugin' ); ?></h1>
+			<?php if ( ! $bws_hide_premium_options_check ) : ?>
+			<div class="bws_pro_version_bloc">
+				<div class="bws_pro_version_table_bloc">
+					<div class="bws_table_bg" style="top: 0;"></div>
+					<div class="tablenav top">
+						<p class="search-box alignright">
+							<label class="screen-reader-text" for="title-search-input"><?php _e( 'search', 'facebook-button-plugin' ); ?>:</label>
+								<input type="search" id="title-search-input" name="s" value=""placeholder="Search"/>
+								<input type="submit" id="search-submit" class="button" value="<?php _e( 'Search', 'facebook-button-plugin' ); ?>"  />
+						</p>
+						<div class="alignleft actions bulkactions">
+							<div class="fcbkbttn-container-statistics-filter">
+								<select name="fcbkbttn_statistics_filter" class="fcbkbttn-statistics-filter">
+									<option value=""><?php _e( 'All types', 'facebook-button-plugin' ); ?></option>
+								</select>
+								<input type="submit" name="filter_action" id="statistics-filter-submit" class="button" value="Filter"  />
+							</div>
+				 		</div><!--.bulkactions-->
+				 		<br><br>
+						<div class='tablenav-pages'>
+							<span class="displaying-num">22 <?php _e( 'items', 'facebook-button-plugin' ); ?></span>
+							<span class='pagination-links'>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&laquo;</span>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&lsaquo;</span>
+								<span class="paging-input">
+									<label for="current-page-selector" class="screen-reader-text"><?php _e( 'Current Page', 'facebook-button-plugin' ); ?></label>
+									<input class='current-page' id='current-page-selector' type='text' name='paged' value='1' size='1' aria-describedby='table-paging' />
+									<span class='tablenav-paging-text'> <?php _e( 'of', 'facebook-button-plugin' ); ?> <span class='total-pages'>2</span></span>
+								</span>
+								<a class='next-page button' href='#'>
+									<span class='screen-reader-text'><?php _e( 'Next page', 'facebook-button-plugin' ); ?></span>
+									<span aria-hidden='true'>&rsaquo;</span>
+								</a>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&raquo;</span>
+							</span>
+						</div><!--.tablenav-pages-->
+					</div><!--.tablenav.top-->
+					<table class="wp-list-table widefat fixed striped table-view-list like-share_page_statistics">
+						<thead>
+							<tr>
+								<th scope="col" id='title' class='manage-column column-title sortable asc'>
+									<a href="#"><span><?php _e( 'Title', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col" id='type' class='manage-column column-type sortable asc'>
+									<a href="#"><span><?php _e( 'Type', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col" id='count_like' class='manage-column column-count_like sortable asc'>
+									<a href="#"><span><?php _e( 'Like Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col" id='count_share' class='manage-column column-count_share sortable asc'>
+									<a href="#"><span><?php _e( 'Share Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col" id='count_profile_url' class='manage-column column-count_profile_url sortable asc'>
+									<a href="#"><span><?php _e( 'Profile URL Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="the-list">
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Hello world', 'facebook-button-plugin' ); ?>!</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">15</td>
+								<td class="fcbkbttn_count_share">-</td>
+								<td class="fcbkbttn_count_profile_url">48</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>1</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">345</td>
+								<td class="fcbkbttn_count_share">58</td>
+								<td class="fcbkbttn_count_profile_url">66</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>2</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">180</td>
+								<td class="fcbkbttn_count_share">37</td>
+								<td class="fcbkbttn_count_profile_url">18</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post of Custom Type Example', 'facebook-button-plugin' ); ?>1</a>
+								</td>
+								<td class="fcbkbttn_type">bws-gallery</td>
+								<td class="fcbkbttn_count_like">175</td>
+								<td class="fcbkbttn_count_share">165</td>
+								<td class="fcbkbttn_count_profile_url">200</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Sample Page', 'facebook-button-plugin' ); ?></a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">18</td>
+								<td class="fcbkbttn_count_share">2</td>
+								<td class="fcbkbttn_count_profile_url">-</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Page Example', 'facebook-button-plugin' ); ?>1</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">-</td>
+								<td class="fcbkbttn_count_share">-</td>
+								<td class="fcbkbttn_count_profile_url">-</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Page Example', 'facebook-button-plugin' ); ?>2</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">-</td>
+								<td class="fcbkbttn_count_share">-</td>
+								<td class="fcbkbttn_count_profile_url">6</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>3</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">488</td>
+								<td class="fcbkbttn_count_share">150</td>
+								<td class="fcbkbttn_count_profile_url">373</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post of Custom Type Example', 'facebook-button-plugin' ); ?>2</a>
+								</td>
+								<td class="fcbkbttn_type">bws-gallery</td>
+								<td class="fcbkbttn_count_like">15</td>
+								<td class="fcbkbttn_count_share">2</td>
+								<td class="fcbkbttn_count_profile_url">13</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>4</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">555</td>
+								<td class="fcbkbttn_count_share">117</td>
+								<td class="fcbkbttn_count_profile_url">200</td>
+							</tr>
+														<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>5</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">180</td>
+								<td class="fcbkbttn_count_share">37</td>
+								<td class="fcbkbttn_count_profile_url">18</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post of Custom Type Example', 'facebook-button-plugin' ); ?>3</a>
+								</td>
+								<td class="fcbkbttn_type">bws-gallery</td>
+								<td class="fcbkbttn_count_like">175</td>
+								<td class="fcbkbttn_count_share">165</td>
+								<td class="fcbkbttn_count_profile_url">200</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Sample Page', 'facebook-button-plugin' ); ?></a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">18</td>
+								<td class="fcbkbttn_count_share">2</td>
+								<td class="fcbkbttn_count_profile_url">-</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Page Example', 'facebook-button-plugin' ); ?>3</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">-</td>
+								<td class="fcbkbttn_count_share">-</td>
+								<td class="fcbkbttn_count_profile_url">-</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Page Example', 'facebook-button-plugin' ); ?>4</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'page', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">-</td>
+								<td class="fcbkbttn_count_share">-</td>
+								<td class="fcbkbttn_count_profile_url">6</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>6</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">488</td>
+								<td class="fcbkbttn_count_share">150</td>
+								<td class="fcbkbttn_count_profile_url">373</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post of Custom Type Example', 'facebook-button-plugin' ); ?>4</a>
+								</td>
+								<td class="fcbkbttn_type">bws-gallery</td>
+								<td class="fcbkbttn_count_like">160</td>
+								<td class="fcbkbttn_count_share">29</td>
+								<td class="fcbkbttn_count_profile_url">33</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>7</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">545</td>
+								<td class="fcbkbttn_count_share">227</td>
+								<td class="fcbkbttn_count_profile_url">210</td>
+							</tr>
+														<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post of Custom Type Example', 'facebook-button-plugin' ); ?>5</a>
+								</td>
+								<td class="fcbkbttn_type">bws-gallery</td>
+								<td class="fcbkbttn_count_like">17</td>
+								<td class="fcbkbttn_count_share">2</td>
+								<td class="fcbkbttn_count_profile_url">15</td>
+							</tr>
+							<tr>
+								<td class="fcbkbttn_title">
+									<a href="#"><?php _e( 'Post Example', 'facebook-button-plugin' ); ?>8</a>
+								</td>
+								<td class="fcbkbttn_type"><?php _e( 'post', 'facebook-button-plugin' ); ?></td>
+								<td class="fcbkbttn_count_like">535</td>
+								<td class="fcbkbttn_count_share">127</td>
+								<td class="fcbkbttn_count_profile_url">160</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th scope="col"  class='manage-column column-title sortable asc'>
+									<a href="#"><span><?php _e( 'Title', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col"  class='manage-column column-type sortable asc'>
+									<a href="#"><span><?php _e( 'Type', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col"  class='manage-column column-count_like sortable asc'>
+									<a href="#"><span><?php _e( 'Like Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col"  class='manage-column column-count_share sortable asc'>
+									<a href="#"><span><?php _e( 'Share Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+								<th scope="col"  class='manage-column column-count_profile_url sortable asc'>
+									<a href="#"><span><?php _e( 'Profile URL Count', 'facebook-button-plugin' ); ?></span></a>
+								</th>
+							</tr>
+						</tfoot>
+					</table><!--.wp-list-table-->
+					<div class="tablenav bottom">
+						<div class="alignleft actions bulkactions"></div>
+						<div class='tablenav-pages'>
+							<span class="displaying-num">22 <?php _e( 'items', 'facebook-button-plugin' ); ?></span>
+							<span class='pagination-links'>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&laquo;</span>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&lsaquo;</span>
+								<span class="screen-reader-text"><?php _e( 'Current Page', 'facebook-button-plugin' ); ?></span>
+								<span id="table-paging" class="paging-input">
+									<span class="tablenav-paging-text">1 <?php _e( 'of', 'facebook-button-plugin' ); ?>
+										<span class='total-pages'>2</span>
+									</span>
+								</span>
+								<a class='next-page button' href='#'>
+									<span class='screen-reader-text'><?php _e( 'Next page', 'facebook-button-plugin' ); ?></span>
+									<span aria-hidden='true'>&rsaquo;</span>
+								</a>
+								<span class="tablenav-pages-navspan button disabled" aria-hidden="true">&raquo;</span>
+							</span>
+						</div>
+						<br class="clear" />
+					</div><!--.tablenav-->
+				</div>
+				<div class="bws_pro_version_tooltip">
+	                <a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=427287ceae749cbd015b4bba6041c4b8&amp;pn=78&amp;v=<?php echo $fcbkbttn_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="Like & Share Pro"><?php _e( 'Upgrade to Pro', 'facebook-button-plugin' ); ?></a>
+					<div class="clear"></div>
+	            </div>
+			</div>
+			<?php else : ?>
+			<p>
+				<?php _e( 'This tab contains Pro options only.', 'facebook-button-plugin' );
+				echo ' ' . sprintf(
+					__( '%sChange the settings%s to view the Pro options.', 'facebook-button-plugin' ),
+					'<a href="admin.php?page=facebook-button-plugin.php&bws_active_tab=misc">',
+					'</a>'
+					); ?>
+			</p>
+			<?php endif; ?>
+		</div>
+	<?php }
+}
+/* pls*/
 
 if ( ! function_exists( 'fcbkbttn_get_options_default' ) ) {
 	function fcbkbttn_get_options_default() {
@@ -143,13 +450,7 @@ if ( ! function_exists( 'fcbkbttn_button' ) ) {
 		        $img_name = 'large' == $fcbkbttn_options['size'] ? 'large-facebook-ico' : 'standard-facebook-ico';
 		        $fcbkbttn_img = plugins_url( 'facebook-button-plugin/images/' . $img_name . '.png', dirname( __FILE__ ) );
 	        } else {
-		        /**
-		         * Update
-		         * @deprecated 2.65
-		         * @todo Update after 03.06.2020
-		         */
-		        $fcbkbttn_img = is_int( $fcbkbttn_options['fb_img_link'] ) ? wp_get_attachment_url( $fcbkbttn_options['fb_img_link'] ) : $fcbkbttn_options['fb_img_link'] ;
-		        /* end todo */
+		        $fcbkbttn_img = wp_get_attachment_url( $fcbkbttn_options['fb_img_link'] );
 	        }
 
             $button .= '<div class="fcbkbttn_button">
@@ -219,13 +520,7 @@ if ( ! function_exists( 'fcbkbttn_function_display_arhive' ) ) {
 					$img_name = 'large' == $fcbkbttn_options['size'] ? 'large-facebook-ico' : 'standard-facebook-ico';
 					$fcbkbttn_img = plugins_url( 'facebook-button-plugin/images/' . $img_name . '.png', dirname( __FILE__ ) );
 				} else {
-					/**
-					 * Update
-					 * @deprecated 2.65
-					 * @todo Update after 03.06.2020
-					 */
-					$fcbkbttn_img = is_int( $fcbkbttn_options['fb_img_link'] ) ? wp_get_attachment_url( $fcbkbttn_options['fb_img_link'] ) : $fcbkbttn_options['fb_img_link'] ;
-					/* end todo */
+					$fcbkbttn_img = wp_get_attachment_url( $fcbkbttn_options['fb_img_link'] );
 				}
 
 				$button .= '<div class="fcbkbttn_button">
@@ -240,7 +535,7 @@ if ( ! function_exists( 'fcbkbttn_function_display_arhive' ) ) {
 			$permalink_page = $permalink[0];
 
 
-			$location_share = ('right' == $fcbkbttn_options['location'] && "standard" == $fcbkbttn_options['layout_like_option'] ) ? 1 : 0;
+			$location_share = ( 'right' == $fcbkbttn_options['location'] && "standard" == $fcbkbttn_options['layout_like_option'] ) ? 1 : 0;
 			if ( ! empty( $fcbkbttn_options['share'] ) && !empty( $location_share ) ) {
 				$button .= '<div class="fb-share-button ' . $if_large . ' " data-href="' . $permalink_page . '" data-type="' . $fcbkbttn_options['layout_share_option'] . '" data-size="' . $fcbkbttn_options['size'] . '"></div>';
 			}

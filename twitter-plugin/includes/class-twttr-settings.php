@@ -41,11 +41,9 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 				'options' 			 => $twttr_options,
 				'is_network_options' => is_network_admin(),
 				'tabs' 				 => $tabs,
-				'doc_link'			=> 'https://docs.google.com/document/d/1Zy0GILpchmrvwxeMXxIpti12hTKR_wuobiIku0xKYAQ/',
+				'doc_link'			=> 'https://https://bestwebsoft.com/documentation/bestwebsofts-twitter/',
 				/*pls */
 				'wp_slug'			 => 'twitter-plugin',
-				'pro_page' 			 => 'admin.php?page=twitter-pro.php',
-				'bws_license_plugin' => 'twitter-pro/twitter-pro.php',
 				'link_key' 			 => 'a8417eabe3c9fb0c2c5bed79e76de43c',
 				'link_pn' 			 => '76'
 				/* pls*/
@@ -53,7 +51,9 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 
 			add_action( get_parent_class( $this ) . '_additional_misc_options', array( $this, 'additional_misc_options' ) );
 			add_action( get_parent_class( $this ) . '_display_metabox', array( $this, 'display_metabox' ) );
-			$this->lang_codes = array(
+            /*pls */ /* pls*/
+
+            $this->lang_codes = array(
                 "af_ZA" => 'Afrikaans',
                 "ar_AR" => 'العربية',
                 "az_AZ" => 'Azərbaycan dili',
@@ -556,8 +556,9 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 					bws_shortcode_output( '[twitter_buttons display=tweet,follow,hashtag,mention]' ); ?>
 				</div>
                 			</div>
-		<?php /*pls */ }
+		<?php }
 
+        /*pls */
 		public function display_second_postbox() {
 			if ( ! $this->hide_pro_tabs ) { ?>
 				<div class="postbox bws_pro_version_bloc">
@@ -623,6 +624,8 @@ if ( ! class_exists( 'Twttr_Settings_Tabs' ) ) {
 				</div>
 				<?php $this->bws_pro_block_links(); ?>
 			</div>
-		<?php /* pls*/ }
-	}
+		<?php }
+        /* pls*/
+
+    }
 }

@@ -5,7 +5,7 @@
 
 if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 	class Sclbttns_Settings_Tabs extends Bws_Settings_Tabs {
-		public $fcbkbttn_page, $twttr_page, $pntrst_page, $lnkdn_page;
+		public $fcbkbttn_page, $twttr_page, $pntrst_page, $lnkdn_page, $nstgrm_page;
 		/**
 		 * Constructor.
 		 *
@@ -23,6 +23,7 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 				'twitter' 		=> array( 'label' => 'Twitter' ),
 				'pinterest' 	=> array( 'label' => 'Pinterest' ),
 				'linkedin' 		=> array( 'label' => 'LinkedIn' ),
+				'instagram' 	=> array( 'label' => 'Instagram' ),
 				'display' 		=> array( 'label' => __( 'Display', 'social-buttons-pack' ), 'is_pro' => 1 ),
 				'misc' 			=> array( 'label' => __( 'Misc', 'social-buttons-pack' ) ),
 				'custom_code' 	=> array( 'label' => __( 'Custom Code', 'social-buttons-pack' ) ),
@@ -53,6 +54,9 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 
 			require_once( dirname( dirname( __FILE__ ) ) . '/bws-linkedin/includes/class-lnkdn-settings.php' );
 			$this->lnkdn_page = new Lnkdn_Settings_Tabs( plugin_basename( __FILE__ ) );
+
+			require_once( dirname( dirname( __FILE__ ) ) . '/includes/sclbttns-nstgrm-settings.php' );
+			$this->nstgrm_page = new Nstgrm_Settings_Tabs( plugin_basename( __FILE__ ) );
 		}
 
 		/**
@@ -68,7 +72,8 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 				$this->fcbkbttn_page,	
 				$this->twttr_page,	
 				$this->pntrst_page,			
-				$this->lnkdn_page
+				$this->lnkdn_page,
+				$this->nstgrm_page
 			);
 
 			foreach ( $socials as $current_class ) {
@@ -76,6 +81,9 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 				if ( ! empty( $result['error'] ) )
 					$error .= $result['error'] . '<br/>';
 			}
+
+			$this->options['instagram_options'] = $this->nstgrm_page->options['instagram_options'];
+			update_option( 'sclbttns_options', $this->options );
 
 			$message .= __( 'Settings saved.', 'social-buttons-pack' );
 
@@ -99,6 +107,10 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 
 		public function tab_linkedin() {			
 			$this->lnkdn_page->tab_settings();
+		}
+
+		public function tab_instagram() {			
+			$this->nstgrm_page->tab_settings();
 		}
 
 		/**
@@ -158,6 +170,9 @@ if ( ! class_exists( 'Sclbttns_Settings_Tabs' ) ) {
 
 				update_option( $current_class->prefix . '_options', $current_class->options );
 			}	
+
+			/* Restore Instagram Options */
+			$this->nstgrm_page->options = $this->nstgrm_page->default_options;
 		}
 	}
 }

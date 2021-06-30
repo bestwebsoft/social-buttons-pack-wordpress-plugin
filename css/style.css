@@ -35,3 +35,20 @@ body.twentythirteen .pntrst-button-wrap span {
 body.twentythirteen .lnkdn_buttons {
 	vertical-align: middle;
 }
+
+/* Instagram buttons */
+#nstgrm_right {
+	text-align: right;
+}
+#nstgrm_middle {
+	text-align: center;
+}
+#nstgrm_left {
+	text-align: left;
+}
+.nstgrm_button {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}

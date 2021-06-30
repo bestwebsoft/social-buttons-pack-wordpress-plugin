@@ -37,9 +37,9 @@ if ( ! class_exists( 'Pntrst_Settings_Tabs' ) ) {
 				'options' 			 => $pntrst_options,
 				'is_network_options' => is_network_admin(),
 				'tabs' 				 => $tabs,
-				/*pls */
+                'doc_link'			 => 'https://bestwebsoft.com/documentation/bestwebsofts-pinterest/bestwebsofts-pinterest-user-guide/',
+                /*pls */
 				'wp_slug'			 => 'bws-pinterest',
-				'doc_link'			 => 'https://docs.google.com/document/d/1cOVH69e6hW5qwrfkqYbMR6iUOwfK-5P2ptTBwHOR_xI',
 				'link_key' 			 => 'f8f97fcf6a752a73595ec494940c4bb8',
 				'link_pn' 			 => '547'
 				/* pls*/
@@ -367,9 +367,7 @@ if ( ! class_exists( 'Pntrst_Settings_Tabs' ) ) {
 			</div>
 		<?php }
 
-		/**
-		 *
-		 */
+        /*pls */
 		public function tab_display() { ?>
 			<h3 class="bws_tab_label"><?php _e( 'Display Settings', 'bws-pinterest' ); ?></h3>
 			<?php $this->help_phrase(); ?>

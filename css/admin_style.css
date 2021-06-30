@@ -19,3 +19,11 @@
 	content: "\e91b";
 	font-family: 'bwsicons' !important;
 }
+#bws_settings_tabs li.bws-tab-instagram a:before {
+	content: "\f12d";
+	font-family: 'dashicons' !important;
+}
+
+.nstgrm-image img {
+	max-width: 120px;
+}
