@@ -98,6 +98,8 @@
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
+<h4>Affiliate Program</h4>
+<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
 <h4>Translation</h4>
 <ul>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#109;a&#x69;&#108;u&#x73;&#064;n&#x30;&#108;i&#x6d;&#046;i&#x74;" rel="nofollow ugc">Michal Kučera</a> www.n0lim.it)</li>
