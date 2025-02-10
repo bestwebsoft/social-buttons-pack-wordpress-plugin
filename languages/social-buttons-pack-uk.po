@@ -2,511 +2,1430 @@ msgid ""
 msgstr ""
 "Project-Id-Version: social-buttons-pack\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-21 15:05+0300\n"
-"PO-Revision-Date: 2021-06-21 15:09+0300\n"
-"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
-"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"POT-Creation-Date: 2025-02-10 13:53+0200\n"
+"PO-Revision-Date: 2025-02-10 13:54+0200\n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.0\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
-"X-Poedit-SearchPathExcluded-1: bws-linkedin\n"
-"X-Poedit-SearchPathExcluded-2: bws-pinterest\n"
-"X-Poedit-SearchPathExcluded-3: facebook-button-plugin\n"
-"X-Poedit-SearchPathExcluded-4: twitter-plugin\n"
 
-#: includes/class-sclbttns-settings.php:27
+#: bws-linkedin/bws-linkedin.php:337
+msgid "LinkedIn Share Button"
+msgstr "Кнопка \"Поділитися\" в LinkedIn"
+
+#: bws-linkedin/bws-linkedin.php:342
+msgid "LinkedIn Follow Button"
+msgstr "Кнопка підписатися на LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:28
+#: bws-pinterest/includes/class-pntrst-settings.php:28
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:29
+#: includes/sclbttns-mssngrs-settings.php:29
+#: includes/sclbttns-mssngrs-settings.php:33
+#: includes/sclbttns-nstgrm-settings.php:29
+#: includes/sclbttns-nstgrm-settings.php:33 social-buttons-pack.php:39
+#: social-buttons-pack.php:281 social-buttons-pack.php:301
+#: twitter-plugin/includes/class-twttr-settings.php:34
+msgid "Settings"
+msgstr "Налаштування"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:30
+#: bws-pinterest/includes/class-pntrst-settings.php:30
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:31
+#: includes/class-sclbttns-settings.php:65
+#: twitter-plugin/includes/class-twttr-settings.php:36
 msgid "Display"
 msgstr "Відображення"
 
-#: includes/class-sclbttns-settings.php:28
+#: bws-linkedin/includes/class-lnkdn-settings.php:33
+#: bws-pinterest/includes/class-pntrst-settings.php:33
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:34
+#: includes/class-sclbttns-settings.php:68
+#: twitter-plugin/includes/class-twttr-settings.php:39
 msgid "Misc"
 msgstr "Різне"
 
-#: includes/class-sclbttns-settings.php:29
+#: bws-linkedin/includes/class-lnkdn-settings.php:34
+#: bws-pinterest/includes/class-pntrst-settings.php:34
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:35
+#: includes/class-sclbttns-settings.php:69
+#: twitter-plugin/includes/class-twttr-settings.php:40
 msgid "Custom Code"
 msgstr "Користувацький код"
 
-#: includes/class-sclbttns-settings.php:30
+#: bws-linkedin/includes/class-lnkdn-settings.php:35
+#: bws-pinterest/includes/class-pntrst-settings.php:35
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:36
+#: includes/class-sclbttns-settings.php:70
+#: twitter-plugin/includes/class-twttr-settings.php:41
 msgid "License Key"
 msgstr "Ліцензійний ключ"
 
-#: includes/class-sclbttns-settings.php:85
-msgid "Settings saved."
-msgstr "Налаштування збережено."
+#: bws-linkedin/includes/class-lnkdn-settings.php:72
+msgid "Sorry, your nonce did not verify"
+msgstr "Вибачте, ваш нонс не підтверджено"
 
-#: includes/class-sclbttns-settings.php:117
-#: includes/sclbttns-nstgrm-settings.php:336
+#: bws-linkedin/includes/class-lnkdn-settings.php:100
+msgid ""
+"Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
+"saved."
+msgstr ""
+"Введіть ID сторінки компанії/вітрини для кнопки \"Підписатися\". "
+"Налаштування не зберігаються."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:105
+#: bws-pinterest/includes/class-pntrst-settings.php:184
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:150
+#: includes/sclbttns-nstgrm-settings.php:92
+#: twitter-plugin/includes/class-twttr-settings.php:307
+msgid "Settings saved"
+msgstr "Налаштування збережено"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:123
+msgid "LinkedIn Settings"
+msgstr "Налаштування LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:126
+#: bws-pinterest/includes/class-pntrst-settings.php:205
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:181
+#: includes/sclbttns-mssngrs-settings.php:86
+#: includes/sclbttns-nstgrm-settings.php:147
+#: twitter-plugin/includes/class-twttr-settings.php:322
+msgid "General"
+msgstr "Загальні налаштування"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:129
+#: bws-pinterest/includes/class-pntrst-settings.php:215
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:213
+#: includes/sclbttns-nstgrm-settings.php:150
+#: twitter-plugin/includes/class-twttr-settings.php:325
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:133
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:218
+msgid "Share"
+msgstr "Поділитися"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:137
+#: bws-pinterest/includes/class-pntrst-settings.php:225
+#: bws-pinterest/includes/class-pntrst-settings.php:393
+#: twitter-plugin/includes/class-twttr-settings.php:330
+#: twitter-plugin/twitter.php:355
+msgid "Follow"
+msgstr "Стежити"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:143
+msgid "Display on"
+msgstr "Відображати"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:148
+#: twitter-plugin/includes/class-twttr-settings.php:393
+#: twitter-plugin/includes/class-twttr-settings.php:501
+msgid "Home page"
+msgstr "Домашня сторінка"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:153
+msgid "Posts"
+msgstr "Пости"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:158
+msgid "Pages"
+msgstr "Сторінки"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:165
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:232
+#: includes/sclbttns-mssngrs-settings.php:102
+#: includes/sclbttns-nstgrm-settings.php:173
+#: twitter-plugin/includes/class-twttr-settings.php:348
+msgid "Buttons Position"
+msgstr "Позиція кнопок"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:176
+#: bws-pinterest/includes/class-pntrst-settings.php:275
+#: bws-pinterest/includes/class-pntrst-settings.php:352
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:237
+#: includes/sclbttns-mssngrs-settings.php:106
+#: includes/sclbttns-nstgrm-settings.php:178
+#: twitter-plugin/includes/class-twttr-settings.php:353
+msgid "Before content"
+msgstr "Перед вмістом"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:187
+#: bws-pinterest/includes/class-pntrst-settings.php:276
+#: bws-pinterest/includes/class-pntrst-settings.php:353
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:242
+#: includes/sclbttns-mssngrs-settings.php:109
+#: includes/sclbttns-nstgrm-settings.php:182
+#: twitter-plugin/includes/class-twttr-settings.php:358
+msgid "After content"
+msgstr "Після вмісту"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:190
+msgid "Unselect all to use a shortcode only."
+msgstr "Зніміть позначку з усіх, щоб використовувати лише шорткод."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:194
+#: bws-pinterest/includes/class-pntrst-settings.php:231
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:258
+#: twitter-plugin/includes/class-twttr-settings.php:364
+msgid "Language"
+msgstr "Мова"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:207
+msgid "Select the default language for LinkedIn button(-s)."
+msgstr "Виберіть мову за замовчуванням для кнопки(-ок) LinkedIn."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:219
+#: bws-linkedin/includes/class-lnkdn-settings.php:223
+#: bws-linkedin/includes/class-lnkdn-settings.php:229
+#: bws-pinterest/includes/class-pntrst-settings.php:252
+#: bws-pinterest/includes/class-pntrst-settings.php:256
+#: bws-pinterest/includes/class-pntrst-settings.php:262
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:283
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:286
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:292
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
+msgstr ""
+"Увімкніть автоматичне перемикання мови на багатомовному веб-сайті за "
+"допомогою багатомовного плагіна."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:223
+#: bws-pinterest/includes/class-pntrst-settings.php:256
+#, php-format
+msgid "Activate %s"
+msgstr "Активація %s"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:229
+#: bws-pinterest/includes/class-pntrst-settings.php:262
+#: twitter-plugin/includes/class-twttr-settings.php:380
+msgid "Learn More"
+msgstr "Дізнатись більше"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:235
+msgid "Share Button"
+msgstr "Кнопка \"Поділитися"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:238
+#: bws-pinterest/bws-pinterest.php:473
+#: bws-pinterest/includes/class-pinterest-widget.php:134
+msgid "URL"
+msgstr "URL"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:241
+msgid "URL to be shared. Leave blank to use a current page URL."
+msgstr ""
+"URL-адреса для публікації. Залиште порожнім, щоб використовувати поточну URL-"
+"адресу сторінки."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:247
+#: bws-pinterest/bws-pinterest.php:453
+#: bws-pinterest/includes/class-pntrst-settings.php:339
+#: twitter-plugin/includes/class-twttr-settings.php:433
+msgid "Follow Button"
+msgstr "Кнопка \"Підписатися"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:250
+msgid "Count Mode"
+msgstr "Режим підрахунку"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:254
+msgid "Vertical"
+msgstr "Вертикально"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:258
+msgid "Horizontal"
+msgstr "Горизонтальний"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:262
+msgid "No count"
+msgstr "Без підрахунку"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:268
+msgid "Company or Showcase Page ID"
+msgstr "Ідентифікатор сторінки компанії або вітрини"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:275
+msgid "Can't find your page ID?"
+msgstr "Не можете знайти ідентифікатор своєї сторінки?"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:275
+msgid "Read the instruction"
+msgstr "Читати інструкцію"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:302
+msgid "LinkedIn Buttons Shortcode"
+msgstr "Шорткод кнопок LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:306
+msgid ""
+"Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Додайте кнопку(-и) LinkedIn до своїх дописів, сторінок, кастомних типів "
+"дописів або віджетів, використовуючи наступний шорткод:"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:325
+#: bws-pinterest/includes/class-pntrst-settings.php:411
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:521
+#: twitter-plugin/includes/class-twttr-settings.php:600
+#: twitter-plugin/includes/class-twttr-settings.php:621
+msgid "Close"
+msgstr "Закрити"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:326
+msgid "LinkedIn Buttons Preview"
+msgstr "Попередній перегляд кнопок LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:342
+#: bws-pinterest/includes/class-pntrst-settings.php:407
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:540
+#: includes/class-sclbttns-settings.php:187
+#: twitter-plugin/includes/class-twttr-settings.php:638
 msgid "Display Settings"
 msgstr "Налаштування відображення"
 
-#: includes/class-sclbttns-settings.php:126
+#: bws-linkedin/includes/class-lnkdn-settings.php:351
+msgid ""
+"Please choose the necessary post types (or single pages) where LinkedIn "
+"buttons will be displayed:"
+msgstr ""
+"Будь ласка, оберіть необхідні типи дописів (або окремі сторінки), на яких "
+"будуть відображатися кнопки LinkedIn:"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:358
+#: bws-pinterest/includes/class-pntrst-settings.php:424
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:556
+#: includes/class-sclbttns-settings.php:203
+#: twitter-plugin/includes/class-twttr-settings.php:654
+msgid "Show URL for pages"
+msgstr "Показати URL для сторінок"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:364
+#: bws-pinterest/includes/class-pntrst-settings.php:430
+#: twitter-plugin/includes/class-twttr-settings.php:660
+msgid "Example of the site's pages tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: bws-pinterest/bws-pinterest.php:150 twitter-plugin/twitter.php:215
+#: twitter-plugin/twitter.php:219
+msgid "Follow me"
+msgstr "Ідіть за мною"
+
+#: bws-pinterest/bws-pinterest.php:451
+msgid "Shortcode Type"
+msgstr "Тип короткого номера"
+
+#: bws-pinterest/bws-pinterest.php:454
+#: bws-pinterest/includes/class-pntrst-settings.php:269
+msgid "Save Button"
+msgstr "Кнопка \"Зберегти"
+
+#: bws-pinterest/bws-pinterest.php:455
+#: bws-pinterest/includes/class-pinterest-widget.php:113
+#: bws-pinterest/includes/class-pinterest-widget.php:138
+msgid "Pin Widget"
+msgstr "Віджет закріплення"
+
+#: bws-pinterest/bws-pinterest.php:456
+#: bws-pinterest/includes/class-pinterest-widget.php:119
+#: bws-pinterest/includes/class-pinterest-widget.php:139
+msgid "Board Widget"
+msgstr "Віджет форуму"
+
+#: bws-pinterest/bws-pinterest.php:457
+#: bws-pinterest/includes/class-pinterest-widget.php:125
+msgid "Profile Widget"
+msgstr "Віджет профілю"
+
+#: bws-pinterest/bws-pinterest.php:461
+msgid "Button label"
+msgstr "Напис на кнопці"
+
+#: bws-pinterest/bws-pinterest.php:465
+msgid "Save any image"
+msgstr "Збережіть будь-яке зображення"
+
+#: bws-pinterest/bws-pinterest.php:466
+msgid "Save defined image"
+msgstr "Зберегти визначене зображення"
+
+#: bws-pinterest/bws-pinterest.php:467
+msgid "Pin image URL"
+msgstr "URL-адреса зображення піна"
+
+#: bws-pinterest/bws-pinterest.php:468
+msgid "Custom button image"
+msgstr "Власне зображення кнопки"
+
+#: bws-pinterest/bws-pinterest.php:469
+msgid "Custom image URL"
+msgstr "Власна URL-адреса зображення"
+
+#: bws-pinterest/bws-pinterest.php:478
+#: bws-pinterest/includes/class-pinterest-widget.php:148
+msgid "Size"
+msgstr "Розмір"
+
+#: bws-pinterest/bws-pinterest.php:480
+#: bws-pinterest/includes/class-pinterest-widget.php:150
+#: bws-pinterest/includes/class-pntrst-settings.php:320
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:226
+#: includes/sclbttns-mssngrs-settings.php:93
+#: includes/sclbttns-nstgrm-settings.php:164
+#: twitter-plugin/includes/class-twttr-settings.php:342
+msgid "Small"
+msgstr "Маленький"
+
+#: bws-pinterest/bws-pinterest.php:481
+#: bws-pinterest/includes/class-pinterest-widget.php:151
+msgid "Medium"
+msgstr "Середній"
+
+#: bws-pinterest/bws-pinterest.php:482
+#: bws-pinterest/includes/class-pinterest-widget.php:152
+#: bws-pinterest/includes/class-pntrst-settings.php:321
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:227
+#: includes/sclbttns-mssngrs-settings.php:96
+#: includes/sclbttns-nstgrm-settings.php:167
+#: twitter-plugin/includes/class-twttr-settings.php:343
+msgid "Large"
+msgstr "Великий"
+
+#: bws-pinterest/bws-pinterest.php:487
+#: bws-pinterest/includes/class-pinterest-widget.php:161
+msgid "Width"
+msgstr "Ширина"
+
+#: bws-pinterest/bws-pinterest.php:488
+#: bws-pinterest/includes/class-pinterest-widget.php:171
+msgid "Height"
+msgstr "Висота"
+
+#: bws-pinterest/bws-pinterest.php:489
+#: bws-pinterest/includes/class-pinterest-widget.php:181
+msgid "Thumbnails width"
+msgstr "Ширина мініатюр"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:25
+msgid "Pinterest Widget"
+msgstr "Віджет Pinterest"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:28
+msgid "Widget for adding Pinterest Pin, Board, and Profile widgets"
+msgstr "Віджет для додавання віджетів Pinterest Pin, Дошка та Профіль"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:101
+#: facebook-button-plugin/facebook-button-plugin.php:227
+#: facebook-button-plugin/facebook-button-plugin.php:428
+msgid "Title"
+msgstr "Заголовок"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:106
+#: facebook-button-plugin/facebook-button-plugin.php:230
+#: facebook-button-plugin/facebook-button-plugin.php:431
+msgid "Type"
+msgstr "Тип"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:137
+msgid "Examples"
+msgstr "Приклади"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:166
+#: bws-pinterest/includes/class-pinterest-widget.php:186
+#, php-format
+msgid ""
+"Min width%1s. If the widget width field is empty, the thumbnail width will "
+"be auto."
+msgstr ""
+"Min width%1s. Якщо поле ширини віджету порожнє, ширина мініатюри буде "
+"автоматичною."
+
+#: bws-pinterest/includes/class-pinterest-widget.php:176
+#, php-format
+msgid "Min height%1s."
+msgstr "Min height%1s."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:70
+msgid ""
+"\"Save\" button location is not selected. The button will be displayed only "
+"via shortcode."
+msgstr ""
+"розташування кнопки \"Зберегти\" не вибрано. Кнопка буде відображатися лише "
+"за допомогою шорткоду."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:74
+msgid ""
+"\"Follow\" button location is not selected. The button will be displayed "
+"only via shortcode."
+msgstr ""
+"розташування кнопки \"Підписатися\" не вибрано. Кнопка буде відображатися "
+"лише за допомогою шорткоду."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:134
+msgid ""
+"Please, enter \"Pinterest User ID\" to add Follow Button. Settings are not "
+"saved."
+msgstr ""
+"Будь ласка, введіть \"Ідентифікатор користувача Pinterest\", щоб додати "
+"кнопку \"Підписатися\". Налаштування не будуть збережені."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:155
+#, php-format
+msgid "Error: File size %1s"
+msgstr "Помилка: Розмір файлу %1s"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:158
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:140
+#: includes/sclbttns-nstgrm-settings.php:112
+#: twitter-plugin/includes/class-twttr-settings.php:278
+msgid "Error: Invalid file type"
+msgstr "Помилка: Неправильний тип файлу"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:170
+msgid "Error: moving file failed"
+msgstr "Помилка: не вдалося перемістити файл"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:175
+msgid "Can't find upload directory path. Settings are not saved."
+msgstr ""
+"Не вдається знайти шлях до каталогу завантаження. Налаштування не збережено."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:178
+msgid "Error: select the upload file"
+msgstr "Помилка: виберіть файл для завантаження"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:202
+msgid "Pinterest Settings"
+msgstr "Налаштування Pinterest"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:208
+msgid "Pinterest User ID"
+msgstr "Ідентифікатор користувача Pinterest"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:211
+msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
+msgstr ""
+"Введіть свій ідентифікатор користувача Pinterest. Наприклад, \"bestwebsoft\"."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:220
+#: bws-pinterest/includes/class-pntrst-settings.php:387
+msgid "Save"
+msgstr "Зберегти"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:240
+msgid "Select the default language for Pinterest button(-s)."
+msgstr "Виберіть мову за замовчуванням для кнопки(-ок) Pinterest."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:272
+#: bws-pinterest/includes/class-pntrst-settings.php:349
+msgid "Button Position"
+msgstr "Положення кнопки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:277
+msgid "On image hover"
+msgstr "При наведенні на зображення"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:282
+msgid "Button Image"
+msgstr "Зображення кнопок"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:285
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:327
+#: includes/sclbttns-nstgrm-settings.php:220
+#: twitter-plugin/includes/class-twttr-settings.php:447
+msgid "Default"
+msgstr "За замовчуванням"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:286
+#: twitter-plugin/includes/class-twttr-settings.php:405
+#: twitter-plugin/includes/class-twttr-settings.php:449
+#: twitter-plugin/includes/class-twttr-settings.php:511
+#: twitter-plugin/includes/class-twttr-settings.php:542
+msgid "Custom"
+msgstr "Користувацьке"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:292
+#, php-format
+msgid "Max image size: %1$1s. Allowed file extensions: %2$2s"
+msgstr ""
+"Максимальний розмір зображення: %1$1s. Допустимі розширення файлів: %2$2s"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:301
+msgid "Current custom image"
+msgstr "Поточне користувацьке зображення"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:308
+msgid "Button Shape"
+msgstr "Button Shape"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:311
+msgid "Square"
+msgstr "Квадратна форма"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:312
+msgid "Round"
+msgstr "Круглий"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:317
+msgid "Button Size"
+msgstr "Розмір кнопки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:326
+msgid "Show Pin Count"
+msgstr "Показати кількість контактів"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:329
+msgid "Not shown"
+msgstr "Не показано"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:331
+msgid "Above the button"
+msgstr "Над кнопкою"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:333
+msgid "Beside the button"
+msgstr "Поруч з кнопкою"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:342
+msgid "Full Name"
+msgstr "Повне ім’я"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:345
+msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
+msgstr "Введіть назву вашого профілю в Pinterest. Наприклад, \"bestwebsoft\"."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:380
+msgid "Pinterest Buttons Shortcode"
+msgstr "Шорткод кнопок Pinterest"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:383
+msgid "Add Pinterest to a widget."
+msgstr "Додайте Pinterest до віджету."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:383
+msgid "Navigate to Widgets"
+msgstr "Перейти до Віджетів"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:384
+msgid ""
+"Add Pinterest button(-s) to your posts, pages or custom post types using the "
+"following shortcode:"
+msgstr ""
+"Додайте кнопку(-и) Pinterest до своїх дописів, сторінок або кастомних типів "
+"дописів, використовуючи наступний шорткод:"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:417
+msgid ""
+"Please choose the necessary post types (or single pages) where Pinterest "
+"buttons will be displayed:"
+msgstr ""
+"Будь ласка, виберіть необхідні типи постів (або окремі сторінки), на яких "
+"будуть відображатися кнопки Pinterest:"
+
+#: facebook-button-plugin/facebook-button-plugin.php:185
+msgid "Like & Share Statistics"
+msgstr "Статистика \"Подобається\" та \"Поділитися"
+
+#: facebook-button-plugin/facebook-button-plugin.php:192
+msgid "search"
+msgstr "пошук"
+
+#: facebook-button-plugin/facebook-button-plugin.php:194
+msgid "Search"
+msgstr "Пошук"
+
+#: facebook-button-plugin/facebook-button-plugin.php:199
+msgid "All types"
+msgstr "Всі типи"
+
+#: facebook-button-plugin/facebook-button-plugin.php:206
+#: facebook-button-plugin/facebook-button-plugin.php:448
+msgid "items"
+msgstr "елементів"
+
+#: facebook-button-plugin/facebook-button-plugin.php:211
+#: facebook-button-plugin/facebook-button-plugin.php:452
+msgid "Current Page"
+msgstr "Поточна сторінка"
+
+#: facebook-button-plugin/facebook-button-plugin.php:213
+#: facebook-button-plugin/facebook-button-plugin.php:454
+msgid "of"
+msgstr "з"
+
+#: facebook-button-plugin/facebook-button-plugin.php:216
+#: facebook-button-plugin/facebook-button-plugin.php:459
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+#: facebook-button-plugin/facebook-button-plugin.php:233
+#: facebook-button-plugin/facebook-button-plugin.php:434
+msgid "Like Count"
+msgstr "Як граф"
+
+#: facebook-button-plugin/facebook-button-plugin.php:236
+#: facebook-button-plugin/facebook-button-plugin.php:437
+msgid "Share Count"
+msgstr "Кількість акцій"
+
+#: facebook-button-plugin/facebook-button-plugin.php:239
+#: facebook-button-plugin/facebook-button-plugin.php:440
+msgid "Profile URL Count"
+msgstr "Кількість URL-адрес профілю"
+
+#: facebook-button-plugin/facebook-button-plugin.php:246
+msgid "Hello world"
+msgstr "Привіт, світ"
+
+#: facebook-button-plugin/facebook-button-plugin.php:248
+#: facebook-button-plugin/facebook-button-plugin.php:257
+#: facebook-button-plugin/facebook-button-plugin.php:266
+#: facebook-button-plugin/facebook-button-plugin.php:311
+#: facebook-button-plugin/facebook-button-plugin.php:329
+#: facebook-button-plugin/facebook-button-plugin.php:338
+#: facebook-button-plugin/facebook-button-plugin.php:383
+#: facebook-button-plugin/facebook-button-plugin.php:401
+#: facebook-button-plugin/facebook-button-plugin.php:419
+msgid "post"
+msgstr "запис"
+
+#: facebook-button-plugin/facebook-button-plugin.php:255
+#: facebook-button-plugin/facebook-button-plugin.php:264
+#: facebook-button-plugin/facebook-button-plugin.php:309
+#: facebook-button-plugin/facebook-button-plugin.php:327
+#: facebook-button-plugin/facebook-button-plugin.php:336
+#: facebook-button-plugin/facebook-button-plugin.php:381
+#: facebook-button-plugin/facebook-button-plugin.php:399
+#: facebook-button-plugin/facebook-button-plugin.php:417
+msgid "Post Example"
+msgstr "Приклад публікації"
+
+#: facebook-button-plugin/facebook-button-plugin.php:273
+#: facebook-button-plugin/facebook-button-plugin.php:318
+#: facebook-button-plugin/facebook-button-plugin.php:345
+#: facebook-button-plugin/facebook-button-plugin.php:390
+#: facebook-button-plugin/facebook-button-plugin.php:408
+msgid "Post of Custom Type Example"
+msgstr "Приклад допису нестандартного типу"
+
+#: facebook-button-plugin/facebook-button-plugin.php:282
+#: facebook-button-plugin/facebook-button-plugin.php:354
+msgid "Sample Page"
+msgstr "Зразок сторінки"
+
+#: facebook-button-plugin/facebook-button-plugin.php:284
+#: facebook-button-plugin/facebook-button-plugin.php:293
+#: facebook-button-plugin/facebook-button-plugin.php:302
+#: facebook-button-plugin/facebook-button-plugin.php:356
+#: facebook-button-plugin/facebook-button-plugin.php:365
+#: facebook-button-plugin/facebook-button-plugin.php:374
+msgid "page"
+msgstr "сторінка"
+
+#: facebook-button-plugin/facebook-button-plugin.php:291
+#: facebook-button-plugin/facebook-button-plugin.php:300
+#: facebook-button-plugin/facebook-button-plugin.php:363
+#: facebook-button-plugin/facebook-button-plugin.php:372
+msgid "Page Example"
+msgstr "Приклад сторінки"
+
+#: facebook-button-plugin/facebook-button-plugin.php:469
+#: social-buttons-pack.php:44
+msgid "Upgrade to Pro"
+msgstr "Оновитися на Pro"
+
+#: facebook-button-plugin/facebook-button-plugin.php:476
+msgid "This tab contains Pro options only."
+msgstr "Ця вкладка містить лише опції Pro."
+
+#: facebook-button-plugin/facebook-button-plugin.php:478
+#, php-format
+msgid "%1$sChange the settings%2$s to view the Pro options."
+msgstr "%1$sЗмінити налаштування%2$s, щоб переглянути опції Pro."
+
+#: facebook-button-plugin/facebook-button-plugin.php:738
+msgid "Add Like & Share buttons to your page or post"
+msgstr ""
+"Додайте кнопки \"Подобається\" та \"Поділитися\" на свою сторінку або допис"
+
+#: facebook-button-plugin/facebook-button-plugin.php:891
+#: social-buttons-pack.php:227
+msgid "Insert Media"
+msgstr "Вставити носій"
+
+#: facebook-button-plugin/facebook-button-plugin.php:892
+#: social-buttons-pack.php:228
+msgid "Insert"
+msgstr "Додати"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:113
+msgid ""
+"Error: Both \"App ID\" and \"App Secret\" fields must be filled or empty. "
+msgstr ""
+"Помилка: Обидва поля \"App ID\" та \"App Secret\" повинні бути заповнені або "
+"порожні."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:136
+#: includes/sclbttns-nstgrm-settings.php:108
+msgid "Error: Check image width or height."
+msgstr "Помилка: Перевірте ширину або висоту зображення."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:172
+msgid "Like & Share Settings"
+msgstr "Налаштування \"Подобається\" та \"Поділитися"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:187
+msgid ""
+"Why are there no like and share buttons on the site or they are not working?"
+msgstr ""
+"Чому на сайті немає кнопок \"Мені подобається\" та \"Поділитися\" або вони "
+"не працюють?"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:189
+msgid ""
+"Facebook will no longer support the 'Like', 'Share' and 'Feed' Social "
+"Plugins for European Region users, unless they are both 1) Logged into their "
+"Facebook account, and 2) have provided consent to the \"App and Website "
+"Cookies\" control. If both of these requirements are met, the user will be "
+"able to see and interact with plugins such as the 'Like' and 'Share' buttons "
+"and Facebook Feed. If either of the requirements above are not met, the user "
+"will not be able to see the plugins."
+msgstr ""
+"Facebook більше не підтримуватиме соціальні плагіни \"Мені подобається\", "
+"\"Поділитися\" та \"Стрічка\" для користувачів з Європейського регіону, якщо "
+"вони: 1) не увійшли до свого облікового запису Facebook та 2) не надали "
+"згоду на використання \"Файлів cookie додатків та веб-сайтів\". Якщо обидві "
+"ці вимоги виконані, користувач зможе бачити і взаємодіяти з такими "
+"плагінами, як кнопки \"Подобається\" і \"Поділитися\", а також стрічка "
+"Facebook. Якщо жодна з цих вимог не буде виконана, користувач не зможе "
+"бачити плагіни."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:198
+msgid "App ID"
+msgstr "Ідентифікатор додатка"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:202
+msgid "Leave blank to use a default App ID or"
+msgstr ""
+"Залиште порожнім, щоб використовувати ідентифікатор додатка за замовчуванням "
+"або"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:202
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:209
+msgid "create a new one."
+msgstr "створити новий."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:206
+msgid "App Secret"
+msgstr "Секрет додатка"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:209
+msgid "Leave blank to use a default App Secret or"
+msgstr "Залиште порожнім, щоб використовувати стандартний App Secret або"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:216
+#: includes/sclbttns-nstgrm-settings.php:154
+msgid "Profile URL"
+msgstr "Profil-URL"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:217
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:427
+msgid "Like"
+msgstr "Подобається"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:223
+#: includes/sclbttns-mssngrs-settings.php:89
+#: includes/sclbttns-nstgrm-settings.php:160
+#: twitter-plugin/includes/class-twttr-settings.php:339
+msgid "Buttons Size"
+msgstr "Розмір кнопок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:248
+#: includes/sclbttns-mssngrs-settings.php:115
+#: includes/sclbttns-nstgrm-settings.php:188
+msgid "Buttons Align"
+msgstr "Вирівнювання кнопок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:251
+#: includes/sclbttns-mssngrs-settings.php:119
+#: includes/sclbttns-nstgrm-settings.php:192
+msgid "Right"
+msgstr "Праворуч"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:252
+#: includes/sclbttns-mssngrs-settings.php:122
+#: includes/sclbttns-nstgrm-settings.php:195
+msgid "Center"
+msgstr "Центр"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:253
+#: includes/sclbttns-mssngrs-settings.php:125
+#: includes/sclbttns-nstgrm-settings.php:198
+msgid "Left"
+msgstr "Ліворуч"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:272
+msgid "Select the default language for Like & Share buttons."
+msgstr ""
+"Виберіть мову за замовчуванням для кнопок \"Подобається\" та \"Поділитися\"."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:286
+msgid "Activate"
+msgstr "Активувати"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:292
+msgid "Install Now"
+msgstr "Встановити Зараз"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:297
+msgid "Excerpt"
+msgstr "Уривок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:299
+msgid "Enable to display buttons in excerpt."
+msgstr "Увімкнути відображення кнопок у фрагменті."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:303
+msgid "Meta Tags"
+msgstr "Мета-теги"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:305
+msgid "Enable to use meta tags."
+msgstr "Увімкнути використання мета-тегів."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:311
+#: includes/sclbttns-nstgrm-settings.php:204
+msgid "Profile URL Button"
+msgstr "Кнопка URL профілю"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:314
+msgid "Facebook ID or Username"
+msgstr "Ідентифікатор Facebook або ім'я користувача"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:321
+#: includes/sclbttns-nstgrm-settings.php:214
+msgid "Profile Button Image"
+msgstr "Зображення кнопки профілю"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:335
+#: includes/sclbttns-nstgrm-settings.php:228
+msgid "Custom image"
+msgstr "Користувацьке зображення"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:340
+#: includes/sclbttns-nstgrm-settings.php:233
+msgid "Add Media"
+msgstr "Додати Медіа"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:342
+msgid ""
+"Image requirements: max image width: 100px; max image height: 40px; image "
+"types: \"jpg\", \"jpeg\", \"png\"."
+msgstr ""
+"Вимоги до зображень: максимальна ширина зображення: 100px; максимальна "
+"висота зображення: 40px; типи зображень: \"jpg\", \"jpeg\", \"png\"."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:365
+msgid "Like&Share Buttons"
+msgstr "Кнопки Like&Share"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:368
+msgid "Like Button Layout"
+msgstr "Наприклад, розташування кнопок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:391
+msgid "Share Button Layout"
+msgstr "Макет кнопки \"Поділитися"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:422
+msgid "Like Button Action"
+msgstr "Наприклад, дія кнопки"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:432
+#: twitter-plugin/includes/class-twttr-settings.php:419
+#: twitter-plugin/includes/class-twttr-settings.php:518
+#: twitter-plugin/includes/class-twttr-settings.php:549
+msgid "Recommend"
+msgstr "Рекомендую"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:438
+msgid "Layout Width"
+msgstr "Ширина макета"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:442
+msgid "px"
+msgstr "пікс"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:447
+msgid "Theme"
+msgstr "Тема"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:452
+msgid "Light"
+msgstr "Свiтла"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:457
+msgid "Dark"
+msgstr "Темна"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:463
+msgid "Like Button HTML Tag"
+msgstr "Наприклад, HTML-тег Button"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:472
+#, php-format
+msgid "Tag %s can be used to improve website code validation."
+msgstr "Тег %s можна використовувати для покращення валідації коду сайту."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:498
+msgid "Like & Share Shortcode"
+msgstr "Вподобати та поділитися шорткодом"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:501
+msgid ""
+"Add Like & Share buttons to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Додайте кнопки \"Подобається\" та \"Поділитися\" до своїх дописів, сторінок, "
+"кастомних типів дописів або віджетів, використовуючи наступний шорткод:"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:522
+msgid "Like & Share buttons Preview"
+msgstr "Кнопки \"Подобається\" та \"Поділитися\" Попередній перегляд"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:549
+msgid ""
+"Choose the necessary post types (or single pages) where Like & Share buttons "
+"will be displayed:"
+msgstr ""
+"Виберіть потрібні типи постів (або окремі сторінки), на яких будуть "
+"відображатися кнопки \"Подобається\" та \"Поділитися\":"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:562
+#: includes/class-sclbttns-settings.php:209
+msgid "Example of site pages tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: includes/class-sclbttns-settings.php:136
+msgid "Settings saved."
+msgstr "Налаштування збережені."
+
+#: includes/class-sclbttns-settings.php:196
 msgid ""
 "Please choose the necessary post types (or single pages) where Social "
 "Suttons will be displayed:"
 msgstr ""
-"Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
+"Будь ласка, виберіть необхідні типи постів (або окремих сторінок), де будуть "
 "відображатися соціальні кнопки:"
 
-#: includes/class-sclbttns-settings.php:133
-msgid "Show URL for pages"
-msgstr "Відображати URL сторінок"
+#: includes/sclbttns-mssngrs-settings.php:78
+msgid "Messengers Settings"
+msgstr "Налаштування месенджерів"
 
-#: includes/class-sclbttns-settings.php:139
-msgid "Example of site pages tree"
-msgstr "Приклад дерева сторінок сайту"
+#: includes/sclbttns-mssngrs-settings.php:132
+msgid "Telegram Button"
+msgstr "Кнопка Telegram"
 
-#: includes/sclbttns-nstgrm-settings.php:22
-#: includes/sclbttns-nstgrm-settings.php:26 social-buttons-pack.php:35
-#: social-buttons-pack.php:215 social-buttons-pack.php:228
-msgid "Settings"
-msgstr "Налаштування"
+#: includes/sclbttns-mssngrs-settings.php:135
+msgid "Telegram Account "
+msgstr "Telegram-акаунт"
 
-#: includes/sclbttns-nstgrm-settings.php:87
-msgid "Settings saved"
-msgstr "Налаштування збережено"
+#: includes/sclbttns-mssngrs-settings.php:138
+msgid ""
+"Enter the ID in the format \"@bestwebsoft\" or the link in the format "
+"\"https://t.me/bestwebsoft\"."
+msgstr ""
+"Введіть ідентифікатор у форматі \"@bestwebsoft\" або посилання у форматі "
+"\"https://t.me/bestwebsoft\"."
 
-#: includes/sclbttns-nstgrm-settings.php:103
-msgid "Error: Check image width or height."
-msgstr "Помилка: Перевірте ширину або довжину."
+#: includes/sclbttns-mssngrs-settings.php:142
+msgid "Whatsapp Button"
+msgstr "Кнопка Whatsapp"
 
-#: includes/sclbttns-nstgrm-settings.php:107
-msgid "Error: Invalid file type"
-msgstr "Помилка: неправильний тип файлу"
+#: includes/sclbttns-mssngrs-settings.php:145
+msgid "WhatsApp Account "
+msgstr "Обліковий запис WhatsApp"
 
-#: includes/sclbttns-nstgrm-settings.php:154
+#: includes/sclbttns-mssngrs-settings.php:148
+msgid "Enter the phone number in the format: +1XXXXXXXXXXX ."
+msgstr "Введіть номер телефону у форматі: +1XXXXXXXXXXXXX ."
+
+#: includes/sclbttns-mssngrs-settings.php:153
+msgid "Youtube Button"
+msgstr "Кнопка Youtube"
+
+#: includes/sclbttns-mssngrs-settings.php:156
+msgid "Youtube Account "
+msgstr "Обліковий запис Youtube"
+
+#: includes/sclbttns-mssngrs-settings.php:159
+msgid ""
+"Enter the ID in the format \"@bestwebsoft\", \"bestwebsoft\" or the link in "
+"the format \"https://www.youtube.com/bestwebsoft\"."
+msgstr ""
+"Введіть ідентифікатор у форматі \"@bestwebsoft\", \"bestwebsoft\" або "
+"посилання у форматі \"https://www.youtube.com/bestwebsoft\"."
+
+#: includes/sclbttns-mssngrs.php:93 includes/sclbttns-mssngrs.php:130
+#: includes/sclbttns-mssngrs.php:157 includes/sclbttns-mssngrs.php:221
+#: includes/sclbttns-mssngrs.php:294 includes/sclbttns-mssngrs.php:357
+msgid "Button"
+msgstr "Кнопка"
+
+#: includes/sclbttns-nstgrm-settings.php:66
+#: twitter-plugin/includes/class-twttr-settings.php:168
+msgid "Sorry, your nonce did not verify."
+msgstr "На жаль, ваші дії  не підтверджені."
+
+#: includes/sclbttns-nstgrm-settings.php:140
 msgid "Instagram Settings"
 msgstr "Налаштування Instagram"
 
-#: includes/sclbttns-nstgrm-settings.php:161
-#: includes/sclbttns-nstgrm-settings.php:200
-msgid "Notice:"
-msgstr "Зауважте:"
-
-#: includes/sclbttns-nstgrm-settings.php:161
-msgid ""
-"According to BestWebSoft Instagram network settings, it is prohibited to "
-"view the plugin settings on this site."
-msgstr ""
-"Відповідно до налаштувань мережі BestWebSoft Instagram заборонено "
-"переглядати налаштування плагіна на цьому веб-сайті."
-
-#: includes/sclbttns-nstgrm-settings.php:164
-msgid "General"
-msgstr "Основні"
-
-#: includes/sclbttns-nstgrm-settings.php:168
-msgid "Apply Network Settings"
-msgstr "Застосувати налаштування мережі"
-
-#: includes/sclbttns-nstgrm-settings.php:172
-msgid "Apply to all sites and use by default"
-msgstr "Застосувати до всіх сайтів і використовувати за замовчуванням"
-
-#: includes/sclbttns-nstgrm-settings.php:174
-msgid "Use general settings for all individual websites."
-msgstr "Використовувати загальні налаштування для всіх окремих веб-сайтів."
-
-#: includes/sclbttns-nstgrm-settings.php:178
-msgid "Allow changing the settings on separate websites"
-msgstr "Дозволити зміну налаштувань на окремих сайтах"
-
-#: includes/sclbttns-nstgrm-settings.php:181
-msgid "Allow viewing the settings on separate websites"
-msgstr "Дозволити перегляд налаштувань на окремих сайтах"
-
-#: includes/sclbttns-nstgrm-settings.php:185
-msgid "By default"
-msgstr "За замовчуванням"
-
-#: includes/sclbttns-nstgrm-settings.php:187
-msgid "Settings will be applied to newly added websites by default."
-msgstr ""
-"Налаштування застосовуватимуться до всіх новододаних сайтів автоматично"
-
-#: includes/sclbttns-nstgrm-settings.php:190
-msgid "Do not apply"
-msgstr "Не застосовувати"
-
-#: includes/sclbttns-nstgrm-settings.php:192
-msgid "Change the settings on separate sites of the multisite only."
-msgstr "Змінити налаштування лише для окремих сайтів мультисайту"
-
-#: includes/sclbttns-nstgrm-settings.php:200
-msgid ""
-"According to BestWebSoft Instagram network settings, it is prohibited to "
-"change the plugin settings on this site."
-msgstr ""
-"Згідно з налаштуваннями мережі BestWebSoft Instagram, на цьому веб-сайті "
-"забороняється змінювати налаштування плагіна."
-
-#: includes/sclbttns-nstgrm-settings.php:204
-msgid "Buttons"
-msgstr "Кнопки"
-
-#: includes/sclbttns-nstgrm-settings.php:208
-msgid "Profile URL"
-msgstr "URL профілю"
-
-#: includes/sclbttns-nstgrm-settings.php:214
-msgid "Buttons Size"
-msgstr "Розмір кнопки"
-
-#: includes/sclbttns-nstgrm-settings.php:218
-msgid "Small"
-msgstr "Маленька"
-
-#: includes/sclbttns-nstgrm-settings.php:221
-msgid "Large"
-msgstr "Велика"
-
-#: includes/sclbttns-nstgrm-settings.php:227
-msgid "Buttons Position"
-msgstr "Розташування кнопок"
-
-#: includes/sclbttns-nstgrm-settings.php:232
-msgid "Before content"
-msgstr "Перед постом"
-
-#: includes/sclbttns-nstgrm-settings.php:236
-msgid "After content"
-msgstr "Після посту"
-
-#: includes/sclbttns-nstgrm-settings.php:242
-msgid "Buttons Align"
-msgstr "Розташування кнопок"
-
-#: includes/sclbttns-nstgrm-settings.php:246
-msgid "Right"
-msgstr "Справа"
-
-#: includes/sclbttns-nstgrm-settings.php:249
-msgid "Center"
-msgstr "По центру"
-
-#: includes/sclbttns-nstgrm-settings.php:252
-msgid "Left"
-msgstr "Зліва"
-
-#: includes/sclbttns-nstgrm-settings.php:258
-msgid "Profile URL Button"
-msgstr "Кнопка URL профілю"
-
-#: includes/sclbttns-nstgrm-settings.php:261
+#: includes/sclbttns-nstgrm-settings.php:207
 msgid "Account Username"
-msgstr "Ім'я користувача облікового запису"
+msgstr "Ім’я користувача облікового запису"
 
-#: includes/sclbttns-nstgrm-settings.php:268
-msgid "Profile Button Image"
-msgstr "Зображення кнопки профілю"
-
-#: includes/sclbttns-nstgrm-settings.php:274
-msgid "Default"
-msgstr "За замовчуванням"
-
-#: includes/sclbttns-nstgrm-settings.php:282
-msgid "Custom image"
-msgstr "Користувацьке зображення"
-
-#: includes/sclbttns-nstgrm-settings.php:287
-msgid "Add Media"
-msgstr ""
-
-#: includes/sclbttns-nstgrm-settings.php:289
+#: includes/sclbttns-nstgrm-settings.php:235
 msgid ""
 "Image requirements: max image width: 50px; max image height: 50px; image "
 "types: \"jpg\", \"jpeg\", \"png\"."
 msgstr ""
-"Вимоги до зображення: максимальна ширина зображення: 50px; максимальна "
-"висота зображення: 50px; типи зображень: \"jpg\", \"jpeg\", \"png\"."
+"Вимоги до зображень: максимальна ширина зображення: 50px; максимальна висота "
+"зображення: 50px; типи зображень: \"jpg\", \"jpeg\", \"png\"."
 
-#: includes/sclbttns-nstgrm-settings.php:323
+#: includes/sclbttns-nstgrm-settings.php:271
 msgid "Instagram Shortcode"
-msgstr "Instagram Шорткод"
+msgstr "Шорткод Instagram"
 
-#: includes/sclbttns-nstgrm-settings.php:326
+#: includes/sclbttns-nstgrm-settings.php:274
 msgid ""
-"Add Instagram buttons to your posts, pages, custom post types or widgets by "
+"Add Instagram button to your posts, pages, custom post types or widgets by "
 "using the following shortcode:"
 msgstr ""
-"Додайте кнопки Instagram до своїх публікацій, сторінок, користувацьких типів "
-"публікацій або віджетів, використовуючи такий shortcode:"
+"Додайте кнопку Instagram до своїх дописів, сторінок, кастомних типів дописів "
+"або віджетів за допомогою наступного шорткоду:"
 
-#: includes/sclbttns-nstgrm.php:105
+#: includes/sclbttns-nstgrm.php:129
 msgid "Add Instagram Profile button to your page or post"
-msgstr "Додати кнопки Instagram на вашу сторінку або пост"
+msgstr "Кнопка \"Додати профіль в Instagram\" на сторінку або допис"
 
-#: social-buttons-pack.php:34 social-buttons-pack.php:35
-#: social-buttons-pack.php:172
+#: social-buttons-pack.php:38 social-buttons-pack.php:39
+#: social-buttons-pack.php:199
 msgid "Social Buttons Settings"
-msgstr "Налаштування Social Buttons"
+msgstr "Налаштування соціальних кнопок"
 
-#: social-buttons-pack.php:40
-msgid "Upgrade to Pro"
-msgstr "Оновитися до Pro"
-
-#: social-buttons-pack.php:173
+#: social-buttons-pack.php:200
 msgid "Please, enable JavaScript in Your browser."
-msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
+msgstr "Будь ласка, увімкніть JavaScript у вашому браузері."
 
-#: social-buttons-pack.php:229
+#: social-buttons-pack.php:303
 msgid "FAQ"
 msgstr "FAQ"
 
-#: social-buttons-pack.php:230
+#: social-buttons-pack.php:304
 msgid "Support"
 msgstr "Підтримка"
 
-#, fuzzy
-#~| msgid "Settings for Share Button"
-#~ msgid "LinkedIn Share Button"
-#~ msgstr "Налаштування для кнопки \"Поділитись\""
+#: twitter-plugin/includes/class-twttr-settings.php:276
+msgid "Error: File size > 32K"
+msgstr "Помилка: Розмір файлу > 32K"
 
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "LinkedIn Follow Button"
-#~ msgstr "Налаштування для кнопки \"Підписатися\""
+#: twitter-plugin/includes/class-twttr-settings.php:294
+msgid "Error: Failed to move file"
+msgstr "Помилка: Не вдалося перемістити файл"
 
-#, fuzzy
-#~| msgid "no title"
-#~ msgid "Title"
-#~ msgstr "без назви"
+#: twitter-plugin/includes/class-twttr-settings.php:297
+msgid "Error: Check image width or height"
+msgstr "Помилка: Перевірте ширину або висоту зображення"
+
+#: twitter-plugin/includes/class-twttr-settings.php:301
+msgid "Uploading Error: Check image properties"
+msgstr "Помилка завантаження: Перевірте властивості зображення"
+
+#: twitter-plugin/includes/class-twttr-settings.php:319
+msgid "Twitter Settings"
+msgstr "Налаштування Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:328
+#: twitter-plugin/twitter.php:198 twitter-plugin/twitter.php:249
+#: twitter-plugin/twitter.php:253 twitter-plugin/twitter.php:354
+msgid "Tweet"
+msgstr "Tweet"
+
+#: twitter-plugin/includes/class-twttr-settings.php:332
+#: twitter-plugin/includes/class-twttr-settings.php:426
+#: twitter-plugin/includes/class-twttr-settings.php:487
+#: twitter-plugin/twitter.php:356
+msgid "Hashtag"
+msgstr "Hashtag"
+
+#: twitter-plugin/includes/class-twttr-settings.php:334
+#: twitter-plugin/twitter.php:357
+msgid "Mention"
+msgstr "Згадка"
+
+#: twitter-plugin/includes/class-twttr-settings.php:366
+msgid "Automatic"
+msgstr "Вимкнути автоматичний канонічний тег"
+
+#: twitter-plugin/includes/class-twttr-settings.php:373
+msgid "Select the default language for Twitter button(-s)."
+msgstr "Виберіть мову за замовчуванням для кнопок Twitter."
+
+#: twitter-plugin/includes/class-twttr-settings.php:377
+msgid "Twitter Tailoring"
+msgstr "Пошиття твіттерів"
+
+#: twitter-plugin/includes/class-twttr-settings.php:380
+msgid "Enable tailored suggestions from Twitter."
+msgstr "Увімкнути індивідуальні пропозиції від Twitter."
+
+#: twitter-plugin/includes/class-twttr-settings.php:385
+msgid "Tweet Button"
+msgstr "Tweet Кнопка"
+
+#: twitter-plugin/includes/class-twttr-settings.php:388
+#: twitter-plugin/includes/class-twttr-settings.php:494
+msgid "Share URL"
+msgstr "Поділитися URL-адресою"
+
+#: twitter-plugin/includes/class-twttr-settings.php:391
+#: twitter-plugin/includes/class-twttr-settings.php:499
+#: twitter-plugin/includes/class-twttr-settings.php:540
+msgid "Current page"
+msgstr "Поточна сторінка"
+
+#: twitter-plugin/includes/class-twttr-settings.php:399
+#: twitter-plugin/includes/class-twttr-settings.php:506
+#: twitter-plugin/includes/class-twttr-settings.php:537
+msgid "Tweet Text"
+msgstr "Tweet Текст"
+
+#: twitter-plugin/includes/class-twttr-settings.php:403
+#: twitter-plugin/includes/class-twttr-settings.php:509
+msgid "Current page title"
+msgstr "Назва поточної сторінки"
+
+#: twitter-plugin/includes/class-twttr-settings.php:412
+msgid "Via"
+msgstr " Через"
+
+#: twitter-plugin/includes/class-twttr-settings.php:415
+msgid "Enter username for Tweet via parameter."
+msgstr "Введіть ім'я користувача для Twitter через параметр."
+
+#: twitter-plugin/includes/class-twttr-settings.php:422
+#: twitter-plugin/includes/class-twttr-settings.php:521
+#: twitter-plugin/includes/class-twttr-settings.php:552
+msgid ""
+"Enter usernames of someone you recommend (maximum 2 allowed). For example: "
+"bestwebsoft, wordpress."
+msgstr ""
+"Введіть імена користувачів, яких ви рекомендуєте (дозволено не більше 2). "
+"Наприклад: bestwebsoft, wordpress."
+
+#: twitter-plugin/includes/class-twttr-settings.php:429
+#: twitter-plugin/includes/class-twttr-settings.php:490
+msgid ""
+"Enter one or multiple hashtags for your tweet. For example: bestwebsoft, "
+"wordpress, etc."
+msgstr ""
+"Введіть один або кілька хештегів для вашого твіту. Наприклад: bestwebsoft, "
+"wordpress тощо."
+
+#: twitter-plugin/includes/class-twttr-settings.php:436
+msgid "Twitter username"
+msgstr "Ім'я користувача Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:439
+#, php-format
+msgid "Enter your Twitter account username or %1$s create a new one %2$s."
+msgstr ""
+"Введіть ім'я користувача вашого облікового запису Twitter або %1$s створіть "
+"новий %2$s."
+
+#: twitter-plugin/includes/class-twttr-settings.php:443
+msgid "Follow Button Image"
+msgstr "Зображення кнопки \"Підписатися"
+
+#: twitter-plugin/includes/class-twttr-settings.php:454
+#, php-format
+msgid ""
+"To use custom image, You need to setup permissions to upload directory of "
+"your site - %s"
+msgstr ""
+"Щоб використовувати кастомне зображення, вам потрібно налаштувати дозволи на "
+"завантаження каталогу вашого сайту - %s"
+
+#: twitter-plugin/includes/class-twttr-settings.php:471
+#, php-format
+msgid ""
+"Upload image with the %1$s dimensions, JPG, JPEG or PNG formats (maximum "
+"file size - %2$s)."
+msgstr ""
+"Завантажте зображення з розмірами %1$s, у форматах JPG, JPEG або PNG "
+"(максимальний розмір файлу - %2$s)."
+
+#: twitter-plugin/includes/class-twttr-settings.php:476
+msgid "Show Follow Button"
+msgstr "Показати кнопку \"Підписатися"
+
+#: twitter-plugin/includes/class-twttr-settings.php:479
+msgid "Username"
+msgstr "Ім’я користувача"
+
+#: twitter-plugin/includes/class-twttr-settings.php:484
+msgid "Hashtag Button"
+msgstr "Кнопка хештегу"
+
+#: twitter-plugin/includes/class-twttr-settings.php:497
+msgid "None"
+msgstr "Нічого"
+
+#: twitter-plugin/includes/class-twttr-settings.php:525
+msgid "Mention Button"
+msgstr "Кнопка згадки"
+
+#: twitter-plugin/includes/class-twttr-settings.php:529
+#: twitter-plugin/twitter.php:270
+msgid "Tweet to"
+msgstr "Твіт до"
+
+#: twitter-plugin/includes/class-twttr-settings.php:533
+msgid "Enter username of someone you want to mention."
+msgstr "Введіть ім'я користувача, якого ви хочете згадати."
+
+#: twitter-plugin/includes/class-twttr-settings.php:533
+#, php-format
+msgid "For example, %s."
+msgstr "Наприклад, %s."
+
+#: twitter-plugin/includes/class-twttr-settings.php:578
+msgid "Twitter Shortcode"
+msgstr "Короткий код Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:582
+msgid ""
+"Add Twitter button(-s) to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
+msgstr ""
+"Додайте кнопку(-и) Twitter до своїх дописів, сторінок, кастомних типів "
+"дописів або віджетів, використовуючи наступний шорткод:"
+
+#: twitter-plugin/includes/class-twttr-settings.php:601
+msgid "Twitter Buttons Preview"
+msgstr "Попередній перегляд кнопок Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:622
+msgid "Twitter Timeline Preview"
+msgstr "Попередній перегляд часової шкали Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:647
+msgid ""
+"Choose the necessary post types (or single pages) where Twitter buttons will "
+"be displayed:"
+msgstr ""
+"Виберіть потрібні типи постів (або окремі сторінки), на яких будуть "
+"відображатися кнопки Twitter:"
+
+#: twitter-plugin/includes/class-twttr-settings.php:660
+msgid "Example of site pages' tree"
+msgstr "Приклад дерева сторінок сайту"
+
+#: twitter-plugin/twitter.php:228
+msgid "TwitterStories"
+msgstr "TwitterStories"
+
+#: twitter-plugin/twitter.php:353
+msgid "Please select twitter buttons which will be displayed"
+msgstr "Будь ласка, виберіть кнопки твіттера, які будуть відображатися"
+
+#~ msgid "Notice:"
+#~ msgstr "Внимание:"
+
+#~ msgid ""
+#~ "According to BestWebSoft Instagram network settings, it is prohibited to "
+#~ "view the plugin settings on this site."
+#~ msgstr ""
+#~ "Согласно настройкам сети Instagram BestWebSoft, просмотр настроек плагина "
+#~ "на этом сайте запрещен."
+
+#~ msgid "Apply Network Settings"
+#~ msgstr "Применить сетевые настройки"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Применить для всех сайтов и использовать по умолчанию"
+
+#~ msgid "Use general settings for all individual websites."
+#~ msgstr "Использовать общие настройки для всех отдельных веб-сайтов."
+
+#~ msgid "Allow changing the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах"
+
+#~ msgid "Allow viewing the settings on separate websites"
+#~ msgstr "Разрешить просмотр настроек на отдельных сайтах"
+
+#~ msgid "By default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Settings will be applied to newly added websites by default."
+#~ msgstr ""
+#~ "Настройки будут использоваться по умолчанию для вновь добавленных сайтов."
+
+#~ msgid "Do not apply"
+#~ msgstr "Не применять"
+
+#~ msgid ""
+#~ "According to BestWebSoft Instagram network settings, it is prohibited to "
+#~ "change the plugin settings on this site."
+#~ msgstr ""
+#~ "Согласно настройкам сети BestWebSoft, изменение настроек плагина "
+#~ "Instagram на этом сайте запрещено."
 
 #, fuzzy
 #~| msgid "Display"
 #~ msgid "Display Mode"
-#~ msgstr "Відображення"
+#~ msgstr "Отображение"
 
 #, fuzzy
 #~| msgid "Enter the Google+ Community ID, e.g."
 #~ msgid "Enter the Company ID"
-#~ msgstr "Вкажіть Google+ ID Спільноти, напр."
+#~ msgstr "Укажите Google+ ID  Сообщества, напр."
 
 #~ msgid "Inline"
-#~ msgstr "Вбудована"
-
-#, fuzzy
-#~| msgid "Show buttons"
-#~ msgid "Show Connections"
-#~ msgstr "Відображати кнопки"
+#~ msgstr "Встроенное"
 
 #, fuzzy
 #~| msgid "Show URL"
 #~ msgid "Show"
-#~ msgstr "Відображати URL"
+#~ msgstr "Показать URL"
 
 #, fuzzy
 #~| msgid "Enter the Google+ ID, e.g."
 #~ msgid "Enter the School ID"
-#~ msgstr "Вкажіть Google+ ID, напр."
-
-#, fuzzy
-#~| msgid "Settings"
-#~ msgid "LinkedIn Settings"
-#~ msgstr "Налаштування"
-
-#~ msgid "Share"
-#~ msgstr "\"Поділитись\""
-
-#~ msgid "Follow"
-#~ msgstr "\"Підписатися\""
-
-#, fuzzy
-#~| msgid "Display"
-#~ msgid "Display on"
-#~ msgstr "Відображення"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Pages"
-#~ msgstr "Сторінка"
-
-#~ msgid "Language"
-#~ msgstr "Мова"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for LinkedIn button(-s)."
-#~ msgstr "Оберіть мову відображення інформації на кнопці"
-
-#, fuzzy
-#~| msgid "Activate"
-#~ msgid "Activate %s"
-#~ msgstr "Активувати"
-
-#~ msgid "Learn More"
-#~ msgstr "Докладніше"
-
-#, fuzzy
-#~| msgid "Vertical-bubble"
-#~ msgid "Vertical"
-#~ msgstr "Вертикальна спливаюча"
-
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "Follow Button"
-#~ msgstr "Налаштування для кнопки \"Підписатися\""
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where LinkedIn "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
-#~ "відображатися соціальні кнопки:"
-
-#~ msgid "Example of the site's pages tree"
-#~ msgstr "Приклад дерева сторінок сайту"
-
-#, fuzzy
-#~| msgid "Follow"
-#~ msgid "Follow me"
-#~ msgstr "\"Підписатися\""
-
-#~ msgid "Type"
-#~ msgstr "Тип"
-
-#, fuzzy
-#~| msgid "Google+ Badge Widget"
-#~ msgid "Board Widget"
-#~ msgstr "Віджет Значка Google+"
-
-#~ msgid "Size"
-#~ msgstr "Розмір"
-
-#~ msgid "Medium"
-#~ msgstr "Середня"
-
-#~ msgid "Width"
-#~ msgstr "Ширина"
-
-#, fuzzy
-#~| msgid "Light"
-#~ msgid "Height"
-#~ msgstr "Світла"
-
-#, fuzzy
-#~ msgid "Shortcode Type"
-#~ msgstr "Додаткові налаштування"
-
-#, fuzzy
-#~| msgid "Show buttons"
-#~ msgid "Save Button"
-#~ msgstr "Відображати кнопки"
-
-#, fuzzy
-#~| msgid "Button Size"
-#~ msgid "Button label"
-#~ msgstr "Розмір кнопки"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Save any image"
-#~ msgstr "Зберегти зміни"
-
-#, fuzzy
-#~| msgid "Show buttons on homepage"
-#~ msgid "Custom button image"
-#~ msgstr "Відображати на домашній сторінці"
-
-#, fuzzy
-#~ msgid "Pinterest Settings"
-#~ msgstr "Налаштування"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for Pinterest button(-s)."
-#~ msgstr "Оберіть мову відображення інформації на кнопці"
-
-#, fuzzy
-#~| msgid "Buttons Position"
-#~ msgid "Button Position"
-#~ msgstr "Розташування кнопок"
-
-#, fuzzy
-#~| msgid "Button Size"
-#~ msgid "Button Image"
-#~ msgstr "Розмір кнопки"
-
-#, fuzzy
-#~| msgid "Custom Code"
-#~ msgid "Custom"
-#~ msgstr "Користувацький код"
-
-#, fuzzy
-#~| msgid "Button Size"
-#~ msgid "Button Shape"
-#~ msgstr "Розмір кнопки"
-
-#~ msgid "Button Size"
-#~ msgstr "Розмір кнопки"
-
-#, fuzzy
-#~| msgid "Show in posts"
-#~ msgid "Show Pin Count"
-#~ msgstr "Відображати в постах"
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where Pinterest "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
-#~ "відображатися соціальні кнопки:"
+#~ msgstr "Укажите Google+ ID, напр."
 
 #, fuzzy
 #~| msgid "Social Buttons Settings"
 #~ msgid "Facebook Button Settings"
-#~ msgstr "Налаштування Social Buttons"
+#~ msgstr "Настройки Social Buttons"
 
 #, fuzzy
 #~| msgid "Select the language to display information on the button"
 #~ msgid "Select the default language for Facebook button(-s)."
-#~ msgstr "Оберіть мову відображення інформації на кнопці"
-
-#~ msgid "Activate"
-#~ msgstr "Активувати"
-
-#, fuzzy
-#~| msgid "Settings for Share Button"
-#~ msgid "Like&Share Buttons"
-#~ msgstr "Налаштування для кнопки \"Поділитись\""
-
-#, fuzzy
-#~| msgid "Buttons Position"
-#~ msgid "Like Button Action"
-#~ msgstr "Розташування кнопок"
-
-#, fuzzy
-#~| msgid "Layout"
-#~ msgid "Layout Width"
-#~ msgstr "Орієнтація"
-
-#~ msgid "px"
-#~ msgstr "px"
-
-#~ msgid "Theme"
-#~ msgstr "Тема"
-
-#~ msgid "Light"
-#~ msgstr "Світла"
-
-#~ msgid "Dark"
-#~ msgstr "Темна"
+#~ msgstr "Выберите язык отображения информации на кнопке"
 
 #, fuzzy
 #~| msgid ""
@@ -516,142 +1435,106 @@ msgstr "Підтримка"
 #~ "Please choose the necessary post types (or single pages) where Facebook "
 #~ "button will be displayed:"
 #~ msgstr ""
-#~ "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
-#~ "відображатися соціальні кнопки:"
-
-#, fuzzy
-#~| msgid "Social Buttons Settings"
-#~ msgid "Twitter Button Settings"
-#~ msgstr "Налаштування Social Buttons"
-
-#, fuzzy
-#~ msgid "Mention"
-#~ msgstr "Примітка"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for Twitter button(-s)."
-#~ msgstr "Оберіть мову відображення інформації на кнопці"
-
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "Show Follow Button"
-#~ msgstr "Налаштування для кнопки \"Підписатися\""
-
-#~ msgid "None"
-#~ msgstr "Немає"
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where Twitter "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
-#~ "відображатися соціальні кнопки:"
-
-#~ msgid "Example of site pages' tree"
-#~ msgstr "Приклад дерева сторінок сайту"
-
-#, fuzzy
-#~| msgid "Please select location for the buttons on the page"
-#~ msgid "Please select twitter buttons which will be displayed"
-#~ msgstr "Будь ласка, оберіть розташування кнопок на сторінці"
+#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+#~ "будут отображаться социальные кнопки:"
 
 #~ msgid "All plugin settings were restored."
-#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+#~ msgstr "Все настройки плагина восстановлены."
 
 #~ msgid "Custom code"
-#~ msgstr "Користувацький код"
+#~ msgstr "Пользовательский код"
 
 #~ msgid "Go PRO"
-#~ msgstr "Перейти на Pro версію"
+#~ msgstr "Перейти на PRO версию"
 
 #~ msgid ""
 #~ "Please choose the necessary post types (or single pages) where Social "
 #~ "Buttons will be displayed"
 #~ msgstr ""
-#~ "Будь ласка, оберіть потрібні типи посту (чи сторінки), де будуть "
-#~ "відображатися соціальні кнопки"
+#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
+#~ "будут отображаться социальные кнопки"
 
 #~ msgid "If you upgrade to Pro version all your settings will be saved."
-#~ msgstr "Якщо ви перейдете на Pro версію, усі установки будуть збережені."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
 
 #~ msgid "Unlock premium options by upgrading to Pro version"
-#~ msgstr "Зробити доступними преміум-опції, перейшовши на Pro версію"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
 
 #~ msgid "Saving"
-#~ msgstr "Збереження"
+#~ msgstr "Сохранение"
 
 #~ msgid "Changes you made are not saved. Please wait few minutes."
-#~ msgstr "Внесені зміни не збережені. Будь ласка, зачекайте кілька хвилин."
+#~ msgstr ""
+#~ "Внесенные изменения не сохранены. Пожалуйста, подождите несколько минут."
 
 #~ msgid "Email is invalid"
-#~ msgstr "Невірний Email"
+#~ msgstr "Неверный Email"
 
+# Please, select the invite type >> Please, select the invitation type
 #~ msgid "Please, select the invitation type"
-#~ msgstr "Будь ласка, оберіть тип запрошення"
+#~ msgstr "Пожалуйста, укажите вариант приглашения"
 
 #~ msgid "Invitation field can't be empty"
-#~ msgstr "Поле для запрошення не може бути порожнім"
+#~ msgstr "Поле для приглашения не может быть пустым"
 
 #~ msgid "Only one phone number can be added"
-#~ msgstr "Тільки один номер телефону може бути доданий"
+#~ msgstr "Только один номер телефона может быть добавлен"
 
+# You can't add invite because the phone number is already added >> You can't add the invitation because the phone number is already added
 #~ msgid ""
 #~ "You can't add the invitation because the phone number is already added"
 #~ msgstr ""
-#~ "Неможливо додати запрошення, тому що запрошення за номером телефону вже "
-#~ "додано"
+#~ "Невозможно добавить приглашение, потому что приглашение по номеру "
+#~ "телефона уже добавлено"
 
+# You can't add the phone number because another type is already added >> You can't add the phone number because another invitation type is already added
 #~ msgid ""
 #~ "You can't add the phone number because another invitation type is already "
 #~ "added"
 #~ msgstr ""
-#~ "Неможливо додати запрошення за номером телефону, тому що запрошення "
-#~ "іншого типу вже додано"
+#~ "Невозможно добавить приглашение по номеру телефона, потому что "
+#~ "приглашение другого типа уже добавлено"
 
 #~ msgid "Is already added"
-#~ msgstr "Вже додано"
+#~ msgstr "Уже добавлен"
 
 #~ msgid "Network"
-#~ msgstr "Мережа"
+#~ msgstr "Сетевые"
 
 #~ msgid "How to Use Step-by-step Instruction"
-#~ msgstr "Покрокова інструкція з використання плагіна"
+#~ msgstr "Пошаговая инструкция по использованию плагина"
 
 #~ msgid "This option will replace all current settings on separate sites."
-#~ msgstr "Ця опція замінить всі поточні налаштування на окремих сайтах."
+#~ msgstr "Эта настройка заменит все текущие настройки отдельных сайтов."
 
 #~ msgid ""
 #~ "It is prohibited to change Google +1 Pro settings on this site in the "
 #~ "Google +1 Pro network settings."
 #~ msgstr ""
-#~ "Заборонено змінювати налаштування Google +1 Pro на цьому сайті в "
-#~ "налаштуваннях мережі Google +1 Pro."
+#~ "Запрещается изменять настройки Google +1 Pro на этом сайте в сетевых "
+#~ "настройках Google +1 Pro."
 
 #~ msgid ""
 #~ "It is prohibited to view Google +1 Pro settings on this site in the "
 #~ "Google +1 Pro network settings."
 #~ msgstr ""
-#~ "Заборонено переглядати налаштування Google +1 Pro на цьому сайті в "
-#~ "налаштуваннях мережі Google +1 Pro."
+#~ "Запрещается просматривать настройки Google +1 Pro на этом сайте в сетевых "
+#~ "настройках Google +1 Pro."
 
 #~ msgid ""
 #~ "For the correct work of the button do not use it locally or on a free "
 #~ "hosting"
 #~ msgstr ""
-#~ "Для коректної роботи кнопки, не використовуйте її на локальному сервері "
-#~ "або безкоштовних хостингах."
+#~ "Для правильной работы кнопки не используйте её на локальном сервере или "
+#~ "бесплатных хостингах"
 
+# If you would like to add Google Buttons to your page or post, please use %s button >> If you'd like to add Google Buttons to your page or post, please use %s button
 #~ msgid ""
 #~ "If you'd like to add Google Buttons to your page or post, please use %s "
 #~ "button"
 #~ msgstr ""
-#~ "Якщо ви хочете додати кнопки Google на вашу сторінку або пост, будь "
-#~ "ласка, використовуйте кнопку %s"
+#~ "Если вы хотите добавить Google +1 кнопку на вашу страницу или пост, то "
+#~ "используйте кнопку %s"
 
 #~ msgid ""
 #~ "You can add Google Buttons to your page or post by clicking on %s button "
@@ -659,25 +1542,25 @@ msgstr "Підтримка"
 #~ "displayed, please use the shortcode %s to show the Google +1 Button, or "
 #~ "use parameter 'display', e.g. %s to display these buttons"
 #~ msgstr ""
-#~ "Ви можете додати кнопки Google на вашу сторінку або пост, натиснувши на "
-#~ "кнопку %s в блоці редагування контенту в режимі \"Візуально\". Якщо "
-#~ "кнопка не відображається, будь ласка, використовуйте шорткод %s для "
-#~ "кнопки \"Плюс Один\", або використайте параметр \"display\", напр. %s,"
-#~ "<br /> де<br /><code>plusone</code> - \"Плюс Один\",<br /> <code>share</"
-#~ "code> - \"Поділитись\",<br /> <code>follow</code> - \"Підписатися\",<br /"
-#~ "> <code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\""
+#~ "Вы можете добавить кнопки Google на вашу страницу или пост, нажав на "
+#~ "кнопку %s в блоке редактирования контента в режиме \"Визуально\". Если "
+#~ "кнопка не отображается, пожалуйста, используйте шорткод  %s для кнопки "
+#~ "\"Плюс Один\" или используйте параметр \"display\", напр. %s,<br /> "
+#~ "где<br /><code>plusone</code> - \"Плюс Один\",<br /> <code>share</code> - "
+#~ "\"Поделиться\",<br /> <code>follow</code> - \"Подписаться\",<br /> "
+#~ "<code>hangout</code> - \"Чат\",<br /> <code>badge</code> - \"Значок\" "
 
 #~ msgid "All current settings on separate sites will be replaced"
-#~ msgstr "Всі поточні налаштування на окремих сайтах буде замінено"
+#~ msgstr "Все текущие настройки в отдельных сайтах будут заменены"
 
 #~ msgid "Display Google Buttons"
-#~ msgstr "Відображати кнопки Google"
+#~ msgstr "Отображать Кнопки Google"
 
 #~ msgid "Google +1"
 #~ msgstr "\"Плюс один\""
 
 #~ msgid "To see this button, please"
-#~ msgstr "Щоб побачити кнопку, будь ласка"
+#~ msgstr "Чтобы увидеть кнопку, пожалуйста"
 
 #~ msgid "the Google+ ID"
 #~ msgstr "Google+ ID"
@@ -689,25 +1572,25 @@ msgstr "Підтримка"
 #~ msgstr "\"Значок\""
 
 #~ msgid "Use the current site language"
-#~ msgstr "Використовувати поточну мову сайту"
+#~ msgstr "Использовать текущий язык сайта"
 
 #~ msgid "Using"
-#~ msgstr "Використовуючи"
+#~ msgstr "Используя"
 
 #~ msgid "Download"
-#~ msgstr "Завантажити"
+#~ msgstr "Загрузить"
 
 #~ msgid "Before"
-#~ msgstr "Перед постом"
+#~ msgstr "Перед"
 
 #~ msgid "After"
-#~ msgstr "Після посту"
+#~ msgstr "После"
 
 #~ msgid "Settings for Google +1 Button"
-#~ msgstr "Налаштування для кнопки Google +1"
+#~ msgstr "Натройки для кнопки Google +1"
 
 #~ msgid "\"+1\" for an entire site on every page"
-#~ msgstr "\"+1\" для всього сайту на кожній сторінці"
+#~ msgstr "Ставить \"+1\" всему сайту на каждой странице"
 
 #~ msgid ""
 #~ "This option does not create an extra button. This option merely allows "
@@ -715,324 +1598,533 @@ msgstr "Підтримка"
 #~ "single post when this option is disabled, when clicking the regular "
 #~ "\"+1\" button."
 #~ msgstr ""
-#~ "Ця опція не створює додаткову кнопку. Ця опція дозволяє при кліку "
-#~ "користувачами на стандартну кнопку плагіна ставити \"+1\" усьому сайту , "
-#~ "якщо ця опція увімкнена, або ставити \"+1\" окремим постам, якщо опція "
-#~ "вимкнена."
+#~ "Эта опция не создает дополнительную кнопку. Эта опция позволяет при клике "
+#~ "пользователями на стандартную кнопку ставить \"+1\" для всего сайта, если "
+#~ "эта опция включена, или \"+1\" для отдельной записи, когда эта опция "
+#~ "выключена."
 
 #~ msgctxt "for:size"
 #~ msgid "Standard"
-#~ msgstr "Стандартна"
+#~ msgstr "Стандартная"
 
 #~ msgid "Tall"
-#~ msgstr "Велика"
+#~ msgstr "Высокая"
 
 #~ msgid "Annotation"
-#~ msgstr "Примітка"
+#~ msgstr "Примечание"
 
 #~ msgid "Bubble"
-#~ msgstr "Спливаюча"
+#~ msgstr "Всплывающее"
 
 #~ msgid "Display counters showing how many times your article has been liked"
-#~ msgstr "Відображати лічильник лайків вашої статті"
+#~ msgstr "Показывать счетчик количества нажатий +1"
 
 #~ msgid "Annotation Type"
-#~ msgstr "Варіант примітки"
+#~ msgstr "Вариант Примечания"
 
 #~ msgctxt "for:annotation type"
 #~ msgid "Standard"
-#~ msgstr "Стандартна"
+#~ msgstr "Стандартное"
 
 #~ msgid "Short"
-#~ msgstr "Коротка"
+#~ msgstr "Короткое"
 
 #~ msgid "Display the number of users who have shared the page"
-#~ msgstr "Відображати кількість людей, що поділилися сторінкою"
+#~ msgstr "Показывать количество человек поделившихся страницей"
 
 #~ msgid "Google+ ID"
 #~ msgstr "Google+ ID"
 
 #~ msgid "or"
-#~ msgstr "або"
+#~ msgstr "или"
 
 #~ msgid "Relationship"
-#~ msgstr "Відношення"
+#~ msgstr "Отношение"
 
 #~ msgid "Author"
 #~ msgstr "Автор"
 
 #~ msgid "Publisher"
-#~ msgstr "Видавець"
+#~ msgstr "Издатель"
 
 #~ msgid ""
 #~ "Describes your relationship to content of the page, where the button is "
 #~ "embedded"
 #~ msgstr ""
-#~ "Вказує на ваше відношення до змісту сторінки, на якій розміщено кнопку"
+#~ "Указывает ваше отношение к содержанию страницы, на которой встроена кнопка"
 
 #~ msgid "Display the number of users who are following this page or person"
 #~ msgstr ""
-#~ "Відображати кількість людей, що підписалися  на сторінку або профіль"
+#~ "Показывать количество человек, подписавшихся на страницу или профиль"
 
 #~ msgid "Settings for Hangout Button"
-#~ msgstr "Налаштування для кнопки \"Чат\""
+#~ msgstr "Настройки для кнопки \"Чат\""
 
 #~ msgid "Topic"
-#~ msgstr "Тема Чату"
+#~ msgstr "Тема Чата"
 
 #~ msgid "Use the title of the page"
-#~ msgstr "Використовувати заголовок сторінки "
+#~ msgstr "Использовать заголовок страницы"
 
 #~ msgid "Narrow"
-#~ msgstr "Вузька"
+#~ msgstr "Узкая"
 
 #~ msgid "Wide"
-#~ msgstr "Широка"
+#~ msgstr "Широкая"
 
 #~ msgid "Normal"
-#~ msgstr "Звичайний"
+#~ msgstr "Обычный"
 
 #~ msgid "Onair"
-#~ msgstr "В ефірі"
+#~ msgstr "В эфире"
 
 #~ msgid "Party"
-#~ msgstr "Груповий"
+#~ msgstr "Групповой"
 
 #~ msgid "Moderated"
-#~ msgstr "З налаштуваннями"
+#~ msgstr "Настраиваемый"
 
 #~ msgid "Invitation Type"
-#~ msgstr "Варіант Запрошення"
+#~ msgstr "Вариант Приглашения"
 
 #~ msgid "Select The Type"
-#~ msgstr "Вкажіть тип"
+#~ msgstr "Выберите Вариант"
 
 #~ msgid "Google+ Profile ID"
-#~ msgstr "Google+ ID Профілю"
+#~ msgstr "Google+ ID Профиля"
 
 #~ msgid "Google+ Circle ID"
-#~ msgstr "Google+ ID Кола"
+#~ msgstr "Google+ ID Круга"
 
 #~ msgid "Email"
 #~ msgstr "Email"
 
 #~ msgid "Phone Number"
-#~ msgstr "Номер Телефону"
+#~ msgstr "Номер Телефона"
 
 #~ msgid "Google+ ID, Phone Number or Email"
-#~ msgstr "Google+ ID, Номер Телефону або Email"
+#~ msgstr "Google+ ID, Номер Телефона или Email"
 
 #~ msgid "Add"
-#~ msgstr "Додати"
+#~ msgstr "Добавить"
 
 #~ msgid "Delete Selected"
-#~ msgstr "Видалити позначене"
+#~ msgstr "Удалить Выбранные"
 
+# If Invite Type is 'Google+ Profile ID' it should be the form like >> If Invitation Type is 'Google+ Profile ID', it should look like
 #~ msgid "If Invitation Type is 'Google+ Profile ID', it should look like"
 #~ msgstr ""
-#~ "Якщо обрано тип запрошення 'Google+  ID Профілю', то вказанний ID має "
-#~ "мати вигляд"
+#~ "Если выбран тип приглашения 'Google+  ID Профиля', то введённый ID  "
+#~ "должен иметь вид"
 
+# If Invite Type is 'Google+ Circle ID' it should be the form like >> If Invitation Type is 'Google+ Circle ID', it should look like
 #~ msgid "If Invitation Type is 'Google+ Circle ID', it should look like"
 #~ msgstr ""
-#~ "Якщо обрано тип запрошення 'Google+ ID Кола', то вказана адреса має мати "
-#~ "вигляд"
+#~ "Если выбран тип приглашения 'Google+  ID Круга', то введённый ID  должен "
+#~ "иметь вид"
 
+# If Invite Type is 'Email' it should be the form like >> If Invitation Type is 'Email', it should look like
 #~ msgid "If Invitation Type is 'Email', it should look like"
 #~ msgstr ""
-#~ "Якщо обрано тип запрошення 'Email', то вказана адреса має мати вигляд"
+#~ "Если выбран тип приглашения 'Email', то введённый адрес должен иметь вид"
 
+# If Invite Type is 'Phone Number' it should be the form like >> If Invitation Type is 'Phone Number', it should look like
 #~ msgid "If Invitation Type is 'Phone Number', it should look like"
 #~ msgstr ""
-#~ "Якщо обрано тип запрошення 'Номер Телефону', то вказана номер має мати "
-#~ "вигляд"
+#~ "Если выбран тип приглашения 'Номер Телефона', то введённый номер должен "
+#~ "иметь вид"
 
 #~ msgid "Settings for Badge"
-#~ msgstr "Налаштування для Значка"
+#~ msgstr "Настройки для \"Значка\""
 
 #~ msgid "Person"
-#~ msgstr "Профіль"
+#~ msgstr "Профиль"
 
 #~ msgid "Community"
-#~ msgstr "Спільнота"
+#~ msgstr "Сообщество"
 
 #~ msgid "Display the user's tag line"
-#~ msgstr "Відображати слоган користувача"
+#~ msgstr "Показывать слоган пользователя"
 
 #~ msgid "Google+ Page ID"
-#~ msgstr "Google+ ID Сторінки"
+#~ msgstr "Google+ ID Страницы"
 
 #~ msgid "Enter the Google+ Page ID, e.g."
-#~ msgstr "Вкажіть Google+ ID Сторінки, напр."
+#~ msgstr "Укажите Google+ ID Страницы, напр."
 
 #~ msgid "Display the company tag line"
-#~ msgstr "Відображати слоган компанії"
+#~ msgstr "Показывать слоган компании"
 
 #~ msgid "Google+ Community ID"
-#~ msgstr "Google+ ID Спільноти"
+#~ msgstr "Google+ ID Сообщества"
 
 #~ msgid "Display the community tag line"
-#~ msgstr "Відображати слоган спільноти"
+#~ msgstr "Показывать слоган сообщества"
 
 #~ msgid "Portrait"
-#~ msgstr "Вертикальна"
+#~ msgstr "Вертикальная"
 
 #~ msgid "Landscape"
-#~ msgstr "Горизонтальна"
+#~ msgstr "Горизонтальная"
 
 #~ msgid "Sets the orientation of the badge"
-#~ msgstr "Оберіть орєнтацію Значка"
-
-#~ msgid "Show Cover Photo"
-#~ msgstr "Відображати Фото Обкладинки"
+#~ msgstr "Выберите ориентацию Значка"
 
 #~ msgid "Show Tag Line"
-#~ msgstr "Відображати слоган"
+#~ msgstr "Показывать слоган"
 
 #~ msgid "Show Owners"
-#~ msgstr "Відображати засновників"
+#~ msgstr "Показывать Основателей"
 
 #~ msgid "Display a list of community owners"
-#~ msgstr "Відображати список засновників спільноти"
+#~ msgstr "Показывать список основателей сообщества"
 
 #~ msgid "Preview"
-#~ msgstr "Прев’ю"
+#~ msgstr "Превью"
 
 #~ msgid "This field can't be empty"
-#~ msgstr "Це поле не може бути порожнім"
+#~ msgstr "Поле не может быть пустым"
 
 #~ msgid "Please, enter the valid Email"
-#~ msgstr "Будь ласка введіть коректний Email"
+#~ msgstr "Пожалуйста, введите корректный Email"
 
 #~ msgid "Email of Invited Person"
-#~ msgstr "Email для запрошення"
+#~ msgstr "Email Приглашаемого"
 
 #~ msgid "Please, enter the Email of invited person, e.g."
-#~ msgstr "Будь ласка, вкажіть Email для запрошення, напр."
+#~ msgstr "Пожалуйста, укажите E-mail приглашаемого, напр."
 
 #~ msgid "Phone Number of Invited Person"
-#~ msgstr "Номер Телефону для запрошення"
+#~ msgstr "Номер Телефона Приглашаемого"
 
+# Please, enter the phone number of ivited, e.g. >> Please, enter the phone number of invited person, e.g.
 #~ msgid "Please, enter the phone number of invited person, e.g."
-#~ msgstr "Будь ласка, вкажіть номер телефону для запрошення, напр."
+#~ msgstr "Пожалуйста, введите номер телефона приглашаемого, напр."
 
+# Google+ Profile ID of Invited >> Google+ Profile ID of Invited Person
 #~ msgid "Google+ Profile ID of Invited Person"
-#~ msgstr "Google+ ID Профілю для запрошення"
+#~ msgstr "Google+ ID Профиля Приглашаемого"
 
+# Please, enter ivited Google+ Profile ID, e.g. >> Please, enter Google+ Profile ID, e.g.
 #~ msgid "Please, enter the Google+ Profile ID of invited person, e.g."
-#~ msgstr "Будь ласка, вкажіть Google+ ID Профілю для запрошення, напр."
+#~ msgstr "Пожалуйста, укажите Google + ID Профиля приглашаемого, напр."
 
+# Google+ Circle ID for Invite >> Google+ Circle ID for Invitation
 #~ msgid "Google+ Circle ID for Invitation"
-#~ msgstr "Google+ ID Кола для запрошення"
+#~ msgstr "Google+ ID Круга для приглашения"
 
+# Please, enter ivited Google+ Circle ID, e.g. >> Please, enter Google+ Circle ID, e.g.
 #~ msgid "Please, enter the Google+ Circle ID for invitation, e.g."
-#~ msgstr "Будь ласка, вкажіть Google+ ID Кола для запрошення, напр."
+#~ msgstr "Пожалуйста, укажите Google+ ID Круга для приглашения, напр."
 
+# Show the Google Badge on your site >> Show Google Badge on your site
 #~ msgid "Show Google Badge on your site"
-#~ msgstr "Відображати Google Значок на вашому сайті"
+#~ msgstr "Отображать Google Значок на вашем сайте"
 
-#~ msgid "Email is incorrect"
-#~ msgstr "Невірний Email"
-
-#~ msgid "Field for invite can't be empty"
-#~ msgstr "Поле для запрошення не може бути порожнім"
-
-#~ msgid "Invite Type"
-#~ msgstr "Тип запрошення"
-
-#~ msgid "Show in pages"
-#~ msgstr "Відображати на сторінках"
-
-#~ msgid "Please select the page on which you want to see the buttons"
-#~ msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопки"
+#~ msgid "No"
+#~ msgstr "Нет"
 
 #, fuzzy
-#~ msgid "No"
-#~ msgstr "немає"
+#~ msgid "PHP Exif support"
+#~ msgstr "Поддержка"
+
+#, fuzzy
+#~ msgid "PHP IPTC support"
+#~ msgstr "Поддержка"
+
+#, fuzzy
+#~ msgid "PHP XML support"
+#~ msgstr "Поддержка"
 
 #, fuzzy
 #~ msgid "Active Theme"
-#~ msgstr "Активувати"
+#~ msgstr "Активировать"
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "Пожалуйста, введите корректный email"
 
 #, fuzzy
-#~ msgid "Please enter a valid email address."
-#~ msgstr "Будь ласка введіть коректний Email"
+#~ msgid "Plugins"
+#~ msgstr "Страницу плагинов"
 
 #, fuzzy
 #~ msgid "Themes"
 #~ msgstr "Тема"
 
 #, fuzzy
+#~ msgid "Installed plugins"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "Learn more"
+#~ msgstr "Подробнее"
+
+#, fuzzy
+#~ msgid "Activate this plugin"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
 #~ msgid "Preview %s"
-#~ msgstr "Прев’ю"
+#~ msgstr "Превью"
 
 #, fuzzy
 #~ msgid "Already Installed"
-#~ msgstr "Вже додано"
+#~ msgstr "Уже добавлен"
+
+#, fuzzy
+#~ msgid "Active Plugins"
+#~ msgstr "Оценить плагин"
+
+#, fuzzy
+#~ msgid "Inactive Plugins"
+#~ msgstr "Оценить плагин"
 
 #, fuzzy
 #~ msgid "Send to support"
-#~ msgstr "Підтримка"
+#~ msgstr "Поддержка"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому он был деактивирован! Пожалуйста, обновите WordPress и "
+#~ "попробуйте еще раз."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Вернуться к WordPress на"
+
+#~ msgid "Plugins page"
+#~ msgstr "Страницу плагинов"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Если вам понравился плагин, то поставте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#, fuzzy
+#~ msgid "Wrong license key"
+#~ msgstr "Неправильный лицензионный ключ!"
+
+#, fuzzy
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, "
+#~ "please contact us"
+#~ msgstr ""
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами"
+
+#~ msgid "We are sorry for inconvenience."
+#~ msgstr "Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. "
+#~ "Please, upload the plugin manually."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, Your license has expired. To continue getting top-priority "
+#~ "support and plugin updates you should extend it in your"
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#, fuzzy
+#~ msgid ""
+#~ "Failed to download the zip archive. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Your server does not support either ZipArchive or Phar. Please, upload "
+#~ "the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "UploadDir is not writable. Please, upload the plugin manually"
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We "
+#~ "are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
 
 #, fuzzy
 #~ msgid "Please, enter Your license key"
-#~ msgstr "Будь ласка введіть коректний Email"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
 
 #, fuzzy
 #~ msgid "the setting page"
-#~ msgstr "Відображати на сторінках"
+#~ msgstr "На страницах"
 
 #, fuzzy
 #~ msgid "Show Pro features"
-#~ msgstr "Відображати на сторінках"
+#~ msgstr "На страницах"
 
 #, fuzzy
+#~ msgid "version of this plugin by entering Your license key."
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product)."
+#~ msgstr ""
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта), где вы можете сделать необходимые изменения."
+
+#, fuzzy
+#~ msgid "After that you can activate it by entering your license key."
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "Wrong license key."
+#~ msgstr "Неправильный лицензионный ключ!"
+
+#, fuzzy
+#~ msgid "This license key is bind to another site."
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "Лицензионный ключ принят, но срок действия лицензии истек. Если вы хотите "
+#~ "обновлять плагин в будущем, вы должны продлить лицензию."
+
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#, fuzzy
+#~ msgid "The Pro Trial license key is valid."
+#~ msgstr "Лицензионный ключ принят."
+
+#~ msgid "The license key is valid."
+#~ msgstr "Лицензионный ключ принят."
+
+#, fuzzy
+#~ msgid "Your license will expire on"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет"
+
 #~ msgid "Please, enter your license key"
-#~ msgstr "Будь ласка введіть коректний Email"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid ""
+#~ "If needed you can check if the license key is correct or reenter it in "
+#~ "the field below. You can find your license key on your personal page - "
+#~ "Client area - on our website"
+#~ msgstr ""
+#~ "При необходимости вы можете проверить валидность лицензионного ключа или "
+#~ "повторно ввести его в поле ниже. Вы можете найти ваш лицензионный ключ на "
+#~ "своей личной странице - Client area - на нашем сайте"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(ваш пользователь - это электронный адрес, который вы указывали при "
+#~ "покупке продукта). При необходимости нажмите \"Lost your password?\"."
+
+#~ msgid "Check license key"
+#~ msgstr "Проверка лицензионного ключа"
+
+#, fuzzy
+#~ msgid ""
+#~ "You can use one license of the Pro plugin for one domain only. Please "
+#~ "check and edit your license or domain if necessary using you personal "
+#~ "Client Area. We strongly recommend you to solve the problem within 24 "
+#~ "hours, otherwise the Pro plugin will be deactivated."
+#~ msgstr ""
+#~ "ВНИМАНИЕ: Было замечено незаконное использования вами нашего плагина. Мы "
+#~ "настоятельно рекомендуем Вам решить данную проблему в течение 24 часов, в "
+#~ "противном случае плагин будет деативирован. Пожалуйста, перейдите на вашу "
+#~ "личную"
+
+#, fuzzy
+#~ msgid ""
+#~ "Notice: Your Pro Trial license has expired. To continue using the plugin "
+#~ "you should buy a Pro license"
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it."
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Если вы хотите получать "
+#~ "приорететную тех. поддержку и обновлять ваш плагин в дальнейшем, то вам "
+#~ "нужно продлить лицензию."
+
+#, fuzzy
+#~ msgid "The Pro Trial license will expire on"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет"
+
+#~ msgid "You license for"
+#~ msgstr "Ваша лицензия для"
+
+#~ msgid "expires on"
+#~ msgstr "истекает"
+
+#~ msgid "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES."
+#~ msgstr ""
+#~ "и у вас не будет возможности обновляться или иметь приорететную тех. "
+#~ "поддержку."
 
 #, fuzzy
 #~ msgid "Notice"
-#~ msgstr "Зауважте:"
+#~ msgstr "Внимание:"
 
 #, fuzzy
 #~ msgid "The plugin's settings have been changed."
-#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+#~ msgstr "Все настройки плагина восстановлены."
 
-#, fuzzy
 #~ msgid "Add shortcode"
-#~ msgstr "Тільки Шорткод"
+#~ msgstr "Добавить шорткод"
 
 #, fuzzy
 #~ msgid "Restore all plugin settings to defaults"
-#~ msgstr "Всі налаштування плагіну було скинуто до стандартних."
+#~ msgstr "Все настройки плагина восстановлены."
 
 #, fuzzy
 #~ msgid "Restore settings"
-#~ msgstr "Додаткові налаштування"
+#~ msgstr "Дополнительные настройки"
 
 #, fuzzy
 #~ msgid "Yes, restore all settings"
-#~ msgstr "Додаткові налаштування"
+#~ msgstr "Дополнительные настройки"
 
-#~ msgid "Enable or Disable Google+1 JavaScript"
-#~ msgstr "Увімкнути або вимкнути Google+1 JavaScript"
+#, fuzzy
+#~ msgid "No, go back to the settings page"
+#~ msgstr "На страницах"
 
-#~ msgid "Please choose one of four different sizes of buttons"
-#~ msgstr "Будь ласка, оберіть один з чотирьох розмірів для кнопки"
+#, fuzzy
+#~ msgid "Plugin"
+#~ msgstr "Страницу плагинов"
 
-#~ msgid ""
-#~ "The plugin's settings have been changed. In order to save them please "
-#~ "don't forget to click the 'Save Changes' button."
-#~ msgstr ""
-#~ "Налаштування плагіну змінились. Щось зберегти їх, будь ласка, клікніть "
-#~ "\"Зберегти зміни\"."
-
-#~ msgid ""
-#~ "If you want to insert the button in any place on the site, please use the "
-#~ "following code:"
-#~ msgstr ""
-#~ "Для розміщення кнопки у будь-якому місці на сайті, будь ласка, вставте "
-#~ "цей код:"
-
-#~ msgid "Show +1 count in the button"
-#~ msgstr "Показувати лічильник +1 у кнопці"
+#~ msgid "The shortcode will be inserted"
+#~ msgstr "Шорткод будет добавлен"

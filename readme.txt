@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: social buttons, facebook buttons, twitter buttons, google buttons, linkedin buttons, pinterest buttons, follow button, share button, like button, pinit button, google badge, google widget, pinterest widget, linkedin widget, social, social buttons pack
-Requires at least: 4.5
-Tested up to: 5.7.2
-Stable tag: 1.1.8
+Requires at least: 5.6
+Tested up to: 6.7
+Stable tag: 1.1.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,7 +65,11 @@ https://www.youtube.com/watch?v=3FxIReS0hP4
 > * Display social buttons for certain pages and/or post types
 > * Social buttons preview
 > * Add Twitter Timeline
+> * Add Telegram button
+> * Add WatsApp button
+> * Add YouTube button
 > * Facebook widget with the most liked posts
+> * Facebook Feed
 > * Сhange Facebook meta tags:
 > 	* Image
 > 	* Description
@@ -201,6 +205,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.1.9 - 10.02.2025 =
+* Update : All functionality was updated for WordPress 6.7.
+* Update : BWS plugins section is updated.
+* Pro: Facebook added the ability to enter Feed.
+* Pro: Added Messagers - Telegram, Whatsapp, Youtube.
+
 = V1.1.8 - 30.06.2021 =
 * NEW: Instagram 'Profile URL' button has been added.
 * Update : All functionality was updated for WordPress 5.7.2
@@ -322,6 +332,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * Update : We updated all functionality for wordpress 4.1.2.
 
 == Upgrade Notice ==
+
+= V1.1.9 =
+* New features added.
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
 
 = V1.1.8 =
 * New features added.

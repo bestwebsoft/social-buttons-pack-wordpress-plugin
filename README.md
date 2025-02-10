@@ -3,7 +3,8 @@
 
 <p>Powerful and easy-to-use social media plugin for WordPress which adds Twitter, Facebook, Pinterest, LinkedIn buttons, badges and widgets to your website. Customize settings, change appearance and add buttons to your posts, pages, and widgets.</p>
 <p>Increase shares and social media engagement today!</p>
-<p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
+<p><a href="https://bestwebsoft.com/demo-social-buttons-pack/?ref=readme" rel="nofollow ugc">View Demo</a></p>
+<p></p>
 <h4>Free Features</h4>
 <ul>
 <li>Automatically add:
@@ -32,6 +33,11 @@
 <li>LinkedIn buttons
 <ul>
 <li>Share</li>
+<li>Follow</li>
+</ul>
+</li>
+<li>Instagram buttons
+<ul>
 <li>Follow</li>
 </ul>
 </li>
@@ -71,7 +77,11 @@
 <li>Display social buttons for certain pages and/or post types</li>
 <li>Social buttons preview</li>
 <li>Add Twitter Timeline</li>
+<li>Add Telegram button</li>
+<li>Add WatsApp button</li>
+<li>Add YouTube button</li>
 <li>Facebook widget with the most liked posts</li>
+<li>Facebook Feed</li>
 <li>Сhange Facebook meta tags:
 <ul>
 <li>Image</li>
@@ -92,14 +102,13 @@
 <p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow ugc">Suggest a Feature</a></p>
 <h4>Documentation &amp; Videos</h4>
 <ul>
+<li><a href="https://bestwebsoft.com/documentation/social-buttons-pack/social-buttons-pack-user-guide/" rel="nofollow ugc">[Doc] User Guide</a></li>
 <li><a href="https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/" rel="nofollow ugc">[Doc] Installation</a></li>
 <li><a href="https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/" rel="nofollow ugc">[Doc] Purchase</a></li>
 <li><a href="https://www.youtube.com/watch?v=1PZPCL76aBk" rel="nofollow ugc">[Video] Installation Instruction</a></li>
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
-<h4>Affiliate Program</h4>
-<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
 <h4>Translation</h4>
 <ul>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#109;a&#x69;&#108;u&#x73;&#064;n&#x30;&#108;i&#x6d;&#046;i&#x74;" rel="nofollow ugc">Michal Kučera</a> www.n0lim.it)</li>

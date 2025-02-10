@@ -2,51 +2,1024 @@ msgid ""
 msgstr ""
 "Project-Id-Version: social-buttons-pack\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-21 15:09+0300\n"
-"PO-Revision-Date: 2021-06-21 15:57+0300\n"
+"POT-Creation-Date: 2025-02-10 13:51+0200\n"
+"PO-Revision-Date: 2025-02-10 13:53+0200\n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;esc_html_e;esc_html__;esc_attr_e;"
+"esc_attr__\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
-"X-Poedit-SearchPathExcluded-1: bws-linkedin\n"
-"X-Poedit-SearchPathExcluded-2: bws-pinterest\n"
-"X-Poedit-SearchPathExcluded-3: facebook-button-plugin\n"
-"X-Poedit-SearchPathExcluded-4: twitter-plugin\n"
 
-#: includes/class-sclbttns-settings.php:27
+#: bws-linkedin/bws-linkedin.php:337
+msgid "LinkedIn Share Button"
+msgstr "Кнопка поделиться в LinkedIn"
+
+#: bws-linkedin/bws-linkedin.php:342
+msgid "LinkedIn Follow Button"
+msgstr "Кнопка следования LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:28
+#: bws-pinterest/includes/class-pntrst-settings.php:28
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:29
+#: includes/sclbttns-mssngrs-settings.php:29
+#: includes/sclbttns-mssngrs-settings.php:33
+#: includes/sclbttns-nstgrm-settings.php:29
+#: includes/sclbttns-nstgrm-settings.php:33 social-buttons-pack.php:39
+#: social-buttons-pack.php:281 social-buttons-pack.php:301
+#: twitter-plugin/includes/class-twttr-settings.php:34
+msgid "Settings"
+msgstr "Настройки"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:30
+#: bws-pinterest/includes/class-pntrst-settings.php:30
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:31
+#: includes/class-sclbttns-settings.php:65
+#: twitter-plugin/includes/class-twttr-settings.php:36
 msgid "Display"
 msgstr "Отображение"
 
-#: includes/class-sclbttns-settings.php:28
+#: bws-linkedin/includes/class-lnkdn-settings.php:33
+#: bws-pinterest/includes/class-pntrst-settings.php:33
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:34
+#: includes/class-sclbttns-settings.php:68
+#: twitter-plugin/includes/class-twttr-settings.php:39
 msgid "Misc"
 msgstr "Разное"
 
-#: includes/class-sclbttns-settings.php:29
+#: bws-linkedin/includes/class-lnkdn-settings.php:34
+#: bws-pinterest/includes/class-pntrst-settings.php:34
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:35
+#: includes/class-sclbttns-settings.php:69
+#: twitter-plugin/includes/class-twttr-settings.php:40
 msgid "Custom Code"
 msgstr "Пользовательский код"
 
-#: includes/class-sclbttns-settings.php:30
+#: bws-linkedin/includes/class-lnkdn-settings.php:35
+#: bws-pinterest/includes/class-pntrst-settings.php:35
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:36
+#: includes/class-sclbttns-settings.php:70
+#: twitter-plugin/includes/class-twttr-settings.php:41
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: includes/class-sclbttns-settings.php:85
-msgid "Settings saved."
-msgstr "Настройки сохранены."
+#: bws-linkedin/includes/class-lnkdn-settings.php:72
+msgid "Sorry, your nonce did not verify"
+msgstr "К сожалению, Ваш код не подтвержден"
 
-#: includes/class-sclbttns-settings.php:117
-#: includes/sclbttns-nstgrm-settings.php:336
+#: bws-linkedin/includes/class-lnkdn-settings.php:100
+msgid ""
+"Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
+"saved."
+msgstr ""
+"Введите идентификатор страницы компании/витрины для кнопки \"Следовать\". "
+"Настройки не сохраняются."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:105
+#: bws-pinterest/includes/class-pntrst-settings.php:184
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:150
+#: includes/sclbttns-nstgrm-settings.php:92
+#: twitter-plugin/includes/class-twttr-settings.php:307
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:123
+msgid "LinkedIn Settings"
+msgstr "Настройки LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:126
+#: bws-pinterest/includes/class-pntrst-settings.php:205
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:181
+#: includes/sclbttns-mssngrs-settings.php:86
+#: includes/sclbttns-nstgrm-settings.php:147
+#: twitter-plugin/includes/class-twttr-settings.php:322
+msgid "General"
+msgstr "Основные"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:129
+#: bws-pinterest/includes/class-pntrst-settings.php:215
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:213
+#: includes/sclbttns-nstgrm-settings.php:150
+#: twitter-plugin/includes/class-twttr-settings.php:325
+msgid "Buttons"
+msgstr "Кнопки"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:133
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:218
+msgid "Share"
+msgstr "\"Поделиться\""
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:137
+#: bws-pinterest/includes/class-pntrst-settings.php:225
+#: bws-pinterest/includes/class-pntrst-settings.php:393
+#: twitter-plugin/includes/class-twttr-settings.php:330
+#: twitter-plugin/twitter.php:355
+msgid "Follow"
+msgstr "Подписаться"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:143
+msgid "Display on"
+msgstr "Отобразить на"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:148
+#: twitter-plugin/includes/class-twttr-settings.php:393
+#: twitter-plugin/includes/class-twttr-settings.php:501
+msgid "Home page"
+msgstr "Главная страница"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:153
+msgid "Posts"
+msgstr "Записи"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:158
+msgid "Pages"
+msgstr "Сторінок"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:165
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:232
+#: includes/sclbttns-mssngrs-settings.php:102
+#: includes/sclbttns-nstgrm-settings.php:173
+#: twitter-plugin/includes/class-twttr-settings.php:348
+msgid "Buttons Position"
+msgstr "Положение кнопок"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:176
+#: bws-pinterest/includes/class-pntrst-settings.php:275
+#: bws-pinterest/includes/class-pntrst-settings.php:352
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:237
+#: includes/sclbttns-mssngrs-settings.php:106
+#: includes/sclbttns-nstgrm-settings.php:178
+#: twitter-plugin/includes/class-twttr-settings.php:353
+msgid "Before content"
+msgstr "Перед постом"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:187
+#: bws-pinterest/includes/class-pntrst-settings.php:276
+#: bws-pinterest/includes/class-pntrst-settings.php:353
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:242
+#: includes/sclbttns-mssngrs-settings.php:109
+#: includes/sclbttns-nstgrm-settings.php:182
+#: twitter-plugin/includes/class-twttr-settings.php:358
+msgid "After content"
+msgstr "После поста"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:190
+msgid "Unselect all to use a shortcode only."
+msgstr "Снимите флажок \"все\", чтобы использовать только шорткод."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:194
+#: bws-pinterest/includes/class-pntrst-settings.php:231
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:258
+#: twitter-plugin/includes/class-twttr-settings.php:364
+msgid "Language"
+msgstr "Язык"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:207
+msgid "Select the default language for LinkedIn button(-s)."
+msgstr "Выберите язык по умолчанию для кнопки (-ей) LinkedIn."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:219
+#: bws-linkedin/includes/class-lnkdn-settings.php:223
+#: bws-linkedin/includes/class-lnkdn-settings.php:229
+#: bws-pinterest/includes/class-pntrst-settings.php:252
+#: bws-pinterest/includes/class-pntrst-settings.php:256
+#: bws-pinterest/includes/class-pntrst-settings.php:262
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:283
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:286
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:292
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
+msgstr ""
+"Включите автоматическое переключение языка на многоязычном сайте с помощью "
+"плагина Multilanguage."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:223
+#: bws-pinterest/includes/class-pntrst-settings.php:256
+#, php-format
+msgid "Activate %s"
+msgstr "Активировать %s"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:229
+#: bws-pinterest/includes/class-pntrst-settings.php:262
+#: twitter-plugin/includes/class-twttr-settings.php:380
+msgid "Learn More"
+msgstr "Подробнее"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:235
+msgid "Share Button"
+msgstr "Кнопка Поделиться"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:238
+#: bws-pinterest/bws-pinterest.php:473
+#: bws-pinterest/includes/class-pinterest-widget.php:134
+msgid "URL"
+msgstr "URL"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:241
+msgid "URL to be shared. Leave blank to use a current page URL."
+msgstr ""
+"URL-адрес для общего доступа. Оставьте пустым, чтобы использовать URL-адрес "
+"текущей страницы."
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:247
+#: bws-pinterest/bws-pinterest.php:453
+#: bws-pinterest/includes/class-pntrst-settings.php:339
+#: twitter-plugin/includes/class-twttr-settings.php:433
+msgid "Follow Button"
+msgstr "Кнопка Подписаться"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:250
+msgid "Count Mode"
+msgstr "Режим подсчета"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:254
+msgid "Vertical"
+msgstr "Вертикально"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:258
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:262
+msgid "No count"
+msgstr "No count"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:268
+msgid "Company or Showcase Page ID"
+msgstr "Идентификатор страницы компании или витрины"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:275
+msgid "Can't find your page ID?"
+msgstr "Не можете найти идентификатор своей страницы?"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:275
+msgid "Read the instruction"
+msgstr "Читать инструкцию"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:302
+msgid "LinkedIn Buttons Shortcode"
+msgstr "Шорткод кнопок LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:306
+msgid ""
+"Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Добавьте кнопку(-ы) LinkedIn в свои посты, страницы, пользовательские типы "
+"постов или виджеты с помощью следующего шорткода:"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:325
+#: bws-pinterest/includes/class-pntrst-settings.php:411
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:521
+#: twitter-plugin/includes/class-twttr-settings.php:600
+#: twitter-plugin/includes/class-twttr-settings.php:621
+msgid "Close"
+msgstr "Закрити"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:326
+msgid "LinkedIn Buttons Preview"
+msgstr "Предварительный просмотр кнопок LinkedIn"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:342
+#: bws-pinterest/includes/class-pntrst-settings.php:407
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:540
+#: includes/class-sclbttns-settings.php:187
+#: twitter-plugin/includes/class-twttr-settings.php:638
 msgid "Display Settings"
 msgstr "Настройка отображения"
 
-#: includes/class-sclbttns-settings.php:126
+#: bws-linkedin/includes/class-lnkdn-settings.php:351
+msgid ""
+"Please choose the necessary post types (or single pages) where LinkedIn "
+"buttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите необходимые типы постов (или отдельных страниц), на "
+"которых будут отображаться кнопки LinkedIn:"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:358
+#: bws-pinterest/includes/class-pntrst-settings.php:424
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:556
+#: includes/class-sclbttns-settings.php:203
+#: twitter-plugin/includes/class-twttr-settings.php:654
+msgid "Show URL for pages"
+msgstr "Показать URL для страниц"
+
+#: bws-linkedin/includes/class-lnkdn-settings.php:364
+#: bws-pinterest/includes/class-pntrst-settings.php:430
+#: twitter-plugin/includes/class-twttr-settings.php:660
+msgid "Example of the site's pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: bws-pinterest/bws-pinterest.php:150 twitter-plugin/twitter.php:215
+#: twitter-plugin/twitter.php:219
+msgid "Follow me"
+msgstr "Подписаться"
+
+#: bws-pinterest/bws-pinterest.php:451
+msgid "Shortcode Type"
+msgstr "Тип краткого кода"
+
+#: bws-pinterest/bws-pinterest.php:454
+#: bws-pinterest/includes/class-pntrst-settings.php:269
+msgid "Save Button"
+msgstr "Кнопка сохранения"
+
+#: bws-pinterest/bws-pinterest.php:455
+#: bws-pinterest/includes/class-pinterest-widget.php:113
+#: bws-pinterest/includes/class-pinterest-widget.php:138
+msgid "Pin Widget"
+msgstr "Виджет пинов"
+
+#: bws-pinterest/bws-pinterest.php:456
+#: bws-pinterest/includes/class-pinterest-widget.php:119
+#: bws-pinterest/includes/class-pinterest-widget.php:139
+msgid "Board Widget"
+msgstr "Виджет доски"
+
+#: bws-pinterest/bws-pinterest.php:457
+#: bws-pinterest/includes/class-pinterest-widget.php:125
+msgid "Profile Widget"
+msgstr "Виджет профиля"
+
+#: bws-pinterest/bws-pinterest.php:461
+msgid "Button label"
+msgstr "Метка кнопки"
+
+#: bws-pinterest/bws-pinterest.php:465
+msgid "Save any image"
+msgstr "Сохраните любое изображение"
+
+#: bws-pinterest/bws-pinterest.php:466
+msgid "Save defined image"
+msgstr "Сохранить заданное изображение"
+
+#: bws-pinterest/bws-pinterest.php:467
+msgid "Pin image URL"
+msgstr "URL-адрес изображения булавки"
+
+#: bws-pinterest/bws-pinterest.php:468
+msgid "Custom button image"
+msgstr "Картинка пользовательской кнопки"
+
+#: bws-pinterest/bws-pinterest.php:469
+msgid "Custom image URL"
+msgstr "URL-адрес пользовательского изображения"
+
+#: bws-pinterest/bws-pinterest.php:478
+#: bws-pinterest/includes/class-pinterest-widget.php:148
+msgid "Size"
+msgstr "Размер"
+
+#: bws-pinterest/bws-pinterest.php:480
+#: bws-pinterest/includes/class-pinterest-widget.php:150
+#: bws-pinterest/includes/class-pntrst-settings.php:320
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:226
+#: includes/sclbttns-mssngrs-settings.php:93
+#: includes/sclbttns-nstgrm-settings.php:164
+#: twitter-plugin/includes/class-twttr-settings.php:342
+msgid "Small"
+msgstr "Маленькая"
+
+#: bws-pinterest/bws-pinterest.php:481
+#: bws-pinterest/includes/class-pinterest-widget.php:151
+msgid "Medium"
+msgstr "Средняя"
+
+#: bws-pinterest/bws-pinterest.php:482
+#: bws-pinterest/includes/class-pinterest-widget.php:152
+#: bws-pinterest/includes/class-pntrst-settings.php:321
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:227
+#: includes/sclbttns-mssngrs-settings.php:96
+#: includes/sclbttns-nstgrm-settings.php:167
+#: twitter-plugin/includes/class-twttr-settings.php:343
+msgid "Large"
+msgstr "Большая"
+
+#: bws-pinterest/bws-pinterest.php:487
+#: bws-pinterest/includes/class-pinterest-widget.php:161
+msgid "Width"
+msgstr "Ширина"
+
+#: bws-pinterest/bws-pinterest.php:488
+#: bws-pinterest/includes/class-pinterest-widget.php:171
+msgid "Height"
+msgstr "Высота"
+
+#: bws-pinterest/bws-pinterest.php:489
+#: bws-pinterest/includes/class-pinterest-widget.php:181
+msgid "Thumbnails width"
+msgstr "Ширина миниатюр"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:25
+msgid "Pinterest Widget"
+msgstr "JNews - Pinterest виджет"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:28
+msgid "Widget for adding Pinterest Pin, Board, and Profile widgets"
+msgstr "Виджет для добавления виджетов Pinterest Pin, Board и Profile"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:101
+#: facebook-button-plugin/facebook-button-plugin.php:227
+#: facebook-button-plugin/facebook-button-plugin.php:428
+msgid "Title"
+msgstr "Заглавие"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:106
+#: facebook-button-plugin/facebook-button-plugin.php:230
+#: facebook-button-plugin/facebook-button-plugin.php:431
+msgid "Type"
+msgstr "Вариант"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:137
+msgid "Examples"
+msgstr "Примеры"
+
+#: bws-pinterest/includes/class-pinterest-widget.php:166
+#: bws-pinterest/includes/class-pinterest-widget.php:186
+#, php-format
+msgid ""
+"Min width%1s. If the widget width field is empty, the thumbnail width will "
+"be auto."
+msgstr ""
+"Min width%1s. Если поле ширины виджета пусто, ширина миниатюры будет "
+"автоматической."
+
+#: bws-pinterest/includes/class-pinterest-widget.php:176
+#, php-format
+msgid "Min height%1s."
+msgstr "Минимальная высота%1s."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:70
+msgid ""
+"\"Save\" button location is not selected. The button will be displayed only "
+"via shortcode."
+msgstr ""
+"расположение кнопки \"Сохранить\" не выбрано. Кнопка будет отображаться "
+"только через шорткод."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:74
+msgid ""
+"\"Follow\" button location is not selected. The button will be displayed "
+"only via shortcode."
+msgstr ""
+"расположение кнопки \"Следовать\" не выбрано. Кнопка будет отображаться "
+"только через шорткод."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:134
+msgid ""
+"Please, enter \"Pinterest User ID\" to add Follow Button. Settings are not "
+"saved."
+msgstr ""
+"Пожалуйста, введите \"Pinterest User ID\", чтобы добавить кнопку Follow "
+"Button. Настройки не сохраняются."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:155
+#, php-format
+msgid "Error: File size %1s"
+msgstr "Ошибка: Размер файла %1s"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:158
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:140
+#: includes/sclbttns-nstgrm-settings.php:112
+#: twitter-plugin/includes/class-twttr-settings.php:278
+msgid "Error: Invalid file type"
+msgstr "Ошибка: неверный тип файла"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:170
+msgid "Error: moving file failed"
+msgstr "Ошибка: перемещение файла не удалось"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:175
+msgid "Can't find upload directory path. Settings are not saved."
+msgstr "Не удается найти путь к директории загрузки. Настройки не сохраняются."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:178
+msgid "Error: select the upload file"
+msgstr "Ошибка: выберите файл загрузки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:202
+msgid "Pinterest Settings"
+msgstr "Настройки Pinterest"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:208
+msgid "Pinterest User ID"
+msgstr "Pinterest User ID"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:211
+msgid "Enter your Pinterest user ID. For example, \"bestwebsoft\"."
+msgstr ""
+"Введите свой идентификатор пользователя Pinterest. Например, \"bestwebsoft\"."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:220
+#: bws-pinterest/includes/class-pntrst-settings.php:387
+msgid "Save"
+msgstr "Сохранить"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:240
+msgid "Select the default language for Pinterest button(-s)."
+msgstr "Выберите язык по умолчанию для кнопки (-ей) Pinterest."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:272
+#: bws-pinterest/includes/class-pntrst-settings.php:349
+msgid "Button Position"
+msgstr "Положение кнопки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:277
+msgid "On image hover"
+msgstr "Изображение при наведении"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:282
+msgid "Button Image"
+msgstr "Изображения кнопок"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:285
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:327
+#: includes/sclbttns-nstgrm-settings.php:220
+#: twitter-plugin/includes/class-twttr-settings.php:447
+msgid "Default"
+msgstr "По умолчанию"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:286
+#: twitter-plugin/includes/class-twttr-settings.php:405
+#: twitter-plugin/includes/class-twttr-settings.php:449
+#: twitter-plugin/includes/class-twttr-settings.php:511
+#: twitter-plugin/includes/class-twttr-settings.php:542
+msgid "Custom"
+msgstr "Пользовательское"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:292
+#, php-format
+msgid "Max image size: %1$1s. Allowed file extensions: %2$2s"
+msgstr ""
+"Максимальный размер изображения: %1$1s. Разрешенные расширения файлов: %2$2s"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:301
+msgid "Current custom image"
+msgstr "Текущее пользовательское изображение"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:308
+msgid "Button Shape"
+msgstr "Форма кнопки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:311
+msgid "Square"
+msgstr "Квадрат"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:312
+msgid "Round"
+msgstr "Круглый"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:317
+msgid "Button Size"
+msgstr "Размер кнопки"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:326
+msgid "Show Pin Count"
+msgstr "Показать количество контактов"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:329
+msgid "Not shown"
+msgstr "Не показано"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:331
+msgid "Above the button"
+msgstr "Над кнопкой"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:333
+msgid "Beside the button"
+msgstr "Рядом с кнопкой"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:342
+msgid "Full Name"
+msgstr "Полное имя"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:345
+msgid "Enter your Pinterest profile name. For example, \"bestwebsoft\"."
+msgstr "Введите имя своего профиля в Pinterest. Например, \"bestwebsoft\"."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:380
+msgid "Pinterest Buttons Shortcode"
+msgstr "Шорткод Pinterest Buttons"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:383
+msgid "Add Pinterest to a widget."
+msgstr "Добавьте Pinterest в виджет."
+
+#: bws-pinterest/includes/class-pntrst-settings.php:383
+msgid "Navigate to Widgets"
+msgstr "Перейти к Виджетам"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:384
+msgid ""
+"Add Pinterest button(-s) to your posts, pages or custom post types using the "
+"following shortcode:"
+msgstr ""
+"Добавьте кнопку(-ы) Pinterest в свои посты, страницы или пользовательские "
+"типы постов с помощью следующего шорткода:"
+
+#: bws-pinterest/includes/class-pntrst-settings.php:417
+msgid ""
+"Please choose the necessary post types (or single pages) where Pinterest "
+"buttons will be displayed:"
+msgstr ""
+"Пожалуйста, выберите необходимые типы постов (или отдельных страниц), на "
+"которых будут отображаться кнопки Pinterest:"
+
+#: facebook-button-plugin/facebook-button-plugin.php:185
+msgid "Like & Share Statistics"
+msgstr "Нравится и делитесь статистикой"
+
+#: facebook-button-plugin/facebook-button-plugin.php:192
+msgid "search"
+msgstr "поиск"
+
+#: facebook-button-plugin/facebook-button-plugin.php:194
+msgid "Search"
+msgstr "Поиск"
+
+#: facebook-button-plugin/facebook-button-plugin.php:199
+msgid "All types"
+msgstr "Все типы"
+
+#: facebook-button-plugin/facebook-button-plugin.php:206
+#: facebook-button-plugin/facebook-button-plugin.php:448
+msgid "items"
+msgstr "элементов"
+
+#: facebook-button-plugin/facebook-button-plugin.php:211
+#: facebook-button-plugin/facebook-button-plugin.php:452
+msgid "Current Page"
+msgstr "Текущая страница"
+
+#: facebook-button-plugin/facebook-button-plugin.php:213
+#: facebook-button-plugin/facebook-button-plugin.php:454
+msgid "of"
+msgstr "из"
+
+#: facebook-button-plugin/facebook-button-plugin.php:216
+#: facebook-button-plugin/facebook-button-plugin.php:459
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: facebook-button-plugin/facebook-button-plugin.php:233
+#: facebook-button-plugin/facebook-button-plugin.php:434
+msgid "Like Count"
+msgstr "Счетчик лайков"
+
+#: facebook-button-plugin/facebook-button-plugin.php:236
+#: facebook-button-plugin/facebook-button-plugin.php:437
+msgid "Share Count"
+msgstr "Счетчик поделившихся"
+
+#: facebook-button-plugin/facebook-button-plugin.php:239
+#: facebook-button-plugin/facebook-button-plugin.php:440
+msgid "Profile URL Count"
+msgstr "Подсчет URL-адресов профиля"
+
+#: facebook-button-plugin/facebook-button-plugin.php:246
+msgid "Hello world"
+msgstr "Привет мир!"
+
+#: facebook-button-plugin/facebook-button-plugin.php:248
+#: facebook-button-plugin/facebook-button-plugin.php:257
+#: facebook-button-plugin/facebook-button-plugin.php:266
+#: facebook-button-plugin/facebook-button-plugin.php:311
+#: facebook-button-plugin/facebook-button-plugin.php:329
+#: facebook-button-plugin/facebook-button-plugin.php:338
+#: facebook-button-plugin/facebook-button-plugin.php:383
+#: facebook-button-plugin/facebook-button-plugin.php:401
+#: facebook-button-plugin/facebook-button-plugin.php:419
+msgid "post"
+msgstr "запись"
+
+#: facebook-button-plugin/facebook-button-plugin.php:255
+#: facebook-button-plugin/facebook-button-plugin.php:264
+#: facebook-button-plugin/facebook-button-plugin.php:309
+#: facebook-button-plugin/facebook-button-plugin.php:327
+#: facebook-button-plugin/facebook-button-plugin.php:336
+#: facebook-button-plugin/facebook-button-plugin.php:381
+#: facebook-button-plugin/facebook-button-plugin.php:399
+#: facebook-button-plugin/facebook-button-plugin.php:417
+msgid "Post Example"
+msgstr "Пример поста"
+
+#: facebook-button-plugin/facebook-button-plugin.php:273
+#: facebook-button-plugin/facebook-button-plugin.php:318
+#: facebook-button-plugin/facebook-button-plugin.php:345
+#: facebook-button-plugin/facebook-button-plugin.php:390
+#: facebook-button-plugin/facebook-button-plugin.php:408
+msgid "Post of Custom Type Example"
+msgstr "Сообщение о примере пользовательского типа"
+
+#: facebook-button-plugin/facebook-button-plugin.php:282
+#: facebook-button-plugin/facebook-button-plugin.php:354
+msgid "Sample Page"
+msgstr "Образец страницы"
+
+#: facebook-button-plugin/facebook-button-plugin.php:284
+#: facebook-button-plugin/facebook-button-plugin.php:293
+#: facebook-button-plugin/facebook-button-plugin.php:302
+#: facebook-button-plugin/facebook-button-plugin.php:356
+#: facebook-button-plugin/facebook-button-plugin.php:365
+#: facebook-button-plugin/facebook-button-plugin.php:374
+msgid "page"
+msgstr "страница"
+
+#: facebook-button-plugin/facebook-button-plugin.php:291
+#: facebook-button-plugin/facebook-button-plugin.php:300
+#: facebook-button-plugin/facebook-button-plugin.php:363
+#: facebook-button-plugin/facebook-button-plugin.php:372
+msgid "Page Example"
+msgstr "Пример страницы"
+
+#: facebook-button-plugin/facebook-button-plugin.php:469
+#: social-buttons-pack.php:44
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
+
+#: facebook-button-plugin/facebook-button-plugin.php:476
+msgid "This tab contains Pro options only."
+msgstr "Эта вкладка содержит только опции Pro."
+
+#: facebook-button-plugin/facebook-button-plugin.php:478
+#, php-format
+msgid "%1$sChange the settings%2$s to view the Pro options."
+msgstr "%1$sИзмените настройки%2$s, чтобы просмотреть параметры Pro."
+
+#: facebook-button-plugin/facebook-button-plugin.php:738
+msgid "Add Like & Share buttons to your page or post"
+msgstr "Добавьте кнопки Like и Share на свою страницу или пост"
+
+#: facebook-button-plugin/facebook-button-plugin.php:891
+#: social-buttons-pack.php:227
+msgid "Insert Media"
+msgstr "Вставить медиа"
+
+#: facebook-button-plugin/facebook-button-plugin.php:892
+#: social-buttons-pack.php:228
+msgid "Insert"
+msgstr "Вставить"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:113
+msgid ""
+"Error: Both \"App ID\" and \"App Secret\" fields must be filled or empty. "
+msgstr ""
+"Ошибка: Оба поля \"App ID\" и \"App Secret\" должны быть заполнены или пусты."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:136
+#: includes/sclbttns-nstgrm-settings.php:108
+msgid "Error: Check image width or height."
+msgstr "Ошибка: проверьте ширину или высоту изображения."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:172
+msgid "Like & Share Settings"
+msgstr "Настройки \"Нравится\" и \"Поделиться"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:187
+msgid ""
+"Why are there no like and share buttons on the site or they are not working?"
+msgstr ""
+"Почему на сайте нет кнопок \"Мне нравится\" и \"Поделиться\" или они не "
+"работают?"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:189
+msgid ""
+"Facebook will no longer support the 'Like', 'Share' and 'Feed' Social "
+"Plugins for European Region users, unless they are both 1) Logged into their "
+"Facebook account, and 2) have provided consent to the \"App and Website "
+"Cookies\" control. If both of these requirements are met, the user will be "
+"able to see and interact with plugins such as the 'Like' and 'Share' buttons "
+"and Facebook Feed. If either of the requirements above are not met, the user "
+"will not be able to see the plugins."
+msgstr ""
+"Facebook больше не будет поддерживать социальные плагины \"Like\", \"Share\" "
+"и \"Feed\" для пользователей европейского региона, если только они не 1) "
+"вошли в свою учетную запись Facebook и 2) не дали согласие на контроль "
+"\"Cookies для приложений и веб-сайтов\". Если оба эти требования выполнены, "
+"пользователь сможет видеть и взаимодействовать с такими плагинами, как "
+"кнопки \"Мне нравится\", \"Поделиться\" и Facebook Feed. Если ни одно из "
+"вышеперечисленных требований не выполнено, пользователь не сможет увидеть "
+"плагины."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:198
+msgid "App ID"
+msgstr "Идентификатор приложения"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:202
+msgid "Leave blank to use a default App ID or"
+msgstr ""
+"Оставьте пустым, чтобы использовать идентификатор приложения по умолчанию или"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:202
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:209
+msgid "create a new one."
+msgstr "создайте новую."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:206
+msgid "App Secret"
+msgstr "Секрет приложения"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:209
+msgid "Leave blank to use a default App Secret or"
+msgstr ""
+"Оставьте пустым, чтобы использовать секрет приложения по умолчанию, или"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:216
+#: includes/sclbttns-nstgrm-settings.php:154
+msgid "Profile URL"
+msgstr "URL профиля"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:217
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:427
+msgid "Like"
+msgstr "Нравится"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:223
+#: includes/sclbttns-mssngrs-settings.php:89
+#: includes/sclbttns-nstgrm-settings.php:160
+#: twitter-plugin/includes/class-twttr-settings.php:339
+msgid "Buttons Size"
+msgstr "Размер кнопок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:248
+#: includes/sclbttns-mssngrs-settings.php:115
+#: includes/sclbttns-nstgrm-settings.php:188
+msgid "Buttons Align"
+msgstr "Положение кнопок"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:251
+#: includes/sclbttns-mssngrs-settings.php:119
+#: includes/sclbttns-nstgrm-settings.php:192
+msgid "Right"
+msgstr "Справа"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:252
+#: includes/sclbttns-mssngrs-settings.php:122
+#: includes/sclbttns-nstgrm-settings.php:195
+msgid "Center"
+msgstr "По центру"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:253
+#: includes/sclbttns-mssngrs-settings.php:125
+#: includes/sclbttns-nstgrm-settings.php:198
+msgid "Left"
+msgstr "Слева"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:272
+msgid "Select the default language for Like & Share buttons."
+msgstr "Выберите язык по умолчанию для кнопок Like & Share."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:286
+msgid "Activate"
+msgstr "Активировать"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:292
+msgid "Install Now"
+msgstr "Установить Сейчас"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:297
+msgid "Excerpt"
+msgstr "Цитату"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:299
+msgid "Enable to display buttons in excerpt."
+msgstr "Включите отображение кнопок в отрывке."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:303
+msgid "Meta Tags"
+msgstr "Мета-теги"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:305
+msgid "Enable to use meta tags."
+msgstr "Включите использование метатегов."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:311
+#: includes/sclbttns-nstgrm-settings.php:204
+msgid "Profile URL Button"
+msgstr "Кнопка URL Профиля"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:314
+msgid "Facebook ID or Username"
+msgstr "ID или имя пользователя Facebook"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:321
+#: includes/sclbttns-nstgrm-settings.php:214
+msgid "Profile Button Image"
+msgstr "Изображение Кнопки Профиля"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:335
+#: includes/sclbttns-nstgrm-settings.php:228
+msgid "Custom image"
+msgstr "Пользовательское изображение"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:340
+#: includes/sclbttns-nstgrm-settings.php:233
+msgid "Add Media"
+msgstr "Добавить медиа"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:342
+msgid ""
+"Image requirements: max image width: 100px; max image height: 40px; image "
+"types: \"jpg\", \"jpeg\", \"png\"."
+msgstr ""
+"Требования к изображениям: максимальная ширина изображения: 100px; "
+"максимальная высота изображения: 40px; типы изображений: \"jpg\", \"jpeg\", "
+"\"png\"."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:365
+msgid "Like&Share Buttons"
+msgstr "Кнопки Like&Share"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:368
+msgid "Like Button Layout"
+msgstr "Макет кнопки Like"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:391
+msgid "Share Button Layout"
+msgstr "Макет кнопки \"Поделиться"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:422
+msgid "Like Button Action"
+msgstr "Действие кнопки Like"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:432
+#: twitter-plugin/includes/class-twttr-settings.php:419
+#: twitter-plugin/includes/class-twttr-settings.php:518
+#: twitter-plugin/includes/class-twttr-settings.php:549
+msgid "Recommend"
+msgstr "Рекомендованные"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:438
+msgid "Layout Width"
+msgstr "Ширина макета"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:442
+msgid "px"
+msgstr "px"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:447
+msgid "Theme"
+msgstr "Тема"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:452
+msgid "Light"
+msgstr "Светлая"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:457
+msgid "Dark"
+msgstr "Тёмная"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:463
+msgid "Like Button HTML Tag"
+msgstr "HTML-тег Like Button"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:472
+#, php-format
+msgid "Tag %s can be used to improve website code validation."
+msgstr "Тег %s можно использовать для улучшения проверки кода сайта."
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:498
+msgid "Like & Share Shortcode"
+msgstr "Шорткод Like & Share"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:501
+msgid ""
+"Add Like & Share buttons to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Добавьте кнопки Like & Share к вашим постам, страницам, пользовательским "
+"типам постов или виджетам с помощью следующего шорткода:"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:522
+msgid "Like & Share buttons Preview"
+msgstr "Кнопки \"Мне нравится\" и \"Поделиться\" Предварительный просмотр"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:549
+msgid ""
+"Choose the necessary post types (or single pages) where Like & Share buttons "
+"will be displayed:"
+msgstr ""
+"Выберите необходимые типы постов (или отдельных страниц), на которых будут "
+"отображаться кнопки Like & Share:"
+
+#: facebook-button-plugin/includes/class-fcbkbttn-settings.php:562
+#: includes/class-sclbttns-settings.php:209
+msgid "Example of site pages tree"
+msgstr "Пример дерева страниц сайта"
+
+#: includes/class-sclbttns-settings.php:136
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: includes/class-sclbttns-settings.php:196
 msgid ""
 "Please choose the necessary post types (or single pages) where Social "
 "Suttons will be displayed:"
@@ -54,171 +1027,74 @@ msgstr ""
 "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
 "будут отображаться социальные кнопки:"
 
-#: includes/class-sclbttns-settings.php:133
-msgid "Show URL for pages"
-msgstr "Показать URL для страниц"
+#: includes/sclbttns-mssngrs-settings.php:78
+msgid "Messengers Settings"
+msgstr "Настройки мессенджеров"
 
-#: includes/class-sclbttns-settings.php:139
-msgid "Example of site pages tree"
-msgstr "Пример дерева страниц сайта"
+#: includes/sclbttns-mssngrs-settings.php:132
+msgid "Telegram Button"
+msgstr "Telegram Button"
 
-#: includes/sclbttns-nstgrm-settings.php:22
-#: includes/sclbttns-nstgrm-settings.php:26 social-buttons-pack.php:35
-#: social-buttons-pack.php:215 social-buttons-pack.php:228
-msgid "Settings"
-msgstr "Настройки"
+#: includes/sclbttns-mssngrs-settings.php:135
+msgid "Telegram Account "
+msgstr "Аккаунт Telegram"
 
-#: includes/sclbttns-nstgrm-settings.php:87
-msgid "Settings saved"
-msgstr "Настройки сохранены"
+#: includes/sclbttns-mssngrs-settings.php:138
+msgid ""
+"Enter the ID in the format \"@bestwebsoft\" or the link in the format "
+"\"https://t.me/bestwebsoft\"."
+msgstr ""
+"Введите идентификатор в формате \"@bestwebsoft\" или ссылку в формате "
+"\"https://t.me/bestwebsoft\"."
 
-#: includes/sclbttns-nstgrm-settings.php:103
-msgid "Error: Check image width or height."
-msgstr "Ошибка: проверьте ширину или высоту изображения."
+#: includes/sclbttns-mssngrs-settings.php:142
+msgid "Whatsapp Button"
+msgstr "Кнопка Whatsapp"
 
-#: includes/sclbttns-nstgrm-settings.php:107
-msgid "Error: Invalid file type"
-msgstr "Ошибка: неверный тип файла"
+#: includes/sclbttns-mssngrs-settings.php:145
+msgid "WhatsApp Account "
+msgstr "Аккаунт WhatsApp"
 
-#: includes/sclbttns-nstgrm-settings.php:154
+#: includes/sclbttns-mssngrs-settings.php:148
+msgid "Enter the phone number in the format: +1XXXXXXXXXXX ."
+msgstr "Введите номер телефона в формате: +1XXXXXXXXXXX ."
+
+#: includes/sclbttns-mssngrs-settings.php:153
+msgid "Youtube Button"
+msgstr "Кнопка Youtube"
+
+#: includes/sclbttns-mssngrs-settings.php:156
+msgid "Youtube Account "
+msgstr "Аккаунт на Youtube"
+
+#: includes/sclbttns-mssngrs-settings.php:159
+msgid ""
+"Enter the ID in the format \"@bestwebsoft\", \"bestwebsoft\" or the link in "
+"the format \"https://www.youtube.com/bestwebsoft\"."
+msgstr ""
+"Введите идентификатор в формате \"@bestwebsoft\", \"bestwebsoft\" или ссылку "
+"в формате \"https://www.youtube.com/bestwebsoft\"."
+
+#: includes/sclbttns-mssngrs.php:93 includes/sclbttns-mssngrs.php:130
+#: includes/sclbttns-mssngrs.php:157 includes/sclbttns-mssngrs.php:221
+#: includes/sclbttns-mssngrs.php:294 includes/sclbttns-mssngrs.php:357
+msgid "Button"
+msgstr "Кнопка"
+
+#: includes/sclbttns-nstgrm-settings.php:66
+#: twitter-plugin/includes/class-twttr-settings.php:168
+msgid "Sorry, your nonce did not verify."
+msgstr "Извините, ваш одноразовый код не верифицирован."
+
+#: includes/sclbttns-nstgrm-settings.php:140
 msgid "Instagram Settings"
 msgstr "Настройки Instagram"
 
-#: includes/sclbttns-nstgrm-settings.php:161
-#: includes/sclbttns-nstgrm-settings.php:200
-msgid "Notice:"
-msgstr "Внимание:"
-
-#: includes/sclbttns-nstgrm-settings.php:161
-msgid ""
-"According to BestWebSoft Instagram network settings, it is prohibited to "
-"view the plugin settings on this site."
-msgstr ""
-"Согласно настройкам сети Instagram BestWebSoft, просмотр настроек плагина на "
-"этом сайте запрещен."
-
-#: includes/sclbttns-nstgrm-settings.php:164
-msgid "General"
-msgstr "Основные"
-
-#: includes/sclbttns-nstgrm-settings.php:168
-msgid "Apply Network Settings"
-msgstr "Применить сетевые настройки"
-
-#: includes/sclbttns-nstgrm-settings.php:172
-msgid "Apply to all sites and use by default"
-msgstr "Применить для всех сайтов и использовать по умолчанию"
-
-#: includes/sclbttns-nstgrm-settings.php:174
-msgid "Use general settings for all individual websites."
-msgstr "Использовать общие настройки для всех отдельных веб-сайтов."
-
-#: includes/sclbttns-nstgrm-settings.php:178
-msgid "Allow changing the settings on separate websites"
-msgstr "Разрешить изменять настройки на отдельных сайтах"
-
-#: includes/sclbttns-nstgrm-settings.php:181
-msgid "Allow viewing the settings on separate websites"
-msgstr "Разрешить просмотр настроек на отдельных сайтах"
-
-#: includes/sclbttns-nstgrm-settings.php:185
-msgid "By default"
-msgstr "По умолчанию"
-
-#: includes/sclbttns-nstgrm-settings.php:187
-msgid "Settings will be applied to newly added websites by default."
-msgstr ""
-"Настройки будут использоваться по умолчанию для вновь добавленных сайтов."
-
-#: includes/sclbttns-nstgrm-settings.php:190
-msgid "Do not apply"
-msgstr "Не применять"
-
-#: includes/sclbttns-nstgrm-settings.php:192
-msgid "Change the settings on separate sites of the multisite only."
-msgstr "Изменять настройки только на отдельных сайтах."
-
-#: includes/sclbttns-nstgrm-settings.php:200
-msgid ""
-"According to BestWebSoft Instagram network settings, it is prohibited to "
-"change the plugin settings on this site."
-msgstr ""
-"Согласно настройкам сети BestWebSoft, изменение настроек плагина Instagram "
-"на этом сайте запрещено."
-
-#: includes/sclbttns-nstgrm-settings.php:204
-msgid "Buttons"
-msgstr "Кнопки"
-
-#: includes/sclbttns-nstgrm-settings.php:208
-msgid "Profile URL"
-msgstr "URL профиля"
-
-#: includes/sclbttns-nstgrm-settings.php:214
-msgid "Buttons Size"
-msgstr "Размер кнопок"
-
-#: includes/sclbttns-nstgrm-settings.php:218
-msgid "Small"
-msgstr "Маленькая"
-
-#: includes/sclbttns-nstgrm-settings.php:221
-msgid "Large"
-msgstr "Большая"
-
-#: includes/sclbttns-nstgrm-settings.php:227
-msgid "Buttons Position"
-msgstr "Положение кнопок"
-
-#: includes/sclbttns-nstgrm-settings.php:232
-msgid "Before content"
-msgstr "Перед постом"
-
-#: includes/sclbttns-nstgrm-settings.php:236
-msgid "After content"
-msgstr "После поста"
-
-#: includes/sclbttns-nstgrm-settings.php:242
-msgid "Buttons Align"
-msgstr "Положение кнопок"
-
-#: includes/sclbttns-nstgrm-settings.php:246
-msgid "Right"
-msgstr "Справа"
-
-#: includes/sclbttns-nstgrm-settings.php:249
-msgid "Center"
-msgstr "По центру"
-
-#: includes/sclbttns-nstgrm-settings.php:252
-msgid "Left"
-msgstr "Слева"
-
-#: includes/sclbttns-nstgrm-settings.php:258
-msgid "Profile URL Button"
-msgstr "Кнопка URL Профиля"
-
-#: includes/sclbttns-nstgrm-settings.php:261
+#: includes/sclbttns-nstgrm-settings.php:207
 msgid "Account Username"
 msgstr "Имя Учетной Записи"
 
-#: includes/sclbttns-nstgrm-settings.php:268
-msgid "Profile Button Image"
-msgstr "Изображение Кнопки Профиля"
-
-#: includes/sclbttns-nstgrm-settings.php:274
-msgid "Default"
-msgstr "По умолчанию"
-
-#: includes/sclbttns-nstgrm-settings.php:282
-msgid "Custom image"
-msgstr "Пользовательское изображение"
-
-#: includes/sclbttns-nstgrm-settings.php:287
-msgid "Add Media"
-msgstr ""
-
-#: includes/sclbttns-nstgrm-settings.php:289
+#: includes/sclbttns-nstgrm-settings.php:235
 msgid ""
 "Image requirements: max image width: 50px; max image height: 50px; image "
 "types: \"jpg\", \"jpeg\", \"png\"."
@@ -227,57 +1103,294 @@ msgstr ""
 "максимальная высота изображения: 50 px; типы изображений: «jpg», «jpeg», "
 "«png»."
 
-#: includes/sclbttns-nstgrm-settings.php:323
+#: includes/sclbttns-nstgrm-settings.php:271
 msgid "Instagram Shortcode"
 msgstr "Instagram Shortcode"
 
-#: includes/sclbttns-nstgrm-settings.php:326
+#: includes/sclbttns-nstgrm-settings.php:274
 msgid ""
-"Add Instagram buttons to your posts, pages, custom post types or widgets by "
+"Add Instagram button to your posts, pages, custom post types or widgets by "
 "using the following shortcode:"
 msgstr ""
-"Добавьте кнопки Instagram к своим сообщениям, страницам, пользовательским "
-"типам сообщений или виджетам, используя следующий шорткод:"
+"Добавьте кнопку Instagram в свои посты, страницы, пользовательские типы "
+"постов или виджеты с помощью следующего шорткода:"
 
-#: includes/sclbttns-nstgrm.php:105
+#: includes/sclbttns-nstgrm.php:129
 msgid "Add Instagram Profile button to your page or post"
 msgstr "Добавить Instagram  Кнопки на вашу страницу или пост"
 
-#: social-buttons-pack.php:34 social-buttons-pack.php:35
-#: social-buttons-pack.php:172
+#: social-buttons-pack.php:38 social-buttons-pack.php:39
+#: social-buttons-pack.php:199
 msgid "Social Buttons Settings"
 msgstr "Настройки Social Buttons"
 
-#: social-buttons-pack.php:40
-msgid "Upgrade to Pro"
-msgstr "Обновиться до Pro"
-
-#: social-buttons-pack.php:173
+#: social-buttons-pack.php:200
 msgid "Please, enable JavaScript in Your browser."
 msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
 
-#: social-buttons-pack.php:229
+#: social-buttons-pack.php:303
 msgid "FAQ"
 msgstr "FAQ"
 
-#: social-buttons-pack.php:230
+#: social-buttons-pack.php:304
 msgid "Support"
 msgstr "Поддержка"
 
-#, fuzzy
-#~| msgid "Settings for Share Button"
-#~ msgid "LinkedIn Share Button"
-#~ msgstr "Настройки для кнопки \"Поделиться\""
+#: twitter-plugin/includes/class-twttr-settings.php:276
+msgid "Error: File size > 32K"
+msgstr "Ошибка: Размер файла > 32K"
 
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "LinkedIn Follow Button"
-#~ msgstr "Настройки для кнопки \"Подписаться\""
+#: twitter-plugin/includes/class-twttr-settings.php:294
+msgid "Error: Failed to move file"
+msgstr "Ошибка: Не удалось переместить файл"
 
-#, fuzzy
-#~| msgid "no title"
-#~ msgid "Title"
-#~ msgstr "без названия"
+#: twitter-plugin/includes/class-twttr-settings.php:297
+msgid "Error: Check image width or height"
+msgstr "Ошибка: Проверьте ширину или высоту изображения"
+
+#: twitter-plugin/includes/class-twttr-settings.php:301
+msgid "Uploading Error: Check image properties"
+msgstr "Ошибка при загрузке: Проверьте свойства изображения"
+
+#: twitter-plugin/includes/class-twttr-settings.php:319
+msgid "Twitter Settings"
+msgstr "Настройки Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:328
+#: twitter-plugin/twitter.php:198 twitter-plugin/twitter.php:249
+#: twitter-plugin/twitter.php:253 twitter-plugin/twitter.php:354
+msgid "Tweet"
+msgstr "Твитнуть"
+
+#: twitter-plugin/includes/class-twttr-settings.php:332
+#: twitter-plugin/includes/class-twttr-settings.php:426
+#: twitter-plugin/includes/class-twttr-settings.php:487
+#: twitter-plugin/twitter.php:356
+msgid "Hashtag"
+msgstr "Хештег"
+
+#: twitter-plugin/includes/class-twttr-settings.php:334
+#: twitter-plugin/twitter.php:357
+msgid "Mention"
+msgstr "Упоминание"
+
+#: twitter-plugin/includes/class-twttr-settings.php:366
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: twitter-plugin/includes/class-twttr-settings.php:373
+msgid "Select the default language for Twitter button(-s)."
+msgstr "Выберите язык по умолчанию для кнопки (-ей) Twitter."
+
+#: twitter-plugin/includes/class-twttr-settings.php:377
+msgid "Twitter Tailoring"
+msgstr "Настройка Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:380
+msgid "Enable tailored suggestions from Twitter."
+msgstr "Включите индивидуальные предложения от Twitter."
+
+#: twitter-plugin/includes/class-twttr-settings.php:385
+msgid "Tweet Button"
+msgstr "Кнопка Твитнуть"
+
+#: twitter-plugin/includes/class-twttr-settings.php:388
+#: twitter-plugin/includes/class-twttr-settings.php:494
+msgid "Share URL"
+msgstr "Поделиться URL"
+
+#: twitter-plugin/includes/class-twttr-settings.php:391
+#: twitter-plugin/includes/class-twttr-settings.php:499
+#: twitter-plugin/includes/class-twttr-settings.php:540
+msgid "Current page"
+msgstr "Текущая страница"
+
+#: twitter-plugin/includes/class-twttr-settings.php:399
+#: twitter-plugin/includes/class-twttr-settings.php:506
+#: twitter-plugin/includes/class-twttr-settings.php:537
+msgid "Tweet Text"
+msgstr "Текст твита"
+
+#: twitter-plugin/includes/class-twttr-settings.php:403
+#: twitter-plugin/includes/class-twttr-settings.php:509
+msgid "Current page title"
+msgstr "Заголовок текущей страницы"
+
+#: twitter-plugin/includes/class-twttr-settings.php:412
+msgid "Via"
+msgstr "С помощью"
+
+#: twitter-plugin/includes/class-twttr-settings.php:415
+msgid "Enter username for Tweet via parameter."
+msgstr "Введите имя пользователя для твиттера с помощью параметра."
+
+#: twitter-plugin/includes/class-twttr-settings.php:422
+#: twitter-plugin/includes/class-twttr-settings.php:521
+#: twitter-plugin/includes/class-twttr-settings.php:552
+msgid ""
+"Enter usernames of someone you recommend (maximum 2 allowed). For example: "
+"bestwebsoft, wordpress."
+msgstr ""
+"Введите имена пользователей, которых вы рекомендуете (не более 2). Например: "
+"bestwebsoft, wordpress."
+
+#: twitter-plugin/includes/class-twttr-settings.php:429
+#: twitter-plugin/includes/class-twttr-settings.php:490
+msgid ""
+"Enter one or multiple hashtags for your tweet. For example: bestwebsoft, "
+"wordpress, etc."
+msgstr ""
+"Введите один или несколько хэштегов для своего твита. Например: bestwebsoft, "
+"wordpress и т. д."
+
+#: twitter-plugin/includes/class-twttr-settings.php:436
+msgid "Twitter username"
+msgstr "Имя пользователя Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:439
+#, php-format
+msgid "Enter your Twitter account username or %1$s create a new one %2$s."
+msgstr ""
+"Введите имя пользователя вашего аккаунта в Twitter или %1$s создайте новый "
+"%2$s."
+
+#: twitter-plugin/includes/class-twttr-settings.php:443
+msgid "Follow Button Image"
+msgstr "Изображение кнопки следования"
+
+#: twitter-plugin/includes/class-twttr-settings.php:454
+#, php-format
+msgid ""
+"To use custom image, You need to setup permissions to upload directory of "
+"your site - %s"
+msgstr ""
+"Чтобы использовать пользовательское изображение, вам нужно установить права "
+"на каталог загрузки вашего сайта - %s"
+
+#: twitter-plugin/includes/class-twttr-settings.php:471
+#, php-format
+msgid ""
+"Upload image with the %1$s dimensions, JPG, JPEG or PNG formats (maximum "
+"file size - %2$s)."
+msgstr ""
+"Загрузите изображение с размерами %1$s, в форматах JPG, JPEG или PNG "
+"(максимальный размер файла - %2$s)."
+
+#: twitter-plugin/includes/class-twttr-settings.php:476
+msgid "Show Follow Button"
+msgstr "Кнопка Подписки"
+
+#: twitter-plugin/includes/class-twttr-settings.php:479
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: twitter-plugin/includes/class-twttr-settings.php:484
+msgid "Hashtag Button"
+msgstr "Кнопка хэштега"
+
+#: twitter-plugin/includes/class-twttr-settings.php:497
+msgid "None"
+msgstr "Нет"
+
+#: twitter-plugin/includes/class-twttr-settings.php:525
+msgid "Mention Button"
+msgstr "Кнопка упоминания"
+
+#: twitter-plugin/includes/class-twttr-settings.php:529
+#: twitter-plugin/twitter.php:270
+msgid "Tweet to"
+msgstr "Твитнуть в"
+
+#: twitter-plugin/includes/class-twttr-settings.php:533
+msgid "Enter username of someone you want to mention."
+msgstr "Введите имя пользователя того, кого вы хотите упомянуть."
+
+#: twitter-plugin/includes/class-twttr-settings.php:533
+#, php-format
+msgid "For example, %s."
+msgstr "Например, %s."
+
+#: twitter-plugin/includes/class-twttr-settings.php:578
+msgid "Twitter Shortcode"
+msgstr "Шорткод Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:582
+msgid ""
+"Add Twitter button(-s) to your posts, pages, custom post types or widgets by "
+"using the following shortcode:"
+msgstr ""
+"Добавьте кнопку(-ы) Twitter в свои посты, страницы, пользовательские типы "
+"постов или виджеты с помощью следующего шорткода:"
+
+#: twitter-plugin/includes/class-twttr-settings.php:601
+msgid "Twitter Buttons Preview"
+msgstr "Предварительный просмотр кнопок Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:622
+msgid "Twitter Timeline Preview"
+msgstr "Предварительный просмотр временной шкалы Twitter"
+
+#: twitter-plugin/includes/class-twttr-settings.php:647
+msgid ""
+"Choose the necessary post types (or single pages) where Twitter buttons will "
+"be displayed:"
+msgstr ""
+"Выберите необходимые типы постов (или отдельных страниц), на которых будут "
+"отображаться кнопки Twitter:"
+
+#: twitter-plugin/includes/class-twttr-settings.php:660
+msgid "Example of site pages' tree"
+msgstr "Пример дерева страниц сайта"
+
+#: twitter-plugin/twitter.php:228
+msgid "TwitterStories"
+msgstr "TwitterStories"
+
+#: twitter-plugin/twitter.php:353
+msgid "Please select twitter buttons which will be displayed"
+msgstr "Пожалуйста, выберите кнопки twitter, которые будут отображаться"
+
+#~ msgid "Notice:"
+#~ msgstr "Внимание:"
+
+#~ msgid ""
+#~ "According to BestWebSoft Instagram network settings, it is prohibited to "
+#~ "view the plugin settings on this site."
+#~ msgstr ""
+#~ "Согласно настройкам сети Instagram BestWebSoft, просмотр настроек плагина "
+#~ "на этом сайте запрещен."
+
+#~ msgid "Apply Network Settings"
+#~ msgstr "Применить сетевые настройки"
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Применить для всех сайтов и использовать по умолчанию"
+
+#~ msgid "Use general settings for all individual websites."
+#~ msgstr "Использовать общие настройки для всех отдельных веб-сайтов."
+
+#~ msgid "Allow changing the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах"
+
+#~ msgid "Allow viewing the settings on separate websites"
+#~ msgstr "Разрешить просмотр настроек на отдельных сайтах"
+
+#~ msgid "By default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Settings will be applied to newly added websites by default."
+#~ msgstr ""
+#~ "Настройки будут использоваться по умолчанию для вновь добавленных сайтов."
+
+#~ msgid "Do not apply"
+#~ msgstr "Не применять"
+
+#~ msgid ""
+#~ "According to BestWebSoft Instagram network settings, it is prohibited to "
+#~ "change the plugin settings on this site."
+#~ msgstr ""
+#~ "Согласно настройкам сети BestWebSoft, изменение настроек плагина "
+#~ "Instagram на этом сайте запрещено."
 
 #, fuzzy
 #~| msgid "Display"
@@ -293,11 +1406,6 @@ msgstr "Поддержка"
 #~ msgstr "Встроенное"
 
 #, fuzzy
-#~| msgid "Show Cover Photo"
-#~ msgid "Show Connections"
-#~ msgstr "Показывать Фото Обложки"
-
-#, fuzzy
 #~| msgid "Show URL"
 #~ msgid "Show"
 #~ msgstr "Показать URL"
@@ -306,143 +1414,6 @@ msgstr "Поддержка"
 #~| msgid "Enter the Google+ ID, e.g."
 #~ msgid "Enter the School ID"
 #~ msgstr "Укажите Google+ ID, напр."
-
-#, fuzzy
-#~| msgid "Settings"
-#~ msgid "LinkedIn Settings"
-#~ msgstr "Настройки"
-
-#~ msgid "Share"
-#~ msgstr "\"Поделиться\""
-
-#~ msgid "Follow"
-#~ msgstr "\"Подписаться\""
-
-#, fuzzy
-#~| msgid "Display"
-#~ msgid "Display on"
-#~ msgstr "Отображение"
-
-#, fuzzy
-#~| msgid "Page"
-#~ msgid "Pages"
-#~ msgstr "Страница"
-
-#~ msgid "Language"
-#~ msgstr "Язык"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for LinkedIn button(-s)."
-#~ msgstr "Выберите язык отображения информации на кнопке"
-
-#, fuzzy
-#~| msgid "Activate"
-#~ msgid "Activate %s"
-#~ msgstr "Активировать"
-
-#~ msgid "Learn More"
-#~ msgstr "Подробнее"
-
-#, fuzzy
-#~| msgid "Vertical-bubble"
-#~ msgid "Vertical"
-#~ msgstr "Вертикальное всплывающее"
-
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "Follow Button"
-#~ msgstr "Настройки для кнопки \"Подписаться\""
-
-#, fuzzy
-#~ msgid "LinkedIn Buttons Shortcode"
-#~ msgstr "Добавить шорткод"
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where LinkedIn "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
-#~ "будут отображаться социальные кнопки:"
-
-#~ msgid "Example of the site's pages tree"
-#~ msgstr "Пример дерева страниц сайта"
-
-#, fuzzy
-#~| msgid "Follow"
-#~ msgid "Follow me"
-#~ msgstr "\"Подписаться\""
-
-#~ msgid "Type"
-#~ msgstr "Вариант"
-
-#, fuzzy
-#~| msgid "Google+ Badge Widget"
-#~ msgid "Board Widget"
-#~ msgstr "Виджет Значка Google+"
-
-#~ msgid "Size"
-#~ msgstr "Размер"
-
-#~ msgid "Medium"
-#~ msgstr "Средняя"
-
-#~ msgid "Width"
-#~ msgstr "Ширина"
-
-#, fuzzy
-#~| msgid "Light"
-#~ msgid "Height"
-#~ msgstr "Светлая"
-
-#, fuzzy
-#~| msgid "Shortcode settings"
-#~ msgid "Shortcode Type"
-#~ msgstr "Настройки шорткода"
-
-#, fuzzy
-#~| msgid "Save Changes"
-#~ msgid "Save any image"
-#~ msgstr "Сохранить изменения"
-
-#, fuzzy
-#~| msgid "Show buttons on homepage"
-#~ msgid "Custom button image"
-#~ msgstr "Отображать кнопки на домашней странице"
-
-#, fuzzy
-#~ msgid "Pinterest Settings"
-#~ msgstr "Настройки"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for Pinterest button(-s)."
-#~ msgstr "Выберите язык отображения информации на кнопке"
-
-#, fuzzy
-#~| msgid "Buttons Position"
-#~ msgid "Button Position"
-#~ msgstr "Положение кнопок"
-
-#, fuzzy
-#~| msgid "Custom Code"
-#~ msgid "Custom"
-#~ msgstr "Пользовательский код"
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where Pinterest "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
-#~ "будут отображаться социальные кнопки:"
 
 #, fuzzy
 #~| msgid "Social Buttons Settings"
@@ -454,40 +1425,6 @@ msgstr "Поддержка"
 #~ msgid "Select the default language for Facebook button(-s)."
 #~ msgstr "Выберите язык отображения информации на кнопке"
 
-#~ msgid "Activate"
-#~ msgstr "Активировать"
-
-#, fuzzy
-#~ msgid "Install Now"
-#~ msgstr "Уже добавлен"
-
-#, fuzzy
-#~| msgid "Settings for Share Button"
-#~ msgid "Like&Share Buttons"
-#~ msgstr "Настройки для кнопки \"Поделиться\""
-
-#, fuzzy
-#~| msgid "Buttons Position"
-#~ msgid "Like Button Action"
-#~ msgstr "Положение кнопок"
-
-#, fuzzy
-#~| msgid "Layout"
-#~ msgid "Layout Width"
-#~ msgstr "Ориентация"
-
-#~ msgid "px"
-#~ msgstr "px"
-
-#~ msgid "Theme"
-#~ msgstr "Тема"
-
-#~ msgid "Light"
-#~ msgstr "Светлая"
-
-#~ msgid "Dark"
-#~ msgstr "Тёмная"
-
 #, fuzzy
 #~| msgid ""
 #~| "Please choose the necessary post types (or single pages) where Social "
@@ -498,51 +1435,6 @@ msgstr "Поддержка"
 #~ msgstr ""
 #~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
 #~ "будут отображаться социальные кнопки:"
-
-#, fuzzy
-#~| msgid "Social Buttons Settings"
-#~ msgid "Twitter Button Settings"
-#~ msgstr "Настройки Social Buttons"
-
-#, fuzzy
-#~ msgid "Mention"
-#~ msgstr "Примечание"
-
-#, fuzzy
-#~| msgid "Select the language to display information on the button"
-#~ msgid "Select the default language for Twitter button(-s)."
-#~ msgstr "Выберите язык отображения информации на кнопке"
-
-#, fuzzy
-#~| msgid "Settings for Follow Button"
-#~ msgid "Show Follow Button"
-#~ msgstr "Настройки для кнопки \"Подписаться\""
-
-#~ msgid "None"
-#~ msgstr "Нет"
-
-#, fuzzy
-#~ msgid "Twitter Buttons Shortcode"
-#~ msgstr "Добавить шорткод"
-
-#, fuzzy
-#~| msgid ""
-#~| "Please choose the necessary post types (or single pages) where Social "
-#~| "Suttons will be displayed:"
-#~ msgid ""
-#~ "Please choose the necessary post types (or single pages) where Twitter "
-#~ "buttons will be displayed:"
-#~ msgstr ""
-#~ "Пожалуйста, выберите те типы постов (или отдельные страницы), на которых "
-#~ "будут отображаться социальные кнопки:"
-
-#~ msgid "Example of site pages' tree"
-#~ msgstr "Пример дерева страниц сайта"
-
-#, fuzzy
-#~| msgid "Please select location for the buttons on the page"
-#~ msgid "Please select twitter buttons which will be displayed"
-#~ msgstr "Пожалуйста, выберите расположение кнопок на странице"
 
 #~ msgid "All plugin settings were restored."
 #~ msgstr "Все настройки плагина восстановлены."

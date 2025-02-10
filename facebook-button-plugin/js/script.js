@@ -1,4 +1,5 @@
 ( function( $ ) {
+	"use strict";
 	$( window ).on( 'load', function() {
 		var windowWidth = $( window ).width();
 		if ( windowWidth < 483 ) {

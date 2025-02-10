@@ -1,4 +1,5 @@
 ( function( $ ) {
+	"use strict";
 	$( document ).ready( function() {
 		function fcbkbttn_my_page() {
 			if ( $( 'input[name="fcbkbttn_my_page"]' ).is( ':checked' ) ) {
